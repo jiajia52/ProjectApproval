@@ -1,0 +1,18 @@
+{
+  "api_name": "data_probe_POST__initiationTask_result",
+  "method": "POST",
+  "path": "/initiationTask/result",
+  "payload": {
+    "projectId": "bb0e52ecfe304f7e80c911c57f487c71",
+    "type": 1
+  },
+  "project_id": "bb0e52ecfe304f7e80c911c57f487c71",
+  "result": {
+    "timestamp": "2026-03-12T04:19:27.597+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/initiationTask/result"
+  },
+  "error": "405 Client Error: Method Not Allowed for url: https://prod-itpm.faw.cn/itpmNew/gateway/sop-itpm-service/initiationTask/result",
+  "called_at": "2026-03-12T12:19:27+08:00"
+}

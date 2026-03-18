@@ -1,0 +1,117 @@
+{
+  "project_id": "f085146320e24def900c2e38cefd29ad",
+  "project_name": "2026年网络安全技术服务-工业互联网测评",
+  "endpoints": [
+    {
+      "name": "project_uploading",
+      "method": "GET",
+      "path": "/projectUploading/list/f085146320e24def900c2e38cefd29ad",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "project_goal",
+      "method": "GET",
+      "path": "/project/goal/get/f085146320e24def900c2e38cefd29ad",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "project_scope_dev",
+      "method": "POST",
+      "path": "/projectBaseInfo/eamapAndSystem",
+      "payload": {
+        "projectId": "f085146320e24def900c2e38cefd29ad"
+      },
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "project_scope_ops",
+      "method": "POST",
+      "path": "/projectBaseInfo/getProjectScope",
+      "payload": {
+        "projectId": "f085146320e24def900c2e38cefd29ad",
+        "pageNo": 1,
+        "pageSize": 200
+      },
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "system_scope",
+      "method": "POST",
+      "path": "/projectMicosInfo/getList",
+      "payload": {
+        "projectId": "f085146320e24def900c2e38cefd29ad"
+      },
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "tam_info",
+      "method": "GET",
+      "path": "/value/info/f085146320e24def900c2e38cefd29ad",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "project_value",
+      "method": "GET",
+      "path": "/value/infoNoTam/f085146320e24def900c2e38cefd29ad",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "milestones",
+      "method": "GET",
+      "path": "/milestone/newList/f085146320e24def900c2e38cefd29ad",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "organization",
+      "method": "POST",
+      "path": "/organizationalStructure/queryOrganizationNumber",
+      "payload": {
+        "projectId": "f085146320e24def900c2e38cefd29ad",
+        "pageNo": 1,
+        "pageSize": 200
+      },
+      "ok": true,
+      "code": 0,
+      "message": "查询自有人员信息列表成功: 人员信息列表为空！"
+    },
+    {
+      "name": "budget",
+      "method": "GET",
+      "path": "/budget/info/f085146320e24def900c2e38cefd29ad",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "cost_change",
+      "method": "GET",
+      "path": "/change/list/f085146320e24def900c2e38cefd29ad",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    }
+  ]
+}

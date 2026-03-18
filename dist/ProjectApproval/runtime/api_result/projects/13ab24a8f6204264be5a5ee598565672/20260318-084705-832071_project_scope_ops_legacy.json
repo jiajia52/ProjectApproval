@@ -1,0 +1,19 @@
+{
+  "api_name": "project_scope_ops_legacy",
+  "method": "POST",
+  "path": "/projectBaseInfo/projectRange/list",
+  "payload": {
+    "projectId": "13ab24a8f6204264be5a5ee598565672"
+  },
+  "project_id": "13ab24a8f6204264be5a5ee598565672",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+      "serialNo": null,
+      "projectRange": []
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-18T08:47:05+08:00"
+}

@@ -1,0 +1,71 @@
+{
+  "project_id": "19ab30ec73dc40fd8c42be7972a71b06",
+  "endpoints": {
+    "project_uploading": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "project_goal": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "project_scope_dev": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "project_scope_ops": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "system_scope": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "tam_info": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "project_value": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "milestones": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "organization": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "budget": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    },
+    "cost_change": {
+      "ok": false,
+      "code": -1,
+      "message": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "data": null
+    }
+  }
+}

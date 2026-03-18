@@ -1,0 +1,42 @@
+{
+  "api_name": "project_value",
+  "method": "GET",
+  "path": "/value/infoNoTam/bbc2e43dc1da491ea2503229e6e90563",
+  "payload": null,
+  "project_id": "bbc2e43dc1da491ea2503229e6e90563",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": 1428,
+        "projectId": "bbc2e43dc1da491ea2503229e6e90563",
+        "projectValueId": null,
+        "title": "提升信创工作管理水平",
+        "valueGoal": "建立信创检查机制，通过使用专业检查和信息收集工具，获取应用系统和基础设施的实际替代情况，并通过检查和整改，确保全集团信创工作的高质量落地，确保真替真用，稳步提升全集团数字化自主可控和安全可靠水平",
+        "currentStatus": "缺少技术手段检查和验证实际完成情况",
+        "deptId": "[\"375\"]",
+        "oneKey": null,
+        "oneValue": null,
+        "twoValue": null,
+        "threeValue": null,
+        "content": "无",
+        "creatorId": null,
+        "creator": null,
+        "createTime": null,
+        "modifierId": null,
+        "modifier": null,
+        "updateTime": null,
+        "isDelete": 0,
+        "type": 1,
+        "actualTargetYear": null,
+        "actualTargetText": null,
+        "oneValueActual": null,
+        "twoValueActual": null,
+        "threeValueActual": null
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-11T17:41:20+08:00"
+}

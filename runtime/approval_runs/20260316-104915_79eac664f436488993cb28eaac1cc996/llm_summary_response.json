@@ -1,0 +1,511 @@
+{
+  "raw": {
+    "id": "chatcmpl-59d15591-7b15-9389-bbe1-e9fe43018a5e",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总评因合同计划缺失完整时间范围（R035）导致整体不通过。尽管其他页面评审结果多为通过，但规则基线中已明确该关键规则为严重失败项，且不可逆改写。其余非关键性缺失（如目标标题、业务全景图等）虽存在，但不影响总评结论。项目需补充合同计划的时间信息后重新提交。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R001\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景标题存在且清晰，内容与数据分析主题一致。\",\n      \"evidence\": [\n        \"title:数据分析\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R002\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景内容详实，包含时间范围、问题占比及根本原因分析，具备充分依据。\",\n      \"evidence\": [\n        \"content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R003\",\n      \"status\": \"pass\",\n      \"reason\": \"背景图片已上传，支持数据分析内容展示。\",\n      \"evidence\": [\n        \"images:d62513a261f0481db4b63f5bb1ea8b8c\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R004\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标标题为空，未提供明确的目标标题。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充项目目标标题，例如‘提升外协件质量监控能力’等。\"\n    },\n    {\n      \"rule_id\": \"R005\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标内容为空，缺少具体目标描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充项目目标的具体内容，如预期达成的效果或量化指标。\"\n    },\n    {\n      \"rule_id\": \"R006\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标图片缺失，无可视化支撑材料。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"建议补充与项目目标相关的图表或示意图，增强可读性。\"\n    },\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品链信息完整，指向‘供应链过程管理工作台’。\",\n      \"evidence\": [\n        \"product_chain:供应链过程管理工作台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"pass\",\n      \"reason\": \"项目目标（O）明确，包含监控直连数量目标。\",\n      \"evidence\": [\n        \"objective:供应商端数据直联直采，预计实现40家供应商监控直连，10家数据直连\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"pass\",\n      \"reason\": \"战队OKR表述清晰，涵盖核心场景与体验目标。\",\n      \"evidence\": [\n        \"squad_okr:“3+3”的场景下”(3个核心场景+3大核心体验) 用户需求满足度100%达成\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品信息完整，包含产品ID、名称等关键字段。\",\n      \"evidence\": [\n        \"productName:供应链过程管理工作台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R011\",\n      \"status\": \"pass\",\n      \"reason\": \"目标时间范围明确，起止时间为2025年11月1日至30日。\",\n      \"evidence\": [\n        \"time_range:start:2025-11-01, end:2025-11-30\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"pass\",\n      \"reason\": \"关键成果（KR）完整，包含可衡量的成果描述。\",\n      \"evidence\": [\n        \"key_result:供应商端生产变化点实现基于数据自动监控\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R013\",\n      \"status\": \"pass\",\n      \"reason\": \"项目范围中的业务流程信息完整，包含流程编码、名称、层级等。\",\n      \"evidence\": [\n        \"business_process:name:变化点管理流程, code:IPD03082908P001GYB, level:L4\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R014\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"内容列表为空，缺乏对项目内容的结构化梳理。\",\n      \"evidence\": [\n        \"content_list: []\"\n      ],\n      \"suggestion\": \"建议补充项目内容列表，如分阶段实施计划或功能模块清单。\"\n    },\n    {\n      \"rule_id\": \"R015\",\n      \"status\": \"pass\",\n      \"reason\": \"微服务信息完整，系统名称、负责人等字段齐全。\",\n      \"evidence\": [\n        \"microservice:name:员工工作台（产品经理）, ownerName:caiguanghui\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"pass\",\n      \"reason\": \"微应用信息完整，与微服务一致，具备可执行性。\",\n      \"evidence\": [\n        \"microapp:name:员工工作台（产品经理）, ownerName:caiguanghui\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R017\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案标题存在，且与变革主题一致。\",\n      \"evidence\": [\n        \"title:变革方案\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R018\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案内容详尽，涵盖AI视觉监测、数据采集、预警模型等核心机制。\",\n      \"evidence\": [\n        \"content:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台...\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R019\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案图片已上传，共5张，覆盖多个子方案。\",\n      \"evidence\": [\n        \"images:9821d72eaa4f4f1a8214c597b3d82f75, 7e0c1d70f546439b929b3a4daac55b76, 4cc9b51b1499419580c4bd06f8cc1840, eb66aaaf6ded4d2fb9215458543e5636, ddd209e34ee54a22b4647718efc00e1b\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R020\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图标题为空，未提供图示说明。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充业务全景图标题，如‘外协件质量全过程监控架构图’。\"\n    },\n    {\n      \"rule_id\": \"R021\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图内容为空，缺乏详细描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充业务全景图的具体内容说明，如各模块职责与交互逻辑。\"\n    },\n    {\n      \"rule_id\": \"R022\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图图片缺失，无可视化图示。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传业务全景图图片，确保信息可视化呈现。\"\n    },\n    {\n      \"rule_id\": \"R023\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型标题为空，未提供模型名称。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充年度管理模型标题，如‘外协件质量管理年度推进模型’。\"\n    },\n    {\n      \"rule_id\": \"R024\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型内容为空，缺乏具体描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充年度管理模型的内容，包括管理策略、执行路径与评估机制。\"\n    },\n    {\n      \"rule_id\": \"R025\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型图片缺失，无图示支撑。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传年度管理模型相关图表，增强可理解性。\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"pass\",\n      \"reason\": \"业务架构评审材料完整，涵盖三板斧、指标树、流程架构与业务能力架构，各评审点均通过，且有明确的评审人和结论。\",\n      \"evidence\": [\n        \"summary:product_count:1\",\n        \"business_process_count:1\",\n        \"business_unit_count:5\",\n        \"business_object_count:2\",\n        \"items:id:41\",\n        \"index:3\",\n        \"dimension:业务架构\",\n        \"checkpoint:三板斧\",\n        \"value_model:明确客户，价值主张、灯塔目标\",\n        \"reviewer:金鑫禹、陈泓霏\",\n        \"conclusion:通过\",\n        \"description:通过\",\n        \"items:id:71\",\n        \"index:4\",\n        \"dimension:业务架构\",\n        \"checkpoint:指标树\",\n        \"value_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。\",\n        \"reviewer:金鑫禹、陈泓霏\",\n        \"conclusion:通过\",\n        \"description:通过\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"pass\",\n      \"reason\": \"数据架构评审材料完整，包含业务对象与概念模型两个检查点，均已通过，且在信息架构中心注册，符合规范要求。\",\n      \"evidence\": [\n        \"summary:flow_dimension_count:1\",\n        \"check_point_count:2\",\n        \"items:id:161\",\n        \"index:1\",\n        \"dimension:信息架构\",\n        \"checkpoint:业务对象\",\n        \"value_model:业务对象完整、准确\\n1、明确本项目所有的业务对象，完整覆盖业务流程\\n4、在信息架构中心注册\",\n        \"reviewer:许明月、谢文慧\",\n        \"conclusion:通过\",\n        \"description:通过\",\n        \"items:id:191\",\n        \"index:2\",\n        \"dimension:信息架构\",\n        \"checkpoint:概念模型\",\n        \"value_model:规划本领域数据及其他领域数据的关系\\n1.不允许非法创建业务对象\\n2.与外部业务对象间联通关系不允许缺失\\n4.在信息架构中心注册\",\n        \"reviewer:许明月、谢文慧\",\n        \"conclusion:通过\",\n        \"description:通过\",\n        \"message:参数异常 已合并业务架构中的信息架构内容。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"pass\",\n      \"reason\": \"技术架构评审虽接口未返回明细，但已回退使用系统范围内容作为替代材料，且评审结论为通过，说明具备基本技术架构依据。\",\n      \"evidence\": [\n        \"summary:app_count:0\",\n        \"service_count:1\",\n        \"type:fallback\",\n        \"items:id:5e3b38fb96f626cf1051cba882aa1134\",\n        \"index:1\",\n        \"dimension:技术架构\",\n        \"checkpoint:变化点管理\",\n        \"value_model:系统编码: DE-0506；负责人: 崔苗苗\",\n        \"reviewer:\",\n        \"conclusion:通过\",\n        \"description:业务属于运营管理类，C端DAU<500，根据集团要求申请变更\",\n        \"message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。\",\n        \"link_label:前往云原生查看\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"pass\",\n      \"reason\": \"安全架构评审中，应用安全等级已判定为3级，威胁建模虽无具体描述，但系统已进入安全平台并完成初步评审，具备基本安全评估基础。\",\n      \"evidence\": [\n        \"summary:app_count:1\",\n        \"service_count:0\",\n        \"safety_level:3\",\n        \"items:id:review-1\",\n        \"index:1\",\n        \"dimension:安全架构\",\n        \"checkpoint:威胁建模\",\n        \"value_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、\",\n        \"reviewer:\",\n        \"conclusion:2\",\n        \"description:\",\n        \"items:id:review-2\",\n        \"index:2\",\n        \"dimension:安全架构\",\n        \"checkpoint:应用安全等级判定\",\n        \"value_model:明确建设系统的安全等级及等保等级\",\n        \"reviewer:\",\n        \"conclusion:2\",\n        \"description:\",\n        \"message:操作成功\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"pass\",\n      \"reason\": \"能力（竞争）模型虽字段为空，但系统中存在对应条目（id:506），且规则基线已判定为通过，无需补充。\",\n      \"evidence\": [\n        \"id:506\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"pass\",\n      \"reason\": \"结果（财务/客户）模型虽字段为空，但系统中存在对应条目（id:507），且规则基线已判定为通过，无需补充。\",\n      \"evidence\": [\n        \"id:507\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"pass\",\n      \"reason\": \"管理体系模型已提供完整信息：指标名称、当前状态、目标三年值（2026-2028）、计算公式及责任部门，符合管理模型要求。\",\n      \"evidence\": [\n        \"id:508\",\n        \"title:金葵花百车故障率（PP100）\",\n        \"current_state:108.47\",\n        \"benefit_department:[\\\"378\\\"]\",\n        \"target_3y:2026:78.41, 2027:36, 2028:28.8\",\n        \"target_2026:78.41\",\n        \"target_2027:36\",\n        \"target_2028:28.8\",\n        \"calculation_basis:金葵花百车故障率（PP100）=用户抱怨数/（车辆数（拥车期2-6个月））*100\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R033\",\n      \"status\": \"pass\",\n      \"reason\": \"立项计划已提供完整的时间范围（2025-10-20 至 2025-10-31）及标题，符合要求。\",\n      \"evidence\": [\n        \"start:2025-10-20\",\n        \"end:2025-10-31\",\n        \"title:立项计划\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R034\",\n      \"status\": \"fail\",\n      \"reason\": \"合同计划未提供任何时间范围信息，缺少 start 和 end 字段，无法确认计划完整性。\",\n      \"evidence\": [\n        \"contract_plan: {}\"\n      ],\n      \"suggestion\": \"请补充合同计划的起止时间（start 和 end），并明确其标题或目标内容。\"\n    },\n    {\n      \"rule_id\": \"R035\",\n      \"status\": \"fail\",\n      \"reason\": \"合同计划缺少完整时间范围，构成严重缺陷。\",\n      \"evidence\": [\n        \"contract_plan: {}\"\n      ],\n      \"suggestion\": \"请补充合同计划的起止时间（start 和 end），并明确其标题或目标内容。\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"pass\",\n      \"reason\": \"目标计划已提供完整的时间范围（2025-11-01 至 2025-11-30）及标题 '供应商端数据直联直采'，符合要求。\",\n      \"evidence\": [\n        \"start:2025-11-01\",\n        \"end:2025-11-30\",\n        \"title:供应商端数据直联直采\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"pass\",\n      \"reason\": \"组织架构包含混合开发模式及完整成员信息，关键角色与职责清晰，人员配置合理，满足组织架构完整性要求。\",\n      \"evidence\": [\n        \"development_mode: 混合开发\",\n        \"members: 蔡广珲（T7，产品管理工程师，大制造运营部，团队：批量外协件质量保证开发小队）\",\n        \"members: 崔苗苗（T5，产品管理工程师，大研发运营部，团队：批量外协件质量保证开发小队）\",\n        \"members: 多名来自资源池的第三方开发人员（前后端、UI/UE、项目管理等），均标注了角色、级别、工作量及时间范围\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"pass\",\n      \"reason\": \"费用构成信息完整，包含项目名称、金额、预算科目、核算方式及采购模式，满足评审要求。\",\n      \"evidence\": [\n        \"name:批量外协件质量管理\",\n        \"amount:1159682.87\",\n        \"budget_subject:YSGC-PM-2513AFY-1\",\n        \"calculation:人天单价核算\",\n        \"purchase_mode:开发资源池\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R039\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充长尾费用相关信息。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R040\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充历史投入相关信息。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    }\n  ],\n  \"risks\": [\n    \"合同计划缺失将影响项目合规性与后续采购流程推进，存在法律与执行风险。\",\n    \"业务全景图与年度管理模型缺失可能导致跨部门协同理解偏差，影响项目落地一致性。\",\n    \"项目目标、方案等内容虽有基础信息，但缺乏可视化辅助材料，可能影响高层决策判断。\",\n    \"技术架构评审依赖回退数据，可能存在信息不完整风险，建议后续补全原始接口数据。\",\n    \"安全架构中威胁建模缺乏详细输出内容，需在实施阶段补充完整安全需求文档。\"\n  ],\n  \"missing_information\": [\n    \"项目目标标题（R004）\",\n    \"项目目标内容（R005）\",\n    \"项目目标图片（R006）\",\n    \"内容列表（R014）\",\n    \"业务全景图标题（R020）\",\n    \"业务全景图内容（R021）\",\n    \"业务全景图图片（R022）\",\n    \"年度管理模型标题（R023）\",\n    \"年度管理模型内容（R024）\",\n    \"年度管理模型图片（R025）\",\n    \"合同计划的开始时间（start）\",\n    \"合同计划的结束时间（end）\",\n    \"合同计划的标题或目标描述\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1773629417,
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 4852,
+      "prompt_tokens": 5261,
+      "total_tokens": 10113,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总评因合同计划缺失完整时间范围（R035）导致整体不通过。尽管其他页面评审结果多为通过，但规则基线中已明确该关键规则为严重失败项，且不可逆改写。其余非关键性缺失（如目标标题、业务全景图等）虽存在，但不影响总评结论。项目需补充合同计划的时间信息后重新提交。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R001\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景标题存在且清晰，内容与数据分析主题一致。\",\n      \"evidence\": [\n        \"title:数据分析\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R002\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景内容详实，包含时间范围、问题占比及根本原因分析，具备充分依据。\",\n      \"evidence\": [\n        \"content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R003\",\n      \"status\": \"pass\",\n      \"reason\": \"背景图片已上传，支持数据分析内容展示。\",\n      \"evidence\": [\n        \"images:d62513a261f0481db4b63f5bb1ea8b8c\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R004\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标标题为空，未提供明确的目标标题。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充项目目标标题，例如‘提升外协件质量监控能力’等。\"\n    },\n    {\n      \"rule_id\": \"R005\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标内容为空，缺少具体目标描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充项目目标的具体内容，如预期达成的效果或量化指标。\"\n    },\n    {\n      \"rule_id\": \"R006\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标图片缺失，无可视化支撑材料。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"建议补充与项目目标相关的图表或示意图，增强可读性。\"\n    },\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品链信息完整，指向‘供应链过程管理工作台’。\",\n      \"evidence\": [\n        \"product_chain:供应链过程管理工作台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"pass\",\n      \"reason\": \"项目目标（O）明确，包含监控直连数量目标。\",\n      \"evidence\": [\n        \"objective:供应商端数据直联直采，预计实现40家供应商监控直连，10家数据直连\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"pass\",\n      \"reason\": \"战队OKR表述清晰，涵盖核心场景与体验目标。\",\n      \"evidence\": [\n        \"squad_okr:“3+3”的场景下”(3个核心场景+3大核心体验) 用户需求满足度100%达成\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品信息完整，包含产品ID、名称等关键字段。\",\n      \"evidence\": [\n        \"productName:供应链过程管理工作台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R011\",\n      \"status\": \"pass\",\n      \"reason\": \"目标时间范围明确，起止时间为2025年11月1日至30日。\",\n      \"evidence\": [\n        \"time_range:start:2025-11-01, end:2025-11-30\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"pass\",\n      \"reason\": \"关键成果（KR）完整，包含可衡量的成果描述。\",\n      \"evidence\": [\n        \"key_result:供应商端生产变化点实现基于数据自动监控\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R013\",\n      \"status\": \"pass\",\n      \"reason\": \"项目范围中的业务流程信息完整，包含流程编码、名称、层级等。\",\n      \"evidence\": [\n        \"business_process:name:变化点管理流程, code:IPD03082908P001GYB, level:L4\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R014\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"内容列表为空，缺乏对项目内容的结构化梳理。\",\n      \"evidence\": [\n        \"content_list: []\"\n      ],\n      \"suggestion\": \"建议补充项目内容列表，如分阶段实施计划或功能模块清单。\"\n    },\n    {\n      \"rule_id\": \"R015\",\n      \"status\": \"pass\",\n      \"reason\": \"微服务信息完整，系统名称、负责人等字段齐全。\",\n      \"evidence\": [\n        \"microservice:name:员工工作台（产品经理）, ownerName:caiguanghui\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"pass\",\n      \"reason\": \"微应用信息完整，与微服务一致，具备可执行性。\",\n      \"evidence\": [\n        \"microapp:name:员工工作台（产品经理）, ownerName:caiguanghui\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R017\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案标题存在，且与变革主题一致。\",\n      \"evidence\": [\n        \"title:变革方案\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R018\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案内容详尽，涵盖AI视觉监测、数据采集、预警模型等核心机制。\",\n      \"evidence\": [\n        \"content:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台...\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R019\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案图片已上传，共5张，覆盖多个子方案。\",\n      \"evidence\": [\n        \"images:9821d72eaa4f4f1a8214c597b3d82f75, 7e0c1d70f546439b929b3a4daac55b76, 4cc9b51b1499419580c4bd06f8cc1840, eb66aaaf6ded4d2fb9215458543e5636, ddd209e34ee54a22b4647718efc00e1b\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R020\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图标题为空，未提供图示说明。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充业务全景图标题，如‘外协件质量全过程监控架构图’。\"\n    },\n    {\n      \"rule_id\": \"R021\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图内容为空，缺乏详细描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充业务全景图的具体内容说明，如各模块职责与交互逻辑。\"\n    },\n    {\n      \"rule_id\": \"R022\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图图片缺失，无可视化图示。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传业务全景图图片，确保信息可视化呈现。\"\n    },\n    {\n      \"rule_id\": \"R023\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型标题为空，未提供模型名称。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充年度管理模型标题，如‘外协件质量管理年度推进模型’。\"\n    },\n    {\n      \"rule_id\": \"R024\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型内容为空，缺乏具体描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充年度管理模型的内容，包括管理策略、执行路径与评估机制。\"\n    },\n    {\n      \"rule_id\": \"R025\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型图片缺失，无图示支撑。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传年度管理模型相关图表，增强可理解性。\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"pass\",\n      \"reason\": \"业务架构评审材料完整，涵盖三板斧、指标树、流程架构与业务能力架构，各评审点均通过，且有明确的评审人和结论。\",\n      \"evidence\": [\n        \"summary:product_count:1\",\n        \"business_process_count:1\",\n        \"business_unit_count:5\",\n        \"business_object_count:2\",\n        \"items:id:41\",\n        \"index:3\",\n        \"dimension:业务架构\",\n        \"checkpoint:三板斧\",\n        \"value_model:明确客户，价值主张、灯塔目标\",\n        \"reviewer:金鑫禹、陈泓霏\",\n        \"conclusion:通过\",\n        \"description:通过\",\n        \"items:id:71\",\n        \"index:4\",\n        \"dimension:业务架构\",\n        \"checkpoint:指标树\",\n        \"value_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。\",\n        \"reviewer:金鑫禹、陈泓霏\",\n        \"conclusion:通过\",\n        \"description:通过\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"pass\",\n      \"reason\": \"数据架构评审材料完整，包含业务对象与概念模型两个检查点，均已通过，且在信息架构中心注册，符合规范要求。\",\n      \"evidence\": [\n        \"summary:flow_dimension_count:1\",\n        \"check_point_count:2\",\n        \"items:id:161\",\n        \"index:1\",\n        \"dimension:信息架构\",\n        \"checkpoint:业务对象\",\n        \"value_model:业务对象完整、准确\\n1、明确本项目所有的业务对象，完整覆盖业务流程\\n4、在信息架构中心注册\",\n        \"reviewer:许明月、谢文慧\",\n        \"conclusion:通过\",\n        \"description:通过\",\n        \"items:id:191\",\n        \"index:2\",\n        \"dimension:信息架构\",\n        \"checkpoint:概念模型\",\n        \"value_model:规划本领域数据及其他领域数据的关系\\n1.不允许非法创建业务对象\\n2.与外部业务对象间联通关系不允许缺失\\n4.在信息架构中心注册\",\n        \"reviewer:许明月、谢文慧\",\n        \"conclusion:通过\",\n        \"description:通过\",\n        \"message:参数异常 已合并业务架构中的信息架构内容。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"pass\",\n      \"reason\": \"技术架构评审虽接口未返回明细，但已回退使用系统范围内容作为替代材料，且评审结论为通过，说明具备基本技术架构依据。\",\n      \"evidence\": [\n        \"summary:app_count:0\",\n        \"service_count:1\",\n        \"type:fallback\",\n        \"items:id:5e3b38fb96f626cf1051cba882aa1134\",\n        \"index:1\",\n        \"dimension:技术架构\",\n        \"checkpoint:变化点管理\",\n        \"value_model:系统编码: DE-0506；负责人: 崔苗苗\",\n        \"reviewer:\",\n        \"conclusion:通过\",\n        \"description:业务属于运营管理类，C端DAU<500，根据集团要求申请变更\",\n        \"message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。\",\n        \"link_label:前往云原生查看\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"pass\",\n      \"reason\": \"安全架构评审中，应用安全等级已判定为3级，威胁建模虽无具体描述，但系统已进入安全平台并完成初步评审，具备基本安全评估基础。\",\n      \"evidence\": [\n        \"summary:app_count:1\",\n        \"service_count:0\",\n        \"safety_level:3\",\n        \"items:id:review-1\",\n        \"index:1\",\n        \"dimension:安全架构\",\n        \"checkpoint:威胁建模\",\n        \"value_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、\",\n        \"reviewer:\",\n        \"conclusion:2\",\n        \"description:\",\n        \"items:id:review-2\",\n        \"index:2\",\n        \"dimension:安全架构\",\n        \"checkpoint:应用安全等级判定\",\n        \"value_model:明确建设系统的安全等级及等保等级\",\n        \"reviewer:\",\n        \"conclusion:2\",\n        \"description:\",\n        \"message:操作成功\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"pass\",\n      \"reason\": \"能力（竞争）模型虽字段为空，但系统中存在对应条目（id:506），且规则基线已判定为通过，无需补充。\",\n      \"evidence\": [\n        \"id:506\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"pass\",\n      \"reason\": \"结果（财务/客户）模型虽字段为空，但系统中存在对应条目（id:507），且规则基线已判定为通过，无需补充。\",\n      \"evidence\": [\n        \"id:507\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"pass\",\n      \"reason\": \"管理体系模型已提供完整信息：指标名称、当前状态、目标三年值（2026-2028）、计算公式及责任部门，符合管理模型要求。\",\n      \"evidence\": [\n        \"id:508\",\n        \"title:金葵花百车故障率（PP100）\",\n        \"current_state:108.47\",\n        \"benefit_department:[\\\"378\\\"]\",\n        \"target_3y:2026:78.41, 2027:36, 2028:28.8\",\n        \"target_2026:78.41\",\n        \"target_2027:36\",\n        \"target_2028:28.8\",\n        \"calculation_basis:金葵花百车故障率（PP100）=用户抱怨数/（车辆数（拥车期2-6个月））*100\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R033\",\n      \"status\": \"pass\",\n      \"reason\": \"立项计划已提供完整的时间范围（2025-10-20 至 2025-10-31）及标题，符合要求。\",\n      \"evidence\": [\n        \"start:2025-10-20\",\n        \"end:2025-10-31\",\n        \"title:立项计划\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R034\",\n      \"status\": \"fail\",\n      \"reason\": \"合同计划未提供任何时间范围信息，缺少 start 和 end 字段，无法确认计划完整性。\",\n      \"evidence\": [\n        \"contract_plan: {}\"\n      ],\n      \"suggestion\": \"请补充合同计划的起止时间（start 和 end），并明确其标题或目标内容。\"\n    },\n    {\n      \"rule_id\": \"R035\",\n      \"status\": \"fail\",\n      \"reason\": \"合同计划缺少完整时间范围，构成严重缺陷。\",\n      \"evidence\": [\n        \"contract_plan: {}\"\n      ],\n      \"suggestion\": \"请补充合同计划的起止时间（start 和 end），并明确其标题或目标内容。\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"pass\",\n      \"reason\": \"目标计划已提供完整的时间范围（2025-11-01 至 2025-11-30）及标题 '供应商端数据直联直采'，符合要求。\",\n      \"evidence\": [\n        \"start:2025-11-01\",\n        \"end:2025-11-30\",\n        \"title:供应商端数据直联直采\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"pass\",\n      \"reason\": \"组织架构包含混合开发模式及完整成员信息，关键角色与职责清晰，人员配置合理，满足组织架构完整性要求。\",\n      \"evidence\": [\n        \"development_mode: 混合开发\",\n        \"members: 蔡广珲（T7，产品管理工程师，大制造运营部，团队：批量外协件质量保证开发小队）\",\n        \"members: 崔苗苗（T5，产品管理工程师，大研发运营部，团队：批量外协件质量保证开发小队）\",\n        \"members: 多名来自资源池的第三方开发人员（前后端、UI/UE、项目管理等），均标注了角色、级别、工作量及时间范围\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"pass\",\n      \"reason\": \"费用构成信息完整，包含项目名称、金额、预算科目、核算方式及采购模式，满足评审要求。\",\n      \"evidence\": [\n        \"name:批量外协件质量管理\",\n        \"amount:1159682.87\",\n        \"budget_subject:YSGC-PM-2513AFY-1\",\n        \"calculation:人天单价核算\",\n        \"purchase_mode:开发资源池\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R039\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充长尾费用相关信息。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R040\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充历史投入相关信息。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    }\n  ],\n  \"risks\": [\n    \"合同计划缺失将影响项目合规性与后续采购流程推进，存在法律与执行风险。\",\n    \"业务全景图与年度管理模型缺失可能导致跨部门协同理解偏差，影响项目落地一致性。\",\n    \"项目目标、方案等内容虽有基础信息，但缺乏可视化辅助材料，可能影响高层决策判断。\",\n    \"技术架构评审依赖回退数据，可能存在信息不完整风险，建议后续补全原始接口数据。\",\n    \"安全架构中威胁建模缺乏详细输出内容，需在实施阶段补充完整安全需求文档。\"\n  ],\n  \"missing_information\": [\n    \"项目目标标题（R004）\",\n    \"项目目标内容（R005）\",\n    \"项目目标图片（R006）\",\n    \"内容列表（R014）\",\n    \"业务全景图标题（R020）\",\n    \"业务全景图内容（R021）\",\n    \"业务全景图图片（R022）\",\n    \"年度管理模型标题（R023）\",\n    \"年度管理模型内容（R024）\",\n    \"年度管理模型图片（R025）\",\n    \"合同计划的开始时间（start）\",\n    \"合同计划的结束时间（end）\",\n    \"合同计划的标题或目标描述\"\n  ]\n}",
+  "json": {
+    "decision": "驳回",
+    "summary": "项目总评因合同计划缺失完整时间范围（R035）导致整体不通过。尽管其他页面评审结果多为通过，但规则基线中已明确该关键规则为严重失败项，且不可逆改写。其余非关键性缺失（如目标标题、业务全景图等）虽存在，但不影响总评结论。项目需补充合同计划的时间信息后重新提交。",
+    "item_results": [
+      {
+        "rule_id": "R001",
+        "status": "pass",
+        "reason": "项目背景标题存在且清晰，内容与数据分析主题一致。",
+        "evidence": [
+          "title:数据分析"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R002",
+        "status": "pass",
+        "reason": "项目背景内容详实，包含时间范围、问题占比及根本原因分析，具备充分依据。",
+        "evidence": [
+          "content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R003",
+        "status": "pass",
+        "reason": "背景图片已上传，支持数据分析内容展示。",
+        "evidence": [
+          "images:d62513a261f0481db4b63f5bb1ea8b8c"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R004",
+        "status": "needs_more_info",
+        "reason": "项目目标标题为空，未提供明确的目标标题。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充项目目标标题，例如‘提升外协件质量监控能力’等。"
+      },
+      {
+        "rule_id": "R005",
+        "status": "needs_more_info",
+        "reason": "项目目标内容为空，缺少具体目标描述。",
+        "evidence": [
+          "content: "
+        ],
+        "suggestion": "请补充项目目标的具体内容，如预期达成的效果或量化指标。"
+      },
+      {
+        "rule_id": "R006",
+        "status": "needs_more_info",
+        "reason": "项目目标图片缺失，无可视化支撑材料。",
+        "evidence": [
+          "images: []"
+        ],
+        "suggestion": "建议补充与项目目标相关的图表或示意图，增强可读性。"
+      },
+      {
+        "rule_id": "R007",
+        "status": "pass",
+        "reason": "关联产品链信息完整，指向‘供应链过程管理工作台’。",
+        "evidence": [
+          "product_chain:供应链过程管理工作台"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R008",
+        "status": "pass",
+        "reason": "项目目标（O）明确，包含监控直连数量目标。",
+        "evidence": [
+          "objective:供应商端数据直联直采，预计实现40家供应商监控直连，10家数据直连"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R009",
+        "status": "pass",
+        "reason": "战队OKR表述清晰，涵盖核心场景与体验目标。",
+        "evidence": [
+          "squad_okr:“3+3”的场景下”(3个核心场景+3大核心体验) 用户需求满足度100%达成"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R010",
+        "status": "pass",
+        "reason": "关联产品信息完整，包含产品ID、名称等关键字段。",
+        "evidence": [
+          "productName:供应链过程管理工作台"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R011",
+        "status": "pass",
+        "reason": "目标时间范围明确，起止时间为2025年11月1日至30日。",
+        "evidence": [
+          "time_range:start:2025-11-01, end:2025-11-30"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R012",
+        "status": "pass",
+        "reason": "关键成果（KR）完整，包含可衡量的成果描述。",
+        "evidence": [
+          "key_result:供应商端生产变化点实现基于数据自动监控"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R013",
+        "status": "pass",
+        "reason": "项目范围中的业务流程信息完整，包含流程编码、名称、层级等。",
+        "evidence": [
+          "business_process:name:变化点管理流程, code:IPD03082908P001GYB, level:L4"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R014",
+        "status": "needs_more_info",
+        "reason": "内容列表为空，缺乏对项目内容的结构化梳理。",
+        "evidence": [
+          "content_list: []"
+        ],
+        "suggestion": "建议补充项目内容列表，如分阶段实施计划或功能模块清单。"
+      },
+      {
+        "rule_id": "R015",
+        "status": "pass",
+        "reason": "微服务信息完整，系统名称、负责人等字段齐全。",
+        "evidence": [
+          "microservice:name:员工工作台（产品经理）, ownerName:caiguanghui"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R016",
+        "status": "pass",
+        "reason": "微应用信息完整，与微服务一致，具备可执行性。",
+        "evidence": [
+          "microapp:name:员工工作台（产品经理）, ownerName:caiguanghui"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R017",
+        "status": "pass",
+        "reason": "项目方案标题存在，且与变革主题一致。",
+        "evidence": [
+          "title:变革方案"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R018",
+        "status": "pass",
+        "reason": "项目方案内容详尽，涵盖AI视觉监测、数据采集、预警模型等核心机制。",
+        "evidence": [
+          "content:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台..."
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R019",
+        "status": "pass",
+        "reason": "项目方案图片已上传，共5张，覆盖多个子方案。",
+        "evidence": [
+          "images:9821d72eaa4f4f1a8214c597b3d82f75, 7e0c1d70f546439b929b3a4daac55b76, 4cc9b51b1499419580c4bd06f8cc1840, eb66aaaf6ded4d2fb9215458543e5636, ddd209e34ee54a22b4647718efc00e1b"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R020",
+        "status": "needs_more_info",
+        "reason": "业务全景图标题为空，未提供图示说明。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充业务全景图标题，如‘外协件质量全过程监控架构图’。"
+      },
+      {
+        "rule_id": "R021",
+        "status": "needs_more_info",
+        "reason": "业务全景图内容为空，缺乏详细描述。",
+        "evidence": [
+          "content: "
+        ],
+        "suggestion": "请补充业务全景图的具体内容说明，如各模块职责与交互逻辑。"
+      },
+      {
+        "rule_id": "R022",
+        "status": "needs_more_info",
+        "reason": "业务全景图图片缺失，无可视化图示。",
+        "evidence": [
+          "images: []"
+        ],
+        "suggestion": "请上传业务全景图图片，确保信息可视化呈现。"
+      },
+      {
+        "rule_id": "R023",
+        "status": "needs_more_info",
+        "reason": "年度管理模型标题为空，未提供模型名称。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充年度管理模型标题，如‘外协件质量管理年度推进模型’。"
+      },
+      {
+        "rule_id": "R024",
+        "status": "needs_more_info",
+        "reason": "年度管理模型内容为空，缺乏具体描述。",
+        "evidence": [
+          "content: "
+        ],
+        "suggestion": "请补充年度管理模型的内容，包括管理策略、执行路径与评估机制。"
+      },
+      {
+        "rule_id": "R025",
+        "status": "needs_more_info",
+        "reason": "年度管理模型图片缺失，无图示支撑。",
+        "evidence": [
+          "images: []"
+        ],
+        "suggestion": "请上传年度管理模型相关图表，增强可理解性。"
+      },
+      {
+        "rule_id": "R026",
+        "status": "pass",
+        "reason": "业务架构评审材料完整，涵盖三板斧、指标树、流程架构与业务能力架构，各评审点均通过，且有明确的评审人和结论。",
+        "evidence": [
+          "summary:product_count:1",
+          "business_process_count:1",
+          "business_unit_count:5",
+          "business_object_count:2",
+          "items:id:41",
+          "index:3",
+          "dimension:业务架构",
+          "checkpoint:三板斧",
+          "value_model:明确客户，价值主张、灯塔目标",
+          "reviewer:金鑫禹、陈泓霏",
+          "conclusion:通过",
+          "description:通过",
+          "items:id:71",
+          "index:4",
+          "dimension:业务架构",
+          "checkpoint:指标树",
+          "value_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。",
+          "reviewer:金鑫禹、陈泓霏",
+          "conclusion:通过",
+          "description:通过"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R027",
+        "status": "pass",
+        "reason": "数据架构评审材料完整，包含业务对象与概念模型两个检查点，均已通过，且在信息架构中心注册，符合规范要求。",
+        "evidence": [
+          "summary:flow_dimension_count:1",
+          "check_point_count:2",
+          "items:id:161",
+          "index:1",
+          "dimension:信息架构",
+          "checkpoint:业务对象",
+          "value_model:业务对象完整、准确\n1、明确本项目所有的业务对象，完整覆盖业务流程\n4、在信息架构中心注册",
+          "reviewer:许明月、谢文慧",
+          "conclusion:通过",
+          "description:通过",
+          "items:id:191",
+          "index:2",
+          "dimension:信息架构",
+          "checkpoint:概念模型",
+          "value_model:规划本领域数据及其他领域数据的关系\n1.不允许非法创建业务对象\n2.与外部业务对象间联通关系不允许缺失\n4.在信息架构中心注册",
+          "reviewer:许明月、谢文慧",
+          "conclusion:通过",
+          "description:通过",
+          "message:参数异常 已合并业务架构中的信息架构内容。"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R028",
+        "status": "pass",
+        "reason": "技术架构评审虽接口未返回明细，但已回退使用系统范围内容作为替代材料，且评审结论为通过，说明具备基本技术架构依据。",
+        "evidence": [
+          "summary:app_count:0",
+          "service_count:1",
+          "type:fallback",
+          "items:id:5e3b38fb96f626cf1051cba882aa1134",
+          "index:1",
+          "dimension:技术架构",
+          "checkpoint:变化点管理",
+          "value_model:系统编码: DE-0506；负责人: 崔苗苗",
+          "reviewer:",
+          "conclusion:通过",
+          "description:业务属于运营管理类，C端DAU<500，根据集团要求申请变更",
+          "message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。",
+          "link_label:前往云原生查看"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R029",
+        "status": "pass",
+        "reason": "安全架构评审中，应用安全等级已判定为3级，威胁建模虽无具体描述，但系统已进入安全平台并完成初步评审，具备基本安全评估基础。",
+        "evidence": [
+          "summary:app_count:1",
+          "service_count:0",
+          "safety_level:3",
+          "items:id:review-1",
+          "index:1",
+          "dimension:安全架构",
+          "checkpoint:威胁建模",
+          "value_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、",
+          "reviewer:",
+          "conclusion:2",
+          "description:",
+          "items:id:review-2",
+          "index:2",
+          "dimension:安全架构",
+          "checkpoint:应用安全等级判定",
+          "value_model:明确建设系统的安全等级及等保等级",
+          "reviewer:",
+          "conclusion:2",
+          "description:",
+          "message:操作成功"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R030",
+        "status": "pass",
+        "reason": "能力（竞争）模型虽字段为空，但系统中存在对应条目（id:506），且规则基线已判定为通过，无需补充。",
+        "evidence": [
+          "id:506",
+          "benefit_department:[]"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R031",
+        "status": "pass",
+        "reason": "结果（财务/客户）模型虽字段为空，但系统中存在对应条目（id:507），且规则基线已判定为通过，无需补充。",
+        "evidence": [
+          "id:507",
+          "benefit_department:[]"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R032",
+        "status": "pass",
+        "reason": "管理体系模型已提供完整信息：指标名称、当前状态、目标三年值（2026-2028）、计算公式及责任部门，符合管理模型要求。",
+        "evidence": [
+          "id:508",
+          "title:金葵花百车故障率（PP100）",
+          "current_state:108.47",
+          "benefit_department:[\"378\"]",
+          "target_3y:2026:78.41, 2027:36, 2028:28.8",
+          "target_2026:78.41",
+          "target_2027:36",
+          "target_2028:28.8",
+          "calculation_basis:金葵花百车故障率（PP100）=用户抱怨数/（车辆数（拥车期2-6个月））*100"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R033",
+        "status": "pass",
+        "reason": "立项计划已提供完整的时间范围（2025-10-20 至 2025-10-31）及标题，符合要求。",
+        "evidence": [
+          "start:2025-10-20",
+          "end:2025-10-31",
+          "title:立项计划"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R034",
+        "status": "fail",
+        "reason": "合同计划未提供任何时间范围信息，缺少 start 和 end 字段，无法确认计划完整性。",
+        "evidence": [
+          "contract_plan: {}"
+        ],
+        "suggestion": "请补充合同计划的起止时间（start 和 end），并明确其标题或目标内容。"
+      },
+      {
+        "rule_id": "R035",
+        "status": "fail",
+        "reason": "合同计划缺少完整时间范围，构成严重缺陷。",
+        "evidence": [
+          "contract_plan: {}"
+        ],
+        "suggestion": "请补充合同计划的起止时间（start 和 end），并明确其标题或目标内容。"
+      },
+      {
+        "rule_id": "R036",
+        "status": "pass",
+        "reason": "目标计划已提供完整的时间范围（2025-11-01 至 2025-11-30）及标题 '供应商端数据直联直采'，符合要求。",
+        "evidence": [
+          "start:2025-11-01",
+          "end:2025-11-30",
+          "title:供应商端数据直联直采"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R037",
+        "status": "pass",
+        "reason": "组织架构包含混合开发模式及完整成员信息，关键角色与职责清晰，人员配置合理，满足组织架构完整性要求。",
+        "evidence": [
+          "development_mode: 混合开发",
+          "members: 蔡广珲（T7，产品管理工程师，大制造运营部，团队：批量外协件质量保证开发小队）",
+          "members: 崔苗苗（T5，产品管理工程师，大研发运营部，团队：批量外协件质量保证开发小队）",
+          "members: 多名来自资源池的第三方开发人员（前后端、UI/UE、项目管理等），均标注了角色、级别、工作量及时间范围"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R038",
+        "status": "pass",
+        "reason": "费用构成信息完整，包含项目名称、金额、预算科目、核算方式及采购模式，满足评审要求。",
+        "evidence": [
+          "name:批量外协件质量管理",
+          "amount:1159682.87",
+          "budget_subject:YSGC-PM-2513AFY-1",
+          "calculation:人天单价核算",
+          "purchase_mode:开发资源池"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R039",
+        "status": "pass",
+        "reason": "该规则标记为不需要，无需补充长尾费用相关信息。",
+        "evidence": [],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R040",
+        "status": "pass",
+        "reason": "该规则标记为不需要，无需补充历史投入相关信息。",
+        "evidence": [],
+        "suggestion": ""
+      }
+    ],
+    "risks": [
+      "合同计划缺失将影响项目合规性与后续采购流程推进，存在法律与执行风险。",
+      "业务全景图与年度管理模型缺失可能导致跨部门协同理解偏差，影响项目落地一致性。",
+      "项目目标、方案等内容虽有基础信息，但缺乏可视化辅助材料，可能影响高层决策判断。",
+      "技术架构评审依赖回退数据，可能存在信息不完整风险，建议后续补全原始接口数据。",
+      "安全架构中威胁建模缺乏详细输出内容，需在实施阶段补充完整安全需求文档。"
+    ],
+    "missing_information": [
+      "项目目标标题（R004）",
+      "项目目标内容（R005）",
+      "项目目标图片（R006）",
+      "内容列表（R014）",
+      "业务全景图标题（R020）",
+      "业务全景图内容（R021）",
+      "业务全景图图片（R022）",
+      "年度管理模型标题（R023）",
+      "年度管理模型内容（R024）",
+      "年度管理模型图片（R025）",
+      "合同计划的开始时间（start）",
+      "合同计划的结束时间（end）",
+      "合同计划的标题或目标描述"
+    ]
+  },
+  "used_response_format": true
+}

@@ -1,0 +1,17 @@
+{
+  "api_name": "tam_info",
+  "method": "GET",
+  "path": "/value/info/27b787d0734e4b06b52279821000a7d4",
+  "payload": null,
+  "project_id": "27b787d0734e4b06b52279821000a7d4",
+  "result": {
+    "code": 55001,
+    "errCode": "null0EBA-0222_MSA_GAUB50501",
+    "errType": "B",
+    "message": "TOKEN超时",
+    "msgType": "E",
+    "success": false
+  },
+  "error": "",
+  "called_at": "2026-03-18T08:43:07+08:00"
+}

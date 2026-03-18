@@ -1,0 +1,20 @@
+{
+  "api_name": "project_list",
+  "method": "POST",
+  "path": "/projectEstablishment/queryProjectEstablishmentList",
+  "payload": {
+    "pageNum": 1,
+    "pageSize": 100
+  },
+  "project_id": "",
+  "result": {
+    "code": 55001,
+    "errCode": "null0EBA-0222_MSA_GAUB50501",
+    "errType": "B",
+    "message": "TOKEN超时",
+    "msgType": "E",
+    "success": false
+  },
+  "error": "",
+  "called_at": "2026-03-13T08:48:24+08:00"
+}

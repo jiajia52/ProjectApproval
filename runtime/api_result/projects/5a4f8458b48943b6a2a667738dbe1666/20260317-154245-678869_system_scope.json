@@ -1,0 +1,16 @@
+{
+  "api_name": "system_scope",
+  "method": "POST",
+  "path": "/projectMicosInfo/getList",
+  "payload": {
+    "projectId": "5a4f8458b48943b6a2a667738dbe1666"
+  },
+  "project_id": "5a4f8458b48943b6a2a667738dbe1666",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": []
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:42:45+08:00"
+}

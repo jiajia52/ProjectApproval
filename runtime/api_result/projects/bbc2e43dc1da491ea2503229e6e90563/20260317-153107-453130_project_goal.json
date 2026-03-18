@@ -1,0 +1,14 @@
+{
+  "api_name": "project_goal",
+  "method": "GET",
+  "path": "/project/goal/get/bbc2e43dc1da491ea2503229e6e90563",
+  "payload": null,
+  "project_id": "bbc2e43dc1da491ea2503229e6e90563",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": null
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:31:07+08:00"
+}

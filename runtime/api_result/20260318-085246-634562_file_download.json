@@ -1,0 +1,14 @@
+{
+  "api_name": "file_download",
+  "method": "GET",
+  "path": "https://prod-itpm.faw.cn/itpmNew/gateway/sop-itpm-service/files/download/2187581a9fb5405fb03a77e82992ee31",
+  "payload": null,
+  "project_id": "",
+  "result": {
+    "content_type": "application/octet-stream",
+    "content_length": 227548,
+    "status_code": 200
+  },
+  "error": "",
+  "called_at": "2026-03-18T08:52:46+08:00"
+}

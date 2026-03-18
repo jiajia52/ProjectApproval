@@ -1,0 +1,63 @@
+{
+  "api_name": "project_goal",
+  "method": "GET",
+  "path": "/project/goal/get/8ea1d99fd9fa4e279dbe3eb1ae052f81",
+  "payload": null,
+  "project_id": "8ea1d99fd9fa4e279dbe3eb1ae052f81",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "df93b55b86ae47bbadbca8eb29de0a2d",
+        "projectId": "8ea1d99fd9fa4e279dbe3eb1ae052f81",
+        "okrId": "52",
+        "okrName": "产品链产品运营指标100%达成",
+        "goalName": "打造高效率、高素养、低成本的全生命周期设备管理体系",
+        "goalContent": null,
+        "milestoneId": "7b50b4ce5ef54b749b47bb2d0d5841c3",
+        "startTime": "2025-12-15",
+        "endTime": "2026-03-31",
+        "keyResultDtoList": [
+          {
+            "id": "09862afea85e434faffb0c52979bde1a",
+            "goalId": "df93b55b86ae47bbadbca8eb29de0a2d",
+            "orderNum": 1,
+            "keyResult": "开发设备BOM：基于设备机理，进一步解构设备到部位下的组件级，使部位、组件、参数、基准标准化，自动生成设备预防维修方案，提升预防维修有效性，使故障维修和预防维修运营闭环。"
+          },
+          {
+            "id": "8416cbb0b7bd44349941dd6d4e90012a",
+            "goalId": "df93b55b86ae47bbadbca8eb29de0a2d",
+            "orderNum": 2,
+            "keyResult": "优化设备故修方案：基于设备BOM组件与设备报警代码、失效模式进行绑定，优化维修方案库，当现场发生故障时，依据报警代码扫描失效模式库，精准诊断故障点，快速匹配处置措施，提升维修效率。"
+          },
+          {
+            "id": "1357df8a47dc4497883a39a9ac51d63e",
+            "goalId": "df93b55b86ae47bbadbca8eb29de0a2d",
+            "orderNum": 3,
+            "keyResult": "备件工具统型选优：通过识别备件技术条件、跟踪工具循环使用过程数据，建立备件选优模型收敛现有物料规格型号，进一步优化备件库存及消耗。"
+          },
+          {
+            "id": "9b519c835cf141c2b3b5af5ec97531f1",
+            "goalId": "df93b55b86ae47bbadbca8eb29de0a2d",
+            "orderNum": 4,
+            "keyResult": "开发设备健康度模型：通过联通设备生准期-服役期-终末期数据，基于六个核心维度构建量化评价体系，全面评估设备健康状况，为设备改善、大修和更新决策提供数据支持。\n"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "effe190533e940488790365ffad7a059",
+            "goalId": "df93b55b86ae47bbadbca8eb29de0a2d",
+            "productId": "385b9107816e6fc390736588ddd7a4a2",
+            "productName": "设备管理中心"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 123,
+        "businessFlowNum": 4
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T16:30:17+08:00"
+}

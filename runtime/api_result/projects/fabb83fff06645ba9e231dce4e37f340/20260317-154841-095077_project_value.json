@@ -1,0 +1,42 @@
+{
+  "api_name": "project_value",
+  "method": "GET",
+  "path": "/value/infoNoTam/fabb83fff06645ba9e231dce4e37f340",
+  "payload": null,
+  "project_id": "fabb83fff06645ba9e231dce4e37f340",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": 1097,
+        "projectId": "fabb83fff06645ba9e231dce4e37f340",
+        "projectValueId": null,
+        "title": "自主开发业务能力",
+        "valueGoal": "1.能力提升：提升电机油冷仿真分析、电机水冷仿真分析、三维温度场仿真、冷却设计方案评价能力（第1象限）；       2.战略需求：STAR-CCM+是电机性能开发的必备工具，支撑红旗电驱产品热性能设计，加快开发效率，提升产品竞争力；       3.问题解决：通过软件购置开展电驱系统电机流体及热性能仿真分析，可以分析电机冷却结构内部的流动状态，指导冷却结构设计优化，可以有效评估电机内",
+        "currentStatus": "无",
+        "deptId": "[\"208\"]",
+        "oneKey": null,
+        "oneValue": null,
+        "twoValue": null,
+        "threeValue": null,
+        "content": "部门业务能力全景图",
+        "creatorId": null,
+        "creator": null,
+        "createTime": null,
+        "modifierId": null,
+        "modifier": null,
+        "updateTime": null,
+        "isDelete": 0,
+        "type": 1,
+        "actualTargetYear": null,
+        "actualTargetText": null,
+        "oneValueActual": null,
+        "twoValueActual": null,
+        "threeValueActual": null
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:48:41+08:00"
+}

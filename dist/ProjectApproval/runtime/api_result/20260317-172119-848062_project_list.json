@@ -1,0 +1,20 @@
+{
+  "api_name": "project_list",
+  "method": "POST",
+  "path": "/projectEstablishment/queryProjectEstablishmentList",
+  "payload": {
+    "pageNum": 1,
+    "pageSize": 20
+  },
+  "project_id": "",
+  "result": {
+    "code": 501,
+    "errCode": "null0EBA-0222_MSA_GAUB50501",
+    "errType": "B",
+    "message": "token 没有以Bearer 开始",
+    "msgType": "E",
+    "success": false
+  },
+  "error": "",
+  "called_at": "2026-03-17T17:21:19+08:00"
+}

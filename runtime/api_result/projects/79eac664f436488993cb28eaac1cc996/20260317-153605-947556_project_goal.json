@@ -1,0 +1,45 @@
+{
+  "api_name": "project_goal",
+  "method": "GET",
+  "path": "/project/goal/get/79eac664f436488993cb28eaac1cc996",
+  "payload": null,
+  "project_id": "79eac664f436488993cb28eaac1cc996",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "2592b6579f0c44e5b9ec6ac6459df122",
+        "projectId": "79eac664f436488993cb28eaac1cc996",
+        "okrId": "56",
+        "okrName": "“3+3”的场景下”(3个核心场景+3大核心体验) 用户需求满足度100%达成",
+        "goalName": "供应商端数据直联直采，预计实现40家供应商监控直连，10家数据直连",
+        "goalContent": null,
+        "milestoneId": "42ec8e64e21d46ee8ff36c4e76daf02e",
+        "startTime": "2025-11-01",
+        "endTime": "2025-11-30",
+        "keyResultDtoList": [
+          {
+            "id": "62df2d7d01e740d99445951d214c48df",
+            "goalId": "2592b6579f0c44e5b9ec6ac6459df122",
+            "orderNum": 1,
+            "keyResult": "供应商端生产变化点实现基于数据自动监控\n"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "52e4b5505b594e97b9e972a189b26d5b",
+            "goalId": "2592b6579f0c44e5b9ec6ac6459df122",
+            "productId": "11111111",
+            "productName": "供应链过程管理工作台"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 5,
+        "businessFlowNum": 1
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:36:05+08:00"
+}

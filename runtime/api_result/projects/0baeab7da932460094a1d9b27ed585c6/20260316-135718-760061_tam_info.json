@@ -1,0 +1,14 @@
+{
+  "api_name": "tam_info",
+  "method": "GET",
+  "path": "/value/info/0baeab7da932460094a1d9b27ed585c6",
+  "payload": null,
+  "project_id": "0baeab7da932460094a1d9b27ed585c6",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": {}
+  },
+  "error": "",
+  "called_at": "2026-03-16T13:57:18+08:00"
+}

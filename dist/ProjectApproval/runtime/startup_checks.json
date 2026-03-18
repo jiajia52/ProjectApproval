@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-03-17T09:23:20.763877+00:00",
+  "overall_status": "ok",
+  "summary": {
+    "ok": 6,
+    "warning": 0,
+    "error": 0
+  },
+  "checks": [
+    {
+      "name": "data_extraction",
+      "status": "ok",
+      "required": true,
+      "message": "Rule matrix parsed successfully.",
+      "details": {
+        "source": "E:\\pyproject\\ProjectApproval\\dist\\ProjectApproval\\data\\立项大模型评审规则说明3-13.xlsx",
+        "rule_count": 41,
+        "review_point_count": 19
+      }
+    },
+    {
+      "name": "runtime_outputs",
+      "status": "ok",
+      "required": true,
+      "message": "Runtime artifacts are present.",
+      "details": {
+        "config_path": "E:\\pyproject\\ProjectApproval\\dist\\ProjectApproval\\runtime\\config\\skill_config.json",
+        "rules_bundle_path": "E:\\pyproject\\ProjectApproval\\dist\\ProjectApproval\\runtime\\review_rules.json",
+        "skill_manifest_path": "E:\\pyproject\\ProjectApproval\\dist\\ProjectApproval\\skills\\manifest.json"
+      }
+    },
+    {
+      "name": "skills",
+      "status": "ok",
+      "required": true,
+      "message": "Approval skills loaded successfully.",
+      "details": {
+        "skill_count": 8,
+        "sample_skills": [
+          "approval-项目内容-项目内容",
+          "approval-专业领域评审-专业领域评审",
+          "approval-tam模型评审-TAM模型评审",
+          "approval-项目价值-项目价值",
+          "approval-项目里程碑-项目里程碑"
+        ]
+      }
+    },
+    {
+      "name": "approval_engine",
+      "status": "ok",
+      "required": true,
+      "message": "Approval engine evaluated the sample document successfully.",
+      "details": {
+        "decision": "通过",
+        "score": 100,
+        "total_rules": 29
+      }
+    },
+    {
+      "name": "remote_data",
+      "status": "ok",
+      "required": false,
+      "message": "Remote data extraction is configured. TLS certificate verification is disabled.",
+      "details": {
+        "base_url": "https://prod-itpm.faw.cn/itpmNew/gateway/sop-itpm-service",
+        "endpoint_count": 18,
+        "has_token": true,
+        "use_iam": false,
+        "has_iam_callback": false,
+        "verify_ssl": false,
+        "ca_bundle_path": "",
+        "tls_mode": "disabled"
+      }
+    },
+    {
+      "name": "llm",
+      "status": "ok",
+      "required": false,
+      "message": "LLM configuration is complete.",
+      "details": {
+        "base_url": "https://aigate.faw.cn/v1",
+        "model": "qwen-flash",
+        "timeout": 90.0,
+        "verify_ssl": true
+      }
+    }
+  ]
+}

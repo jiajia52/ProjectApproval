@@ -1,0 +1,19 @@
+{
+  "api_name": "organization_flag_1",
+  "method": "POST",
+  "path": "/organizationalStructure/queryOrganizationNumber",
+  "payload": {
+    "projectId": "0baeab7da932460094a1d9b27ed585c6",
+    "pageNo": 1,
+    "pageSize": 200,
+    "flag": 1
+  },
+  "project_id": "0baeab7da932460094a1d9b27ed585c6",
+  "result": {
+    "code": 0,
+    "message": "查询三方人员信息列表成功: 人员信息列表为空！",
+    "data": null
+  },
+  "error": "",
+  "called_at": "2026-03-16T11:19:13+08:00"
+}

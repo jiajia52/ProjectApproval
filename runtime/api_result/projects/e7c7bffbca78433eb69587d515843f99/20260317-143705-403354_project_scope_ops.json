@@ -1,0 +1,31 @@
+{
+  "api_name": "project_scope_ops",
+  "method": "POST",
+  "path": "/project/range/list",
+  "payload": {
+    "projectId": "e7c7bffbca78433eb69587d515843f99"
+  },
+  "project_id": "e7c7bffbca78433eb69587d515843f99",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": 523,
+        "projectId": "e7c7bffbca78433eb69587d515843f99",
+        "softName": "Vred",
+        "reverageUseRate": 66.0,
+        "maxUseRate": 100.0,
+        "softDesc": "1.软件功能描述：VRED是汽车行业内最主流的造型可视化渲染软件，是造型设计渲染与可视化评审的核心软件。\n2.软件购买情况：软件现有2套:模型技术部于2024年购买2套最新版本。本次申请购买3套。\n3.软件使用情况：使用部门：模型技术部\n软件现有数量：2套\n使用人数：常用人数6人，偶尔使用人数10+\n软件负荷：较高\n使用效果：良好\n 面临问题：造型院可视化专业每年承接展示项目约20个，目前同时使用人员较多，许可数量不足。为解决上述需求，申请将该软件例行订阅\n4.软件预期收益：VRED软件的使用可实现真实时渲染，大幅削减物理样车制造数量，直接降低数千万研发成本并缩短开发周期。其沉浸式VR协同平台使异地团队能基于统一数字模型进行评审，显著提升跨部门决策效率与准确性。同时，照片级可视化能力助力精准评估造型曲面与材质质感，从源头提升产品品质。此外，VRED生成的可交互内容更可转化为创新营销资产，助力造型宣传。\n",
+        "createTime": "2025-10-30T09:29:51",
+        "updateTime": null,
+        "createUser": "gongzi",
+        "updateUser": null,
+        "createrDept": null,
+        "purchaseType": "例行订阅"
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T14:37:05+08:00"
+}

@@ -1,0 +1,889 @@
+{
+  "project_name": "北京车展数字化展区项目",
+  "project_id": "19ab30ec73dc40fd8c42be7972a71b06",
+  "category": "工作台开发及实施",
+  "document_source": "remote",
+  "document_saved_at": "2026-03-12T15:23:18+08:00",
+  "decision": "驳回",
+  "summary": "规则引擎基线结果为驳回。11条规则未通过，主要问题：R007: 缺少或未明确 关联产品链；R008: 缺少或未明确 项目目标（O）；R009: 缺少或未明确 战队OKR；R010: 缺少或未明确 关联产品；R011: 缺少或未明确 目标时间范围。",
+  "item_results": [
+    {
+      "rule_id": "R001",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:2026年北京车展数字化展区",
+        "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：",
+        "1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感",
+        "2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理",
+        "images:c3878551dd9c4e2783efef58bb3b00fe",
+        "items:title:2026年北京车展数字化展区",
+        "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：",
+        "1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感",
+        "2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理",
+        "images:c"
+      ],
+      "suggestion": "具备项目背景标题"
+    },
+    {
+      "rule_id": "R002",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:2026年北京车展数字化展区",
+        "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：",
+        "1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感",
+        "2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理",
+        "images:c3878551dd9c4e2783efef58bb3b00fe",
+        "items:title:2026年北京车展数字化展区",
+        "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：",
+        "1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感",
+        "2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理",
+        "images:c"
+      ],
+      "suggestion": "具备项目背景内容"
+    },
+    {
+      "rule_id": "R003",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:2026年北京车展数字化展区",
+        "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：",
+        "1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感",
+        "2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理",
+        "images:c3878551dd9c4e2783efef58bb3b00fe",
+        "items:title:2026年北京车展数字化展区",
+        "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：",
+        "1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感",
+        "2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理",
+        "images:c"
+      ],
+      "suggestion": "具备项目背景图片"
+    },
+    {
+      "rule_id": "R007",
+      "status": "fail",
+      "reason": "缺少或未明确 关联产品链",
+      "evidence": [],
+      "suggestion": "具备产品链"
+    },
+    {
+      "rule_id": "R008",
+      "status": "fail",
+      "reason": "缺少或未明确 项目目标（O）",
+      "evidence": [],
+      "suggestion": "具备项目目标(O)"
+    },
+    {
+      "rule_id": "R009",
+      "status": "fail",
+      "reason": "缺少或未明确 战队OKR",
+      "evidence": [],
+      "suggestion": "具备战队OKR"
+    },
+    {
+      "rule_id": "R010",
+      "status": "fail",
+      "reason": "缺少或未明确 关联产品",
+      "evidence": [],
+      "suggestion": "具备产品"
+    },
+    {
+      "rule_id": "R011",
+      "status": "fail",
+      "reason": "缺少或未明确 目标时间范围",
+      "evidence": [],
+      "suggestion": "具备目标时间范围"
+    },
+    {
+      "rule_id": "R012",
+      "status": "fail",
+      "reason": "缺少或未明确 关键成果（KR）",
+      "evidence": [],
+      "suggestion": "具备关键成果(KR)"
+    },
+    {
+      "rule_id": "R013",
+      "status": "pass",
+      "reason": "范围材料完整",
+      "evidence": [
+        "id:321f2dc9bdf23a16c4224a0470d392d6",
+        "code:SEC01P001ZHB",
+        "processSchemaCode:1",
+        "name:战略管控云",
+        "level:L1",
+        "created:2023-04-21 16:18:20",
+        "processVersion:V1.0",
+        "processVersionId:4a5865ae7423b0e78e4d66d29e7728c1",
+        "children:id:e1431bb966057879499cd50ef7df7883",
+        "code:SEC0102M001ZHB",
+        "processSchemaCode:1.2",
+        "name:集团战略管控流程",
+        "level:L2",
+        "created:2025-04-17 14:24:02",
+        "processVersion:V1.0",
+        "busMainlineId:53",
+        "processVersionId:4da046875540e35b"
+      ],
+      "suggestion": "具备业务流程"
+    },
+    {
+      "rule_id": "R015",
+      "status": "pass",
+      "reason": "系统范围完整",
+      "evidence": [
+        "id:3b5cd092e3920ee653bf0f402a809a74",
+        "code:DE-0102",
+        "name:Cloud BOM",
+        "groupName:系统",
+        "rootName:系统",
+        "categoryName:主数据",
+        "systemName:Cloud BOM",
+        "applicationSystemName:Cloud BOM",
+        "appName:Cloud BOM",
+        "type:system",
+        "typeName:系统",
+        "ownerName:刘智亮",
+        "systemLeader:刘智亮",
+        "id:DE-0101",
+        "code:DE-0101",
+        "name:产品BOM管理系统（FBOM）",
+        "groupName:系统",
+        "rootName:系统",
+        "categoryName:主数据",
+        "systemName:产品BOM管理系统（FBOM）",
+        "applicationSystemName:产品BOM管理系统（FBOM）",
+        "appName:产品BOM管理系"
+      ],
+      "suggestion": "具备微服务（二者一种）"
+    },
+    {
+      "rule_id": "R016",
+      "status": "pass",
+      "reason": "系统范围完整",
+      "evidence": [
+        "id:3b5cd092e3920ee653bf0f402a809a74",
+        "code:DE-0102",
+        "name:Cloud BOM",
+        "groupName:系统",
+        "rootName:系统",
+        "categoryName:主数据",
+        "systemName:Cloud BOM",
+        "applicationSystemName:Cloud BOM",
+        "appName:Cloud BOM",
+        "type:system",
+        "typeName:系统",
+        "ownerName:刘智亮",
+        "systemLeader:刘智亮",
+        "id:DE-0101",
+        "code:DE-0101",
+        "name:产品BOM管理系统（FBOM）",
+        "groupName:系统",
+        "rootName:系统",
+        "categoryName:主数据",
+        "systemName:产品BOM管理系统（FBOM）",
+        "applicationSystemName:产品BOM管理系统（FBOM）",
+        "appName:产品BOM管理系"
+      ],
+      "suggestion": "具备微应用（二者一种）"
+    },
+    {
+      "rule_id": "R017",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:数字化展厅造型设计平面方案",
+        "content:①设备整体调试整体组装至展区，即插即用",
+        "②设备备份方案",
+        "③功能稳定性SLA方案（考虑AI方案生成时长、车展网络稳定性、高并发QPS）",
+        "④展前展区例行演练巡检3次",
+        "⑤现场技术服务保障方案",
+        "images:c3878551dd9c4e2783efef58bb3b00fe",
+        "265529c4189e46d994dfe80ecbb92a02",
+        "3de3c790116b466ab6ef303baf937306",
+        "ec8f10df26754d42a015e4fa9ba0d245",
+        "cb554028182740febd852b390f04eb8b",
+        "92f4a0a12a3746bf945d88978b7ce702",
+        "items:title:数字化展厅造型设计平面方案",
+        "content:①展区面积与营销打合，预留9m*6m，按实际布展酌情调整",
+        "②1块主屏，3块交互操"
+      ],
+      "suggestion": "具备项目方案标题"
+    },
+    {
+      "rule_id": "R018",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:数字化展厅造型设计平面方案",
+        "content:①设备整体调试整体组装至展区，即插即用",
+        "②设备备份方案",
+        "③功能稳定性SLA方案（考虑AI方案生成时长、车展网络稳定性、高并发QPS）",
+        "④展前展区例行演练巡检3次",
+        "⑤现场技术服务保障方案",
+        "images:c3878551dd9c4e2783efef58bb3b00fe",
+        "265529c4189e46d994dfe80ecbb92a02",
+        "3de3c790116b466ab6ef303baf937306",
+        "ec8f10df26754d42a015e4fa9ba0d245",
+        "cb554028182740febd852b390f04eb8b",
+        "92f4a0a12a3746bf945d88978b7ce702",
+        "items:title:数字化展厅造型设计平面方案",
+        "content:①展区面积与营销打合，预留9m*6m，按实际布展酌情调整",
+        "②1块主屏，3块交互操"
+      ],
+      "suggestion": "具备项目方案内容"
+    },
+    {
+      "rule_id": "R019",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:数字化展厅造型设计平面方案",
+        "content:①设备整体调试整体组装至展区，即插即用",
+        "②设备备份方案",
+        "③功能稳定性SLA方案（考虑AI方案生成时长、车展网络稳定性、高并发QPS）",
+        "④展前展区例行演练巡检3次",
+        "⑤现场技术服务保障方案",
+        "images:c3878551dd9c4e2783efef58bb3b00fe",
+        "265529c4189e46d994dfe80ecbb92a02",
+        "3de3c790116b466ab6ef303baf937306",
+        "ec8f10df26754d42a015e4fa9ba0d245",
+        "cb554028182740febd852b390f04eb8b",
+        "92f4a0a12a3746bf945d88978b7ce702",
+        "items:title:数字化展厅造型设计平面方案",
+        "content:①展区面积与营销打合，预留9m*6m，按实际布展酌情调整",
+        "②1块主屏，3块交互操"
+      ],
+      "suggestion": "具备项目方案图片"
+    },
+    {
+      "rule_id": "R026",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:product_count:0",
+        "business_process_count:0",
+        "business_unit_count:0",
+        "business_object_count:2",
+        "message:未在项目范围-开发接口中找到产品ID，无法调用业务架构评审接口。",
+        "link_label:前往EAMAP查看"
+      ],
+      "suggestion": "具备业务架构评审"
+    },
+    {
+      "rule_id": "R027",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:flow_dimension_count:0",
+        "check_point_count:0",
+        "message:参数异常",
+        "link_label:前往信息架构中心查看"
+      ],
+      "suggestion": "具备数据架构评审"
+    },
+    {
+      "rule_id": "R028",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:app_count:0",
+        "service_count:0",
+        "type:1",
+        "message:操作成功",
+        "link_label:前往云原生查看"
+      ],
+      "suggestion": "具备技术架构评审"
+    },
+    {
+      "rule_id": "R029",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:app_count:0",
+        "service_count:0",
+        "message:操作成功",
+        "link_label:前往应用开发安全平台查看"
+      ],
+      "suggestion": "具备安全架构评审"
+    },
+    {
+      "rule_id": "R030",
+      "status": "fail",
+      "reason": "能力（竞争）模型缺少完整指标。",
+      "evidence": [],
+      "suggestion": "具备能力模型（三者有一）"
+    },
+    {
+      "rule_id": "R031",
+      "status": "fail",
+      "reason": "结果（财务/客户）模型缺少完整指标。",
+      "evidence": [],
+      "suggestion": "具备结果模型（三者有一）"
+    },
+    {
+      "rule_id": "R032",
+      "status": "fail",
+      "reason": "管理体系模型缺少完整指标。",
+      "evidence": [],
+      "suggestion": "具备管理模型（三者有一）"
+    },
+    {
+      "rule_id": "R034",
+      "status": "pass",
+      "reason": "里程碑计划完整",
+      "evidence": [
+        "start:2026-02-28",
+        "end:2026-02-28",
+        "title:立项计划"
+      ],
+      "suggestion": "具备立项计划"
+    },
+    {
+      "rule_id": "R035",
+      "status": "pass",
+      "reason": "里程碑计划完整",
+      "evidence": [
+        "start:2026-03-24",
+        "end:2026-05-21",
+        "title:合同签订计划"
+      ],
+      "suggestion": "具备合同计划"
+    },
+    {
+      "rule_id": "R036",
+      "status": "fail",
+      "reason": "目标计划缺少完整时间范围",
+      "evidence": [],
+      "suggestion": "具备目标计划"
+    },
+    {
+      "rule_id": "R037",
+      "status": "fail",
+      "reason": "组织成员或开发模式不完整",
+      "evidence": [],
+      "suggestion": "具备组织架构"
+    },
+    {
+      "rule_id": "R038",
+      "status": "pass",
+      "reason": "费用构成完整",
+      "evidence": [
+        "name:信息系统服务费",
+        "amount:3489400.0",
+        "budget_subject:YSGC-PM-2603AYZ-1",
+        "calculation:按设备",
+        "purchase_mode:直接采购"
+      ],
+      "suggestion": "具备费用构成"
+    },
+    {
+      "rule_id": "R039",
+      "status": "pass",
+      "reason": "该规则标记为不需要。",
+      "evidence": [],
+      "suggestion": "无需补充此项。"
+    },
+    {
+      "rule_id": "R040",
+      "status": "pass",
+      "reason": "该规则标记为不需要。",
+      "evidence": [],
+      "suggestion": "无需补充此项。"
+    }
+  ],
+  "risks": [
+    "缺少或未明确 关联产品链",
+    "缺少或未明确 项目目标（O）",
+    "缺少或未明确 战队OKR",
+    "缺少或未明确 关联产品",
+    "缺少或未明确 目标时间范围",
+    "缺少或未明确 关键成果（KR）",
+    "能力（竞争）模型缺少完整指标。",
+    "结果（财务/客户）模型缺少完整指标。",
+    "管理体系模型缺少完整指标。",
+    "目标计划缺少完整时间范围",
+    "组织成员或开发模式不完整"
+  ],
+  "missing_information": [
+    "关联产品链",
+    "具备产品链",
+    "项目目标（O）",
+    "具备项目目标(O)",
+    "战队OKR",
+    "具备战队OKR",
+    "关联产品",
+    "具备产品",
+    "目标时间范围",
+    "具备目标时间范围",
+    "关键成果（KR）",
+    "具备关键成果(KR)",
+    "能力（竞争）模型",
+    "具备能力模型（三者有一）",
+    "结果（财务/客户）模型",
+    "具备结果模型（三者有一）",
+    "管理体系模型",
+    "具备管理模型（三者有一）",
+    "目标计划",
+    "具备目标计划",
+    "组织架构",
+    "具备组织架构"
+  ],
+  "positive_evidence": [],
+  "project_commentary": "",
+  "baseline": {
+    "generated_at": "2026-03-16T02:11:30.521912+00:00",
+    "project_name": "北京车展数字化展区项目",
+    "category": "工作台开发及实施",
+    "decision": "驳回",
+    "score": 0,
+    "statistics": {
+      "total_rules": 29,
+      "passed_rules": 18,
+      "failed_rules": 11,
+      "critical_failures": 8,
+      "major_failures": 3,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R007",
+        "review_point": "项目OKR",
+        "review_content": "关联产品链",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品链",
+        "suggestion": "具备产品链",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R008",
+        "review_point": "项目OKR",
+        "review_content": "项目目标（O）",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 项目目标（O）",
+        "suggestion": "具备项目目标(O)",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R009",
+        "review_point": "项目OKR",
+        "review_content": "战队OKR",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 战队OKR",
+        "suggestion": "具备战队OKR",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R010",
+        "review_point": "项目OKR",
+        "review_content": "关联产品",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品",
+        "suggestion": "具备产品",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R011",
+        "review_point": "项目OKR",
+        "review_content": "目标时间范围",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 目标时间范围",
+        "suggestion": "具备目标时间范围",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R012",
+        "review_point": "项目OKR",
+        "review_content": "关键成果（KR）",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关键成果（KR）",
+        "suggestion": "具备关键成果(KR)",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R030",
+        "review_point": "能力（竞争）模型",
+        "review_content": "能力（竞争）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "能力（竞争）模型缺少完整指标。",
+        "suggestion": "具备能力模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R031",
+        "review_point": "结果（财务/客户）模型",
+        "review_content": "结果（财务/客户）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "结果（财务/客户）模型缺少完整指标。",
+        "suggestion": "具备结果模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R032",
+        "review_point": "管理体系模型",
+        "review_content": "管理体系模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "管理体系模型缺少完整指标。",
+        "suggestion": "具备管理模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R037",
+        "review_point": "组织架构",
+        "review_content": "组织架构",
+        "status": "fail",
+        "severity": "critical",
+        "message": "组织成员或开发模式不完整",
+        "suggestion": "具备组织架构",
+        "evidence": ""
+      }
+    ],
+    "rule_results": [
+      {
+        "rule_id": "R001",
+        "review_point": "项目背景",
+        "review_content": "背景标题",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目背景标题",
+        "evidence": "title:2026年北京车展数字化展区\ncontent:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理\nimages:c3878551dd9c4e2783efef58bb3b00fe\nitems:title:2026年北京车展数字化展区\ncontent:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理\nimages:c"
+      },
+      {
+        "rule_id": "R002",
+        "review_point": "项目背景",
+        "review_content": "背景内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目背景内容",
+        "evidence": "title:2026年北京车展数字化展区\ncontent:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理\nimages:c3878551dd9c4e2783efef58bb3b00fe\nitems:title:2026年北京车展数字化展区\ncontent:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理\nimages:c"
+      },
+      {
+        "rule_id": "R003",
+        "review_point": "项目背景",
+        "review_content": "背景图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目背景图片",
+        "evidence": "title:2026年北京车展数字化展区\ncontent:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理\nimages:c3878551dd9c4e2783efef58bb3b00fe\nitems:title:2026年北京车展数字化展区\ncontent:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理\nimages:c"
+      },
+      {
+        "rule_id": "R007",
+        "review_point": "项目OKR",
+        "review_content": "关联产品链",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品链",
+        "suggestion": "具备产品链",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R008",
+        "review_point": "项目OKR",
+        "review_content": "项目目标（O）",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 项目目标（O）",
+        "suggestion": "具备项目目标(O)",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R009",
+        "review_point": "项目OKR",
+        "review_content": "战队OKR",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 战队OKR",
+        "suggestion": "具备战队OKR",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R010",
+        "review_point": "项目OKR",
+        "review_content": "关联产品",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品",
+        "suggestion": "具备产品",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R011",
+        "review_point": "项目OKR",
+        "review_content": "目标时间范围",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 目标时间范围",
+        "suggestion": "具备目标时间范围",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R012",
+        "review_point": "项目OKR",
+        "review_content": "关键成果（KR）",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关键成果（KR）",
+        "suggestion": "具备关键成果(KR)",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R013",
+        "review_point": "项目范围",
+        "review_content": "业务流程",
+        "status": "pass",
+        "severity": "critical",
+        "message": "范围材料完整",
+        "suggestion": "具备业务流程",
+        "evidence": "id:321f2dc9bdf23a16c4224a0470d392d6\ncode:SEC01P001ZHB\nprocessSchemaCode:1\nname:战略管控云\nlevel:L1\ncreated:2023-04-21 16:18:20\nprocessVersion:V1.0\nprocessVersionId:4a5865ae7423b0e78e4d66d29e7728c1\nchildren:id:e1431bb966057879499cd50ef7df7883\ncode:SEC0102M001ZHB\nprocessSchemaCode:1.2\nname:集团战略管控流程\nlevel:L2\ncreated:2025-04-17 14:24:02\nprocessVersion:V1.0\nbusMainlineId:53\nprocessVersionId:4da046875540e35b"
+      },
+      {
+        "rule_id": "R015",
+        "review_point": "系统范围",
+        "review_content": "微服务",
+        "status": "pass",
+        "severity": "critical",
+        "message": "系统范围完整",
+        "suggestion": "具备微服务（二者一种）",
+        "evidence": "id:3b5cd092e3920ee653bf0f402a809a74\ncode:DE-0102\nname:Cloud BOM\ngroupName:系统\nrootName:系统\ncategoryName:主数据\nsystemName:Cloud BOM\napplicationSystemName:Cloud BOM\nappName:Cloud BOM\ntype:system\ntypeName:系统\nownerName:刘智亮\nsystemLeader:刘智亮\nid:DE-0101\ncode:DE-0101\nname:产品BOM管理系统（FBOM）\ngroupName:系统\nrootName:系统\ncategoryName:主数据\nsystemName:产品BOM管理系统（FBOM）\napplicationSystemName:产品BOM管理系统（FBOM）\nappName:产品BOM管理系"
+      },
+      {
+        "rule_id": "R016",
+        "review_point": "系统范围",
+        "review_content": "微应用",
+        "status": "pass",
+        "severity": "critical",
+        "message": "系统范围完整",
+        "suggestion": "具备微应用（二者一种）",
+        "evidence": "id:3b5cd092e3920ee653bf0f402a809a74\ncode:DE-0102\nname:Cloud BOM\ngroupName:系统\nrootName:系统\ncategoryName:主数据\nsystemName:Cloud BOM\napplicationSystemName:Cloud BOM\nappName:Cloud BOM\ntype:system\ntypeName:系统\nownerName:刘智亮\nsystemLeader:刘智亮\nid:DE-0101\ncode:DE-0101\nname:产品BOM管理系统（FBOM）\ngroupName:系统\nrootName:系统\ncategoryName:主数据\nsystemName:产品BOM管理系统（FBOM）\napplicationSystemName:产品BOM管理系统（FBOM）\nappName:产品BOM管理系"
+      },
+      {
+        "rule_id": "R017",
+        "review_point": "项目方案",
+        "review_content": "项目方案",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目方案标题",
+        "evidence": "title:数字化展厅造型设计平面方案\ncontent:①设备整体调试整体组装至展区，即插即用\n②设备备份方案\n③功能稳定性SLA方案（考虑AI方案生成时长、车展网络稳定性、高并发QPS）\n④展前展区例行演练巡检3次\n⑤现场技术服务保障方案\nimages:c3878551dd9c4e2783efef58bb3b00fe\n265529c4189e46d994dfe80ecbb92a02\n3de3c790116b466ab6ef303baf937306\nec8f10df26754d42a015e4fa9ba0d245\ncb554028182740febd852b390f04eb8b\n92f4a0a12a3746bf945d88978b7ce702\nitems:title:数字化展厅造型设计平面方案\ncontent:①展区面积与营销打合，预留9m*6m，按实际布展酌情调整\n②1块主屏，3块交互操"
+      },
+      {
+        "rule_id": "R018",
+        "review_point": "项目方案",
+        "review_content": "方案内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目方案内容",
+        "evidence": "title:数字化展厅造型设计平面方案\ncontent:①设备整体调试整体组装至展区，即插即用\n②设备备份方案\n③功能稳定性SLA方案（考虑AI方案生成时长、车展网络稳定性、高并发QPS）\n④展前展区例行演练巡检3次\n⑤现场技术服务保障方案\nimages:c3878551dd9c4e2783efef58bb3b00fe\n265529c4189e46d994dfe80ecbb92a02\n3de3c790116b466ab6ef303baf937306\nec8f10df26754d42a015e4fa9ba0d245\ncb554028182740febd852b390f04eb8b\n92f4a0a12a3746bf945d88978b7ce702\nitems:title:数字化展厅造型设计平面方案\ncontent:①展区面积与营销打合，预留9m*6m，按实际布展酌情调整\n②1块主屏，3块交互操"
+      },
+      {
+        "rule_id": "R019",
+        "review_point": "项目方案",
+        "review_content": "方案图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目方案图片",
+        "evidence": "title:数字化展厅造型设计平面方案\ncontent:①设备整体调试整体组装至展区，即插即用\n②设备备份方案\n③功能稳定性SLA方案（考虑AI方案生成时长、车展网络稳定性、高并发QPS）\n④展前展区例行演练巡检3次\n⑤现场技术服务保障方案\nimages:c3878551dd9c4e2783efef58bb3b00fe\n265529c4189e46d994dfe80ecbb92a02\n3de3c790116b466ab6ef303baf937306\nec8f10df26754d42a015e4fa9ba0d245\ncb554028182740febd852b390f04eb8b\n92f4a0a12a3746bf945d88978b7ce702\nitems:title:数字化展厅造型设计平面方案\ncontent:①展区面积与营销打合，预留9m*6m，按实际布展酌情调整\n②1块主屏，3块交互操"
+      },
+      {
+        "rule_id": "R026",
+        "review_point": "专业领域评审",
+        "review_content": "业务架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备业务架构评审",
+        "evidence": "summary:product_count:0\nbusiness_process_count:0\nbusiness_unit_count:0\nbusiness_object_count:2\nmessage:未在项目范围-开发接口中找到产品ID，无法调用业务架构评审接口。\nlink_label:前往EAMAP查看"
+      },
+      {
+        "rule_id": "R027",
+        "review_point": "专业领域评审",
+        "review_content": "数据架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备数据架构评审",
+        "evidence": "summary:flow_dimension_count:0\ncheck_point_count:0\nmessage:参数异常\nlink_label:前往信息架构中心查看"
+      },
+      {
+        "rule_id": "R028",
+        "review_point": "专业领域评审",
+        "review_content": "技术架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备技术架构评审",
+        "evidence": "summary:app_count:0\nservice_count:0\ntype:1\nmessage:操作成功\nlink_label:前往云原生查看"
+      },
+      {
+        "rule_id": "R029",
+        "review_point": "专业领域评审",
+        "review_content": "安全架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备安全架构评审",
+        "evidence": "summary:app_count:0\nservice_count:0\nmessage:操作成功\nlink_label:前往应用开发安全平台查看"
+      },
+      {
+        "rule_id": "R030",
+        "review_point": "能力（竞争）模型",
+        "review_content": "能力（竞争）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "能力（竞争）模型缺少完整指标。",
+        "suggestion": "具备能力模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R031",
+        "review_point": "结果（财务/客户）模型",
+        "review_content": "结果（财务/客户）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "结果（财务/客户）模型缺少完整指标。",
+        "suggestion": "具备结果模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R032",
+        "review_point": "管理体系模型",
+        "review_content": "管理体系模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "管理体系模型缺少完整指标。",
+        "suggestion": "具备管理模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R034",
+        "review_point": "项目里程碑",
+        "review_content": "立项计划",
+        "status": "pass",
+        "severity": "critical",
+        "message": "里程碑计划完整",
+        "suggestion": "具备立项计划",
+        "evidence": "start:2026-02-28\nend:2026-02-28\ntitle:立项计划"
+      },
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "pass",
+        "severity": "critical",
+        "message": "里程碑计划完整",
+        "suggestion": "具备合同计划",
+        "evidence": "start:2026-03-24\nend:2026-05-21\ntitle:合同签订计划"
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R037",
+        "review_point": "组织架构",
+        "review_content": "组织架构",
+        "status": "fail",
+        "severity": "critical",
+        "message": "组织成员或开发模式不完整",
+        "suggestion": "具备组织架构",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R038",
+        "review_point": "费用构成",
+        "review_content": "费用构成",
+        "status": "pass",
+        "severity": "critical",
+        "message": "费用构成完整",
+        "suggestion": "具备费用构成",
+        "evidence": "name:信息系统服务费\namount:3489400.0\nbudget_subject:YSGC-PM-2603AYZ-1\ncalculation:按设备\npurchase_mode:直接采购"
+      },
+      {
+        "rule_id": "R039",
+        "review_point": "长尾费用",
+        "review_content": "不需要",
+        "status": "pass",
+        "severity": "minor",
+        "message": "该规则标记为不需要。",
+        "suggestion": "无需补充此项。",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R040",
+        "review_point": "历史投入",
+        "review_content": "不需要",
+        "status": "pass",
+        "severity": "minor",
+        "message": "该规则标记为不需要。",
+        "suggestion": "无需补充此项。",
+        "evidence": ""
+      }
+    ]
+  },
+  "segments": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容评审未通过，主要因项目OKR部分缺失关键信息，包括关联产品链、项目目标（O）、战队OKR、关联产品、目标时间范围及关键成果（KR），均未提供有效材料，构成严重缺陷。其余如背景、方案、系统范围等虽已覆盖，但无法弥补核心OKR缺失的致命问题。"
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "驳回",
+      "summary": "项目在专业领域评审中虽各子项状态标记为通过，但实际存在关键信息缺失与接口调用异常问题。业务架构评审因未找到产品ID导致无法调用接口，数据架构评审提示参数异常，均表明评审材料不完整或不可用。尽管规则基线中标记为通过，但根据实际页面内容，评审依据不足，需补充完整架构评审材料。"
+    },
+    {
+      "tab": "TAM模型评审",
+      "decision": "驳回",
+      "summary": "TAM模型评审未通过，三个子模型均缺失完整指标，不符合项目立项要求。"
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，目标计划缺失完整时间范围，导致关键规则R036未通过，整体审批不通过。"
+    },
+    {
+      "tab": "组织架构",
+      "decision": "驳回",
+      "summary": "组织架构模块存在关键缺陷，成员信息为空且开发模式未填写，不符合项目立项基本要求。"
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面评审通过。费用构成完整，长尾费用与历史投入均无需提供，符合规则基线要求。"
+    }
+  ],
+  "run_dir": "E:\\pyproject\\ProjectApproval\\runtime\\approval_runs\\20260316-101129_19ab30ec73dc40fd8c42be7972a71b06",
+  "generated_at": "2026-03-16T10:13:05",
+  "decision_source": "baseline_aligned_llm_segmented"
+}

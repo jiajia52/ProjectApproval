@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "message": "操作成功",
+  "data": [
+    {
+      "id": "ea29c41fd7ca47e2b1c079a8f458969a",
+      "projectEstablishmentId": "4a7907b601c44250bd50d68e5c31b4b5",
+      "parentId": null,
+      "milestoneOrder": "1",
+      "milestoneType": null,
+      "milestoneTitle": "立项计划",
+      "milestoneDate": "2026-03-31",
+      "milestoneDoneDate": null,
+      "milestoneGoal": null,
+      "deliverables": "1,28",
+      "createUser": 87861,
+      "createTime": "2026-03-06T08:48:20.000+00:00",
+      "updateUser": null,
+      "updateTime": null,
+      "acceptStatus": 3,
+      "deliverablesName": "立项申请报告,立项会议纪要",
+      "flowLevel": null,
+      "milestoneStartDate": "2026-03-06",
+      "okrFlag": null
+    }
+  ]
+}

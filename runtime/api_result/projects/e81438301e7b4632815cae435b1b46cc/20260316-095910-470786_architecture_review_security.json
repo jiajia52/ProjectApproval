@@ -1,0 +1,24 @@
+{
+  "api_name": "architecture_review_security",
+  "method": "POST",
+  "path": "/third/securityCheckList",
+  "payload": {
+    "projectId": "e81438301e7b4632815cae435b1b46cc",
+    "projectCode": "HR-2602AYZ",
+    "systemCode": "",
+    "type": 1
+  },
+  "project_id": "e81438301e7b4632815cae435b1b46cc",
+  "result": {
+    "code": 200,
+    "message": "操作成功",
+    "data": {
+      "appCount": 0,
+      "serviceCount": 0,
+      "safetyLevel": null,
+      "dimensionList": null
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-16T09:59:10+08:00"
+}

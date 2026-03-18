@@ -1,0 +1,130 @@
+{
+  "api_name": "project_uploading",
+  "method": "GET",
+  "path": "/projectUploading/list/ae87578d19674fceb0ec30ab5a472ca3",
+  "payload": null,
+  "project_id": "ae87578d19674fceb0ec30ab5a472ca3",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+      "1": [
+        {
+          "id": 1966501831,
+          "projectId": "ae87578d19674fceb0ec30ab5a472ca3",
+          "title": "项目背景",
+          "content": "该软件为上位机软件，主要作用为实现控制软件功能自动化测试。该测试工具具备自动调用测试环境、自动运行测试用例、自动导出测试报告等功能。当控制软件变更需进行回归测试时，只需一键运行用例库即可实现对控制软件的全功能测试，大大提高测试效率\n   1. 使用部门：包含发动机开发部、北京座舱、电池开发部、电驱开发部、底盘开发部5个部门\n   2. 软件现有数量：7套\n          使用人数：20人\n          软件负荷：100%\n          使用效果：良好\n   3. 面临问题：借用4套到期后不再续借会导致通过量不足\n",
+          "imageUrl": "eb27a17389aa4b9db2b8871a1aa05edc",
+          "type": 1,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:10:14",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-10-09 08:53:48",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "2": [
+        {
+          "id": 1966501832,
+          "projectId": "ae87578d19674fceb0ec30ab5a472ca3",
+          "title": "项目目标",
+          "content": "问题解决：通过软件购置开展相关自动化测试工作，可以解决软件集成测试、合格性测试效率低的问题\n能力提升：控制软件自动化测试能力\n效率提升：利用该工具后软件合格性工时由单次40小时减少到单次40分钟，年生成任务预计18个",
+          "imageUrl": "c5d4a78b8b014f279190204cf44316e1",
+          "type": 2,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:10:14",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-10-09 08:53:48",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": 1,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "3": [
+        {
+          "id": 1966501833,
+          "projectId": "ae87578d19674fceb0ec30ab5a472ca3",
+          "title": "项目方案",
+          "content": "正版（7）+借用（4）\n正版分布：发动机开发部-3套 2020版本 北京座舱开发部-3套  2024版本电池开发部-1套  2022  版本\n试用版分布：发动机开发部-1套 2020版本、电驱开发部-2套 2025版本、底盘开发部 1套",
+          "imageUrl": "22e7dcce730c4f60854e06304486590b",
+          "type": 3,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:10:14",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-10-09 08:53:48",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "4": [
+        {
+          "id": 1966501834,
+          "projectId": "ae87578d19674fceb0ec30ab5a472ca3",
+          "title": "研发业务全景图",
+          "content": "研发业务全景图",
+          "imageUrl": "19943790243e44b5b098f520210e1734",
+          "type": 4,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:10:14",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-10-09 08:53:48",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "5": [
+        {
+          "id": 1966501835,
+          "projectId": "ae87578d19674fceb0ec30ab5a472ca3",
+          "title": "工具软件采购管理模型",
+          "content": "工具软件采购管理模型",
+          "imageUrl": "916a92030e114a80a26ad65fa8812be5",
+          "type": 5,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:10:14",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-10-09 08:53:48",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-16T10:59:29+08:00"
+}

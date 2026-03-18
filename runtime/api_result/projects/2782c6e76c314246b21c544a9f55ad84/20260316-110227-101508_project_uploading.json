@@ -1,0 +1,130 @@
+{
+  "api_name": "project_uploading",
+  "method": "GET",
+  "path": "/projectUploading/list/2782c6e76c314246b21c544a9f55ad84",
+  "payload": null,
+  "project_id": "2782c6e76c314246b21c544a9f55ad84",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+      "1": [
+        {
+          "id": 1966501876,
+          "projectId": "2782c6e76c314246b21c544a9f55ad84",
+          "title": "项目背景\n",
+          "content": "ANSYS mechanical是一款高端通用机械分析软件。具有一般静力学、动力学和非线性分析能力，也具有稳态、瞬态、热膨胀等所有的热分析能力以及结构和热的耦合分析能力，可以处理任意复杂的装配体，涵盖各种金属材料和橡胶、泡沫、岩土等非金属材料。\n      1. 使用部门：新能源系统开发部\n      2. 软件现有数量：1个\n          使用人数：5人\n          软件负荷：50%\n          使用效果：良好\n      3. 面临问题：无",
+          "imageUrl": "39921d2888f942d4a03223397e300188",
+          "type": 1,
+          "creatorId": 84283,
+          "creator": "zhongxin3",
+          "createTime": "2025-09-11 16:38:22",
+          "modifierId": 84283,
+          "modifier": "zhongxin3",
+          "updateTime": "2026-02-26 11:16:45",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "2": [
+        {
+          "id": 1966501877,
+          "projectId": "2782c6e76c314246b21c544a9f55ad84",
+          "title": "项目目标",
+          "content": "通过Ansys Mechanical软件购置开展电源模块相关",
+          "imageUrl": "3dd987b614074da382f11b4cad07e12e",
+          "type": 2,
+          "creatorId": 84283,
+          "creator": "zhongxin3",
+          "createTime": "2025-09-11 16:38:22",
+          "modifierId": 84283,
+          "modifier": "zhongxin3",
+          "updateTime": "2026-02-26 11:16:45",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": 1,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "3": [
+        {
+          "id": 1966501878,
+          "projectId": "2782c6e76c314246b21c544a9f55ad84",
+          "title": "项目方案",
+          "content": "2024年首次购买，2025年例行升级",
+          "imageUrl": "934226e0098345a38d7acc0b9b6a9d0c",
+          "type": 3,
+          "creatorId": 84283,
+          "creator": "zhongxin3",
+          "createTime": "2025-09-11 16:38:22",
+          "modifierId": 84283,
+          "modifier": "zhongxin3",
+          "updateTime": "2026-02-26 11:16:45",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "4": [
+        {
+          "id": 1966501879,
+          "projectId": "2782c6e76c314246b21c544a9f55ad84",
+          "title": "研发业务全景图",
+          "content": "研发业务全景图",
+          "imageUrl": "e0ff425450c84ab4bad49aecf9bd9dca",
+          "type": 4,
+          "creatorId": 84283,
+          "creator": "zhongxin3",
+          "createTime": "2025-09-11 16:38:22",
+          "modifierId": 84283,
+          "modifier": "zhongxin3",
+          "updateTime": "2026-02-26 11:16:45",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "5": [
+        {
+          "id": 1966501880,
+          "projectId": "2782c6e76c314246b21c544a9f55ad84",
+          "title": "管理模型",
+          "content": "工具软件采购管理模型",
+          "imageUrl": "c03a677f174244a3ba9d0f2a2700142a",
+          "type": 5,
+          "creatorId": 84283,
+          "creator": "zhongxin3",
+          "createTime": "2025-09-11 16:38:22",
+          "modifierId": 84283,
+          "modifier": "zhongxin3",
+          "updateTime": "2026-02-26 11:16:45",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-16T11:02:27+08:00"
+}

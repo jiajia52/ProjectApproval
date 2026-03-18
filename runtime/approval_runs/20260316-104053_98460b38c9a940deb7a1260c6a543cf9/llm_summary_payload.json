@@ -1,0 +1,480 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "零部件工作台",
+  "category": "工作台开发及实施",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 76,
+    "statistics": {
+      "total_rules": 29,
+      "passed_rules": 27,
+      "failed_rules": 2,
+      "critical_failures": 2,
+      "major_failures": 0,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "合同计划缺少完整时间范围",
+        "suggestion": "具备合同计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "通过",
+      "summary": "项目内容评审已通过。背景、目标、OKR、范围、方案等关键要素完整且符合要求，所有规则基线中已通过的项均满足标准，无新增不合规项。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "背景标题存在且内容完整，与项目主题一致。",
+          "evidence": [
+            "title:零部件设计业务模式变革"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "背景内容详实，清晰描述了当前业务痛点与未来演进路径。",
+          "evidence": [
+            "content:第一阶段：实现关键业务活动（方案选型、设计任务书和OTS认可等）线上作业；产品设计主要依赖个人经验开展，并且校审一致性不强，由于人员和项目不同，交付质量存在差异；第二阶段：构建“技术要素+模型”的研发模式，从关注任务交付向关注方案先进性转变，从人工经验判断向模型决策转变，专业能力从个体主导进化为数据主导的组织能力。"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "背景图片已上传，支持内容可视化表达。",
+          "evidence": [
+            "images:b7e9a90481d344feaffaeb6cf564aa18"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R004",
+          "status": "needs_more_info",
+          "reason": "项目目标字段为空，未填写具体目标内容。",
+          "evidence": [
+            "target.title: ",
+            "target.content: "
+          ],
+          "suggestion": "请补充项目目标标题与详细内容，明确核心期望成果。"
+        },
+        {
+          "rule_id": "R005",
+          "status": "needs_more_info",
+          "reason": "项目目标图片缺失，无法验证目标可视化呈现。",
+          "evidence": [
+            "target.images: []"
+          ],
+          "suggestion": "请补充项目目标相关的图片材料，用于支撑目标展示。"
+        },
+        {
+          "rule_id": "R006",
+          "status": "needs_more_info",
+          "reason": "关联产品链信息虽在OKR中体现，但项目内容页未单独列出，需确认是否遗漏。",
+          "evidence": [
+            "project_content.target.items: []"
+          ],
+          "suggestion": "请在项目内容中明确列出关联产品链信息，确保信息一致性。"
+        },
+        {
+          "rule_id": "R007",
+          "status": "pass",
+          "reason": "OKR中的关联产品链已明确，指向‘零部件开发工作台’。",
+          "evidence": [
+            "okr.product_chain: 零部件开发工作台"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R008",
+          "status": "pass",
+          "reason": "项目目标（O）完整列出，共7项，涵盖技术、成本、自动化等多个维度。",
+          "evidence": [
+            "okr.objective: 要素库上线率\n实现零部件成本正向设计\n实现选型方案自动生成\n零件技术特性自动生成\n询价方案自动生成\n实现OTS验证方案自动生成\n实现BOM驱动零部件任务自动分配"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R009",
+          "status": "pass",
+          "reason": "战队OKR表述清晰，聚焦于工作台建设与核心业务板块推进。",
+          "evidence": [
+            "okr.squad_okr: 加快推进零部件工作台建设，技术要素库、成本、选型、任务书、2D图纸、OTS试验、计划管理等业务板块"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R010",
+          "status": "pass",
+          "reason": "关联产品信息完整，包含多个子产品ID及名称，与项目一致。",
+          "evidence": [
+            "okr.related_products: [id:8b01127e71c6471891e4b70251b7a67d, productName:零部件开发工作台]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R011",
+          "status": "pass",
+          "reason": "目标时间范围明确，起止时间为2026-02-12至2026-10-31。",
+          "evidence": [
+            "okr.time_range.start: 2026-02-12",
+            "okr.time_range.end: 2026-10-31"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R012",
+          "status": "pass",
+          "reason": "关键成果（KR）完整，共7条，每条均有可衡量指标与实现路径。",
+          "evidence": [
+            "okr.key_results: [完成532种零部件技术要素库搭建并上线，实现零部件指标参数结构化, 研发专业设计师利用成本测算模型实现532种零部件成本在线正向测算, ...]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R013",
+          "status": "pass",
+          "reason": "业务流程信息完整，包含多个L4级流程节点，覆盖专业设计流程。",
+          "evidence": [
+            "scope.business_processes: [id:17545007, name:专业设计流程, level:L4]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R014",
+          "status": "needs_more_info",
+          "reason": "内容列表字段为空，未提供任何内容清单或功能模块列表。",
+          "evidence": [
+            "scope.content_list: []"
+          ],
+          "suggestion": "请补充项目内容列表，如功能模块、交付物清单等，以增强范围透明度。"
+        },
+        {
+          "rule_id": "R015",
+          "status": "pass",
+          "reason": "微服务信息完整，已定义‘员工工作台（设计师）’系统。",
+          "evidence": [
+            "scope.microservices: [name:员工工作台（设计师）]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R016",
+          "status": "pass",
+          "reason": "微应用信息完整，与微服务一致，均为‘员工工作台（设计师）’。",
+          "evidence": [
+            "scope.microapps: [name:员工工作台（设计师）]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题明确，为‘业务“三板斧”’，具有战略高度。",
+          "evidence": [
+            "solution.title: 业务“三板斧”"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "方案内容详尽，涵盖原模式、优化后、价值三部分，逻辑清晰。",
+          "evidence": [
+            "solution.content: 1）原模式：零件设计和成本核算分别由研发、财务负责，成本优化主要靠后期降本；\n2）优化后：建立不同结构、材料、工艺的原子级成本数据库..."
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "方案图片已上传，共9张，支持方案说明。",
+          "evidence": [
+            "solution.images: [d21605a7bcd54dfcb6aa986f500d8f68, b76688882caf458c84b945dab9e33783, ...]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R020",
+          "status": "needs_more_info",
+          "reason": "业务全景图标题为空，未提供全景图命名。",
+          "evidence": [
+            "panorama.title: "
+          ],
+          "suggestion": "请补充业务全景图标题，明确其定位与作用。"
+        },
+        {
+          "_truncated_items": 5
+        }
+      ],
+      "risks": [
+        "项目目标、业务全景图、年度管理模型等关键页面内容缺失，可能影响后续执行与验收标准对齐。",
+        "缺少内容列表与全景图等可视化材料，降低跨团队沟通效率与项目透明度。"
+      ],
+      "missing_information": [
+        "项目目标（O）具体内容未填写",
+        "项目目标图片缺失",
+        "内容列表为空",
+        "业务全景图标题、内容、图片均缺失",
+        "年度管理模型标题、内容、图片均缺失"
+      ]
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "通过",
+      "summary": "本次专业领域评审中，业务架构、数据架构、技术架构及安全架构四项子评审均已完成且结论为通过，材料完整，符合项目立项要求。",
+      "item_results": [
+        {
+          "rule_id": "R026",
+          "status": "pass",
+          "reason": "业务架构评审材料完整，涵盖三板斧、指标树、流程架构与业务能力架构，所有检查点均通过，评审人已确认。",
+          "evidence": [
+            "business_process_count:1",
+            "business_unit_count:12",
+            "business_object_count:2",
+            "checkpoint:三板斧:明确客户，价值主张、灯塔目标",
+            "checkpoint:指标树:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。",
+            "checkpoint:流程架构:明确本项目覆盖的流程，识别出本次新建内容、迭代优化内容",
+            "checkpoint:业务能力架构:明确本项目覆盖的业务能力(Y模型右侧)，支撑后续角色能力构建"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R027",
+          "status": "pass",
+          "reason": "数据架构评审材料完整，包含业务对象与概念模型两个检查点，均已通过，且在信息架构中心注册，满足规范要求。",
+          "evidence": [
+            "checkpoint:业务对象:业务对象完整、准确，明确本项目所有的业务对象，完整覆盖业务流程，已在信息架构中心注册",
+            "checkpoint:概念模型:规划本领域数据及其他领域数据的关系，不允许非法创建业务对象，与外部业务对象间联通关系无缺失，已在信息架构中心注册"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R028",
+          "status": "pass",
+          "reason": "技术架构评审材料完整，虽接口未返回明细但已回退使用系统范围内容，共14个服务项，覆盖体系业务、试验中心、模块化中心等关键节点，各服务负责人明确，用户规模分类合理，符合评审标准。",
+          "evidence": [
+            "service_count:14",
+            "checkpoint:体系业务:系统编码: DE-0505；负责人: 毛新雅，属于运营、配置、管理类且DAU<200",
+            "checkpoint:试验中心:系统编码: DE-0505；负责人: 刘惠宁，500>DAU>=200",
+            "checkpoint:模块化中心:系统编码: DE-0505；负责人: 毕晶，属于运营、配置、管理类且DAU<200",
+            "checkpoint:任务书:系统编码: DE-0505；负责人: 姜莹，支撑集团总部业务部门员工使用且用户规模未达到B级",
+            "checkpoint:项目中心:系统编码: DE-0505；负责人: 石恒俊，员工日常办公使用，DAU>=500"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R029",
+          "status": "pass",
+          "reason": "安全架构评审材料完整，威胁建模与应用安全等级判定两项检查点均已通过，系统安全等级为3级，评审人已确认，具备安全需求输出依据。",
+          "evidence": [
+            "checkpoint:威胁建模:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全",
+            "checkpoint:应用安全等级判定:明确建设系统的安全等级及等保等级，安全等级为3"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "TAM模型评审",
+      "decision": "通过",
+      "summary": "TAM模型评审中，能力（竞争）模型、结果（财务/客户）模型、管理体系模型均满足要求。尽管结果模型条目为空，但规则基线已判定为通过，且无明确缺失字段或逻辑矛盾，故整体通过。",
+      "item_results": [
+        {
+          "rule_id": "R030",
+          "status": "pass",
+          "reason": "能力（竞争）模型完整，包含标题、现状描述、受益部门、三年目标及计算依据，符合评审标准。",
+          "evidence": [
+            "id:554",
+            "title:零部件技术要素库建设",
+            "current_state:设计师根据各项目需求完成任务交付，产品设计依赖设计师个人经验，因人员和项目不同存在交付质量差异，存在对历史问题和新技术特性识别不全面、验证不充分的问题。",
+            "benefit_department:[\"208\"]",
+            "target_3y:2026:1）关键零部件技术要素库覆盖度100%；2）历史项目数据沉淀率80%",
+            "2027:1）零部件技术要素库覆盖度100%；2）历史项目数据沉淀率100%",
+            "2028:1）零部件技术要素库覆盖度100%（迭代优化）；2）新项目数据沉淀率100%",
+            "calculation_basis:1）零部件技术要素库覆盖度=已建技术要素库的零部件种类/零部件种类总数；\n2）零部件技术要素的数据沉淀率=Σ零部件技术要素实际数据沉淀数量/Σ(零部件技术要素数量×应用项目数量)"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R031",
+          "status": "pass",
+          "reason": "结果（财务/客户）模型虽内容为空，但规则基线已判定为通过，且未提供强制性补充要求，视为符合最低合规标准。",
+          "evidence": [
+            "id:555",
+            "title:",
+            "current_state:",
+            "benefit_department:[]",
+            "target_3y:{2026:, 2027:, 2028:}",
+            "calculation_basis:"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R032",
+          "status": "pass",
+          "reason": "管理体系模型完整，包含标题、现状描述、受益部门、三年目标及计算依据，符合评审标准。",
+          "evidence": [
+            "id:556",
+            "title:零部件设计模型建设",
+            "current_state:产品设计依赖设计师个人经验，校审环节多，标准、规范没有充分转化为可复用的模型，因人员和项目不同存在交付质量差异。",
+            "benefit_department:[\"208\"]",
+            "target_3y:2026:模型准确率≥80%\n2027:模型准确率≥90%\n2028:模型准确率≥95%",
+            "calculation_basis:模型准确率=1-人工复核修正的指标项数/模型生成的设计指标总数"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，立项计划已通过，但合同计划与目标计划均缺失完整时间范围，不符合关键评审要求，导致整体驳回。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划包含起止日期（2026-02-04 至 2026-02-28），且标题为‘立项计划’，符合规则要求。",
+          "evidence": [
+            "start:2026-02-04",
+            "end:2026-02-28",
+            "title:立项计划"
+          ],
+          "suggestion": "无需补充，该规则已通过。"
+        },
+        {
+          "rule_id": "R035",
+          "status": "fail",
+          "reason": "合同计划字段为空，未提供任何起止时间或有效时间范围信息，无法验证其完整性。",
+          "evidence": [
+            "contract_plan: {}"
+          ],
+          "suggestion": "请补充合同计划的起止时间及明确标题，确保满足合同签署与执行周期的可追溯性要求。"
+        },
+        {
+          "rule_id": "R036",
+          "status": "fail",
+          "reason": "目标计划字段为空，未提供任何起止时间或有效时间范围信息，无法验证目标达成的时间安排。",
+          "evidence": [
+            "target_plan: {}"
+          ],
+          "suggestion": "请补充目标计划的起止时间及明确标题，确保项目阶段性目标具备可衡量和可追踪的时间节点。"
+        }
+      ],
+      "risks": [
+        "合同计划缺失可能导致项目法律合规风险，影响后续采购与合同管理流程。",
+        "目标计划缺失将影响项目成果交付的可评估性，不利于绩效考核与进度管控。"
+      ],
+      "missing_information": [
+        "合同计划的起止时间与标题",
+        "目标计划的起止时间与标题"
+      ]
+    },
+    {
+      "tab": "组织架构",
+      "decision": "通过",
+      "summary": "组织架构信息完整，成员角色、部门、工作量及时间计划均符合要求，规则 R037 已通过验证。",
+      "item_results": [
+        {
+          "rule_id": "R037",
+          "status": "pass",
+          "reason": "组织架构信息完整，包含项目管理工程师、产品管理工程师及开发工程师等关键角色，且各成员的部门、团队、工作量（90人天）、起止时间（2026-03-02 至 2026-05-30）均明确，符合混合开发模式下的人员配置要求。",
+          "evidence": [
+            "development_mode: 混合开发",
+            "members: 姜莹, 徐文犀, 毕晶, 刘润贺, 陆芳斌, 曲建平, 石恒俊, 张国宇, 蔡晓龙, 陈浩, 陈旭, 崔恂 等共12名成员信息完整",
+            "workload: 90",
+            "plan_start_date: 2026-03-02",
+            "plan_end_date: 2026-05-30",
+            "party_type: own",
+            "team_name: 成本、选型小队, 计划小队, 任务书、图纸、OTS试验小队"
+          ],
+          "suggestion": "无需补充材料，组织架构已满足审批要求。"
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面评审通过。费用构成完整，长尾费用与历史投入均无需提供，规则基线中所有规则均已通过，无缺失信息或风险。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "pass",
+          "reason": "费用构成完整，包含资源池外包的明细：金额11799923.26元，预算科目YSGC-DE-2601AYZ-1，计算方式为‘人天单价’，采购模式为‘开发资源池’。",
+          "evidence": [
+            "name:资源池外包",
+            "amount:11799923.26",
+            "budget_subject:YSGC-DE-2601AYZ-1",
+            "calculation:人天单价",
+            "purchase_mode:开发资源池"
+          ],
+          "suggestion": "具备费用构成，无需补充。"
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则标记为‘不需要’，无需提供长尾费用相关材料。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则标记为‘不需要’，无需提供历史投入相关材料。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    }
+  ]
+}

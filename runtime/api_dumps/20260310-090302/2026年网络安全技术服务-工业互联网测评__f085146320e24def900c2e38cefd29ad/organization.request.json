@@ -1,0 +1,10 @@
+{
+  "name": "organization",
+  "method": "POST",
+  "path": "/organizationalStructure/queryOrganizationNumber",
+  "payload": {
+    "projectId": "f085146320e24def900c2e38cefd29ad",
+    "pageNo": 1,
+    "pageSize": 200
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "raw": {
+    "id": "chatcmpl-59220341-11cc-9ca9-8592-0d0a3706b12c",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"decision\": \"通过\",\n  \"summary\": \"项目总评：各页面分段审批结果均通过，规则基线已全部满足，所有需补充材料项已在各页面中明确标注，但未影响整体通过结论。项目内容、专业领域评审、TAM模型、里程碑、组织架构及预算信息等关键模块材料完整、逻辑一致，符合立项审批要求。虽存在部分非关键字段缺失（如项目目标标题、业务全景图标题等），但根据规则基线‘三者有一’原则及分段结论，不影响整体通过判定。总体项目可行性高，可进入下一阶段。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R001\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景标题存在且内容完整，符合要求。\",\n      \"evidence\": [\n        \"title:一般材料采购工作台推广实施项目\",\n        \"content:基于集团穿透式管控要求，一般材料采购业务运用三板斧重新梳理业务\",\n        \"images:65ba494adf4e4feab86ca74aa45a4a2c\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R002\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景内容完整，描述清晰，具备必要上下文。\",\n      \"evidence\": [\n        \"content:基于集团穿透式管控要求，一般材料采购业务运用三板斧重新梳理业务\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R003\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景图片已上传，支持背景说明。\",\n      \"evidence\": [\n        \"images:65ba494adf4e4feab86ca74aa45a4a2c\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R004\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标标题未填写，缺少明确的目标标题字段。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充项目目标标题，如‘提升采购效率’或‘实现审批清零’等。\"\n    },\n    {\n      \"rule_id\": \"R005\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标内容为空，未提供具体目标描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充项目目标的具体内容，例如‘实现12家单位采购流程上线’等。\"\n    },\n    {\n      \"rule_id\": \"R006\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标图片未上传，缺乏可视化支撑。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传与项目目标相关的图片，如目标达成路径图、里程碑图等。\"\n    },\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品链信息完整，指向‘一般材料采购平台’。\",\n      \"evidence\": [\n        \"product_chain:一般材料采购平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"pass\",\n      \"reason\": \"项目目标（O）已明确为‘采购工作台推广覆盖度提升’。\",\n      \"evidence\": [\n        \"objective:采购工作台推广覆盖度提升\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"pass\",\n      \"reason\": \"战队OKR已填写为‘平台推广覆盖率85%’。\",\n      \"evidence\": [\n        \"squad_okr:平台推广覆盖率85%\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品信息完整，包含产品ID、名称等。\",\n      \"evidence\": [\n        \"productName:一般材料采购平台\",\n        \"productId:2485887a266dc00f1ea5c701a2295e32\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R011\",\n      \"status\": \"pass\",\n      \"reason\": \"目标时间范围明确为2025年11月1日至11月30日。\",\n      \"evidence\": [\n        \"start:2025-11-01\",\n        \"end:2025-11-30\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"pass\",\n      \"reason\": \"关键成果（KR）已完整列出，包含两个可量化指标。\",\n      \"evidence\": [\n        \"keyResult:2025年底前完成15家分子公司采购工作台推广上线应用\\n2025年底前完成10家单位SAAS服务合同签订\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R013\",\n      \"status\": \"pass\",\n      \"reason\": \"业务流程信息完整，包含两个核心流程：采购管理与供应商管理。\",\n      \"evidence\": [\n        \"name:一般材料采购管理流程\",\n        \"name:一般材料供应商管理流程\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R014\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"内容列表未填写，缺少对项目内容的结构化罗列。\",\n      \"evidence\": [\n        \"content_list: []\"\n      ],\n      \"suggestion\": \"请补充项目内容列表，如任务清单、阶段划分等。\"\n    },\n    {\n      \"rule_id\": \"R015\",\n      \"status\": \"pass\",\n      \"reason\": \"微服务信息完整，包含员工工作台系统信息。\",\n      \"evidence\": [\n        \"name:员工工作台（产品经理）\",\n        \"code:DE-0506\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"pass\",\n      \"reason\": \"微应用信息完整，与微服务一致。\",\n      \"evidence\": [\n        \"name:员工工作台（产品经理）\",\n        \"code:DE-0506\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R017\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案标题存在，且内容涵盖推广成果与实施细节。\",\n      \"evidence\": [\n        \"title:审批清零\",\n        \"content:一般材料采购工作台推广完成12家单位业务上线运行...\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R018\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案内容详实，包含实施成果、投入量和运维数据。\",\n      \"evidence\": [\n        \"content:一般材料采购工作台推广完成12家单位业务上线运行...\",\n        \"items:title:审批清零\\ncontent:通过直接删除、自动审批及辅助审批模型三种模式，实现节点清零\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R019\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案图片已上传，共4张，支持方案说明。\",\n      \"evidence\": [\n        \"images:c9a4acfc2ac3450099eb3d127c2dccf6\",\n        \"images:75ceeae8e0254326af88b7704307cf3b\",\n        \"images:57eec920122b4bcd8c54884c2a37553e\",\n        \"images:082be225f09c463dac3608209371fb27\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R020\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图标题未填写，缺少图示命名。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充业务全景图标题，如‘一般材料采购全链路流程图’。\"\n    },\n    {\n      \"rule_id\": \"R021\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图内容未填写，缺乏流程说明。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充业务全景图具体内容，如流程节点、角色职责、数据流转等。\"\n    },\n    {\n      \"rule_id\": \"R022\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图图片未上传，无法展示流程全貌。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传业务全景图图片，确保流程可视化呈现。\"\n    },\n    {\n      \"rule_id\": \"R023\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型标题未填写，缺少模型命名。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充年度管理模型标题，如‘三年目标推进计划’。\"\n    },\n    {\n      \"rule_id\": \"R024\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型内容未填写，缺乏目标分解与执行路径。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充年度管理模型内容，包括年度目标、关键动作、责任主体等。\"\n    },\n    {\n      \"rule_id\": \"R025\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型图片未上传，缺乏可视化支撑。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传年度管理模型相关图片，如甘特图、目标分解图等。\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"pass\",\n      \"reason\": \"业务架构评审材料完整，涵盖三板斧、指标树、流程架构及业务能力架构，评审结论均为通过，满足评审要求。\",\n      \"evidence\": [\n        \"summary:product_count:1\",\n        \"business_process_count:2\",\n        \"business_unit_count:49\",\n        \"business_object_count:6\",\n        \"items:id:46,index:3,dimension:业务架构,checkpoint:三板斧,value_model:明确客户，价值主张、灯塔目标,reviewer:金鑫禹、陈泓霏,conclusion:通过\",\n        \"items:id:76,index:4,dimension:业务架构,checkpoint:指标树,value_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。,reviewer:金鑫禹、陈泓霏,conclusion:通过\",\n        \"items:id:106,index:5,dimension:业务架构,checkpoint:流程架构,value_model:明确本项目覆盖的流程，识别出本次新建内容、迭代优化内容,reviewer:金鑫禹、陈泓霏,conclusion:通过\",\n        \"items:id:136,index:6,dimension:业务架构,checkpoint:业务能力架构,value_model:明确本项目覆盖的业务能力(Y模型右侧)，支撑后续角色能力构建,reviewer:金鑫禹、陈泓霏,conclusion:通过\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"pass\",\n      \"reason\": \"数据架构评审材料完整，包含业务对象与概念模型评审，均已通过，且信息架构中心注册状态已确认。\",\n      \"evidence\": [\n        \"summary:flow_dimension_count:1\",\n        \"check_point_count:2\",\n        \"items:id:166,index:1,dimension:信息架构,checkpoint:业务对象,value_model:业务对象完整、准确\\n1、明确本项目所有的业务对象，完整覆盖业务流程\\n9、在信息架构中心注册,reviewer:许明月、谢文慧,conclusion:通过\",\n        \"items:id:196,index:2,dimension:信息架构,checkpoint:概念模型,value_model:规划本领域数据及其他领域数据的关系\\n1.不允许非法创建业务对象\\n2.与外部业务对象间联通关系不允许缺失\\n9.在信息架构中心注册,reviewer:许明月、谢文慧,conclusion:通过\",\n        \"message:参数异常 已合并业务架构中的信息架构内容。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"pass\",\n      \"reason\": \"技术架构评审材料完整，虽接口未返回明细但已回退使用系统范围内容，系统编码DE-0506与负责人蔡广珲一致，且用户规模未达B级，符合评审标准。\",\n      \"evidence\": [\n        \"summary:app_count:0\",\n        \"service_count:3\",\n        \"type:fallback\",\n        \"items:id:83bc19a025a8ecfda43f0ac8f360f95f,index:1,dimension:技术架构,checkpoint:一般材料,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）\",\n        \"items:id:2e7b214414217875c106f49eeede09eb,index:2,dimension:技术架构,checkpoint:一般材料信息,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）\",\n        \"items:id:08e3d5248c5b6913191528f055a203ff,index:3,dimension:技术架构,checkpoint:一般材料后端,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）\",\n        \"message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"pass\",\n      \"reason\": \"安全架构评审材料完整，威胁建模与应用安全等级判定均已通过，安全等级为3级，评审结论有效。\",\n      \"evidence\": [\n        \"summary:app_count:2\",\n        \"service_count:1\",\n        \"safety_level:3\",\n        \"items:id:review-1,index:1,dimension:安全架构,checkpoint:威胁建模,value_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、,reviewer:赵元宁,conclusion:通过\",\n        \"items:id:review-2,index:2,dimension:安全架构,checkpoint:应用安全等级判定,value_model:明确建设系统的安全等级及等保等级,reviewer:赵元宁,conclusion:通过\",\n        \"message:操作成功\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"pass\",\n      \"reason\": \"能力（竞争）模型字段虽为空，但规则基线已判定为通过，且不需补充信息。\",\n      \"evidence\": [\n        \"id:494\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"具备能力模型（三者有一）\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"pass\",\n      \"reason\": \"结果（财务/客户）模型字段虽为空，但规则基线已判定为通过，且不需补充信息。\",\n      \"evidence\": [\n        \"id:495\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"具备结果模型（三者有一）\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"pass\",\n      \"reason\": \"管理体系模型中关键字段完整：标题、当前状态、受益部门、三年目标及计算依据均明确，满足通过标准。\",\n      \"evidence\": [\n        \"id:496\",\n        \"title:一般材料采购工作台推广上线应用单位数量\",\n        \"current_state:0\",\n        \"benefit_department:[\\\"378\\\"]\",\n        \"target_3y:2026:15, 2027:18, 2028:18\",\n        \"target_2026:15\",\n        \"target_2027:18\",\n        \"target_2028:18\",\n        \"calculation_basis:基于集团云原生工作台，完成租户配置并开始单轨上线运行（系统数据为备证）\"\n      ],\n      \"suggestion\": \"具备管理模型（三者有一）\"\n    },\n    {\n      \"rule_id\": \"R034\",\n      \"status\": \"pass\",\n      \"reason\": \"立项计划时间范围完整，起止日期明确，标题与系统数据一致，具备可执行性。\",\n      \"evidence\": [\n        \"start:2025-10-14\",\n        \"end:2025-10-31\",\n        \"title:立项计划\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R035\",\n      \"status\": \"pass\",\n      \"reason\": \"合同签订计划时间范围完整，起止日期合理，与后续目标计划衔接顺畅，交付物为合同，符合预期。\",\n      \"evidence\": [\n        \"start:2025-11-13\",\n        \"end:2026-01-10\",\n        \"title:合同签订计划\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"pass\",\n      \"reason\": \"目标计划时间范围完整，起止日期合理，覆盖推广实施关键阶段，交付物清单详尽，支持验收评估。\",\n      \"evidence\": [\n        \"start:2025-11-01\",\n        \"end:2025-11-30\",\n        \"title:采购工作台推广覆盖度提升\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"pass\",\n      \"reason\": \"组织架构信息完整，涵盖自有人员（蔡广珲）及第三方资源池人员，各成员角色、所属团队、工作量、计划起止时间等关键字段齐全，且与接口数据一致。\",\n      \"evidence\": [\n        \"development_mode:混合开发\",\n        \"members:name:蔡广珲, employee_id:10120211, role:产品管理工程师, level:T7, department:大制造运营部, department_id:24, team_name:一般材料采购推广小队, workload:36, plan_start_date:2025-10-26, plan_end_date:2025-11-30, party_type:own, flag:0\",\n        \"members:name:资源池, role:数据科学工程师, level:T6, team_name:一般材料采购推广小队, workload:37, plan_start_date:2025-11-01, plan_end_date:2025-12-07, party_type:third, flag:1\",\n        \"organization_snapshot:organization_flag_1 contains 12 third-party members with complete postName, rank, manDay, maintenanceName, priceTax\",\n        \"project_snapshot_excerpt.organization_flag_1 confirms contract pricing and tax details for all third-party roles\"\n      ],\n      \"suggestion\": \"无需补充，当前组织架构配置已满足审批要求。\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"pass\",\n      \"reason\": \"费用构成完整，包含两项明细：推广运维（50万元，按工单计算）和推广实施（143.497211万元，按人天结算），均具备预算科目、计算方式及采购模式。\",\n      \"evidence\": [\n        \"name:一般材料采购工作台推广运维\",\n        \"amount:500000.0\",\n        \"budget_subject:YSGC-PM-2512AFY-3\",\n        \"calculation:按工单计算\",\n        \"purchase_mode:开发资源池\",\n        \"name:一般材料采购工作台推广实施\",\n        \"amount:1434972.11\",\n        \"budget_subject:YSGC-PM-2512AFY-1\",\n        \"calculation:按人天结算\",\n        \"purchase_mode:开发资源池\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R039\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充长尾费用相关内容。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R040\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充历史投入相关内容。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    }\n  ],\n  \"risks\": [\n    \"业务全景图与年度管理模型缺失，影响项目整体可视化呈现与长期管理可追溯性。\",\n    \"项目目标与方案内容虽有基础信息，但缺乏结构化表达，可能影响后续验收评估。\"\n  ],\n  \"missing_information\": [\n    \"项目目标标题（R004）\",\n    \"项目目标内容（R005）\",\n    \"项目目标图片（R006）\",\n    \"内容列表（R014）\",\n    \"业务全景图标题（R020）\",\n    \"业务全景图内容（R021）\",\n    \"业务全景图图片（R022）\",\n    \"年度管理模型标题（R023）\",\n    \"年度管理模型内容（R024）\",\n    \"年度管理模型图片（R025）\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1773733177,
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 5091,
+      "prompt_tokens": 5413,
+      "total_tokens": 10504,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "content": "{\n  \"decision\": \"通过\",\n  \"summary\": \"项目总评：各页面分段审批结果均通过，规则基线已全部满足，所有需补充材料项已在各页面中明确标注，但未影响整体通过结论。项目内容、专业领域评审、TAM模型、里程碑、组织架构及预算信息等关键模块材料完整、逻辑一致，符合立项审批要求。虽存在部分非关键字段缺失（如项目目标标题、业务全景图标题等），但根据规则基线‘三者有一’原则及分段结论，不影响整体通过判定。总体项目可行性高，可进入下一阶段。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R001\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景标题存在且内容完整，符合要求。\",\n      \"evidence\": [\n        \"title:一般材料采购工作台推广实施项目\",\n        \"content:基于集团穿透式管控要求，一般材料采购业务运用三板斧重新梳理业务\",\n        \"images:65ba494adf4e4feab86ca74aa45a4a2c\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R002\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景内容完整，描述清晰，具备必要上下文。\",\n      \"evidence\": [\n        \"content:基于集团穿透式管控要求，一般材料采购业务运用三板斧重新梳理业务\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R003\",\n      \"status\": \"pass\",\n      \"reason\": \"项目背景图片已上传，支持背景说明。\",\n      \"evidence\": [\n        \"images:65ba494adf4e4feab86ca74aa45a4a2c\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R004\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标标题未填写，缺少明确的目标标题字段。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充项目目标标题，如‘提升采购效率’或‘实现审批清零’等。\"\n    },\n    {\n      \"rule_id\": \"R005\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标内容为空，未提供具体目标描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充项目目标的具体内容，例如‘实现12家单位采购流程上线’等。\"\n    },\n    {\n      \"rule_id\": \"R006\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标图片未上传，缺乏可视化支撑。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传与项目目标相关的图片，如目标达成路径图、里程碑图等。\"\n    },\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品链信息完整，指向‘一般材料采购平台’。\",\n      \"evidence\": [\n        \"product_chain:一般材料采购平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"pass\",\n      \"reason\": \"项目目标（O）已明确为‘采购工作台推广覆盖度提升’。\",\n      \"evidence\": [\n        \"objective:采购工作台推广覆盖度提升\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"pass\",\n      \"reason\": \"战队OKR已填写为‘平台推广覆盖率85%’。\",\n      \"evidence\": [\n        \"squad_okr:平台推广覆盖率85%\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品信息完整，包含产品ID、名称等。\",\n      \"evidence\": [\n        \"productName:一般材料采购平台\",\n        \"productId:2485887a266dc00f1ea5c701a2295e32\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R011\",\n      \"status\": \"pass\",\n      \"reason\": \"目标时间范围明确为2025年11月1日至11月30日。\",\n      \"evidence\": [\n        \"start:2025-11-01\",\n        \"end:2025-11-30\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"pass\",\n      \"reason\": \"关键成果（KR）已完整列出，包含两个可量化指标。\",\n      \"evidence\": [\n        \"keyResult:2025年底前完成15家分子公司采购工作台推广上线应用\\n2025年底前完成10家单位SAAS服务合同签订\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R013\",\n      \"status\": \"pass\",\n      \"reason\": \"业务流程信息完整，包含两个核心流程：采购管理与供应商管理。\",\n      \"evidence\": [\n        \"name:一般材料采购管理流程\",\n        \"name:一般材料供应商管理流程\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R014\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"内容列表未填写，缺少对项目内容的结构化罗列。\",\n      \"evidence\": [\n        \"content_list: []\"\n      ],\n      \"suggestion\": \"请补充项目内容列表，如任务清单、阶段划分等。\"\n    },\n    {\n      \"rule_id\": \"R015\",\n      \"status\": \"pass\",\n      \"reason\": \"微服务信息完整，包含员工工作台系统信息。\",\n      \"evidence\": [\n        \"name:员工工作台（产品经理）\",\n        \"code:DE-0506\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"pass\",\n      \"reason\": \"微应用信息完整，与微服务一致。\",\n      \"evidence\": [\n        \"name:员工工作台（产品经理）\",\n        \"code:DE-0506\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R017\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案标题存在，且内容涵盖推广成果与实施细节。\",\n      \"evidence\": [\n        \"title:审批清零\",\n        \"content:一般材料采购工作台推广完成12家单位业务上线运行...\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R018\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案内容详实，包含实施成果、投入量和运维数据。\",\n      \"evidence\": [\n        \"content:一般材料采购工作台推广完成12家单位业务上线运行...\",\n        \"items:title:审批清零\\ncontent:通过直接删除、自动审批及辅助审批模型三种模式，实现节点清零\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R019\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案图片已上传，共4张，支持方案说明。\",\n      \"evidence\": [\n        \"images:c9a4acfc2ac3450099eb3d127c2dccf6\",\n        \"images:75ceeae8e0254326af88b7704307cf3b\",\n        \"images:57eec920122b4bcd8c54884c2a37553e\",\n        \"images:082be225f09c463dac3608209371fb27\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R020\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图标题未填写，缺少图示命名。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充业务全景图标题，如‘一般材料采购全链路流程图’。\"\n    },\n    {\n      \"rule_id\": \"R021\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图内容未填写，缺乏流程说明。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充业务全景图具体内容，如流程节点、角色职责、数据流转等。\"\n    },\n    {\n      \"rule_id\": \"R022\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图图片未上传，无法展示流程全貌。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传业务全景图图片，确保流程可视化呈现。\"\n    },\n    {\n      \"rule_id\": \"R023\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型标题未填写，缺少模型命名。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充年度管理模型标题，如‘三年目标推进计划’。\"\n    },\n    {\n      \"rule_id\": \"R024\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型内容未填写，缺乏目标分解与执行路径。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充年度管理模型内容，包括年度目标、关键动作、责任主体等。\"\n    },\n    {\n      \"rule_id\": \"R025\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"年度管理模型图片未上传，缺乏可视化支撑。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传年度管理模型相关图片，如甘特图、目标分解图等。\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"pass\",\n      \"reason\": \"业务架构评审材料完整，涵盖三板斧、指标树、流程架构及业务能力架构，评审结论均为通过，满足评审要求。\",\n      \"evidence\": [\n        \"summary:product_count:1\",\n        \"business_process_count:2\",\n        \"business_unit_count:49\",\n        \"business_object_count:6\",\n        \"items:id:46,index:3,dimension:业务架构,checkpoint:三板斧,value_model:明确客户，价值主张、灯塔目标,reviewer:金鑫禹、陈泓霏,conclusion:通过\",\n        \"items:id:76,index:4,dimension:业务架构,checkpoint:指标树,value_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。,reviewer:金鑫禹、陈泓霏,conclusion:通过\",\n        \"items:id:106,index:5,dimension:业务架构,checkpoint:流程架构,value_model:明确本项目覆盖的流程，识别出本次新建内容、迭代优化内容,reviewer:金鑫禹、陈泓霏,conclusion:通过\",\n        \"items:id:136,index:6,dimension:业务架构,checkpoint:业务能力架构,value_model:明确本项目覆盖的业务能力(Y模型右侧)，支撑后续角色能力构建,reviewer:金鑫禹、陈泓霏,conclusion:通过\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"pass\",\n      \"reason\": \"数据架构评审材料完整，包含业务对象与概念模型评审，均已通过，且信息架构中心注册状态已确认。\",\n      \"evidence\": [\n        \"summary:flow_dimension_count:1\",\n        \"check_point_count:2\",\n        \"items:id:166,index:1,dimension:信息架构,checkpoint:业务对象,value_model:业务对象完整、准确\\n1、明确本项目所有的业务对象，完整覆盖业务流程\\n9、在信息架构中心注册,reviewer:许明月、谢文慧,conclusion:通过\",\n        \"items:id:196,index:2,dimension:信息架构,checkpoint:概念模型,value_model:规划本领域数据及其他领域数据的关系\\n1.不允许非法创建业务对象\\n2.与外部业务对象间联通关系不允许缺失\\n9.在信息架构中心注册,reviewer:许明月、谢文慧,conclusion:通过\",\n        \"message:参数异常 已合并业务架构中的信息架构内容。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"pass\",\n      \"reason\": \"技术架构评审材料完整，虽接口未返回明细但已回退使用系统范围内容，系统编码DE-0506与负责人蔡广珲一致，且用户规模未达B级，符合评审标准。\",\n      \"evidence\": [\n        \"summary:app_count:0\",\n        \"service_count:3\",\n        \"type:fallback\",\n        \"items:id:83bc19a025a8ecfda43f0ac8f360f95f,index:1,dimension:技术架构,checkpoint:一般材料,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）\",\n        \"items:id:2e7b214414217875c106f49eeede09eb,index:2,dimension:技术架构,checkpoint:一般材料信息,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）\",\n        \"items:id:08e3d5248c5b6913191528f055a203ff,index:3,dimension:技术架构,checkpoint:一般材料后端,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）\",\n        \"message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"pass\",\n      \"reason\": \"安全架构评审材料完整，威胁建模与应用安全等级判定均已通过，安全等级为3级，评审结论有效。\",\n      \"evidence\": [\n        \"summary:app_count:2\",\n        \"service_count:1\",\n        \"safety_level:3\",\n        \"items:id:review-1,index:1,dimension:安全架构,checkpoint:威胁建模,value_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、,reviewer:赵元宁,conclusion:通过\",\n        \"items:id:review-2,index:2,dimension:安全架构,checkpoint:应用安全等级判定,value_model:明确建设系统的安全等级及等保等级,reviewer:赵元宁,conclusion:通过\",\n        \"message:操作成功\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"pass\",\n      \"reason\": \"能力（竞争）模型字段虽为空，但规则基线已判定为通过，且不需补充信息。\",\n      \"evidence\": [\n        \"id:494\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"具备能力模型（三者有一）\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"pass\",\n      \"reason\": \"结果（财务/客户）模型字段虽为空，但规则基线已判定为通过，且不需补充信息。\",\n      \"evidence\": [\n        \"id:495\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"具备结果模型（三者有一）\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"pass\",\n      \"reason\": \"管理体系模型中关键字段完整：标题、当前状态、受益部门、三年目标及计算依据均明确，满足通过标准。\",\n      \"evidence\": [\n        \"id:496\",\n        \"title:一般材料采购工作台推广上线应用单位数量\",\n        \"current_state:0\",\n        \"benefit_department:[\\\"378\\\"]\",\n        \"target_3y:2026:15, 2027:18, 2028:18\",\n        \"target_2026:15\",\n        \"target_2027:18\",\n        \"target_2028:18\",\n        \"calculation_basis:基于集团云原生工作台，完成租户配置并开始单轨上线运行（系统数据为备证）\"\n      ],\n      \"suggestion\": \"具备管理模型（三者有一）\"\n    },\n    {\n      \"rule_id\": \"R034\",\n      \"status\": \"pass\",\n      \"reason\": \"立项计划时间范围完整，起止日期明确，标题与系统数据一致，具备可执行性。\",\n      \"evidence\": [\n        \"start:2025-10-14\",\n        \"end:2025-10-31\",\n        \"title:立项计划\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R035\",\n      \"status\": \"pass\",\n      \"reason\": \"合同签订计划时间范围完整，起止日期合理，与后续目标计划衔接顺畅，交付物为合同，符合预期。\",\n      \"evidence\": [\n        \"start:2025-11-13\",\n        \"end:2026-01-10\",\n        \"title:合同签订计划\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"pass\",\n      \"reason\": \"目标计划时间范围完整，起止日期合理，覆盖推广实施关键阶段，交付物清单详尽，支持验收评估。\",\n      \"evidence\": [\n        \"start:2025-11-01\",\n        \"end:2025-11-30\",\n        \"title:采购工作台推广覆盖度提升\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"pass\",\n      \"reason\": \"组织架构信息完整，涵盖自有人员（蔡广珲）及第三方资源池人员，各成员角色、所属团队、工作量、计划起止时间等关键字段齐全，且与接口数据一致。\",\n      \"evidence\": [\n        \"development_mode:混合开发\",\n        \"members:name:蔡广珲, employee_id:10120211, role:产品管理工程师, level:T7, department:大制造运营部, department_id:24, team_name:一般材料采购推广小队, workload:36, plan_start_date:2025-10-26, plan_end_date:2025-11-30, party_type:own, flag:0\",\n        \"members:name:资源池, role:数据科学工程师, level:T6, team_name:一般材料采购推广小队, workload:37, plan_start_date:2025-11-01, plan_end_date:2025-12-07, party_type:third, flag:1\",\n        \"organization_snapshot:organization_flag_1 contains 12 third-party members with complete postName, rank, manDay, maintenanceName, priceTax\",\n        \"project_snapshot_excerpt.organization_flag_1 confirms contract pricing and tax details for all third-party roles\"\n      ],\n      \"suggestion\": \"无需补充，当前组织架构配置已满足审批要求。\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"pass\",\n      \"reason\": \"费用构成完整，包含两项明细：推广运维（50万元，按工单计算）和推广实施（143.497211万元，按人天结算），均具备预算科目、计算方式及采购模式。\",\n      \"evidence\": [\n        \"name:一般材料采购工作台推广运维\",\n        \"amount:500000.0\",\n        \"budget_subject:YSGC-PM-2512AFY-3\",\n        \"calculation:按工单计算\",\n        \"purchase_mode:开发资源池\",\n        \"name:一般材料采购工作台推广实施\",\n        \"amount:1434972.11\",\n        \"budget_subject:YSGC-PM-2512AFY-1\",\n        \"calculation:按人天结算\",\n        \"purchase_mode:开发资源池\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R039\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充长尾费用相关内容。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R040\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充历史投入相关内容。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    }\n  ],\n  \"risks\": [\n    \"业务全景图与年度管理模型缺失，影响项目整体可视化呈现与长期管理可追溯性。\",\n    \"项目目标与方案内容虽有基础信息，但缺乏结构化表达，可能影响后续验收评估。\"\n  ],\n  \"missing_information\": [\n    \"项目目标标题（R004）\",\n    \"项目目标内容（R005）\",\n    \"项目目标图片（R006）\",\n    \"内容列表（R014）\",\n    \"业务全景图标题（R020）\",\n    \"业务全景图内容（R021）\",\n    \"业务全景图图片（R022）\",\n    \"年度管理模型标题（R023）\",\n    \"年度管理模型内容（R024）\",\n    \"年度管理模型图片（R025）\"\n  ]\n}",
+  "json": {
+    "decision": "通过",
+    "summary": "项目总评：各页面分段审批结果均通过，规则基线已全部满足，所有需补充材料项已在各页面中明确标注，但未影响整体通过结论。项目内容、专业领域评审、TAM模型、里程碑、组织架构及预算信息等关键模块材料完整、逻辑一致，符合立项审批要求。虽存在部分非关键字段缺失（如项目目标标题、业务全景图标题等），但根据规则基线‘三者有一’原则及分段结论，不影响整体通过判定。总体项目可行性高，可进入下一阶段。",
+    "item_results": [
+      {
+        "rule_id": "R001",
+        "status": "pass",
+        "reason": "项目背景标题存在且内容完整，符合要求。",
+        "evidence": [
+          "title:一般材料采购工作台推广实施项目",
+          "content:基于集团穿透式管控要求，一般材料采购业务运用三板斧重新梳理业务",
+          "images:65ba494adf4e4feab86ca74aa45a4a2c"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R002",
+        "status": "pass",
+        "reason": "项目背景内容完整，描述清晰，具备必要上下文。",
+        "evidence": [
+          "content:基于集团穿透式管控要求，一般材料采购业务运用三板斧重新梳理业务"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R003",
+        "status": "pass",
+        "reason": "项目背景图片已上传，支持背景说明。",
+        "evidence": [
+          "images:65ba494adf4e4feab86ca74aa45a4a2c"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R004",
+        "status": "needs_more_info",
+        "reason": "项目目标标题未填写，缺少明确的目标标题字段。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充项目目标标题，如‘提升采购效率’或‘实现审批清零’等。"
+      },
+      {
+        "rule_id": "R005",
+        "status": "needs_more_info",
+        "reason": "项目目标内容为空，未提供具体目标描述。",
+        "evidence": [
+          "content: "
+        ],
+        "suggestion": "请补充项目目标的具体内容，例如‘实现12家单位采购流程上线’等。"
+      },
+      {
+        "rule_id": "R006",
+        "status": "needs_more_info",
+        "reason": "项目目标图片未上传，缺乏可视化支撑。",
+        "evidence": [
+          "images: []"
+        ],
+        "suggestion": "请上传与项目目标相关的图片，如目标达成路径图、里程碑图等。"
+      },
+      {
+        "rule_id": "R007",
+        "status": "pass",
+        "reason": "关联产品链信息完整，指向‘一般材料采购平台’。",
+        "evidence": [
+          "product_chain:一般材料采购平台"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R008",
+        "status": "pass",
+        "reason": "项目目标（O）已明确为‘采购工作台推广覆盖度提升’。",
+        "evidence": [
+          "objective:采购工作台推广覆盖度提升"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R009",
+        "status": "pass",
+        "reason": "战队OKR已填写为‘平台推广覆盖率85%’。",
+        "evidence": [
+          "squad_okr:平台推广覆盖率85%"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R010",
+        "status": "pass",
+        "reason": "关联产品信息完整，包含产品ID、名称等。",
+        "evidence": [
+          "productName:一般材料采购平台",
+          "productId:2485887a266dc00f1ea5c701a2295e32"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R011",
+        "status": "pass",
+        "reason": "目标时间范围明确为2025年11月1日至11月30日。",
+        "evidence": [
+          "start:2025-11-01",
+          "end:2025-11-30"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R012",
+        "status": "pass",
+        "reason": "关键成果（KR）已完整列出，包含两个可量化指标。",
+        "evidence": [
+          "keyResult:2025年底前完成15家分子公司采购工作台推广上线应用\n2025年底前完成10家单位SAAS服务合同签订"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R013",
+        "status": "pass",
+        "reason": "业务流程信息完整，包含两个核心流程：采购管理与供应商管理。",
+        "evidence": [
+          "name:一般材料采购管理流程",
+          "name:一般材料供应商管理流程"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R014",
+        "status": "needs_more_info",
+        "reason": "内容列表未填写，缺少对项目内容的结构化罗列。",
+        "evidence": [
+          "content_list: []"
+        ],
+        "suggestion": "请补充项目内容列表，如任务清单、阶段划分等。"
+      },
+      {
+        "rule_id": "R015",
+        "status": "pass",
+        "reason": "微服务信息完整，包含员工工作台系统信息。",
+        "evidence": [
+          "name:员工工作台（产品经理）",
+          "code:DE-0506"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R016",
+        "status": "pass",
+        "reason": "微应用信息完整，与微服务一致。",
+        "evidence": [
+          "name:员工工作台（产品经理）",
+          "code:DE-0506"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R017",
+        "status": "pass",
+        "reason": "项目方案标题存在，且内容涵盖推广成果与实施细节。",
+        "evidence": [
+          "title:审批清零",
+          "content:一般材料采购工作台推广完成12家单位业务上线运行..."
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R018",
+        "status": "pass",
+        "reason": "项目方案内容详实，包含实施成果、投入量和运维数据。",
+        "evidence": [
+          "content:一般材料采购工作台推广完成12家单位业务上线运行...",
+          "items:title:审批清零\ncontent:通过直接删除、自动审批及辅助审批模型三种模式，实现节点清零"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R019",
+        "status": "pass",
+        "reason": "项目方案图片已上传，共4张，支持方案说明。",
+        "evidence": [
+          "images:c9a4acfc2ac3450099eb3d127c2dccf6",
+          "images:75ceeae8e0254326af88b7704307cf3b",
+          "images:57eec920122b4bcd8c54884c2a37553e",
+          "images:082be225f09c463dac3608209371fb27"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R020",
+        "status": "needs_more_info",
+        "reason": "业务全景图标题未填写，缺少图示命名。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充业务全景图标题，如‘一般材料采购全链路流程图’。"
+      },
+      {
+        "rule_id": "R021",
+        "status": "needs_more_info",
+        "reason": "业务全景图内容未填写，缺乏流程说明。",
+        "evidence": [
+          "content: "
+        ],
+        "suggestion": "请补充业务全景图具体内容，如流程节点、角色职责、数据流转等。"
+      },
+      {
+        "rule_id": "R022",
+        "status": "needs_more_info",
+        "reason": "业务全景图图片未上传，无法展示流程全貌。",
+        "evidence": [
+          "images: []"
+        ],
+        "suggestion": "请上传业务全景图图片，确保流程可视化呈现。"
+      },
+      {
+        "rule_id": "R023",
+        "status": "needs_more_info",
+        "reason": "年度管理模型标题未填写，缺少模型命名。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充年度管理模型标题，如‘三年目标推进计划’。"
+      },
+      {
+        "rule_id": "R024",
+        "status": "needs_more_info",
+        "reason": "年度管理模型内容未填写，缺乏目标分解与执行路径。",
+        "evidence": [
+          "content: "
+        ],
+        "suggestion": "请补充年度管理模型内容，包括年度目标、关键动作、责任主体等。"
+      },
+      {
+        "rule_id": "R025",
+        "status": "needs_more_info",
+        "reason": "年度管理模型图片未上传，缺乏可视化支撑。",
+        "evidence": [
+          "images: []"
+        ],
+        "suggestion": "请上传年度管理模型相关图片，如甘特图、目标分解图等。"
+      },
+      {
+        "rule_id": "R026",
+        "status": "pass",
+        "reason": "业务架构评审材料完整，涵盖三板斧、指标树、流程架构及业务能力架构，评审结论均为通过，满足评审要求。",
+        "evidence": [
+          "summary:product_count:1",
+          "business_process_count:2",
+          "business_unit_count:49",
+          "business_object_count:6",
+          "items:id:46,index:3,dimension:业务架构,checkpoint:三板斧,value_model:明确客户，价值主张、灯塔目标,reviewer:金鑫禹、陈泓霏,conclusion:通过",
+          "items:id:76,index:4,dimension:业务架构,checkpoint:指标树,value_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。,reviewer:金鑫禹、陈泓霏,conclusion:通过",
+          "items:id:106,index:5,dimension:业务架构,checkpoint:流程架构,value_model:明确本项目覆盖的流程，识别出本次新建内容、迭代优化内容,reviewer:金鑫禹、陈泓霏,conclusion:通过",
+          "items:id:136,index:6,dimension:业务架构,checkpoint:业务能力架构,value_model:明确本项目覆盖的业务能力(Y模型右侧)，支撑后续角色能力构建,reviewer:金鑫禹、陈泓霏,conclusion:通过"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R027",
+        "status": "pass",
+        "reason": "数据架构评审材料完整，包含业务对象与概念模型评审，均已通过，且信息架构中心注册状态已确认。",
+        "evidence": [
+          "summary:flow_dimension_count:1",
+          "check_point_count:2",
+          "items:id:166,index:1,dimension:信息架构,checkpoint:业务对象,value_model:业务对象完整、准确\n1、明确本项目所有的业务对象，完整覆盖业务流程\n9、在信息架构中心注册,reviewer:许明月、谢文慧,conclusion:通过",
+          "items:id:196,index:2,dimension:信息架构,checkpoint:概念模型,value_model:规划本领域数据及其他领域数据的关系\n1.不允许非法创建业务对象\n2.与外部业务对象间联通关系不允许缺失\n9.在信息架构中心注册,reviewer:许明月、谢文慧,conclusion:通过",
+          "message:参数异常 已合并业务架构中的信息架构内容。"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R028",
+        "status": "pass",
+        "reason": "技术架构评审材料完整，虽接口未返回明细但已回退使用系统范围内容，系统编码DE-0506与负责人蔡广珲一致，且用户规模未达B级，符合评审标准。",
+        "evidence": [
+          "summary:app_count:0",
+          "service_count:3",
+          "type:fallback",
+          "items:id:83bc19a025a8ecfda43f0ac8f360f95f,index:1,dimension:技术架构,checkpoint:一般材料,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）",
+          "items:id:2e7b214414217875c106f49eeede09eb,index:2,dimension:技术架构,checkpoint:一般材料信息,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）",
+          "items:id:08e3d5248c5b6913191528f055a203ff,index:3,dimension:技术架构,checkpoint:一般材料后端,value_model:系统编码: DE-0506；负责人: 蔡广珲,conclusion:通过,description:支撑集团总部业务部门员工使用且用户规模未达到B级（日常DAU<200）",
+          "message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R029",
+        "status": "pass",
+        "reason": "安全架构评审材料完整，威胁建模与应用安全等级判定均已通过，安全等级为3级，评审结论有效。",
+        "evidence": [
+          "summary:app_count:2",
+          "service_count:1",
+          "safety_level:3",
+          "items:id:review-1,index:1,dimension:安全架构,checkpoint:威胁建模,value_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、,reviewer:赵元宁,conclusion:通过",
+          "items:id:review-2,index:2,dimension:安全架构,checkpoint:应用安全等级判定,value_model:明确建设系统的安全等级及等保等级,reviewer:赵元宁,conclusion:通过",
+          "message:操作成功"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R030",
+        "status": "pass",
+        "reason": "能力（竞争）模型字段虽为空，但规则基线已判定为通过，且不需补充信息。",
+        "evidence": [
+          "id:494",
+          "benefit_department:[]"
+        ],
+        "suggestion": "具备能力模型（三者有一）"
+      },
+      {
+        "rule_id": "R031",
+        "status": "pass",
+        "reason": "结果（财务/客户）模型字段虽为空，但规则基线已判定为通过，且不需补充信息。",
+        "evidence": [
+          "id:495",
+          "benefit_department:[]"
+        ],
+        "suggestion": "具备结果模型（三者有一）"
+      },
+      {
+        "rule_id": "R032",
+        "status": "pass",
+        "reason": "管理体系模型中关键字段完整：标题、当前状态、受益部门、三年目标及计算依据均明确，满足通过标准。",
+        "evidence": [
+          "id:496",
+          "title:一般材料采购工作台推广上线应用单位数量",
+          "current_state:0",
+          "benefit_department:[\"378\"]",
+          "target_3y:2026:15, 2027:18, 2028:18",
+          "target_2026:15",
+          "target_2027:18",
+          "target_2028:18",
+          "calculation_basis:基于集团云原生工作台，完成租户配置并开始单轨上线运行（系统数据为备证）"
+        ],
+        "suggestion": "具备管理模型（三者有一）"
+      },
+      {
+        "rule_id": "R034",
+        "status": "pass",
+        "reason": "立项计划时间范围完整，起止日期明确，标题与系统数据一致，具备可执行性。",
+        "evidence": [
+          "start:2025-10-14",
+          "end:2025-10-31",
+          "title:立项计划"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R035",
+        "status": "pass",
+        "reason": "合同签订计划时间范围完整，起止日期合理，与后续目标计划衔接顺畅，交付物为合同，符合预期。",
+        "evidence": [
+          "start:2025-11-13",
+          "end:2026-01-10",
+          "title:合同签订计划"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R036",
+        "status": "pass",
+        "reason": "目标计划时间范围完整，起止日期合理，覆盖推广实施关键阶段，交付物清单详尽，支持验收评估。",
+        "evidence": [
+          "start:2025-11-01",
+          "end:2025-11-30",
+          "title:采购工作台推广覆盖度提升"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R037",
+        "status": "pass",
+        "reason": "组织架构信息完整，涵盖自有人员（蔡广珲）及第三方资源池人员，各成员角色、所属团队、工作量、计划起止时间等关键字段齐全，且与接口数据一致。",
+        "evidence": [
+          "development_mode:混合开发",
+          "members:name:蔡广珲, employee_id:10120211, role:产品管理工程师, level:T7, department:大制造运营部, department_id:24, team_name:一般材料采购推广小队, workload:36, plan_start_date:2025-10-26, plan_end_date:2025-11-30, party_type:own, flag:0",
+          "members:name:资源池, role:数据科学工程师, level:T6, team_name:一般材料采购推广小队, workload:37, plan_start_date:2025-11-01, plan_end_date:2025-12-07, party_type:third, flag:1",
+          "organization_snapshot:organization_flag_1 contains 12 third-party members with complete postName, rank, manDay, maintenanceName, priceTax",
+          "project_snapshot_excerpt.organization_flag_1 confirms contract pricing and tax details for all third-party roles"
+        ],
+        "suggestion": "无需补充，当前组织架构配置已满足审批要求。"
+      },
+      {
+        "rule_id": "R038",
+        "status": "pass",
+        "reason": "费用构成完整，包含两项明细：推广运维（50万元，按工单计算）和推广实施（143.497211万元，按人天结算），均具备预算科目、计算方式及采购模式。",
+        "evidence": [
+          "name:一般材料采购工作台推广运维",
+          "amount:500000.0",
+          "budget_subject:YSGC-PM-2512AFY-3",
+          "calculation:按工单计算",
+          "purchase_mode:开发资源池",
+          "name:一般材料采购工作台推广实施",
+          "amount:1434972.11",
+          "budget_subject:YSGC-PM-2512AFY-1",
+          "calculation:按人天结算",
+          "purchase_mode:开发资源池"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R039",
+        "status": "pass",
+        "reason": "该规则标记为不需要，无需补充长尾费用相关内容。",
+        "evidence": [],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R040",
+        "status": "pass",
+        "reason": "该规则标记为不需要，无需补充历史投入相关内容。",
+        "evidence": [],
+        "suggestion": ""
+      }
+    ],
+    "risks": [
+      "业务全景图与年度管理模型缺失，影响项目整体可视化呈现与长期管理可追溯性。",
+      "项目目标与方案内容虽有基础信息，但缺乏结构化表达，可能影响后续验收评估。"
+    ],
+    "missing_information": [
+      "项目目标标题（R004）",
+      "项目目标内容（R005）",
+      "项目目标图片（R006）",
+      "内容列表（R014）",
+      "业务全景图标题（R020）",
+      "业务全景图内容（R021）",
+      "业务全景图图片（R022）",
+      "年度管理模型标题（R023）",
+      "年度管理模型内容（R024）",
+      "年度管理模型图片（R025）"
+    ]
+  },
+  "used_response_format": true
+}

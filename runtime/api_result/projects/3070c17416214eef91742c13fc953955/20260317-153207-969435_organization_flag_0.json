@@ -1,0 +1,19 @@
+{
+  "api_name": "organization_flag_0",
+  "method": "POST",
+  "path": "/organizationalStructure/queryOrganizationNumber",
+  "payload": {
+    "projectId": "3070c17416214eef91742c13fc953955",
+    "pageNo": 1,
+    "pageSize": 200,
+    "flag": 0
+  },
+  "project_id": "3070c17416214eef91742c13fc953955",
+  "result": {
+    "code": 0,
+    "message": "查询自有人员信息列表成功: 人员信息列表为空！",
+    "data": null
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:32:07+08:00"
+}

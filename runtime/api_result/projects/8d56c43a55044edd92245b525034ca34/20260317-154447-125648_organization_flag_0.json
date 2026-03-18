@@ -1,0 +1,60 @@
+{
+  "api_name": "organization_flag_0",
+  "method": "POST",
+  "path": "/organizationalStructure/queryOrganizationNumber",
+  "payload": {
+    "projectId": "8d56c43a55044edd92245b525034ca34",
+    "pageNo": 1,
+    "pageSize": 200,
+    "flag": 0
+  },
+  "project_id": "8d56c43a55044edd92245b525034ca34",
+  "result": {
+    "code": 0,
+    "message": "查询自有人员信息列表成功！",
+    "data": [
+      {
+        "id": "b9b169bc314f4790aff4f878e314d126",
+        "projectId": "8d56c43a55044edd92245b525034ca34",
+        "employeeId": "10001037",
+        "employeeName": "谭泽府",
+        "department": "企业运营部",
+        "departmentId": "24",
+        "postId": "af826dd05ce74024828f2948cad2482b",
+        "postName": "项目管理工程师",
+        "rank": "T6",
+        "rankId": null,
+        "manDay": "42",
+        "maintenanceName": null,
+        "maintenanceId": null,
+        "contractId": null,
+        "price": null,
+        "priceTax": null,
+        "unitPrice": null,
+        "unitPriceTax": null,
+        "numberPeople": null,
+        "flag": 0,
+        "numberList": null,
+        "maxValue": "15",
+        "minValue": "5",
+        "meetingId": null,
+        "workContent": null,
+        "score": null,
+        "taskDescription": null,
+        "peopleBelong": null,
+        "teamId": "48351b37b64e419baf06f89f09157f91",
+        "teamName": "旗新动力工作台适配项目-财务敏捷小队",
+        "productName": null,
+        "modelVersion": null,
+        "type": "0",
+        "planStartDate": "2025-10-20",
+        "planEndDate": "2025-11-30",
+        "sumBudget": null,
+        "projectName": null,
+        "taxRate": null
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:44:47+08:00"
+}

@@ -1,0 +1,202 @@
+INFO:     Will watch for changes in these directories: ['E:\\pyproject\\ProjectApproval']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [22308] using StatReload
+INFO:     Started server process [28348]
+INFO:     Waiting for application startup.
+2026-03-10 09:39:21,891 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r001-项目背景-背景标题' from directory 'E:\pyproject\ProjectApproval\skills\approval-r001-项目背景-背景标题'.
+2026-03-10 09:39:21,892 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r002-项目背景-背景内容' from directory 'E:\pyproject\ProjectApproval\skills\approval-r002-项目背景-背景内容'.
+2026-03-10 09:39:21,893 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r003-项目背景-背景图片' from directory 'E:\pyproject\ProjectApproval\skills\approval-r003-项目背景-背景图片'.
+2026-03-10 09:39:21,893 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r004-项目目标-项目目标' from directory 'E:\pyproject\ProjectApproval\skills\approval-r004-项目目标-项目目标'.
+2026-03-10 09:39:21,894 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r005-项目目标-项目内容' from directory 'E:\pyproject\ProjectApproval\skills\approval-r005-项目目标-项目内容'.
+2026-03-10 09:39:21,894 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r006-项目目标-目标图片' from directory 'E:\pyproject\ProjectApproval\skills\approval-r006-项目目标-目标图片'.
+2026-03-10 09:39:21,895 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r007-项目okr-关联产品链' from directory 'E:\pyproject\ProjectApproval\skills\approval-r007-项目okr-关联产品链'.
+2026-03-10 09:39:21,895 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r008-项目okr-项目目标-o' from directory 'E:\pyproject\ProjectApproval\skills\approval-r008-项目okr-项目目标-o'.
+2026-03-10 09:39:21,895 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r009-项目okr-战队okr' from directory 'E:\pyproject\ProjectApproval\skills\approval-r009-项目okr-战队okr'.
+2026-03-10 09:39:21,895 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r010-项目okr-关联产品' from directory 'E:\pyproject\ProjectApproval\skills\approval-r010-项目okr-关联产品'.
+2026-03-10 09:39:21,896 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r011-项目okr-目标时间范围' from directory 'E:\pyproject\ProjectApproval\skills\approval-r011-项目okr-目标时间范围'.
+2026-03-10 09:39:21,896 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r012-项目okr-关键成果-kr' from directory 'E:\pyproject\ProjectApproval\skills\approval-r012-项目okr-关键成果-kr'.
+2026-03-10 09:39:21,896 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r013-项目范围-业务流程' from directory 'E:\pyproject\ProjectApproval\skills\approval-r013-项目范围-业务流程'.
+2026-03-10 09:39:21,897 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r014-项目范围-内容列表' from directory 'E:\pyproject\ProjectApproval\skills\approval-r014-项目范围-内容列表'.
+2026-03-10 09:39:21,897 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r015-系统范围-微服务' from directory 'E:\pyproject\ProjectApproval\skills\approval-r015-系统范围-微服务'.
+2026-03-10 09:39:21,898 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r016-系统范围-微应用' from directory 'E:\pyproject\ProjectApproval\skills\approval-r016-系统范围-微应用'.
+2026-03-10 09:39:21,899 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r017-项目方案-项目方案' from directory 'E:\pyproject\ProjectApproval\skills\approval-r017-项目方案-项目方案'.
+2026-03-10 09:39:21,899 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r018-项目方案-方案内容' from directory 'E:\pyproject\ProjectApproval\skills\approval-r018-项目方案-方案内容'.
+2026-03-10 09:39:21,900 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r019-项目方案-方案图片' from directory 'E:\pyproject\ProjectApproval\skills\approval-r019-项目方案-方案图片'.
+2026-03-10 09:39:21,901 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r020-业务全景图-业务全景图标题' from directory 'E:\pyproject\ProjectApproval\skills\approval-r020-业务全景图-业务全景图标题'.
+2026-03-10 09:39:21,901 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r021-业务全景图-业务全景图内容' from directory 'E:\pyproject\ProjectApproval\skills\approval-r021-业务全景图-业务全景图内容'.
+2026-03-10 09:39:21,902 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r022-业务全景图-业务全景图图片' from directory 'E:\pyproject\ProjectApproval\skills\approval-r022-业务全景图-业务全景图图片'.
+2026-03-10 09:39:21,902 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r023-年度管理模型-管理模型标题' from directory 'E:\pyproject\ProjectApproval\skills\approval-r023-年度管理模型-管理模型标题'.
+2026-03-10 09:39:21,903 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r024-年度管理模型-管理模型内容' from directory 'E:\pyproject\ProjectApproval\skills\approval-r024-年度管理模型-管理模型内容'.
+2026-03-10 09:39:21,903 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r025-年度管理模型-管理模型图片' from directory 'E:\pyproject\ProjectApproval\skills\approval-r025-年度管理模型-管理模型图片'.
+2026-03-10 09:39:21,903 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r026-专业领域评审-业务架构评审' from directory 'E:\pyproject\ProjectApproval\skills\approval-r026-专业领域评审-业务架构评审'.
+2026-03-10 09:39:21,903 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r027-专业领域评审-数据架构评审' from directory 'E:\pyproject\ProjectApproval\skills\approval-r027-专业领域评审-数据架构评审'.
+2026-03-10 09:39:21,904 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r028-专业领域评审-技术架构评审' from directory 'E:\pyproject\ProjectApproval\skills\approval-r028-专业领域评审-技术架构评审'.
+2026-03-10 09:39:21,904 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r029-专业领域评审-安全架构评审' from directory 'E:\pyproject\ProjectApproval\skills\approval-r029-专业领域评审-安全架构评审'.
+2026-03-10 09:39:21,904 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r030-能力-竞争-模型-能力-竞争-模型' from directory 'E:\pyproject\ProjectApproval\skills\approval-r030-能力-竞争-模型-能力-竞争-模型'.
+2026-03-10 09:39:21,905 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r031-结果-财务-客户-模型-结果-财务-客户-模型' from directory 'E:\pyproject\ProjectApproval\skills\approval-r031-结果-财务-客户-模型-结果-财务-客户-模型'.
+2026-03-10 09:39:21,905 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r032-管理体系模型-管理体系模型' from directory 'E:\pyproject\ProjectApproval\skills\approval-r032-管理体系模型-管理体系模型'.
+2026-03-10 09:39:21,905 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r033-项目价值-项目价值' from directory 'E:\pyproject\ProjectApproval\skills\approval-r033-项目价值-项目价值'.
+2026-03-10 09:39:21,906 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r034-项目里程碑-立项计划' from directory 'E:\pyproject\ProjectApproval\skills\approval-r034-项目里程碑-立项计划'.
+2026-03-10 09:39:21,906 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r035-项目里程碑-合同计划' from directory 'E:\pyproject\ProjectApproval\skills\approval-r035-项目里程碑-合同计划'.
+2026-03-10 09:39:21,906 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r036-项目里程碑-目标计划' from directory 'E:\pyproject\ProjectApproval\skills\approval-r036-项目里程碑-目标计划'.
+2026-03-10 09:39:21,907 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r037-组织架构-组织架构' from directory 'E:\pyproject\ProjectApproval\skills\approval-r037-组织架构-组织架构'.
+2026-03-10 09:39:21,907 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r038-费用构成-费用构成' from directory 'E:\pyproject\ProjectApproval\skills\approval-r038-费用构成-费用构成'.
+2026-03-10 09:39:21,907 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r039-长尾费用-不需要' from directory 'E:\pyproject\ProjectApproval\skills\approval-r039-长尾费用-不需要'.
+2026-03-10 09:39:21,907 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r040-历史投入-不需要' from directory 'E:\pyproject\ProjectApproval\skills\approval-r040-历史投入-不需要'.
+2026-03-10 09:39:21,908 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-r041-费用变化点-费用变化点' from directory 'E:\pyproject\ProjectApproval\skills\approval-r041-费用变化点-费用变化点'.
+INFO:     Application startup complete.
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+E:\pyproject\ProjectApproval\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'prod-itpm.faw.cn'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+WARNING:  StatReload detected changes in 'scripts\generate_approval_item_skills.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28348]
+INFO:     Started server process [28532]
+INFO:     Waiting for application startup.
+2026-03-10 09:55:41,649 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-专业领域评审' from directory 'E:\pyproject\ProjectApproval\skills\approval-专业领域评审'.
+2026-03-10 09:55:41,650 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-业务全景图' from directory 'E:\pyproject\ProjectApproval\skills\approval-业务全景图'.
+2026-03-10 09:55:41,650 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-历史投入' from directory 'E:\pyproject\ProjectApproval\skills\approval-历史投入'.
+2026-03-10 09:55:41,651 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-年度管理模型' from directory 'E:\pyproject\ProjectApproval\skills\approval-年度管理模型'.
+2026-03-10 09:55:41,651 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-管理体系模型' from directory 'E:\pyproject\ProjectApproval\skills\approval-管理体系模型'.
+2026-03-10 09:55:41,652 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-系统范围' from directory 'E:\pyproject\ProjectApproval\skills\approval-系统范围'.
+2026-03-10 09:55:41,652 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-组织架构' from directory 'E:\pyproject\ProjectApproval\skills\approval-组织架构'.
+2026-03-10 09:55:41,653 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-结果-财务-客户-模型' from directory 'E:\pyproject\ProjectApproval\skills\approval-结果-财务-客户-模型'.
+2026-03-10 09:55:41,654 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-能力-竞争-模型' from directory 'E:\pyproject\ProjectApproval\skills\approval-能力-竞争-模型'.
+2026-03-10 09:55:41,654 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-费用变化点' from directory 'E:\pyproject\ProjectApproval\skills\approval-费用变化点'.
+2026-03-10 09:55:41,654 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-费用构成' from directory 'E:\pyproject\ProjectApproval\skills\approval-费用构成'.
+2026-03-10 09:55:41,655 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-长尾费用' from directory 'E:\pyproject\ProjectApproval\skills\approval-长尾费用'.
+2026-03-10 09:55:41,655 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-项目okr' from directory 'E:\pyproject\ProjectApproval\skills\approval-项目okr'.
+2026-03-10 09:55:41,656 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-项目价值' from directory 'E:\pyproject\ProjectApproval\skills\approval-项目价值'.
+2026-03-10 09:55:41,656 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-项目方案' from directory 'E:\pyproject\ProjectApproval\skills\approval-项目方案'.
+2026-03-10 09:55:41,656 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-项目目标' from directory 'E:\pyproject\ProjectApproval\skills\approval-项目目标'.
+2026-03-10 09:55:41,657 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-项目背景' from directory 'E:\pyproject\ProjectApproval\skills\approval-项目背景'.
+2026-03-10 09:55:41,657 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-项目范围' from directory 'E:\pyproject\ProjectApproval\skills\approval-项目范围'.
+2026-03-10 09:55:41,658 | INFO    | _toolkit:register_agent_skill:1167 - Registered agent skill 'approval-项目里程碑' from directory 'E:\pyproject\ProjectApproval\skills\approval-项目里程碑'.
+INFO:     Application startup complete.

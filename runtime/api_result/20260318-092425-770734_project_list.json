@@ -1,0 +1,61 @@
+{
+  "api_name": "project_list",
+  "method": "POST",
+  "path": "/projectEstablishment/queryProjectEstablishmentList",
+  "payload": {
+    "pageNum": 1,
+    "pageSize": 20,
+    "projectName": "会说话"
+  },
+  "project_id": "",
+  "result": {
+    "code": 0,
+    "message": "SUCCESS",
+    "data": {
+      "total": 1,
+      "dataList": [
+        {
+          "id": "71a7020a062642a888f9e85a0a29e141",
+          "projectBudgetId": "7cc551d955184e16adb75343be2fcb0e",
+          "projectName": "会说话的车",
+          "serialNo": "DE-2510AFY",
+          "belongTeamName": "COM",
+          "belongDepartmentName": "天津一汽夏利汽车有限公司",
+          "projectLeaderId": "84929",
+          "projectLeader": "杜雨萌 10121292",
+          "projectManager": "84929",
+          "projectManagerId": null,
+          "projectManagerName": "杜雨萌 10121292",
+          "projectSourceName": "新增",
+          "projectFeeTypeName": "变革项目",
+          "projectLevelName": "B",
+          "proBudget": 1800000.0,
+          "proBudgetYear": 1800000.0,
+          "applyBudget": 1716500.0,
+          "applyBudgetYear": 1716500.0,
+          "projectStatus": "验收中",
+          "flowStatus": 5,
+          "flowStatusName": "已完成",
+          "processInstanceId": "2fc1680c-8e2a-11f0-bd71-2259e454bbd7",
+          "longTermFlag": "否",
+          "businessDepartment": "208",
+          "belongTeam": "27",
+          "projectSource": "2",
+          "projectFeeType": "1",
+          "projectLevel": "2",
+          "isBusiness": "1",
+          "isOld": null,
+          "createTime": null,
+          "ministryCouncilApprovalTime": "2025-09-30 08:57:16",
+          "projectChangeId": null,
+          "projectLastVersion": null,
+          "projectStatusCode": "4",
+          "projectChangeNum": "0",
+          "modelVersion": "V2"
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-18T09:24:25+08:00"
+}

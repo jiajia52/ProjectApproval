@@ -1,0 +1,52 @@
+{
+  "api_name": "architecture_review_technology_fallback",
+  "method": "POST",
+  "path": "/projectMicosInfo/getList",
+  "payload": {
+    "projectId": "5a4f8458b48943b6a2a667738dbe1666",
+    "dataType": 1
+  },
+  "project_id": "5a4f8458b48943b6a2a667738dbe1666",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "8e606468a6898159d8157fe99703b36e",
+        "projectId": "5a4f8458b48943b6a2a667738dbe1666",
+        "systemId": "MS-0219",
+        "systemCode": "MS-0219",
+        "systemName": "组织资源服务平台",
+        "subCode": "MS-0219_APP_SMS",
+        "subName": "印章管理中心",
+        "subLeader": "冯吉祥",
+        "subLeaderAccount": "fengjixiang",
+        "subLevel": "C",
+        "subLevelStandard": "1.属于运营、配置、管理类且DAU<200\n2.支撑集团总部业务部门员工使用且用户规模未达到B级\n",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "APP"
+      },
+      {
+        "id": "382d10e77410eb8dc14479b11991c4fd",
+        "projectId": "5a4f8458b48943b6a2a667738dbe1666",
+        "systemId": "MS-0219",
+        "systemCode": "MS-0219",
+        "systemName": "组织资源服务平台",
+        "subCode": "MS-0219_MSA_SMS",
+        "subName": "印章管理",
+        "subLeader": "王籽今",
+        "subLeaderAccount": "wangzijin",
+        "subLevel": "C",
+        "subLevelStandard": "1.属于运营、配置、管理类且DAU<200\n2.支撑集团总部业务部门员工使用且用户规模未达到B级",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "MSA"
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:42:48+08:00"
+}

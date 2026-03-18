@@ -1,0 +1,1057 @@
+@prefix pa: <https://faw.example.local/project-approval#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pa:ProjectApprovalOntology a owl:Ontology ;
+  rdfs:label "项目立项自动审批系统" .
+
+pa:ProjectApprovalSystem a owl:Class ;
+  rdfs:label "项目审批系统" ;
+  rdfs:comment "覆盖前端、后端、运行时资产与分发包的完整审批平台。" .
+
+pa:ProjectApprovalProject a owl:Class ;
+  rdfs:label "立项审批项目" ;
+  rdfs:comment "项目审批场景下的根实体。" .
+
+pa:ProjectContent a owl:Class ;
+  rdfs:label "项目内容" ;
+  rdfs:comment "项目背景、目标、方案等申报内容。" .
+
+pa:ProjectOKR a owl:Class ;
+  rdfs:label "项目OKR" ;
+  rdfs:comment "项目目标、关键结果及相关信息。" .
+
+pa:ProjectScope a owl:Class ;
+  rdfs:label "项目范围" ;
+  rdfs:comment "业务范围与系统范围信息。" .
+
+pa:ArchitectureReview a owl:Class ;
+  rdfs:label "架构评审" ;
+  rdfs:comment "业务、数据、技术、安全等架构评审维度。" .
+
+pa:ProjectValuePlan a owl:Class ;
+  rdfs:label "项目价值与计划" ;
+  rdfs:comment "项目价值模型、里程碑及相关计划信息。" .
+
+pa:OrganizationBudget a owl:Class ;
+  rdfs:label "组织与预算" ;
+  rdfs:comment "组织架构、预算与费用信息。" .
+
+pa:ReviewRule a owl:Class ;
+  rdfs:label "评审规则" ;
+  rdfs:comment "从规则矩阵中抽取的审批规则。" .
+
+pa:ApiEndpoint a owl:Class ;
+  rdfs:label "远程接口" ;
+  rdfs:comment "项目数据来源接口。" .
+
+pa:BackendApiRoute a owl:Class ;
+  rdfs:label "后端路由" ;
+  rdfs:comment "本地审批系统暴露的 HTTP 路由。" .
+
+pa:FrontendPage a owl:Class ;
+  rdfs:label "前端页面" ;
+  rdfs:comment "系统面向用户的前端页面。" .
+
+pa:BackendService a owl:Class ;
+  rdfs:label "后端服务" ;
+  rdfs:comment "系统中的后端模块或运行服务。" .
+
+pa:RuntimeArtifact a owl:Class ;
+  rdfs:label "运行时资产" ;
+  rdfs:comment "系统运行过程中生成或依赖的文件与目录。" .
+
+pa:ConfigurationFile a owl:Class ;
+  rdfs:label "配置文件" ;
+  rdfs:comment "系统运行依赖的配置输入文件。" .
+
+pa:ApprovalSkill a owl:Class ;
+  rdfs:label "审批技能" ;
+  rdfs:comment "按审批 tab 聚合生成的技能单元。" .
+
+pa:DeploymentPackage a owl:Class ;
+  rdfs:label "部署包" ;
+  rdfs:comment "面向目标操作系统的分发包。" .
+
+pa:ProjectCategory a owl:Class ;
+  rdfs:label "项目品类" ;
+  rdfs:comment "适用的项目分类。" .
+
+pa:ApprovalDecision a owl:Class ;
+  rdfs:label "审批结论" ;
+  rdfs:comment "审批结果等级。" .
+
+pa:hasFrontendPage a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalSystem ;
+  rdfs:range pa:FrontendPage ;
+  rdfs:label "包含前端页面" .
+
+pa:exposesBackendRoute a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalSystem ;
+  rdfs:range pa:BackendApiRoute ;
+  rdfs:label "暴露后端路由" .
+
+pa:usesBackendService a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalSystem ;
+  rdfs:range pa:BackendService ;
+  rdfs:label "使用后端服务" .
+
+pa:persistsArtifact a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalSystem ;
+  rdfs:range pa:RuntimeArtifact ;
+  rdfs:label "持久化运行资产" .
+
+pa:usesConfigurationFile a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalSystem ;
+  rdfs:range pa:ConfigurationFile ;
+  rdfs:label "使用配置文件" .
+
+pa:loadsApprovalSkill a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalSystem ;
+  rdfs:range pa:ApprovalSkill ;
+  rdfs:label "加载审批技能" .
+
+pa:packagedAs a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalSystem ;
+  rdfs:range pa:DeploymentPackage ;
+  rdfs:label "打包为" .
+
+pa:hasContent a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:ProjectContent ;
+  rdfs:label "包含项目内容" .
+
+pa:hasOKR a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:ProjectOKR ;
+  rdfs:label "包含项目OKR" .
+
+pa:hasScope a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:ProjectScope ;
+  rdfs:label "包含项目范围" .
+
+pa:hasArchitectureReview a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:ArchitectureReview ;
+  rdfs:label "包含架构评审" .
+
+pa:hasValuePlan a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:ProjectValuePlan ;
+  rdfs:label "包含价值与计划" .
+
+pa:hasOrganizationBudget a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:OrganizationBudget ;
+  rdfs:label "包含组织与预算" .
+
+pa:usesApiEndpoint a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:ApiEndpoint ;
+  rdfs:label "使用远程接口" .
+
+pa:appliesRule a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:ReviewRule ;
+  rdfs:label "应用评审规则" .
+
+pa:targetsCategory a owl:ObjectProperty ;
+  rdfs:domain pa:ReviewRule ;
+  rdfs:range pa:ProjectCategory ;
+  rdfs:label "适用品类" .
+
+pa:hasDecisionLevel a owl:ObjectProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range pa:ApprovalDecision ;
+  rdfs:label "具有审批结论" .
+
+pa:systemEntryUrl a owl:DatatypeProperty ;
+  rdfs:domain pa:ProjectApprovalSystem ;
+  rdfs:range xsd:string ;
+  rdfs:label "系统入口地址" .
+
+pa:projectTitle a owl:DatatypeProperty ;
+  rdfs:domain pa:ProjectApprovalProject ;
+  rdfs:range xsd:string ;
+  rdfs:label "项目标题" .
+
+pa:sectionSummary a owl:DatatypeProperty ;
+  rdfs:domain pa:ProjectContent ;
+  rdfs:range xsd:string ;
+  rdfs:label "内容摘要" .
+
+pa:reviewPointName a owl:DatatypeProperty ;
+  rdfs:domain pa:ReviewRule ;
+  rdfs:range xsd:string ;
+  rdfs:label "评审点名称" .
+
+pa:ruleText a owl:DatatypeProperty ;
+  rdfs:domain pa:ReviewRule ;
+  rdfs:range xsd:string ;
+  rdfs:label "规则文本" .
+
+pa:apiPath a owl:DatatypeProperty ;
+  rdfs:domain pa:ApiEndpoint ;
+  rdfs:range xsd:string ;
+  rdfs:label "接口路径" .
+
+pa:routePath a owl:DatatypeProperty ;
+  rdfs:domain pa:FrontendPage ;
+  rdfs:range xsd:string ;
+  rdfs:label "路由路径" .
+
+pa:componentName a owl:DatatypeProperty ;
+  rdfs:domain pa:FrontendPage ;
+  rdfs:range xsd:string ;
+  rdfs:label "组件名称" .
+
+pa:httpMethod a owl:DatatypeProperty ;
+  rdfs:domain pa:BackendApiRoute ;
+  rdfs:range xsd:string ;
+  rdfs:label "请求方法" .
+
+pa:handlerName a owl:DatatypeProperty ;
+  rdfs:domain pa:BackendApiRoute ;
+  rdfs:range xsd:string ;
+  rdfs:label "处理函数" .
+
+pa:modulePath a owl:DatatypeProperty ;
+  rdfs:domain pa:BackendService ;
+  rdfs:range xsd:string ;
+  rdfs:label "模块路径" .
+
+pa:serviceType a owl:DatatypeProperty ;
+  rdfs:domain pa:BackendService ;
+  rdfs:range xsd:string ;
+  rdfs:label "服务类型" .
+
+pa:artifactPath a owl:DatatypeProperty ;
+  rdfs:domain pa:RuntimeArtifact ;
+  rdfs:range xsd:string ;
+  rdfs:label "资产路径" .
+
+pa:artifactType a owl:DatatypeProperty ;
+  rdfs:domain pa:RuntimeArtifact ;
+  rdfs:range xsd:string ;
+  rdfs:label "资产类型" .
+
+pa:configPath a owl:DatatypeProperty ;
+  rdfs:domain pa:ConfigurationFile ;
+  rdfs:range xsd:string ;
+  rdfs:label "配置路径" .
+
+pa:configType a owl:DatatypeProperty ;
+  rdfs:domain pa:ConfigurationFile ;
+  rdfs:range xsd:string ;
+  rdfs:label "配置类型" .
+
+pa:skillTab a owl:DatatypeProperty ;
+  rdfs:domain pa:ApprovalSkill ;
+  rdfs:range xsd:string ;
+  rdfs:label "技能页签" .
+
+pa:skillRuleCount a owl:DatatypeProperty ;
+  rdfs:domain pa:ApprovalSkill ;
+  rdfs:range xsd:integer ;
+  rdfs:label "技能规则数量" .
+
+pa:packageType a owl:DatatypeProperty ;
+  rdfs:domain pa:DeploymentPackage ;
+  rdfs:range xsd:string ;
+  rdfs:label "部署包类型" .
+
+pa:packageEntry a owl:DatatypeProperty ;
+  rdfs:domain pa:DeploymentPackage ;
+  rdfs:range xsd:string ;
+  rdfs:label "启动入口" .
+
+pa:categoryGroup a owl:DatatypeProperty ;
+  rdfs:domain pa:ProjectCategory ;
+  rdfs:range xsd:string ;
+  rdfs:label "品类分组" .
+
+pa:decisionLabel a owl:DatatypeProperty ;
+  rdfs:domain pa:ApprovalDecision ;
+  rdfs:range xsd:string ;
+  rdfs:label "结论标签" .
+
+pa:System01 a owl:NamedIndividual , pa:ProjectApprovalSystem ;
+  rdfs:label "项目立项自动审批系统" ;
+  pa:systemEntryUrl "/ui/approval" ;
+  pa:hasFrontendPage pa:FrontendPage01 ;
+  pa:hasFrontendPage pa:FrontendPage02 ;
+  pa:hasFrontendPage pa:FrontendPage03 ;
+  pa:hasFrontendPage pa:FrontendPage04 ;
+  pa:hasFrontendPage pa:FrontendPage05 ;
+  pa:exposesBackendRoute pa:BackendRoute01 ;
+  pa:exposesBackendRoute pa:BackendRoute02 ;
+  pa:exposesBackendRoute pa:BackendRoute03 ;
+  pa:exposesBackendRoute pa:BackendRoute04 ;
+  pa:exposesBackendRoute pa:BackendRoute05 ;
+  pa:exposesBackendRoute pa:BackendRoute06 ;
+  pa:exposesBackendRoute pa:BackendRoute07 ;
+  pa:exposesBackendRoute pa:BackendRoute08 ;
+  pa:exposesBackendRoute pa:BackendRoute09 ;
+  pa:exposesBackendRoute pa:BackendRoute10 ;
+  pa:exposesBackendRoute pa:BackendRoute11 ;
+  pa:exposesBackendRoute pa:BackendRoute12 ;
+  pa:exposesBackendRoute pa:BackendRoute13 ;
+  pa:exposesBackendRoute pa:BackendRoute14 ;
+  pa:exposesBackendRoute pa:BackendRoute15 ;
+  pa:exposesBackendRoute pa:BackendRoute16 ;
+  pa:exposesBackendRoute pa:BackendRoute17 ;
+  pa:exposesBackendRoute pa:BackendRoute18 ;
+  pa:exposesBackendRoute pa:BackendRoute19 ;
+  pa:exposesBackendRoute pa:BackendRoute20 ;
+  pa:exposesBackendRoute pa:BackendRoute21 ;
+  pa:exposesBackendRoute pa:BackendRoute22 ;
+  pa:exposesBackendRoute pa:BackendRoute23 ;
+  pa:exposesBackendRoute pa:BackendRoute24 ;
+  pa:exposesBackendRoute pa:BackendRoute25 ;
+  pa:exposesBackendRoute pa:BackendRoute26 ;
+  pa:exposesBackendRoute pa:BackendRoute27 ;
+  pa:exposesBackendRoute pa:BackendRoute28 ;
+  pa:exposesBackendRoute pa:BackendRoute29 ;
+  pa:exposesBackendRoute pa:BackendRoute30 ;
+  pa:exposesBackendRoute pa:BackendRoute31 ;
+  pa:exposesBackendRoute pa:BackendRoute32 ;
+  pa:exposesBackendRoute pa:BackendRoute33 ;
+  pa:exposesBackendRoute pa:BackendRoute34 ;
+  pa:exposesBackendRoute pa:BackendRoute35 ;
+  pa:exposesBackendRoute pa:BackendRoute36 ;
+  pa:exposesBackendRoute pa:BackendRoute37 ;
+  pa:exposesBackendRoute pa:BackendRoute38 ;
+  pa:exposesBackendRoute pa:BackendRoute39 ;
+  pa:exposesBackendRoute pa:BackendRoute40 ;
+  pa:exposesBackendRoute pa:BackendRoute41 ;
+  pa:exposesBackendRoute pa:BackendRoute42 ;
+  pa:exposesBackendRoute pa:BackendRoute43 ;
+  pa:exposesBackendRoute pa:BackendRoute44 ;
+  pa:exposesBackendRoute pa:BackendRoute45 ;
+  pa:usesBackendService pa:BackendService01 ;
+  pa:usesBackendService pa:BackendService02 ;
+  pa:usesBackendService pa:BackendService03 ;
+  pa:usesBackendService pa:BackendService04 ;
+  pa:usesBackendService pa:BackendService05 ;
+  pa:usesBackendService pa:BackendService06 ;
+  pa:usesBackendService pa:BackendService07 ;
+  pa:usesBackendService pa:BackendService08 ;
+  pa:usesBackendService pa:BackendService09 ;
+  pa:persistsArtifact pa:RuntimeArtifact01 ;
+  pa:persistsArtifact pa:RuntimeArtifact02 ;
+  pa:persistsArtifact pa:RuntimeArtifact03 ;
+  pa:persistsArtifact pa:RuntimeArtifact04 ;
+  pa:persistsArtifact pa:RuntimeArtifact05 ;
+  pa:persistsArtifact pa:RuntimeArtifact06 ;
+  pa:persistsArtifact pa:RuntimeArtifact07 ;
+  pa:persistsArtifact pa:RuntimeArtifact08 ;
+  pa:persistsArtifact pa:RuntimeArtifact09 ;
+  pa:persistsArtifact pa:RuntimeArtifact10 ;
+  pa:persistsArtifact pa:RuntimeArtifact11 ;
+  pa:persistsArtifact pa:RuntimeArtifact12 ;
+  pa:persistsArtifact pa:RuntimeArtifact13 ;
+  pa:persistsArtifact pa:RuntimeArtifact14 ;
+  pa:usesConfigurationFile pa:ConfigFile01 ;
+  pa:usesConfigurationFile pa:ConfigFile02 ;
+  pa:usesConfigurationFile pa:ConfigFile03 ;
+  pa:usesConfigurationFile pa:ConfigFile04 ;
+  pa:usesConfigurationFile pa:ConfigFile05 ;
+  pa:usesConfigurationFile pa:ConfigFile06 ;
+  pa:loadsApprovalSkill pa:ApprovalSkill01 ;
+  pa:loadsApprovalSkill pa:ApprovalSkill02 ;
+  pa:loadsApprovalSkill pa:ApprovalSkill03 ;
+  pa:loadsApprovalSkill pa:ApprovalSkill04 ;
+  pa:loadsApprovalSkill pa:ApprovalSkill05 ;
+  pa:loadsApprovalSkill pa:ApprovalSkill06 ;
+  pa:loadsApprovalSkill pa:ApprovalSkill07 ;
+  pa:loadsApprovalSkill pa:ApprovalSkill08 ;
+  pa:packagedAs pa:DeploymentPackage01 ;
+  pa:packagedAs pa:DeploymentPackage02 .
+
+pa:Category01 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "工作台开发及实施" ;
+  pa:categoryGroup "系统建设及运营" .
+
+pa:Category02 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "产品运营" ;
+  pa:categoryGroup "系统建设及运营" .
+
+pa:Category03 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "系统产品购买" ;
+  pa:categoryGroup "系统建设及运营" .
+
+pa:Category04 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "大一线运维" ;
+  pa:categoryGroup "运维服务" .
+
+pa:Category05 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "三线运维" ;
+  pa:categoryGroup "运维服务" .
+
+pa:Category06 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "产品维保" ;
+  pa:categoryGroup "运维服务" .
+
+pa:Category07 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "数据中心维护" ;
+  pa:categoryGroup "运维服务" .
+
+pa:Category08 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "基础服务" ;
+  pa:categoryGroup "技术服务" .
+
+pa:Category09 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "安全服务" ;
+  pa:categoryGroup "技术服务" .
+
+pa:Category10 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "数据服务" ;
+  pa:categoryGroup "技术服务" .
+
+pa:Category11 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "保密服务" ;
+  pa:categoryGroup "技术服务" .
+
+pa:Category12 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "数据订阅购买" ;
+  pa:categoryGroup "数据购买" .
+
+pa:Category13 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "研发工具订阅许可升级" ;
+  pa:categoryGroup "工具软件" .
+
+pa:Category14 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "非研发工具订阅许可升级" ;
+  pa:categoryGroup "工具软件" .
+
+pa:Category15 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "研发工具许可购买" ;
+  pa:categoryGroup "工具软件" .
+
+pa:Category16 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "非研发工具许可购买" ;
+  pa:categoryGroup "工具软件" .
+
+pa:Category17 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "设备购买及弱电布线" ;
+  pa:categoryGroup "基础设施" .
+
+pa:Category18 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "资源租赁" ;
+  pa:categoryGroup "基础设施" .
+
+pa:Category19 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "机房建设" ;
+  pa:categoryGroup "基础设施" .
+
+pa:Category20 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "设备维修" ;
+  pa:categoryGroup "基础设施" .
+
+pa:Category21 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "对外咨询" ;
+  pa:categoryGroup "对外服务项目" .
+
+pa:Category22 a owl:NamedIndividual , pa:ProjectCategory ;
+  rdfs:label "系统开发及运营" ;
+  pa:categoryGroup "对外服务项目" .
+
+pa:Decision01 a owl:NamedIndividual , pa:ApprovalDecision ;
+  rdfs:label "通过" ;
+  pa:decisionLabel "通过" .
+
+pa:Decision02 a owl:NamedIndividual , pa:ApprovalDecision ;
+  rdfs:label "需补充材料" ;
+  pa:decisionLabel "需补充材料" .
+
+pa:Decision03 a owl:NamedIndividual , pa:ApprovalDecision ;
+  rdfs:label "驳回" ;
+  pa:decisionLabel "驳回" .
+
+pa:ApiEndpoint01 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目列表" ;
+  pa:apiPath "/projectEstablishment/queryProjectEstablishmentList" .
+
+pa:ApiEndpoint02 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目状态选项" ;
+  pa:apiPath "/projectCenter/queryProjectStatusList" .
+
+pa:ApiEndpoint03 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目基础信息" ;
+  pa:apiPath "/projectBaseInfo/info" .
+
+pa:ApiEndpoint04 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目背景/项目目标/项目方案/业务全景图/年度管理模型" ;
+  pa:apiPath "/projectUploading/list/{projectId}" .
+
+pa:ApiEndpoint05 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目OKR" ;
+  pa:apiPath "/project/goal/get/{projectId}" .
+
+pa:ApiEndpoint06 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目范围（主）" ;
+  pa:apiPath "/project/range/list" .
+
+pa:ApiEndpoint07 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目范围（补充）" ;
+  pa:apiPath "/projectBaseInfo/getProjectScope" .
+
+pa:ApiEndpoint08 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目范围（兼容）" ;
+  pa:apiPath "/projectBaseInfo/projectRange/list" .
+
+pa:ApiEndpoint09 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "系统范围（620-260316）" ;
+  pa:apiPath "/projectBaseInfo/eamapAndSystemOkr" .
+
+pa:ApiEndpoint10 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "系统范围（兼容）" ;
+  pa:apiPath "/projectMicosInfo/getList" .
+
+pa:ApiEndpoint11 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "开发侧范围数据" ;
+  pa:apiPath "/projectBaseInfo/eamapAndSystem" .
+
+pa:ApiEndpoint12 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "1. /projectBaseInfo/getProjectProductsOkr" ;
+  pa:apiPath "/projectBaseInfo/getProjectProductsOkr" .
+
+pa:ApiEndpoint13 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "2. /projectBaseInfo/getProductCheckStatus/{projectId}" ;
+  pa:apiPath "/projectBaseInfo/getProductCheckStatus/{projectId}" .
+
+pa:ApiEndpoint14 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "3. /project/goal/getCount/{projectId}" ;
+  pa:apiPath "/project/goal/getCount/{projectId}" .
+
+pa:ApiEndpoint15 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "数据架构评审" ;
+  pa:apiPath "/initiationTask/result" .
+
+pa:ApiEndpoint16 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "技术架构评审" ;
+  pa:apiPath "/third/techCheckList" .
+
+pa:ApiEndpoint17 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "安全架构评审" ;
+  pa:apiPath "/third/securityCheckList" .
+
+pa:ApiEndpoint18 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "能力模型/结果模型/管理体系模型" ;
+  pa:apiPath "/value/info/{projectId}" .
+
+pa:ApiEndpoint19 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "项目价值" ;
+  pa:apiPath "/value/infoNoTam/{projectId}" .
+
+pa:ApiEndpoint20 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "里程碑" ;
+  pa:apiPath "/milestone/newList/{projectId}" .
+
+pa:ApiEndpoint21 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "组织成员（主）" ;
+  pa:apiPath "/organizationalStructure/queryOrganizationNumber" .
+
+pa:ApiEndpoint22 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "组织框架（补充）" ;
+  pa:apiPath "/projectOrgFramework/list/{projectId}" .
+
+pa:ApiEndpoint23 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "费用构成" ;
+  pa:apiPath "/budget/info/{projectId}" .
+
+pa:ApiEndpoint24 a owl:NamedIndividual , pa:ApiEndpoint ;
+  rdfs:label "费用变化点/历史投入" ;
+  pa:apiPath "/change/list/{projectId}" .
+
+pa:FrontendPage01 a owl:NamedIndividual , pa:FrontendPage ;
+  rdfs:label "审批首页" ;
+  pa:routePath "/approval" ;
+  pa:componentName "ApprovalPage" .
+
+pa:FrontendPage02 a owl:NamedIndividual , pa:FrontendPage ;
+  rdfs:label "项目详情页" ;
+  pa:routePath "/project/:projectId" ;
+  pa:componentName "ProjectViewerPage" .
+
+pa:FrontendPage03 a owl:NamedIndividual , pa:FrontendPage ;
+  rdfs:label "建议复核页" ;
+  pa:routePath "/review-feedback" ;
+  pa:componentName "ReviewFeedbackPage" .
+
+pa:FrontendPage04 a owl:NamedIndividual , pa:FrontendPage ;
+  rdfs:label "技能与规则页" ;
+  pa:routePath "/skills" ;
+  pa:componentName "SkillsPage" .
+
+pa:FrontendPage05 a owl:NamedIndividual , pa:FrontendPage ;
+  rdfs:label "审批工作台" ;
+  pa:routePath "/workbench" ;
+  pa:componentName "WorkbenchPage" .
+
+pa:BackendRoute01 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/" ;
+  pa:routePath "/" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "root" .
+
+pa:BackendRoute02 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/" ;
+  pa:routePath "/ui/" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_root" .
+
+pa:BackendRoute03 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/index.html" ;
+  pa:routePath "/ui/index.html" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_legacy_index" .
+
+pa:BackendRoute04 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/approval" ;
+  pa:routePath "/ui/approval" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_approval" .
+
+pa:BackendRoute05 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/approval.html" ;
+  pa:routePath "/ui/approval.html" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_legacy_approval" .
+
+pa:BackendRoute06 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/workbench.html" ;
+  pa:routePath "/ui/workbench.html" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_legacy_workbench" .
+
+pa:BackendRoute07 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/workbench" ;
+  pa:routePath "/ui/workbench" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_workbench" .
+
+pa:BackendRoute08 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/skills.html" ;
+  pa:routePath "/ui/skills.html" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_legacy_skills" .
+
+pa:BackendRoute09 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/rules.html" ;
+  pa:routePath "/ui/rules.html" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_legacy_rules" .
+
+pa:BackendRoute10 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/project-viewer.html" ;
+  pa:routePath "/ui/project-viewer.html" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_legacy_project_viewer" .
+
+pa:BackendRoute11 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/project/{project_id}" ;
+  pa:routePath "/ui/project/{project_id}" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_project" .
+
+pa:BackendRoute12 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/skills" ;
+  pa:routePath "/ui/skills" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_skills" .
+
+pa:BackendRoute13 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/ui/{full_path:path}" ;
+  pa:routePath "/ui/{full_path:path}" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "ui_files" .
+
+pa:BackendRoute14 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/admin/session" ;
+  pa:routePath "/api/admin/session" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_admin_session" .
+
+pa:BackendRoute15 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/admin/login" ;
+  pa:routePath "/api/admin/login" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_admin_login" .
+
+pa:BackendRoute16 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/admin/logout" ;
+  pa:routePath "/api/admin/logout" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_admin_logout" .
+
+pa:BackendRoute17 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/health" ;
+  pa:routePath "/api/health" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "health" .
+
+pa:BackendRoute18 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/startup-checks" ;
+  pa:routePath "/api/startup-checks" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_startup_checks" .
+
+pa:BackendRoute19 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/skills" ;
+  pa:routePath "/api/skills" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_skills" .
+
+pa:BackendRoute20 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/skill-files" ;
+  pa:routePath "/api/skill-files" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_skill_files" .
+
+pa:BackendRoute21 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/skill-files/{skill_id}" ;
+  pa:routePath "/api/skill-files/{skill_id}" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_skill_file" .
+
+pa:BackendRoute22 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/skill-files/{skill_id}" ;
+  pa:routePath "/api/skill-files/{skill_id}" ;
+  pa:httpMethod "PUT" ;
+  pa:handlerName "api_save_skill_file" .
+
+pa:BackendRoute23 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/config" ;
+  pa:routePath "/api/config" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_config" .
+
+pa:BackendRoute24 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/config" ;
+  pa:routePath "/api/config" ;
+  pa:httpMethod "PUT" ;
+  pa:handlerName "api_save_config" .
+
+pa:BackendRoute25 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/rules" ;
+  pa:routePath "/api/rules" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_rules" .
+
+pa:BackendRoute26 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/generate" ;
+  pa:routePath "/api/generate" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_generate" .
+
+pa:BackendRoute27 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/outputs" ;
+  pa:routePath "/api/outputs" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_outputs" .
+
+pa:BackendRoute28 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/approval/sample" ;
+  pa:routePath "/api/approval/sample" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_approval_sample" .
+
+pa:BackendRoute29 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/integration/config" ;
+  pa:routePath "/api/integration/config" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_integration_config" .
+
+pa:BackendRoute30 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/integration/config" ;
+  pa:routePath "/api/integration/config" ;
+  pa:httpMethod "PUT" ;
+  pa:handlerName "api_save_integration_config" .
+
+pa:BackendRoute31 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/integration/refresh-token" ;
+  pa:routePath "/api/integration/refresh-token" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_refresh_integration_token" .
+
+pa:BackendRoute32 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/projects" ;
+  pa:routePath "/api/projects" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_projects" .
+
+pa:BackendRoute33 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/project-status-options" ;
+  pa:routePath "/api/project-status-options" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_project_status_options" .
+
+pa:BackendRoute34 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/files/download" ;
+  pa:routePath "/api/files/download" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_download_file" .
+
+pa:BackendRoute35 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/projects/{project_id}/snapshot" ;
+  pa:routePath "/api/projects/{project_id}/snapshot" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_project_snapshot" .
+
+pa:BackendRoute36 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/projects/{project_id}/document" ;
+  pa:routePath "/api/projects/{project_id}/document" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_project_document" .
+
+pa:BackendRoute37 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/projects/{project_id}/architecture-reviews" ;
+  pa:routePath "/api/projects/{project_id}/architecture-reviews" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_project_architecture_reviews" .
+
+pa:BackendRoute38 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/projects/{project_id}/latest-approval" ;
+  pa:routePath "/api/projects/{project_id}/latest-approval" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_project_latest_approval" .
+
+pa:BackendRoute39 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/review-feedback" ;
+  pa:routePath "/api/review-feedback" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "api_review_feedback" .
+
+pa:BackendRoute40 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/review-feedback" ;
+  pa:routePath "/api/review-feedback" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_save_review_feedback" .
+
+pa:BackendRoute41 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/approve" ;
+  pa:routePath "/api/approve" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_approve" .
+
+pa:BackendRoute42 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/approve/llm" ;
+  pa:routePath "/api/approve/llm" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_approve_llm" .
+
+pa:BackendRoute43 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/approve/generated-project" ;
+  pa:routePath "/api/approve/generated-project" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_approve_generated_project" .
+
+pa:BackendRoute44 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/api/approve/remote-project" ;
+  pa:routePath "/api/approve/remote-project" ;
+  pa:httpMethod "POST" ;
+  pa:handlerName "api_approve_remote_project" .
+
+pa:BackendRoute45 a owl:NamedIndividual , pa:BackendApiRoute ;
+  rdfs:label "/favicon.ico" ;
+  pa:routePath "/favicon.ico" ;
+  pa:httpMethod "GET" ;
+  pa:handlerName "favicon" .
+
+pa:BackendService01 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "桌面启动器" ;
+  pa:modulePath "desktop_launcher.py" ;
+  pa:serviceType "launcher" .
+
+pa:BackendService02 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "FastAPI 应用入口" ;
+  pa:modulePath "app/main.py" ;
+  pa:serviceType "backend" .
+
+pa:BackendService03 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "规则审批引擎" ;
+  pa:modulePath "app/approvals/approval_engine.py" ;
+  pa:serviceType "backend" .
+
+pa:BackendService04 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "大模型审批服务" ;
+  pa:modulePath "app/approvals/llm_approval_service.py" ;
+  pa:serviceType "backend" .
+
+pa:BackendService05 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "远程项目接口客户端" ;
+  pa:modulePath "app/approvals/iwork_client.py" ;
+  pa:serviceType "backend" .
+
+pa:BackendService06 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "远程项目文档映射器" ;
+  pa:modulePath "app/approvals/remote_project_mapper.py" ;
+  pa:serviceType "backend" .
+
+pa:BackendService07 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "项目文档落盘服务" ;
+  pa:modulePath "app/approvals/project_document_store.py" ;
+  pa:serviceType "backend" .
+
+pa:BackendService08 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "人工复核落盘服务" ;
+  pa:modulePath "app/approvals/review_feedback_store.py" ;
+  pa:serviceType "backend" .
+
+pa:BackendService09 a owl:NamedIndividual , pa:BackendService ;
+  rdfs:label "启动检查服务" ;
+  pa:modulePath "app/core/startup_checks.py" ;
+  pa:serviceType "backend" .
+
+pa:RuntimeArtifact01 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "api_dumps" ;
+  pa:artifactPath "runtime/api_dumps" ;
+  pa:artifactType "directory" .
+
+pa:RuntimeArtifact02 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "api_result" ;
+  pa:artifactPath "runtime/api_result" ;
+  pa:artifactType "directory" .
+
+pa:RuntimeArtifact03 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "approval_runs" ;
+  pa:artifactPath "runtime/approval_runs" ;
+  pa:artifactType "directory" .
+
+pa:RuntimeArtifact04 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "config" ;
+  pa:artifactPath "runtime/config" ;
+  pa:artifactType "directory" .
+
+pa:RuntimeArtifact05 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "latest_approval_result.json" ;
+  pa:artifactPath "runtime/latest_approval_result.json" ;
+  pa:artifactType "file" .
+
+pa:RuntimeArtifact06 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "latest_project_document.json" ;
+  pa:artifactPath "runtime/latest_project_document.json" ;
+  pa:artifactType "file" .
+
+pa:RuntimeArtifact07 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "logs" ;
+  pa:artifactPath "runtime/logs" ;
+  pa:artifactType "directory" .
+
+pa:RuntimeArtifact08 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "project_approval_ontology.json" ;
+  pa:artifactPath "runtime/project_approval_ontology.json" ;
+  pa:artifactType "file" .
+
+pa:RuntimeArtifact09 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "project_approval_ontology.ttl" ;
+  pa:artifactPath "runtime/project_approval_ontology.ttl" ;
+  pa:artifactType "file" .
+
+pa:RuntimeArtifact10 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "project_approval_project.json" ;
+  pa:artifactPath "runtime/project_approval_project.json" ;
+  pa:artifactType "file" .
+
+pa:RuntimeArtifact11 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "project_documents" ;
+  pa:artifactPath "runtime/project_documents" ;
+  pa:artifactType "directory" .
+
+pa:RuntimeArtifact12 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "review_feedback" ;
+  pa:artifactPath "runtime/review_feedback" ;
+  pa:artifactType "directory" .
+
+pa:RuntimeArtifact13 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "review_rules.json" ;
+  pa:artifactPath "runtime/review_rules.json" ;
+  pa:artifactType "file" .
+
+pa:RuntimeArtifact14 a owl:NamedIndividual , pa:RuntimeArtifact ;
+  rdfs:label "startup_checks.json" ;
+  pa:artifactPath "runtime/startup_checks.json" ;
+  pa:artifactType "file" .
+
+pa:ConfigFile01 a owl:NamedIndividual , pa:ConfigurationFile ;
+  rdfs:label "环境变量模板" ;
+  pa:configPath ".env.example" ;
+  pa:configType "example" .
+
+pa:ConfigFile02 a owl:NamedIndividual , pa:ConfigurationFile ;
+  rdfs:label "系统生成配置" ;
+  pa:configPath "runtime/config/skill_config.json" ;
+  pa:configType "json" .
+
+pa:ConfigFile03 a owl:NamedIndividual , pa:ConfigurationFile ;
+  rdfs:label "远程接口配置" ;
+  pa:configPath "runtime/config/integration_config.json" ;
+  pa:configType "json" .
+
+pa:ConfigFile04 a owl:NamedIndividual , pa:ConfigurationFile ;
+  rdfs:label "product_info.md" ;
+  pa:configPath "data/product_info.md" ;
+  pa:configType "md" .
+
+pa:ConfigFile05 a owl:NamedIndividual , pa:ConfigurationFile ;
+  rdfs:label "API列表.txt" ;
+  pa:configPath "data/API列表.txt" ;
+  pa:configType "txt" .
+
+pa:ConfigFile06 a owl:NamedIndividual , pa:ConfigurationFile ;
+  rdfs:label "立项大模型评审规则说明3-13.xlsx" ;
+  pa:configPath "data/立项大模型评审规则说明3-13.xlsx" ;
+  pa:configType "xlsx" .
+
+pa:ApprovalSkill01 a owl:NamedIndividual , pa:ApprovalSkill ;
+  rdfs:label "approval-项目内容-项目内容" ;
+  pa:skillTab "项目内容" ;
+  pa:skillRuleCount 25 .
+
+pa:ApprovalSkill02 a owl:NamedIndividual , pa:ApprovalSkill ;
+  rdfs:label "approval-专业领域评审-专业领域评审" ;
+  pa:skillTab "专业领域评审" ;
+  pa:skillRuleCount 4 .
+
+pa:ApprovalSkill03 a owl:NamedIndividual , pa:ApprovalSkill ;
+  rdfs:label "approval-tam模型评审-TAM模型评审" ;
+  pa:skillTab "TAM模型评审" ;
+  pa:skillRuleCount 3 .
+
+pa:ApprovalSkill04 a owl:NamedIndividual , pa:ApprovalSkill ;
+  rdfs:label "approval-项目价值-项目价值" ;
+  pa:skillTab "项目价值" ;
+  pa:skillRuleCount 1 .
+
+pa:ApprovalSkill05 a owl:NamedIndividual , pa:ApprovalSkill ;
+  rdfs:label "approval-项目里程碑-项目里程碑" ;
+  pa:skillTab "项目里程碑" ;
+  pa:skillRuleCount 3 .
+
+pa:ApprovalSkill06 a owl:NamedIndividual , pa:ApprovalSkill ;
+  rdfs:label "approval-组织架构-组织架构" ;
+  pa:skillTab "组织架构" ;
+  pa:skillRuleCount 1 .
+
+pa:ApprovalSkill07 a owl:NamedIndividual , pa:ApprovalSkill ;
+  rdfs:label "approval-预算信息-预算信息" ;
+  pa:skillTab "预算信息" ;
+  pa:skillRuleCount 3 .
+
+pa:ApprovalSkill08 a owl:NamedIndividual , pa:ApprovalSkill ;
+  rdfs:label "approval-费用变化点-费用变化点" ;
+  pa:skillTab "费用变化点" ;
+  pa:skillRuleCount 1 .
+
+pa:DeploymentPackage01 a owl:NamedIndividual , pa:DeploymentPackage ;
+  rdfs:label "Windows Portable Package" ;
+  pa:packageType "windows-portable" ;
+  pa:packageEntry "ProjectApproval.exe" .
+
+pa:DeploymentPackage02 a owl:NamedIndividual , pa:DeploymentPackage ;
+  rdfs:label "Linux Offline Bundle" ;
+  pa:packageType "linux-offline" ;
+  pa:packageEntry "run.sh" .

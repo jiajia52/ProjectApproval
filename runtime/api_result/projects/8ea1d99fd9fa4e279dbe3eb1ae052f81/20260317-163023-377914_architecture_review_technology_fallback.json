@@ -1,0 +1,69 @@
+{
+  "api_name": "architecture_review_technology_fallback",
+  "method": "POST",
+  "path": "/projectMicosInfo/getList",
+  "payload": {
+    "projectId": "8ea1d99fd9fa4e279dbe3eb1ae052f81",
+    "dataType": 1
+  },
+  "project_id": "8ea1d99fd9fa4e279dbe3eb1ae052f81",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "355df272cbe46792e3ea448001999d1a",
+        "projectId": "8ea1d99fd9fa4e279dbe3eb1ae052f81",
+        "systemId": "MA-0404",
+        "systemCode": "MA-0404",
+        "systemName": "设备管理作业平台",
+        "subCode": "MA-0404_MSA_002",
+        "subName": "设备管理微服务（备件管理）",
+        "subLeader": "房清龙",
+        "subLeaderAccount": "fangqinglong",
+        "subLevel": "B",
+        "subLevelStandard": "1.支撑员工日常办公且500>DAU≥200\n2.C端应用且1000>DAU≥500",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "MSA"
+      },
+      {
+        "id": "543861c6b73988486a80028648dba88a",
+        "projectId": "8ea1d99fd9fa4e279dbe3eb1ae052f81",
+        "systemId": "MA-0404",
+        "systemCode": "MA-0404",
+        "systemName": "设备管理作业平台",
+        "subCode": "MA-0404_MSA_009",
+        "subName": "设备管理微服务（定时作业）",
+        "subLeader": "房清龙",
+        "subLeaderAccount": "fangqinglong",
+        "subLevel": "B",
+        "subLevelStandard": "1.支撑员工日常办公且500>DAU≥200\n2.C端应用且1000>DAU≥500",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "MSA"
+      },
+      {
+        "id": "9aec44b168d2c93c71297a70fd8b5918",
+        "projectId": "8ea1d99fd9fa4e279dbe3eb1ae052f81",
+        "systemId": "MA-0404",
+        "systemCode": "MA-0404",
+        "systemName": "设备管理作业平台",
+        "subCode": "MA-0404_MSA_010",
+        "subName": "网关服务",
+        "subLeader": "房清龙",
+        "subLeaderAccount": "fangqinglong",
+        "subLevel": "B",
+        "subLevelStandard": "1.支撑员工日常办公且500>DAU≥200\n2.C端应用且1000>DAU≥500",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "MSA"
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T16:30:23+08:00"
+}

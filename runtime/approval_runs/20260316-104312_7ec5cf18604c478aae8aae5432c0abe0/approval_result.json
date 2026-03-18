@@ -1,0 +1,845 @@
+{
+  "project_name": "软件开发工作台项目",
+  "project_id": "7ec5cf18604c478aae8aae5432c0abe0",
+  "category": "工作台开发及实施",
+  "document_source": "remote",
+  "document_saved_at": "2026-03-16T10:43:12+08:00",
+  "decision": "驳回",
+  "summary": "规则引擎基线结果为驳回。1条规则未通过，主要问题：R035: 合同计划缺少完整时间范围。",
+  "item_results": [
+    {
+      "rule_id": "R001",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:软件开发工作台项目背景",
+        "content:1.整车软件开发借助首发车形成架构、组件、功能、PRD、用例资产沉淀，2026年识别出9款首发车，2个已上线运营，3个启动上线；",
+        "2.当前已识别出九章平台配置9项，其中上线运营1项，正在上线3项，已上线支撑适配车型2个；",
+        "3.EE架构对整个系统进行治理，定义24个系统，伴随车型首发所有系统都已上线运营，其中12个通过自研模式在软件工作台上线，12个二次开发模式在系统作业中心进行交付",
+        "images:0437f6af31804ae9b9e6e976aeb2b19f",
+        "0984bedfe52c4ed38e3581c4ccdc34f9",
+        "114d3ffe287441489c6384f0b2a7c797",
+        "2f706c2b31024857861feebdfa810b23",
+        "e75d093dd88c4cf1b6bf96b74ca64627",
+        "f27d56d"
+      ],
+      "suggestion": "具备项目背景标题"
+    },
+    {
+      "rule_id": "R002",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:软件开发工作台项目背景",
+        "content:1.整车软件开发借助首发车形成架构、组件、功能、PRD、用例资产沉淀，2026年识别出9款首发车，2个已上线运营，3个启动上线；",
+        "2.当前已识别出九章平台配置9项，其中上线运营1项，正在上线3项，已上线支撑适配车型2个；",
+        "3.EE架构对整个系统进行治理，定义24个系统，伴随车型首发所有系统都已上线运营，其中12个通过自研模式在软件工作台上线，12个二次开发模式在系统作业中心进行交付",
+        "images:0437f6af31804ae9b9e6e976aeb2b19f",
+        "0984bedfe52c4ed38e3581c4ccdc34f9",
+        "114d3ffe287441489c6384f0b2a7c797",
+        "2f706c2b31024857861feebdfa810b23",
+        "e75d093dd88c4cf1b6bf96b74ca64627",
+        "f27d56d"
+      ],
+      "suggestion": "具备项目背景内容"
+    },
+    {
+      "rule_id": "R003",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:软件开发工作台项目背景",
+        "content:1.整车软件开发借助首发车形成架构、组件、功能、PRD、用例资产沉淀，2026年识别出9款首发车，2个已上线运营，3个启动上线；",
+        "2.当前已识别出九章平台配置9项，其中上线运营1项，正在上线3项，已上线支撑适配车型2个；",
+        "3.EE架构对整个系统进行治理，定义24个系统，伴随车型首发所有系统都已上线运营，其中12个通过自研模式在软件工作台上线，12个二次开发模式在系统作业中心进行交付",
+        "images:0437f6af31804ae9b9e6e976aeb2b19f",
+        "0984bedfe52c4ed38e3581c4ccdc34f9",
+        "114d3ffe287441489c6384f0b2a7c797",
+        "2f706c2b31024857861feebdfa810b23",
+        "e75d093dd88c4cf1b6bf96b74ca64627",
+        "f27d56d"
+      ],
+      "suggestion": "具备项目背景图片"
+    },
+    {
+      "rule_id": "R007",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "软件开发工作台"
+      ],
+      "suggestion": "具备产品链"
+    },
+    {
+      "rule_id": "R008",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "完善整车软件版本的规则，整车软件版本在11个在研车型上线，推动版本评价从初期运营2.5星达到5星标准",
+        "质量过程穿透软件版本伴随基线管理",
+        "业务单元上线率44%提升到100%",
+        "优化4个、新增11个业务单元AI辅助评价",
+        "支持北京院（座舱中心）通过工作台盘点项目"
+      ],
+      "suggestion": "具备项目目标(O)"
+    },
+    {
+      "rule_id": "R009",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "运营迭代软件开发工作台建设，完善整车作业中心、系统作业中心、平台作业中心、软件作业中心、质量运营中心5个业务模块，实现研发所有车型上线，推动版本评价从初期运营2.5星达到5星标准"
+      ],
+      "suggestion": "具备战队OKR"
+    },
+    {
+      "rule_id": "R010",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "id:ea1a20aea3534ecf85e0411d65d75dff",
+        "goalId:2c56a7dcc9c9474fa831cd4fa8313d72",
+        "productId:2b8a91d096b34e5484f8f87336c39a73",
+        "productName:软件开发工作台",
+        "id:f99af745ce0c45b984e604eee8a126a8",
+        "goalId:cce74f913568494b968d34641c26db6f",
+        "productId:2b8a91d096b34e5484f8f87336c39a73",
+        "productName:软件开发工作台",
+        "id:4b8d6a6e50804dd094614273d153c49f",
+        "goalId:e912b27c721a41529a68f4a1a7c1677e",
+        "productId:2b8a91d096b34e5484f8f87336c39a73",
+        "pro"
+      ],
+      "suggestion": "具备产品"
+    },
+    {
+      "rule_id": "R011",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "start:2026-03-03",
+        "end:2026-08-31"
+      ],
+      "suggestion": "具备目标时间范围"
+    },
+    {
+      "rule_id": "R012",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "id:a9bc0d38d9d64799bbec33792563e101",
+        "goalId:2c56a7dcc9c9474fa831cd4fa8313d72",
+        "orderNum:1",
+        "keyResult:基于平台首发车的线上作业，搭建并运营适配车型的线上软件版本管理，实现支撑所有车型项目线上管理软件版本",
+        "id:7375a602d42849a29701cb7d179c6ea8",
+        "goalId:2c56a7dcc9c9474fa831cd4fa8313d72",
+        "orderNum:2",
+        "keyResult:新增整车紧急修复基线版本流程作业，实现面临重大紧急问题情况下快速修复软件基线并直至车型端解决问题",
+        "id:da8b9c5213334eb8a68c60d5b9fe9a9c",
+        "goalId:2c56a7dcc9c9474fa831cd4fa8313d72",
+        "orderNum:3",
+        "keyResult:与设变中心联通，基"
+      ],
+      "suggestion": "具备关键成果(KR)"
+    },
+    {
+      "rule_id": "R013",
+      "status": "pass",
+      "reason": "范围材料完整",
+      "evidence": [
+        "id:17545192",
+        "projectId:7ec5cf18604c478aae8aae5432c0abe0",
+        "code:IPD03032204P001YZY",
+        "name:整车EOL设计流程",
+        "level:L4",
+        "created:2026-03-03 14:04:04",
+        "processVersion:75",
+        "createTime:2026-03-03 14:33:22",
+        "updateTime:2026-03-03 14:33:22",
+        "isDelete:0",
+        "roleName:诊断专业设计师",
+        "type:首次上线",
+        "processId:dc113e7e82f378e4a77d05f726d5b851",
+        "processVersionId:0ba0ad196774e52093be681e166b7da5",
+        "processCreatedTime:2026-03-03 14:04:04",
+        "productName:软件开发工作台"
+      ],
+      "suggestion": "具备业务流程"
+    },
+    {
+      "rule_id": "R015",
+      "status": "pass",
+      "reason": "系统范围完整",
+      "evidence": [
+        "id:4957817",
+        "code:IOV-0018",
+        "name:星链",
+        "groupName:系统",
+        "rootName:系统",
+        "categoryName:系统",
+        "systemName:星链",
+        "applicationSystemName:星链",
+        "appName:星链",
+        "type:system",
+        "typeName:系统",
+        "ownerName:jinweipeng",
+        "systemLeader:jinweipeng"
+      ],
+      "suggestion": "具备微服务（二者一种）"
+    },
+    {
+      "rule_id": "R016",
+      "status": "pass",
+      "reason": "系统范围完整",
+      "evidence": [
+        "id:4957817",
+        "code:IOV-0018",
+        "name:星链",
+        "groupName:系统",
+        "rootName:系统",
+        "categoryName:系统",
+        "systemName:星链",
+        "applicationSystemName:星链",
+        "appName:星链",
+        "type:system",
+        "typeName:系统",
+        "ownerName:jinweipeng",
+        "systemLeader:jinweipeng"
+      ],
+      "suggestion": "具备微应用（二者一种）"
+    },
+    {
+      "rule_id": "R017",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线",
+        "content:● 新增功能安全工程师、交互工程师、软件集成工程师、信息安全工程师、智网市场与用户洞察工程师等角色业务单元",
+        "● 提升EE架构工程师、智网系统工程师、软件架构师、产品经理、软件测试工程师等角色业务单元上线率",
+        "images:ab939fd876834d69930b3b39cfc62d92",
+        "546f19aed3dc4a06a23d035649065263",
+        "0fef009230c1457fbef9f721a99d56fd",
+        "1353f0a5054a4aa8b0ec133f23dc1aaf",
+        "ce363ea4a5ab4afcb25de6c32cbb312d",
+        "items:title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线",
+        "content:● 增加平台适配车、修复基线、设变和产线EOL 4个场"
+      ],
+      "suggestion": "具备项目方案标题"
+    },
+    {
+      "rule_id": "R018",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线",
+        "content:● 新增功能安全工程师、交互工程师、软件集成工程师、信息安全工程师、智网市场与用户洞察工程师等角色业务单元",
+        "● 提升EE架构工程师、智网系统工程师、软件架构师、产品经理、软件测试工程师等角色业务单元上线率",
+        "images:ab939fd876834d69930b3b39cfc62d92",
+        "546f19aed3dc4a06a23d035649065263",
+        "0fef009230c1457fbef9f721a99d56fd",
+        "1353f0a5054a4aa8b0ec133f23dc1aaf",
+        "ce363ea4a5ab4afcb25de6c32cbb312d",
+        "items:title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线",
+        "content:● 增加平台适配车、修复基线、设变和产线EOL 4个场"
+      ],
+      "suggestion": "具备项目方案内容"
+    },
+    {
+      "rule_id": "R019",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线",
+        "content:● 新增功能安全工程师、交互工程师、软件集成工程师、信息安全工程师、智网市场与用户洞察工程师等角色业务单元",
+        "● 提升EE架构工程师、智网系统工程师、软件架构师、产品经理、软件测试工程师等角色业务单元上线率",
+        "images:ab939fd876834d69930b3b39cfc62d92",
+        "546f19aed3dc4a06a23d035649065263",
+        "0fef009230c1457fbef9f721a99d56fd",
+        "1353f0a5054a4aa8b0ec133f23dc1aaf",
+        "ce363ea4a5ab4afcb25de6c32cbb312d",
+        "items:title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线",
+        "content:● 增加平台适配车、修复基线、设变和产线EOL 4个场"
+      ],
+      "suggestion": "具备项目方案图片"
+    },
+    {
+      "rule_id": "R026",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:product_count:1",
+        "business_process_count:13",
+        "business_unit_count:172",
+        "business_object_count:2",
+        "message:操作成功",
+        "link_label:前往EAMAP查看"
+      ],
+      "suggestion": "具备业务架构评审"
+    },
+    {
+      "rule_id": "R027",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:flow_dimension_count:0",
+        "check_point_count:0",
+        "message:参数异常",
+        "link_label:前往信息架构中心查看"
+      ],
+      "suggestion": "具备数据架构评审"
+    },
+    {
+      "rule_id": "R028",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:app_count:0",
+        "service_count:8",
+        "type:fallback",
+        "items:id:f4f9290cce4cd90473e11e0da5a6c1a4",
+        "index:1",
+        "dimension:技术架构",
+        "checkpoint:平台作业中心",
+        "value_model:系统编码: IOV-0018；负责人: 张永生",
+        "conclusion:通过",
+        "description:根据平台监控DAU符合C级标准",
+        "id:f5543c7ad002fbd8a5c308dad7f07f7c",
+        "index:2",
+        "dimension:技术架构",
+        "checkpoint:软件作业中心",
+        "value_model:系统编码: IOV-0018；负责人: 张永生",
+        "conclusion:通过",
+        "description:根据平台监控DAU符合C级标准",
+        "id:bc3fb7e50b1dcb76cb935016333501b"
+      ],
+      "suggestion": "具备技术架构评审"
+    },
+    {
+      "rule_id": "R029",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:app_count:3",
+        "service_count:5",
+        "safety_level:4",
+        "items:id:review-1",
+        "index:1",
+        "dimension:安全架构",
+        "checkpoint:威胁建模",
+        "value_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、",
+        "reviewer:赵元宁",
+        "conclusion:通过",
+        "id:review-2",
+        "index:2",
+        "dimension:安全架构",
+        "checkpoint:应用安全等级判定",
+        "value_model:明确建设系统的安全等级及等保等级",
+        "reviewer:赵元宁",
+        "conclusion:通过",
+        "message:操作成功",
+        "link_label:前往应用开发安全平台查看"
+      ],
+      "suggestion": "具备安全架构评审"
+    },
+    {
+      "rule_id": "R030",
+      "status": "pass",
+      "reason": "TAM 模型指标完整",
+      "evidence": [
+        "id:548",
+        "title:软件问题流出率",
+        "current_state:不完整",
+        "benefit_department:[\"208\"]",
+        "target_3y:2026:35‰",
+        "2027:25‰",
+        "2028:20‰",
+        "target_2026:35‰",
+        "target_2027:25‰",
+        "target_2028:20‰",
+        "calculation_basis:问题来源为初期流动（SOP至SOP+6）某车型ITR立项所有软件问题ID的频次求和/该车型销量"
+      ],
+      "suggestion": "具备能力模型（三者有一）"
+    },
+    {
+      "rule_id": "R031",
+      "status": "pass",
+      "reason": "TAM 模型指标完整",
+      "evidence": [
+        "id:549",
+        "benefit_department:[]"
+      ],
+      "suggestion": "具备结果模型（三者有一）"
+    },
+    {
+      "rule_id": "R032",
+      "status": "pass",
+      "reason": "TAM 模型指标完整",
+      "evidence": [
+        "id:550",
+        "title:软件类业务单元上线率",
+        "current_state:44%",
+        "benefit_department:[\"208\"]",
+        "target_3y:2026:44%",
+        "2027:100%",
+        "2028:100%",
+        "target_2026:44%",
+        "target_2027:100%",
+        "target_2028:100%",
+        "calculation_basis:开发上线的软件类业务单元数/研发软件类业务单元总数"
+      ],
+      "suggestion": "具备管理模型（三者有一）"
+    },
+    {
+      "rule_id": "R034",
+      "status": "pass",
+      "reason": "里程碑计划完整",
+      "evidence": [
+        "start:2026-03-03",
+        "end:2026-03-15",
+        "title:立项计划"
+      ],
+      "suggestion": "具备立项计划"
+    },
+    {
+      "rule_id": "R035",
+      "status": "fail",
+      "reason": "合同计划缺少完整时间范围",
+      "evidence": [],
+      "suggestion": "具备合同计划"
+    },
+    {
+      "rule_id": "R036",
+      "status": "pass",
+      "reason": "里程碑计划完整",
+      "evidence": [
+        "start:2026-03-03",
+        "end:2026-08-31",
+        "title:支持北京院（座舱中心）通过工作台盘点项目"
+      ],
+      "suggestion": "具备目标计划"
+    },
+    {
+      "rule_id": "R037",
+      "status": "pass",
+      "reason": "组织架构完整",
+      "evidence": [
+        "development_mode:混合开发",
+        "members:name:郭文慧",
+        "employee_id:10199715",
+        "role:业务架构工程师",
+        "level:T6",
+        "department:体系数字化规划部",
+        "department_id:1",
+        "team_name:IPD软件开发工作台",
+        "workload:275",
+        "plan_start_date:2026-03-01",
+        "plan_end_date:2026-11-30",
+        "party_type:own",
+        "flag:0",
+        "name:资源池",
+        "role:软件质量管理工程师",
+        "level:T5",
+        "team_name:IPD软件开发工作台",
+        "workload:244",
+        "plan_start_date:2026-04-01",
+        "plan_end_date:2026-11-30",
+        "party_type:third",
+        "flag:1",
+        "name:资源池",
+        "role:前后端开发工程师(前端方向)",
+        "le"
+      ],
+      "suggestion": "具备组织架构"
+    },
+    {
+      "rule_id": "R038",
+      "status": "pass",
+      "reason": "费用构成完整",
+      "evidence": [
+        "name:资源池外包",
+        "amount:9198640.58",
+        "budget_subject:YSGC-PM-2601AFY-1",
+        "calculation:人天单价",
+        "purchase_mode:开发资源池"
+      ],
+      "suggestion": "具备费用构成"
+    },
+    {
+      "rule_id": "R039",
+      "status": "pass",
+      "reason": "该规则标记为不需要。",
+      "evidence": [],
+      "suggestion": "无需补充此项。"
+    },
+    {
+      "rule_id": "R040",
+      "status": "pass",
+      "reason": "该规则标记为不需要。",
+      "evidence": [],
+      "suggestion": "无需补充此项。"
+    }
+  ],
+  "risks": [
+    "合同计划缺少完整时间范围"
+  ],
+  "missing_information": [
+    "合同计划",
+    "具备合同计划"
+  ],
+  "positive_evidence": [],
+  "project_commentary": "",
+  "baseline": {
+    "generated_at": "2026-03-16T02:43:12.531791+00:00",
+    "project_name": "软件开发工作台项目",
+    "category": "工作台开发及实施",
+    "decision": "驳回",
+    "score": 88,
+    "statistics": {
+      "total_rules": 29,
+      "passed_rules": 28,
+      "failed_rules": 1,
+      "critical_failures": 1,
+      "major_failures": 0,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "合同计划缺少完整时间范围",
+        "suggestion": "具备合同计划",
+        "evidence": ""
+      }
+    ],
+    "rule_results": [
+      {
+        "rule_id": "R001",
+        "review_point": "项目背景",
+        "review_content": "背景标题",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目背景标题",
+        "evidence": "title:软件开发工作台项目背景\ncontent:1.整车软件开发借助首发车形成架构、组件、功能、PRD、用例资产沉淀，2026年识别出9款首发车，2个已上线运营，3个启动上线；\r\n2.当前已识别出九章平台配置9项，其中上线运营1项，正在上线3项，已上线支撑适配车型2个；\r\n3.EE架构对整个系统进行治理，定义24个系统，伴随车型首发所有系统都已上线运营，其中12个通过自研模式在软件工作台上线，12个二次开发模式在系统作业中心进行交付\nimages:0437f6af31804ae9b9e6e976aeb2b19f\n0984bedfe52c4ed38e3581c4ccdc34f9\n114d3ffe287441489c6384f0b2a7c797\n2f706c2b31024857861feebdfa810b23\ne75d093dd88c4cf1b6bf96b74ca64627\nf27d56d"
+      },
+      {
+        "rule_id": "R002",
+        "review_point": "项目背景",
+        "review_content": "背景内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目背景内容",
+        "evidence": "title:软件开发工作台项目背景\ncontent:1.整车软件开发借助首发车形成架构、组件、功能、PRD、用例资产沉淀，2026年识别出9款首发车，2个已上线运营，3个启动上线；\r\n2.当前已识别出九章平台配置9项，其中上线运营1项，正在上线3项，已上线支撑适配车型2个；\r\n3.EE架构对整个系统进行治理，定义24个系统，伴随车型首发所有系统都已上线运营，其中12个通过自研模式在软件工作台上线，12个二次开发模式在系统作业中心进行交付\nimages:0437f6af31804ae9b9e6e976aeb2b19f\n0984bedfe52c4ed38e3581c4ccdc34f9\n114d3ffe287441489c6384f0b2a7c797\n2f706c2b31024857861feebdfa810b23\ne75d093dd88c4cf1b6bf96b74ca64627\nf27d56d"
+      },
+      {
+        "rule_id": "R003",
+        "review_point": "项目背景",
+        "review_content": "背景图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目背景图片",
+        "evidence": "title:软件开发工作台项目背景\ncontent:1.整车软件开发借助首发车形成架构、组件、功能、PRD、用例资产沉淀，2026年识别出9款首发车，2个已上线运营，3个启动上线；\r\n2.当前已识别出九章平台配置9项，其中上线运营1项，正在上线3项，已上线支撑适配车型2个；\r\n3.EE架构对整个系统进行治理，定义24个系统，伴随车型首发所有系统都已上线运营，其中12个通过自研模式在软件工作台上线，12个二次开发模式在系统作业中心进行交付\nimages:0437f6af31804ae9b9e6e976aeb2b19f\n0984bedfe52c4ed38e3581c4ccdc34f9\n114d3ffe287441489c6384f0b2a7c797\n2f706c2b31024857861feebdfa810b23\ne75d093dd88c4cf1b6bf96b74ca64627\nf27d56d"
+      },
+      {
+        "rule_id": "R007",
+        "review_point": "项目OKR",
+        "review_content": "关联产品链",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备产品链",
+        "evidence": "软件开发工作台"
+      },
+      {
+        "rule_id": "R008",
+        "review_point": "项目OKR",
+        "review_content": "项目目标（O）",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备项目目标(O)",
+        "evidence": "完善整车软件版本的规则，整车软件版本在11个在研车型上线，推动版本评价从初期运营2.5星达到5星标准\n质量过程穿透软件版本伴随基线管理\n业务单元上线率44%提升到100%\n优化4个、新增11个业务单元AI辅助评价\n支持北京院（座舱中心）通过工作台盘点项目"
+      },
+      {
+        "rule_id": "R009",
+        "review_point": "项目OKR",
+        "review_content": "战队OKR",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备战队OKR",
+        "evidence": "运营迭代软件开发工作台建设，完善整车作业中心、系统作业中心、平台作业中心、软件作业中心、质量运营中心5个业务模块，实现研发所有车型上线，推动版本评价从初期运营2.5星达到5星标准"
+      },
+      {
+        "rule_id": "R010",
+        "review_point": "项目OKR",
+        "review_content": "关联产品",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备产品",
+        "evidence": "id:ea1a20aea3534ecf85e0411d65d75dff\ngoalId:2c56a7dcc9c9474fa831cd4fa8313d72\nproductId:2b8a91d096b34e5484f8f87336c39a73\nproductName:软件开发工作台\nid:f99af745ce0c45b984e604eee8a126a8\ngoalId:cce74f913568494b968d34641c26db6f\nproductId:2b8a91d096b34e5484f8f87336c39a73\nproductName:软件开发工作台\nid:4b8d6a6e50804dd094614273d153c49f\ngoalId:e912b27c721a41529a68f4a1a7c1677e\nproductId:2b8a91d096b34e5484f8f87336c39a73\npro"
+      },
+      {
+        "rule_id": "R011",
+        "review_point": "项目OKR",
+        "review_content": "目标时间范围",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备目标时间范围",
+        "evidence": "start:2026-03-03\nend:2026-08-31"
+      },
+      {
+        "rule_id": "R012",
+        "review_point": "项目OKR",
+        "review_content": "关键成果（KR）",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备关键成果(KR)",
+        "evidence": "id:a9bc0d38d9d64799bbec33792563e101\ngoalId:2c56a7dcc9c9474fa831cd4fa8313d72\norderNum:1\nkeyResult:基于平台首发车的线上作业，搭建并运营适配车型的线上软件版本管理，实现支撑所有车型项目线上管理软件版本\nid:7375a602d42849a29701cb7d179c6ea8\ngoalId:2c56a7dcc9c9474fa831cd4fa8313d72\norderNum:2\nkeyResult:新增整车紧急修复基线版本流程作业，实现面临重大紧急问题情况下快速修复软件基线并直至车型端解决问题\nid:da8b9c5213334eb8a68c60d5b9fe9a9c\ngoalId:2c56a7dcc9c9474fa831cd4fa8313d72\norderNum:3\nkeyResult:与设变中心联通，基"
+      },
+      {
+        "rule_id": "R013",
+        "review_point": "项目范围",
+        "review_content": "业务流程",
+        "status": "pass",
+        "severity": "critical",
+        "message": "范围材料完整",
+        "suggestion": "具备业务流程",
+        "evidence": "id:17545192\nprojectId:7ec5cf18604c478aae8aae5432c0abe0\ncode:IPD03032204P001YZY\nname:整车EOL设计流程\nlevel:L4\ncreated:2026-03-03 14:04:04\nprocessVersion:75\ncreateTime:2026-03-03 14:33:22\nupdateTime:2026-03-03 14:33:22\nisDelete:0\nroleName:诊断专业设计师\ntype:首次上线\nprocessId:dc113e7e82f378e4a77d05f726d5b851\nprocessVersionId:0ba0ad196774e52093be681e166b7da5\nprocessCreatedTime:2026-03-03 14:04:04\nproductName:软件开发工作台"
+      },
+      {
+        "rule_id": "R015",
+        "review_point": "系统范围",
+        "review_content": "微服务",
+        "status": "pass",
+        "severity": "critical",
+        "message": "系统范围完整",
+        "suggestion": "具备微服务（二者一种）",
+        "evidence": "id:4957817\ncode:IOV-0018\nname:星链\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:星链\napplicationSystemName:星链\nappName:星链\ntype:system\ntypeName:系统\nownerName:jinweipeng\nsystemLeader:jinweipeng"
+      },
+      {
+        "rule_id": "R016",
+        "review_point": "系统范围",
+        "review_content": "微应用",
+        "status": "pass",
+        "severity": "critical",
+        "message": "系统范围完整",
+        "suggestion": "具备微应用（二者一种）",
+        "evidence": "id:4957817\ncode:IOV-0018\nname:星链\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:星链\napplicationSystemName:星链\nappName:星链\ntype:system\ntypeName:系统\nownerName:jinweipeng\nsystemLeader:jinweipeng"
+      },
+      {
+        "rule_id": "R017",
+        "review_point": "项目方案",
+        "review_content": "项目方案",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目方案标题",
+        "evidence": "title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线\ncontent:● 新增功能安全工程师、交互工程师、软件集成工程师、信息安全工程师、智网市场与用户洞察工程师等角色业务单元\n● 提升EE架构工程师、智网系统工程师、软件架构师、产品经理、软件测试工程师等角色业务单元上线率\nimages:ab939fd876834d69930b3b39cfc62d92\n546f19aed3dc4a06a23d035649065263\n0fef009230c1457fbef9f721a99d56fd\n1353f0a5054a4aa8b0ec133f23dc1aaf\nce363ea4a5ab4afcb25de6c32cbb312d\nitems:title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线\ncontent:● 增加平台适配车、修复基线、设变和产线EOL 4个场"
+      },
+      {
+        "rule_id": "R018",
+        "review_point": "项目方案",
+        "review_content": "方案内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目方案内容",
+        "evidence": "title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线\ncontent:● 新增功能安全工程师、交互工程师、软件集成工程师、信息安全工程师、智网市场与用户洞察工程师等角色业务单元\n● 提升EE架构工程师、智网系统工程师、软件架构师、产品经理、软件测试工程师等角色业务单元上线率\nimages:ab939fd876834d69930b3b39cfc62d92\n546f19aed3dc4a06a23d035649065263\n0fef009230c1457fbef9f721a99d56fd\n1353f0a5054a4aa8b0ec133f23dc1aaf\nce363ea4a5ab4afcb25de6c32cbb312d\nitems:title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线\ncontent:● 增加平台适配车、修复基线、设变和产线EOL 4个场"
+      },
+      {
+        "rule_id": "R019",
+        "review_point": "项目方案",
+        "review_content": "方案图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目方案图片",
+        "evidence": "title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线\ncontent:● 新增功能安全工程师、交互工程师、软件集成工程师、信息安全工程师、智网市场与用户洞察工程师等角色业务单元\n● 提升EE架构工程师、智网系统工程师、软件架构师、产品经理、软件测试工程师等角色业务单元上线率\nimages:ab939fd876834d69930b3b39cfc62d92\n546f19aed3dc4a06a23d035649065263\n0fef009230c1457fbef9f721a99d56fd\n1353f0a5054a4aa8b0ec133f23dc1aaf\nce363ea4a5ab4afcb25de6c32cbb312d\nitems:title:变革点1：完善整车软件版本的规则，整车软件版本在11个车型上线\ncontent:● 增加平台适配车、修复基线、设变和产线EOL 4个场"
+      },
+      {
+        "rule_id": "R026",
+        "review_point": "专业领域评审",
+        "review_content": "业务架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备业务架构评审",
+        "evidence": "summary:product_count:1\nbusiness_process_count:13\nbusiness_unit_count:172\nbusiness_object_count:2\nmessage:操作成功\nlink_label:前往EAMAP查看"
+      },
+      {
+        "rule_id": "R027",
+        "review_point": "专业领域评审",
+        "review_content": "数据架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备数据架构评审",
+        "evidence": "summary:flow_dimension_count:0\ncheck_point_count:0\nmessage:参数异常\nlink_label:前往信息架构中心查看"
+      },
+      {
+        "rule_id": "R028",
+        "review_point": "专业领域评审",
+        "review_content": "技术架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备技术架构评审",
+        "evidence": "summary:app_count:0\nservice_count:8\ntype:fallback\nitems:id:f4f9290cce4cd90473e11e0da5a6c1a4\nindex:1\ndimension:技术架构\ncheckpoint:平台作业中心\nvalue_model:系统编码: IOV-0018；负责人: 张永生\nconclusion:通过\ndescription:根据平台监控DAU符合C级标准\nid:f5543c7ad002fbd8a5c308dad7f07f7c\nindex:2\ndimension:技术架构\ncheckpoint:软件作业中心\nvalue_model:系统编码: IOV-0018；负责人: 张永生\nconclusion:通过\ndescription:根据平台监控DAU符合C级标准\nid:bc3fb7e50b1dcb76cb935016333501b"
+      },
+      {
+        "rule_id": "R029",
+        "review_point": "专业领域评审",
+        "review_content": "安全架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备安全架构评审",
+        "evidence": "summary:app_count:3\nservice_count:5\nsafety_level:4\nitems:id:review-1\nindex:1\ndimension:安全架构\ncheckpoint:威胁建模\nvalue_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、\nreviewer:赵元宁\nconclusion:通过\nid:review-2\nindex:2\ndimension:安全架构\ncheckpoint:应用安全等级判定\nvalue_model:明确建设系统的安全等级及等保等级\nreviewer:赵元宁\nconclusion:通过\nmessage:操作成功\nlink_label:前往应用开发安全平台查看"
+      },
+      {
+        "rule_id": "R030",
+        "review_point": "能力（竞争）模型",
+        "review_content": "能力（竞争）模型",
+        "status": "pass",
+        "severity": "major",
+        "message": "TAM 模型指标完整",
+        "suggestion": "具备能力模型（三者有一）",
+        "evidence": "id:548\ntitle:软件问题流出率\ncurrent_state:不完整\nbenefit_department:[\"208\"]\ntarget_3y:2026:35‰\n2027:25‰\n2028:20‰\ntarget_2026:35‰\ntarget_2027:25‰\ntarget_2028:20‰\ncalculation_basis:问题来源为初期流动（SOP至SOP+6）某车型ITR立项所有软件问题ID的频次求和/该车型销量"
+      },
+      {
+        "rule_id": "R031",
+        "review_point": "结果（财务/客户）模型",
+        "review_content": "结果（财务/客户）模型",
+        "status": "pass",
+        "severity": "major",
+        "message": "TAM 模型指标完整",
+        "suggestion": "具备结果模型（三者有一）",
+        "evidence": "id:549\nbenefit_department:[]"
+      },
+      {
+        "rule_id": "R032",
+        "review_point": "管理体系模型",
+        "review_content": "管理体系模型",
+        "status": "pass",
+        "severity": "major",
+        "message": "TAM 模型指标完整",
+        "suggestion": "具备管理模型（三者有一）",
+        "evidence": "id:550\ntitle:软件类业务单元上线率\ncurrent_state:44%\nbenefit_department:[\"208\"]\ntarget_3y:2026:44%\n2027:100%\n2028:100%\ntarget_2026:44%\ntarget_2027:100%\ntarget_2028:100%\ncalculation_basis:开发上线的软件类业务单元数/研发软件类业务单元总数"
+      },
+      {
+        "rule_id": "R034",
+        "review_point": "项目里程碑",
+        "review_content": "立项计划",
+        "status": "pass",
+        "severity": "critical",
+        "message": "里程碑计划完整",
+        "suggestion": "具备立项计划",
+        "evidence": "start:2026-03-03\nend:2026-03-15\ntitle:立项计划"
+      },
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "合同计划缺少完整时间范围",
+        "suggestion": "具备合同计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "pass",
+        "severity": "critical",
+        "message": "里程碑计划完整",
+        "suggestion": "具备目标计划",
+        "evidence": "start:2026-03-03\nend:2026-08-31\ntitle:支持北京院（座舱中心）通过工作台盘点项目"
+      },
+      {
+        "rule_id": "R037",
+        "review_point": "组织架构",
+        "review_content": "组织架构",
+        "status": "pass",
+        "severity": "critical",
+        "message": "组织架构完整",
+        "suggestion": "具备组织架构",
+        "evidence": "development_mode:混合开发\nmembers:name:郭文慧\nemployee_id:10199715\nrole:业务架构工程师\nlevel:T6\ndepartment:体系数字化规划部\ndepartment_id:1\nteam_name:IPD软件开发工作台\nworkload:275\nplan_start_date:2026-03-01\nplan_end_date:2026-11-30\nparty_type:own\nflag:0\nname:资源池\nrole:软件质量管理工程师\nlevel:T5\nteam_name:IPD软件开发工作台\nworkload:244\nplan_start_date:2026-04-01\nplan_end_date:2026-11-30\nparty_type:third\nflag:1\nname:资源池\nrole:前后端开发工程师(前端方向)\nle"
+      },
+      {
+        "rule_id": "R038",
+        "review_point": "费用构成",
+        "review_content": "费用构成",
+        "status": "pass",
+        "severity": "critical",
+        "message": "费用构成完整",
+        "suggestion": "具备费用构成",
+        "evidence": "name:资源池外包\namount:9198640.58\nbudget_subject:YSGC-PM-2601AFY-1\ncalculation:人天单价\npurchase_mode:开发资源池"
+      },
+      {
+        "rule_id": "R039",
+        "review_point": "长尾费用",
+        "review_content": "不需要",
+        "status": "pass",
+        "severity": "minor",
+        "message": "该规则标记为不需要。",
+        "suggestion": "无需补充此项。",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R040",
+        "review_point": "历史投入",
+        "review_content": "不需要",
+        "status": "pass",
+        "severity": "minor",
+        "message": "该规则标记为不需要。",
+        "suggestion": "无需补充此项。",
+        "evidence": ""
+      }
+    ]
+  },
+  "segments": [
+    {
+      "tab": "项目内容",
+      "decision": "通过",
+      "summary": "项目内容评审通过。所有关键规则均满足要求，背景、目标、OKR、范围、方案等核心要素完整且符合规范，无实质性缺失或缺陷。"
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "通过",
+      "summary": "项目在专业领域评审中，业务、数据、技术及安全架构均满足评审要求，材料完整且结论为通过。虽数据架构评审接口返回异常，但已通过回退机制使用系统范围内容作为补充，整体符合规范。"
+    },
+    {
+      "tab": "TAM模型评审",
+      "decision": "通过",
+      "summary": "TAM模型评审中，能力（竞争）模型、结果（财务/客户）模型、管理体系模型三项均满足基本要求。尽管结果模型指标存在空值，但规则基线已判定为通过，且无实质性缺失信息影响判断。"
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "需补充材料",
+      "summary": "项目里程碑评审中，合同计划缺失完整时间范围，其他两项已通过。需补充合同计划的起止时间信息以满足审批要求。"
+    },
+    {
+      "tab": "组织架构",
+      "decision": "通过",
+      "summary": "组织架构信息完整，包含自有人员与第三方资源池成员，角色、团队、工作量及时间计划均明确，符合评审规则要求。"
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面评审通过。费用构成完整，长尾费用与历史投入均无需提供，规则基线中所有规则均已通过，无缺失信息或风险。"
+    }
+  ],
+  "run_dir": "E:\\pyproject\\ProjectApproval\\runtime\\approval_runs\\20260316-104312_7ec5cf18604c478aae8aae5432c0abe0",
+  "generated_at": "2026-03-16T10:45:20",
+  "decision_source": "baseline_aligned_llm_segmented"
+}

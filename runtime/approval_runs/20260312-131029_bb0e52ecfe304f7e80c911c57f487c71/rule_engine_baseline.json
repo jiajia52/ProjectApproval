@@ -1,0 +1,359 @@
+{
+  "generated_at": "2026-03-12T05:10:29.515844+00:00",
+  "project_name": "企业级智能体中国一汽OpenMind建设",
+  "category": "工作台开发及实施",
+  "decision": "驳回",
+  "score": 60,
+  "statistics": {
+    "total_rules": 29,
+    "passed_rules": 24,
+    "failed_rules": 5,
+    "critical_failures": 1,
+    "major_failures": 4,
+    "minor_failures": 0
+  },
+  "findings": [
+    {
+      "rule_id": "R026",
+      "review_point": "专业领域评审",
+      "review_content": "业务架构评审",
+      "status": "fail",
+      "severity": "major",
+      "message": "缺少 业务架构评审",
+      "suggestion": "具备业务架构评审",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R027",
+      "review_point": "专业领域评审",
+      "review_content": "数据架构评审",
+      "status": "fail",
+      "severity": "major",
+      "message": "缺少 数据架构评审",
+      "suggestion": "具备数据架构评审",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R028",
+      "review_point": "专业领域评审",
+      "review_content": "技术架构评审",
+      "status": "fail",
+      "severity": "major",
+      "message": "缺少 技术架构评审",
+      "suggestion": "具备技术架构评审",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R029",
+      "review_point": "专业领域评审",
+      "review_content": "安全架构评审",
+      "status": "fail",
+      "severity": "major",
+      "message": "缺少 安全架构评审",
+      "suggestion": "具备安全架构评审",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R037",
+      "review_point": "组织架构",
+      "review_content": "组织架构",
+      "status": "fail",
+      "severity": "critical",
+      "message": "组织成员或开发模式不完整",
+      "suggestion": "具备组织架构",
+      "evidence": ""
+    }
+  ],
+  "rule_results": [
+    {
+      "rule_id": "R001",
+      "review_point": "项目背景",
+      "review_content": "背景标题",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目背景标题",
+      "evidence": "title:中国一汽OpenMind + 汽车行业大模型建设项目背景\ncontent:OpenMind：用于企业语料收集、企业智能体标准化管理、通过行业大模型进行驱动的、支撑企业运营分析推演的企业级智能体家族。\n核心价值：\n• 通过Chat管线、Agent管线过程持续沉淀高质量数据  \n• 通过沉淀的高质量数据集持续升级行业大模型    \n• 通过“标准化“智能体支持企业运营分析\n最终输出：\n1、可持续沉淀数据的数据管线与高质量数据集\n2、统一标准的各领域智能体\n3、能够支撑企业运营分析的运营智能体\nimages:f57fc83834b24ea78acbb772604e6c69\n689fe5fb6c2748e9839c5853ba85851d\nitems:title:中国一汽OpenMind + 汽车行业大模型建设项目背景\ncontent:2025年行业大模型建设复盘：\n缺少稳定的数据管线"
+    },
+    {
+      "rule_id": "R002",
+      "review_point": "项目背景",
+      "review_content": "背景内容",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目背景内容",
+      "evidence": "title:中国一汽OpenMind + 汽车行业大模型建设项目背景\ncontent:OpenMind：用于企业语料收集、企业智能体标准化管理、通过行业大模型进行驱动的、支撑企业运营分析推演的企业级智能体家族。\n核心价值：\n• 通过Chat管线、Agent管线过程持续沉淀高质量数据  \n• 通过沉淀的高质量数据集持续升级行业大模型    \n• 通过“标准化“智能体支持企业运营分析\n最终输出：\n1、可持续沉淀数据的数据管线与高质量数据集\n2、统一标准的各领域智能体\n3、能够支撑企业运营分析的运营智能体\nimages:f57fc83834b24ea78acbb772604e6c69\n689fe5fb6c2748e9839c5853ba85851d\nitems:title:中国一汽OpenMind + 汽车行业大模型建设项目背景\ncontent:2025年行业大模型建设复盘：\n缺少稳定的数据管线"
+    },
+    {
+      "rule_id": "R003",
+      "review_point": "项目背景",
+      "review_content": "背景图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备项目背景图片",
+      "evidence": "title:中国一汽OpenMind + 汽车行业大模型建设项目背景\ncontent:OpenMind：用于企业语料收集、企业智能体标准化管理、通过行业大模型进行驱动的、支撑企业运营分析推演的企业级智能体家族。\n核心价值：\n• 通过Chat管线、Agent管线过程持续沉淀高质量数据  \n• 通过沉淀的高质量数据集持续升级行业大模型    \n• 通过“标准化“智能体支持企业运营分析\n最终输出：\n1、可持续沉淀数据的数据管线与高质量数据集\n2、统一标准的各领域智能体\n3、能够支撑企业运营分析的运营智能体\nimages:f57fc83834b24ea78acbb772604e6c69\n689fe5fb6c2748e9839c5853ba85851d\nitems:title:中国一汽OpenMind + 汽车行业大模型建设项目背景\ncontent:2025年行业大模型建设复盘：\n缺少稳定的数据管线"
+    },
+    {
+      "rule_id": "R007",
+      "review_point": "项目OKR",
+      "review_content": "关联产品链",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备产品链",
+      "evidence": "企业架构管理平台"
+    },
+    {
+      "rule_id": "R008",
+      "review_point": "项目OKR",
+      "review_content": "项目目标（O）",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备项目目标(O)",
+      "evidence": "打造企业级智能体中国一汽OpenMind"
+    },
+    {
+      "rule_id": "R009",
+      "review_point": "项目OKR",
+      "review_content": "战队OKR",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备战队OKR",
+      "evidence": "平台化集团建设"
+    },
+    {
+      "rule_id": "R010",
+      "review_point": "项目OKR",
+      "review_content": "关联产品",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备产品",
+      "evidence": "id:5ae02d0b77c84a168fa04bc547f1ce5d\ngoalId:1d5bd801725344cca2c44461425df3ac\nproductId:0f41625e71f7d62a031236d2138d5e2f\nproductName:企业架构管理平台"
+    },
+    {
+      "rule_id": "R011",
+      "review_point": "项目OKR",
+      "review_content": "目标时间范围",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备目标时间范围",
+      "evidence": "start:2026-03-09\nend:2026-11-30"
+    },
+    {
+      "rule_id": "R012",
+      "review_point": "项目OKR",
+      "review_content": "关键成果（KR）",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备关键成果(KR)",
+      "evidence": "id:e97e1548a3a54a24bdbac0431359709c\ngoalId:1d5bd801725344cca2c44461425df3ac\norderNum:1\nkeyResult:KR1：完成OpenMind智能体功能开发并上线\nid:767dfc09d4fd44f8a881401d9b4b178e\ngoalId:1d5bd801725344cca2c44461425df3ac\norderNum:2\nkeyResult:KR2：持续迭代升级中国一汽L1级行业大模型，发布LLM-MoE-235B、VLM-MoE-235B等新架构版本\nid:b33151e2a8e740188af758a0670843e8\ngoalId:1d5bd801725344cca2c44461425df3ac\norderNum:3\nkeyResult:KR3：完成5个高质量数据集的构建(满足链主工作要求)"
+    },
+    {
+      "rule_id": "R013",
+      "review_point": "项目范围",
+      "review_content": "业务流程",
+      "status": "pass",
+      "severity": "critical",
+      "message": "范围材料完整",
+      "suggestion": "具备业务流程",
+      "evidence": "id:17545628\nprojectId:bb0e52ecfe304f7e80c911c57f487c71\ncode:POM070410P001TXB\nname:数据分析管理流程\nlevel:L3\ncreated:2026-03-11 18:33:10\nprocessVersion:15\ncreateTime:2026-03-12 10:59:19\nupdateTime:2026-03-12 10:59:19\nisDelete:0\nroleName:数据科学工程师, 员工\ntype:首次上线\nprocessId:19fbcabad9bc523430258cc118328c2f\nprocessVersionId:2cf77356754812f9a5eaba432a6c2e54\nprocessCreatedTime:2026-03-11 18:33:10\nproductName:企业架构管理"
+    },
+    {
+      "rule_id": "R015",
+      "review_point": "系统范围",
+      "review_content": "微服务",
+      "status": "pass",
+      "severity": "critical",
+      "message": "系统范围完整",
+      "suggestion": "具备微服务（二者一种）",
+      "evidence": "id:4958101\ncode:DA-0507\nname:OpenMind智能体\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:OpenMind智能体\napplicationSystemName:OpenMind智能体\nappName:OpenMind智能体\ntype:system\ntypeName:系统\nownerName:yuzihan3\nsystemLeader:yuzihan3"
+    },
+    {
+      "rule_id": "R016",
+      "review_point": "系统范围",
+      "review_content": "微应用",
+      "status": "pass",
+      "severity": "critical",
+      "message": "系统范围完整",
+      "suggestion": "具备微应用（二者一种）",
+      "evidence": "id:4958101\ncode:DA-0507\nname:OpenMind智能体\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:OpenMind智能体\napplicationSystemName:OpenMind智能体\nappName:OpenMind智能体\ntype:system\ntypeName:系统\nownerName:yuzihan3\nsystemLeader:yuzihan3"
+    },
+    {
+      "rule_id": "R017",
+      "review_point": "项目方案",
+      "review_content": "项目方案",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目方案标题",
+      "evidence": "title:OpenMind架构方案\ncontent:OpenMind 围绕智能体“先评审后接入”的核心原则，通过数据工程→模型服务→Agent管理→应用部署的四层架构，构建企业级智能体的标准化孵化与规模化部署能力，最终实现\"运营-诊断-洞察\"的智能化闭环\nimages:76b6cb8de28847dea9209e2177827fc8\nitems:title:OpenMind架构方案\ncontent:OpenMind 围绕智能体“先评审后接入”的核心原则，通过数据工程→模型服务→Agent管理→应用部署的四层架构，构建企业级智能体的标准化孵化与规模化部署能力，最终实现\"运营-诊断-洞察\"的智能化闭环\nimages:76b6cb8de28847dea9209e2177827fc8"
+    },
+    {
+      "rule_id": "R018",
+      "review_point": "项目方案",
+      "review_content": "方案内容",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目方案内容",
+      "evidence": "title:OpenMind架构方案\ncontent:OpenMind 围绕智能体“先评审后接入”的核心原则，通过数据工程→模型服务→Agent管理→应用部署的四层架构，构建企业级智能体的标准化孵化与规模化部署能力，最终实现\"运营-诊断-洞察\"的智能化闭环\nimages:76b6cb8de28847dea9209e2177827fc8\nitems:title:OpenMind架构方案\ncontent:OpenMind 围绕智能体“先评审后接入”的核心原则，通过数据工程→模型服务→Agent管理→应用部署的四层架构，构建企业级智能体的标准化孵化与规模化部署能力，最终实现\"运营-诊断-洞察\"的智能化闭环\nimages:76b6cb8de28847dea9209e2177827fc8"
+    },
+    {
+      "rule_id": "R019",
+      "review_point": "项目方案",
+      "review_content": "方案图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备项目方案图片",
+      "evidence": "title:OpenMind架构方案\ncontent:OpenMind 围绕智能体“先评审后接入”的核心原则，通过数据工程→模型服务→Agent管理→应用部署的四层架构，构建企业级智能体的标准化孵化与规模化部署能力，最终实现\"运营-诊断-洞察\"的智能化闭环\nimages:76b6cb8de28847dea9209e2177827fc8\nitems:title:OpenMind架构方案\ncontent:OpenMind 围绕智能体“先评审后接入”的核心原则，通过数据工程→模型服务→Agent管理→应用部署的四层架构，构建企业级智能体的标准化孵化与规模化部署能力，最终实现\"运营-诊断-洞察\"的智能化闭环\nimages:76b6cb8de28847dea9209e2177827fc8"
+    },
+    {
+      "rule_id": "R026",
+      "review_point": "专业领域评审",
+      "review_content": "业务架构评审",
+      "status": "fail",
+      "severity": "major",
+      "message": "缺少 业务架构评审",
+      "suggestion": "具备业务架构评审",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R027",
+      "review_point": "专业领域评审",
+      "review_content": "数据架构评审",
+      "status": "fail",
+      "severity": "major",
+      "message": "缺少 数据架构评审",
+      "suggestion": "具备数据架构评审",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R028",
+      "review_point": "专业领域评审",
+      "review_content": "技术架构评审",
+      "status": "fail",
+      "severity": "major",
+      "message": "缺少 技术架构评审",
+      "suggestion": "具备技术架构评审",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R029",
+      "review_point": "专业领域评审",
+      "review_content": "安全架构评审",
+      "status": "fail",
+      "severity": "major",
+      "message": "缺少 安全架构评审",
+      "suggestion": "具备安全架构评审",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R030",
+      "review_point": "能力（竞争）模型",
+      "review_content": "能力（竞争）模型",
+      "status": "pass",
+      "severity": "major",
+      "message": "TAM 模型指标完整",
+      "suggestion": "具备能力模型（三者有一）",
+      "evidence": "id:563\ntitle:打造标准化Agent开发与评审体系\ncurrent_state:缺少企业级的Agent运营将智能体“标准化”\nbenefit_department:[\"375\"]\ntarget_3y:2026:建成 OpenMind 企业智能体：AI应用孵化 Agent、智能体评审 Agent、数据集评审 Agent、智能办公 Agent。建立对话采集→Agent评审→标准化→语料评价的闭环流程，输出可复用的“标准Agent”模板库；\n2027:全面推广标准化Agent至主要业务线，实现运营数据的自动归因与多源联动；构建跨部门协同的Agent调度机制，支持动态组合与场景适配；初步建立Agent性能评估与迭代优化机制，提升复用率与交付效率。\n2028:建造成熟的“企业最终运营智能体”生态，实现从被动分析向主动预测的效能跃迁；形成自学习、自优化的Agent网络，支撑战略级决策自动化；"
+    },
+    {
+      "rule_id": "R031",
+      "review_point": "结果（财务/客户）模型",
+      "review_content": "结果（财务/客户）模型",
+      "status": "pass",
+      "severity": "major",
+      "message": "TAM 模型指标完整",
+      "suggestion": "具备结果模型（三者有一）",
+      "evidence": "id:564\nbenefit_department:[]"
+    },
+    {
+      "rule_id": "R032",
+      "review_point": "管理体系模型",
+      "review_content": "管理体系模型",
+      "status": "pass",
+      "severity": "major",
+      "message": "TAM 模型指标完整",
+      "suggestion": "具备管理模型（三者有一）",
+      "evidence": "id:565\ntitle:企业运营分析\ncurrent_state:缺少企业级的Agent运营将智能体“标准化”\nbenefit_department:[\"375\"]\ntarget_3y:2026:搭建企业运营分析Agent，将智能体深度嵌入企业运营体系，形成“数据收集→规律挖掘→问题诊断→决策洞察”的自动化工作流。\n2027:推广“企业运营分析Agent”至主要业务线，实现运营数据的自动归因与多维洞察，显著降低人工报表制作成本，提升决策时效性。\n2028:建成成熟的“企业最终运营智能体”，实现从被动分析向主动预测转变，形成可复用的行业运营分析标准与AI孵化生态。\ntarget_2026:搭建企业运营分析Agent，将智能体深度嵌入企业运营体系，形成“数据收集→规律挖掘→问题诊断→决策洞察”的自动化工作流。\ntarget_2027:推广“企业运营分析Agent”至主要业务线，实现运营数据的"
+    },
+    {
+      "rule_id": "R034",
+      "review_point": "项目里程碑",
+      "review_content": "立项计划",
+      "status": "pass",
+      "severity": "critical",
+      "message": "里程碑计划完整",
+      "suggestion": "具备立项计划",
+      "evidence": "start:2026-03-03\nend:2026-03-31\ntitle:立项计划"
+    },
+    {
+      "rule_id": "R035",
+      "review_point": "项目里程碑",
+      "review_content": "合同计划",
+      "status": "pass",
+      "severity": "critical",
+      "message": "里程碑计划完整",
+      "suggestion": "具备合同计划",
+      "evidence": "start:2026-03-26\nend:2026-05-23\ntitle:合同签订计划"
+    },
+    {
+      "rule_id": "R036",
+      "review_point": "项目里程碑",
+      "review_content": "目标计划",
+      "status": "pass",
+      "severity": "critical",
+      "message": "里程碑计划完整",
+      "suggestion": "具备目标计划",
+      "evidence": "start:2026-03-09\nend:2026-11-30\ntitle:打造企业级智能体中国一汽OpenMind"
+    },
+    {
+      "rule_id": "R037",
+      "review_point": "组织架构",
+      "review_content": "组织架构",
+      "status": "fail",
+      "severity": "critical",
+      "message": "组织成员或开发模式不完整",
+      "suggestion": "具备组织架构",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R038",
+      "review_point": "费用构成",
+      "review_content": "费用构成",
+      "status": "pass",
+      "severity": "critical",
+      "message": "费用构成完整",
+      "suggestion": "具备费用构成",
+      "evidence": "name:Qwen3-PLUS 商业模型采购\namount:3900000.0\nbudget_subject:YSGC-DA-2602AYZ-4\ncalculation:预估全年使用量\npurchase_mode:直接采购\nname:系统研发费用\namount:4099194.04\nbudget_subject:YSGC-DA-2602AYZ-2\ncalculation:人天*单价\npurchase_mode:开发资源池"
+    },
+    {
+      "rule_id": "R039",
+      "review_point": "长尾费用",
+      "review_content": "不需要",
+      "status": "pass",
+      "severity": "minor",
+      "message": "该规则标记为不需要。",
+      "suggestion": "无需补充此项。",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R040",
+      "review_point": "历史投入",
+      "review_content": "不需要",
+      "status": "pass",
+      "severity": "minor",
+      "message": "该规则标记为不需要。",
+      "suggestion": "无需补充此项。",
+      "evidence": ""
+    }
+  ]
+}

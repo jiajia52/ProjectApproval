@@ -1,0 +1,16 @@
+{
+  "api_name": "project_scope_ops_get_scope",
+  "method": "POST",
+  "path": "/projectBaseInfo/getProjectScope",
+  "payload": {
+    "projectId": "8378ccd8b95e487f89fb824445a2f053"
+  },
+  "project_id": "8378ccd8b95e487f89fb824445a2f053",
+  "result": {
+    "code": 2,
+    "message": "Cannot invoke \"java.lang.Integer.intValue()\" because the return value of \"com.dcp.itpm.service.sop.service.bus.entity.QueryProjectScopeParam.getPageNo()\" is null",
+    "data": null
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:46:46+08:00"
+}

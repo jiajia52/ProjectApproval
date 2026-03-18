@@ -1,0 +1,57 @@
+{
+  "api_name": "milestones",
+  "method": "GET",
+  "path": "/milestone/newList/0baeab7da932460094a1d9b27ed585c6",
+  "payload": null,
+  "project_id": "0baeab7da932460094a1d9b27ed585c6",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "fe467c92d35142d9bf61bd7847783de3",
+        "projectEstablishmentId": "0baeab7da932460094a1d9b27ed585c6",
+        "parentId": null,
+        "milestoneOrder": "1",
+        "milestoneType": null,
+        "milestoneTitle": "立项计划",
+        "milestoneDate": "2025-07-30",
+        "milestoneDoneDate": null,
+        "milestoneGoal": null,
+        "deliverables": "1,28",
+        "createUser": 83979,
+        "createTime": "2025-09-11T07:52:02.000+00:00",
+        "updateUser": null,
+        "updateTime": null,
+        "acceptStatus": 3,
+        "deliverablesName": "立项申请报告,立项会议纪要",
+        "flowLevel": null,
+        "milestoneStartDate": "2025-07-15",
+        "okrFlag": null
+      },
+      {
+        "id": "21e2f5b97b7a4f42a3affe5c8395d371",
+        "projectEstablishmentId": "0baeab7da932460094a1d9b27ed585c6",
+        "parentId": null,
+        "milestoneOrder": "2",
+        "milestoneType": null,
+        "milestoneTitle": "合同签订计划",
+        "milestoneDate": "2025-11-30",
+        "milestoneDoneDate": null,
+        "milestoneGoal": null,
+        "deliverables": "5",
+        "createUser": 83979,
+        "createTime": "2025-09-11T07:52:02.000+00:00",
+        "updateUser": null,
+        "updateTime": null,
+        "acceptStatus": 3,
+        "deliverablesName": "合同",
+        "flowLevel": null,
+        "milestoneStartDate": "2025-10-01",
+        "okrFlag": null
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-16T13:57:44+08:00"
+}

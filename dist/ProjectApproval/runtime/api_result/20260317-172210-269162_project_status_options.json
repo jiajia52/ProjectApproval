@@ -1,0 +1,17 @@
+{
+  "api_name": "project_status_options",
+  "method": "GET",
+  "path": "/projectCenter/queryProjectStatusList",
+  "payload": null,
+  "project_id": "",
+  "result": {
+    "code": 55002,
+    "errCode": "null0EBA-0222_MSA_GAUB50501",
+    "errType": "B",
+    "message": "TOKEN无效",
+    "msgType": "E",
+    "success": false
+  },
+  "error": "TOKEN无效",
+  "called_at": "2026-03-17T17:22:10+08:00"
+}

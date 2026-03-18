@@ -1,0 +1,14 @@
+{
+  "api_name": "organization_framework",
+  "method": "GET",
+  "path": "/projectOrgFramework/list/fabb83fff06645ba9e231dce4e37f340",
+  "payload": null,
+  "project_id": "fabb83fff06645ba9e231dce4e37f340",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": []
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:48:41+08:00"
+}

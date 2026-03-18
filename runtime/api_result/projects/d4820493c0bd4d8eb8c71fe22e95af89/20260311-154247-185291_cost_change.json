@@ -1,0 +1,40 @@
+{
+  "api_name": "cost_change",
+  "method": "GET",
+  "path": "/change/list/d4820493c0bd4d8eb8c71fe22e95af89",
+  "payload": null,
+  "project_id": "d4820493c0bd4d8eb8c71fe22e95af89",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": 464,
+        "projectId": "d4820493c0bd4d8eb8c71fe22e95af89",
+        "isChange": 1,
+        "dimensionality": "3",
+        "oneKey": "2024年",
+        "oneValue": null,
+        "twoKey": "2025年",
+        "twoValue": null,
+        "threeKey": "2026年",
+        "threeValue": null,
+        "creatorId": 87864,
+        "creator": "fengdalong",
+        "createTime": "2026-03-06 14:40:07",
+        "modifierId": null,
+        "modifier": null,
+        "updateTime": null,
+        "isDelete": 0,
+        "oneTwoSymbol": null,
+        "oneTwoValue": null,
+        "twoThreeSymbol": null,
+        "twoThreeValue": null,
+        "dimensionalityName": "费用成本",
+        "content": null
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-11T15:42:47+08:00"
+}

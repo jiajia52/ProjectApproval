@@ -1,0 +1,130 @@
+{
+  "api_name": "project_uploading",
+  "method": "GET",
+  "path": "/projectUploading/list/fabb83fff06645ba9e231dce4e37f340",
+  "payload": null,
+  "project_id": "fabb83fff06645ba9e231dce4e37f340",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+      "1": [
+        {
+          "id": 1966501871,
+          "projectId": "fabb83fff06645ba9e231dce4e37f340",
+          "title": "项目背景",
+          "content": "STAR-CCM+是一款集成的多物理仿真平台，可以进行热、流体、结构应力、噪声分析等，可以有效解决流动传热，流固耦合，有限元应力，气动噪声等多学科工程问题，同时还支持数百CPU大规模并行计算。在电机热性能设计过程中进行流体和温度场仿真，结合软件输出的标量场景图和报告，指导电机冷却结构优化设计，提高设计成功率。\n      1.能力提升：提升电机油冷仿真分析、电机水冷仿真分析、三维温度场仿真、冷却设计方案评价能力（第1象限）；\n      2.战略需求：STAR-CCM+是电机性能开发的必备工具，支撑红旗电驱产品热性能设计，加快开发效率，提升产品竞争力；\n      3.问题解决：通过软件购置开展电驱系统电机流体及热性能仿真分析，可以分析电机冷却结构内部的流动状态，指导冷却结构设计优化，可以有效评估电机内部各部件温度分布，规避电机部件过温导致的绝缘失效或磁钢退磁等风险",
+          "imageUrl": "22618e292c50452cbc4c46299b19fc96",
+          "type": 1,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:37:58",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-09-11 17:03:57",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "2": [
+        {
+          "id": 1966501872,
+          "projectId": "fabb83fff06645ba9e231dce4e37f340",
+          "title": "项目目标",
+          "content": "能力提升：可提升多相流流体场优化设计、三维温度场分析、多物理场流固耦合分析、轴向磁通电机热性能设计与分析能力；\n效率提升：支撑18个业务单元，软件支持无限核数，通过HPC平台大规模并行运算，流体仿真工时由40天减少到15天。",
+          "imageUrl": "64e5c00f4c3b4c29b8655deea8577fb8",
+          "type": 2,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:37:58",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-09-11 17:03:57",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": 1,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "3": [
+        {
+          "id": 1966501873,
+          "projectId": "fabb83fff06645ba9e231dce4e37f340",
+          "title": "项目方案",
+          "content": "软件STAR-CCM+现有1套：电驱动开发部门于2024年购买过1套19.04版本。本次申请升级1套，服务期限为升级到2026年12月底。",
+          "imageUrl": "50bed9d3fd1c4a6685c662a6ed556bb7",
+          "type": 3,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:37:58",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-09-11 17:03:57",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "4": [
+        {
+          "id": 1966501874,
+          "projectId": "fabb83fff06645ba9e231dce4e37f340",
+          "title": "研发业务全景图",
+          "content": "研发业务全景图",
+          "imageUrl": "c2199929904c40a18a4d9ed3ed1e4a1d",
+          "type": 4,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:37:58",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-09-11 17:03:57",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "5": [
+        {
+          "id": 1966501875,
+          "projectId": "fabb83fff06645ba9e231dce4e37f340",
+          "title": "工具软件采购管理模型",
+          "content": "工具软件采购管理模型",
+          "imageUrl": "514de63c3b7443f3afaaf50b46993547",
+          "type": 5,
+          "creatorId": 84903,
+          "creator": "hanshuaihao",
+          "createTime": "2025-09-11 16:37:58",
+          "modifierId": 84903,
+          "modifier": "hanshuaihao",
+          "updateTime": "2025-09-11 17:03:57",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-16T11:00:20+08:00"
+}

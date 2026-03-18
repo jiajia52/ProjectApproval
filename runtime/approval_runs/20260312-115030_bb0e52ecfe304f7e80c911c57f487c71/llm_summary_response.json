@@ -1,0 +1,164 @@
+{
+  "raw": {
+    "id": "chatcmpl-445e0350-1bcf-9291-8bfc-b7d690502e76",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总体评审未通过，因存在多项关键性缺陷，涉及战略对齐、专业架构、组织与预算等核心环节。主要问题包括：关联产品链缺失（R007）、业务/数据/技术/安全架构评审均未提供（R026-R029）、组织架构信息不完整且开发模式为空（R037）、费用构成测算与采购方式说明不充分（R038），且结果模型缺乏可量化的财务或客户价值指标（R031）。上述问题均为严重或关键失败项，直接影响项目立项的合规性、可行性与可持续性，故综合判定为驳回。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"fail\",\n      \"reason\": \"关联产品链字段为空，未明确说明本项目所依托或影响的产品链，影响战略协同性评估。\",\n      \"evidence\": [\n        \"product_chain: \"\n      ],\n      \"suggestion\": \"请补充本项目所属的产品链（如：智能研发链、数据治理链等），并说明其与项目目标的关联性。\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。\",\n      \"evidence\": [\n        \"architecture_reviews.business: ''\",\n        \"project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.projectRangeFlowEntities: 包含数据分析管理流程（L3），但无业务架构说明\"\n      ],\n      \"suggestion\": \"补充完整的业务架构评审文档，明确项目在POM域中的业务定位、流程映射关系及价值贡献。\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供数据架构评审材料，无法确认数据来源、治理机制与系统集成设计。\",\n      \"evidence\": [\n        \"architecture_reviews.data: ''\",\n        \"scope.business_processes: 存在‘数据分析管理流程’，但无数据模型、数据流图或数据血缘说明\"\n      ],\n      \"suggestion\": \"补充数据架构评审材料，包括数据分层设计、核心数据实体定义、数据接口规范及数据安全策略。\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供技术架构评审材料，无法评估系统可扩展性、技术选型合理性与平台兼容性。\",\n      \"evidence\": [\n        \"architecture_reviews.technology: ''\",\n        \"scope.microservices: 存在‘OpenMind智能体’系统，但无技术栈、部署模式、服务间通信机制等描述\"\n      ],\n      \"suggestion\": \"补充技术架构评审文档，包含系统组件划分、微服务设计、API规范、运行环境与容灾方案。\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供安全架构评审材料，存在重大安全隐患风险，不符合企业级系统建设标准。\",\n      \"evidence\": [\n        \"architecture_reviews.security: ''\",\n        \"project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.systemRelationSystemTrees: 显示系统归属集团总部/分子公司/三方生态，但无权限控制、访问审计、加密机制等安全设计\"\n      ],\n      \"suggestion\": \"补充安全架构评审材料，涵盖身份认证、权限管理、数据加密、日志审计、合规性设计等内容。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"fail\",\n      \"reason\": \"组织成员信息缺失，所有成员的姓名、角色、级别、任务计划和工作量均为空；同时开发模式字段为空，无法确认项目实施方式。\",\n      \"evidence\": [\n        \"project_page_document.organization.members 中所有成员的 name、role、level、task_plan、workload 字段均为空\",\n        \"project_page_document.organization.development_mode 为空\"\n      ],\n      \"suggestion\": \"请补充完整的组织架构信息，包括每位成员的姓名、岗位角色、职级、具体任务计划及工作量分配，并明确项目的开发模式（如自研、外包等）\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"fail\",\n      \"reason\": \"预算成本项、测算或采购方式不完整，未提供完整的费用构成明细，如各分项的测算依据、采购方式说明等关键信息缺失。\",\n      \"evidence\": [\n        \"budget.data_preview.partInfos[0].content: 模型采买费用\",\n        \"budget.data_preview.partInfos[1].content: 研发费用\",\n        \"budget.data_preview.partInfos[0].procurementMethod: 1\",\n        \"budget.data_preview.partInfos[1].procurementMethod: 6\",\n        \"budget.data_preview.partInfos[0].calcMethod: 预估全年使用量\",\n        \"budget.data_preview.partInfos[1].calcMethod: 人天*单价\",\n        \"project_snapshot_excerpt.project_base_info.data_preview.budgetYear: 2026\",\n        \"project_snapshot_excerpt.project_base_info.data_preview.applyBudget: 7999200.00\"\n      ],\n      \"suggestion\": \"需补充每项费用的成本测算过程、采购方式合理性说明及对应支撑材料，确保费用构成可验证、可追溯。\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"fail\",\n      \"reason\": \"结果（财务/客户）模型缺失核心要素：目标成果未提供可量化的财务收益或客户价值指标，且benefit_department为空，无法验证实际影响范围与效益来源。\",\n      \"evidence\": [\n        \"id:564\",\n        \"title:\",\n        \"current_state:\",\n        \"benefit_department:[]\",\n        \"target_2026:\",\n        \"target_2027:\",\n        \"target_2028:\",\n        \"calculation_basis:\"\n      ],\n      \"suggestion\": \"需补充具体财务指标（如成本节约金额、人工替代率、响应时效提升百分比等）或客户价值描述（如满意度提升、服务覆盖率增长等），并明确受益部门。\"\n    }\n  ],\n  \"risks\": [\n    \"关联产品链缺失可能导致项目与企业整体产品体系脱节，影响资源协调与后续推广。\",\n    \"缺乏产品链定义将削弱项目在集团层面的战略定位与优先级评估依据。\",\n    \"若未明确产品链，后续系统集成、数据共享及跨部门协作可能面临接口不清晰风险。\",\n    \"项目缺乏基础架构评审，可能导致系统与企业整体架构脱节，引发重复建设、数据孤岛和安全漏洞。\",\n    \"未通过专业领域评审即推进立项，将增加后期改造成本与项目失败风险。\",\n    \"涉及“数据分析管理流程”且为“首次上线”，若无架构支撑，可能影响数据可信度与决策有效性。\",\n    \"结果模型缺失量化指标，可能导致项目投入产出不可衡量，影响后续资源分配与绩效评估。\",\n    \"缺乏财务或客户价值描述，难以支撑高层决策支持，存在立项合理性风险。\",\n    \"组织架构不完整可能导致项目执行过程中职责不清、资源调配失衡，影响项目进度与质量。\",\n    \"缺乏开发模式定义将影响后续预算编制、合同管理及资源投入规划。\",\n    \"费用构成不完整可能导致预算超支或执行偏差，影响项目财务合规性。\",\n    \"缺乏测算依据可能引发后续审计风险。\"\n  ],\n  \"missing_information\": [\n    \"关联产品链（必填字段）\",\n    \"业务架构评审文档\",\n    \"数据架构评审文档\",\n    \"技术架构评审文档\",\n    \"安全架构评审文档\",\n    \"组织成员详细信息（姓名、角色、职级、任务计划、工作量）\",\n    \"项目开发模式\",\n    \"各项费用的具体测算逻辑与依据（如模型采买费用的预估全年使用量如何得出）\",\n    \"采购方式选择的合理性说明（如为何采用单一来源采购或框架协议）\",\n    \"研发费用中人天数量与单价的详细计算过程\",\n    \"结果（财务/客户）模型中的具体量化指标（如成本节约额、人力节省数、响应时间缩短比例等）\",\n    \"结果模型的受益部门或客户群体说明\",\n    \"财务/客户价值的计算逻辑或评估方法\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1773287489,
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1837,
+      "prompt_tokens": 5518,
+      "total_tokens": 7355,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总体评审未通过，因存在多项关键性缺陷，涉及战略对齐、专业架构、组织与预算等核心环节。主要问题包括：关联产品链缺失（R007）、业务/数据/技术/安全架构评审均未提供（R026-R029）、组织架构信息不完整且开发模式为空（R037）、费用构成测算与采购方式说明不充分（R038），且结果模型缺乏可量化的财务或客户价值指标（R031）。上述问题均为严重或关键失败项，直接影响项目立项的合规性、可行性与可持续性，故综合判定为驳回。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"fail\",\n      \"reason\": \"关联产品链字段为空，未明确说明本项目所依托或影响的产品链，影响战略协同性评估。\",\n      \"evidence\": [\n        \"product_chain: \"\n      ],\n      \"suggestion\": \"请补充本项目所属的产品链（如：智能研发链、数据治理链等），并说明其与项目目标的关联性。\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。\",\n      \"evidence\": [\n        \"architecture_reviews.business: ''\",\n        \"project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.projectRangeFlowEntities: 包含数据分析管理流程（L3），但无业务架构说明\"\n      ],\n      \"suggestion\": \"补充完整的业务架构评审文档，明确项目在POM域中的业务定位、流程映射关系及价值贡献。\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供数据架构评审材料，无法确认数据来源、治理机制与系统集成设计。\",\n      \"evidence\": [\n        \"architecture_reviews.data: ''\",\n        \"scope.business_processes: 存在‘数据分析管理流程’，但无数据模型、数据流图或数据血缘说明\"\n      ],\n      \"suggestion\": \"补充数据架构评审材料，包括数据分层设计、核心数据实体定义、数据接口规范及数据安全策略。\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供技术架构评审材料，无法评估系统可扩展性、技术选型合理性与平台兼容性。\",\n      \"evidence\": [\n        \"architecture_reviews.technology: ''\",\n        \"scope.microservices: 存在‘OpenMind智能体’系统，但无技术栈、部署模式、服务间通信机制等描述\"\n      ],\n      \"suggestion\": \"补充技术架构评审文档，包含系统组件划分、微服务设计、API规范、运行环境与容灾方案。\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供安全架构评审材料，存在重大安全隐患风险，不符合企业级系统建设标准。\",\n      \"evidence\": [\n        \"architecture_reviews.security: ''\",\n        \"project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.systemRelationSystemTrees: 显示系统归属集团总部/分子公司/三方生态，但无权限控制、访问审计、加密机制等安全设计\"\n      ],\n      \"suggestion\": \"补充安全架构评审材料，涵盖身份认证、权限管理、数据加密、日志审计、合规性设计等内容。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"fail\",\n      \"reason\": \"组织成员信息缺失，所有成员的姓名、角色、级别、任务计划和工作量均为空；同时开发模式字段为空，无法确认项目实施方式。\",\n      \"evidence\": [\n        \"project_page_document.organization.members 中所有成员的 name、role、level、task_plan、workload 字段均为空\",\n        \"project_page_document.organization.development_mode 为空\"\n      ],\n      \"suggestion\": \"请补充完整的组织架构信息，包括每位成员的姓名、岗位角色、职级、具体任务计划及工作量分配，并明确项目的开发模式（如自研、外包等）\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"fail\",\n      \"reason\": \"预算成本项、测算或采购方式不完整，未提供完整的费用构成明细，如各分项的测算依据、采购方式说明等关键信息缺失。\",\n      \"evidence\": [\n        \"budget.data_preview.partInfos[0].content: 模型采买费用\",\n        \"budget.data_preview.partInfos[1].content: 研发费用\",\n        \"budget.data_preview.partInfos[0].procurementMethod: 1\",\n        \"budget.data_preview.partInfos[1].procurementMethod: 6\",\n        \"budget.data_preview.partInfos[0].calcMethod: 预估全年使用量\",\n        \"budget.data_preview.partInfos[1].calcMethod: 人天*单价\",\n        \"project_snapshot_excerpt.project_base_info.data_preview.budgetYear: 2026\",\n        \"project_snapshot_excerpt.project_base_info.data_preview.applyBudget: 7999200.00\"\n      ],\n      \"suggestion\": \"需补充每项费用的成本测算过程、采购方式合理性说明及对应支撑材料，确保费用构成可验证、可追溯。\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"fail\",\n      \"reason\": \"结果（财务/客户）模型缺失核心要素：目标成果未提供可量化的财务收益或客户价值指标，且benefit_department为空，无法验证实际影响范围与效益来源。\",\n      \"evidence\": [\n        \"id:564\",\n        \"title:\",\n        \"current_state:\",\n        \"benefit_department:[]\",\n        \"target_2026:\",\n        \"target_2027:\",\n        \"target_2028:\",\n        \"calculation_basis:\"\n      ],\n      \"suggestion\": \"需补充具体财务指标（如成本节约金额、人工替代率、响应时效提升百分比等）或客户价值描述（如满意度提升、服务覆盖率增长等），并明确受益部门。\"\n    }\n  ],\n  \"risks\": [\n    \"关联产品链缺失可能导致项目与企业整体产品体系脱节，影响资源协调与后续推广。\",\n    \"缺乏产品链定义将削弱项目在集团层面的战略定位与优先级评估依据。\",\n    \"若未明确产品链，后续系统集成、数据共享及跨部门协作可能面临接口不清晰风险。\",\n    \"项目缺乏基础架构评审，可能导致系统与企业整体架构脱节，引发重复建设、数据孤岛和安全漏洞。\",\n    \"未通过专业领域评审即推进立项，将增加后期改造成本与项目失败风险。\",\n    \"涉及“数据分析管理流程”且为“首次上线”，若无架构支撑，可能影响数据可信度与决策有效性。\",\n    \"结果模型缺失量化指标，可能导致项目投入产出不可衡量，影响后续资源分配与绩效评估。\",\n    \"缺乏财务或客户价值描述，难以支撑高层决策支持，存在立项合理性风险。\",\n    \"组织架构不完整可能导致项目执行过程中职责不清、资源调配失衡，影响项目进度与质量。\",\n    \"缺乏开发模式定义将影响后续预算编制、合同管理及资源投入规划。\",\n    \"费用构成不完整可能导致预算超支或执行偏差，影响项目财务合规性。\",\n    \"缺乏测算依据可能引发后续审计风险。\"\n  ],\n  \"missing_information\": [\n    \"关联产品链（必填字段）\",\n    \"业务架构评审文档\",\n    \"数据架构评审文档\",\n    \"技术架构评审文档\",\n    \"安全架构评审文档\",\n    \"组织成员详细信息（姓名、角色、职级、任务计划、工作量）\",\n    \"项目开发模式\",\n    \"各项费用的具体测算逻辑与依据（如模型采买费用的预估全年使用量如何得出）\",\n    \"采购方式选择的合理性说明（如为何采用单一来源采购或框架协议）\",\n    \"研发费用中人天数量与单价的详细计算过程\",\n    \"结果（财务/客户）模型中的具体量化指标（如成本节约额、人力节省数、响应时间缩短比例等）\",\n    \"结果模型的受益部门或客户群体说明\",\n    \"财务/客户价值的计算逻辑或评估方法\"\n  ]\n}",
+  "json": {
+    "decision": "驳回",
+    "summary": "项目总体评审未通过，因存在多项关键性缺陷，涉及战略对齐、专业架构、组织与预算等核心环节。主要问题包括：关联产品链缺失（R007）、业务/数据/技术/安全架构评审均未提供（R026-R029）、组织架构信息不完整且开发模式为空（R037）、费用构成测算与采购方式说明不充分（R038），且结果模型缺乏可量化的财务或客户价值指标（R031）。上述问题均为严重或关键失败项，直接影响项目立项的合规性、可行性与可持续性，故综合判定为驳回。",
+    "item_results": [
+      {
+        "rule_id": "R007",
+        "status": "fail",
+        "reason": "关联产品链字段为空，未明确说明本项目所依托或影响的产品链，影响战略协同性评估。",
+        "evidence": [
+          "product_chain: "
+        ],
+        "suggestion": "请补充本项目所属的产品链（如：智能研发链、数据治理链等），并说明其与项目目标的关联性。"
+      },
+      {
+        "rule_id": "R026",
+        "status": "fail",
+        "reason": "未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。",
+        "evidence": [
+          "architecture_reviews.business: ''",
+          "project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.projectRangeFlowEntities: 包含数据分析管理流程（L3），但无业务架构说明"
+        ],
+        "suggestion": "补充完整的业务架构评审文档，明确项目在POM域中的业务定位、流程映射关系及价值贡献。"
+      },
+      {
+        "rule_id": "R027",
+        "status": "fail",
+        "reason": "未提供数据架构评审材料，无法确认数据来源、治理机制与系统集成设计。",
+        "evidence": [
+          "architecture_reviews.data: ''",
+          "scope.business_processes: 存在‘数据分析管理流程’，但无数据模型、数据流图或数据血缘说明"
+        ],
+        "suggestion": "补充数据架构评审材料，包括数据分层设计、核心数据实体定义、数据接口规范及数据安全策略。"
+      },
+      {
+        "rule_id": "R028",
+        "status": "fail",
+        "reason": "未提供技术架构评审材料，无法评估系统可扩展性、技术选型合理性与平台兼容性。",
+        "evidence": [
+          "architecture_reviews.technology: ''",
+          "scope.microservices: 存在‘OpenMind智能体’系统，但无技术栈、部署模式、服务间通信机制等描述"
+        ],
+        "suggestion": "补充技术架构评审文档，包含系统组件划分、微服务设计、API规范、运行环境与容灾方案。"
+      },
+      {
+        "rule_id": "R029",
+        "status": "fail",
+        "reason": "未提供安全架构评审材料，存在重大安全隐患风险，不符合企业级系统建设标准。",
+        "evidence": [
+          "architecture_reviews.security: ''",
+          "project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.systemRelationSystemTrees: 显示系统归属集团总部/分子公司/三方生态，但无权限控制、访问审计、加密机制等安全设计"
+        ],
+        "suggestion": "补充安全架构评审材料，涵盖身份认证、权限管理、数据加密、日志审计、合规性设计等内容。"
+      },
+      {
+        "rule_id": "R037",
+        "status": "fail",
+        "reason": "组织成员信息缺失，所有成员的姓名、角色、级别、任务计划和工作量均为空；同时开发模式字段为空，无法确认项目实施方式。",
+        "evidence": [
+          "project_page_document.organization.members 中所有成员的 name、role、level、task_plan、workload 字段均为空",
+          "project_page_document.organization.development_mode 为空"
+        ],
+        "suggestion": "请补充完整的组织架构信息，包括每位成员的姓名、岗位角色、职级、具体任务计划及工作量分配，并明确项目的开发模式（如自研、外包等）"
+      },
+      {
+        "rule_id": "R038",
+        "status": "fail",
+        "reason": "预算成本项、测算或采购方式不完整，未提供完整的费用构成明细，如各分项的测算依据、采购方式说明等关键信息缺失。",
+        "evidence": [
+          "budget.data_preview.partInfos[0].content: 模型采买费用",
+          "budget.data_preview.partInfos[1].content: 研发费用",
+          "budget.data_preview.partInfos[0].procurementMethod: 1",
+          "budget.data_preview.partInfos[1].procurementMethod: 6",
+          "budget.data_preview.partInfos[0].calcMethod: 预估全年使用量",
+          "budget.data_preview.partInfos[1].calcMethod: 人天*单价",
+          "project_snapshot_excerpt.project_base_info.data_preview.budgetYear: 2026",
+          "project_snapshot_excerpt.project_base_info.data_preview.applyBudget: 7999200.00"
+        ],
+        "suggestion": "需补充每项费用的成本测算过程、采购方式合理性说明及对应支撑材料，确保费用构成可验证、可追溯。"
+      },
+      {
+        "rule_id": "R031",
+        "status": "fail",
+        "reason": "结果（财务/客户）模型缺失核心要素：目标成果未提供可量化的财务收益或客户价值指标，且benefit_department为空，无法验证实际影响范围与效益来源。",
+        "evidence": [
+          "id:564",
+          "title:",
+          "current_state:",
+          "benefit_department:[]",
+          "target_2026:",
+          "target_2027:",
+          "target_2028:",
+          "calculation_basis:"
+        ],
+        "suggestion": "需补充具体财务指标（如成本节约金额、人工替代率、响应时效提升百分比等）或客户价值描述（如满意度提升、服务覆盖率增长等），并明确受益部门。"
+      }
+    ],
+    "risks": [
+      "关联产品链缺失可能导致项目与企业整体产品体系脱节，影响资源协调与后续推广。",
+      "缺乏产品链定义将削弱项目在集团层面的战略定位与优先级评估依据。",
+      "若未明确产品链，后续系统集成、数据共享及跨部门协作可能面临接口不清晰风险。",
+      "项目缺乏基础架构评审，可能导致系统与企业整体架构脱节，引发重复建设、数据孤岛和安全漏洞。",
+      "未通过专业领域评审即推进立项，将增加后期改造成本与项目失败风险。",
+      "涉及“数据分析管理流程”且为“首次上线”，若无架构支撑，可能影响数据可信度与决策有效性。",
+      "结果模型缺失量化指标，可能导致项目投入产出不可衡量，影响后续资源分配与绩效评估。",
+      "缺乏财务或客户价值描述，难以支撑高层决策支持，存在立项合理性风险。",
+      "组织架构不完整可能导致项目执行过程中职责不清、资源调配失衡，影响项目进度与质量。",
+      "缺乏开发模式定义将影响后续预算编制、合同管理及资源投入规划。",
+      "费用构成不完整可能导致预算超支或执行偏差，影响项目财务合规性。",
+      "缺乏测算依据可能引发后续审计风险。"
+    ],
+    "missing_information": [
+      "关联产品链（必填字段）",
+      "业务架构评审文档",
+      "数据架构评审文档",
+      "技术架构评审文档",
+      "安全架构评审文档",
+      "组织成员详细信息（姓名、角色、职级、任务计划、工作量）",
+      "项目开发模式",
+      "各项费用的具体测算逻辑与依据（如模型采买费用的预估全年使用量如何得出）",
+      "采购方式选择的合理性说明（如为何采用单一来源采购或框架协议）",
+      "研发费用中人天数量与单价的详细计算过程",
+      "结果（财务/客户）模型中的具体量化指标（如成本节约额、人力节省数、响应时间缩短比例等）",
+      "结果模型的受益部门或客户群体说明",
+      "财务/客户价值的计算逻辑或评估方法"
+    ]
+  },
+  "used_response_format": true
+}

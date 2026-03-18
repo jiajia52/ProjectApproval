@@ -1,0 +1,16 @@
+{
+  "api_name": "system_scope_okr",
+  "method": "POST",
+  "path": "/projectBaseInfo/eamapAndSystemOkr",
+  "payload": {
+    "projectId": "13ab24a8f6204264be5a5ee598565672"
+  },
+  "project_id": "13ab24a8f6204264be5a5ee598565672",
+  "result": {
+    "code": 2,
+    "message": "请绑定产品！！",
+    "data": null
+  },
+  "error": "",
+  "called_at": "2026-03-18T08:47:05+08:00"
+}

@@ -1,0 +1,21 @@
+{
+  "api_name": "architecture_review_technology_type_1",
+  "method": "POST",
+  "path": "/third/techCheckList",
+  "payload": {
+    "projectId": "19ab30ec73dc40fd8c42be7972a71b06",
+    "type": 1
+  },
+  "project_id": "19ab30ec73dc40fd8c42be7972a71b06",
+  "result": {
+    "code": 200,
+    "message": "操作成功",
+    "data": {
+      "appCount": 0,
+      "serviceCount": 0,
+      "reviewResult": null
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-16T10:29:05+08:00"
+}

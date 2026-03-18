@@ -1,0 +1,10 @@
+{
+  "name": "project_scope_ops",
+  "method": "POST",
+  "path": "/projectBaseInfo/getProjectScope",
+  "payload": {
+    "projectId": "f085146320e24def900c2e38cefd29ad",
+    "pageNo": 1,
+    "pageSize": 200
+  }
+}

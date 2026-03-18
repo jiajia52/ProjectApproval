@@ -1,0 +1,45 @@
+{
+  "api_name": "project_goal",
+  "method": "GET",
+  "path": "/project/goal/get/8d56c43a55044edd92245b525034ca34",
+  "payload": null,
+  "project_id": "8d56c43a55044edd92245b525034ca34",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "508470141c784dbb813b1b4afedaf607",
+        "projectId": "8d56c43a55044edd92245b525034ca34",
+        "okrId": "27",
+        "okrName": "平台推广覆盖率85%",
+        "goalName": "完成旗新动力大司库平台适配",
+        "goalContent": null,
+        "milestoneId": "bd1a5e6770044f15899fae2372eb355d",
+        "startTime": "2025-10-22",
+        "endTime": "2025-11-30",
+        "keyResultDtoList": [
+          {
+            "id": "6ee9c4e7f69d4ca1bb6adb2b6846f545",
+            "goalId": "508470141c784dbb813b1b4afedaf607",
+            "orderNum": 1,
+            "keyResult": "完成旗新动力大司库实施上线，支撑业务开展，及集团大司库推广任务"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "a29249b517eb4778b9944917f48f7cad",
+            "goalId": "508470141c784dbb813b1b4afedaf607",
+            "productId": "4ddbfe1a44a70471714b30a9a0efaf14",
+            "productName": "大司库"
+          }
+        ],
+        "goalStatus": 3,
+        "businessUnitNum": 0,
+        "businessFlowNum": 2
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:44:46+08:00"
+}

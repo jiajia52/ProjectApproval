@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "project_id": "8378ccd8b95e487f89fb824445a2f053",
+  "project_name": "2025年基础设施更新改造项目-纪检监察内网扩建项目",
+  "category": "工作台开发及实施",
+  "saved_at": "2026-03-17T15:47:44+08:00",
+  "feedback": {
+    "decision": "驳回",
+    "summary": "规则引擎基线结果为驳回。5条规则未通过，主要问题：R021: 业务全景图内容过短，无法支撑审批。；R023: 缺少管理模型标题；R024: 缺少管理模型内容；R025: 缺少管理模型图片；R036: 目标计划缺少完整时间范围。",
+    "risks": [
+      "业务全景图内容过短，无法支撑审批。",
+      "缺少管理模型标题",
+      "缺少管理模型内容",
+      "缺少管理模型图片",
+      "目标计划缺少完整时间范围"
+    ],
+    "missingInformation": [
+      "业务全景图内容",
+      "具备业务全景图内容",
+      "管理模型标题",
+      "具备管理模型标题",
+      "管理模型内容",
+      "具备管理模型内容",
+      "管理模型图片",
+      "具备管理模型图片",
+      "目标计划",
+      "具备目标计划"
+    ],
+    "positiveEvidence": [],
+    "projectCommentary": "",
+    "baseline": {
+      "generated_at": "2026-03-17T07:46:49.723450+00:00",
+      "project_name": "2025年基础设施更新改造项目-纪检监察内网扩建项目",
+      "category": "设备购买及弱电布线",
+      "decision": "驳回",
+      "score": 49,
+      "statistics": {
+        "total_rules": 24,
+        "passed_rules": 19,
+        "failed_rules": 5,
+        "critical_failures": 4,
+        "major_failures": 0,
+        "minor_failures": 1
+      },
+      "findings": [
+        {
+          "rule_id": "R021",
+          "review_point": "业务全景图",
+          "review_content": "业务全景图内容",
+          "status": "fail",
+          "severity": "critical",
+          "message": "业务全景图内容过短，无法支撑审批。",
+          "suggestion": "具备业务全景图内容",
+          "evidence": "title:不涉及\ncontent:不涉及\nimages:c9733b93688647bd965d376d7680b5f5\nitems:title:不涉及\ncontent:不涉及\nimages:c9733b93688647bd965d376d7680b5f5"
+        },
+        {
+          "rule_id": "R023",
+          "review_point": "年度管理模型",
+          "review_content": "管理模型标题",
+          "status": "fail",
+          "severity": "critical",
+          "message": "缺少管理模型标题",
+          "suggestion": "具备管理模型标题",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R024",
+          "review_point": "年度管理模型",
+          "review_content": "管理模型内容",
+          "status": "fail",
+          "severity": "critical",
+          "message": "缺少管理模型内容",
+          "suggestion": "具备管理模型内容",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R025",
+          "review_point": "年度管理模型",
+          "review_content": "管理模型图片",
+          "status": "fail",
+          "severity": "minor",
+          "message": "缺少管理模型图片",
+          "suggestion": "具备管理模型图片",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R036",
+          "review_point": "项目里程碑",
+          "review_content": "目标计划",
+          "status": "fail",
+          "severity": "critical",
+          "message": "目标计划缺少完整时间范围",
+          "suggestion": "具备目标计划",
+          "evidence": ""
+        }
+      ],
+      "rule_results": [
+        {
+          "rule_id": "R001",
+          "review_point": "项目背景",
+          "review_content": "背景标题",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目背景标题",
+          "evidence": "title:数字化办公助力纪检监察工作提质增效\ncontent:中央纪委国家监委办公厅赴驻中国一汽纪检监察组调研时提出的数字化办公工作要求，以数字化办公助力纪检监察工作提质增效，为集团公司战略转型和高质量发展提供坚强保障。\nimages:c8e7003ee6cf4cabb51429aaf80023ee\nitems:title:数字化办公助力纪检监察工作提质增效\ncontent:中央纪委国家监委办公厅赴驻中国一汽纪检监察组调研时提出的数字化办公工作要求，以数字化办公助力纪检监察工作提质增效，为集团公司战略转型和高质量发展提供坚强保障。\nimages:c8e7003ee6cf4cabb51429aaf80023ee"
+        },
+        {
+          "rule_id": "R002",
+          "review_point": "项目背景",
+          "review_content": "背景内容",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目背景内容",
+          "evidence": "title:数字化办公助力纪检监察工作提质增效\ncontent:中央纪委国家监委办公厅赴驻中国一汽纪检监察组调研时提出的数字化办公工作要求，以数字化办公助力纪检监察工作提质增效，为集团公司战略转型和高质量发展提供坚强保障。\nimages:c8e7003ee6cf4cabb51429aaf80023ee\nitems:title:数字化办公助力纪检监察工作提质增效\ncontent:中央纪委国家监委办公厅赴驻中国一汽纪检监察组调研时提出的数字化办公工作要求，以数字化办公助力纪检监察工作提质增效，为集团公司战略转型和高质量发展提供坚强保障。\nimages:c8e7003ee6cf4cabb51429aaf80023ee"
+        },
+        {
+          "rule_id": "R003",
+          "review_point": "项目背景",
+          "review_content": "背景图片",
+          "status": "pass",
+          "severity": "minor",
+          "message": "材料完整",
+          "suggestion": "具备项目背景图片",
+          "evidence": "title:数字化办公助力纪检监察工作提质增效\ncontent:中央纪委国家监委办公厅赴驻中国一汽纪检监察组调研时提出的数字化办公工作要求，以数字化办公助力纪检监察工作提质增效，为集团公司战略转型和高质量发展提供坚强保障。\nimages:c8e7003ee6cf4cabb51429aaf80023ee\nitems:title:数字化办公助力纪检监察工作提质增效\ncontent:中央纪委国家监委办公厅赴驻中国一汽纪检监察组调研时提出的数字化办公工作要求，以数字化办公助力纪检监察工作提质增效，为集团公司战略转型和高质量发展提供坚强保障。\nimages:c8e7003ee6cf4cabb51429aaf80023ee"
+        },
+        {
+          "rule_id": "R004",
+          "review_point": "项目目标",
+          "review_content": "项目目标",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目目标标题",
+          "evidence": "title:全员接入纪检监察内网\ncontent:以派驻改革后驻中国一汽纪检监察组编制数为基准，在各室办公区域配备涉密计算机及打印机等设备，全部接入中央纪委国家监委内网。\nimages:1956197997ad49f09ea78e8b18862696\nitems:title:全员接入纪检监察内网\ncontent:以派驻改革后驻中国一汽纪检监察组编制数为基准，在各室办公区域配备涉密计算机及打印机等设备，全部接入中央纪委国家监委内网。\nimages:1956197997ad49f09ea78e8b18862696"
+        },
+        {
+          "rule_id": "R005",
+          "review_point": "项目目标",
+          "review_content": "项目内容",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目目标内容",
+          "evidence": "title:全员接入纪检监察内网\ncontent:以派驻改革后驻中国一汽纪检监察组编制数为基准，在各室办公区域配备涉密计算机及打印机等设备，全部接入中央纪委国家监委内网。\nimages:1956197997ad49f09ea78e8b18862696\nitems:title:全员接入纪检监察内网\ncontent:以派驻改革后驻中国一汽纪检监察组编制数为基准，在各室办公区域配备涉密计算机及打印机等设备，全部接入中央纪委国家监委内网。\nimages:1956197997ad49f09ea78e8b18862696"
+        },
+        {
+          "rule_id": "R006",
+          "review_point": "项目目标",
+          "review_content": "目标图片",
+          "status": "pass",
+          "severity": "minor",
+          "message": "材料完整",
+          "suggestion": "具备项目目标图片",
+          "evidence": "title:全员接入纪检监察内网\ncontent:以派驻改革后驻中国一汽纪检监察组编制数为基准，在各室办公区域配备涉密计算机及打印机等设备，全部接入中央纪委国家监委内网。\nimages:1956197997ad49f09ea78e8b18862696\nitems:title:全员接入纪检监察内网\ncontent:以派驻改革后驻中国一汽纪检监察组编制数为基准，在各室办公区域配备涉密计算机及打印机等设备，全部接入中央纪委国家监委内网。\nimages:1956197997ad49f09ea78e8b18862696"
+        },
+        {
+          "rule_id": "R014",
+          "review_point": "项目范围",
+          "review_content": "内容列表",
+          "status": "pass",
+          "severity": "critical",
+          "message": "范围材料完整",
+          "suggestion": "具备内容",
+          "evidence": "id:17539332\nprojectId:8378ccd8b95e487f89fb824445a2f053\ncode:POM07050302P001TXB\nname:基础设施规划建设\nlevel:L4\ncreated:2024-06-27 21:46:04\nprocessVersion:V4.0\ncreateTime:2025-09-16 18:16:18\nupdateTime:2025-09-16 18:16:18\nisDelete:0\ntype:首次上线\nprocessId:59757c0344c672d1c8461bdbb7e55b8f\nprocessVersionId:f7f6711afcc2da83d17052363a40bf9a\nfutureTime:2025-11-15\nprocessCreatedTime:2024-06-27 21:46:04"
+        },
+        {
+          "rule_id": "R017",
+          "review_point": "项目方案",
+          "review_content": "项目方案",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目方案标题",
+          "evidence": "title:纪检监察内网扩建\ncontent:1、扩建终端接入域：按照纪委办公调整规划方案部署，实施接入节点光纤网络扩容改造，将接入终端数量从9台扩展至48台，并按保密要求配备安全保密产品\n2、新增安全管理域：部署安全保密套件、打印刻录审计、网络防病毒等服务端对用户进行身份鉴别、访问授权、输入输出控制及审计\nimages:a92ade75a7a44ed9a9a52e19fb65588b\nitems:title:纪检监察内网扩建\ncontent:1、扩建终端接入域：按照纪委办公调整规划方案部署，实施接入节点光纤网络扩容改造，将接入终端数量从9台扩展至48台，并按保密要求配备安全保密产品\n2、新增安全管理域：部署安全保密套件、打印刻录审计、网络防病毒等服务端对用户进行身份鉴别、访问授权、输入输出控制及审计\nimages:a92ade75a7a44ed9a9a52e19fb65588b"
+        },
+        {
+          "rule_id": "R018",
+          "review_point": "项目方案",
+          "review_content": "方案内容",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目方案内容",
+          "evidence": "title:纪检监察内网扩建\ncontent:1、扩建终端接入域：按照纪委办公调整规划方案部署，实施接入节点光纤网络扩容改造，将接入终端数量从9台扩展至48台，并按保密要求配备安全保密产品\n2、新增安全管理域：部署安全保密套件、打印刻录审计、网络防病毒等服务端对用户进行身份鉴别、访问授权、输入输出控制及审计\nimages:a92ade75a7a44ed9a9a52e19fb65588b\nitems:title:纪检监察内网扩建\ncontent:1、扩建终端接入域：按照纪委办公调整规划方案部署，实施接入节点光纤网络扩容改造，将接入终端数量从9台扩展至48台，并按保密要求配备安全保密产品\n2、新增安全管理域：部署安全保密套件、打印刻录审计、网络防病毒等服务端对用户进行身份鉴别、访问授权、输入输出控制及审计\nimages:a92ade75a7a44ed9a9a52e19fb65588b"
+        },
+        {
+          "rule_id": "R019",
+          "review_point": "项目方案",
+          "review_content": "方案图片",
+          "status": "pass",
+          "severity": "minor",
+          "message": "材料完整",
+          "suggestion": "具备项目方案图片",
+          "evidence": "title:纪检监察内网扩建\ncontent:1、扩建终端接入域：按照纪委办公调整规划方案部署，实施接入节点光纤网络扩容改造，将接入终端数量从9台扩展至48台，并按保密要求配备安全保密产品\n2、新增安全管理域：部署安全保密套件、打印刻录审计、网络防病毒等服务端对用户进行身份鉴别、访问授权、输入输出控制及审计\nimages:a92ade75a7a44ed9a9a52e19fb65588b\nitems:title:纪检监察内网扩建\ncontent:1、扩建终端接入域：按照纪委办公调整规划方案部署，实施接入节点光纤网络扩容改造，将接入终端数量从9台扩展至48台，并按保密要求配备安全保密产品\n2、新增安全管理域：部署安全保密套件、打印刻录审计、网络防病毒等服务端对用户进行身份鉴别、访问授权、输入输出控制及审计\nimages:a92ade75a7a44ed9a9a52e19fb65588b"
+        },
+        {
+          "rule_id": "R020",
+          "review_point": "业务全景图",
+          "review_content": "业务全景图标题",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备业务全景图标题",
+          "evidence": "title:不涉及\ncontent:不涉及\nimages:c9733b93688647bd965d376d7680b5f5\nitems:title:不涉及\ncontent:不涉及\nimages:c9733b93688647bd965d376d7680b5f5"
+        },
+        {
+          "rule_id": "R021",
+          "review_point": "业务全景图",
+          "review_content": "业务全景图内容",
+          "status": "fail",
+          "severity": "critical",
+          "message": "业务全景图内容过短，无法支撑审批。",
+          "suggestion": "具备业务全景图内容",
+          "evidence": "title:不涉及\ncontent:不涉及\nimages:c9733b93688647bd965d376d7680b5f5\nitems:title:不涉及\ncontent:不涉及\nimages:c9733b93688647bd965d376d7680b5f5"
+        },
+        {
+          "rule_id": "R022",
+          "review_point": "业务全景图",
+          "review_content": "业务全景图图片",
+          "status": "pass",
+          "severity": "minor",
+          "message": "材料完整",
+          "suggestion": "具备业务全景图图片",
+          "evidence": "title:不涉及\ncontent:不涉及\nimages:c9733b93688647bd965d376d7680b5f5\nitems:title:不涉及\ncontent:不涉及\nimages:c9733b93688647bd965d376d7680b5f5"
+        },
+        {
+          "rule_id": "R023",
+          "review_point": "年度管理模型",
+          "review_content": "管理模型标题",
+          "status": "fail",
+          "severity": "critical",
+          "message": "缺少管理模型标题",
+          "suggestion": "具备管理模型标题",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R024",
+          "review_point": "年度管理模型",
+          "review_content": "管理模型内容",
+          "status": "fail",
+          "severity": "critical",
+          "message": "缺少管理模型内容",
+          "suggestion": "具备管理模型内容",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R025",
+          "review_point": "年度管理模型",
+          "review_content": "管理模型图片",
+          "status": "fail",
+          "severity": "minor",
+          "message": "缺少管理模型图片",
+          "suggestion": "具备管理模型图片",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R029",
+          "review_point": "专业领域评审",
+          "review_content": "安全架构评审",
+          "status": "pass",
+          "severity": "major",
+          "message": "架构评审材料完整",
+          "suggestion": "具备安全架构评审",
+          "evidence": "summary:app_count:0\nservice_count:0\nmessage:操作成功\nlink_label:前往应用开发安全平台查看"
+        },
+        {
+          "rule_id": "R033",
+          "review_point": "项目价值",
+          "review_content": "项目价值",
+          "status": "pass",
+          "severity": "critical",
+          "message": "项目价值已填写",
+          "suggestion": "具备项目价值",
+          "evidence": "id:1170\nprojectId:8378ccd8b95e487f89fb824445a2f053\ntitle:数字化办公提升\nvalueGoal:以数字化办公助力纪检监察工作提质增效\ncurrentStatus:联网电脑9台\ndeptId:[\"193\"]\ncontent:完成纪检监察内网扩建，全员接入纪检监察内网，助力纪检监察工作提质增效\nisDelete:0\ntype:3"
+        },
+        {
+          "rule_id": "R034",
+          "review_point": "项目里程碑",
+          "review_content": "立项计划",
+          "status": "pass",
+          "severity": "critical",
+          "message": "里程碑计划完整",
+          "suggestion": "具备立项计划",
+          "evidence": "start:2025-09-16\nend:2025-09-30\ntitle:立项计划"
+        },
+        {
+          "rule_id": "R035",
+          "review_point": "项目里程碑",
+          "review_content": "合同计划",
+          "status": "pass",
+          "severity": "critical",
+          "message": "里程碑计划完整",
+          "suggestion": "具备合同计划",
+          "evidence": "start:2025-09-25\nend:2025-10-24\ntitle:合同签订计划"
+        },
+        {
+          "rule_id": "R036",
+          "review_point": "项目里程碑",
+          "review_content": "目标计划",
+          "status": "fail",
+          "severity": "critical",
+          "message": "目标计划缺少完整时间范围",
+          "suggestion": "具备目标计划",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R038",
+          "review_point": "费用构成",
+          "review_content": "费用构成",
+          "status": "pass",
+          "severity": "critical",
+          "message": "费用构成完整",
+          "suggestion": "具备费用构成",
+          "evidence": "name:通用计算机采购\namount:182000.0\nbudget_subject:YSGC-BA-2529MTZ03-5\ncalculation:一次性\npurchase_mode:开发资源池\nname:纪检监察内网扩建\namount:1317600.0\nbudget_subject:YSGC-BA-2529MTZ03-3\ncalculation:一次性\npurchase_mode:询比采购"
+        },
+        {
+          "rule_id": "R039",
+          "review_point": "长尾费用",
+          "review_content": "不需要",
+          "status": "pass",
+          "severity": "minor",
+          "message": "该规则标记为不需要。",
+          "suggestion": "无需补充此项。",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R040",
+          "review_point": "历史投入",
+          "review_content": "不需要",
+          "status": "pass",
+          "severity": "minor",
+          "message": "该规则标记为不需要。",
+          "suggestion": "无需补充此项。",
+          "evidence": ""
+        }
+      ]
+    },
+    "segments": [
+      {
+        "tab": "项目内容",
+        "decision": "驳回",
+        "summary": "项目内容部分存在关键缺失，特别是业务全景图内容及年度管理模型的标题、内容和图片均未提供，导致无法支撑项目审批。尽管背景、目标、方案等基础信息完整，但缺少对项目整体管理机制与业务流程全景的描述，影响决策依据完整性。"
+      },
+      {
+        "tab": "专业领域评审",
+        "decision": "通过",
+        "summary": "项目在专业领域评审中，各子项均满足评审要求。业务架构因未提供产品ID导致接口调用失败，但该问题不影响整体评审结论；数据架构参数异常，但无实质性内容缺失；技术架构与安全架构评审均已通过，且规则基线中R029已确认为通过。综合判断，项目符合审批通过条件。"
+      },
+      {
+        "tab": "项目价值",
+        "decision": "通过",
+        "summary": "项目价值内容完整，已明确阐述项目目标、当前状态及预期成效，符合评审规则要求。"
+      },
+      {
+        "tab": "项目里程碑",
+        "decision": "驳回",
+        "summary": "项目里程碑评审中，目标计划缺少完整的时间范围，导致关键规则 R036 失败，整体审批不通过。"
+      },
+      {
+        "tab": "预算信息",
+        "decision": "通过",
+        "summary": "预算信息模块评审通过。费用构成完整，长尾费用与历史投入均无需提供，符合规则基线要求。"
+      }
+    ],
+    "runDir": "E:\\pyproject\\ProjectApproval\\runtime\\approval_runs\\20260317-154649_8378ccd8b95e487f89fb824445a2f053",
+    "approvalGeneratedAt": "2026-03-17T15:47:42",
+    "updatedAt": "2026-03-17T07:47:42.967Z",
+    "error": ""
+  }
+}

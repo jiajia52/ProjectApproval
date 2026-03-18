@@ -1,0 +1,401 @@
+{
+  "raw": {
+    "id": "chatcmpl-d377e920-b435-9b0d-a97c-15e5aff48b86",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总评：尽管项目在专业领域评审、TAM模型评审、组织架构及预算信息等部分已通过，但因关键规则 R002（项目背景）和 R035（合同计划）存在严重缺陷，且均为基线中定义的‘critical’级失败项，导致整体审批结论为驳回。其中，项目背景内容过短，无法支撑立项必要性论证；合同计划缺失完整时间范围，影响里程碑执行依据。根据规则基线要求，已通过的规则不得在总评中改写为其他状态，故总评维持驳回结论。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R001\",\n      \"status\": \"pass\",\n      \"reason\": \"背景标题存在且内容完整，符合要求。\",\n      \"evidence\": [\n        \"title:制度迭代项目背景\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R002\",\n      \"status\": \"fail\",\n      \"reason\": \"背景内容过短，仅以‘制度迭代项目背景’作为占位符，缺乏具体描述，无法说明项目立项动因、行业趋势、痛点分析或业务影响，不满足审批基本要求。\",\n      \"evidence\": [\n        \"content:制度迭代项目背景\"\n      ],\n      \"suggestion\": \"请补充详细的背景内容，包括但不限于：当前制度管理存在的主要问题、外部监管变化、内部运营效率瓶颈、历史数据支撑或典型场景案例，形成不少于300字的实质性描述。\"\n    },\n    {\n      \"rule_id\": \"R003\",\n      \"status\": \"pass\",\n      \"reason\": \"背景图片已上传，数量充足，符合要求。\",\n      \"evidence\": [\n        \"images:ecd688ad63e1447586baf8bd21379bda\",\n        \"aebc7c39cbea40e2a6e31aed488e2d78\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R004\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标标题字段为空，未提供明确的目标名称，影响目标识别与后续OKR对齐。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充项目目标标题，如‘提升制度生命周期管理自动化水平’等具体表述。\"\n    },\n    {\n      \"rule_id\": \"R005\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标内容为空，未填写任何实质性的目标描述，无法判断项目意图。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请填写项目目标的具体内容，建议包含可衡量的行为或结果，例如‘实现制度变更触发机制从人工到自动的转变’。\"\n    },\n    {\n      \"rule_id\": \"R006\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标图片缺失，无可视化支持，影响目标传达效果。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传至少一张能体现项目目标的示意图或流程图。\"\n    },\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品链信息完整，已明确为‘企业架构管理平台’。\",\n      \"evidence\": [\n        \"product_chain: 企业架构管理平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"pass\",\n      \"reason\": \"项目目标（O）内容完整，表述清晰。\",\n      \"evidence\": [\n        \"objective: 以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"pass\",\n      \"reason\": \"战队OKR内容完整，具备可执行性。\",\n      \"evidence\": [\n        \"squad_okr: 完成制度运营诊断模型设计及上线运行；实现制度在15家公司的穿透管控\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品信息完整，包含产品ID、名称等关键字段。\",\n      \"evidence\": [\n        \"productName: 企业架构管理平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R11\",\n      \"status\": \"pass\",\n      \"reason\": \"目标时间范围明确，起止日期完整。\",\n      \"evidence\": [\n        \"start: 2025-10-31\",\n        \"end: 2025-11-30\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"pass\",\n      \"reason\": \"关键成果（KR）内容完整，具备量化指标。\",\n      \"evidence\": [\n        \"keyResult: 以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产要素，通过定义业务规则标准范式，实施业务规则全生命周期管理，确保管理行为合规\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R013\",\n      \"status\": \"pass\",\n      \"reason\": \"业务流程信息完整，已列出四项具体流程。\",\n      \"evidence\": [\n        \"business_processes: [政策法规解构, 制度编制（修订）及废止流程, 业务规则设计及系统落地, 有效性评审流程]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R014\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"内容列表字段为空，未提供任何结构化内容条目，影响方案颗粒度呈现。\",\n      \"evidence\": [\n        \"content_list: []\"\n      ],\n      \"suggestion\": \"请补充项目涉及的关键内容条目，如制度清单、规则模板、评审节点等。\"\n    },\n    {\n      \"rule_id\": \"R015\",\n      \"status\": \"pass\",\n      \"reason\": \"微服务信息完整，已明确系统归属。\",\n      \"evidence\": [\n        \"microservices: 组织资源服务平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"pass\",\n      \"reason\": \"微应用信息完整，与微服务一致。\",\n      \"evidence\": [\n        \"microapps: 组织资源服务平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R017\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案标题存在，内容完整。\",\n      \"evidence\": [\n        \"title: 制度迭代项目方案\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R018\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案内容完整，涵盖三大核心策略。\",\n      \"evidence\": [\n        \"content: 项目整体目标实现方案：由手动触发变自动触发……\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R019\",\n      \"status\": \"pass\",\n      \"reason\": \"方案图片已上传，共三张，内容相关。\",\n      \"evidence\": [\n        \"images: 7e1d1d2a90054d5c812b60bceb177bcb, 6b2603e4cc34414db88c19ffe6acc526, 4c6e8faccbff46319c1a7d3044bd78f3\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R020\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图标题为空，未提供命名，影响图示理解。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请为业务全景图添加明确标题，如‘制度全生命周期管理流程图’。\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"pass\",\n      \"reason\": \"业务架构评审材料完整，涵盖三板斧、指标树、流程架构、业务能力架构四项关键内容，且每项均通过评审，结论明确。\",\n      \"evidence\": [\n        \"business_process_count:4\",\n        \"business_unit_count:24\",\n        \"business_object_count:22\",\n        \"items:id:12,index:3,checkpoint:三板斧,conclusion:通过\",\n        \"items:id:11,index:4,checkpoint:指标树,conclusion:通过\",\n        \"items:id:10,index:5,checkpoint:流程架构,conclusion:通过\",\n        \"items:id:9,index:6,checkpoint:业务能力架构,conclusion:通过\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"pass\",\n      \"reason\": \"数据架构评审材料完整，信息架构中已覆盖业务对象与概念模型两项检查点，评审结论为通过，虽存在参数异常提示，但已合并业务架构内容并完成评审。\",\n      \"evidence\": [\n        \"check_point_count:2\",\n        \"items:id:8,index:1,checkpoint:业务对象,conclusion:通过\",\n        \"items:id:7,index:2,checkpoint:概念模型,conclusion:通过\",\n        \"message:参数异常 已合并业务架构中的信息架构内容。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"pass\",\n      \"reason\": \"技术架构评审材料完整，虽接口未返回明细，但已回退使用系统范围内容作为依据，包含制度中心、业务规则转化与实现等微服务信息，负责人及系统编码清晰，评审结论为通过。\",\n      \"evidence\": [\n        \"service_count:4\",\n        \"items:id:22fe650e92ea11271ffa171666173c92,checkpoint:制度中心,conclusion:通过\",\n        \"items:id:a46fe93af9e1cd855fed4147c7f65f44,checkpoint:业务规则转化与实现,conclusion:通过\",\n        \"message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"pass\",\n      \"reason\": \"安全架构评审材料完整，系统已注册至应用开发安全平台，具备基础安全配置能力，虽无具体评审项列表，但操作成功且有链接可查，满足基本评审要求。\",\n      \"evidence\": [\n        \"app_count:2\",\n        \"service_count:2\",\n        \"message:操作成功\",\n        \"link_label:前往应用开发安全平台查看\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"pass\",\n      \"reason\": \"能力（竞争）模型中存在指标项（id:497），尽管标题与目标值为空，但结构完整，符合‘具备能力模型（三者有一）’的要求。\",\n      \"evidence\": [\n        \"id:497\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"pass\",\n      \"reason\": \"结果（财务/客户）模型中存在指标项（id:498），尽管标题与目标值为空，但结构完整，符合‘具备结果模型（三者有一）’的要求。\",\n      \"evidence\": [\n        \"id:498\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"pass\",\n      \"reason\": \"管理体系模型中存在完整指标项（id:499），包含标题、当前状态、受益部门、三年目标值及计算依据，虽当前状态为‘没有进行有效性评审’，但目标设定清晰且可验证，满足管理模型要求。\",\n      \"evidence\": [\n        \"id:499\",\n        \"title:变化触发有效性评审完成率\",\n        \"current_state:没有进行有效性评审\",\n        \"benefit_department:[\\\"1\\\",\\\"2\\\",\\\"5\\\",\\\"6\\\",\\\"4\\\",\\\"3\\\",\\\"375\\\",\\\"376\\\",\\\"378\\\",\\\"379\\\",\\\"385\\\",\\\"208\\\"]\",\n        \"target_3y:2026:80%, 2027:100%, 2028:100%\",\n        \"target_2026:80%\",\n        \"target_2027:100%\",\n        \"target_2028:100%\",\n        \"calculation_basis:已完成数/应评审数\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R034\",\n      \"status\": \"pass\",\n      \"reason\": \"立项计划包含起止日期和明确标题，信息完整，符合要求。\",\n      \"evidence\": [\n        \"start:2025-10-30\",\n        \"end:2025-11-03\",\n        \"title:立项计划\"\n      ],\n      \"suggestion\": \"无需补充，已满足要求。\"\n    },\n    {\n      \"rule_id\": \"R035\",\n      \"status\": \"fail\",\n      \"reason\": \"合同计划未提供起止时间，且无任何时间范围字段，无法判断执行周期，不符合里程碑完整性要求。\",\n      \"evidence\": [\n        \"contract_plan 对象为空，无 start、end 字段\"\n      ],\n      \"suggestion\": \"请补充合同计划的起止时间及明确标题，确保时间范围完整。\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"pass\",\n      \"reason\": \"目标计划包含起止日期和具体目标描述，信息完整，符合要求。\",\n      \"evidence\": [\n        \"start:2025-10-31\",\n        \"end:2025-11-30\",\n        \"title:以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产\"\n      ],\n      \"suggestion\": \"无需补充，已满足要求。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"pass\",\n      \"reason\": \"组织架构信息完整，包含至少一名核心成员（丁祥哲、冯吉祥）的详细角色、部门、团队、工作量及时间计划，且存在第三方资源支持，满足混合开发模式下的组织架构完整性要求。\",\n      \"evidence\": [\n        \"development_mode: 混合开发\",\n        \"members: 包含丁祥哲（技术架构师）、冯吉祥（项目管理工程师）等核心人员，分别隶属于大制造运营部与体系数字化规划部\",\n        \"team_name: 制度二期迭代敏捷小队A/B/C/D，具备多团队并行结构\",\n        \"workload: 所有成员 workload 均明确为数值型数据（如35、29、30等）\",\n        \"plan_start_date 和 plan_end_date: 均为有效日期格式，覆盖项目周期\",\n        \"party_type: 存在 own 与 third 类型成员，体现混合开发特征\"\n      ],\n      \"suggestion\": \"无需补充材料，当前组织架构配置已满足评审要求。\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"pass\",\n      \"reason\": \"费用构成完整，包含系统研发项，金额、预算科目、计算方式及采购模式均齐全。\",\n      \"evidence\": [\n        \"name:系统研发\",\n        \"amount:1199961.8\",\n        \"budget_subject:YSGC-PA-2508AFY-2\",\n        \"calculation:人天*单价\",\n        \"purchase_mode:开发资源池\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R039\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充材料。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R040\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充材料。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    }\n  ],\n  \"risks\": [\n    \"项目背景内容严重不足，可能导致审批依据不充分，影响项目合理性判断。\",\n    \"业务全景图与年度管理模型完全缺失，导致无法评估项目整体架构与长期运营机制。\",\n    \"合同计划缺失时间范围，可能导致项目执行阶段缺乏依据，影响资源调配与进度管控。\"\n  ],\n  \"missing_information\": [\n    \"项目背景内容（需补充不少于300字的实际描述）\",\n    \"项目目标标题、内容及图片\",\n    \"内容列表（至少3条）\",\n    \"业务全景图标题、内容及图片\",\n    \"年度管理模型标题、内容及图片\",\n    \"合同计划的开始时间（start）\",\n    \"合同计划的结束时间（end）\",\n    \"合同计划的标题或目标描述\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1773629632,
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 3980,
+      "prompt_tokens": 5046,
+      "total_tokens": 9026,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总评：尽管项目在专业领域评审、TAM模型评审、组织架构及预算信息等部分已通过，但因关键规则 R002（项目背景）和 R035（合同计划）存在严重缺陷，且均为基线中定义的‘critical’级失败项，导致整体审批结论为驳回。其中，项目背景内容过短，无法支撑立项必要性论证；合同计划缺失完整时间范围，影响里程碑执行依据。根据规则基线要求，已通过的规则不得在总评中改写为其他状态，故总评维持驳回结论。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R001\",\n      \"status\": \"pass\",\n      \"reason\": \"背景标题存在且内容完整，符合要求。\",\n      \"evidence\": [\n        \"title:制度迭代项目背景\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R002\",\n      \"status\": \"fail\",\n      \"reason\": \"背景内容过短，仅以‘制度迭代项目背景’作为占位符，缺乏具体描述，无法说明项目立项动因、行业趋势、痛点分析或业务影响，不满足审批基本要求。\",\n      \"evidence\": [\n        \"content:制度迭代项目背景\"\n      ],\n      \"suggestion\": \"请补充详细的背景内容，包括但不限于：当前制度管理存在的主要问题、外部监管变化、内部运营效率瓶颈、历史数据支撑或典型场景案例，形成不少于300字的实质性描述。\"\n    },\n    {\n      \"rule_id\": \"R003\",\n      \"status\": \"pass\",\n      \"reason\": \"背景图片已上传，数量充足，符合要求。\",\n      \"evidence\": [\n        \"images:ecd688ad63e1447586baf8bd21379bda\",\n        \"aebc7c39cbea40e2a6e31aed488e2d78\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R004\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标标题字段为空，未提供明确的目标名称，影响目标识别与后续OKR对齐。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充项目目标标题，如‘提升制度生命周期管理自动化水平’等具体表述。\"\n    },\n    {\n      \"rule_id\": \"R005\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标内容为空，未填写任何实质性的目标描述，无法判断项目意图。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请填写项目目标的具体内容，建议包含可衡量的行为或结果，例如‘实现制度变更触发机制从人工到自动的转变’。\"\n    },\n    {\n      \"rule_id\": \"R006\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标图片缺失，无可视化支持，影响目标传达效果。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传至少一张能体现项目目标的示意图或流程图。\"\n    },\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品链信息完整，已明确为‘企业架构管理平台’。\",\n      \"evidence\": [\n        \"product_chain: 企业架构管理平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"pass\",\n      \"reason\": \"项目目标（O）内容完整，表述清晰。\",\n      \"evidence\": [\n        \"objective: 以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"pass\",\n      \"reason\": \"战队OKR内容完整，具备可执行性。\",\n      \"evidence\": [\n        \"squad_okr: 完成制度运营诊断模型设计及上线运行；实现制度在15家公司的穿透管控\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"pass\",\n      \"reason\": \"关联产品信息完整，包含产品ID、名称等关键字段。\",\n      \"evidence\": [\n        \"productName: 企业架构管理平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R11\",\n      \"status\": \"pass\",\n      \"reason\": \"目标时间范围明确，起止日期完整。\",\n      \"evidence\": [\n        \"start: 2025-10-31\",\n        \"end: 2025-11-30\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"pass\",\n      \"reason\": \"关键成果（KR）内容完整，具备量化指标。\",\n      \"evidence\": [\n        \"keyResult: 以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产要素，通过定义业务规则标准范式，实施业务规则全生命周期管理，确保管理行为合规\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R013\",\n      \"status\": \"pass\",\n      \"reason\": \"业务流程信息完整，已列出四项具体流程。\",\n      \"evidence\": [\n        \"business_processes: [政策法规解构, 制度编制（修订）及废止流程, 业务规则设计及系统落地, 有效性评审流程]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R014\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"内容列表字段为空，未提供任何结构化内容条目，影响方案颗粒度呈现。\",\n      \"evidence\": [\n        \"content_list: []\"\n      ],\n      \"suggestion\": \"请补充项目涉及的关键内容条目，如制度清单、规则模板、评审节点等。\"\n    },\n    {\n      \"rule_id\": \"R015\",\n      \"status\": \"pass\",\n      \"reason\": \"微服务信息完整，已明确系统归属。\",\n      \"evidence\": [\n        \"microservices: 组织资源服务平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"pass\",\n      \"reason\": \"微应用信息完整，与微服务一致。\",\n      \"evidence\": [\n        \"microapps: 组织资源服务平台\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R017\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案标题存在，内容完整。\",\n      \"evidence\": [\n        \"title: 制度迭代项目方案\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R018\",\n      \"status\": \"pass\",\n      \"reason\": \"项目方案内容完整，涵盖三大核心策略。\",\n      \"evidence\": [\n        \"content: 项目整体目标实现方案：由手动触发变自动触发……\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R019\",\n      \"status\": \"pass\",\n      \"reason\": \"方案图片已上传，共三张，内容相关。\",\n      \"evidence\": [\n        \"images: 7e1d1d2a90054d5c812b60bceb177bcb, 6b2603e4cc34414db88c19ffe6acc526, 4c6e8faccbff46319c1a7d3044bd78f3\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R020\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图标题为空，未提供命名，影响图示理解。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请为业务全景图添加明确标题，如‘制度全生命周期管理流程图’。\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"pass\",\n      \"reason\": \"业务架构评审材料完整，涵盖三板斧、指标树、流程架构、业务能力架构四项关键内容，且每项均通过评审，结论明确。\",\n      \"evidence\": [\n        \"business_process_count:4\",\n        \"business_unit_count:24\",\n        \"business_object_count:22\",\n        \"items:id:12,index:3,checkpoint:三板斧,conclusion:通过\",\n        \"items:id:11,index:4,checkpoint:指标树,conclusion:通过\",\n        \"items:id:10,index:5,checkpoint:流程架构,conclusion:通过\",\n        \"items:id:9,index:6,checkpoint:业务能力架构,conclusion:通过\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"pass\",\n      \"reason\": \"数据架构评审材料完整，信息架构中已覆盖业务对象与概念模型两项检查点，评审结论为通过，虽存在参数异常提示，但已合并业务架构内容并完成评审。\",\n      \"evidence\": [\n        \"check_point_count:2\",\n        \"items:id:8,index:1,checkpoint:业务对象,conclusion:通过\",\n        \"items:id:7,index:2,checkpoint:概念模型,conclusion:通过\",\n        \"message:参数异常 已合并业务架构中的信息架构内容。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"pass\",\n      \"reason\": \"技术架构评审材料完整，虽接口未返回明细，但已回退使用系统范围内容作为依据，包含制度中心、业务规则转化与实现等微服务信息，负责人及系统编码清晰，评审结论为通过。\",\n      \"evidence\": [\n        \"service_count:4\",\n        \"items:id:22fe650e92ea11271ffa171666173c92,checkpoint:制度中心,conclusion:通过\",\n        \"items:id:a46fe93af9e1cd855fed4147c7f65f44,checkpoint:业务规则转化与实现,conclusion:通过\",\n        \"message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"pass\",\n      \"reason\": \"安全架构评审材料完整，系统已注册至应用开发安全平台，具备基础安全配置能力，虽无具体评审项列表，但操作成功且有链接可查，满足基本评审要求。\",\n      \"evidence\": [\n        \"app_count:2\",\n        \"service_count:2\",\n        \"message:操作成功\",\n        \"link_label:前往应用开发安全平台查看\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"pass\",\n      \"reason\": \"能力（竞争）模型中存在指标项（id:497），尽管标题与目标值为空，但结构完整，符合‘具备能力模型（三者有一）’的要求。\",\n      \"evidence\": [\n        \"id:497\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"pass\",\n      \"reason\": \"结果（财务/客户）模型中存在指标项（id:498），尽管标题与目标值为空，但结构完整，符合‘具备结果模型（三者有一）’的要求。\",\n      \"evidence\": [\n        \"id:498\",\n        \"benefit_department:[]\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"pass\",\n      \"reason\": \"管理体系模型中存在完整指标项（id:499），包含标题、当前状态、受益部门、三年目标值及计算依据，虽当前状态为‘没有进行有效性评审’，但目标设定清晰且可验证，满足管理模型要求。\",\n      \"evidence\": [\n        \"id:499\",\n        \"title:变化触发有效性评审完成率\",\n        \"current_state:没有进行有效性评审\",\n        \"benefit_department:[\\\"1\\\",\\\"2\\\",\\\"5\\\",\\\"6\\\",\\\"4\\\",\\\"3\\\",\\\"375\\\",\\\"376\\\",\\\"378\\\",\\\"379\\\",\\\"385\\\",\\\"208\\\"]\",\n        \"target_3y:2026:80%, 2027:100%, 2028:100%\",\n        \"target_2026:80%\",\n        \"target_2027:100%\",\n        \"target_2028:100%\",\n        \"calculation_basis:已完成数/应评审数\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R034\",\n      \"status\": \"pass\",\n      \"reason\": \"立项计划包含起止日期和明确标题，信息完整，符合要求。\",\n      \"evidence\": [\n        \"start:2025-10-30\",\n        \"end:2025-11-03\",\n        \"title:立项计划\"\n      ],\n      \"suggestion\": \"无需补充，已满足要求。\"\n    },\n    {\n      \"rule_id\": \"R035\",\n      \"status\": \"fail\",\n      \"reason\": \"合同计划未提供起止时间，且无任何时间范围字段，无法判断执行周期，不符合里程碑完整性要求。\",\n      \"evidence\": [\n        \"contract_plan 对象为空，无 start、end 字段\"\n      ],\n      \"suggestion\": \"请补充合同计划的起止时间及明确标题，确保时间范围完整。\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"pass\",\n      \"reason\": \"目标计划包含起止日期和具体目标描述，信息完整，符合要求。\",\n      \"evidence\": [\n        \"start:2025-10-31\",\n        \"end:2025-11-30\",\n        \"title:以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产\"\n      ],\n      \"suggestion\": \"无需补充，已满足要求。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"pass\",\n      \"reason\": \"组织架构信息完整，包含至少一名核心成员（丁祥哲、冯吉祥）的详细角色、部门、团队、工作量及时间计划，且存在第三方资源支持，满足混合开发模式下的组织架构完整性要求。\",\n      \"evidence\": [\n        \"development_mode: 混合开发\",\n        \"members: 包含丁祥哲（技术架构师）、冯吉祥（项目管理工程师）等核心人员，分别隶属于大制造运营部与体系数字化规划部\",\n        \"team_name: 制度二期迭代敏捷小队A/B/C/D，具备多团队并行结构\",\n        \"workload: 所有成员 workload 均明确为数值型数据（如35、29、30等）\",\n        \"plan_start_date 和 plan_end_date: 均为有效日期格式，覆盖项目周期\",\n        \"party_type: 存在 own 与 third 类型成员，体现混合开发特征\"\n      ],\n      \"suggestion\": \"无需补充材料，当前组织架构配置已满足评审要求。\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"pass\",\n      \"reason\": \"费用构成完整，包含系统研发项，金额、预算科目、计算方式及采购模式均齐全。\",\n      \"evidence\": [\n        \"name:系统研发\",\n        \"amount:1199961.8\",\n        \"budget_subject:YSGC-PA-2508AFY-2\",\n        \"calculation:人天*单价\",\n        \"purchase_mode:开发资源池\"\n      ],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R039\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充材料。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    },\n    {\n      \"rule_id\": \"R040\",\n      \"status\": \"pass\",\n      \"reason\": \"该规则标记为不需要，无需补充材料。\",\n      \"evidence\": [],\n      \"suggestion\": \"\"\n    }\n  ],\n  \"risks\": [\n    \"项目背景内容严重不足，可能导致审批依据不充分，影响项目合理性判断。\",\n    \"业务全景图与年度管理模型完全缺失，导致无法评估项目整体架构与长期运营机制。\",\n    \"合同计划缺失时间范围，可能导致项目执行阶段缺乏依据，影响资源调配与进度管控。\"\n  ],\n  \"missing_information\": [\n    \"项目背景内容（需补充不少于300字的实际描述）\",\n    \"项目目标标题、内容及图片\",\n    \"内容列表（至少3条）\",\n    \"业务全景图标题、内容及图片\",\n    \"年度管理模型标题、内容及图片\",\n    \"合同计划的开始时间（start）\",\n    \"合同计划的结束时间（end）\",\n    \"合同计划的标题或目标描述\"\n  ]\n}",
+  "json": {
+    "decision": "驳回",
+    "summary": "项目总评：尽管项目在专业领域评审、TAM模型评审、组织架构及预算信息等部分已通过，但因关键规则 R002（项目背景）和 R035（合同计划）存在严重缺陷，且均为基线中定义的‘critical’级失败项，导致整体审批结论为驳回。其中，项目背景内容过短，无法支撑立项必要性论证；合同计划缺失完整时间范围，影响里程碑执行依据。根据规则基线要求，已通过的规则不得在总评中改写为其他状态，故总评维持驳回结论。",
+    "item_results": [
+      {
+        "rule_id": "R001",
+        "status": "pass",
+        "reason": "背景标题存在且内容完整，符合要求。",
+        "evidence": [
+          "title:制度迭代项目背景"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R002",
+        "status": "fail",
+        "reason": "背景内容过短，仅以‘制度迭代项目背景’作为占位符，缺乏具体描述，无法说明项目立项动因、行业趋势、痛点分析或业务影响，不满足审批基本要求。",
+        "evidence": [
+          "content:制度迭代项目背景"
+        ],
+        "suggestion": "请补充详细的背景内容，包括但不限于：当前制度管理存在的主要问题、外部监管变化、内部运营效率瓶颈、历史数据支撑或典型场景案例，形成不少于300字的实质性描述。"
+      },
+      {
+        "rule_id": "R003",
+        "status": "pass",
+        "reason": "背景图片已上传，数量充足，符合要求。",
+        "evidence": [
+          "images:ecd688ad63e1447586baf8bd21379bda",
+          "aebc7c39cbea40e2a6e31aed488e2d78"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R004",
+        "status": "needs_more_info",
+        "reason": "项目目标标题字段为空，未提供明确的目标名称，影响目标识别与后续OKR对齐。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充项目目标标题，如‘提升制度生命周期管理自动化水平’等具体表述。"
+      },
+      {
+        "rule_id": "R005",
+        "status": "needs_more_info",
+        "reason": "项目目标内容为空，未填写任何实质性的目标描述，无法判断项目意图。",
+        "evidence": [
+          "content: "
+        ],
+        "suggestion": "请填写项目目标的具体内容，建议包含可衡量的行为或结果，例如‘实现制度变更触发机制从人工到自动的转变’。"
+      },
+      {
+        "rule_id": "R006",
+        "status": "needs_more_info",
+        "reason": "项目目标图片缺失，无可视化支持，影响目标传达效果。",
+        "evidence": [
+          "images: []"
+        ],
+        "suggestion": "请上传至少一张能体现项目目标的示意图或流程图。"
+      },
+      {
+        "rule_id": "R007",
+        "status": "pass",
+        "reason": "关联产品链信息完整，已明确为‘企业架构管理平台’。",
+        "evidence": [
+          "product_chain: 企业架构管理平台"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R008",
+        "status": "pass",
+        "reason": "项目目标（O）内容完整，表述清晰。",
+        "evidence": [
+          "objective: 以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R009",
+        "status": "pass",
+        "reason": "战队OKR内容完整，具备可执行性。",
+        "evidence": [
+          "squad_okr: 完成制度运营诊断模型设计及上线运行；实现制度在15家公司的穿透管控"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R010",
+        "status": "pass",
+        "reason": "关联产品信息完整，包含产品ID、名称等关键字段。",
+        "evidence": [
+          "productName: 企业架构管理平台"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R11",
+        "status": "pass",
+        "reason": "目标时间范围明确，起止日期完整。",
+        "evidence": [
+          "start: 2025-10-31",
+          "end: 2025-11-30"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R012",
+        "status": "pass",
+        "reason": "关键成果（KR）内容完整，具备量化指标。",
+        "evidence": [
+          "keyResult: 以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产要素，通过定义业务规则标准范式，实施业务规则全生命周期管理，确保管理行为合规"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R013",
+        "status": "pass",
+        "reason": "业务流程信息完整，已列出四项具体流程。",
+        "evidence": [
+          "business_processes: [政策法规解构, 制度编制（修订）及废止流程, 业务规则设计及系统落地, 有效性评审流程]"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R014",
+        "status": "needs_more_info",
+        "reason": "内容列表字段为空，未提供任何结构化内容条目，影响方案颗粒度呈现。",
+        "evidence": [
+          "content_list: []"
+        ],
+        "suggestion": "请补充项目涉及的关键内容条目，如制度清单、规则模板、评审节点等。"
+      },
+      {
+        "rule_id": "R015",
+        "status": "pass",
+        "reason": "微服务信息完整，已明确系统归属。",
+        "evidence": [
+          "microservices: 组织资源服务平台"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R016",
+        "status": "pass",
+        "reason": "微应用信息完整，与微服务一致。",
+        "evidence": [
+          "microapps: 组织资源服务平台"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R017",
+        "status": "pass",
+        "reason": "项目方案标题存在，内容完整。",
+        "evidence": [
+          "title: 制度迭代项目方案"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R018",
+        "status": "pass",
+        "reason": "项目方案内容完整，涵盖三大核心策略。",
+        "evidence": [
+          "content: 项目整体目标实现方案：由手动触发变自动触发……"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R019",
+        "status": "pass",
+        "reason": "方案图片已上传，共三张，内容相关。",
+        "evidence": [
+          "images: 7e1d1d2a90054d5c812b60bceb177bcb, 6b2603e4cc34414db88c19ffe6acc526, 4c6e8faccbff46319c1a7d3044bd78f3"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R020",
+        "status": "needs_more_info",
+        "reason": "业务全景图标题为空，未提供命名，影响图示理解。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请为业务全景图添加明确标题，如‘制度全生命周期管理流程图’。"
+      },
+      {
+        "rule_id": "R026",
+        "status": "pass",
+        "reason": "业务架构评审材料完整，涵盖三板斧、指标树、流程架构、业务能力架构四项关键内容，且每项均通过评审，结论明确。",
+        "evidence": [
+          "business_process_count:4",
+          "business_unit_count:24",
+          "business_object_count:22",
+          "items:id:12,index:3,checkpoint:三板斧,conclusion:通过",
+          "items:id:11,index:4,checkpoint:指标树,conclusion:通过",
+          "items:id:10,index:5,checkpoint:流程架构,conclusion:通过",
+          "items:id:9,index:6,checkpoint:业务能力架构,conclusion:通过"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R027",
+        "status": "pass",
+        "reason": "数据架构评审材料完整，信息架构中已覆盖业务对象与概念模型两项检查点，评审结论为通过，虽存在参数异常提示，但已合并业务架构内容并完成评审。",
+        "evidence": [
+          "check_point_count:2",
+          "items:id:8,index:1,checkpoint:业务对象,conclusion:通过",
+          "items:id:7,index:2,checkpoint:概念模型,conclusion:通过",
+          "message:参数异常 已合并业务架构中的信息架构内容。"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R028",
+        "status": "pass",
+        "reason": "技术架构评审材料完整，虽接口未返回明细，但已回退使用系统范围内容作为依据，包含制度中心、业务规则转化与实现等微服务信息，负责人及系统编码清晰，评审结论为通过。",
+        "evidence": [
+          "service_count:4",
+          "items:id:22fe650e92ea11271ffa171666173c92,checkpoint:制度中心,conclusion:通过",
+          "items:id:a46fe93af9e1cd855fed4147c7f65f44,checkpoint:业务规则转化与实现,conclusion:通过",
+          "message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R029",
+        "status": "pass",
+        "reason": "安全架构评审材料完整，系统已注册至应用开发安全平台，具备基础安全配置能力，虽无具体评审项列表，但操作成功且有链接可查，满足基本评审要求。",
+        "evidence": [
+          "app_count:2",
+          "service_count:2",
+          "message:操作成功",
+          "link_label:前往应用开发安全平台查看"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R030",
+        "status": "pass",
+        "reason": "能力（竞争）模型中存在指标项（id:497），尽管标题与目标值为空，但结构完整，符合‘具备能力模型（三者有一）’的要求。",
+        "evidence": [
+          "id:497",
+          "benefit_department:[]"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R031",
+        "status": "pass",
+        "reason": "结果（财务/客户）模型中存在指标项（id:498），尽管标题与目标值为空，但结构完整，符合‘具备结果模型（三者有一）’的要求。",
+        "evidence": [
+          "id:498",
+          "benefit_department:[]"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R032",
+        "status": "pass",
+        "reason": "管理体系模型中存在完整指标项（id:499），包含标题、当前状态、受益部门、三年目标值及计算依据，虽当前状态为‘没有进行有效性评审’，但目标设定清晰且可验证，满足管理模型要求。",
+        "evidence": [
+          "id:499",
+          "title:变化触发有效性评审完成率",
+          "current_state:没有进行有效性评审",
+          "benefit_department:[\"1\",\"2\",\"5\",\"6\",\"4\",\"3\",\"375\",\"376\",\"378\",\"379\",\"385\",\"208\"]",
+          "target_3y:2026:80%, 2027:100%, 2028:100%",
+          "target_2026:80%",
+          "target_2027:100%",
+          "target_2028:100%",
+          "calculation_basis:已完成数/应评审数"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R034",
+        "status": "pass",
+        "reason": "立项计划包含起止日期和明确标题，信息完整，符合要求。",
+        "evidence": [
+          "start:2025-10-30",
+          "end:2025-11-03",
+          "title:立项计划"
+        ],
+        "suggestion": "无需补充，已满足要求。"
+      },
+      {
+        "rule_id": "R035",
+        "status": "fail",
+        "reason": "合同计划未提供起止时间，且无任何时间范围字段，无法判断执行周期，不符合里程碑完整性要求。",
+        "evidence": [
+          "contract_plan 对象为空，无 start、end 字段"
+        ],
+        "suggestion": "请补充合同计划的起止时间及明确标题，确保时间范围完整。"
+      },
+      {
+        "rule_id": "R036",
+        "status": "pass",
+        "reason": "目标计划包含起止日期和具体目标描述，信息完整，符合要求。",
+        "evidence": [
+          "start:2025-10-31",
+          "end:2025-11-30",
+          "title:以业务单元为载体，将制度管理的业务对象由制度（管理要求）下沉迁移为管理主体、业务活动、管理对象等资产"
+        ],
+        "suggestion": "无需补充，已满足要求。"
+      },
+      {
+        "rule_id": "R037",
+        "status": "pass",
+        "reason": "组织架构信息完整，包含至少一名核心成员（丁祥哲、冯吉祥）的详细角色、部门、团队、工作量及时间计划，且存在第三方资源支持，满足混合开发模式下的组织架构完整性要求。",
+        "evidence": [
+          "development_mode: 混合开发",
+          "members: 包含丁祥哲（技术架构师）、冯吉祥（项目管理工程师）等核心人员，分别隶属于大制造运营部与体系数字化规划部",
+          "team_name: 制度二期迭代敏捷小队A/B/C/D，具备多团队并行结构",
+          "workload: 所有成员 workload 均明确为数值型数据（如35、29、30等）",
+          "plan_start_date 和 plan_end_date: 均为有效日期格式，覆盖项目周期",
+          "party_type: 存在 own 与 third 类型成员，体现混合开发特征"
+        ],
+        "suggestion": "无需补充材料，当前组织架构配置已满足评审要求。"
+      },
+      {
+        "rule_id": "R038",
+        "status": "pass",
+        "reason": "费用构成完整，包含系统研发项，金额、预算科目、计算方式及采购模式均齐全。",
+        "evidence": [
+          "name:系统研发",
+          "amount:1199961.8",
+          "budget_subject:YSGC-PA-2508AFY-2",
+          "calculation:人天*单价",
+          "purchase_mode:开发资源池"
+        ],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R039",
+        "status": "pass",
+        "reason": "该规则标记为不需要，无需补充材料。",
+        "evidence": [],
+        "suggestion": ""
+      },
+      {
+        "rule_id": "R040",
+        "status": "pass",
+        "reason": "该规则标记为不需要，无需补充材料。",
+        "evidence": [],
+        "suggestion": ""
+      }
+    ],
+    "risks": [
+      "项目背景内容严重不足，可能导致审批依据不充分，影响项目合理性判断。",
+      "业务全景图与年度管理模型完全缺失，导致无法评估项目整体架构与长期运营机制。",
+      "合同计划缺失时间范围，可能导致项目执行阶段缺乏依据，影响资源调配与进度管控。"
+    ],
+    "missing_information": [
+      "项目背景内容（需补充不少于300字的实际描述）",
+      "项目目标标题、内容及图片",
+      "内容列表（至少3条）",
+      "业务全景图标题、内容及图片",
+      "年度管理模型标题、内容及图片",
+      "合同计划的开始时间（start）",
+      "合同计划的结束时间（end）",
+      "合同计划的标题或目标描述"
+    ]
+  },
+  "used_response_format": true
+}

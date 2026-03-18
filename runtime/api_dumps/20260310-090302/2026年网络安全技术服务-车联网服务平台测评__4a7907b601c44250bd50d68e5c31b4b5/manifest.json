@@ -1,0 +1,117 @@
+{
+  "project_id": "4a7907b601c44250bd50d68e5c31b4b5",
+  "project_name": "2026年网络安全技术服务-车联网服务平台测评",
+  "endpoints": [
+    {
+      "name": "project_uploading",
+      "method": "GET",
+      "path": "/projectUploading/list/4a7907b601c44250bd50d68e5c31b4b5",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "project_goal",
+      "method": "GET",
+      "path": "/project/goal/get/4a7907b601c44250bd50d68e5c31b4b5",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "project_scope_dev",
+      "method": "POST",
+      "path": "/projectBaseInfo/eamapAndSystem",
+      "payload": {
+        "projectId": "4a7907b601c44250bd50d68e5c31b4b5"
+      },
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "project_scope_ops",
+      "method": "POST",
+      "path": "/projectBaseInfo/getProjectScope",
+      "payload": {
+        "projectId": "4a7907b601c44250bd50d68e5c31b4b5",
+        "pageNo": 1,
+        "pageSize": 200
+      },
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "system_scope",
+      "method": "POST",
+      "path": "/projectMicosInfo/getList",
+      "payload": {
+        "projectId": "4a7907b601c44250bd50d68e5c31b4b5"
+      },
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "tam_info",
+      "method": "GET",
+      "path": "/value/info/4a7907b601c44250bd50d68e5c31b4b5",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "project_value",
+      "method": "GET",
+      "path": "/value/infoNoTam/4a7907b601c44250bd50d68e5c31b4b5",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "milestones",
+      "method": "GET",
+      "path": "/milestone/newList/4a7907b601c44250bd50d68e5c31b4b5",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "organization",
+      "method": "POST",
+      "path": "/organizationalStructure/queryOrganizationNumber",
+      "payload": {
+        "projectId": "4a7907b601c44250bd50d68e5c31b4b5",
+        "pageNo": 1,
+        "pageSize": 200
+      },
+      "ok": true,
+      "code": 0,
+      "message": "查询自有人员信息列表成功: 人员信息列表为空！"
+    },
+    {
+      "name": "budget",
+      "method": "GET",
+      "path": "/budget/info/4a7907b601c44250bd50d68e5c31b4b5",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    },
+    {
+      "name": "cost_change",
+      "method": "GET",
+      "path": "/change/list/4a7907b601c44250bd50d68e5c31b4b5",
+      "payload": null,
+      "ok": true,
+      "code": 0,
+      "message": "操作成功"
+    }
+  ]
+}

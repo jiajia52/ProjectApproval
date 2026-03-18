@@ -1,0 +1,62 @@
+{
+  "skill_id": "approval-组织架构",
+  "skill_name": "approval-组织架构-组织架构",
+  "directory": "E:\\pyproject\\ProjectApproval\\dist\\ProjectApproval\\skills\\approval-组织架构",
+  "review_point": "组织架构",
+  "tab": "组织架构",
+  "rule_count": 1,
+  "rule_ids": [
+    "R037"
+  ],
+  "review_points": [
+    "组织架构"
+  ],
+  "review_contents": [
+    "组织架构"
+  ],
+  "categories": [
+    "工作台开发及实施",
+    "产品运营",
+    "系统产品购买",
+    "大一线运维",
+    "三线运维",
+    "产品维保",
+    "数据中心维护",
+    "对外咨询",
+    "系统开发及运营"
+  ],
+  "group_names": [
+    "系统建设及运营",
+    "运维服务",
+    "对外服务项目"
+  ],
+  "tabs": [
+    "组织架构"
+  ],
+  "model_dimensions": [
+    "成本构成模型"
+  ],
+  "dimensions": [
+    "成本构成"
+  ],
+  "summary": "组织架构，包含 1 条评审子规则。",
+  "rules": [
+    {
+      "rule_id": "R037",
+      "review_point": "组织架构",
+      "review_content": "组织架构",
+      "rule_text": "具备组织架构\n1、项目团队成员完整，角色、等级清晰；\n2、团队角色构成符合敏捷小队岗位构成标准；\n3、各角色任务计划清晰，工作量预估准确。\n4、对于系统建设及运营类项目：明确项目开发模式（完全自研/完全外包/自有三方混编）；",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买",
+        "大一线运维",
+        "三线运维",
+        "产品维保",
+        "数据中心维护",
+        "对外咨询",
+        "系统开发及运营"
+      ]
+    }
+  ]
+}

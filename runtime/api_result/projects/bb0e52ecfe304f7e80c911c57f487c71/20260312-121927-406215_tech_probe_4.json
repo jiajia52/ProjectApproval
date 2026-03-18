@@ -1,0 +1,21 @@
+{
+  "api_name": "tech_probe_4",
+  "method": "POST",
+  "path": "/third/techCheckList",
+  "payload": {
+    "projectId": "bb0e52ecfe304f7e80c911c57f487c71",
+    "type": 4
+  },
+  "project_id": "bb0e52ecfe304f7e80c911c57f487c71",
+  "result": {
+    "code": 200,
+    "message": "操作成功",
+    "data": {
+      "appCount": 0,
+      "serviceCount": 0,
+      "reviewResult": null
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-12T12:19:27+08:00"
+}

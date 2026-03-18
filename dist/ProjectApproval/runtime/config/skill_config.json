@@ -1,0 +1,69 @@
+{
+  "skill": {
+    "name": "project-approval",
+    "display_name": "Project Approval",
+    "description": "根据 product_info、API 列表和规则矩阵生成立项审批项目与本体文件。",
+    "default_prompt": "Generate project approval bundle artifacts from local project data and review rules."
+  },
+  "sources": {
+    "product_info": "data/product_info.md",
+    "api_list": "data/API列表.txt",
+    "rule_matrix": "data/立项大模型评审规则说明3-13.xlsx"
+  },
+  "generation": {
+    "output_dir": "runtime",
+    "rules_output": "runtime/review_rules.json",
+    "ontology_namespace": "https://faw.example.local/project-approval#",
+    "enabled_categories": [
+      "工作台开发及实施",
+      "产品运营",
+      "系统产品购买",
+      "大一线运维",
+      "三线运维",
+      "产品维保",
+      "数据中心维护",
+      "基础服务",
+      "安全服务",
+      "数据服务",
+      "保密服务",
+      "数据订阅购买",
+      "研发工具订阅许可升级",
+      "非研发工具订阅许可升级",
+      "研发工具许可购买",
+      "非研发工具许可购买",
+      "设备购买及弱电布线",
+      "资源租赁",
+      "机房建设",
+      "设备维修",
+      "对外咨询",
+      "系统开发及运营"
+    ],
+    "enabled_skill_groups": [
+      "项目背景",
+      "项目目标",
+      "项目OKR",
+      "项目范围",
+      "系统范围",
+      "项目方案",
+      "业务全景图",
+      "年度管理模型",
+      "专业领域评审",
+      "能力（竞争）模型",
+      "结果（财务/客户）模型",
+      "管理体系模型",
+      "项目价值",
+      "项目里程碑",
+      "组织架构",
+      "费用构成",
+      "长尾费用",
+      "历史投入",
+      "费用变化点"
+    ],
+    "decision_levels": [
+      "通过",
+      "需补充材料",
+      "驳回"
+    ],
+    "generated_project_name": "项目立项自动审批系统"
+  }
+}

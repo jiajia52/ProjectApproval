@@ -1,0 +1,24 @@
+{
+  "api_name": "architecture_review_security",
+  "method": "POST",
+  "path": "/third/securityCheckList",
+  "payload": {
+    "projectId": "19ab30ec73dc40fd8c42be7972a71b06",
+    "projectCode": "SA-2601C",
+    "systemCode": "",
+    "type": 1
+  },
+  "project_id": "19ab30ec73dc40fd8c42be7972a71b06",
+  "result": {
+    "code": 200,
+    "message": "操作成功",
+    "data": {
+      "appCount": 0,
+      "serviceCount": 0,
+      "safetyLevel": null,
+      "dimensionList": null
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-18T08:46:51+08:00"
+}

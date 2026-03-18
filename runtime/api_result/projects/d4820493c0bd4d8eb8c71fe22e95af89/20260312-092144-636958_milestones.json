@@ -1,0 +1,36 @@
+{
+  "api_name": "milestones",
+  "method": "GET",
+  "path": "/milestone/newList/d4820493c0bd4d8eb8c71fe22e95af89",
+  "payload": null,
+  "project_id": "d4820493c0bd4d8eb8c71fe22e95af89",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "44795012794c4056b2062b8dd69aaab7",
+        "projectEstablishmentId": "d4820493c0bd4d8eb8c71fe22e95af89",
+        "parentId": null,
+        "milestoneOrder": "1",
+        "milestoneType": null,
+        "milestoneTitle": "立项计划",
+        "milestoneDate": "2026-03-31",
+        "milestoneDoneDate": null,
+        "milestoneGoal": null,
+        "deliverables": "1,28",
+        "createUser": 87864,
+        "createTime": "2026-03-06T06:40:06.000+00:00",
+        "updateUser": null,
+        "updateTime": null,
+        "acceptStatus": 3,
+        "deliverablesName": "立项申请报告,立项会议纪要",
+        "flowLevel": null,
+        "milestoneStartDate": "2026-03-06",
+        "okrFlag": null
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-12T09:21:44+08:00"
+}

@@ -1,0 +1,61 @@
+{
+  "api_name": "project_list",
+  "method": "POST",
+  "path": "/projectEstablishment/queryProjectEstablishmentList",
+  "payload": {
+    "pageNum": 1,
+    "pageSize": 20,
+    "projectName": "2025年研发工具软件订阅升级-Motor-CAD-例行升级"
+  },
+  "project_id": "",
+  "result": {
+    "code": 0,
+    "message": "SUCCESS",
+    "data": {
+      "total": 1,
+      "dataList": [
+        {
+          "id": "0baeab7da932460094a1d9b27ed585c6",
+          "projectBudgetId": "9abbec8a022842cd880d8f2bbbf4f44d",
+          "projectName": "2025年研发工具软件订阅升级-Motor-CAD-例行升级",
+          "serialNo": "DE-2507EFY53",
+          "belongTeamName": "ITD",
+          "belongDepartmentName": "其他",
+          "projectLeaderId": "83979",
+          "projectLeader": "郭佳杭 10046960",
+          "projectManager": "83979",
+          "projectManagerId": null,
+          "projectManagerName": "郭佳杭 10046960",
+          "projectSourceName": "新增",
+          "projectFeeTypeName": "运维项目",
+          "projectLevelName": "E",
+          "proBudget": 345200.0,
+          "proBudgetYear": 0.0,
+          "applyBudget": 345200.0,
+          "applyBudgetYear": 0.0,
+          "projectStatus": "执行中",
+          "flowStatus": 5,
+          "flowStatusName": "已完成",
+          "processInstanceId": "5c115143-8eec-11f0-9001-4e0e4d5a6fe2",
+          "longTermFlag": "是",
+          "businessDepartment": "208",
+          "belongTeam": "26",
+          "projectSource": "2",
+          "projectFeeType": "3",
+          "projectLevel": "5",
+          "isBusiness": "1",
+          "isOld": null,
+          "createTime": null,
+          "ministryCouncilApprovalTime": "2025-09-17 21:26:13",
+          "projectChangeId": null,
+          "projectLastVersion": null,
+          "projectStatusCode": "3",
+          "projectChangeNum": "0",
+          "modelVersion": "V1"
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-16T16:12:53+08:00"
+}

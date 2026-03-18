@@ -1,0 +1,35 @@
+{
+  "api_name": "architecture_review_technology_fallback",
+  "method": "POST",
+  "path": "/projectMicosInfo/getList",
+  "payload": {
+    "projectId": "79eac664f436488993cb28eaac1cc996",
+    "dataType": 1
+  },
+  "project_id": "79eac664f436488993cb28eaac1cc996",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "5e3b38fb96f626cf1051cba882aa1134",
+        "projectId": "79eac664f436488993cb28eaac1cc996",
+        "systemId": "DE-0506",
+        "systemCode": "DE-0506",
+        "systemName": "员工工作台（产品经理）",
+        "subCode": "DE-0506_APP_DCP",
+        "subName": "变化点管理",
+        "subLeader": "崔苗苗",
+        "subLeaderAccount": "cuimiaomiao",
+        "subLevel": "C",
+        "subLevelStandard": "业务属于运营管理类，C端DAU<500，根据集团要求申请变更",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "APP"
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:36:10+08:00"
+}

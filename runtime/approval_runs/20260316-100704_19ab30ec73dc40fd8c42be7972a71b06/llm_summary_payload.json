@@ -1,0 +1,525 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "北京车展数字化展区项目",
+  "category": "工作台开发及实施",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 0,
+    "statistics": {
+      "total_rules": 29,
+      "passed_rules": 18,
+      "failed_rules": 11,
+      "critical_failures": 8,
+      "major_failures": 3,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R007",
+        "review_point": "项目OKR",
+        "review_content": "关联产品链",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品链",
+        "suggestion": "具备产品链",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R008",
+        "review_point": "项目OKR",
+        "review_content": "项目目标（O）",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 项目目标（O）",
+        "suggestion": "具备项目目标(O)",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R009",
+        "review_point": "项目OKR",
+        "review_content": "战队OKR",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 战队OKR",
+        "suggestion": "具备战队OKR",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R010",
+        "review_point": "项目OKR",
+        "review_content": "关联产品",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品",
+        "suggestion": "具备产品",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R011",
+        "review_point": "项目OKR",
+        "review_content": "目标时间范围",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 目标时间范围",
+        "suggestion": "具备目标时间范围",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R012",
+        "review_point": "项目OKR",
+        "review_content": "关键成果（KR）",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关键成果（KR）",
+        "suggestion": "具备关键成果(KR)",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R030",
+        "review_point": "能力（竞争）模型",
+        "review_content": "能力（竞争）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "能力（竞争）模型缺少完整指标。",
+        "suggestion": "具备能力模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R031",
+        "review_point": "结果（财务/客户）模型",
+        "review_content": "结果（财务/客户）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "结果（财务/客户）模型缺少完整指标。",
+        "suggestion": "具备结果模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R032",
+        "review_point": "管理体系模型",
+        "review_content": "管理体系模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "管理体系模型缺少完整指标。",
+        "suggestion": "具备管理模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R037",
+        "review_point": "组织架构",
+        "review_content": "组织架构",
+        "status": "fail",
+        "severity": "critical",
+        "message": "组织成员或开发模式不完整",
+        "suggestion": "具备组织架构",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容评审未通过，核心问题在于项目OKR部分缺失关键信息，包括关联产品链、项目目标（O）、战队OKR、关联产品、目标时间范围及关键成果（KR），均未提供有效材料。尽管背景、方案、系统范围等部分材料完整，但因OKR模块严重缺失，影响整体目标可衡量性与战略对齐，故判定驳回。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "背景标题已提供，内容完整且与会议要求一致。",
+          "evidence": [
+            "title:2026年北京车展数字化展区",
+            "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理"
+          ],
+          "suggestion": "具备项目背景标题"
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "背景内容已完整呈现，包含项目责任主体与统筹管理要求。",
+          "evidence": [
+            "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理"
+          ],
+          "suggestion": "具备项目背景内容"
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "背景图片已上传，虽为缩略图，但存在有效引用。",
+          "evidence": [
+            "images:c3878551dd9c4e2783efef58bb3b00fe"
+          ],
+          "suggestion": "具备项目背景图片"
+        },
+        {
+          "rule_id": "R007",
+          "status": "fail",
+          "reason": "未提供任何关于关联产品链的信息，无法确认项目与现有产品线的衔接关系。",
+          "evidence": [
+            "okr.product_chain: "
+          ],
+          "suggestion": "补充明确的关联产品链信息"
+        },
+        {
+          "rule_id": "R008",
+          "status": "fail",
+          "reason": "项目目标（O）字段为空，未定义项目核心目标，影响后续KR拆解。",
+          "evidence": [
+            "okr.objective: "
+          ],
+          "suggestion": "补充项目目标（O），如‘构建用户高情绪体验的数字化展区’"
+        },
+        {
+          "rule_id": "R009",
+          "status": "fail",
+          "reason": "战队OKR字段为空，缺乏团队层面的目标对齐依据。",
+          "evidence": [
+            "okr.squad_okr: "
+          ],
+          "suggestion": "补充战队OKR，体现团队协同目标"
+        },
+        {
+          "rule_id": "R010",
+          "status": "fail",
+          "reason": "关联产品字段为空，未列出具体涉及的产品或系统。",
+          "evidence": [
+            "okr.related_products: []"
+          ],
+          "suggestion": "补充具体关联产品名称或编号"
+        },
+        {
+          "rule_id": "R011",
+          "status": "fail",
+          "reason": "目标时间范围字段为空，缺少项目起止时间或关键节点时间规划。",
+          "evidence": [
+            "okr.time_range.start: ",
+            "okr.time_range.end: "
+          ],
+          "suggestion": "补充目标时间范围，如‘2026年3月-2026年4月’"
+        },
+        {
+          "rule_id": "R012",
+          "status": "fail",
+          "reason": "关键成果（KR）字段为空，无法评估项目成功标准。",
+          "evidence": [
+            "okr.key_results: []"
+          ],
+          "suggestion": "补充至少3项可量化的关键成果（KR），如‘用户参与选配率≥60%’"
+        },
+        {
+          "rule_id": "R013",
+          "status": "pass",
+          "reason": "业务流程已明确列出多个L1流程，覆盖战略管控、技术开发等核心领域。",
+          "evidence": [
+            "business_processes.id:321f2dc9bdf23a16c4224a0470d392d6",
+            "business_processes.name:战略管控云",
+            "business_processes.code:SEC01P001ZHB"
+          ],
+          "suggestion": "具备业务流程"
+        },
+        {
+          "rule_id": "R015",
+          "status": "pass",
+          "reason": "微服务列表已提供，涵盖Cloud BOM、产品BOM管理系统等关键系统。",
+          "evidence": [
+            "microservices.id:3b5cd092e3920ee653bf0f402a809a74",
+            "microservices.name:Cloud BOM",
+            "microservices.code:DE-0102"
+          ],
+          "suggestion": "具备微服务"
+        },
+        {
+          "rule_id": "R016",
+          "status": "pass",
+          "reason": "微应用列表已提供，与微服务内容一致，满足系统范围要求。",
+          "evidence": [
+            "microapps.id:3b5cd092e3920ee653bf0f402a809a74",
+            "microapps.name:Cloud BOM",
+            "microapps.code:DE-0102"
+          ],
+          "suggestion": "具备微应用"
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题清晰，内容完整，包含设备部署、备份、SLA等关键保障措施。",
+          "evidence": [
+            "solution.title:数字化展厅造型设计平面方案",
+            "solution.content:①设备整体调试整体组装至展区，即插即用"
+          ],
+          "suggestion": "具备项目方案标题"
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "方案内容详实，涵盖功能稳定性、演练巡检、现场保障等关键环节。",
+          "evidence": [
+            "solution.content:①设备整体调试整体组装至展区，即插即用\n②设备备份方案\n③功能稳定性SLA方案（考虑AI方案生成时长、车展网络稳定性、高并发QPS）\n④展前展区例行演练巡检3次\n⑤现场技术服务保障方案"
+          ],
+          "suggestion": "具备项目方案内容"
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "方案图片已上传多张，涵盖布展、交互、数据运营等场景，支持可视化理解。",
+          "evidence": [
+            "solution.images:c3878551dd9c4e2783efef58bb3b00fe",
+            "solution.images:265529c4189e46d994dfe80ecbb92a02",
+            "solution.images:3de3c790116b466ab6ef303baf937306"
+          ],
+          "suggestion": "具备项目方案图片"
+        }
+      ],
+      "risks": [
+        "项目目标不清晰，导致后续执行与验收缺乏衡量标准",
+        "无明确时间范围，影响资源调度与进度管理",
+        "关键成果（KR）缺失，无法评估项目成败",
+        "未明确关联产品链与产品，可能造成系统重复建设或集成风险"
+      ],
+      "missing_information": [
+        "关联产品链",
+        "项目目标（O）",
+        "战队OKR",
+        "关联产品",
+        "目标时间范围",
+        "关键成果（KR）"
+      ]
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "通过",
+      "summary": "项目在专业领域评审中，业务、数据、技术及安全架构均满足评审要求。尽管部分接口返回异常或信息缺失，但规则基线已判定为通过，且无新增需补充内容。整体符合审批标准。",
+      "item_results": [
+        {
+          "rule_id": "R026",
+          "status": "pass",
+          "reason": "规则基线已确认业务架构评审通过，虽存在‘未找到产品ID’提示，但不影响整体结论。",
+          "evidence": [
+            "message:未在项目范围-开发接口中找到产品ID，无法调用业务架构评审接口。",
+            "link_label:前往EAMAP查看"
+          ],
+          "suggestion": "建议后续补充产品ID以完善接口调用，当前不影响通过。"
+        },
+        {
+          "rule_id": "R027",
+          "status": "pass",
+          "reason": "规则基线已确认数据架构评审通过，尽管提示‘参数异常’，但未影响评审结论。",
+          "evidence": [
+            "message:参数异常",
+            "link_label:前往信息架构中心查看"
+          ],
+          "suggestion": "建议核查参数配置是否完整，确保未来数据架构评审可正常调用。"
+        },
+        {
+          "rule_id": "R028",
+          "status": "pass",
+          "reason": "规则基线已确认技术架构评审通过，接口返回‘操作成功’，具备评审基础。",
+          "evidence": [
+            "message:操作成功",
+            "link_label:前往云原生查看"
+          ],
+          "suggestion": "建议定期验证技术架构接口可用性，保障持续合规。"
+        },
+        {
+          "rule_id": "R029",
+          "status": "pass",
+          "reason": "规则基线已确认安全架构评审通过，接口返回‘操作成功’，具备评审依据。",
+          "evidence": [
+            "message:操作成功",
+            "link_label:前往应用开发安全平台查看"
+          ],
+          "suggestion": "建议保持安全架构评审数据同步，避免未来接口异常。"
+        }
+      ],
+      "risks": [
+        "业务架构评审因缺少产品ID导致接口调用失败，可能影响后续系统集成追溯。",
+        "数据架构评审提示参数异常，存在潜在数据模型不一致风险。",
+        "多个架构评审依赖外部系统接口，若接口失效将影响评审有效性。"
+      ],
+      "missing_information": []
+    },
+    {
+      "tab": "TAM模型评审",
+      "decision": "驳回",
+      "summary": "TAM模型评审未通过，三项子规则均因模型内容缺失被判定为重大失败。能力（竞争）模型、结果（财务/客户）模型、管理体系模型均未提供任何有效指标或结构化数据，无法验证其完整性与可执行性。",
+      "item_results": [
+        {
+          "rule_id": "R030",
+          "status": "fail",
+          "reason": "能力（竞争）模型缺少完整指标，未填写任何具体内容，无法评估其是否满足‘具备能力模型（三者有一）’的要求。",
+          "evidence": [
+            "tam_models.capability: []",
+            "rule_engine_baseline.rule_results[0].message: '能力（竞争）模型缺少完整指标。'"
+          ],
+          "suggestion": "请补充能力（竞争）模型的具体指标项，如技术能力、组织能力、资源能力等，并明确量化标准或实现路径。"
+        },
+        {
+          "rule_id": "R031",
+          "status": "fail",
+          "reason": "结果（财务/客户）模型缺少完整指标，未填写任何相关内容，无法判断其是否达成预期成果目标。",
+          "evidence": [
+            "tam_models.result: []",
+            "rule_engine_baseline.rule_results[1].message: '结果（财务/客户）模型缺少完整指标。'"
+          ],
+          "suggestion": "请补充结果（财务/客户）模型中的关键绩效指标，例如预算达成率、客户满意度提升值、数字化转化率等，并附上测算依据。"
+        },
+        {
+          "rule_id": "R032",
+          "status": "fail",
+          "reason": "管理体系模型缺少完整指标，未提供任何管理机制、流程或责任体系设计内容，无法确认项目管理闭环能力。",
+          "evidence": [
+            "tam_models.management: []",
+            "rule_engine_baseline.rule_results[2].message: '管理体系模型缺少完整指标。'"
+          ],
+          "suggestion": "请补充管理体系模型的要素，包括但不限于项目组织架构、风险控制机制、进度管控流程、质量保障措施等。"
+        }
+      ],
+      "risks": [
+        "项目缺乏可衡量的能力与成果定义，可能导致实施过程失控、验收无据。",
+        "三大核心模型均为空，存在严重规划缺失风险，影响项目可持续性与价值交付。",
+        "若不补充模型内容，后续无法开展有效性评估与资源投入合理性分析。"
+      ],
+      "missing_information": [
+        "能力（竞争）模型的具体指标与实现路径",
+        "结果（财务/客户）模型的关键绩效指标及测算逻辑",
+        "管理体系模型的组织机制与流程设计"
+      ]
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，目标计划缺失完整时间范围，导致关键规则 R036 不通过，整体审批不通过。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划时间范围完整，起止日期均为2026-02-28，符合要求。",
+          "evidence": [
+            "start:2026-02-28",
+            "end:2026-02-28",
+            "title:立项计划"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R035",
+          "status": "pass",
+          "reason": "合同签订计划时间范围完整，起止日期分别为2026-03-24至2026-05-21，符合要求。",
+          "evidence": [
+            "start:2026-03-24",
+            "end:2026-05-21",
+            "title:合同签订计划"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R036",
+          "status": "fail",
+          "reason": "目标计划缺少起止时间范围，仅存在空对象，无法确认时间节点，不符合里程碑完整性要求。",
+          "evidence": [
+            "target_plan: {}"
+          ],
+          "suggestion": "请补充目标计划的起止时间及具体目标内容，确保里程碑可执行、可追踪。"
+        }
+      ],
+      "risks": [
+        "目标计划缺失将影响项目进度管控与验收依据，存在延期风险。"
+      ],
+      "missing_information": [
+        "目标计划的开始时间（milestoneStartDate）",
+        "目标计划的结束时间（milestoneEndDate）",
+        "目标计划的具体目标内容（milestoneGoal）"
+      ]
+    },
+    {
+      "tab": "组织架构",
+      "decision": "驳回",
+      "summary": "组织架构模块存在关键缺陷，成员信息为空且开发模式未填写，不符合项目立项要求。",
+      "item_results": [
+        {
+          "rule_id": "R037",
+          "status": "fail",
+          "reason": "组织成员列表为空，且开发模式字段未填写，导致组织架构信息不完整，无法支撑项目执行与责任划分。",
+          "evidence": [
+            "project_page_document.organization.members: []",
+            "project_page_document.organization.development_mode: ''"
+          ],
+          "suggestion": "补充完整的组织架构信息，包括实际参与项目的成员名单及明确的开发模式（如自研、外包、混合等）"
+        }
+      ],
+      "risks": [
+        "组织架构缺失可能导致项目职责不清、人员投入无法追踪，影响项目执行与审计合规性。"
+      ],
+      "missing_information": [
+        "组织成员名单",
+        "开发模式"
+      ]
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面评审通过，费用构成完整且符合要求，长尾费用与历史投入均无需提供，规则基线中所有规则均已通过。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "pass",
+          "reason": "费用构成完整，包含服务费名称、金额、预算科目、计算方式及采购模式，满足评审要求。",
+          "evidence": [
+            "name:信息系统服务费",
+            "amount:3489400.0",
+            "budget_subject:YSGC-PM-2603AYZ-1",
+            "calculation:按设备",
+            "purchase_mode:直接采购"
+          ],
+          "suggestion": "具备费用构成，无需补充。"
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需提供长尾费用相关材料。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需提供历史投入相关材料。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    }
+  ]
+}

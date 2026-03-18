@@ -1,0 +1,42 @@
+{
+  "api_name": "project_value",
+  "method": "GET",
+  "path": "/value/infoNoTam/8378ccd8b95e487f89fb824445a2f053",
+  "payload": null,
+  "project_id": "8378ccd8b95e487f89fb824445a2f053",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": 1170,
+        "projectId": "8378ccd8b95e487f89fb824445a2f053",
+        "projectValueId": null,
+        "title": "数字化办公提升",
+        "valueGoal": "以数字化办公助力纪检监察工作提质增效",
+        "currentStatus": "联网电脑9台",
+        "deptId": "[\"193\"]",
+        "oneKey": null,
+        "oneValue": null,
+        "twoValue": null,
+        "threeValue": null,
+        "content": "完成纪检监察内网扩建，全员接入纪检监察内网，助力纪检监察工作提质增效",
+        "creatorId": null,
+        "creator": null,
+        "createTime": null,
+        "modifierId": null,
+        "modifier": null,
+        "updateTime": null,
+        "isDelete": 0,
+        "type": 3,
+        "actualTargetYear": null,
+        "actualTargetText": null,
+        "oneValueActual": null,
+        "twoValueActual": null,
+        "threeValueActual": null
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-12T08:21:32+08:00"
+}

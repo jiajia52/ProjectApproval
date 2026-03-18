@@ -1,0 +1,598 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "信创工具软件订阅",
+  "category": "工作台开发及实施",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 0,
+    "statistics": {
+      "total_rules": 29,
+      "passed_rules": 12,
+      "failed_rules": 17,
+      "critical_failures": 10,
+      "major_failures": 7,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R007",
+        "review_point": "项目OKR",
+        "review_content": "关联产品链",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品链",
+        "suggestion": "具备产品链",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R008",
+        "review_point": "项目OKR",
+        "review_content": "项目目标（O）",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 项目目标（O）",
+        "suggestion": "具备项目目标(O)",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R009",
+        "review_point": "项目OKR",
+        "review_content": "战队OKR",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 战队OKR",
+        "suggestion": "具备战队OKR",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R010",
+        "review_point": "项目OKR",
+        "review_content": "关联产品",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品",
+        "suggestion": "具备产品",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R011",
+        "review_point": "项目OKR",
+        "review_content": "目标时间范围",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 目标时间范围",
+        "suggestion": "具备目标时间范围",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R012",
+        "review_point": "项目OKR",
+        "review_content": "关键成果（KR）",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关键成果（KR）",
+        "suggestion": "具备关键成果(KR)",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R016",
+        "review_point": "系统范围",
+        "review_content": "微应用",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少 微应用",
+        "suggestion": "具备微应用（二者一种）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R026",
+        "review_point": "专业领域评审",
+        "review_content": "业务架构评审",
+        "status": "fail",
+        "severity": "major",
+        "message": "缺少 业务架构评审",
+        "suggestion": "具备业务架构评审",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R027",
+        "review_point": "专业领域评审",
+        "review_content": "数据架构评审",
+        "status": "fail",
+        "severity": "major",
+        "message": "缺少 数据架构评审",
+        "suggestion": "具备数据架构评审",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R028",
+        "review_point": "专业领域评审",
+        "review_content": "技术架构评审",
+        "status": "fail",
+        "severity": "major",
+        "message": "缺少 技术架构评审",
+        "suggestion": "具备技术架构评审",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R029",
+        "review_point": "专业领域评审",
+        "review_content": "安全架构评审",
+        "status": "fail",
+        "severity": "major",
+        "message": "缺少 安全架构评审",
+        "suggestion": "具备安全架构评审",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R030",
+        "review_point": "能力（竞争）模型",
+        "review_content": "能力（竞争）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "能力（竞争）模型缺少完整指标。",
+        "suggestion": "具备能力模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R031",
+        "review_point": "结果（财务/客户）模型",
+        "review_content": "结果（财务/客户）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "结果（财务/客户）模型缺少完整指标。",
+        "suggestion": "具备结果模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R032",
+        "review_point": "管理体系模型",
+        "review_content": "管理体系模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "管理体系模型缺少完整指标。",
+        "suggestion": "具备管理模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R037",
+        "review_point": "组织架构",
+        "review_content": "组织架构",
+        "status": "fail",
+        "severity": "critical",
+        "message": "组织成员或开发模式不完整",
+        "suggestion": "具备组织架构",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R038",
+        "review_point": "费用构成",
+        "review_content": "费用构成",
+        "status": "fail",
+        "severity": "critical",
+        "message": "预算成本项、测算或采购方式不完整",
+        "suggestion": "具备费用构成",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容评审未通过，核心问题在于项目OKR部分缺失关键信息，包括项目目标（O）、战队OKR、关联产品链、关联产品、目标时间范围及关键成果（KR），且系统范围中缺少微应用。尽管背景、方案和业务流程等部分内容完整，但关键子项缺失导致整体无法满足立项要求。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "项目背景标题存在且内容完整",
+          "evidence": [
+            "title:项目背景",
+            "content:落实W577文件要求，深化信创检查工作，规范信创信息收集，确保真替真用和信息准确",
+            "images:6a6572aa5c574bfc87b5e2c44fd6cec8"
+          ],
+          "suggestion": "具备项目背景标题"
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "项目背景内容存在且完整",
+          "evidence": [
+            "title:项目背景",
+            "content:落实W577文件要求，深化信创检查工作，规范信创信息收集，确保真替真用和信息准确",
+            "images:6a6572aa5c574bfc87b5e2c44fd6cec8"
+          ],
+          "suggestion": "具备项目背景内容"
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "项目背景图片存在",
+          "evidence": [
+            "images:6a6572aa5c574bfc87b5e2c44fd6cec8"
+          ],
+          "suggestion": "具备项目背景图片"
+        },
+        {
+          "rule_id": "R007",
+          "status": "fail",
+          "reason": "关联产品链为空，未提供任何产品链信息",
+          "evidence": [
+            "product_chain: "
+          ],
+          "suggestion": "请补充明确的关联产品链"
+        },
+        {
+          "rule_id": "R008",
+          "status": "fail",
+          "reason": "项目目标（O）字段为空，未定义核心目标",
+          "evidence": [
+            "objective: "
+          ],
+          "suggestion": "请填写项目目标（O）"
+        },
+        {
+          "rule_id": "R009",
+          "status": "fail",
+          "reason": "战队OKR字段为空，未提供战队层面的目标",
+          "evidence": [
+            "squad_okr: "
+          ],
+          "suggestion": "请补充战队OKR"
+        },
+        {
+          "rule_id": "R010",
+          "status": "fail",
+          "reason": "关联产品列表为空，未列出具体关联产品",
+          "evidence": [
+            "related_products: []"
+          ],
+          "suggestion": "请补充关联产品"
+        },
+        {
+          "rule_id": "R011",
+          "status": "fail",
+          "reason": "目标时间范围未填写，缺少起止时间",
+          "evidence": [
+            "time_range:start: ",
+            "time_range:end: "
+          ],
+          "suggestion": "请明确目标时间范围"
+        },
+        {
+          "rule_id": "R012",
+          "status": "fail",
+          "reason": "关键成果（KR）列表为空，未定义可衡量成果",
+          "evidence": [
+            "key_results: []"
+          ],
+          "suggestion": "请补充关键成果（KR）"
+        },
+        {
+          "rule_id": "R013",
+          "status": "pass",
+          "reason": "业务流程已覆盖多个L1流程，材料完整",
+          "evidence": [
+            "id:321f2dc9bdf23a16c4224a0470d392d6",
+            "name:战略管控云",
+            "processVersion:V1.0",
+            "processVersionId:4a5865ae7423b0e78e4d66d29e7728c1"
+          ],
+          "suggestion": "具备业务流程"
+        },
+        {
+          "rule_id": "R015",
+          "status": "pass",
+          "reason": "微服务字段存在，系统范围部分完整",
+          "evidence": [
+            "microservices: [{}]"
+          ],
+          "suggestion": "具备微服务（二者一种）"
+        },
+        {
+          "rule_id": "R016",
+          "status": "fail",
+          "reason": "微应用字段为空，未提供微应用信息",
+          "evidence": [
+            "microapps: []"
+          ],
+          "suggestion": "请补充微应用信息"
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题存在且内容完整",
+          "evidence": [
+            "title:工具软件包括辅助检查和信息收集两个模块",
+            "content:基于国家标准扫描全量服务器CPU、操作系统、数据库使用情况，应用系统替代情况。\n基于国家标准扫描全量终端替代情况、激活情况、活跃度、软件使用情况。\n基于国家标准收集信创相关的基础设施和应用系统基础数据。\n软件根据国家最新标准定期更新迭代。",
+            "images:73ea6786519746038e6ddafaebb85bcf"
+          ],
+          "suggestion": "具备项目方案标题"
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "项目方案内容完整，描述清晰",
+          "evidence": [
+            "content:基于国家标准扫描全量服务器CPU、操作系统、数据库使用情况，应用系统替代情况。\n基于国家标准扫描全量终端替代情况、激活情况、活跃度、软件使用情况。\n基于国家标准收集信创相关的基础设施和应用系统基础数据。\n软件根据国家最新标准定期更新迭代。"
+          ],
+          "suggestion": "具备项目方案内容"
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "项目方案图片存在",
+          "evidence": [
+            "images:73ea6786519746038e6ddafaebb85bcf"
+          ],
+          "suggestion": "具备项目方案图片"
+        }
+      ],
+      "risks": [
+        "项目OKR体系缺失，影响目标对齐与绩效评估",
+        "系统范围不完整，微应用缺失可能导致后续开发边界不清",
+        "缺乏关键成果（KR）和时间范围，难以进行过程监控与验收"
+      ],
+      "missing_information": [
+        "关联产品链",
+        "项目目标（O）",
+        "战队OKR",
+        "关联产品",
+        "目标时间范围",
+        "关键成果（KR）",
+        "微应用"
+      ]
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "驳回",
+      "summary": "项目‘信创工具软件订阅’在专业领域评审环节未提供任何架构评审内容，包括业务、数据、技术及安全架构评审，不符合审批规则要求，故予以驳回。",
+      "item_results": [
+        {
+          "rule_id": "R026",
+          "status": "fail",
+          "reason": "未提供业务架构评审材料，无法验证项目与业务流程的匹配性及价值支撑。",
+          "evidence": [
+            "architecture_reviews.business = ''",
+            "project_page_document.scope.business_processes 中虽有流程列表，但无对应架构评审说明"
+          ],
+          "suggestion": "补充完整的业务架构评审文档，明确项目与战略管控云、技术开发云等核心业务域的关联关系。"
+        },
+        {
+          "rule_id": "R027",
+          "status": "fail",
+          "reason": "未提供数据架构评审材料，缺乏对数据来源、流转、存储和治理的规划说明。",
+          "evidence": [
+            "architecture_reviews.data = ''",
+            "scope.content_list 为空，无数据模型或数据流设计信息"
+          ],
+          "suggestion": "提交数据架构评审报告，包含数据资产清单、数据血缘图谱及跨系统数据交互逻辑。"
+        },
+        {
+          "rule_id": "R028",
+          "status": "fail",
+          "reason": "未提供技术架构评审材料，无法评估系统选型、集成方式与技术路线合规性。",
+          "evidence": [
+            "architecture_reviews.technology = ''",
+            "microservices 数组为空，无微服务划分或技术组件设计说明"
+          ],
+          "suggestion": "补充技术架构评审文档，明确系统部署模式、关键技术选型、接口规范及可扩展性设计。"
+        },
+        {
+          "rule_id": "R029",
+          "status": "fail",
+          "reason": "未提供安全架构评审材料，存在潜在安全风险，不符合信创项目安全基线要求。",
+          "evidence": [
+            "architecture_reviews.security = ''",
+            "未见安全策略、访问控制、数据加密、审计日志等安全设计内容"
+          ],
+          "suggestion": "提交安全架构评审报告，涵盖等保要求适配、敏感数据保护机制、权限管理模型等内容。"
+        }
+      ],
+      "risks": [
+        "项目缺乏完整架构评审，可能导致系统建设与业务目标脱节，存在重复投入与资源浪费风险。",
+        "未进行数据与安全架构评审，可能引发数据泄露、系统漏洞或合规不达标问题。",
+        "技术架构缺失将影响系统稳定性、可维护性及未来扩展能力，增加后期改造成本。"
+      ],
+      "missing_information": [
+        "业务架构评审文档",
+        "数据架构评审文档",
+        "技术架构评审文档",
+        "安全架构评审文档"
+      ]
+    },
+    {
+      "tab": "TAM模型评审",
+      "decision": "驳回",
+      "summary": "TAM模型评审未通过，三项子规则均因缺少完整指标而失败，且无任何有效证据支持模型完整性，不符合审批要求。",
+      "item_results": [
+        {
+          "rule_id": "R030",
+          "status": "fail",
+          "reason": "能力（竞争）模型缺少完整指标，未提供任何可验证的能力维度或量化指标。",
+          "evidence": [
+            "tam_models.capability: []",
+            "rule_engine_baseline.rule_results[0].message: '能力（竞争）模型缺少完整指标。'"
+          ],
+          "suggestion": "需补充能力（竞争）模型的完整指标体系，包括但不限于技术能力、资源能力、组织能力等至少一项的量化描述。"
+        },
+        {
+          "rule_id": "R031",
+          "status": "fail",
+          "reason": "结果（财务/客户）模型缺少完整指标，未提供财务收益、客户价值或业务成果的量化数据。",
+          "evidence": [
+            "tam_models.result: []",
+            "rule_engine_baseline.rule_results[1].message: '结果（财务/客户）模型缺少完整指标。'"
+          ],
+          "suggestion": "需补充结果（财务/客户）模型的完整指标，如成本节约金额、客户满意度提升率、项目投资回报率等可量化的成果数据。"
+        },
+        {
+          "rule_id": "R032",
+          "status": "fail",
+          "reason": "管理体系模型缺少完整指标，未体现项目管理、风险控制、流程规范等方面的制度性支撑。",
+          "evidence": [
+            "tam_models.management: []",
+            "rule_engine_baseline.rule_results[2].message: '管理体系模型缺少完整指标。'"
+          ],
+          "suggestion": "需补充管理体系模型的具体内容，包括项目管理机制、质量控制流程、合规保障措施等至少一项的制度化设计。"
+        }
+      ],
+      "risks": [
+        "项目缺乏可衡量的能力与成果支撑，存在立项依据不足、后续无法评估成效的风险。",
+        "三类TAM模型均为空，可能导致项目执行过程失控，难以进行过程监控与绩效考核。",
+        "未满足企业级项目管理标准，影响项目资产沉淀与知识复用。"
+      ],
+      "missing_information": [
+        "能力（竞争）模型的完整指标体系",
+        "结果（财务/客户）模型的量化成果数据",
+        "管理体系模型的具体制度或流程设计"
+      ]
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，因‘目标计划’缺少完整的时间范围，导致关键规则 R036 失败，整体评审不通过。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划已明确起止时间，符合要求。",
+          "evidence": [
+            "start:2025-12-21",
+            "end:2025-12-21"
+          ],
+          "suggestion": "具备立项计划"
+        },
+        {
+          "rule_id": "R035",
+          "status": "pass",
+          "reason": "合同计划已明确起止时间，符合要求。",
+          "evidence": [
+            "start:2026-02-25",
+            "end:2026-02-25"
+          ],
+          "suggestion": "具备合同计划"
+        },
+        {
+          "rule_id": "R036",
+          "status": "fail",
+          "reason": "目标计划未提供起止时间，时间范围缺失，无法确认执行周期与交付节点。",
+          "evidence": [
+            "target_plan: {}"
+          ],
+          "suggestion": "请补充目标计划的起止时间及具体目标内容，确保里程碑完整性。"
+        }
+      ],
+      "risks": [
+        "目标计划缺失时间范围，可能导致项目进度失控、验收标准模糊，影响项目闭环管理。"
+      ],
+      "missing_information": [
+        "目标计划的开始时间",
+        "目标计划的结束时间",
+        "目标计划的具体目标描述或交付成果"
+      ]
+    },
+    {
+      "tab": "组织架构",
+      "decision": "驳回",
+      "summary": "组织架构信息缺失，关键评审规则 R037 未通过，因成员列表为空且开发模式未填写，无法确认项目组织架构完整性，不符合审批要求。",
+      "item_results": [
+        {
+          "rule_id": "R037",
+          "status": "fail",
+          "reason": "组织成员列表为空，且开发模式字段为空，导致组织架构信息不完整，违反组织架构完整性要求。",
+          "evidence": [
+            "organization.members: []",
+            "organization.development_mode: ''"
+          ],
+          "suggestion": "补充完整的组织架构信息，包括所有项目成员姓名、角色、级别、任务计划及工作量分配，并明确开发模式（如自研、外包、混合等）"
+        }
+      ],
+      "risks": [
+        "项目组织架构不清晰可能导致责任划分不明，影响项目执行与协同效率",
+        "缺乏成员信息将影响资源调配、预算分配与绩效考核依据"
+      ],
+      "missing_information": [
+        "项目成员详细信息（姓名、角色、级别、任务计划、工作量）",
+        "开发模式（自研/外包/混合等）"
+      ]
+    },
+    {
+      "tab": "预算信息",
+      "decision": "驳回",
+      "summary": "预算信息评审中，因费用构成不完整导致关键规则 R038 失败，需补充费用构成明细、测算依据及采购方式说明。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "fail",
+          "reason": "预算成本项、测算或采购方式不完整，仅列明总金额180万元，未提供费用构成明细、单价/数量拆分逻辑及采购方式说明。",
+          "evidence": [
+            "partInfos[0].content: 中资信创辅助检查工具",
+            "partInfos[0].calcMethod: 数量*单价",
+            "partInfos[0].partPrice: 1800000.0",
+            "partInfos[0].number: 1",
+            "budgetType: 信息系统服务费",
+            "applyBudgetYear: 1800000.0"
+          ],
+          "suggestion": "请补充费用构成明细，包括但不限于：子项拆分（如年费、技术支持费、培训费等）、单价与数量的合理性说明、采购方式（如公开招标、单一来源等）及依据。"
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需评审。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需评审。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        }
+      ],
+      "risks": [
+        "预算成本项缺乏透明度，存在虚报或不合理支出风险。",
+        "未说明采购方式，可能违反合规采购流程。",
+        "无费用构成拆分，影响后续审计与绩效评估。"
+      ],
+      "missing_information": [
+        "费用构成明细（如分项名称、金额、占比）",
+        "单价与数量的测算依据",
+        "采购方式及选择理由（如公开招标、竞争性谈判、单一来源等）",
+        "历史投入对比数据（虽规则不强制，但建议提供以增强合理性）"
+      ]
+    }
+  ]
+}

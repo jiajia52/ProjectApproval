@@ -1,0 +1,18 @@
+{
+  "code": 0,
+  "message": "操作成功",
+  "data": {
+    "id": "c9a3cf06691e4050886e9dea2b66b9d4",
+    "budgetType": 4,
+    "budgetTypeName": "信息系统服务费",
+    "proBudget": 300000.0,
+    "applyTotalBudget": null,
+    "proBudgetYear": 300000.0,
+    "applyBudgetYear": null,
+    "partInfos": [],
+    "updateUser": 84201,
+    "updateTime": "2026-03-06T14:18:54",
+    "isDelete": 0,
+    "projectClassify": 15
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "api_name": "project_goal",
+  "method": "GET",
+  "path": "/project/goal/get/7ec5cf18604c478aae8aae5432c0abe0",
+  "payload": null,
+  "project_id": "7ec5cf18604c478aae8aae5432c0abe0",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "2c56a7dcc9c9474fa831cd4fa8313d72",
+        "projectId": "7ec5cf18604c478aae8aae5432c0abe0",
+        "okrId": "66",
+        "okrName": "运营迭代软件开发工作台建设，完善整车作业中心、系统作业中心、平台作业中心、软件作业中心、质量运营中心5个业务模块，实现研发所有车型上线，推动版本评价从初期运营2.5星达到5星标准",
+        "goalName": "完善整车软件版本的规则，整车软件版本在11个在研车型上线，推动版本评价从初期运营2.5星达到5星标准",
+        "goalContent": null,
+        "milestoneId": "e86c90621e75487f8048147d81d608d4",
+        "startTime": "2026-03-03",
+        "endTime": "2026-06-30",
+        "keyResultDtoList": [
+          {
+            "id": "a9bc0d38d9d64799bbec33792563e101",
+            "goalId": "2c56a7dcc9c9474fa831cd4fa8313d72",
+            "orderNum": 1,
+            "keyResult": "基于平台首发车的线上作业，搭建并运营适配车型的线上软件版本管理，实现支撑所有车型项目线上管理软件版本"
+          },
+          {
+            "id": "7375a602d42849a29701cb7d179c6ea8",
+            "goalId": "2c56a7dcc9c9474fa831cd4fa8313d72",
+            "orderNum": 2,
+            "keyResult": "新增整车紧急修复基线版本流程作业，实现面临重大紧急问题情况下快速修复软件基线并直至车型端解决问题"
+          },
+          {
+            "id": "da8b9c5213334eb8a68c60d5b9fe9a9c",
+            "goalId": "2c56a7dcc9c9474fa831cd4fa8313d72",
+            "orderNum": 3,
+            "keyResult": "与设变中心联通，基于硬件设备影响软件变更场景，实现软件版本协同\n"
+          },
+          {
+            "id": "8754b0f55a9649e897aba3e067aa05e6",
+            "goalId": "2c56a7dcc9c9474fa831cd4fa8313d72",
+            "orderNum": 4,
+            "keyResult": "在整车试验阶段中新增产线EOL验证，以方便产线提前对软件包及产生设备进行验证，降低正式产线出"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "ea1a20aea3534ecf85e0411d65d75dff",
+            "goalId": "2c56a7dcc9c9474fa831cd4fa8313d72",
+            "productId": "2b8a91d096b34e5484f8f87336c39a73",
+            "productName": "软件开发工作台"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 172,
+        "businessFlowNum": 13
+      },
+      {
+        "id": "cce74f913568494b968d34641c26db6f",
+        "projectId": "7ec5cf18604c478aae8aae5432c0abe0",
+        "okrId": "66",
+        "okrName": "运营迭代软件开发工作台建设，完善整车作业中心、系统作业中心、平台作业中心、软件作业中心、质量运营中心5个业务模块，实现研发所有车型上线，推动版本评价从初期运营2.5星达到5星标准",
+        "goalName": "质量过程穿透软件版本伴随基线管理",
+        "goalContent": null,
+        "milestoneId": "55d0305d4de346ca8838971cdb9d7434",
+        "startTime": "2026-03-03",
+        "endTime": "2026-07-31",
+        "keyResultDtoList": [
+          {
+            "id": "7b116dc51b8e4b978e4d0d0446dcf100",
+            "goalId": "cce74f913568494b968d34641c26db6f",
+            "orderNum": 1,
+            "keyResult": "1.软件质量管理作业线上化（策划->标准->检核->报告）全链条覆盖；\n2.质量过程（六步法）穿透软件版本伴随基线管理；"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "f99af745ce0c45b984e604eee8a126a8",
+            "goalId": "cce74f913568494b968d34641c26db6f",
+            "productId": "2b8a91d096b34e5484f8f87336c39a73",
+            "productName": "软件开发工作台"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 7,
+        "businessFlowNum": 1
+      },
+      {
+        "id": "e912b27c721a41529a68f4a1a7c1677e",
+        "projectId": "7ec5cf18604c478aae8aae5432c0abe0",
+        "okrId": "66",
+        "okrName": "运营迭代软件开发工作台建设，完善整车作业中心、系统作业中心、平台作业中心、软件作业中心、质量运营中心5个业务模块，实现研发所有车型上线，推动版本评价从初期运营2.5星达到5星标准",
+        "goalName": "业务单元上线率44%提升到100%",
+        "goalContent": null,
+        "milestoneId": "b0ad5b395ac54384b83e56619933d44a",
+        "startTime": "2026-03-03",
+        "endTime": "2026-08-31",
+        "keyResultDtoList": [
+          {
+            "id": "9c55712473774ad0992720147b9c8788",
+            "goalId": "e912b27c721a41529a68f4a1a7c1677e",
+            "orderNum": 1,
+            "keyResult": "● 新增功能安全工程师、交互工程师、软件集成工程师、信息安全工程师、智网市场与用户洞察工程师等角色业务单元\n● 提升EE架构工程师、智网系统工程师、软件架构师、产品经理、软件测试工程师等角色业务单元上线率"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "4b8d6a6e50804dd094614273d153c49f",
+            "goalId": "e912b27c721a41529a68f4a1a7c1677e",
+            "productId": "2b8a91d096b34e5484f8f87336c39a73",
+            "productName": "软件开发工作台"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 165,
+        "businessFlowNum": 12
+      },
+      {
+        "id": "534eb87f9b9844a9967f78ed9f34d320",
+        "projectId": "7ec5cf18604c478aae8aae5432c0abe0",
+        "okrId": "66",
+        "okrName": "运营迭代软件开发工作台建设，完善整车作业中心、系统作业中心、平台作业中心、软件作业中心、质量运营中心5个业务模块，实现研发所有车型上线，推动版本评价从初期运营2.5星达到5星标准",
+        "goalName": "优化4个、新增11个业务单元AI辅助评价",
+        "goalContent": null,
+        "milestoneId": "77058771602140339e230db5bf6e5509",
+        "startTime": "2026-03-03",
+        "endTime": "2026-08-31",
+        "keyResultDtoList": [
+          {
+            "id": "6cdff6f5af9049aa803fca29d9641748",
+            "goalId": "534eb87f9b9844a9967f78ed9f34d320",
+            "orderNum": 1,
+            "keyResult": "完成功能清单、接口设计、活动图及说明、状态机说明、时序图说明的AI对接 "
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "113294fd2c5a46938f2495106fb8618c",
+            "goalId": "534eb87f9b9844a9967f78ed9f34d320",
+            "productId": "2b8a91d096b34e5484f8f87336c39a73",
+            "productName": "软件开发工作台"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 65,
+        "businessFlowNum": 1
+      },
+      {
+        "id": "86bb487cf0514a18be46c3c87159b66e",
+        "projectId": "7ec5cf18604c478aae8aae5432c0abe0",
+        "okrId": "66",
+        "okrName": "运营迭代软件开发工作台建设，完善整车作业中心、系统作业中心、平台作业中心、软件作业中心、质量运营中心5个业务模块，实现研发所有车型上线，推动版本评价从初期运营2.5星达到5星标准",
+        "goalName": "支持北京院（座舱中心）通过工作台盘点项目",
+        "goalContent": null,
+        "milestoneId": "8d54fc9257534efc96b2f6fa16d7c208",
+        "startTime": "2026-03-03",
+        "endTime": "2026-08-31",
+        "keyResultDtoList": [
+          {
+            "id": "1134f77c406d47bf9484304e44e4b83a",
+            "goalId": "86bb487cf0514a18be46c3c87159b66e",
+            "orderNum": 1,
+            "keyResult": "软件开发平台通过API接口对接集团DevOps工具链，实现数据联通；"
+          },
+          {
+            "id": "5da9c08f92e940639dfb7786b96b9439",
+            "goalId": "86bb487cf0514a18be46c3c87159b66e",
+            "orderNum": 2,
+            "keyResult": "实现北京团队人员工时分布及负荷情况可视化管理；"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "057acfdaa3b54ea2aef7e74d170718e9",
+            "goalId": "86bb487cf0514a18be46c3c87159b66e",
+            "productId": "2b8a91d096b34e5484f8f87336c39a73",
+            "productName": "软件开发工作台"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 65,
+        "businessFlowNum": 1
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-16T10:43:08+08:00"
+}

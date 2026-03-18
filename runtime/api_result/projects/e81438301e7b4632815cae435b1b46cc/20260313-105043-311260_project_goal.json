@@ -1,0 +1,14 @@
+{
+  "api_name": "project_goal",
+  "method": "GET",
+  "path": "/project/goal/get/e81438301e7b4632815cae435b1b46cc",
+  "payload": null,
+  "project_id": "e81438301e7b4632815cae435b1b46cc",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": null
+  },
+  "error": "",
+  "called_at": "2026-03-13T10:50:43+08:00"
+}

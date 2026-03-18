@@ -1,0 +1,44 @@
+base_url=https://prod-itpm.faw.cn/itpmNew/gateway/sop-itpm-service
+
+【项目基础】
+项目列表: /projectEstablishment/queryProjectEstablishmentList
+项目状态选项: /projectCenter/queryProjectStatusList
+项目基础信息: /projectBaseInfo/info
+
+【项目内容（进程标签：项目内容）】
+项目背景/项目目标/项目方案/业务全景图/年度管理模型: /projectUploading/list/{projectId}
+项目OKR: /project/goal/get/{projectId}
+项目范围（主）: /project/range/list
+项目范围（补充）: /projectBaseInfo/getProjectScope
+项目范围（兼容）: /projectBaseInfo/projectRange/list
+系统范围（620-260316）: /projectBaseInfo/eamapAndSystemOkr
+系统范围（兼容）: /projectMicosInfo/getList
+开发侧范围数据: /projectBaseInfo/eamapAndSystem
+
+【专业领域评审（进程标签：专业技术领域评审）】
+业务架构评审:
+1. /projectBaseInfo/getProjectProductsOkr
+2. /projectBaseInfo/getProductCheckStatus/{projectId}
+3. /project/goal/getCount/{projectId}
+数据架构评审: /initiationTask/result?type=INITIATED&taskId={projectId}
+技术架构评审: /third/techCheckList
+安全架构评审: /third/securityCheckList
+
+【TAM模型（进程标签：TAM模型）】
+能力模型/结果模型/管理体系模型: /value/info/{projectId}
+
+【项目价值（进程标签：项目价值）】
+项目价值: /value/infoNoTam/{projectId}
+
+【项目里程碑（进程标签：项目里程碑）】
+里程碑: /milestone/newList/{projectId}
+
+【组织架构（进程标签：组织架构）】
+组织成员（主）: /organizationalStructure/queryOrganizationNumber
+组织框架（补充）: /projectOrgFramework/list/{projectId}
+
+【预算信息（进程标签：预算信息）】
+费用构成: /budget/info/{projectId}
+
+【费用变化点（进程标签：费用变化点）】
+费用变化点/历史投入: /change/list/{projectId}

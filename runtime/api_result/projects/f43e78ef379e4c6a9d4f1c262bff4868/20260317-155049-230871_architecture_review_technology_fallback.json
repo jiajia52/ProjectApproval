@@ -1,0 +1,17 @@
+{
+  "api_name": "architecture_review_technology_fallback",
+  "method": "POST",
+  "path": "/projectMicosInfo/getList",
+  "payload": {
+    "projectId": "f43e78ef379e4c6a9d4f1c262bff4868",
+    "dataType": 1
+  },
+  "project_id": "f43e78ef379e4c6a9d4f1c262bff4868",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": []
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:50:49+08:00"
+}

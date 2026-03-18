@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目列表</title>
+  <link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+  <div class="page-shell page-shell-wide">
+    <nav class="top-nav">
+      <a class="nav-link active" href="/ui/approval.html">项目列表</a>
+      <a class="nav-link" href="/ui/workbench.html">审批工作台</a>
+      <a class="nav-link" href="/ui/skills.html">Skill 调整</a>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Project List</p>
+        <h1>真实项目列表</h1>
+        <p class="hero-copy">
+          列表页保留之前的浏览入口，只负责筛选、分页和打开项目详情。
+          详情页会在新标签页打开，审批与配置仍然放在工作台单独处理。
+        </p>
+      </div>
+      <div class="hero-panel">
+        <p class="panel-label">Workspace</p>
+        <h2>列表与审批分离</h2>
+        <p class="hero-copy">
+          这轮迭代补充的数据来源标记、缓存回退和项目接口归档继续保留在页面下方，
+          顶部区域恢复成之前的样式。
+        </p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card span-full">
+        <div class="section-head">
+          <div>
+            <p class="panel-label">Projects</p>
+            <h2>项目列表</h2>
+          </div>
+          <button id="refresh-projects-button" class="ghost-button" type="button">刷新列表</button>
+        </div>
+
+        <div class="project-toolbar-row">
+          <input id="project-name-filter" type="text" placeholder="项目名称">
+          <input id="project-type-filter" type="text" placeholder="项目类型">
+          <select id="project-fixed-filter">
+            <option value="">是否固定项目</option>
+            <option value="true">是</option>
+            <option value="false">否</option>
+          </select>
+          <select id="project-status-filter">
+            <option value="">项目状态</option>
+          </select>
+          <input id="project-flow-status-filter" type="text" placeholder="流程状态">
+          <input id="project-page-size" class="compact-control" type="number" min="1" max="200" value="20" placeholder="每页数量">
+          <button id="search-projects-button" class="primary-button" type="button">查询项目</button>
+        </div>
+
+        <div class="list-toolbar-meta">
+          <div id="project-list-status" class="category-meta">等待查询。</div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="compact-table">
+            <thead>
+              <tr>
+                <th>项目名称</th>
+                <th>项目编码</th>
+                <th>归属领域</th>
+                <th>部门</th>
+                <th>项目经理</th>
+                <th>项目类型</th>
+                <th>是否固定项目</th>
+                <th>项目状态</th>
+                <th>流程状态</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody id="project-table-body"></tbody>
+          </table>
+        </div>
+
+        <div class="pagination-bar pagination-bar-bottom">
+          <button id="project-prev-page" class="ghost-button" type="button">上一页</button>
+          <span id="project-page-info" class="pagination-info">第 1 页 / 共 1 页</span>
+          <button id="project-next-page" class="ghost-button" type="button">下一页</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/ui/approval.js"></script>
+</body>
+</html>

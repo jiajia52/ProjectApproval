@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目详情</title>
+  <link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+  <div class="page-shell page-shell-wide">
+    <nav class="top-nav">
+      <a class="nav-link" href="/ui/approval.html">项目列表</a>
+      <a class="nav-link" href="/ui/workbench.html">审批工作台</a>
+      <a class="nav-link active" href="#">项目详情</a>
+      <a class="nav-link" href="/ui/skills.html">Skill 调整</a>
+    </nav>
+
+    <header class="viewer-overview">
+      <section class="card viewer-title-bar">
+        <div class="viewer-title-main">
+          <span class="viewer-title-dot" aria-hidden="true"></span>
+          <div>
+            <h1 id="viewer-project-name" class="viewer-title">加载中...</h1>
+            <p id="viewer-project-subtitle" hidden></p>
+            <div id="viewer-project-badges" class="viewer-badge-row"></div>
+          </div>
+        </div>
+        <div class="viewer-actions">
+          <select id="viewer-category"></select>
+          <button id="viewer-approve-button" class="primary-button" type="button">执行远程审批</button>
+        </div>
+      </section>
+
+      <section class="viewer-card-grid viewer-card-grid-overview">
+        <div class="card viewer-card dark">
+          <p class="panel-label">Ownership</p>
+          <h2>项目所属</h2>
+          <div id="viewer-ownership" class="viewer-kv-grid"></div>
+        </div>
+        <div class="card viewer-card viewer-card-soft">
+          <p class="panel-label">Classification</p>
+          <h2>项目分类</h2>
+          <div id="viewer-classification" class="viewer-kv-grid"></div>
+        </div>
+        <div class="card viewer-card viewer-budget-card">
+          <div class="viewer-budget-head">
+            <div>
+              <p class="panel-label">Budget</p>
+              <h2>项目预算</h2>
+            </div>
+            <span id="viewer-budget-type" class="viewer-budget-pill">预算</span>
+          </div>
+          <div id="viewer-budget" class="viewer-budget-grid"></div>
+        </div>
+      </section>
+    </header>
+
+    <section class="card">
+      <p class="panel-label">Content Map</p>
+      <h2>项目内容概览</h2>
+      <div id="viewer-summary-strip" class="viewer-summary-strip"></div>
+    </section>
+
+    <section class="grid" style="margin-top: 20px;">
+      <section class="card span-2 viewer-content-block">
+        <div class="section-head">
+          <div>
+            <p class="panel-label">Detail</p>
+            <h2 id="viewer-section-title">项目内容</h2>
+          </div>
+        </div>
+        <div id="viewer-tab-bar" class="viewer-tab-bar"></div>
+        <div class="viewer-content-grid">
+          <div id="viewer-content-panel" class="viewer-content-panel summary-tile"></div>
+          <div id="viewer-side-panel" class="viewer-side-list summary-tile"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <p class="panel-label">Trace</p>
+            <h2>接口记录与审批结果</h2>
+          </div>
+        </div>
+        <div class="hero-copy" style="margin-bottom: 16px;">
+          接口记录目录: <code>runtime/api_result/projects/&lt;project_id&gt;/</code>
+        </div>
+        <div id="viewer-approval-result" class="result-box">等待执行审批。</div>
+      </section>
+    </section>
+  </div>
+
+  <div id="viewer-image-modal" class="viewer-modal" hidden>
+    <div class="viewer-modal-backdrop" data-close-image-modal="true"></div>
+    <div class="viewer-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="viewer-image-modal-title">
+      <div class="viewer-modal-head">
+        <h2 id="viewer-image-modal-title">图片预览</h2>
+        <button id="viewer-image-modal-close" class="ghost-button" type="button">关闭</button>
+      </div>
+      <div class="viewer-modal-body">
+        <img id="viewer-image-modal-img" src="" alt="图片预览">
+      </div>
+      <div class="viewer-modal-foot">
+        <a id="viewer-image-modal-link" class="primary-button viewer-modal-link" href="#" target="_blank" rel="noreferrer">新页打开</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/ui/project-viewer.js"></script>
+</body>
+</html>

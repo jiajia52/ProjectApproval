@@ -1,0 +1,14 @@
+{
+  "api_name": "architecture_review_business",
+  "method": "GET",
+  "path": "/projectBaseInfo/getProductCheckStatus/2b8a91d096b34e5484f8f87336c39a73",
+  "payload": null,
+  "project_id": "7ec5cf18604c478aae8aae5432c0abe0",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": []
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:28:48+08:00"
+}

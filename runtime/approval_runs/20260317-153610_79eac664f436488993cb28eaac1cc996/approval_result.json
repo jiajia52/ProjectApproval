@@ -1,0 +1,833 @@
+{
+  "project_name": "批量外协件质量保证项目",
+  "project_id": "79eac664f436488993cb28eaac1cc996",
+  "category": "工作台开发及实施",
+  "document_source": "remote",
+  "document_saved_at": "2026-03-17T15:36:10+08:00",
+  "decision": "驳回",
+  "summary": "规则引擎基线结果为驳回。1条规则未通过，主要问题：R035: 合同计划缺少完整时间范围。",
+  "item_results": [
+    {
+      "rule_id": "R001",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:数据分析",
+        "content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。",
+        "images:d62513a261f0481db4b63f5bb1ea8b8c",
+        "items:title:数据分析",
+        "content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。",
+        "images:d62513a261f0481db4b63f5bb1ea8b8c"
+      ],
+      "suggestion": "具备项目背景标题"
+    },
+    {
+      "rule_id": "R002",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:数据分析",
+        "content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。",
+        "images:d62513a261f0481db4b63f5bb1ea8b8c",
+        "items:title:数据分析",
+        "content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。",
+        "images:d62513a261f0481db4b63f5bb1ea8b8c"
+      ],
+      "suggestion": "具备项目背景内容"
+    },
+    {
+      "rule_id": "R003",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:数据分析",
+        "content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。",
+        "images:d62513a261f0481db4b63f5bb1ea8b8c",
+        "items:title:数据分析",
+        "content:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。",
+        "images:d62513a261f0481db4b63f5bb1ea8b8c"
+      ],
+      "suggestion": "具备项目背景图片"
+    },
+    {
+      "rule_id": "R007",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "供应链过程管理工作台"
+      ],
+      "suggestion": "具备产品链"
+    },
+    {
+      "rule_id": "R008",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "供应商端数据直联直采，预计实现40家供应商监控直连，10家数据直连"
+      ],
+      "suggestion": "具备项目目标(O)"
+    },
+    {
+      "rule_id": "R009",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "“3+3”的场景下”(3个核心场景+3大核心体验) 用户需求满足度100%达成"
+      ],
+      "suggestion": "具备战队OKR"
+    },
+    {
+      "rule_id": "R010",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "id:52e4b5505b594e97b9e972a189b26d5b",
+        "goalId:2592b6579f0c44e5b9ec6ac6459df122",
+        "productId:11111111",
+        "productName:供应链过程管理工作台"
+      ],
+      "suggestion": "具备产品"
+    },
+    {
+      "rule_id": "R011",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "start:2025-11-01",
+        "end:2025-11-30"
+      ],
+      "suggestion": "具备目标时间范围"
+    },
+    {
+      "rule_id": "R012",
+      "status": "pass",
+      "reason": "OKR材料完整",
+      "evidence": [
+        "id:62df2d7d01e740d99445951d214c48df",
+        "goalId:2592b6579f0c44e5b9ec6ac6459df122",
+        "orderNum:1",
+        "keyResult:供应商端生产变化点实现基于数据自动监控"
+      ],
+      "suggestion": "具备关键成果(KR)"
+    },
+    {
+      "rule_id": "R013",
+      "status": "pass",
+      "reason": "范围材料完整",
+      "evidence": [
+        "id:17541345",
+        "projectId:79eac664f436488993cb28eaac1cc996",
+        "code:IPD03082908P001GYB",
+        "name:变化点管理流程",
+        "level:L4",
+        "created:2025-11-06 17:49:46",
+        "processVersion:27",
+        "createTime:2025-11-07 10:35:50",
+        "updateTime:2025-11-07 10:35:50",
+        "isDelete:0",
+        "roleName:外协批量质量工程师",
+        "type:迭代优化",
+        "processId:5f94f3de9066d9d6269a528512771eb9",
+        "processVersionId:d7310f16b7386bc1508d073e68a850d7",
+        "processCreatedTime:2025-11-06 17:49:46",
+        "productName:供应链过程管理"
+      ],
+      "suggestion": "具备业务流程"
+    },
+    {
+      "rule_id": "R015",
+      "status": "pass",
+      "reason": "系统范围完整",
+      "evidence": [
+        "id:4957279",
+        "code:DE-0506",
+        "name:员工工作台（产品经理）",
+        "groupName:系统",
+        "rootName:系统",
+        "categoryName:系统",
+        "systemName:员工工作台（产品经理）",
+        "applicationSystemName:员工工作台（产品经理）",
+        "appName:员工工作台（产品经理）",
+        "type:system",
+        "typeName:系统",
+        "ownerName:caiguanghui",
+        "systemLeader:caiguanghui"
+      ],
+      "suggestion": "具备微服务（二者一种）"
+    },
+    {
+      "rule_id": "R016",
+      "status": "pass",
+      "reason": "系统范围完整",
+      "evidence": [
+        "id:4957279",
+        "code:DE-0506",
+        "name:员工工作台（产品经理）",
+        "groupName:系统",
+        "rootName:系统",
+        "categoryName:系统",
+        "systemName:员工工作台（产品经理）",
+        "applicationSystemName:员工工作台（产品经理）",
+        "appName:员工工作台（产品经理）",
+        "type:system",
+        "typeName:系统",
+        "ownerName:caiguanghui",
+        "systemLeader:caiguanghui"
+      ],
+      "suggestion": "具备微应用（二者一种）"
+    },
+    {
+      "rule_id": "R017",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:变革方案",
+        "content:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台，识别产品错漏装、操作人员的标准作业符合度、人员权限匹配等问题，利用AI分析生成异常报告，自动推送到零件负责人，对问题零件批次及时封存",
+        "images:9821d72eaa4f4f1a8214c597b3d82f75",
+        "7e0c1d70f546439b929b3a4daac55b76",
+        "4cc9b51b1499419580c4bd06f8cc1840",
+        "eb66aaaf6ded4d2fb9215458543e5636",
+        "ddd209e34ee54a22b4647718efc00e1b",
+        "items:title:变革方案",
+        "content:以问题为导向，从实物质量的事后问题解决向影响实物质量的过程数据监控转变，依靠预警模型自动识别风险，最终达到全链路可视、可控、可预防",
+        "images:9821d72eaa4f4f1"
+      ],
+      "suggestion": "具备项目方案标题"
+    },
+    {
+      "rule_id": "R018",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:变革方案",
+        "content:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台，识别产品错漏装、操作人员的标准作业符合度、人员权限匹配等问题，利用AI分析生成异常报告，自动推送到零件负责人，对问题零件批次及时封存",
+        "images:9821d72eaa4f4f1a8214c597b3d82f75",
+        "7e0c1d70f546439b929b3a4daac55b76",
+        "4cc9b51b1499419580c4bd06f8cc1840",
+        "eb66aaaf6ded4d2fb9215458543e5636",
+        "ddd209e34ee54a22b4647718efc00e1b",
+        "items:title:变革方案",
+        "content:以问题为导向，从实物质量的事后问题解决向影响实物质量的过程数据监控转变，依靠预警模型自动识别风险，最终达到全链路可视、可控、可预防",
+        "images:9821d72eaa4f4f1"
+      ],
+      "suggestion": "具备项目方案内容"
+    },
+    {
+      "rule_id": "R019",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:变革方案",
+        "content:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台，识别产品错漏装、操作人员的标准作业符合度、人员权限匹配等问题，利用AI分析生成异常报告，自动推送到零件负责人，对问题零件批次及时封存",
+        "images:9821d72eaa4f4f1a8214c597b3d82f75",
+        "7e0c1d70f546439b929b3a4daac55b76",
+        "4cc9b51b1499419580c4bd06f8cc1840",
+        "eb66aaaf6ded4d2fb9215458543e5636",
+        "ddd209e34ee54a22b4647718efc00e1b",
+        "items:title:变革方案",
+        "content:以问题为导向，从实物质量的事后问题解决向影响实物质量的过程数据监控转变，依靠预警模型自动识别风险，最终达到全链路可视、可控、可预防",
+        "images:9821d72eaa4f4f1"
+      ],
+      "suggestion": "具备项目方案图片"
+    },
+    {
+      "rule_id": "R026",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:product_count:1",
+        "business_process_count:1",
+        "business_unit_count:5",
+        "business_object_count:2",
+        "items:id:41",
+        "index:3",
+        "dimension:业务架构",
+        "checkpoint:三板斧",
+        "value_model:明确客户，价值主张、灯塔目标",
+        "reviewer:金鑫禹、陈泓霏",
+        "conclusion:通过",
+        "description:通过",
+        "id:71",
+        "index:4",
+        "dimension:业务架构",
+        "checkpoint:指标树",
+        "value_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。",
+        "reviewer:金鑫禹、陈泓霏",
+        "conclusion:通过",
+        "description:通过",
+        "id:101",
+        "index:5",
+        "dimension:业务架构",
+        "checkpoint:流程架构",
+        "value_m"
+      ],
+      "suggestion": "具备业务架构评审"
+    },
+    {
+      "rule_id": "R027",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:flow_dimension_count:1",
+        "check_point_count:2",
+        "items:id:161",
+        "index:1",
+        "dimension:信息架构",
+        "checkpoint:业务对象",
+        "value_model:业务对象完整、准确",
+        "1、明确本项目所有的业务对象，完整覆盖业务流程",
+        "4、在信息架构中心注册",
+        "reviewer:许明月、谢文慧",
+        "conclusion:通过",
+        "description:通过",
+        "id:191",
+        "index:2",
+        "dimension:信息架构",
+        "checkpoint:概念模型",
+        "value_model:规划本领域数据及其他领域数据的关系",
+        "1.不允许非法创建业务对象",
+        "2.与外部业务对象间联通关系不允许缺失",
+        "4.在信息架构中心注册",
+        "reviewer:许明月、谢文慧",
+        "conclusion:通过",
+        "description:通过",
+        "message:参数异常 已合并业务架构中的信息架"
+      ],
+      "suggestion": "具备数据架构评审"
+    },
+    {
+      "rule_id": "R028",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:app_count:0",
+        "service_count:1",
+        "type:fallback",
+        "items:id:5e3b38fb96f626cf1051cba882aa1134",
+        "index:1",
+        "dimension:技术架构",
+        "checkpoint:变化点管理",
+        "value_model:系统编码: DE-0506；负责人: 崔苗苗",
+        "conclusion:通过",
+        "description:业务属于运营管理类，C端DAU<500，根据集团要求申请变更",
+        "message:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。",
+        "link_label:前往云原生查看"
+      ],
+      "suggestion": "具备技术架构评审"
+    },
+    {
+      "rule_id": "R029",
+      "status": "pass",
+      "reason": "架构评审材料完整",
+      "evidence": [
+        "summary:app_count:1",
+        "service_count:0",
+        "safety_level:3",
+        "items:id:review-1",
+        "index:1",
+        "dimension:安全架构",
+        "checkpoint:威胁建模",
+        "value_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、",
+        "conclusion:2",
+        "id:review-2",
+        "index:2",
+        "dimension:安全架构",
+        "checkpoint:应用安全等级判定",
+        "value_model:明确建设系统的安全等级及等保等级",
+        "conclusion:2",
+        "message:操作成功",
+        "link_label:前往应用开发安全平台查看"
+      ],
+      "suggestion": "具备安全架构评审"
+    },
+    {
+      "rule_id": "R030",
+      "status": "pass",
+      "reason": "TAM 模型指标完整",
+      "evidence": [
+        "id:506",
+        "benefit_department:[]"
+      ],
+      "suggestion": "具备能力模型（三者有一）"
+    },
+    {
+      "rule_id": "R031",
+      "status": "pass",
+      "reason": "TAM 模型指标完整",
+      "evidence": [
+        "id:507",
+        "benefit_department:[]"
+      ],
+      "suggestion": "具备结果模型（三者有一）"
+    },
+    {
+      "rule_id": "R032",
+      "status": "pass",
+      "reason": "TAM 模型指标完整",
+      "evidence": [
+        "id:508",
+        "title:金葵花百车故障率（PP100）",
+        "current_state:108.47",
+        "benefit_department:[\"378\"]",
+        "target_3y:2026:78.41",
+        "2027:36",
+        "2028:28.8",
+        "target_2026:78.41",
+        "target_2027:36",
+        "target_2028:28.8",
+        "calculation_basis:金葵花百车故障率（PP100）=用户抱怨数/（车辆数（拥车期2-6个月））*100"
+      ],
+      "suggestion": "具备管理模型（三者有一）"
+    },
+    {
+      "rule_id": "R034",
+      "status": "pass",
+      "reason": "里程碑计划完整",
+      "evidence": [
+        "start:2025-10-20",
+        "end:2025-10-31",
+        "title:立项计划"
+      ],
+      "suggestion": "具备立项计划"
+    },
+    {
+      "rule_id": "R035",
+      "status": "fail",
+      "reason": "合同计划缺少完整时间范围",
+      "evidence": [],
+      "suggestion": "具备合同计划"
+    },
+    {
+      "rule_id": "R036",
+      "status": "pass",
+      "reason": "里程碑计划完整",
+      "evidence": [
+        "start:2025-11-01",
+        "end:2025-11-30",
+        "title:供应商端数据直联直采"
+      ],
+      "suggestion": "具备目标计划"
+    },
+    {
+      "rule_id": "R037",
+      "status": "pass",
+      "reason": "组织架构完整",
+      "evidence": [
+        "development_mode:混合开发",
+        "members:name:蔡广珲",
+        "employee_id:10120211",
+        "role:产品管理工程师",
+        "level:T7",
+        "department:大制造运营部",
+        "department_id:1",
+        "team_name:批量外协件质量保证开发小队",
+        "workload:30",
+        "plan_start_date:2025-11-01",
+        "plan_end_date:2025-11-30",
+        "party_type:own",
+        "flag:0",
+        "name:崔苗苗",
+        "employee_id:10199621",
+        "role:产品管理工程师",
+        "level:T5",
+        "department:大研发运营部",
+        "department_id:1",
+        "team_name:批量外协件质量保证开发小队",
+        "workload:30",
+        "plan_start_date:2025-11-01",
+        "plan_end_date:2025-11-30"
+      ],
+      "suggestion": "具备组织架构"
+    },
+    {
+      "rule_id": "R038",
+      "status": "pass",
+      "reason": "费用构成完整",
+      "evidence": [
+        "name:批量外协件质量管理",
+        "amount:1159682.87",
+        "budget_subject:YSGC-PM-2513AFY-1",
+        "calculation:人天单价核算",
+        "purchase_mode:开发资源池"
+      ],
+      "suggestion": "具备费用构成"
+    },
+    {
+      "rule_id": "R039",
+      "status": "pass",
+      "reason": "该规则标记为不需要。",
+      "evidence": [],
+      "suggestion": "无需补充此项。"
+    },
+    {
+      "rule_id": "R040",
+      "status": "pass",
+      "reason": "该规则标记为不需要。",
+      "evidence": [],
+      "suggestion": "无需补充此项。"
+    }
+  ],
+  "risks": [
+    "合同计划缺少完整时间范围"
+  ],
+  "missing_information": [
+    "合同计划",
+    "具备合同计划"
+  ],
+  "positive_evidence": [],
+  "project_commentary": "",
+  "baseline": {
+    "generated_at": "2026-03-17T07:36:10.309280+00:00",
+    "project_name": "批量外协件质量保证项目",
+    "category": "工作台开发及实施",
+    "decision": "驳回",
+    "score": 88,
+    "statistics": {
+      "total_rules": 29,
+      "passed_rules": 28,
+      "failed_rules": 1,
+      "critical_failures": 1,
+      "major_failures": 0,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "合同计划缺少完整时间范围",
+        "suggestion": "具备合同计划",
+        "evidence": ""
+      }
+    ],
+    "rule_results": [
+      {
+        "rule_id": "R001",
+        "review_point": "项目背景",
+        "review_content": "背景标题",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目背景标题",
+        "evidence": "title:数据分析\ncontent:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。\nimages:d62513a261f0481db4b63f5bb1ea8b8c\nitems:title:数据分析\ncontent:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。\nimages:d62513a261f0481db4b63f5bb1ea8b8c"
+      },
+      {
+        "rule_id": "R002",
+        "review_point": "项目背景",
+        "review_content": "背景内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目背景内容",
+        "evidence": "title:数据分析\ncontent:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。\nimages:d62513a261f0481db4b63f5bb1ea8b8c\nitems:title:数据分析\ncontent:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。\nimages:d62513a261f0481db4b63f5bb1ea8b8c"
+      },
+      {
+        "rule_id": "R003",
+        "review_point": "项目背景",
+        "review_content": "背景图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目背景图片",
+        "evidence": "title:数据分析\ncontent:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。\nimages:d62513a261f0481db4b63f5bb1ea8b8c\nitems:title:数据分析\ncontent:2024年1月-2025年6月生产线涉及外协件10分钟以上停台累计5535min，其中73%为供应端发生变化导致；供应端变化主要为生产过程变化导致，从人、机、料、法、环、测维度进行分析，84%问题来自设备和人的变化。\nimages:d62513a261f0481db4b63f5bb1ea8b8c"
+      },
+      {
+        "rule_id": "R007",
+        "review_point": "项目OKR",
+        "review_content": "关联产品链",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备产品链",
+        "evidence": "供应链过程管理工作台"
+      },
+      {
+        "rule_id": "R008",
+        "review_point": "项目OKR",
+        "review_content": "项目目标（O）",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备项目目标(O)",
+        "evidence": "供应商端数据直联直采，预计实现40家供应商监控直连，10家数据直连"
+      },
+      {
+        "rule_id": "R009",
+        "review_point": "项目OKR",
+        "review_content": "战队OKR",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备战队OKR",
+        "evidence": "“3+3”的场景下”(3个核心场景+3大核心体验) 用户需求满足度100%达成"
+      },
+      {
+        "rule_id": "R010",
+        "review_point": "项目OKR",
+        "review_content": "关联产品",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备产品",
+        "evidence": "id:52e4b5505b594e97b9e972a189b26d5b\ngoalId:2592b6579f0c44e5b9ec6ac6459df122\nproductId:11111111\nproductName:供应链过程管理工作台"
+      },
+      {
+        "rule_id": "R011",
+        "review_point": "项目OKR",
+        "review_content": "目标时间范围",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备目标时间范围",
+        "evidence": "start:2025-11-01\nend:2025-11-30"
+      },
+      {
+        "rule_id": "R012",
+        "review_point": "项目OKR",
+        "review_content": "关键成果（KR）",
+        "status": "pass",
+        "severity": "critical",
+        "message": "OKR材料完整",
+        "suggestion": "具备关键成果(KR)",
+        "evidence": "id:62df2d7d01e740d99445951d214c48df\ngoalId:2592b6579f0c44e5b9ec6ac6459df122\norderNum:1\nkeyResult:供应商端生产变化点实现基于数据自动监控"
+      },
+      {
+        "rule_id": "R013",
+        "review_point": "项目范围",
+        "review_content": "业务流程",
+        "status": "pass",
+        "severity": "critical",
+        "message": "范围材料完整",
+        "suggestion": "具备业务流程",
+        "evidence": "id:17541345\nprojectId:79eac664f436488993cb28eaac1cc996\ncode:IPD03082908P001GYB\nname:变化点管理流程\nlevel:L4\ncreated:2025-11-06 17:49:46\nprocessVersion:27\ncreateTime:2025-11-07 10:35:50\nupdateTime:2025-11-07 10:35:50\nisDelete:0\nroleName:外协批量质量工程师\ntype:迭代优化\nprocessId:5f94f3de9066d9d6269a528512771eb9\nprocessVersionId:d7310f16b7386bc1508d073e68a850d7\nprocessCreatedTime:2025-11-06 17:49:46\nproductName:供应链过程管理"
+      },
+      {
+        "rule_id": "R015",
+        "review_point": "系统范围",
+        "review_content": "微服务",
+        "status": "pass",
+        "severity": "critical",
+        "message": "系统范围完整",
+        "suggestion": "具备微服务（二者一种）",
+        "evidence": "id:4957279\ncode:DE-0506\nname:员工工作台（产品经理）\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:员工工作台（产品经理）\napplicationSystemName:员工工作台（产品经理）\nappName:员工工作台（产品经理）\ntype:system\ntypeName:系统\nownerName:caiguanghui\nsystemLeader:caiguanghui"
+      },
+      {
+        "rule_id": "R016",
+        "review_point": "系统范围",
+        "review_content": "微应用",
+        "status": "pass",
+        "severity": "critical",
+        "message": "系统范围完整",
+        "suggestion": "具备微应用（二者一种）",
+        "evidence": "id:4957279\ncode:DE-0506\nname:员工工作台（产品经理）\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:员工工作台（产品经理）\napplicationSystemName:员工工作台（产品经理）\nappName:员工工作台（产品经理）\ntype:system\ntypeName:系统\nownerName:caiguanghui\nsystemLeader:caiguanghui"
+      },
+      {
+        "rule_id": "R017",
+        "review_point": "项目方案",
+        "review_content": "项目方案",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目方案标题",
+        "evidence": "title:变革方案\ncontent:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台，识别产品错漏装、操作人员的标准作业符合度、人员权限匹配等问题，利用AI分析生成异常报告，自动推送到零件负责人，对问题零件批次及时封存\nimages:9821d72eaa4f4f1a8214c597b3d82f75\n7e0c1d70f546439b929b3a4daac55b76\n4cc9b51b1499419580c4bd06f8cc1840\neb66aaaf6ded4d2fb9215458543e5636\nddd209e34ee54a22b4647718efc00e1b\nitems:title:变革方案\ncontent:以问题为导向，从实物质量的事后问题解决向影响实物质量的过程数据监控转变，依靠预警模型自动识别风险，最终达到全链路可视、可控、可预防\nimages:9821d72eaa4f4f1"
+      },
+      {
+        "rule_id": "R018",
+        "review_point": "项目方案",
+        "review_content": "方案内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目方案内容",
+        "evidence": "title:变革方案\ncontent:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台，识别产品错漏装、操作人员的标准作业符合度、人员权限匹配等问题，利用AI分析生成异常报告，自动推送到零件负责人，对问题零件批次及时封存\nimages:9821d72eaa4f4f1a8214c597b3d82f75\n7e0c1d70f546439b929b3a4daac55b76\n4cc9b51b1499419580c4bd06f8cc1840\neb66aaaf6ded4d2fb9215458543e5636\nddd209e34ee54a22b4647718efc00e1b\nitems:title:变革方案\ncontent:以问题为导向，从实物质量的事后问题解决向影响实物质量的过程数据监控转变，依靠预警模型自动识别风险，最终达到全链路可视、可控、可预防\nimages:9821d72eaa4f4f1"
+      },
+      {
+        "rule_id": "R019",
+        "review_point": "项目方案",
+        "review_content": "方案图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目方案图片",
+        "evidence": "title:变革方案\ncontent:采集供应商关键工位视频数据，云端搭建AI视觉应用服务平台，识别产品错漏装、操作人员的标准作业符合度、人员权限匹配等问题，利用AI分析生成异常报告，自动推送到零件负责人，对问题零件批次及时封存\nimages:9821d72eaa4f4f1a8214c597b3d82f75\n7e0c1d70f546439b929b3a4daac55b76\n4cc9b51b1499419580c4bd06f8cc1840\neb66aaaf6ded4d2fb9215458543e5636\nddd209e34ee54a22b4647718efc00e1b\nitems:title:变革方案\ncontent:以问题为导向，从实物质量的事后问题解决向影响实物质量的过程数据监控转变，依靠预警模型自动识别风险，最终达到全链路可视、可控、可预防\nimages:9821d72eaa4f4f1"
+      },
+      {
+        "rule_id": "R026",
+        "review_point": "专业领域评审",
+        "review_content": "业务架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备业务架构评审",
+        "evidence": "summary:product_count:1\nbusiness_process_count:1\nbusiness_unit_count:5\nbusiness_object_count:2\nitems:id:41\nindex:3\ndimension:业务架构\ncheckpoint:三板斧\nvalue_model:明确客户，价值主张、灯塔目标\nreviewer:金鑫禹、陈泓霏\nconclusion:通过\ndescription:通过\nid:71\nindex:4\ndimension:业务架构\ncheckpoint:指标树\nvalue_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。\nreviewer:金鑫禹、陈泓霏\nconclusion:通过\ndescription:通过\nid:101\nindex:5\ndimension:业务架构\ncheckpoint:流程架构\nvalue_m"
+      },
+      {
+        "rule_id": "R027",
+        "review_point": "专业领域评审",
+        "review_content": "数据架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备数据架构评审",
+        "evidence": "summary:flow_dimension_count:1\ncheck_point_count:2\nitems:id:161\nindex:1\ndimension:信息架构\ncheckpoint:业务对象\nvalue_model:业务对象完整、准确\n1、明确本项目所有的业务对象，完整覆盖业务流程\n4、在信息架构中心注册\nreviewer:许明月、谢文慧\nconclusion:通过\ndescription:通过\nid:191\nindex:2\ndimension:信息架构\ncheckpoint:概念模型\nvalue_model:规划本领域数据及其他领域数据的关系\n1.不允许非法创建业务对象\n2.与外部业务对象间联通关系不允许缺失\n4.在信息架构中心注册\nreviewer:许明月、谢文慧\nconclusion:通过\ndescription:通过\nmessage:参数异常 已合并业务架构中的信息架"
+      },
+      {
+        "rule_id": "R028",
+        "review_point": "专业领域评审",
+        "review_content": "技术架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备技术架构评审",
+        "evidence": "summary:app_count:0\nservice_count:1\ntype:fallback\nitems:id:5e3b38fb96f626cf1051cba882aa1134\nindex:1\ndimension:技术架构\ncheckpoint:变化点管理\nvalue_model:系统编码: DE-0506；负责人: 崔苗苗\nconclusion:通过\ndescription:业务属于运营管理类，C端DAU<500，根据集团要求申请变更\nmessage:技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。\nlink_label:前往云原生查看"
+      },
+      {
+        "rule_id": "R029",
+        "review_point": "专业领域评审",
+        "review_content": "安全架构评审",
+        "status": "pass",
+        "severity": "major",
+        "message": "架构评审材料完整",
+        "suggestion": "具备安全架构评审",
+        "evidence": "summary:app_count:1\nservice_count:0\nsafety_level:3\nitems:id:review-1\nindex:1\ndimension:安全架构\ncheckpoint:威胁建模\nvalue_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、\nconclusion:2\nid:review-2\nindex:2\ndimension:安全架构\ncheckpoint:应用安全等级判定\nvalue_model:明确建设系统的安全等级及等保等级\nconclusion:2\nmessage:操作成功\nlink_label:前往应用开发安全平台查看"
+      },
+      {
+        "rule_id": "R030",
+        "review_point": "能力（竞争）模型",
+        "review_content": "能力（竞争）模型",
+        "status": "pass",
+        "severity": "major",
+        "message": "TAM 模型指标完整",
+        "suggestion": "具备能力模型（三者有一）",
+        "evidence": "id:506\nbenefit_department:[]"
+      },
+      {
+        "rule_id": "R031",
+        "review_point": "结果（财务/客户）模型",
+        "review_content": "结果（财务/客户）模型",
+        "status": "pass",
+        "severity": "major",
+        "message": "TAM 模型指标完整",
+        "suggestion": "具备结果模型（三者有一）",
+        "evidence": "id:507\nbenefit_department:[]"
+      },
+      {
+        "rule_id": "R032",
+        "review_point": "管理体系模型",
+        "review_content": "管理体系模型",
+        "status": "pass",
+        "severity": "major",
+        "message": "TAM 模型指标完整",
+        "suggestion": "具备管理模型（三者有一）",
+        "evidence": "id:508\ntitle:金葵花百车故障率（PP100）\ncurrent_state:108.47\nbenefit_department:[\"378\"]\ntarget_3y:2026:78.41\n2027:36\n2028:28.8\ntarget_2026:78.41\ntarget_2027:36\ntarget_2028:28.8\ncalculation_basis:金葵花百车故障率（PP100）=用户抱怨数/（车辆数（拥车期2-6个月））*100"
+      },
+      {
+        "rule_id": "R034",
+        "review_point": "项目里程碑",
+        "review_content": "立项计划",
+        "status": "pass",
+        "severity": "critical",
+        "message": "里程碑计划完整",
+        "suggestion": "具备立项计划",
+        "evidence": "start:2025-10-20\nend:2025-10-31\ntitle:立项计划"
+      },
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "合同计划缺少完整时间范围",
+        "suggestion": "具备合同计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "pass",
+        "severity": "critical",
+        "message": "里程碑计划完整",
+        "suggestion": "具备目标计划",
+        "evidence": "start:2025-11-01\nend:2025-11-30\ntitle:供应商端数据直联直采"
+      },
+      {
+        "rule_id": "R037",
+        "review_point": "组织架构",
+        "review_content": "组织架构",
+        "status": "pass",
+        "severity": "critical",
+        "message": "组织架构完整",
+        "suggestion": "具备组织架构",
+        "evidence": "development_mode:混合开发\nmembers:name:蔡广珲\nemployee_id:10120211\nrole:产品管理工程师\nlevel:T7\ndepartment:大制造运营部\ndepartment_id:1\nteam_name:批量外协件质量保证开发小队\nworkload:30\nplan_start_date:2025-11-01\nplan_end_date:2025-11-30\nparty_type:own\nflag:0\nname:崔苗苗\nemployee_id:10199621\nrole:产品管理工程师\nlevel:T5\ndepartment:大研发运营部\ndepartment_id:1\nteam_name:批量外协件质量保证开发小队\nworkload:30\nplan_start_date:2025-11-01\nplan_end_date:2025-11-30\n"
+      },
+      {
+        "rule_id": "R038",
+        "review_point": "费用构成",
+        "review_content": "费用构成",
+        "status": "pass",
+        "severity": "critical",
+        "message": "费用构成完整",
+        "suggestion": "具备费用构成",
+        "evidence": "name:批量外协件质量管理\namount:1159682.87\nbudget_subject:YSGC-PM-2513AFY-1\ncalculation:人天单价核算\npurchase_mode:开发资源池"
+      },
+      {
+        "rule_id": "R039",
+        "review_point": "长尾费用",
+        "review_content": "不需要",
+        "status": "pass",
+        "severity": "minor",
+        "message": "该规则标记为不需要。",
+        "suggestion": "无需补充此项。",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R040",
+        "review_point": "历史投入",
+        "review_content": "不需要",
+        "status": "pass",
+        "severity": "minor",
+        "message": "该规则标记为不需要。",
+        "suggestion": "无需补充此项。",
+        "evidence": ""
+      }
+    ]
+  },
+  "segments": [
+    {
+      "tab": "项目内容",
+      "decision": "通过",
+      "summary": "项目内容评审通过。项目背景、目标、OKR、范围、方案等核心要素齐全，且与接口数据一致。关键信息如业务流程、微服务/微应用、预警模型等均完整可追溯，无缺失或矛盾项。"
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "通过",
+      "summary": "项目在专业领域评审中，业务架构、数据架构、技术架构与安全架构均已完成评审且结论为通过，材料完整，符合集团标准要求。"
+    },
+    {
+      "tab": "TAM模型评审",
+      "decision": "通过",
+      "summary": "TAM模型评审已通过，三项子规则均满足要求。能力（竞争）模型、结果（财务/客户）模型及管理体系模型均有完整指标输入，其中管理体系模型包含具体可量化目标与计算公式，符合审批标准。"
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，合同计划（R035）缺失完整时间范围，导致关键规则不通过，整体审批未通过。"
+    },
+    {
+      "tab": "组织架构",
+      "decision": "通过",
+      "summary": "组织架构信息完整，自有人员与三方人员配置齐全，角色、部门、工作量及时间计划均明确，符合项目立项要求。"
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息模块评审通过。费用构成完整，长尾费用与历史投入均无需提供，符合规则基线要求。"
+    }
+  ],
+  "run_dir": "E:\\pyproject\\ProjectApproval\\runtime\\approval_runs\\20260317-153610_79eac664f436488993cb28eaac1cc996",
+  "generated_at": "2026-03-17T15:38:24",
+  "decision_source": "baseline_aligned_llm_segmented"
+}

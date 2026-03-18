@@ -1,0 +1,680 @@
+{
+  "project_name": "2025年研发工具软件订阅升级-Alias-例行订阅",
+  "project_id": "3785d5d33f6745ab81b97b243e460d6f",
+  "category": "研发工具订阅许可升级",
+  "document_source": "remote",
+  "document_saved_at": "2026-03-17T15:33:22+08:00",
+  "decision": "驳回",
+  "summary": "规则引擎基线结果为驳回。3条规则未通过，主要问题：R021: 业务全景图内容过短，无法支撑审批。；R024: 管理模型内容过短，无法支撑审批。；R036: 目标计划缺少完整时间范围。",
+  "item_results": [
+    {
+      "rule_id": "R001",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目背景",
+        "content:Alias是汽车行业内最主流的CAS设计曲面建模软件，其有着极高的自由度，可以对构建的曲面、曲线精确的点的细致雕琢，提供及高质量的造型曲面。强大的功能已经成为业内CAS设计标杆。Alias AutoStudio是Alias的旗舰模块，主要针对汽车行业，作为汽车设计师和数字设计师的合作平台，共同完成从概念设计到概念建模，从型面推敲到A级曲面制作，并进行实时可视化评审的整个汽车设计工作流。",
+        "1. 使用部门：红旗造型中心",
+        "2. 软件现有数量：8个（2024年为5套）",
+        "使用人数：常用人数20，偶尔使用人数30+",
+        "软件负荷：平均70.5%，最大100%，存在抢不到许可现象",
+        "使用效果：良好",
+        "3. 面临问题：造型院CAS相关专业每年承接研发项目超过20个，目前同时使用人员较多时，许可数量不足。为解决上述问"
+      ],
+      "suggestion": "具备项目背景标题"
+    },
+    {
+      "rule_id": "R002",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目背景",
+        "content:Alias是汽车行业内最主流的CAS设计曲面建模软件，其有着极高的自由度，可以对构建的曲面、曲线精确的点的细致雕琢，提供及高质量的造型曲面。强大的功能已经成为业内CAS设计标杆。Alias AutoStudio是Alias的旗舰模块，主要针对汽车行业，作为汽车设计师和数字设计师的合作平台，共同完成从概念设计到概念建模，从型面推敲到A级曲面制作，并进行实时可视化评审的整个汽车设计工作流。",
+        "1. 使用部门：红旗造型中心",
+        "2. 软件现有数量：8个（2024年为5套）",
+        "使用人数：常用人数20，偶尔使用人数30+",
+        "软件负荷：平均70.5%，最大100%，存在抢不到许可现象",
+        "使用效果：良好",
+        "3. 面临问题：造型院CAS相关专业每年承接研发项目超过20个，目前同时使用人员较多时，许可数量不足。为解决上述问"
+      ],
+      "suggestion": "具备项目背景内容"
+    },
+    {
+      "rule_id": "R003",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目背景",
+        "content:Alias是汽车行业内最主流的CAS设计曲面建模软件，其有着极高的自由度，可以对构建的曲面、曲线精确的点的细致雕琢，提供及高质量的造型曲面。强大的功能已经成为业内CAS设计标杆。Alias AutoStudio是Alias的旗舰模块，主要针对汽车行业，作为汽车设计师和数字设计师的合作平台，共同完成从概念设计到概念建模，从型面推敲到A级曲面制作，并进行实时可视化评审的整个汽车设计工作流。",
+        "1. 使用部门：红旗造型中心",
+        "2. 软件现有数量：8个（2024年为5套）",
+        "使用人数：常用人数20，偶尔使用人数30+",
+        "软件负荷：平均70.5%，最大100%，存在抢不到许可现象",
+        "使用效果：良好",
+        "3. 面临问题：造型院CAS相关专业每年承接研发项目超过20个，目前同时使用人员较多时，许可数量不足。为解决上述问"
+      ],
+      "suggestion": "具备项目背景图片"
+    },
+    {
+      "rule_id": "R004",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目目标",
+        "content:支撑红旗全系项目CAS设计、A面设计数据制",
+        "images:efb08900487640e696d38c982b33026a",
+        "items:title:项目目标",
+        "content:支撑红旗全系项目CAS设计、A面设计数据制",
+        "images:efb08900487640e696d38c982b33026a"
+      ],
+      "suggestion": "具备项目目标标题"
+    },
+    {
+      "rule_id": "R005",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目目标",
+        "content:支撑红旗全系项目CAS设计、A面设计数据制",
+        "images:efb08900487640e696d38c982b33026a",
+        "items:title:项目目标",
+        "content:支撑红旗全系项目CAS设计、A面设计数据制",
+        "images:efb08900487640e696d38c982b33026a"
+      ],
+      "suggestion": "具备项目目标内容"
+    },
+    {
+      "rule_id": "R006",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目目标",
+        "content:支撑红旗全系项目CAS设计、A面设计数据制",
+        "images:efb08900487640e696d38c982b33026a",
+        "items:title:项目目标",
+        "content:支撑红旗全系项目CAS设计、A面设计数据制",
+        "images:efb08900487640e696d38c982b33026a"
+      ],
+      "suggestion": "具备项目目标图片"
+    },
+    {
+      "rule_id": "R014",
+      "status": "pass",
+      "reason": "范围材料完整",
+      "evidence": [
+        "id:522",
+        "projectId:3785d5d33f6745ab81b97b243e460d6f",
+        "softName:Alias",
+        "reverageUseRate:70.5",
+        "maxUseRate:100.0",
+        "softDesc:1.软件功能描述：Alias是汽车行业内最主流的CAS设计曲面建模软件，其有着极高的自由度，可以对构建的曲面、曲线精确的点的细致雕琢，提供及高质量的造型曲面。强大的功能已经成为业内CAS设计标杆。Alias AutoStudio是Alias的旗舰模块，主要针对汽车行业，作为汽车设计师和数字设计师的合作平台，共同完成从概念设计到概念建模，从型面推敲到A级曲面制作，并进行实时可视化评审的整个汽车设计工作流。",
+        "2.软件购买情况：2024年订阅5套浮动版，许可证到期时间为2025年12月31日",
+        "3.软件使用情况： 1. 使用部门：红旗造型中心",
+        "2. 软件现有数量：8"
+      ],
+      "suggestion": "具备内容"
+    },
+    {
+      "rule_id": "R017",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目方案",
+        "content:2024年订阅5套浮动版，许可证到期时间为2025年12月31日",
+        "images:0ea5f42f567f4374b922c13828f48a33",
+        "items:title:项目方案",
+        "content:2024年订阅5套浮动版，许可证到期时间为2025年12月31日",
+        "images:0ea5f42f567f4374b922c13828f48a33"
+      ],
+      "suggestion": "具备项目方案标题"
+    },
+    {
+      "rule_id": "R018",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目方案",
+        "content:2024年订阅5套浮动版，许可证到期时间为2025年12月31日",
+        "images:0ea5f42f567f4374b922c13828f48a33",
+        "items:title:项目方案",
+        "content:2024年订阅5套浮动版，许可证到期时间为2025年12月31日",
+        "images:0ea5f42f567f4374b922c13828f48a33"
+      ],
+      "suggestion": "具备项目方案内容"
+    },
+    {
+      "rule_id": "R019",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:项目方案",
+        "content:2024年订阅5套浮动版，许可证到期时间为2025年12月31日",
+        "images:0ea5f42f567f4374b922c13828f48a33",
+        "items:title:项目方案",
+        "content:2024年订阅5套浮动版，许可证到期时间为2025年12月31日",
+        "images:0ea5f42f567f4374b922c13828f48a33"
+      ],
+      "suggestion": "具备项目方案图片"
+    },
+    {
+      "rule_id": "R020",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:业务全景图",
+        "content:业务全景图",
+        "images:4dbf43c3bc284f1999a708d163ee6484",
+        "items:title:业务全景图",
+        "content:业务全景图",
+        "images:4dbf43c3bc284f1999a708d163ee6484"
+      ],
+      "suggestion": "具备业务全景图标题"
+    },
+    {
+      "rule_id": "R021",
+      "status": "fail",
+      "reason": "业务全景图内容过短，无法支撑审批。",
+      "evidence": [
+        "title:业务全景图",
+        "content:业务全景图",
+        "images:4dbf43c3bc284f1999a708d163ee6484",
+        "items:title:业务全景图",
+        "content:业务全景图",
+        "images:4dbf43c3bc284f1999a708d163ee6484"
+      ],
+      "suggestion": "具备业务全景图内容"
+    },
+    {
+      "rule_id": "R022",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:业务全景图",
+        "content:业务全景图",
+        "images:4dbf43c3bc284f1999a708d163ee6484",
+        "items:title:业务全景图",
+        "content:业务全景图",
+        "images:4dbf43c3bc284f1999a708d163ee6484"
+      ],
+      "suggestion": "具备业务全景图图片"
+    },
+    {
+      "rule_id": "R023",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:管理模型",
+        "content:管理模型",
+        "images:0a71f92f870947e3910da255be02ab19",
+        "items:title:管理模型",
+        "content:管理模型",
+        "images:0a71f92f870947e3910da255be02ab19"
+      ],
+      "suggestion": "具备管理模型标题"
+    },
+    {
+      "rule_id": "R024",
+      "status": "fail",
+      "reason": "管理模型内容过短，无法支撑审批。",
+      "evidence": [
+        "title:管理模型",
+        "content:管理模型",
+        "images:0a71f92f870947e3910da255be02ab19",
+        "items:title:管理模型",
+        "content:管理模型",
+        "images:0a71f92f870947e3910da255be02ab19"
+      ],
+      "suggestion": "具备管理模型内容"
+    },
+    {
+      "rule_id": "R025",
+      "status": "pass",
+      "reason": "材料完整",
+      "evidence": [
+        "title:管理模型",
+        "content:管理模型",
+        "images:0a71f92f870947e3910da255be02ab19",
+        "items:title:管理模型",
+        "content:管理模型",
+        "images:0a71f92f870947e3910da255be02ab19"
+      ],
+      "suggestion": "具备管理模型图片"
+    },
+    {
+      "rule_id": "R033",
+      "status": "pass",
+      "reason": "项目价值已填写",
+      "evidence": [
+        "id:1245",
+        "projectId:3785d5d33f6745ab81b97b243e460d6f",
+        "title:补充原型车整车指标分析、白车身疲劳耐久仿真等业务能力（第1象限）",
+        "valueGoal:补充原型车整车指标分析、白车身疲劳耐久仿真等业务能力（第1象限）",
+        "currentStatus:无",
+        "deptId:[\"208\"]",
+        "content:部门业务能力全景图",
+        "isDelete:0",
+        "type:1"
+      ],
+      "suggestion": "具备项目价值"
+    },
+    {
+      "rule_id": "R034",
+      "status": "pass",
+      "reason": "里程碑计划完整",
+      "evidence": [
+        "start:2025-10-30",
+        "end:2025-10-31",
+        "title:立项计划"
+      ],
+      "suggestion": "具备立项计划"
+    },
+    {
+      "rule_id": "R035",
+      "status": "pass",
+      "reason": "里程碑计划完整",
+      "evidence": [
+        "start:2025-11-13",
+        "end:2026-01-10",
+        "title:合同签订计划"
+      ],
+      "suggestion": "具备合同计划"
+    },
+    {
+      "rule_id": "R036",
+      "status": "fail",
+      "reason": "目标计划缺少完整时间范围",
+      "evidence": [],
+      "suggestion": "具备目标计划"
+    },
+    {
+      "rule_id": "R038",
+      "status": "pass",
+      "reason": "费用构成完整",
+      "evidence": [
+        "name:预算构成DE-2507EFY59",
+        "amount:2016000.0",
+        "budget_subject:YSGC-DE-2507EFY59-1",
+        "calculation:供应商报价",
+        "purchase_mode:直接采购"
+      ],
+      "suggestion": "具备费用构成"
+    },
+    {
+      "rule_id": "R039",
+      "status": "pass",
+      "reason": "该规则标记为不需要。",
+      "evidence": [],
+      "suggestion": "无需补充此项。"
+    },
+    {
+      "rule_id": "R040",
+      "status": "pass",
+      "reason": "该规则标记为不需要。",
+      "evidence": [],
+      "suggestion": "无需补充此项。"
+    },
+    {
+      "rule_id": "R041",
+      "status": "pass",
+      "reason": "固定类项目费用变化说明完整",
+      "evidence": [
+        "fixed_project:True",
+        "history_analysis:id:436",
+        "projectId:3785d5d33f6745ab81b97b243e460d6f",
+        "isChange:1",
+        "dimensionality:3",
+        "oneKey:2023年",
+        "oneValue:1652000",
+        "twoKey:2024年",
+        "twoValue:1170000",
+        "threeKey:2025年",
+        "threeValue:2016000",
+        "creatorId:83978",
+        "creator:gongzi",
+        "createTime:2025-10-29 11:31:50",
+        "isDelete:0",
+        "oneTwoSymbol:1",
+        "oneTwoValue:29.18",
+        "twoThreeSymbol:0",
+        "twoThreeValue:72.31",
+        "dimensionalityName:费用成本",
+        "content:每年以供应商报价的软件单价及采购数"
+      ],
+      "suggestion": "具备费用变化点"
+    }
+  ],
+  "risks": [
+    "业务全景图内容过短，无法支撑审批。",
+    "管理模型内容过短，无法支撑审批。",
+    "目标计划缺少完整时间范围"
+  ],
+  "missing_information": [
+    "业务全景图内容",
+    "具备业务全景图内容",
+    "管理模型内容",
+    "具备管理模型内容",
+    "目标计划",
+    "具备目标计划"
+  ],
+  "positive_evidence": [],
+  "project_commentary": "",
+  "baseline": {
+    "generated_at": "2026-03-17T07:33:23.150720+00:00",
+    "project_name": "2025年研发工具软件订阅升级-Alias-例行订阅",
+    "category": "研发工具订阅许可升级",
+    "decision": "驳回",
+    "score": 64,
+    "statistics": {
+      "total_rules": 24,
+      "passed_rules": 21,
+      "failed_rules": 3,
+      "critical_failures": 3,
+      "major_failures": 0,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R021",
+        "review_point": "业务全景图",
+        "review_content": "业务全景图内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "业务全景图内容过短，无法支撑审批。",
+        "suggestion": "具备业务全景图内容",
+        "evidence": "title:业务全景图\ncontent:业务全景图\nimages:4dbf43c3bc284f1999a708d163ee6484\nitems:title:业务全景图\ncontent:业务全景图\nimages:4dbf43c3bc284f1999a708d163ee6484"
+      },
+      {
+        "rule_id": "R024",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "管理模型内容过短，无法支撑审批。",
+        "suggestion": "具备管理模型内容",
+        "evidence": "title:管理模型\ncontent:管理模型\nimages:0a71f92f870947e3910da255be02ab19\nitems:title:管理模型\ncontent:管理模型\nimages:0a71f92f870947e3910da255be02ab19"
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      }
+    ],
+    "rule_results": [
+      {
+        "rule_id": "R001",
+        "review_point": "项目背景",
+        "review_content": "背景标题",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目背景标题",
+        "evidence": "title:项目背景\ncontent:Alias是汽车行业内最主流的CAS设计曲面建模软件，其有着极高的自由度，可以对构建的曲面、曲线精确的点的细致雕琢，提供及高质量的造型曲面。强大的功能已经成为业内CAS设计标杆。Alias AutoStudio是Alias的旗舰模块，主要针对汽车行业，作为汽车设计师和数字设计师的合作平台，共同完成从概念设计到概念建模，从型面推敲到A级曲面制作，并进行实时可视化评审的整个汽车设计工作流。\n\n1. 使用部门：红旗造型中心\n2. 软件现有数量：8个（2024年为5套）\n          使用人数：常用人数20，偶尔使用人数30+\n          软件负荷：平均70.5%，最大100%，存在抢不到许可现象\n          使用效果：良好\n3. 面临问题：造型院CAS相关专业每年承接研发项目超过20个，目前同时使用人员较多时，许可数量不足。为解决上述问"
+      },
+      {
+        "rule_id": "R002",
+        "review_point": "项目背景",
+        "review_content": "背景内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目背景内容",
+        "evidence": "title:项目背景\ncontent:Alias是汽车行业内最主流的CAS设计曲面建模软件，其有着极高的自由度，可以对构建的曲面、曲线精确的点的细致雕琢，提供及高质量的造型曲面。强大的功能已经成为业内CAS设计标杆。Alias AutoStudio是Alias的旗舰模块，主要针对汽车行业，作为汽车设计师和数字设计师的合作平台，共同完成从概念设计到概念建模，从型面推敲到A级曲面制作，并进行实时可视化评审的整个汽车设计工作流。\n\n1. 使用部门：红旗造型中心\n2. 软件现有数量：8个（2024年为5套）\n          使用人数：常用人数20，偶尔使用人数30+\n          软件负荷：平均70.5%，最大100%，存在抢不到许可现象\n          使用效果：良好\n3. 面临问题：造型院CAS相关专业每年承接研发项目超过20个，目前同时使用人员较多时，许可数量不足。为解决上述问"
+      },
+      {
+        "rule_id": "R003",
+        "review_point": "项目背景",
+        "review_content": "背景图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目背景图片",
+        "evidence": "title:项目背景\ncontent:Alias是汽车行业内最主流的CAS设计曲面建模软件，其有着极高的自由度，可以对构建的曲面、曲线精确的点的细致雕琢，提供及高质量的造型曲面。强大的功能已经成为业内CAS设计标杆。Alias AutoStudio是Alias的旗舰模块，主要针对汽车行业，作为汽车设计师和数字设计师的合作平台，共同完成从概念设计到概念建模，从型面推敲到A级曲面制作，并进行实时可视化评审的整个汽车设计工作流。\n\n1. 使用部门：红旗造型中心\n2. 软件现有数量：8个（2024年为5套）\n          使用人数：常用人数20，偶尔使用人数30+\n          软件负荷：平均70.5%，最大100%，存在抢不到许可现象\n          使用效果：良好\n3. 面临问题：造型院CAS相关专业每年承接研发项目超过20个，目前同时使用人员较多时，许可数量不足。为解决上述问"
+      },
+      {
+        "rule_id": "R004",
+        "review_point": "项目目标",
+        "review_content": "项目目标",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目目标标题",
+        "evidence": "title:项目目标\ncontent:支撑红旗全系项目CAS设计、A面设计数据制\nimages:efb08900487640e696d38c982b33026a\nitems:title:项目目标\ncontent:支撑红旗全系项目CAS设计、A面设计数据制\nimages:efb08900487640e696d38c982b33026a"
+      },
+      {
+        "rule_id": "R005",
+        "review_point": "项目目标",
+        "review_content": "项目内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目目标内容",
+        "evidence": "title:项目目标\ncontent:支撑红旗全系项目CAS设计、A面设计数据制\nimages:efb08900487640e696d38c982b33026a\nitems:title:项目目标\ncontent:支撑红旗全系项目CAS设计、A面设计数据制\nimages:efb08900487640e696d38c982b33026a"
+      },
+      {
+        "rule_id": "R006",
+        "review_point": "项目目标",
+        "review_content": "目标图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目目标图片",
+        "evidence": "title:项目目标\ncontent:支撑红旗全系项目CAS设计、A面设计数据制\nimages:efb08900487640e696d38c982b33026a\nitems:title:项目目标\ncontent:支撑红旗全系项目CAS设计、A面设计数据制\nimages:efb08900487640e696d38c982b33026a"
+      },
+      {
+        "rule_id": "R014",
+        "review_point": "项目范围",
+        "review_content": "内容列表",
+        "status": "pass",
+        "severity": "critical",
+        "message": "范围材料完整",
+        "suggestion": "具备内容",
+        "evidence": "id:522\nprojectId:3785d5d33f6745ab81b97b243e460d6f\nsoftName:Alias\nreverageUseRate:70.5\nmaxUseRate:100.0\nsoftDesc:1.软件功能描述：Alias是汽车行业内最主流的CAS设计曲面建模软件，其有着极高的自由度，可以对构建的曲面、曲线精确的点的细致雕琢，提供及高质量的造型曲面。强大的功能已经成为业内CAS设计标杆。Alias AutoStudio是Alias的旗舰模块，主要针对汽车行业，作为汽车设计师和数字设计师的合作平台，共同完成从概念设计到概念建模，从型面推敲到A级曲面制作，并进行实时可视化评审的整个汽车设计工作流。\n2.软件购买情况：2024年订阅5套浮动版，许可证到期时间为2025年12月31日\n3.软件使用情况： 1. 使用部门：红旗造型中心\n      2. 软件现有数量：8"
+      },
+      {
+        "rule_id": "R017",
+        "review_point": "项目方案",
+        "review_content": "项目方案",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目方案标题",
+        "evidence": "title:项目方案\ncontent:2024年订阅5套浮动版，许可证到期时间为2025年12月31日\nimages:0ea5f42f567f4374b922c13828f48a33\nitems:title:项目方案\ncontent:2024年订阅5套浮动版，许可证到期时间为2025年12月31日\nimages:0ea5f42f567f4374b922c13828f48a33"
+      },
+      {
+        "rule_id": "R018",
+        "review_point": "项目方案",
+        "review_content": "方案内容",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备项目方案内容",
+        "evidence": "title:项目方案\ncontent:2024年订阅5套浮动版，许可证到期时间为2025年12月31日\nimages:0ea5f42f567f4374b922c13828f48a33\nitems:title:项目方案\ncontent:2024年订阅5套浮动版，许可证到期时间为2025年12月31日\nimages:0ea5f42f567f4374b922c13828f48a33"
+      },
+      {
+        "rule_id": "R019",
+        "review_point": "项目方案",
+        "review_content": "方案图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备项目方案图片",
+        "evidence": "title:项目方案\ncontent:2024年订阅5套浮动版，许可证到期时间为2025年12月31日\nimages:0ea5f42f567f4374b922c13828f48a33\nitems:title:项目方案\ncontent:2024年订阅5套浮动版，许可证到期时间为2025年12月31日\nimages:0ea5f42f567f4374b922c13828f48a33"
+      },
+      {
+        "rule_id": "R020",
+        "review_point": "业务全景图",
+        "review_content": "业务全景图标题",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备业务全景图标题",
+        "evidence": "title:业务全景图\ncontent:业务全景图\nimages:4dbf43c3bc284f1999a708d163ee6484\nitems:title:业务全景图\ncontent:业务全景图\nimages:4dbf43c3bc284f1999a708d163ee6484"
+      },
+      {
+        "rule_id": "R021",
+        "review_point": "业务全景图",
+        "review_content": "业务全景图内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "业务全景图内容过短，无法支撑审批。",
+        "suggestion": "具备业务全景图内容",
+        "evidence": "title:业务全景图\ncontent:业务全景图\nimages:4dbf43c3bc284f1999a708d163ee6484\nitems:title:业务全景图\ncontent:业务全景图\nimages:4dbf43c3bc284f1999a708d163ee6484"
+      },
+      {
+        "rule_id": "R022",
+        "review_point": "业务全景图",
+        "review_content": "业务全景图图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备业务全景图图片",
+        "evidence": "title:业务全景图\ncontent:业务全景图\nimages:4dbf43c3bc284f1999a708d163ee6484\nitems:title:业务全景图\ncontent:业务全景图\nimages:4dbf43c3bc284f1999a708d163ee6484"
+      },
+      {
+        "rule_id": "R023",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型标题",
+        "status": "pass",
+        "severity": "critical",
+        "message": "材料完整",
+        "suggestion": "具备管理模型标题",
+        "evidence": "title:管理模型\ncontent:管理模型\nimages:0a71f92f870947e3910da255be02ab19\nitems:title:管理模型\ncontent:管理模型\nimages:0a71f92f870947e3910da255be02ab19"
+      },
+      {
+        "rule_id": "R024",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "管理模型内容过短，无法支撑审批。",
+        "suggestion": "具备管理模型内容",
+        "evidence": "title:管理模型\ncontent:管理模型\nimages:0a71f92f870947e3910da255be02ab19\nitems:title:管理模型\ncontent:管理模型\nimages:0a71f92f870947e3910da255be02ab19"
+      },
+      {
+        "rule_id": "R025",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型图片",
+        "status": "pass",
+        "severity": "minor",
+        "message": "材料完整",
+        "suggestion": "具备管理模型图片",
+        "evidence": "title:管理模型\ncontent:管理模型\nimages:0a71f92f870947e3910da255be02ab19\nitems:title:管理模型\ncontent:管理模型\nimages:0a71f92f870947e3910da255be02ab19"
+      },
+      {
+        "rule_id": "R033",
+        "review_point": "项目价值",
+        "review_content": "项目价值",
+        "status": "pass",
+        "severity": "critical",
+        "message": "项目价值已填写",
+        "suggestion": "具备项目价值",
+        "evidence": "id:1245\nprojectId:3785d5d33f6745ab81b97b243e460d6f\ntitle:补充原型车整车指标分析、白车身疲劳耐久仿真等业务能力（第1象限）\nvalueGoal:补充原型车整车指标分析、白车身疲劳耐久仿真等业务能力（第1象限）\ncurrentStatus:无\ndeptId:[\"208\"]\ncontent:部门业务能力全景图\nisDelete:0\ntype:1"
+      },
+      {
+        "rule_id": "R034",
+        "review_point": "项目里程碑",
+        "review_content": "立项计划",
+        "status": "pass",
+        "severity": "critical",
+        "message": "里程碑计划完整",
+        "suggestion": "具备立项计划",
+        "evidence": "start:2025-10-30\nend:2025-10-31\ntitle:立项计划"
+      },
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "pass",
+        "severity": "critical",
+        "message": "里程碑计划完整",
+        "suggestion": "具备合同计划",
+        "evidence": "start:2025-11-13\nend:2026-01-10\ntitle:合同签订计划"
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R038",
+        "review_point": "费用构成",
+        "review_content": "费用构成",
+        "status": "pass",
+        "severity": "critical",
+        "message": "费用构成完整",
+        "suggestion": "具备费用构成",
+        "evidence": "name:预算构成DE-2507EFY59\namount:2016000.0\nbudget_subject:YSGC-DE-2507EFY59-1\ncalculation:供应商报价\npurchase_mode:直接采购"
+      },
+      {
+        "rule_id": "R039",
+        "review_point": "长尾费用",
+        "review_content": "不需要",
+        "status": "pass",
+        "severity": "minor",
+        "message": "该规则标记为不需要。",
+        "suggestion": "无需补充此项。",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R040",
+        "review_point": "历史投入",
+        "review_content": "不需要",
+        "status": "pass",
+        "severity": "minor",
+        "message": "该规则标记为不需要。",
+        "suggestion": "无需补充此项。",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R041",
+        "review_point": "费用变化点",
+        "review_content": "费用变化点",
+        "status": "pass",
+        "severity": "major",
+        "message": "固定类项目费用变化说明完整",
+        "suggestion": "具备费用变化点",
+        "evidence": "fixed_project:True\nhistory_analysis:id:436\nprojectId:3785d5d33f6745ab81b97b243e460d6f\nisChange:1\ndimensionality:3\noneKey:2023年\noneValue:1652000\ntwoKey:2024年\ntwoValue:1170000\nthreeKey:2025年\nthreeValue:2016000\ncreatorId:83978\ncreator:gongzi\ncreateTime:2025-10-29 11:31:50\nisDelete:0\noneTwoSymbol:1\noneTwoValue:29.18\ntwoThreeSymbol:0\ntwoThreeValue:72.31\ndimensionalityName:费用成本\ncontent:每年以供应商报价的软件单价及采购数"
+      }
+    ]
+  },
+  "segments": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容评审中，因业务全景图内容和管理模型内容均为空或仅含占位文字，无法支撑审批决策，构成关键缺陷。其余部分材料完整，但核心内容缺失导致整体不通过。"
+    },
+    {
+      "tab": "项目价值",
+      "decision": "通过",
+      "summary": "项目价值内容已完整填写，明确描述了补充原型车整车指标分析、白车身疲劳耐久仿真等业务能力的目标，与部门业务能力全景图相关联，符合项目价值评审要求。"
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑中目标计划缺失完整的时间范围，导致关键评审规则R036未通过，依据规则基线判定为驳回。"
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面已完整提供费用构成，且长尾费用与历史投入均无需补充，符合审批规则要求。"
+    },
+    {
+      "tab": "费用变化点",
+      "decision": "通过",
+      "summary": "费用变化点评审已通过，项目为固定类项目，历史费用数据完整，2025年预算金额2016000元与历史分析一致，且符合规则R041要求。"
+    }
+  ],
+  "run_dir": "E:\\pyproject\\ProjectApproval\\runtime\\approval_runs\\20260317-153323_3785d5d33f6745ab81b97b243e460d6f",
+  "generated_at": "2026-03-17T15:35:12",
+  "decision_source": "baseline_aligned_llm_segmented"
+}

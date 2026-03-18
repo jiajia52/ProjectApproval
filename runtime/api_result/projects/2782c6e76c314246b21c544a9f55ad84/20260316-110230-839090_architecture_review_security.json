@@ -1,0 +1,24 @@
+{
+  "api_name": "architecture_review_security",
+  "method": "POST",
+  "path": "/third/securityCheckList",
+  "payload": {
+    "projectId": "2782c6e76c314246b21c544a9f55ad84",
+    "projectCode": "DE-2507EFY55",
+    "systemCode": "",
+    "type": 1
+  },
+  "project_id": "2782c6e76c314246b21c544a9f55ad84",
+  "result": {
+    "code": 200,
+    "message": "操作成功",
+    "data": {
+      "appCount": 0,
+      "serviceCount": 0,
+      "safetyLevel": null,
+      "dimensionList": null
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-16T11:02:30+08:00"
+}

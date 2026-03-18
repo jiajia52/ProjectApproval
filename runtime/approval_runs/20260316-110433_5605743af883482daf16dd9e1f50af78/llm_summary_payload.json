@@ -1,0 +1,376 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "2025年研发工具软件订阅升级-CD-Tire-例行订阅",
+  "category": "研发工具订阅许可升级",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 52,
+    "statistics": {
+      "total_rules": 24,
+      "passed_rules": 20,
+      "failed_rules": 4,
+      "critical_failures": 4,
+      "major_failures": 0,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R014",
+        "review_point": "项目范围",
+        "review_content": "内容列表",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少 内容列表",
+        "suggestion": "具备内容",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R021",
+        "review_point": "业务全景图",
+        "review_content": "业务全景图内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "业务全景图内容过短，无法支撑审批。",
+        "suggestion": "具备业务全景图内容",
+        "evidence": "title:研发业务全景图\ncontent:研发业务全景\nimages:ad24b69176aa46d08e35e9ff383a0373\nitems:title:研发业务全景图\ncontent:研发业务全景\nimages:ad24b69176aa46d08e35e9ff383a0373"
+      },
+      {
+        "rule_id": "R024",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "管理模型内容过短，无法支撑审批。",
+        "suggestion": "具备管理模型内容",
+        "evidence": "title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:b0764f8dce1348ac907f63f1bbf2b31a\nitems:title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:b0764f8dce1348ac907f63f1bbf2b31a"
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容评审中存在关键信息缺失，主要问题为业务全景图内容和管理模型内容过短，无法支撑审批决策；同时项目范围中的内容列表为空，影响项目边界清晰性。尽管背景、目标、方案等基础材料完整，但核心支撑内容不足，需补充后重新提交。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "项目背景标题已提供，内容完整，符合要求。",
+          "evidence": [
+            "title:项目背景",
+            "content:整车有限元模型道路计算时，用于对CD-Tire进行解析并耦合道路与整车模型的求解软件，是国际上最适用于整车路噪仿真的商业轮胎模型软件\n      1. 使用部门：仿真中心\n      2. 软件现有数量：2\n          使用人数：8\n          软件负荷：57.64%\n          使用效果：良好",
+            "images:d7fe48755e394cabbf3e9565ddb08657"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "项目背景内容已提供，包含使用部门、软件数量、使用人数、负荷率及使用效果，信息完整。",
+          "evidence": [
+            "title:项目背景",
+            "content:整车有限元模型道路计算时，用于对CD-Tire进行解析并耦合道路与整车模型的求解软件，是国际上最适用于整车路噪仿真的商业轮胎模型软件\n      1. 使用部门：仿真中心\n      2. 软件现有数量：2\n          使用人数：8\n          软件负荷：57.64%\n          使用效果：良好",
+            "images:d7fe48755e394cabbf3e9565ddb08657"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "项目背景图片已上传，图像标识清晰，满足基本要求。",
+          "evidence": [
+            "images:d7fe48755e394cabbf3e9565ddb08657"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R004",
+          "status": "pass",
+          "reason": "项目目标标题已提供，内容明确。",
+          "evidence": [
+            "title:项目目标",
+            "content:CD-Tire软件支撑业务单元6个，每个项目预计调用6次，开展基于路面谱激励引起的车内噪声仿真，解决项目前期缺乏高精度路面激励，满意满足前期达标风险预测与方案优化的要求，分析频率范围由原150Hz提升至250Hz，精度误差小于3dB，单个项目减少后期试验投入30%，预计节约人员工时与试验费用约10万元"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R005",
+          "status": "pass",
+          "reason": "项目目标内容完整，包含支撑业务单元、调用次数、技术指标提升、成本节约等关键信息。",
+          "evidence": [
+            "content:CD-Tire软件支撑业务单元6个，每个项目预计调用6次，开展基于路面谱激励引起的车内噪声仿真，解决项目前期缺乏高精度路面激励，满意满足前期达标风险预测与方案优化的要求，分析频率范围由原150Hz提升至250Hz，精度误差小于3dB，单个项目减少后期试验投入30%，预计节约人员工时与试验费用约10万元"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R006",
+          "status": "pass",
+          "reason": "项目目标图片已上传，可辅助理解目标内容。",
+          "evidence": [
+            "images:b1a46d608a774ddf9d6cdde749437bb8"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R014",
+          "status": "fail",
+          "reason": "项目范围中的内容列表为空，未提供任何具体的内容条目，无法界定项目实际工作范围。",
+          "evidence": [
+            "content_list:[]"
+          ],
+          "suggestion": "请补充详细的内容列表，明确项目实施的具体任务或交付物，确保范围清晰可执行。"
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题已提供，内容清晰。",
+          "evidence": [
+            "title:项目方案",
+            "content:本次申请购买1套CD-Tire，服务期限为：2026.1.1--2026.12.31"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "项目方案内容完整，包含采购数量、服务期限等关键信息。",
+          "evidence": [
+            "content:本次申请购买1套CD-Tire，服务期限为：2026.1.1--2026.12.31"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "项目方案图片已上传，可用于辅助说明方案细节。",
+          "evidence": [
+            "images:dd75a04c30984eb394522de9b479f93b"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R020",
+          "status": "pass",
+          "reason": "业务全景图标题已提供，命名规范。",
+          "evidence": [
+            "title:研发业务全景图"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R021",
+          "status": "fail",
+          "reason": "业务全景图内容仅为‘研发业务全景’，内容过于简略，缺乏对流程、系统、角色、数据流转等关键要素的描述，无法支撑审批判断。",
+          "evidence": [
+            "content:研发业务全景"
+          ],
+          "suggestion": "请补充详细的业务全景图内容，包括但不限于核心流程节点、涉及系统、责任人、数据交互关系等，确保能体现项目在整体业务链中的定位与作用。"
+        },
+        {
+          "rule_id": "R022",
+          "status": "pass",
+          "reason": "业务全景图图片已上传，具备可视化支持能力。",
+          "evidence": [
+            "images:ad24b69176aa46d08e35e9ff383a0373"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R023",
+          "status": "pass",
+          "reason": "年度管理模型标题已提供，命名准确。",
+          "evidence": [
+            "title:工具软件采购管理模型"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R024",
+          "status": "fail",
+          "reason": "管理模型内容仅为‘工具软件采购管理模型’，无实质内容，无法体现采购流程、审批机制、预算控制、生命周期管理等关键管理要素，不具备可操作性。",
+          "evidence": [
+            "content:工具软件采购管理模型"
+          ],
+          "suggestion": "请补充完整的工具软件采购管理模型内容，应包括采购流程、责任分工、审批节点、预算控制方式、版本更新机制、退出机制等，确保管理闭环。"
+        },
+        {
+          "rule_id": "R025",
+          "status": "pass",
+          "reason": "管理模型图片已上传，具备视觉表达能力。",
+          "evidence": [
+            "images:b0764f8dce1348ac907f63f1bbf2b31a"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [
+        "业务全景图内容空洞，可能导致项目在跨部门协同中职责不清、流程断点不明。",
+        "管理模型内容缺失，将导致后续采购行为缺乏制度依据，存在合规风险。",
+        "项目范围内容列表为空，难以评估项目边界与资源投入合理性，易引发范围蔓延。"
+      ],
+      "missing_information": [
+        "项目范围 - 内容列表（必须填写具体任务或交付项）",
+        "业务全景图 - 详细内容描述（需包含流程、系统、角色、数据流等）",
+        "年度管理模型 - 实质性内容（需涵盖采购流程、审批机制、预算控制等）"
+      ]
+    },
+    {
+      "tab": "项目价值",
+      "decision": "通过",
+      "summary": "项目价值内容已完整填写，符合评审规则要求，具备明确的项目价值目标与业务背景支撑。",
+      "item_results": [
+        {
+          "rule_id": "R033",
+          "status": "pass",
+          "reason": "项目价值已按要求填写，包含标题、价值目标、当前状态及所属部门等关键信息，内容完整且与业务场景相关。",
+          "evidence": [
+            "title:凭条方案虚拟评估能力",
+            "valueGoal:补充凭条方案虚拟评估能力",
+            "currentStatus:无",
+            "deptId:[\"208\"]",
+            "content:部门业务能力全景图"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "需补充材料",
+      "summary": "项目里程碑中‘目标计划’缺少完整的时间范围，不符合审批要求，其余两项已通过。需补充目标计划的起止时间及交付物信息。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划包含完整的起止时间（2025-07-15 至 2025-07-30）和明确标题，符合要求。",
+          "evidence": [
+            "start:2025-07-15",
+            "end:2025-07-30",
+            "title:立项计划"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R035",
+          "status": "pass",
+          "reason": "合同签订计划包含完整的起止时间（2025-10-01 至 2025-11-30）和明确标题，符合要求。",
+          "evidence": [
+            "start:2025-10-01",
+            "end:2025-11-30",
+            "title:合同签订计划"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R036",
+          "status": "fail",
+          "reason": "目标计划未提供起止时间，且无任何时间范围或交付物信息，无法确认其完整性与可执行性。",
+          "evidence": [
+            "target_plan: {}"
+          ],
+          "suggestion": "请补充目标计划的开始日期、结束日期及对应交付物（如：系统上线报告、验收文档等），确保里程碑完整可追踪。"
+        }
+      ],
+      "risks": [
+        "目标计划缺失导致项目关键节点不可控，影响整体进度跟踪与验收管理。"
+      ],
+      "missing_information": [
+        "目标计划的开始时间",
+        "目标计划的结束时间",
+        "目标计划对应的交付物"
+      ]
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面内容完整，费用构成清晰，长尾费用与历史投入均无需提供，符合评审规则要求。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "pass",
+          "reason": "费用构成完整且符合要求，包含CD-Tire项目名称、金额、预算科目、计算方式及采购模式。",
+          "evidence": [
+            "name:CD-Tire",
+            "amount:245800.0",
+            "budget_subject:YSGC-DE-2507EFY52-1",
+            "calculation:供应商报价",
+            "purchase_mode:直接采购"
+          ],
+          "suggestion": "具备费用构成，无需补充。"
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则已标记为不需要，无需提供长尾费用相关材料。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则已标记为不需要，无需提供历史投入相关材料。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "费用变化点",
+      "decision": "通过",
+      "summary": "费用变化点评审已通过，项目为固定类项目，费用变化说明完整，历史数据与当前申请金额一致，且规则基线中R041已判定为通过。",
+      "item_results": [
+        {
+          "rule_id": "R041",
+          "status": "pass",
+          "reason": "项目为固定类项目（fixed_project: true），费用变化点有完整历史分析记录，包含2023年、2024年及2025年三阶段费用数据，且2025年申请金额245,800元与历史趋势相符，变更原因说明清晰（24年升级2套，今年升级1套），符合固定类项目费用变化点要求。",
+          "evidence": [
+            "fixed_project: true",
+            "history_analysis: threeValue: 245800 (2025年)",
+            "history_analysis: twoValue: 489381 (2024年)",
+            "history_analysis: content: '24年升级2套，今年升级1套'",
+            "applyBudget: 245800.00",
+            "budgetYear: 2025"
+          ],
+          "suggestion": "无需补充材料，费用变化点已满足审批要求。"
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    }
+  ]
+}

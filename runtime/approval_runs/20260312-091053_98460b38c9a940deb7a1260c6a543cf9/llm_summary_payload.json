@@ -1,0 +1,563 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "零部件工作台",
+  "category": "工作台开发及实施",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 0,
+    "statistics": {
+      "total_rules": 29,
+      "passed_rules": 16,
+      "failed_rules": 13,
+      "critical_failures": 6,
+      "major_failures": 7,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R007",
+        "review_point": "项目OKR",
+        "review_content": "关联产品链",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少或未明确 关联产品链",
+        "suggestion": "具备产品链",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R016",
+        "review_point": "系统范围",
+        "review_content": "微应用",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少 微应用",
+        "suggestion": "具备微应用（二者一种）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R026",
+        "review_point": "专业领域评审",
+        "review_content": "业务架构评审",
+        "status": "fail",
+        "severity": "major",
+        "message": "缺少 业务架构评审",
+        "suggestion": "具备业务架构评审",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R027",
+        "review_point": "专业领域评审",
+        "review_content": "数据架构评审",
+        "status": "fail",
+        "severity": "major",
+        "message": "缺少 数据架构评审",
+        "suggestion": "具备数据架构评审",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R028",
+        "review_point": "专业领域评审",
+        "review_content": "技术架构评审",
+        "status": "fail",
+        "severity": "major",
+        "message": "缺少 技术架构评审",
+        "suggestion": "具备技术架构评审",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R029",
+        "review_point": "专业领域评审",
+        "review_content": "安全架构评审",
+        "status": "fail",
+        "severity": "major",
+        "message": "缺少 安全架构评审",
+        "suggestion": "具备安全架构评审",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R030",
+        "review_point": "能力（竞争）模型",
+        "review_content": "能力（竞争）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "能力（竞争）模型缺少完整指标。",
+        "suggestion": "具备能力模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R031",
+        "review_point": "结果（财务/客户）模型",
+        "review_content": "结果（财务/客户）模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "结果（财务/客户）模型缺少完整指标。",
+        "suggestion": "具备结果模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R032",
+        "review_point": "管理体系模型",
+        "review_content": "管理体系模型",
+        "status": "fail",
+        "severity": "major",
+        "message": "管理体系模型缺少完整指标。",
+        "suggestion": "具备管理模型（三者有一）",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "合同计划缺少完整时间范围",
+        "suggestion": "具备合同计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R037",
+        "review_point": "组织架构",
+        "review_content": "组织架构",
+        "status": "fail",
+        "severity": "critical",
+        "message": "组织成员或开发模式不完整",
+        "suggestion": "具备组织架构",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R038",
+        "review_point": "费用构成",
+        "review_content": "费用构成",
+        "status": "fail",
+        "severity": "critical",
+        "message": "预算成本项、测算或采购方式不完整",
+        "suggestion": "具备费用构成",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容评审未通过，因关键规则R007（关联产品链）和R016（微应用）未满足要求。项目OKR缺少明确的产品链关联，系统范围中缺失微应用信息，影响整体方案完整性与可实施性。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "背景标题完整，包含‘零部件设计业务模式变革’，内容清晰且有图片支持。",
+          "evidence": [
+            "title:零部件设计业务模式变革",
+            "content:第一阶段：实现关键业务活动（方案选型、设计任务书和OTS认可等）线上作业；产品设计主要依赖个人经验开展，并且校审一致性不强，由于人员和项目不同，交付质量存在差异；第二阶段：构建“技术要素+模型”的研发模式，从关注任务交付向关注方案先进性转变，从人工经验判断向模型决策转变，专业能力从个体主导进化为数据主导的组织能力。",
+            "images:b7e9a90481d344feaffaeb6cf564aa18"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "背景内容完整，详细描述了两阶段业务模式变革目标与路径。",
+          "evidence": [
+            "content:第一阶段：实现关键业务活动（方案选型、设计任务书和OTS认可等）线上作业；产品设计主要依赖个人经验开展，并且校审一致性不强，由于人员和项目不同，交付质量存在差异；第二阶段：构建“技术要素+模型”的研发模式，从关注任务交付向关注方案先进性转变，从人工经验判断向模型决策转变，专业能力从个体主导进化为数据主导的组织能力。"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "背景图片已上传，对应标题内容，具备视觉支撑。",
+          "evidence": [
+            "images:b7e9a90481d344feaffaeb6cf564aa18"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R007",
+          "status": "fail",
+          "reason": "项目OKR中未明确关联产品链，仅列出多个子产品但无主产品链定义或映射关系。",
+          "evidence": [
+            ""
+          ],
+          "suggestion": "需补充明确的产品链信息，如‘零部件开发工作台’作为核心产品链，关联其上下游系统及业务模块"
+        },
+        {
+          "rule_id": "R008",
+          "status": "pass",
+          "reason": "项目目标（O）完整，共7项，涵盖要素库、成本正向设计、自动生成等核心方向。",
+          "evidence": [
+            "要素库上线率\n实现零部件成本正向设计\n实现选型方案自动生成\n零件技术特性自动生成\n询价方案自动生成\n实现OTS验证方案自动生成\n实现BOM驱动零部件任务自动分配"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R009",
+          "status": "pass",
+          "reason": "战队OKR完整，表述清晰，聚焦于工作台建设与多业务板块推进。",
+          "evidence": [
+            "加快推进零部件工作台建设，技术要素库、成本、选型、任务书、2D图纸、OTS试验、计划管理等业务板块"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R010",
+          "status": "pass",
+          "reason": "关联产品信息完整，包含7个子产品ID与名称，均指向‘零部件开发工作台’。",
+          "evidence": [
+            "id:8b01127e71c6471891e4b70251b7a67d\ngoalId:c65da9a7c47945819f7798c8eac93f0d\nproductId:682b73b02f2a450c8f7bd3e6ca39e122\nproductName:零部件开发工作台"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R011",
+          "status": "pass",
+          "reason": "目标时间范围完整，起止时间为2026-02-12至2026-10-31。",
+          "evidence": [
+            "start:2026-02-12",
+            "end:2026-10-31"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R012",
+          "status": "pass",
+          "reason": "关键成果（KR）完整，共7条，每条均对应具体可衡量的目标。",
+          "evidence": [
+            "完成532种零部件技术要素库搭建并上线，实现零部件指标参数结构化",
+            "研发专业设计师利用成本测算模型实现532种零部件成本在线正向测算",
+            "基于技术要素库及方案选型结构化模板建立要素关联模型，实现532种零部件选型方案自动生成"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R013",
+          "status": "pass",
+          "reason": "业务流程信息完整，包含7条L4级流程节点，均属于‘专业设计流程’。",
+          "evidence": [
+            "id:17545007\nprojectId:98460b38c9a940deb7a1260c6a543cf9\ncode:IPD03032002P001YZY\nname:专业设计流程\nlevel:L4"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R015",
+          "status": "pass",
+          "reason": "系统范围中虽无微服务列表，但已有微应用字段为空，符合‘二者一种’标准。",
+          "evidence": [
+            "microservices:[]"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R016",
+          "status": "fail",
+          "reason": "系统范围中微应用字段为空，且未提供任何微应用信息，违反‘微服务或微应用至少一项’的要求。",
+          "evidence": [
+            "microapps:[]"
+          ],
+          "suggestion": "需补充至少一个微应用定义，例如‘成本分析微应用’、‘方案生成微应用’等"
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题完整，为‘业务“三板斧”’，具有战略定位意义。",
+          "evidence": [
+            "title:业务“三板斧”"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "项目方案内容完整，包含原模式、优化后、价值三部分，逻辑清晰。",
+          "evidence": [
+            "content:1）原模式：零件设计和成本核算分别由研发、财务负责，成本优化主要靠后期降本；\n2）优化后：建立不同结构、材料、工艺的原子级成本数据库，实时生成不同方案的成本，支撑有成本竞争力的方案设计。基于成本库数据，开展技术方案设计，在满足功能性能要求下，在架构、结构、性能方面不断优化去冗余；\n3）价值：方案设计和成本分析互锁，基于数据进行技术方案寻优，实现成本一步到位。"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "项目方案图片已上传，共9张，覆盖核心模块展示。",
+          "evidence": [
+            "images:d21605a7bcd54dfcb6aa986f500d8f68",
+            "b76688882caf458c84b945dab9e33783",
+            "1d045a4c5701495fb31fdee60df5baa7",
+            "cddf14debfd14506b9b69de397fc3363",
+            "478c45e4138e48e392b2aed141d94d10",
+            "6721b61f537b42fa8eef165a5c377944",
+            "4faf414ec7b343f1ac823681063fa7a2",
+            "fc97504ea4984649a46712ec75f2226f",
+            "e3604ce219cf41db8b839b0c5572d9d1"
+          ],
+          "suggestion": "无需补充"
+        }
+      ],
+      "risks": [
+        "缺乏明确产品链定义，可能导致跨系统协同与责任边界模糊",
+        "微应用缺失将影响系统解耦与后续运维管理，阻碍敏捷迭代"
+      ],
+      "missing_information": [
+        "项目OKR中未明确关联产品链（如主产品链名称、层级关系）",
+        "系统范围中未提供任何微应用信息，无法确认系统集成颗粒度"
+      ]
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "驳回",
+      "summary": "项目‘零部件工作台’在专业领域评审环节未提供任何架构评审内容，业务、数据、技术及安全架构均缺失，不符合立项审批要求。",
+      "item_results": [
+        {
+          "rule_id": "R026",
+          "status": "fail",
+          "reason": "业务架构评审缺失，未在项目文档中体现相关评审内容。",
+          "evidence": [
+            "architecture_reviews.business: ''"
+          ],
+          "suggestion": "补充完整的业务架构评审材料，包括流程映射、角色职责与系统边界定义。"
+        },
+        {
+          "rule_id": "R027",
+          "status": "fail",
+          "reason": "数据架构评审缺失，未提供数据模型、数据流或主数据管理方案。",
+          "evidence": [
+            "architecture_reviews.data: ''"
+          ],
+          "suggestion": "补充数据架构评审文档，明确数据源、数据标准与数据治理策略。"
+        },
+        {
+          "rule_id": "R028",
+          "status": "fail",
+          "reason": "技术架构评审缺失，未说明系统技术选型、部署模式与微服务设计。",
+          "evidence": [
+            "architecture_reviews.technology: ''"
+          ],
+          "suggestion": "补充技术架构评审材料，包含技术栈、系统集成方式与可扩展性设计。"
+        },
+        {
+          "rule_id": "R029",
+          "status": "fail",
+          "reason": "安全架构评审缺失，未涵盖访问控制、数据加密与合规性设计。",
+          "evidence": [
+            "architecture_reviews.security: ''"
+          ],
+          "suggestion": "补充安全架构评审文档，确保满足企业安全基线与等级保护要求。"
+        }
+      ],
+      "risks": [
+        "缺乏架构评审可能导致系统设计不完整，存在后期返工风险。",
+        "未覆盖关键架构维度可能引发跨系统集成失败或数据安全隐患。",
+        "项目推进过程中可能因架构缺陷导致无法通过后续审计或上线审查。"
+      ],
+      "missing_information": [
+        "业务架构评审文档",
+        "数据架构评审文档",
+        "技术架构评审文档",
+        "安全架构评审文档"
+      ]
+    },
+    {
+      "tab": "TAM模型评审",
+      "decision": "驳回",
+      "summary": "TAM模型评审未通过，三个子规则均因缺少完整指标而失败。项目在能力（竞争）模型、结果（财务/客户）模型及管理体系模型方面均无有效数据支撑，无法验证其战略目标与实施路径的合理性。",
+      "item_results": [
+        {
+          "rule_id": "R030",
+          "status": "fail",
+          "reason": "能力（竞争）模型缺少完整指标，仅列出部分目标但未提供可量化的评估标准或实现路径。",
+          "evidence": [
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.1.projectValueInfoList[0].title: 零部件技术要素库建设",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.1.projectValueInfoList[0].oneValue: 1）关键零部件技术要素库覆盖度100%；2）历史项目数据沉淀率80%",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.1.projectValueInfoList[0].twoValue: 1）零部件技术要素库覆盖度100%；2）历史项目数据沉淀率100%",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.1.projectValueInfoList[0].threeValue: 1）零部件技术要素库覆盖度100%（迭代优化）；2）新项目数据沉淀率100%",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.1.projectValueInfoList[0].content: 定义了两个核心指标的计算公式，但未明确各阶段目标达成的衡量方式和责任主体"
+          ],
+          "suggestion": "补充能力（竞争）模型中各目标的量化指标、达成路径、责任人及阶段性里程碑，确保具备可追踪性与可验证性。"
+        },
+        {
+          "rule_id": "R031",
+          "status": "fail",
+          "reason": "结果（财务/客户）模型缺失完整指标，未体现项目对财务收益或客户价值的预期影响。",
+          "evidence": [
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.3.projectValueInfoList[0].title: 零部件设计模型建设",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.3.projectValueInfoList[0].oneValue: 模型准确率≥80%",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.3.projectValueInfoList[0].twoValue: 模型准确率≥90%",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.3.projectValueInfoList[0].threeValue: 模型准确率≥95%",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.3.projectValueInfoList[0].content: 提供了模型准确率的定义公式，但未关联到具体财务效益或客户满意度提升等结果维度"
+          ],
+          "suggestion": "补充结果（财务/客户）模型，明确模型准确率提升带来的成本节约、交付周期缩短或客户投诉下降等可量化的业务成果，并设定对应的目标值与评估机制。"
+        },
+        {
+          "rule_id": "R032",
+          "status": "fail",
+          "reason": "管理体系模型缺乏完整指标，未体现组织协同、流程规范或制度保障机制。",
+          "evidence": [
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.1.projectValueInfoList[0].currentStatus: 设计师根据各项目需求完成任务交付，产品设计依赖设计师个人经验，因人员和项目不同存在交付质量差异",
+            "project_snapshot_excerpt.endpoints.tam_info.data_preview.3.projectValueInfoList[0].currentStatus: 产品设计依赖设计师个人经验，校审环节多，标准、规范没有充分转化为可复用的模型",
+            "tam_models.capability: []",
+            "tam_models.result: []",
+            "tam_models.management: []"
+          ],
+          "suggestion": "补充管理体系模型内容，包括跨部门协作机制、标准化流程建设、知识沉淀制度、绩效考核挂钩等管理措施，确保项目可持续运行。"
+        }
+      ],
+      "risks": [
+        "项目缺乏可量化的战略目标支撑，可能导致资源投入与实际产出脱节。",
+        "当前仅依赖个人经验进行设计交付，存在质量不稳定与知识流失风险。",
+        "未建立有效的管理闭环机制，难以保障长期运营与持续优化。"
+      ],
+      "missing_information": [
+        "能力（竞争）模型中各目标的量化指标、责任主体与达成路径",
+        "结果（财务/客户）模型中与财务收益或客户价值相关的预期成果及评估方法",
+        "管理体系模型中的组织协同机制、流程规范、制度保障与考核机制"
+      ]
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审未通过，因合同计划与目标计划均缺少完整的时间范围信息，违反关键规则 R035 和 R036。立项计划虽已满足要求，但其余两项关键内容缺失，导致整体不通过。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划已提供完整时间范围（2026-02-28 至 2026-02-28），符合要求。",
+          "evidence": [
+            "start:2026-02-28",
+            "end:2026-02-28"
+          ],
+          "suggestion": "具备立项计划"
+        },
+        {
+          "rule_id": "R035",
+          "status": "fail",
+          "reason": "合同计划未提供任何时间范围信息，字段为空，无法验证其完整性。",
+          "evidence": [
+            "contract_plan: {}"
+          ],
+          "suggestion": "请补充合同计划的起止时间及对应交付物"
+        },
+        {
+          "rule_id": "R036",
+          "status": "fail",
+          "reason": "目标计划未提供任何时间范围信息，字段为空，无法验证其完整性。",
+          "evidence": [
+            "target_plan: {}"
+          ],
+          "suggestion": "请补充目标计划的起止时间及对应交付物"
+        }
+      ],
+      "risks": [
+        "合同计划与目标计划缺失将影响项目执行路径与资源协调，存在进度失控风险。",
+        "缺乏明确的目标计划可能导致项目成果无法对齐业务需求，影响验收与价值实现。"
+      ],
+      "missing_information": [
+        "合同计划的起止时间及对应交付物",
+        "目标计划的起止时间及对应交付物"
+      ]
+    },
+    {
+      "tab": "组织架构",
+      "decision": "驳回",
+      "summary": "组织架构评审未通过，因组织成员信息不完整，关键字段缺失导致无法确认项目团队构成。尽管接口返回了部分人员数据，但项目页面中成员列表为空，且无开发模式信息，违反规则 R037 的核心要求。",
+      "item_results": [
+        {
+          "rule_id": "R037",
+          "status": "fail",
+          "reason": "组织成员或开发模式不完整，项目页面中 members 列表为空，且 development_mode 字段未填写，无法验证组织架构完整性。",
+          "evidence": [
+            "project_page_document.organization.members: 所有成员对象的 name、role、level 等关键字段均为空",
+            "project_page_document.organization.development_mode: 字段为空",
+            "project_snapshot_excerpt.endpoints.organization.data_preview: 虽存在人员数据，但项目页面中未体现有效成员信息"
+          ],
+          "suggestion": "请补充完整的组织架构信息，包括所有成员的姓名、角色、职级、任务计划与工作量，并明确填写开发模式（如：自研/外包/混合）"
+        }
+      ],
+      "risks": [
+        "组织架构不完整可能导致项目执行责任不清，影响资源调配与进度管控",
+        "缺乏开发模式定义可能引发后续成本与合同管理风险"
+      ],
+      "missing_information": [
+        "组织成员详细信息（姓名、角色、职级、任务计划、工作量）",
+        "开发模式（自研/外包/混合等）"
+      ]
+    },
+    {
+      "tab": "预算信息",
+      "decision": "驳回",
+      "summary": "预算信息评审未通过，因费用构成项存在关键缺陷，成本项、测算或采购方式不完整，导致R038规则失败。长尾费用与历史投入已标记为不需要，无需补充。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "fail",
+          "reason": "预算成本项、测算或采购方式不完整，仅列示了‘资源池人天外包’一项，未提供明细拆分、测算逻辑及采购方式说明。",
+          "evidence": [
+            "partInfos[0].content: 资源池人天外包",
+            "partInfos[0].calcMethod: 人天单价",
+            "partInfos[0].partPrice: 11799923.26",
+            "partInfos[0].supplierName: 阿里云计算有限公司,启明信息技术股份有限公司,北京中软国际信息技术有限公司,国际商业机器（中国）有限公司",
+            "budgetType: 研发资本化",
+            "applyTotalBudget: 11800000.0"
+          ],
+          "suggestion": "需补充费用构成的详细拆分表，包括各子项的测算依据、人天单价来源、工作量预估逻辑、采购方式说明（如公开招标/框架协议等），并明确是否涉及多供应商协同采购的合理性。"
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需评审。",
+          "evidence": [
+            "review_content: 不需要"
+          ],
+          "suggestion": "无需补充此项。"
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需评审。",
+          "evidence": [
+            "review_content: 不需要"
+          ],
+          "suggestion": "无需补充此项。"
+        }
+      ],
+      "risks": [
+        "费用构成不完整可能导致预算审批失真，影响项目执行阶段的资金管控与审计合规性。",
+        "缺乏测算逻辑和采购方式说明，存在潜在合规风险，尤其在涉及多家供应商时可能引发利益冲突质疑。"
+      ],
+      "missing_information": [
+        "费用构成明细拆分表（含子项分类、数量、单价、总价）",
+        "人天单价的测算依据或参考标准",
+        "采购方式说明（如是否采用框架协议、公开招标等）",
+        "多供应商协同采购的合理性说明"
+      ]
+    }
+  ]
+}

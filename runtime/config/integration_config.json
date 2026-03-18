@@ -1,0 +1,27 @@
+{
+  "base_url": "https://prod-itpm.faw.cn/itpmNew/gateway/sop-itpm-service",
+  "iam_url": "https://iwork.faw.cn/api-dev/dcp-base-sso/iamToken",
+  "token": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqaWFxaW5nYm8iLCJjcmVhdGVkIjoxNzczMzYzODUzODM4LCJpZG1pZCI6InUyMDE5MDA5MDEwIiwiZXhwIjoxNzczOTY4NjUzLCJ1cGtpZCI6IjE1NDQyMTcyOTgyNTYwMDMwNzQifQ.pRzd8RrxovMHOV6fw3XTd56wqT7AB473C9uI6ZabEr3YWZtk98htNlVqn32VlPm2ug4UL6bTTdnoBj2LA2Felw",
+  "jsessionid": "j9QX89zUdXq06ebkkGaVg9wpZnX5aakB_nJ7Al4g",
+  "use_iam": false,
+  "iam_full_url": "",
+  "iam_code": "",
+  "client_id": "faw_qfc_sso",
+  "secret_path": "iworkiamencrypt.client-secret",
+  "redirect_url": "https://iwork.faw.cn/api-dev/dcp-base-sso/iamToken",
+  "index_url": "https://iwork.faw.cn",
+  "tenant_id": "YQJT",
+  "system_id": "BA-0222",
+  "menu_code": "null",
+  "logo": "iworkiamencrypt",
+  "state": "123",
+  "timeout": 20,
+  "verify_ssl": false,
+  "ca_bundle_path": "",
+  "headers": {
+    "lang": "zh-cn",
+    "qfcsid": "MS-0701",
+    "qfctid": "YQJT",
+    "qfc-user-para": "{\"systemId\":\"MS-0701\",\"appCode\":\"MS-0701_APP_004\"}"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "api_name": "project_uploading",
+  "method": "GET",
+  "path": "/projectUploading/list/bb0e52ecfe304f7e80c911c57f487c71",
+  "payload": null,
+  "project_id": "bb0e52ecfe304f7e80c911c57f487c71",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+      "1": [
+        {
+          "id": 1966504164,
+          "projectId": "bb0e52ecfe304f7e80c911c57f487c71",
+          "title": "中国一汽OpenMind + 汽车行业大模型建设项目背景",
+          "content": "2025年行业大模型建设复盘：\n缺少稳定的数据管线：前期训练数据主要依赖于业务沉淀、钉钉文档、WPS文档、企业公文等静态来源，现有知识供给已接近上限\n缺少企业级的Agent运营将智能体“标准化”，需要通过海量的智能体对整个企业的运营进行判断",
+          "imageUrl": "f57fc83834b24ea78acbb772604e6c69",
+          "type": 1,
+          "creatorId": 89789,
+          "creator": "yuzihan3",
+          "createTime": "2026-03-04 15:30:09",
+          "modifierId": 89789,
+          "modifier": "yuzihan3",
+          "updateTime": "2026-03-12 10:59:19",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        },
+        {
+          "id": 1966504364,
+          "projectId": "bb0e52ecfe304f7e80c911c57f487c71",
+          "title": "中国一汽OpenMind + 汽车行业大模型建设项目背景",
+          "content": "OpenMind：用于企业语料收集、企业智能体标准化管理、通过行业大模型进行驱动的、支撑企业运营分析推演的企业级智能体家族。\n核心价值：\n• 通过Chat管线、Agent管线过程持续沉淀高质量数据  \n• 通过沉淀的高质量数据集持续升级行业大模型    \n• 通过“标准化“智能体支持企业运营分析\n最终输出：\n1、可持续沉淀数据的数据管线与高质量数据集\n2、统一标准的各领域智能体\n3、能够支撑企业运营分析的运营智能体",
+          "imageUrl": "689fe5fb6c2748e9839c5853ba85851d",
+          "type": 1,
+          "creatorId": 89789,
+          "creator": "yuzihan3",
+          "createTime": "2026-03-11 17:54:20",
+          "modifierId": 89789,
+          "modifier": "yuzihan3",
+          "updateTime": "2026-03-12 10:59:19",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "3": [
+        {
+          "id": 1966504367,
+          "projectId": "bb0e52ecfe304f7e80c911c57f487c71",
+          "title": "OpenMind架构方案",
+          "content": "OpenMind 围绕智能体“先评审后接入”的核心原则，通过数据工程→模型服务→Agent管理→应用部署的四层架构，构建企业级智能体的标准化孵化与规模化部署能力，最终实现\"运营-诊断-洞察\"的智能化闭环",
+          "imageUrl": "76b6cb8de28847dea9209e2177827fc8",
+          "type": 3,
+          "creatorId": 89789,
+          "creator": "yuzihan3",
+          "createTime": "2026-03-11 18:05:10",
+          "modifierId": 89789,
+          "modifier": "yuzihan3",
+          "updateTime": "2026-03-12 10:59:19",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "5": [
+        {
+          "id": 1966504392,
+          "projectId": "bb0e52ecfe304f7e80c911c57f487c71",
+          "title": null,
+          "content": null,
+          "imageUrl": null,
+          "type": 5,
+          "creatorId": 89789,
+          "creator": "yuzihan3",
+          "createTime": "2026-03-12 10:59:19",
+          "modifierId": null,
+          "modifier": null,
+          "updateTime": null,
+          "isDelete": 0,
+          "isInvolved": 1,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-12T13:36:01+08:00"
+}

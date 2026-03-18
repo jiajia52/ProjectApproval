@@ -1,0 +1,61 @@
+{
+  "api_name": "project_list",
+  "method": "POST",
+  "path": "/projectEstablishment/queryProjectEstablishmentList",
+  "payload": {
+    "pageNum": 1,
+    "pageSize": 20,
+    "projectName": "零部件工作台"
+  },
+  "project_id": "",
+  "result": {
+    "code": 0,
+    "message": "SUCCESS",
+    "data": {
+      "total": 1,
+      "dataList": [
+        {
+          "id": "98460b38c9a940deb7a1260c6a543cf9",
+          "projectBudgetId": "00cfa07542a94798ae6d31c9e0e5a090",
+          "projectName": "零部件工作台",
+          "serialNo": "DE-2601AYZ",
+          "belongTeamName": "IPD",
+          "belongDepartmentName": "中国第一汽车集团有限公司/中国第一汽车股份有限公司",
+          "projectLeaderId": "83995,84139",
+          "projectLeader": "姜莹 10109355,徐文犀 10199619",
+          "projectManager": "83995,84139",
+          "projectManagerId": null,
+          "projectManagerName": "姜莹 10109355,徐文犀 10199619",
+          "projectSourceName": "新增",
+          "projectFeeTypeName": "变革项目",
+          "projectLevelName": "S",
+          "proBudget": 12000000.0,
+          "proBudgetYear": 12000000.0,
+          "applyBudget": 11800000.0,
+          "applyBudgetYear": 11800000.0,
+          "projectStatus": "执行中",
+          "flowStatus": 5,
+          "flowStatusName": "已完成",
+          "processInstanceId": "40e614ca-06df-11f1-8089-6eab6fa51197",
+          "longTermFlag": "否",
+          "businessDepartment": "208",
+          "belongTeam": "1",
+          "projectSource": "2",
+          "projectFeeType": "1",
+          "projectLevel": "0",
+          "isBusiness": "1",
+          "isOld": null,
+          "createTime": null,
+          "ministryCouncilApprovalTime": "2026-02-28 14:18:16",
+          "projectChangeId": "88b7cef5e43a4a0691a67b737b73d6fa",
+          "projectLastVersion": "V1.0",
+          "projectStatusCode": "3",
+          "projectChangeNum": "0",
+          "modelVersion": "V2"
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-12T09:09:43+08:00"
+}

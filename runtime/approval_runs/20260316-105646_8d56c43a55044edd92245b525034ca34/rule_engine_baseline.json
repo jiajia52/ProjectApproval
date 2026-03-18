@@ -1,0 +1,319 @@
+{
+  "generated_at": "2026-03-16T02:56:46.763186+00:00",
+  "project_name": "旗新动力工作台适配项目-财务",
+  "category": "工作台开发及实施",
+  "decision": "驳回",
+  "score": 88,
+  "statistics": {
+    "total_rules": 29,
+    "passed_rules": 28,
+    "failed_rules": 1,
+    "critical_failures": 1,
+    "major_failures": 0,
+    "minor_failures": 0
+  },
+  "findings": [
+    {
+      "rule_id": "R035",
+      "review_point": "项目里程碑",
+      "review_content": "合同计划",
+      "status": "fail",
+      "severity": "critical",
+      "message": "合同计划缺少完整时间范围",
+      "suggestion": "具备合同计划",
+      "evidence": ""
+    }
+  ],
+  "rule_results": [
+    {
+      "rule_id": "R001",
+      "review_point": "项目背景",
+      "review_content": "背景标题",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目背景标题",
+      "evidence": "title:旗新动力工作台适配背景\ncontent:为落实集团公司“531”战略，构建 “研、产、供、销”全价值链的新能源动力总成科技公司，掌控动力总成核心技术，深度培育自研自制能力，加快拓展外部市场，经集团公司 2025 年第7 次董事会、2025 年第 20 期党委常委会研究决定，同意成立一汽旗新动力（长春）科技有限公司。新公司成立需要工作台适配实施，以支撑业务开展。\nimages:077f8829102f47f8b6952717ef16222b\nitems:title:旗新动力工作台适配背景\ncontent:为落实集团公司“531”战略，构建 “研、产、供、销”全价值链的新能源动力总成科技公司，掌控动力总成核心技术，深度培育自研自制能力，加快拓展外部市场，经集团公司 2025 年第7 次董事会、2025 年第 20 期党委常委会研究决定，同意成立一汽旗新动力（长春）科技有限公司。新公"
+    },
+    {
+      "rule_id": "R002",
+      "review_point": "项目背景",
+      "review_content": "背景内容",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目背景内容",
+      "evidence": "title:旗新动力工作台适配背景\ncontent:为落实集团公司“531”战略，构建 “研、产、供、销”全价值链的新能源动力总成科技公司，掌控动力总成核心技术，深度培育自研自制能力，加快拓展外部市场，经集团公司 2025 年第7 次董事会、2025 年第 20 期党委常委会研究决定，同意成立一汽旗新动力（长春）科技有限公司。新公司成立需要工作台适配实施，以支撑业务开展。\nimages:077f8829102f47f8b6952717ef16222b\nitems:title:旗新动力工作台适配背景\ncontent:为落实集团公司“531”战略，构建 “研、产、供、销”全价值链的新能源动力总成科技公司，掌控动力总成核心技术，深度培育自研自制能力，加快拓展外部市场，经集团公司 2025 年第7 次董事会、2025 年第 20 期党委常委会研究决定，同意成立一汽旗新动力（长春）科技有限公司。新公"
+    },
+    {
+      "rule_id": "R003",
+      "review_point": "项目背景",
+      "review_content": "背景图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备项目背景图片",
+      "evidence": "title:旗新动力工作台适配背景\ncontent:为落实集团公司“531”战略，构建 “研、产、供、销”全价值链的新能源动力总成科技公司，掌控动力总成核心技术，深度培育自研自制能力，加快拓展外部市场，经集团公司 2025 年第7 次董事会、2025 年第 20 期党委常委会研究决定，同意成立一汽旗新动力（长春）科技有限公司。新公司成立需要工作台适配实施，以支撑业务开展。\nimages:077f8829102f47f8b6952717ef16222b\nitems:title:旗新动力工作台适配背景\ncontent:为落实集团公司“531”战略，构建 “研、产、供、销”全价值链的新能源动力总成科技公司，掌控动力总成核心技术，深度培育自研自制能力，加快拓展外部市场，经集团公司 2025 年第7 次董事会、2025 年第 20 期党委常委会研究决定，同意成立一汽旗新动力（长春）科技有限公司。新公"
+    },
+    {
+      "rule_id": "R007",
+      "review_point": "项目OKR",
+      "review_content": "关联产品链",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备产品链",
+      "evidence": "大司库"
+    },
+    {
+      "rule_id": "R008",
+      "review_point": "项目OKR",
+      "review_content": "项目目标（O）",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备项目目标(O)",
+      "evidence": "完成旗新动力大司库平台适配"
+    },
+    {
+      "rule_id": "R009",
+      "review_point": "项目OKR",
+      "review_content": "战队OKR",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备战队OKR",
+      "evidence": "平台推广覆盖率85%"
+    },
+    {
+      "rule_id": "R010",
+      "review_point": "项目OKR",
+      "review_content": "关联产品",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备产品",
+      "evidence": "id:a29249b517eb4778b9944917f48f7cad\ngoalId:508470141c784dbb813b1b4afedaf607\nproductId:4ddbfe1a44a70471714b30a9a0efaf14\nproductName:大司库"
+    },
+    {
+      "rule_id": "R011",
+      "review_point": "项目OKR",
+      "review_content": "目标时间范围",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备目标时间范围",
+      "evidence": "start:2025-10-22\nend:2025-11-30"
+    },
+    {
+      "rule_id": "R012",
+      "review_point": "项目OKR",
+      "review_content": "关键成果（KR）",
+      "status": "pass",
+      "severity": "critical",
+      "message": "OKR材料完整",
+      "suggestion": "具备关键成果(KR)",
+      "evidence": "id:6ee9c4e7f69d4ca1bb6adb2b6846f545\ngoalId:508470141c784dbb813b1b4afedaf607\norderNum:1\nkeyResult:完成旗新动力大司库实施上线，支撑业务开展，及集团大司库推广任务"
+    },
+    {
+      "rule_id": "R013",
+      "review_point": "项目范围",
+      "review_content": "业务流程",
+      "status": "pass",
+      "severity": "critical",
+      "message": "范围材料完整",
+      "suggestion": "具备业务流程",
+      "evidence": "id:17540202\nprojectId:8d56c43a55044edd92245b525034ca34\ncode:FRP090404P001CWB\nname:财务核算管理\nlevel:L3\ncreated:2025-10-14 09:55:55\nprocessVersion:7\ncreateTime:2025-10-17 09:28:34\nupdateTime:2025-10-17 09:28:34\nisDelete:0\ntype:迭代优化\nprocessId:c4a5883ad8858b286bb6035da11b6476\nprocessVersionId:54499174f68089dbf8a7b06cf2412799\nprocessCreatedTime:2025-10-14 09:55:55\nproductName:大司库\nproductId:4ddbfe1a44a70471"
+    },
+    {
+      "rule_id": "R015",
+      "review_point": "系统范围",
+      "review_content": "微服务",
+      "status": "pass",
+      "severity": "critical",
+      "message": "系统范围完整",
+      "suggestion": "具备微服务（二者一种）",
+      "evidence": "id:4956887\ncode:FA-0101\nname:EOM工作台\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:EOM工作台\napplicationSystemName:EOM工作台\nappName:EOM工作台\ntype:system\ntypeName:系统\nownerName:tanzefu\nsystemLeader:tanzefu\nid:4956888\ncode:FA-0401\nname:财务共享中心\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:财务共享中心\napplicationSystemName:财务共享中心\nappName:财务共享中心\ntype:system\ntypeName:系统\nownerName:tanzefu\nsystemLeader:tanz"
+    },
+    {
+      "rule_id": "R016",
+      "review_point": "系统范围",
+      "review_content": "微应用",
+      "status": "pass",
+      "severity": "critical",
+      "message": "系统范围完整",
+      "suggestion": "具备微应用（二者一种）",
+      "evidence": "id:4956887\ncode:FA-0101\nname:EOM工作台\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:EOM工作台\napplicationSystemName:EOM工作台\nappName:EOM工作台\ntype:system\ntypeName:系统\nownerName:tanzefu\nsystemLeader:tanzefu\nid:4956888\ncode:FA-0401\nname:财务共享中心\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:财务共享中心\napplicationSystemName:财务共享中心\nappName:财务共享中心\ntype:system\ntypeName:系统\nownerName:tanzefu\nsystemLeader:tanz"
+    },
+    {
+      "rule_id": "R017",
+      "review_point": "项目方案",
+      "review_content": "项目方案",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目方案标题",
+      "evidence": "title:旗新动力大司库平台适配实施方案\ncontent:在红旗现有环境新增旗新动力公司，设置动力总成工厂，成本核算过程中，按照公司、工厂进行区分成本核算；财务核算增加新账套D63\nimages:da8c312f7b754fbf835c819f41e35ee7\n9cbcefa1967e4235b3612c0172061dfe\nitems:title:旗新动力大司库平台适配实施方案\ncontent:在红旗现有环境新增旗新动力公司，设置动力总成工厂，成本核算过程中，按照公司、工厂进行区分成本核算；财务核算增加新账套D63\nimages:da8c312f7b754fbf835c819f41e35ee7\ntitle:预算构成及标准\ncontent:通过大司库SaaS部署，实施费用标准为大司库（核算、共享、税务）30万，费控4.8万\nimages:9cbcefa1967e4235b3612c017"
+    },
+    {
+      "rule_id": "R018",
+      "review_point": "项目方案",
+      "review_content": "方案内容",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目方案内容",
+      "evidence": "title:旗新动力大司库平台适配实施方案\ncontent:在红旗现有环境新增旗新动力公司，设置动力总成工厂，成本核算过程中，按照公司、工厂进行区分成本核算；财务核算增加新账套D63\nimages:da8c312f7b754fbf835c819f41e35ee7\n9cbcefa1967e4235b3612c0172061dfe\nitems:title:旗新动力大司库平台适配实施方案\ncontent:在红旗现有环境新增旗新动力公司，设置动力总成工厂，成本核算过程中，按照公司、工厂进行区分成本核算；财务核算增加新账套D63\nimages:da8c312f7b754fbf835c819f41e35ee7\ntitle:预算构成及标准\ncontent:通过大司库SaaS部署，实施费用标准为大司库（核算、共享、税务）30万，费控4.8万\nimages:9cbcefa1967e4235b3612c017"
+    },
+    {
+      "rule_id": "R019",
+      "review_point": "项目方案",
+      "review_content": "方案图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备项目方案图片",
+      "evidence": "title:旗新动力大司库平台适配实施方案\ncontent:在红旗现有环境新增旗新动力公司，设置动力总成工厂，成本核算过程中，按照公司、工厂进行区分成本核算；财务核算增加新账套D63\nimages:da8c312f7b754fbf835c819f41e35ee7\n9cbcefa1967e4235b3612c0172061dfe\nitems:title:旗新动力大司库平台适配实施方案\ncontent:在红旗现有环境新增旗新动力公司，设置动力总成工厂，成本核算过程中，按照公司、工厂进行区分成本核算；财务核算增加新账套D63\nimages:da8c312f7b754fbf835c819f41e35ee7\ntitle:预算构成及标准\ncontent:通过大司库SaaS部署，实施费用标准为大司库（核算、共享、税务）30万，费控4.8万\nimages:9cbcefa1967e4235b3612c017"
+    },
+    {
+      "rule_id": "R026",
+      "review_point": "专业领域评审",
+      "review_content": "业务架构评审",
+      "status": "pass",
+      "severity": "major",
+      "message": "架构评审材料完整",
+      "suggestion": "具备业务架构评审",
+      "evidence": "summary:product_count:1\nbusiness_process_count:2\nbusiness_unit_count:0\nbusiness_object_count:2\nitems:id:49\nindex:3\ndimension:业务架构\ncheckpoint:三板斧\nvalue_model:明确客户，价值主张、灯塔目标\nreviewer:金鑫禹、陈泓霏\nconclusion:通过\ndescription:通过\nid:79\nindex:4\ndimension:业务架构\ncheckpoint:指标树\nvalue_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。\nreviewer:金鑫禹、陈泓霏\nconclusion:通过\ndescription:通过\nid:109\nindex:5\ndimension:业务架构\ncheckpoint:流程架构\nvalue_m"
+    },
+    {
+      "rule_id": "R027",
+      "review_point": "专业领域评审",
+      "review_content": "数据架构评审",
+      "status": "pass",
+      "severity": "major",
+      "message": "架构评审材料完整",
+      "suggestion": "具备数据架构评审",
+      "evidence": "summary:flow_dimension_count:1\ncheck_point_count:2\nitems:id:169\nindex:1\ndimension:信息架构\ncheckpoint:业务对象\nvalue_model:业务对象完整、准确\n1、明确本项目所有的业务对象，完整覆盖业务流程\n12、在信息架构中心注册\nreviewer:许明月、谢文慧\nconclusion:通过\ndescription:通过\nid:199\nindex:2\ndimension:信息架构\ncheckpoint:概念模型\nvalue_model:规划本领域数据及其他领域数据的关系\n1.不允许非法创建业务对象\n2.与外部业务对象间联通关系不允许缺失\n12.在信息架构中心注册\nreviewer:许明月、谢文慧\nconclusion:通过\ndescription:通过\nmessage:参数异常 已合并业务架构中的信"
+    },
+    {
+      "rule_id": "R028",
+      "review_point": "专业领域评审",
+      "review_content": "技术架构评审",
+      "status": "pass",
+      "severity": "major",
+      "message": "架构评审材料完整",
+      "suggestion": "具备技术架构评审",
+      "evidence": "summary:app_count:0\nservice_count:13\ntype:fallback\nitems:id:d81ff45dd33f0a3ba3f0fc0b23cf5e0c\nindex:1\ndimension:技术架构\ncheckpoint:资产业务管理\nvalue_model:系统编码: FA-0101；负责人: 金志欣\nconclusion:通过\ndescription:支持员工日常办公使用，且 DAU<200\nid:bdd53ea3fac5e15104c63a5062eccc5a\nindex:2\ndimension:技术架构\ncheckpoint:应收应付管理\nvalue_model:系统编码: FA-0101；负责人: 谭泽府\nconclusion:通过\ndescription:支持员工日常办公使用，且 DAU<200\nid:0595d7470be5a95ebcc822"
+    },
+    {
+      "rule_id": "R029",
+      "review_point": "专业领域评审",
+      "review_content": "安全架构评审",
+      "status": "pass",
+      "severity": "major",
+      "message": "架构评审材料完整",
+      "suggestion": "具备安全架构评审",
+      "evidence": "summary:app_count:4\nservice_count:5\nsafety_level:3\nitems:id:review-1\nindex:1\ndimension:安全架构\ncheckpoint:威胁建模\nvalue_model:依据系统建设功能，识别安全风险点，输出系统建设安全需求，涵盖代码安全、访问控制安全、个人信息保护、会话安全、密码安全、通信安全、\nreviewer:赵元宁\nconclusion:不通过\nid:review-2\nindex:2\ndimension:安全架构\ncheckpoint:应用安全等级判定\nvalue_model:明确建设系统的安全等级及等保等级\nreviewer:赵元宁\nconclusion:不通过\nmessage:操作成功\nlink_label:前往应用开发安全平台查看"
+    },
+    {
+      "rule_id": "R030",
+      "review_point": "能力（竞争）模型",
+      "review_content": "能力（竞争）模型",
+      "status": "pass",
+      "severity": "major",
+      "message": "TAM 模型指标完整",
+      "suggestion": "具备能力模型（三者有一）",
+      "evidence": "id:491\nbenefit_department:[]"
+    },
+    {
+      "rule_id": "R031",
+      "review_point": "结果（财务/客户）模型",
+      "review_content": "结果（财务/客户）模型",
+      "status": "pass",
+      "severity": "major",
+      "message": "TAM 模型指标完整",
+      "suggestion": "具备结果模型（三者有一）",
+      "evidence": "id:492\nbenefit_department:[]"
+    },
+    {
+      "rule_id": "R032",
+      "review_point": "管理体系模型",
+      "review_content": "管理体系模型",
+      "status": "pass",
+      "severity": "major",
+      "message": "TAM 模型指标完整",
+      "suggestion": "具备管理模型（三者有一）",
+      "evidence": "id:493\ntitle:旗新动力财务核算数字化适配完成率\ncurrent_state:0\nbenefit_department:[\"19\",\"20\",\"379\"]\ntarget_3y:2026:100%\n2027:100%\n2028:100%\ntarget_2026:100%\ntarget_2027:100%\ntarget_2028:100%\ncalculation_basis:旗新财务工作台适配上线，支撑旗新公司单独核算，完成旗新公司财务核算体系和集团统一"
+    },
+    {
+      "rule_id": "R034",
+      "review_point": "项目里程碑",
+      "review_content": "立项计划",
+      "status": "pass",
+      "severity": "critical",
+      "message": "里程碑计划完整",
+      "suggestion": "具备立项计划",
+      "evidence": "start:2025-10-17\nend:2025-10-31\ntitle:立项计划"
+    },
+    {
+      "rule_id": "R035",
+      "review_point": "项目里程碑",
+      "review_content": "合同计划",
+      "status": "fail",
+      "severity": "critical",
+      "message": "合同计划缺少完整时间范围",
+      "suggestion": "具备合同计划",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R036",
+      "review_point": "项目里程碑",
+      "review_content": "目标计划",
+      "status": "pass",
+      "severity": "critical",
+      "message": "里程碑计划完整",
+      "suggestion": "具备目标计划",
+      "evidence": "start:2025-10-22\nend:2025-11-30\ntitle:完成旗新动力大司库平台适配"
+    },
+    {
+      "rule_id": "R037",
+      "review_point": "组织架构",
+      "review_content": "组织架构",
+      "status": "pass",
+      "severity": "critical",
+      "message": "组织架构完整",
+      "suggestion": "具备组织架构",
+      "evidence": "development_mode:混合开发\nmembers:name:谭泽府\nemployee_id:10001037\nrole:项目管理工程师\nlevel:T6\ndepartment:企业运营部\ndepartment_id:24\nteam_name:旗新动力工作台适配项目-财务敏捷小队\nworkload:42\nplan_start_date:2025-10-20\nplan_end_date:2025-11-30\nparty_type:own\nflag:0\nname:资源池\nrole:实施工程师\nlevel:T6\nteam_name:旗新动力工作台适配项目-财务敏捷小队\nworkload:26\nplan_start_date:2025-10-25\nplan_end_date:2025-11-19\nparty_type:third\nflag:1\nname:资源池\nrole:实施工程师\nlev"
+    },
+    {
+      "rule_id": "R038",
+      "review_point": "费用构成",
+      "review_content": "费用构成",
+      "status": "pass",
+      "severity": "critical",
+      "message": "费用构成完整",
+      "suggestion": "具备费用构成",
+      "evidence": "name:旗新大司库实施费\namount:328301.88\nbudget_subject:YSGC-FA-2508AFY-1\ncalculation:按任务单人天计算\npurchase_mode:开发资源池"
+    },
+    {
+      "rule_id": "R039",
+      "review_point": "长尾费用",
+      "review_content": "不需要",
+      "status": "pass",
+      "severity": "minor",
+      "message": "该规则标记为不需要。",
+      "suggestion": "无需补充此项。",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R040",
+      "review_point": "历史投入",
+      "review_content": "不需要",
+      "status": "pass",
+      "severity": "minor",
+      "message": "该规则标记为不需要。",
+      "suggestion": "无需补充此项。",
+      "evidence": ""
+    }
+  ]
+}

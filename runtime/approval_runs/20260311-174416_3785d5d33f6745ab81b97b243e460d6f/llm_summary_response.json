@@ -1,0 +1,245 @@
+{
+  "raw": {
+    "id": "chatcmpl-9a65230b-0bd1-9819-b55e-5108f4ecff81",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总评：因核心战略对齐要素（项目OKR）严重缺失，包括关联产品链、项目目标（O）、战队OKR、关联产品、目标时间范围及关键成果（KR），且系统范围中微应用未定义，构成多项关键失败。同时，专业领域评审缺失业务、数据、技术与安全架构评审，TAM模型三项子模型均无完整指标，项目里程碑目标计划缺少时间范围，组织架构成员信息为空，预算费用构成缺乏测算依据与采购方式说明，导致整体审批不通过。所有问题均已在分段结论中明确，总体结论与基线失败项一致。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供关联产品链信息，无法判断项目在产品体系中的定位\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"补充关联产品链\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"fail\",\n      \"reason\": \"缺少明确的项目目标（O），无法评估战略对齐度\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"明确并填写项目目标（O）\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"fail\",\n      \"reason\": \"战队OKR未填写，缺乏团队级目标支撑\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"补充战队OKR\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"fail\",\n      \"reason\": \"未列出具体关联产品，影响资源协同与依赖管理\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"明确关联产品\"\n    },\n    {\n      \"rule_id\": \"R011\",\n      \"status\": \"fail\",\n      \"reason\": \"目标时间范围缺失，无法评估项目周期与交付节奏\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"补充目标时间范围\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"fail\",\n      \"reason\": \"关键成果（KR）未定义，无法衡量项目成功标准\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"设定可量化的关键成果（KR）\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"fail\",\n      \"reason\": \"微应用字段为空，且无任何微应用信息，系统范围不完整\",\n      \"evidence\": [\n        \"microapps:[]\"\n      ],\n      \"suggestion\": \"补充微应用信息\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"fail\",\n      \"reason\": \"业务架构评审字段为空，未提供任何评审内容或依据，无法确认是否满足业务架构设计要求。\",\n      \"evidence\": [\n        \"architecture_reviews.business\"\n      ],\n      \"suggestion\": \"请补充业务架构评审文档，明确项目与战略管控云、技术开发云等核心业务流程的关联性及设计合理性。\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"fail\",\n      \"reason\": \"数据架构评审字段为空，未提供数据模型、数据流向、数据治理等相关评审材料。\",\n      \"evidence\": [\n        \"architecture_reviews.data\"\n      ],\n      \"suggestion\": \"请补充数据架构评审材料，包括数据源、数据流、主数据管理策略等内容。\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"fail\",\n      \"reason\": \"技术架构评审字段为空，未提供系统技术选型、部署架构、接口规范等评审信息。\",\n      \"evidence\": [\n        \"architecture_reviews.technology\"\n      ],\n      \"suggestion\": \"请补充技术架构评审文档，说明所用技术栈、微服务划分、系统集成方式等关键设计。\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"fail\",\n      \"reason\": \"安全架构评审字段为空，未提供安全设计、权限控制、数据加密、合规性等评审内容。\",\n      \"evidence\": [\n        \"architecture_reviews.security\"\n      ],\n      \"suggestion\": \"请补充安全架构评审材料，涵盖访问控制、审计日志、漏洞防护、等保合规等要点。\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"fail\",\n      \"reason\": \"能力（竞争）模型缺少完整指标，未提供任何可验证的能力维度或竞争性评估内容。\",\n      \"evidence\": [\n        \"tam_models.capability: []\",\n        \"rule_engine_baseline.rule_results[0].message: '能力（竞争）模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充能力（竞争）模型的至少一项完整指标，如技术能力、研发效率提升、工具集成度等量化或定性评估内容。\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"fail\",\n      \"reason\": \"结果（财务/客户）模型缺少完整指标，未体现项目预期财务收益或客户价值实现路径。\",\n      \"evidence\": [\n        \"tam_models.result: []\",\n        \"rule_engine_baseline.rule_results[1].message: '结果（财务/客户）模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充结果（财务/客户）模型的至少一项完整指标，如成本节约金额、用户满意度提升、交付周期缩短等可衡量成果。\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"fail\",\n      \"reason\": \"管理体系模型缺少完整指标，未说明项目管理机制、风险控制措施或持续运营保障方案。\",\n      \"evidence\": [\n        \"tam_models.management: []\",\n        \"rule_engine_baseline.rule_results[2].message: '管理体系模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充管理体系模型的至少一项完整指标，如项目治理结构、变更管理流程、运维SLA机制等。\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"fail\",\n      \"reason\": \"目标计划未提供起止时间范围，缺少关键时间信息，无法评估目标达成可行性。\",\n      \"evidence\": [\n        \"target_plan: {}\"\n      ],\n      \"suggestion\": \"请补充目标计划的起始与结束时间，确保与项目周期匹配，并明确交付成果或关键成果节点。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"fail\",\n      \"reason\": \"组织成员或开发模式不完整，项目中未填写任何成员信息，且接口返回人员信息列表为空，无法确认组织架构有效性。\",\n      \"evidence\": [\n        \"project_page_document.organization.members: []\",\n        \"project_snapshot_excerpt.endpoints.organization.message: '查询自有人员信息列表成功: 人员信息列表为空！'\"\n      ],\n      \"suggestion\": \"请补充完整的组织架构信息，包括至少一名成员的姓名、角色、级别、任务计划与工作量分配，并确保系统中存在有效人员数据。\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"fail\",\n      \"reason\": \"费用构成不完整，未提供成本项的测算逻辑或采购方式说明，无法验证合理性。\",\n      \"evidence\": [\n        \"partInfos[0].content: '产品许可费'\",\n        \"partInfos[0].calcMethod: '供应商报价'\",\n        \"budgetType: '研发费用化'\",\n        \"proBudget: 2016000.0\",\n        \"applyTotalBudget: 2016000.0\"\n      ],\n      \"suggestion\": \"需补充费用构成的详细测算依据（如单价、数量、服务周期等）及采购方式合理性说明，确保可审计性。\"\n    }\n  ],\n  \"risks\": [\n    \"项目目标与关键成果缺失，导致无法评估项目价值与成效\",\n    \"系统范围中微应用缺失，影响系统集成与运维责任划分\",\n    \"业务全景图与管理模型内容空洞，难以支撑跨部门协作与治理机制建立\",\n    \"缺乏架构评审可能导致系统设计不匹配业务需求，存在后续实施风险\",\n    \"未进行安全架构评审可能带来数据泄露、权限越权等安全隐患\",\n    \"缺少数据与技术架构评审将影响系统可维护性、扩展性和集成能力\",\n    \"项目缺乏可验证的竞争力与价值产出依据，存在投入产出不明确的风险\",\n    \"无管理体系支撑，可能导致后续运维不可控或责任不清\",\n    \"整体TAM模型缺失，无法支撑项目立项合理性与长期可持续性判断\",\n    \"目标计划缺失时间范围可能导致项目进度失控，影响整体交付时效与资源调度\",\n    \"组织架构缺失可能导致项目执行责任不清，影响研发资源调配与进度管控\",\n    \"费用构成缺乏测算依据，存在预算虚高或不可控风险\",\n    \"仅依赖供应商报价而无内部评估机制，可能影响成本控制与合规性\"\n  ],\n  \"missing_information\": [\n    \"关联产品链\",\n    \"项目目标（O）\",\n    \"战队OKR\",\n    \"关联产品\",\n    \"目标时间范围\",\n    \"关键成果（KR）\",\n    \"微应用信息\",\n    \"业务全景图实质性内容\",\n    \"管理模型实质性内容\",\n    \"业务架构评审文档\",\n    \"数据架构评审文档\",\n    \"技术架构评审文档\",\n    \"安全架构评审文档\",\n    \"能力（竞争）模型的具体指标与评估依据\",\n    \"结果（财务/客户）模型的量化成果或价值体现\",\n    \"管理体系模型的组织、流程与保障机制\",\n    \"目标计划的开始时间\",\n    \"目标计划的结束时间\",\n    \"目标计划对应的交付成果或关键成果说明\",\n    \"组织成员信息（姓名、角色、级别、任务计划、工作量）\",\n    \"开发模式信息\",\n    \"费用构成的详细测算过程（如数量、单价、服务周期等）\",\n    \"采购方式（供应商报价）的合理性说明或比价记录\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1773222305,
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 2230,
+      "prompt_tokens": 5523,
+      "total_tokens": 7753,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总评：因核心战略对齐要素（项目OKR）严重缺失，包括关联产品链、项目目标（O）、战队OKR、关联产品、目标时间范围及关键成果（KR），且系统范围中微应用未定义，构成多项关键失败。同时，专业领域评审缺失业务、数据、技术与安全架构评审，TAM模型三项子模型均无完整指标，项目里程碑目标计划缺少时间范围，组织架构成员信息为空，预算费用构成缺乏测算依据与采购方式说明，导致整体审批不通过。所有问题均已在分段结论中明确，总体结论与基线失败项一致。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供关联产品链信息，无法判断项目在产品体系中的定位\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"补充关联产品链\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"fail\",\n      \"reason\": \"缺少明确的项目目标（O），无法评估战略对齐度\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"明确并填写项目目标（O）\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"fail\",\n      \"reason\": \"战队OKR未填写，缺乏团队级目标支撑\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"补充战队OKR\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"fail\",\n      \"reason\": \"未列出具体关联产品，影响资源协同与依赖管理\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"明确关联产品\"\n    },\n    {\n      \"rule_id\": \"R011\",\n      \"status\": \"fail\",\n      \"reason\": \"目标时间范围缺失，无法评估项目周期与交付节奏\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"补充目标时间范围\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"fail\",\n      \"reason\": \"关键成果（KR）未定义，无法衡量项目成功标准\",\n      \"evidence\": [\n        \"\"\n      ],\n      \"suggestion\": \"设定可量化的关键成果（KR）\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"fail\",\n      \"reason\": \"微应用字段为空，且无任何微应用信息，系统范围不完整\",\n      \"evidence\": [\n        \"microapps:[]\"\n      ],\n      \"suggestion\": \"补充微应用信息\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"fail\",\n      \"reason\": \"业务架构评审字段为空，未提供任何评审内容或依据，无法确认是否满足业务架构设计要求。\",\n      \"evidence\": [\n        \"architecture_reviews.business\"\n      ],\n      \"suggestion\": \"请补充业务架构评审文档，明确项目与战略管控云、技术开发云等核心业务流程的关联性及设计合理性。\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"fail\",\n      \"reason\": \"数据架构评审字段为空，未提供数据模型、数据流向、数据治理等相关评审材料。\",\n      \"evidence\": [\n        \"architecture_reviews.data\"\n      ],\n      \"suggestion\": \"请补充数据架构评审材料，包括数据源、数据流、主数据管理策略等内容。\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"fail\",\n      \"reason\": \"技术架构评审字段为空，未提供系统技术选型、部署架构、接口规范等评审信息。\",\n      \"evidence\": [\n        \"architecture_reviews.technology\"\n      ],\n      \"suggestion\": \"请补充技术架构评审文档，说明所用技术栈、微服务划分、系统集成方式等关键设计。\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"fail\",\n      \"reason\": \"安全架构评审字段为空，未提供安全设计、权限控制、数据加密、合规性等评审内容。\",\n      \"evidence\": [\n        \"architecture_reviews.security\"\n      ],\n      \"suggestion\": \"请补充安全架构评审材料，涵盖访问控制、审计日志、漏洞防护、等保合规等要点。\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"fail\",\n      \"reason\": \"能力（竞争）模型缺少完整指标，未提供任何可验证的能力维度或竞争性评估内容。\",\n      \"evidence\": [\n        \"tam_models.capability: []\",\n        \"rule_engine_baseline.rule_results[0].message: '能力（竞争）模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充能力（竞争）模型的至少一项完整指标，如技术能力、研发效率提升、工具集成度等量化或定性评估内容。\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"fail\",\n      \"reason\": \"结果（财务/客户）模型缺少完整指标，未体现项目预期财务收益或客户价值实现路径。\",\n      \"evidence\": [\n        \"tam_models.result: []\",\n        \"rule_engine_baseline.rule_results[1].message: '结果（财务/客户）模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充结果（财务/客户）模型的至少一项完整指标，如成本节约金额、用户满意度提升、交付周期缩短等可衡量成果。\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"fail\",\n      \"reason\": \"管理体系模型缺少完整指标，未说明项目管理机制、风险控制措施或持续运营保障方案。\",\n      \"evidence\": [\n        \"tam_models.management: []\",\n        \"rule_engine_baseline.rule_results[2].message: '管理体系模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充管理体系模型的至少一项完整指标，如项目治理结构、变更管理流程、运维SLA机制等。\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"fail\",\n      \"reason\": \"目标计划未提供起止时间范围，缺少关键时间信息，无法评估目标达成可行性。\",\n      \"evidence\": [\n        \"target_plan: {}\"\n      ],\n      \"suggestion\": \"请补充目标计划的起始与结束时间，确保与项目周期匹配，并明确交付成果或关键成果节点。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"fail\",\n      \"reason\": \"组织成员或开发模式不完整，项目中未填写任何成员信息，且接口返回人员信息列表为空，无法确认组织架构有效性。\",\n      \"evidence\": [\n        \"project_page_document.organization.members: []\",\n        \"project_snapshot_excerpt.endpoints.organization.message: '查询自有人员信息列表成功: 人员信息列表为空！'\"\n      ],\n      \"suggestion\": \"请补充完整的组织架构信息，包括至少一名成员的姓名、角色、级别、任务计划与工作量分配，并确保系统中存在有效人员数据。\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"fail\",\n      \"reason\": \"费用构成不完整，未提供成本项的测算逻辑或采购方式说明，无法验证合理性。\",\n      \"evidence\": [\n        \"partInfos[0].content: '产品许可费'\",\n        \"partInfos[0].calcMethod: '供应商报价'\",\n        \"budgetType: '研发费用化'\",\n        \"proBudget: 2016000.0\",\n        \"applyTotalBudget: 2016000.0\"\n      ],\n      \"suggestion\": \"需补充费用构成的详细测算依据（如单价、数量、服务周期等）及采购方式合理性说明，确保可审计性。\"\n    }\n  ],\n  \"risks\": [\n    \"项目目标与关键成果缺失，导致无法评估项目价值与成效\",\n    \"系统范围中微应用缺失，影响系统集成与运维责任划分\",\n    \"业务全景图与管理模型内容空洞，难以支撑跨部门协作与治理机制建立\",\n    \"缺乏架构评审可能导致系统设计不匹配业务需求，存在后续实施风险\",\n    \"未进行安全架构评审可能带来数据泄露、权限越权等安全隐患\",\n    \"缺少数据与技术架构评审将影响系统可维护性、扩展性和集成能力\",\n    \"项目缺乏可验证的竞争力与价值产出依据，存在投入产出不明确的风险\",\n    \"无管理体系支撑，可能导致后续运维不可控或责任不清\",\n    \"整体TAM模型缺失，无法支撑项目立项合理性与长期可持续性判断\",\n    \"目标计划缺失时间范围可能导致项目进度失控，影响整体交付时效与资源调度\",\n    \"组织架构缺失可能导致项目执行责任不清，影响研发资源调配与进度管控\",\n    \"费用构成缺乏测算依据，存在预算虚高或不可控风险\",\n    \"仅依赖供应商报价而无内部评估机制，可能影响成本控制与合规性\"\n  ],\n  \"missing_information\": [\n    \"关联产品链\",\n    \"项目目标（O）\",\n    \"战队OKR\",\n    \"关联产品\",\n    \"目标时间范围\",\n    \"关键成果（KR）\",\n    \"微应用信息\",\n    \"业务全景图实质性内容\",\n    \"管理模型实质性内容\",\n    \"业务架构评审文档\",\n    \"数据架构评审文档\",\n    \"技术架构评审文档\",\n    \"安全架构评审文档\",\n    \"能力（竞争）模型的具体指标与评估依据\",\n    \"结果（财务/客户）模型的量化成果或价值体现\",\n    \"管理体系模型的组织、流程与保障机制\",\n    \"目标计划的开始时间\",\n    \"目标计划的结束时间\",\n    \"目标计划对应的交付成果或关键成果说明\",\n    \"组织成员信息（姓名、角色、级别、任务计划、工作量）\",\n    \"开发模式信息\",\n    \"费用构成的详细测算过程（如数量、单价、服务周期等）\",\n    \"采购方式（供应商报价）的合理性说明或比价记录\"\n  ]\n}",
+  "json": {
+    "decision": "驳回",
+    "summary": "项目总评：因核心战略对齐要素（项目OKR）严重缺失，包括关联产品链、项目目标（O）、战队OKR、关联产品、目标时间范围及关键成果（KR），且系统范围中微应用未定义，构成多项关键失败。同时，专业领域评审缺失业务、数据、技术与安全架构评审，TAM模型三项子模型均无完整指标，项目里程碑目标计划缺少时间范围，组织架构成员信息为空，预算费用构成缺乏测算依据与采购方式说明，导致整体审批不通过。所有问题均已在分段结论中明确，总体结论与基线失败项一致。",
+    "item_results": [
+      {
+        "rule_id": "R007",
+        "status": "fail",
+        "reason": "未提供关联产品链信息，无法判断项目在产品体系中的定位",
+        "evidence": [
+          ""
+        ],
+        "suggestion": "补充关联产品链"
+      },
+      {
+        "rule_id": "R008",
+        "status": "fail",
+        "reason": "缺少明确的项目目标（O），无法评估战略对齐度",
+        "evidence": [
+          ""
+        ],
+        "suggestion": "明确并填写项目目标（O）"
+      },
+      {
+        "rule_id": "R009",
+        "status": "fail",
+        "reason": "战队OKR未填写，缺乏团队级目标支撑",
+        "evidence": [
+          ""
+        ],
+        "suggestion": "补充战队OKR"
+      },
+      {
+        "rule_id": "R010",
+        "status": "fail",
+        "reason": "未列出具体关联产品，影响资源协同与依赖管理",
+        "evidence": [
+          ""
+        ],
+        "suggestion": "明确关联产品"
+      },
+      {
+        "rule_id": "R011",
+        "status": "fail",
+        "reason": "目标时间范围缺失，无法评估项目周期与交付节奏",
+        "evidence": [
+          ""
+        ],
+        "suggestion": "补充目标时间范围"
+      },
+      {
+        "rule_id": "R012",
+        "status": "fail",
+        "reason": "关键成果（KR）未定义，无法衡量项目成功标准",
+        "evidence": [
+          ""
+        ],
+        "suggestion": "设定可量化的关键成果（KR）"
+      },
+      {
+        "rule_id": "R016",
+        "status": "fail",
+        "reason": "微应用字段为空，且无任何微应用信息，系统范围不完整",
+        "evidence": [
+          "microapps:[]"
+        ],
+        "suggestion": "补充微应用信息"
+      },
+      {
+        "rule_id": "R026",
+        "status": "fail",
+        "reason": "业务架构评审字段为空，未提供任何评审内容或依据，无法确认是否满足业务架构设计要求。",
+        "evidence": [
+          "architecture_reviews.business"
+        ],
+        "suggestion": "请补充业务架构评审文档，明确项目与战略管控云、技术开发云等核心业务流程的关联性及设计合理性。"
+      },
+      {
+        "rule_id": "R027",
+        "status": "fail",
+        "reason": "数据架构评审字段为空，未提供数据模型、数据流向、数据治理等相关评审材料。",
+        "evidence": [
+          "architecture_reviews.data"
+        ],
+        "suggestion": "请补充数据架构评审材料，包括数据源、数据流、主数据管理策略等内容。"
+      },
+      {
+        "rule_id": "R028",
+        "status": "fail",
+        "reason": "技术架构评审字段为空，未提供系统技术选型、部署架构、接口规范等评审信息。",
+        "evidence": [
+          "architecture_reviews.technology"
+        ],
+        "suggestion": "请补充技术架构评审文档，说明所用技术栈、微服务划分、系统集成方式等关键设计。"
+      },
+      {
+        "rule_id": "R029",
+        "status": "fail",
+        "reason": "安全架构评审字段为空，未提供安全设计、权限控制、数据加密、合规性等评审内容。",
+        "evidence": [
+          "architecture_reviews.security"
+        ],
+        "suggestion": "请补充安全架构评审材料，涵盖访问控制、审计日志、漏洞防护、等保合规等要点。"
+      },
+      {
+        "rule_id": "R030",
+        "status": "fail",
+        "reason": "能力（竞争）模型缺少完整指标，未提供任何可验证的能力维度或竞争性评估内容。",
+        "evidence": [
+          "tam_models.capability: []",
+          "rule_engine_baseline.rule_results[0].message: '能力（竞争）模型缺少完整指标。'"
+        ],
+        "suggestion": "需补充能力（竞争）模型的至少一项完整指标，如技术能力、研发效率提升、工具集成度等量化或定性评估内容。"
+      },
+      {
+        "rule_id": "R031",
+        "status": "fail",
+        "reason": "结果（财务/客户）模型缺少完整指标，未体现项目预期财务收益或客户价值实现路径。",
+        "evidence": [
+          "tam_models.result: []",
+          "rule_engine_baseline.rule_results[1].message: '结果（财务/客户）模型缺少完整指标。'"
+        ],
+        "suggestion": "需补充结果（财务/客户）模型的至少一项完整指标，如成本节约金额、用户满意度提升、交付周期缩短等可衡量成果。"
+      },
+      {
+        "rule_id": "R032",
+        "status": "fail",
+        "reason": "管理体系模型缺少完整指标，未说明项目管理机制、风险控制措施或持续运营保障方案。",
+        "evidence": [
+          "tam_models.management: []",
+          "rule_engine_baseline.rule_results[2].message: '管理体系模型缺少完整指标。'"
+        ],
+        "suggestion": "需补充管理体系模型的至少一项完整指标，如项目治理结构、变更管理流程、运维SLA机制等。"
+      },
+      {
+        "rule_id": "R036",
+        "status": "fail",
+        "reason": "目标计划未提供起止时间范围，缺少关键时间信息，无法评估目标达成可行性。",
+        "evidence": [
+          "target_plan: {}"
+        ],
+        "suggestion": "请补充目标计划的起始与结束时间，确保与项目周期匹配，并明确交付成果或关键成果节点。"
+      },
+      {
+        "rule_id": "R037",
+        "status": "fail",
+        "reason": "组织成员或开发模式不完整，项目中未填写任何成员信息，且接口返回人员信息列表为空，无法确认组织架构有效性。",
+        "evidence": [
+          "project_page_document.organization.members: []",
+          "project_snapshot_excerpt.endpoints.organization.message: '查询自有人员信息列表成功: 人员信息列表为空！'"
+        ],
+        "suggestion": "请补充完整的组织架构信息，包括至少一名成员的姓名、角色、级别、任务计划与工作量分配，并确保系统中存在有效人员数据。"
+      },
+      {
+        "rule_id": "R038",
+        "status": "fail",
+        "reason": "费用构成不完整，未提供成本项的测算逻辑或采购方式说明，无法验证合理性。",
+        "evidence": [
+          "partInfos[0].content: '产品许可费'",
+          "partInfos[0].calcMethod: '供应商报价'",
+          "budgetType: '研发费用化'",
+          "proBudget: 2016000.0",
+          "applyTotalBudget: 2016000.0"
+        ],
+        "suggestion": "需补充费用构成的详细测算依据（如单价、数量、服务周期等）及采购方式合理性说明，确保可审计性。"
+      }
+    ],
+    "risks": [
+      "项目目标与关键成果缺失，导致无法评估项目价值与成效",
+      "系统范围中微应用缺失，影响系统集成与运维责任划分",
+      "业务全景图与管理模型内容空洞，难以支撑跨部门协作与治理机制建立",
+      "缺乏架构评审可能导致系统设计不匹配业务需求，存在后续实施风险",
+      "未进行安全架构评审可能带来数据泄露、权限越权等安全隐患",
+      "缺少数据与技术架构评审将影响系统可维护性、扩展性和集成能力",
+      "项目缺乏可验证的竞争力与价值产出依据，存在投入产出不明确的风险",
+      "无管理体系支撑，可能导致后续运维不可控或责任不清",
+      "整体TAM模型缺失，无法支撑项目立项合理性与长期可持续性判断",
+      "目标计划缺失时间范围可能导致项目进度失控，影响整体交付时效与资源调度",
+      "组织架构缺失可能导致项目执行责任不清，影响研发资源调配与进度管控",
+      "费用构成缺乏测算依据，存在预算虚高或不可控风险",
+      "仅依赖供应商报价而无内部评估机制，可能影响成本控制与合规性"
+    ],
+    "missing_information": [
+      "关联产品链",
+      "项目目标（O）",
+      "战队OKR",
+      "关联产品",
+      "目标时间范围",
+      "关键成果（KR）",
+      "微应用信息",
+      "业务全景图实质性内容",
+      "管理模型实质性内容",
+      "业务架构评审文档",
+      "数据架构评审文档",
+      "技术架构评审文档",
+      "安全架构评审文档",
+      "能力（竞争）模型的具体指标与评估依据",
+      "结果（财务/客户）模型的量化成果或价值体现",
+      "管理体系模型的组织、流程与保障机制",
+      "目标计划的开始时间",
+      "目标计划的结束时间",
+      "目标计划对应的交付成果或关键成果说明",
+      "组织成员信息（姓名、角色、级别、任务计划、工作量）",
+      "开发模式信息",
+      "费用构成的详细测算过程（如数量、单价、服务周期等）",
+      "采购方式（供应商报价）的合理性说明或比价记录"
+    ]
+  },
+  "used_response_format": true
+}

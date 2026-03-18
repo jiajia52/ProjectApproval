@@ -1,0 +1,130 @@
+{
+  "api_name": "project_uploading",
+  "method": "GET",
+  "path": "/projectUploading/list/bbc2e43dc1da491ea2503229e6e90563",
+  "payload": null,
+  "project_id": "bbc2e43dc1da491ea2503229e6e90563",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+      "1": [
+        {
+          "id": 1966503707,
+          "projectId": "bbc2e43dc1da491ea2503229e6e90563",
+          "title": "项目背景",
+          "content": "落实W577文件要求，深化信创检查工作，规范信创信息收集，确保真替真用和信息准确",
+          "imageUrl": "6a6572aa5c574bfc87b5e2c44fd6cec8",
+          "type": 1,
+          "creatorId": 84284,
+          "creator": "zhangxinglong6",
+          "createTime": "2025-12-15 12:43:16",
+          "modifierId": 84284,
+          "modifier": "zhangxinglong6",
+          "updateTime": "2025-12-15 14:06:51",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "2": [
+        {
+          "id": 1966503708,
+          "projectId": "bbc2e43dc1da491ea2503229e6e90563",
+          "title": "项目目标",
+          "content": "建立信创检查机制，通过使用专业检查和信息收集工具，获取应用系统和基础设施的实际替代情况，并通过检查和整改，确保全集团信创工作的高质量落地，确保真替真用，稳步提升全集团数字化自主可控和安全可靠水平",
+          "imageUrl": "1e97c72d2b9e425f9b14b0043d02d3cd",
+          "type": 2,
+          "creatorId": 84284,
+          "creator": "zhangxinglong6",
+          "createTime": "2025-12-15 12:43:16",
+          "modifierId": 84284,
+          "modifier": "zhangxinglong6",
+          "updateTime": "2025-12-15 14:06:51",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": 1,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "3": [
+        {
+          "id": 1966503709,
+          "projectId": "bbc2e43dc1da491ea2503229e6e90563",
+          "title": "工具软件包括辅助检查和信息收集两个模块",
+          "content": "基于国家标准扫描全量服务器CPU、操作系统、数据库使用情况，应用系统替代情况。\n基于国家标准扫描全量终端替代情况、激活情况、活跃度、软件使用情况。\n基于国家标准收集信创相关的基础设施和应用系统基础数据。\n软件根据国家最新标准定期更新迭代。",
+          "imageUrl": "73ea6786519746038e6ddafaebb85bcf",
+          "type": 3,
+          "creatorId": 84284,
+          "creator": "zhangxinglong6",
+          "createTime": "2025-12-15 12:43:16",
+          "modifierId": 84284,
+          "modifier": "zhangxinglong6",
+          "updateTime": "2025-12-15 14:06:51",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "4": [
+        {
+          "id": 1966503710,
+          "projectId": "bbc2e43dc1da491ea2503229e6e90563",
+          "title": "信创工作全景图",
+          "content": "一个目标、四个指标、两个支撑",
+          "imageUrl": "a41ee83d3cfa4b4a9a9da73593b0c347",
+          "type": 4,
+          "creatorId": 84284,
+          "creator": "zhangxinglong6",
+          "createTime": "2025-12-15 12:43:16",
+          "modifierId": 84284,
+          "modifier": "zhangxinglong6",
+          "updateTime": "2025-12-15 14:06:51",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "5": [
+        {
+          "id": 1966503711,
+          "projectId": "bbc2e43dc1da491ea2503229e6e90563",
+          "title": "信创工作管理模型",
+          "content": "管理维度：集团总部和分子公司\n管理内容：基础设施和应用系统",
+          "imageUrl": "b8fac9795a5848eb8b290e5ff7f7074e",
+          "type": 5,
+          "creatorId": 84284,
+          "creator": "zhangxinglong6",
+          "createTime": "2025-12-15 12:43:16",
+          "modifierId": 84284,
+          "modifier": "zhangxinglong6",
+          "updateTime": "2025-12-15 14:06:51",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:31:07+08:00"
+}

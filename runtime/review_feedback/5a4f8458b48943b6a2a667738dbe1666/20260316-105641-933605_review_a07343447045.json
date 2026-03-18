@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "project_id": "5a4f8458b48943b6a2a667738dbe1666",
+  "project_name": "印章管理中心电子印章服务采购",
+  "category": "工作台开发及实施",
+  "saved_at": "2026-03-16T10:56:41+08:00",
+  "feedback": {
+    "decision": "驳回",
+    "summary": "规则引擎基线结果为驳回。1条规则未通过，主要问题：R037: 组织成员或开发模式不完整。",
+    "risks": [
+      "组织成员或开发模式不完整"
+    ],
+    "missingInformation": [
+      "组织架构",
+      "具备组织架构"
+    ],
+    "positiveEvidence": [],
+    "projectCommentary": "",
+    "baseline": {
+      "generated_at": "2026-03-16T02:54:44.117317+00:00",
+      "project_name": "印章管理中心电子印章服务采购",
+      "category": "系统产品购买",
+      "decision": "驳回",
+      "score": 88,
+      "statistics": {
+        "total_rules": 29,
+        "passed_rules": 28,
+        "failed_rules": 1,
+        "critical_failures": 1,
+        "major_failures": 0,
+        "minor_failures": 0
+      },
+      "findings": [
+        {
+          "rule_id": "R037",
+          "review_point": "组织架构",
+          "review_content": "组织架构",
+          "status": "fail",
+          "severity": "critical",
+          "message": "组织成员或开发模式不完整",
+          "suggestion": "具备组织架构",
+          "evidence": ""
+        }
+      ],
+      "rule_results": [
+        {
+          "rule_id": "R001",
+          "review_point": "项目背景",
+          "review_content": "背景标题",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目背景标题",
+          "evidence": "title:印章线上管理\ncontent:提高安全性：\n防伪和防篡改：通过数字签名和区块链技术，确保印章的防伪和防篡改，减少伪造和盗用的风险。\n访问控制：实施严格的访问控制和权限管理，确保只有授权人员才能使用印章。\n安全存储：采用加密技术和安全存储方案，保护印章数据的安全。\n提升效率：\n自动化审批：实现印章使用的在线审批流程，减少手工操作，提高工作效率。\n批量处理：支持批量处理印章请求，提高处理速度和准确性。\n增强透明度：\n使用记录：详细记录每一次印章的使用情况，包括时间、地点、使用人等信息，便于审计和追溯。\n降低成本：\n减少人工成本：通过自动化管理，减少人工干预，降低管理成本。\n符合法规要求：\n合规性：确保印章管理符合国家相关法律法规的要求，避免法律风险。\n标准化管理：建立统一的印章管理标准和流程，提高管理的规范性和一致性。\nimages:c7fe3e0f749e45f6aea10ff3"
+        },
+        {
+          "rule_id": "R002",
+          "review_point": "项目背景",
+          "review_content": "背景内容",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目背景内容",
+          "evidence": "title:印章线上管理\ncontent:提高安全性：\n防伪和防篡改：通过数字签名和区块链技术，确保印章的防伪和防篡改，减少伪造和盗用的风险。\n访问控制：实施严格的访问控制和权限管理，确保只有授权人员才能使用印章。\n安全存储：采用加密技术和安全存储方案，保护印章数据的安全。\n提升效率：\n自动化审批：实现印章使用的在线审批流程，减少手工操作，提高工作效率。\n批量处理：支持批量处理印章请求，提高处理速度和准确性。\n增强透明度：\n使用记录：详细记录每一次印章的使用情况，包括时间、地点、使用人等信息，便于审计和追溯。\n降低成本：\n减少人工成本：通过自动化管理，减少人工干预，降低管理成本。\n符合法规要求：\n合规性：确保印章管理符合国家相关法律法规的要求，避免法律风险。\n标准化管理：建立统一的印章管理标准和流程，提高管理的规范性和一致性。\nimages:c7fe3e0f749e45f6aea10ff3"
+        },
+        {
+          "rule_id": "R003",
+          "review_point": "项目背景",
+          "review_content": "背景图片",
+          "status": "pass",
+          "severity": "minor",
+          "message": "材料完整",
+          "suggestion": "具备项目背景图片",
+          "evidence": "title:印章线上管理\ncontent:提高安全性：\n防伪和防篡改：通过数字签名和区块链技术，确保印章的防伪和防篡改，减少伪造和盗用的风险。\n访问控制：实施严格的访问控制和权限管理，确保只有授权人员才能使用印章。\n安全存储：采用加密技术和安全存储方案，保护印章数据的安全。\n提升效率：\n自动化审批：实现印章使用的在线审批流程，减少手工操作，提高工作效率。\n批量处理：支持批量处理印章请求，提高处理速度和准确性。\n增强透明度：\n使用记录：详细记录每一次印章的使用情况，包括时间、地点、使用人等信息，便于审计和追溯。\n降低成本：\n减少人工成本：通过自动化管理，减少人工干预，降低管理成本。\n符合法规要求：\n合规性：确保印章管理符合国家相关法律法规的要求，避免法律风险。\n标准化管理：建立统一的印章管理标准和流程，提高管理的规范性和一致性。\nimages:c7fe3e0f749e45f6aea10ff3"
+        },
+        {
+          "rule_id": "R007",
+          "review_point": "项目OKR",
+          "review_content": "关联产品链",
+          "status": "pass",
+          "severity": "critical",
+          "message": "OKR材料完整",
+          "suggestion": "具备产品链",
+          "evidence": "企业架构管理平台"
+        },
+        {
+          "rule_id": "R008",
+          "review_point": "项目OKR",
+          "review_content": "项目目标（O）",
+          "status": "pass",
+          "severity": "critical",
+          "message": "OKR材料完整",
+          "suggestion": "具备项目目标(O)",
+          "evidence": "招标采购电子签章软件模块并集成到印章中心，实现印章刻制、审批、使用、销毁全生命周期在线管理功能"
+        },
+        {
+          "rule_id": "R009",
+          "review_point": "项目OKR",
+          "review_content": "战队OKR",
+          "status": "pass",
+          "severity": "critical",
+          "message": "OKR材料完整",
+          "suggestion": "具备战队OKR",
+          "evidence": "完成印章管理中心业务设计和系统功能上线"
+        },
+        {
+          "rule_id": "R010",
+          "review_point": "项目OKR",
+          "review_content": "关联产品",
+          "status": "pass",
+          "severity": "critical",
+          "message": "OKR材料完整",
+          "suggestion": "具备产品",
+          "evidence": "id:983202d72fe34ea0a3488b61b3270f14\ngoalId:7f1a481b734b4d349515d9a7d40dcbf9\nproductId:0f41625e71f7d62a031236d2138d5e2f\nproductName:企业架构管理平台"
+        },
+        {
+          "rule_id": "R011",
+          "review_point": "项目OKR",
+          "review_content": "目标时间范围",
+          "status": "pass",
+          "severity": "critical",
+          "message": "OKR材料完整",
+          "suggestion": "具备目标时间范围",
+          "evidence": "start:2025-10-31\nend:2026-09-15"
+        },
+        {
+          "rule_id": "R012",
+          "review_point": "项目OKR",
+          "review_content": "关键成果（KR）",
+          "status": "pass",
+          "severity": "critical",
+          "message": "OKR材料完整",
+          "suggestion": "具备关键成果(KR)",
+          "evidence": "id:2f1a998e90b14012a22f958d1618fad3\ngoalId:7f1a481b734b4d349515d9a7d40dcbf9\norderNum:1\nkeyResult:实现印章刻制、审批、使用、销毁全生命周期在线管理功能"
+        },
+        {
+          "rule_id": "R013",
+          "review_point": "项目范围",
+          "review_content": "业务流程",
+          "status": "pass",
+          "severity": "critical",
+          "message": "范围材料完整",
+          "suggestion": "具备业务流程",
+          "evidence": "id:17541235\nprojectId:5a4f8458b48943b6a2a667738dbe1666\ncode:POM07070201M001TXB\nname:印章刻制流程\nlevel:L4\ncreated:2025-10-30 14:17:29\nprocessVersion:9\ncreateTime:2025-10-30 14:55:36\nupdateTime:2025-10-30 14:55:36\nisDelete:0\nroleName:公司印章管理员, 印章保管员\ntype:首次上线\nprocessId:d767efeefe32b6f07a62994f84aa671e\nprocessVersionId:6e9868eeeb4602d1d200d654a6120e78\nprocessCreatedTime:2025-10-30 14:17:29\nproductName:企业架构"
+        },
+        {
+          "rule_id": "R015",
+          "review_point": "系统范围",
+          "review_content": "微服务",
+          "status": "pass",
+          "severity": "critical",
+          "message": "系统范围完整",
+          "suggestion": "具备微服务（二者一种）",
+          "evidence": "id:4957221\ncode:MS-0219\nname:组织资源服务平台\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:组织资源服务平台\napplicationSystemName:组织资源服务平台\nappName:组织资源服务平台\ntype:system\ntypeName:系统\nownerName:fengjixiang\nsystemLeader:fengjixiang"
+        },
+        {
+          "rule_id": "R016",
+          "review_point": "系统范围",
+          "review_content": "微应用",
+          "status": "pass",
+          "severity": "critical",
+          "message": "系统范围完整",
+          "suggestion": "具备微应用（二者一种）",
+          "evidence": "id:4957221\ncode:MS-0219\nname:组织资源服务平台\ngroupName:系统\nrootName:系统\ncategoryName:系统\nsystemName:组织资源服务平台\napplicationSystemName:组织资源服务平台\nappName:组织资源服务平台\ntype:system\ntypeName:系统\nownerName:fengjixiang\nsystemLeader:fengjixiang"
+        },
+        {
+          "rule_id": "R017",
+          "review_point": "项目方案",
+          "review_content": "项目方案",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目方案标题",
+          "evidence": "title:印章全流程数字化管控\ncontent:实现从申请、审批、使用到销毁的全流程数字化管控\nimages:e17196e27ed7483f8aeab761bce99715\n9ba479d789914dcd95bd5e77d264aae0\n819817eb5b5e4e11906d3a3c625d4ddc\n0cea8812262544c49498ea6893e7ca64\n1427f6e1ecd14c329792dfe417967f8a\nab9a685b3bb44983b4520e5234cba489\nea55cd0c6008466b9828c13172fcda0d\n576058c49c1142bb907a9ecdce027aed\nd44624bcfbb34b11908f784d575ea432\nitems:title:印章全流程数字化管控\ncontent:实现从申请、审批、使用到销毁的全"
+        },
+        {
+          "rule_id": "R018",
+          "review_point": "项目方案",
+          "review_content": "方案内容",
+          "status": "pass",
+          "severity": "critical",
+          "message": "材料完整",
+          "suggestion": "具备项目方案内容",
+          "evidence": "title:印章全流程数字化管控\ncontent:实现从申请、审批、使用到销毁的全流程数字化管控\nimages:e17196e27ed7483f8aeab761bce99715\n9ba479d789914dcd95bd5e77d264aae0\n819817eb5b5e4e11906d3a3c625d4ddc\n0cea8812262544c49498ea6893e7ca64\n1427f6e1ecd14c329792dfe417967f8a\nab9a685b3bb44983b4520e5234cba489\nea55cd0c6008466b9828c13172fcda0d\n576058c49c1142bb907a9ecdce027aed\nd44624bcfbb34b11908f784d575ea432\nitems:title:印章全流程数字化管控\ncontent:实现从申请、审批、使用到销毁的全"
+        },
+        {
+          "rule_id": "R019",
+          "review_point": "项目方案",
+          "review_content": "方案图片",
+          "status": "pass",
+          "severity": "minor",
+          "message": "材料完整",
+          "suggestion": "具备项目方案图片",
+          "evidence": "title:印章全流程数字化管控\ncontent:实现从申请、审批、使用到销毁的全流程数字化管控\nimages:e17196e27ed7483f8aeab761bce99715\n9ba479d789914dcd95bd5e77d264aae0\n819817eb5b5e4e11906d3a3c625d4ddc\n0cea8812262544c49498ea6893e7ca64\n1427f6e1ecd14c329792dfe417967f8a\nab9a685b3bb44983b4520e5234cba489\nea55cd0c6008466b9828c13172fcda0d\n576058c49c1142bb907a9ecdce027aed\nd44624bcfbb34b11908f784d575ea432\nitems:title:印章全流程数字化管控\ncontent:实现从申请、审批、使用到销毁的全"
+        },
+        {
+          "rule_id": "R026",
+          "review_point": "专业领域评审",
+          "review_content": "业务架构评审",
+          "status": "pass",
+          "severity": "major",
+          "message": "架构评审材料完整",
+          "suggestion": "具备业务架构评审",
+          "evidence": "summary:product_count:1\nbusiness_process_count:3\nbusiness_unit_count:8\nbusiness_object_count:2\nitems:id:12\nindex:3\ndimension:业务架构\ncheckpoint:三板斧\nvalue_model:明确客户，价值主张、灯塔目标\nreviewer:金鑫禹、陈泓霏\nconclusion:通过\ndescription:通过\nid:11\nindex:4\ndimension:业务架构\ncheckpoint:指标树\nvalue_model:基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。\nreviewer:金鑫禹、陈泓霏\nconclusion:通过\ndescription:通过\nid:10\nindex:5\ndimension:业务架构\ncheckpoint:流程架构\nvalue_mo"
+        },
+        {
+          "rule_id": "R027",
+          "review_point": "专业领域评审",
+          "review_content": "数据架构评审",
+          "status": "pass",
+          "severity": "major",
+          "message": "架构评审材料完整",
+          "suggestion": "具备数据架构评审",
+          "evidence": "summary:flow_dimension_count:1\ncheck_point_count:2\nitems:id:8\nindex:1\ndimension:信息架构\ncheckpoint:业务对象\nvalue_model:业务对象完整、准确\n1、明确本项目所有的业务对象，完整覆盖业务流程\n2、在信息架构中心注册\nreviewer:许明月、谢文慧\nconclusion:通过\ndescription:通过\nid:7\nindex:2\ndimension:信息架构\ncheckpoint:概念模型\nvalue_model:规划本领域数据及其他领域数据的关系\n1.不允许非法创建业务对象\n2.与外部业务对象间联通关系不允许缺失\n2.在信息架构中心注册\nreviewer:许明月、谢文慧\nconclusion:通过\ndescription:通过\nmessage:参数异常 已合并业务架构中的信息架构内容。"
+        },
+        {
+          "rule_id": "R028",
+          "review_point": "专业领域评审",
+          "review_content": "技术架构评审",
+          "status": "pass",
+          "severity": "major",
+          "message": "架构评审材料完整",
+          "suggestion": "具备技术架构评审",
+          "evidence": "summary:app_count:0\nservice_count:2\ntype:fallback\nitems:id:8e606468a6898159d8157fe99703b36e\nindex:1\ndimension:技术架构\ncheckpoint:印章管理中心\nvalue_model:系统编码: MS-0219；负责人: 冯吉祥\nconclusion:通过\ndescription:1.属于运营、配置、管理类且DAU<200\n2.支撑集团总部业务部门员工使用且用户规模未达到B级\nid:382d10e77410eb8dc14479b11991c4fd\nindex:2\ndimension:技术架构\ncheckpoint:印章管理\nvalue_model:系统编码: MS-0219；负责人: 王籽今\nconclusion:通过\ndescription:1.属于运营、配置、管理类且DAU<200"
+        },
+        {
+          "rule_id": "R029",
+          "review_point": "专业领域评审",
+          "review_content": "安全架构评审",
+          "status": "pass",
+          "severity": "major",
+          "message": "架构评审材料完整",
+          "suggestion": "具备安全架构评审",
+          "evidence": "summary:app_count:1\nservice_count:1\nitems:id:review-1\nindex:1\ndimension:安全架构\ncheckpoint:应用安全等级判定\nvalue_model:明确购买产品的安全等级及等保等级\nconclusion:2\nmessage:操作成功\nlink_label:前往应用开发安全平台查看"
+        },
+        {
+          "rule_id": "R030",
+          "review_point": "能力（竞争）模型",
+          "review_content": "能力（竞争）模型",
+          "status": "pass",
+          "severity": "major",
+          "message": "TAM 模型指标完整",
+          "suggestion": "具备能力模型（三者有一）",
+          "evidence": "id:488\nbenefit_department:[]"
+        },
+        {
+          "rule_id": "R031",
+          "review_point": "结果（财务/客户）模型",
+          "review_content": "结果（财务/客户）模型",
+          "status": "pass",
+          "severity": "major",
+          "message": "TAM 模型指标完整",
+          "suggestion": "具备结果模型（三者有一）",
+          "evidence": "id:489\nbenefit_department:[]"
+        },
+        {
+          "rule_id": "R032",
+          "review_point": "管理体系模型",
+          "review_content": "管理体系模型",
+          "status": "pass",
+          "severity": "major",
+          "message": "TAM 模型指标完整",
+          "suggestion": "具备管理模型（三者有一）",
+          "evidence": "id:490\ntitle:印章管理上线率\ncurrent_state:线下管理\nbenefit_department:[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"191\",\"192\",\"12\",\"193\",\"208\"]\ntarget_3y:2026:90%\n2027:100%\n2028:100%\ntarget_2026:90%\ntarget_2027:100%\ntarget_2028:100%\ncalculation_basis:印章上线率"
+        },
+        {
+          "rule_id": "R034",
+          "review_point": "项目里程碑",
+          "review_content": "立项计划",
+          "status": "pass",
+          "severity": "critical",
+          "message": "里程碑计划完整",
+          "suggestion": "具备立项计划",
+          "evidence": "start:2025-11-07\nend:2025-11-20\ntitle:立项计划"
+        },
+        {
+          "rule_id": "R035",
+          "review_point": "项目里程碑",
+          "review_content": "合同计划",
+          "status": "pass",
+          "severity": "critical",
+          "message": "里程碑计划完整",
+          "suggestion": "具备合同计划",
+          "evidence": "start:2025-11-13\nend:2026-03-09\ntitle:合同签订计划"
+        },
+        {
+          "rule_id": "R036",
+          "review_point": "项目里程碑",
+          "review_content": "目标计划",
+          "status": "pass",
+          "severity": "critical",
+          "message": "里程碑计划完整",
+          "suggestion": "具备目标计划",
+          "evidence": "start:2025-12-31\nend:2026-09-15\ntitle:招标采购电子签章软件模块并集成到印章中心，实现印章刻制、审批、使用、销毁全生命周期在线管理功能"
+        },
+        {
+          "rule_id": "R037",
+          "review_point": "组织架构",
+          "review_content": "组织架构",
+          "status": "fail",
+          "severity": "critical",
+          "message": "组织成员或开发模式不完整",
+          "suggestion": "具备组织架构",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R038",
+          "review_point": "费用构成",
+          "review_content": "费用构成",
+          "status": "pass",
+          "severity": "critical",
+          "message": "费用构成完整",
+          "suggestion": "具备费用构成",
+          "evidence": "name:软件购买和集成部署、定制化开发、当年流量打包费用\namount:1000000.0\nbudget_subject:YSGC-PA-2507KFY-1\ncalculation:闭口合同\npurchase_mode:招标采购"
+        },
+        {
+          "rule_id": "R039",
+          "review_point": "长尾费用",
+          "review_content": "不需要",
+          "status": "pass",
+          "severity": "minor",
+          "message": "该规则标记为不需要。",
+          "suggestion": "无需补充此项。",
+          "evidence": ""
+        },
+        {
+          "rule_id": "R040",
+          "review_point": "历史投入",
+          "review_content": "不需要",
+          "status": "pass",
+          "severity": "minor",
+          "message": "该规则标记为不需要。",
+          "suggestion": "无需补充此项。",
+          "evidence": ""
+        }
+      ]
+    },
+    "segments": [
+      {
+        "tab": "项目内容",
+        "decision": "通过",
+        "summary": "项目内容评审已通过。所有关键规则均满足要求，背景、目标、方案、范围等核心要素完整且一致，无实质性缺失或矛盾。系统范围与业务流程关联清晰，OKR与项目目标对齐，材料齐全。"
+      },
+      {
+        "tab": "专业领域评审",
+        "decision": "通过",
+        "summary": "本次专业领域评审中，业务架构、数据架构、技术架构及安全架构四项子评审均已完成且结论为通过，规则基线已确认材料完整，符合审批要求。"
+      },
+      {
+        "tab": "TAM模型评审",
+        "decision": "通过",
+        "summary": "TAM模型评审中，三项子规则均满足要求。能力（竞争）模型、结果（财务/客户）模型、管理体系模型均具备完整指标，且管理体系模型已明确目标、现状、受益部门及计算依据，符合审批标准。"
+      },
+      {
+        "tab": "项目里程碑",
+        "decision": "通过",
+        "summary": "项目里程碑各阶段计划完整，时间安排合理，目标明确，符合审批要求。"
+      },
+      {
+        "tab": "组织架构",
+        "decision": "驳回",
+        "summary": "因组织架构中缺少成员信息且开发模式为空，不符合组织架构完整性要求，导致评审未通过。"
+      },
+      {
+        "tab": "预算信息",
+        "decision": "通过",
+        "summary": "预算信息评审通过。费用构成完整，长尾费用与历史投入均无需提供，符合规则基线要求。"
+      }
+    ],
+    "runDir": "E:\\pyproject\\ProjectApproval\\runtime\\approval_runs\\20260316-105444_5a4f8458b48943b6a2a667738dbe1666",
+    "approvalGeneratedAt": "2026-03-16T10:56:41",
+    "updatedAt": "2026-03-16T02:56:41.291Z",
+    "error": ""
+  }
+}

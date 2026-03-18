@@ -1,0 +1,289 @@
+{
+  "generated_at": "2026-03-17T07:48:43.589718+00:00",
+  "project_name": "2025年研发工具软件订阅升级-STAR CCM+-例行升级",
+  "category": "研发工具订阅许可升级",
+  "decision": "驳回",
+  "score": 64,
+  "statistics": {
+    "total_rules": 24,
+    "passed_rules": 21,
+    "failed_rules": 3,
+    "critical_failures": 3,
+    "major_failures": 0,
+    "minor_failures": 0
+  },
+  "findings": [
+    {
+      "rule_id": "R021",
+      "review_point": "业务全景图",
+      "review_content": "业务全景图内容",
+      "status": "fail",
+      "severity": "critical",
+      "message": "业务全景图内容过短，无法支撑审批。",
+      "suggestion": "具备业务全景图内容",
+      "evidence": "title:研发业务全景图\ncontent:研发业务全景图\nimages:c2199929904c40a18a4d9ed3ed1e4a1d\nitems:title:研发业务全景图\ncontent:研发业务全景图\nimages:c2199929904c40a18a4d9ed3ed1e4a1d"
+    },
+    {
+      "rule_id": "R024",
+      "review_point": "年度管理模型",
+      "review_content": "管理模型内容",
+      "status": "fail",
+      "severity": "critical",
+      "message": "管理模型内容过短，无法支撑审批。",
+      "suggestion": "具备管理模型内容",
+      "evidence": "title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:514de63c3b7443f3afaaf50b46993547\nitems:title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:514de63c3b7443f3afaaf50b46993547"
+    },
+    {
+      "rule_id": "R036",
+      "review_point": "项目里程碑",
+      "review_content": "目标计划",
+      "status": "fail",
+      "severity": "critical",
+      "message": "目标计划缺少完整时间范围",
+      "suggestion": "具备目标计划",
+      "evidence": ""
+    }
+  ],
+  "rule_results": [
+    {
+      "rule_id": "R001",
+      "review_point": "项目背景",
+      "review_content": "背景标题",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目背景标题",
+      "evidence": "title:项目背景\ncontent:STAR-CCM+是一款集成的多物理仿真平台，可以进行热、流体、结构应力、噪声分析等，可以有效解决流动传热，流固耦合，有限元应力，气动噪声等多学科工程问题，同时还支持数百CPU大规模并行计算。在电机热性能设计过程中进行流体和温度场仿真，结合软件输出的标量场景图和报告，指导电机冷却结构优化设计，提高设计成功率。\n      1.能力提升：提升电机油冷仿真分析、电机水冷仿真分析、三维温度场仿真、冷却设计方案评价能力（第1象限）；\n      2.战略需求：STAR-CCM+是电机性能开发的必备工具，支撑红旗电驱产品热性能设计，加快开发效率，提升产品竞争力；\n      3.问题解决：通过软件购置开展电驱系统电机流体及热性能仿真分析，可以分析电机冷却结构内部的流动状态，指导冷却结构设计优化，可以有效评估电机内部各部件温度分布，规避电机部件过温导致的绝缘失效或"
+    },
+    {
+      "rule_id": "R002",
+      "review_point": "项目背景",
+      "review_content": "背景内容",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目背景内容",
+      "evidence": "title:项目背景\ncontent:STAR-CCM+是一款集成的多物理仿真平台，可以进行热、流体、结构应力、噪声分析等，可以有效解决流动传热，流固耦合，有限元应力，气动噪声等多学科工程问题，同时还支持数百CPU大规模并行计算。在电机热性能设计过程中进行流体和温度场仿真，结合软件输出的标量场景图和报告，指导电机冷却结构优化设计，提高设计成功率。\n      1.能力提升：提升电机油冷仿真分析、电机水冷仿真分析、三维温度场仿真、冷却设计方案评价能力（第1象限）；\n      2.战略需求：STAR-CCM+是电机性能开发的必备工具，支撑红旗电驱产品热性能设计，加快开发效率，提升产品竞争力；\n      3.问题解决：通过软件购置开展电驱系统电机流体及热性能仿真分析，可以分析电机冷却结构内部的流动状态，指导冷却结构设计优化，可以有效评估电机内部各部件温度分布，规避电机部件过温导致的绝缘失效或"
+    },
+    {
+      "rule_id": "R003",
+      "review_point": "项目背景",
+      "review_content": "背景图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备项目背景图片",
+      "evidence": "title:项目背景\ncontent:STAR-CCM+是一款集成的多物理仿真平台，可以进行热、流体、结构应力、噪声分析等，可以有效解决流动传热，流固耦合，有限元应力，气动噪声等多学科工程问题，同时还支持数百CPU大规模并行计算。在电机热性能设计过程中进行流体和温度场仿真，结合软件输出的标量场景图和报告，指导电机冷却结构优化设计，提高设计成功率。\n      1.能力提升：提升电机油冷仿真分析、电机水冷仿真分析、三维温度场仿真、冷却设计方案评价能力（第1象限）；\n      2.战略需求：STAR-CCM+是电机性能开发的必备工具，支撑红旗电驱产品热性能设计，加快开发效率，提升产品竞争力；\n      3.问题解决：通过软件购置开展电驱系统电机流体及热性能仿真分析，可以分析电机冷却结构内部的流动状态，指导冷却结构设计优化，可以有效评估电机内部各部件温度分布，规避电机部件过温导致的绝缘失效或"
+    },
+    {
+      "rule_id": "R004",
+      "review_point": "项目目标",
+      "review_content": "项目目标",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目目标标题",
+      "evidence": "title:项目目标\ncontent:能力提升：可提升多相流流体场优化设计、三维温度场分析、多物理场流固耦合分析、轴向磁通电机热性能设计与分析能力；\n效率提升：支撑18个业务单元，软件支持无限核数，通过HPC平台大规模并行运算，流体仿真工时由40天减少到15天。\nimages:64e5c00f4c3b4c29b8655deea8577fb8\nitems:title:项目目标\ncontent:能力提升：可提升多相流流体场优化设计、三维温度场分析、多物理场流固耦合分析、轴向磁通电机热性能设计与分析能力；\n效率提升：支撑18个业务单元，软件支持无限核数，通过HPC平台大规模并行运算，流体仿真工时由40天减少到15天。\nimages:64e5c00f4c3b4c29b8655deea8577fb8"
+    },
+    {
+      "rule_id": "R005",
+      "review_point": "项目目标",
+      "review_content": "项目内容",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目目标内容",
+      "evidence": "title:项目目标\ncontent:能力提升：可提升多相流流体场优化设计、三维温度场分析、多物理场流固耦合分析、轴向磁通电机热性能设计与分析能力；\n效率提升：支撑18个业务单元，软件支持无限核数，通过HPC平台大规模并行运算，流体仿真工时由40天减少到15天。\nimages:64e5c00f4c3b4c29b8655deea8577fb8\nitems:title:项目目标\ncontent:能力提升：可提升多相流流体场优化设计、三维温度场分析、多物理场流固耦合分析、轴向磁通电机热性能设计与分析能力；\n效率提升：支撑18个业务单元，软件支持无限核数，通过HPC平台大规模并行运算，流体仿真工时由40天减少到15天。\nimages:64e5c00f4c3b4c29b8655deea8577fb8"
+    },
+    {
+      "rule_id": "R006",
+      "review_point": "项目目标",
+      "review_content": "目标图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备项目目标图片",
+      "evidence": "title:项目目标\ncontent:能力提升：可提升多相流流体场优化设计、三维温度场分析、多物理场流固耦合分析、轴向磁通电机热性能设计与分析能力；\n效率提升：支撑18个业务单元，软件支持无限核数，通过HPC平台大规模并行运算，流体仿真工时由40天减少到15天。\nimages:64e5c00f4c3b4c29b8655deea8577fb8\nitems:title:项目目标\ncontent:能力提升：可提升多相流流体场优化设计、三维温度场分析、多物理场流固耦合分析、轴向磁通电机热性能设计与分析能力；\n效率提升：支撑18个业务单元，软件支持无限核数，通过HPC平台大规模并行运算，流体仿真工时由40天减少到15天。\nimages:64e5c00f4c3b4c29b8655deea8577fb8"
+    },
+    {
+      "rule_id": "R014",
+      "review_point": "项目范围",
+      "review_content": "内容列表",
+      "status": "pass",
+      "severity": "critical",
+      "message": "范围材料完整",
+      "suggestion": "具备内容",
+      "evidence": "id:397\nprojectId:fabb83fff06645ba9e231dce4e37f340\nsoftName:STAR CCM+\nreverageUseRate:70.0\nmaxUseRate:100.0\nsoftDesc:1.软件功能描述：STAR-CCM+是一款集成的多物理仿真平台，可以进行热、流体、结构应力、噪声分析等，可以有效解决流动传热，流固耦合，有限元应力，气动噪声等多学科工程问题，同时还支持数百CPU大规模并行计算。在电机热性能设计过程中进行流体和温度场仿真，结合软件输出的标量场景图和报告，指导电机冷却结构优化设计，提高设计成功率。\n2.软件购买情况：软件STAR-CCM+现有1套：电驱动开发部门于2024年购买过1套19.04版本。本次申请升级1套，服务期限为升级到2026年12月底。\n3.软件使用情况：      1. 使用部门：电驱动开发部\n      2. 软"
+    },
+    {
+      "rule_id": "R017",
+      "review_point": "项目方案",
+      "review_content": "项目方案",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目方案标题",
+      "evidence": "title:项目方案\ncontent:软件STAR-CCM+现有1套：电驱动开发部门于2024年购买过1套19.04版本。本次申请升级1套，服务期限为升级到2026年12月底。\nimages:50bed9d3fd1c4a6685c662a6ed556bb7\nitems:title:项目方案\ncontent:软件STAR-CCM+现有1套：电驱动开发部门于2024年购买过1套19.04版本。本次申请升级1套，服务期限为升级到2026年12月底。\nimages:50bed9d3fd1c4a6685c662a6ed556bb7"
+    },
+    {
+      "rule_id": "R018",
+      "review_point": "项目方案",
+      "review_content": "方案内容",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备项目方案内容",
+      "evidence": "title:项目方案\ncontent:软件STAR-CCM+现有1套：电驱动开发部门于2024年购买过1套19.04版本。本次申请升级1套，服务期限为升级到2026年12月底。\nimages:50bed9d3fd1c4a6685c662a6ed556bb7\nitems:title:项目方案\ncontent:软件STAR-CCM+现有1套：电驱动开发部门于2024年购买过1套19.04版本。本次申请升级1套，服务期限为升级到2026年12月底。\nimages:50bed9d3fd1c4a6685c662a6ed556bb7"
+    },
+    {
+      "rule_id": "R019",
+      "review_point": "项目方案",
+      "review_content": "方案图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备项目方案图片",
+      "evidence": "title:项目方案\ncontent:软件STAR-CCM+现有1套：电驱动开发部门于2024年购买过1套19.04版本。本次申请升级1套，服务期限为升级到2026年12月底。\nimages:50bed9d3fd1c4a6685c662a6ed556bb7\nitems:title:项目方案\ncontent:软件STAR-CCM+现有1套：电驱动开发部门于2024年购买过1套19.04版本。本次申请升级1套，服务期限为升级到2026年12月底。\nimages:50bed9d3fd1c4a6685c662a6ed556bb7"
+    },
+    {
+      "rule_id": "R020",
+      "review_point": "业务全景图",
+      "review_content": "业务全景图标题",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备业务全景图标题",
+      "evidence": "title:研发业务全景图\ncontent:研发业务全景图\nimages:c2199929904c40a18a4d9ed3ed1e4a1d\nitems:title:研发业务全景图\ncontent:研发业务全景图\nimages:c2199929904c40a18a4d9ed3ed1e4a1d"
+    },
+    {
+      "rule_id": "R021",
+      "review_point": "业务全景图",
+      "review_content": "业务全景图内容",
+      "status": "fail",
+      "severity": "critical",
+      "message": "业务全景图内容过短，无法支撑审批。",
+      "suggestion": "具备业务全景图内容",
+      "evidence": "title:研发业务全景图\ncontent:研发业务全景图\nimages:c2199929904c40a18a4d9ed3ed1e4a1d\nitems:title:研发业务全景图\ncontent:研发业务全景图\nimages:c2199929904c40a18a4d9ed3ed1e4a1d"
+    },
+    {
+      "rule_id": "R022",
+      "review_point": "业务全景图",
+      "review_content": "业务全景图图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备业务全景图图片",
+      "evidence": "title:研发业务全景图\ncontent:研发业务全景图\nimages:c2199929904c40a18a4d9ed3ed1e4a1d\nitems:title:研发业务全景图\ncontent:研发业务全景图\nimages:c2199929904c40a18a4d9ed3ed1e4a1d"
+    },
+    {
+      "rule_id": "R023",
+      "review_point": "年度管理模型",
+      "review_content": "管理模型标题",
+      "status": "pass",
+      "severity": "critical",
+      "message": "材料完整",
+      "suggestion": "具备管理模型标题",
+      "evidence": "title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:514de63c3b7443f3afaaf50b46993547\nitems:title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:514de63c3b7443f3afaaf50b46993547"
+    },
+    {
+      "rule_id": "R024",
+      "review_point": "年度管理模型",
+      "review_content": "管理模型内容",
+      "status": "fail",
+      "severity": "critical",
+      "message": "管理模型内容过短，无法支撑审批。",
+      "suggestion": "具备管理模型内容",
+      "evidence": "title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:514de63c3b7443f3afaaf50b46993547\nitems:title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:514de63c3b7443f3afaaf50b46993547"
+    },
+    {
+      "rule_id": "R025",
+      "review_point": "年度管理模型",
+      "review_content": "管理模型图片",
+      "status": "pass",
+      "severity": "minor",
+      "message": "材料完整",
+      "suggestion": "具备管理模型图片",
+      "evidence": "title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:514de63c3b7443f3afaaf50b46993547\nitems:title:工具软件采购管理模型\ncontent:工具软件采购管理模型\nimages:514de63c3b7443f3afaaf50b46993547"
+    },
+    {
+      "rule_id": "R033",
+      "review_point": "项目价值",
+      "review_content": "项目价值",
+      "status": "pass",
+      "severity": "critical",
+      "message": "项目价值已填写",
+      "suggestion": "具备项目价值",
+      "evidence": "id:1097\nprojectId:fabb83fff06645ba9e231dce4e37f340\ntitle:自主开发业务能力\nvalueGoal:1.能力提升：提升电机油冷仿真分析、电机水冷仿真分析、三维温度场仿真、冷却设计方案评价能力（第1象限）；       2.战略需求：STAR-CCM+是电机性能开发的必备工具，支撑红旗电驱产品热性能设计，加快开发效率，提升产品竞争力；       3.问题解决：通过软件购置开展电驱系统电机流体及热性能仿真分析，可以分析电机冷却结构内部的流动状态，指导冷却结构设计优化，可以有效评估电机内\ncurrentStatus:无\ndeptId:[\"208\"]\ncontent:部门业务能力全景图\nisDelete:0\ntype:1"
+    },
+    {
+      "rule_id": "R034",
+      "review_point": "项目里程碑",
+      "review_content": "立项计划",
+      "status": "pass",
+      "severity": "critical",
+      "message": "里程碑计划完整",
+      "suggestion": "具备立项计划",
+      "evidence": "start:2025-07-01\nend:2025-07-30\ntitle:立项计划"
+    },
+    {
+      "rule_id": "R035",
+      "review_point": "项目里程碑",
+      "review_content": "合同计划",
+      "status": "pass",
+      "severity": "critical",
+      "message": "里程碑计划完整",
+      "suggestion": "具备合同计划",
+      "evidence": "start:2026-09-30\nend:2025-10-31\ntitle:合同签订计划"
+    },
+    {
+      "rule_id": "R036",
+      "review_point": "项目里程碑",
+      "review_content": "目标计划",
+      "status": "fail",
+      "severity": "critical",
+      "message": "目标计划缺少完整时间范围",
+      "suggestion": "具备目标计划",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R038",
+      "review_point": "费用构成",
+      "review_content": "费用构成",
+      "status": "pass",
+      "severity": "critical",
+      "message": "费用构成完整",
+      "suggestion": "具备费用构成",
+      "evidence": "name:STAR CCM+-\namount:619500.0\nbudget_subject:YSGC-DE-2507EFY56-1\ncalculation:供应商报价\npurchase_mode:直接采购"
+    },
+    {
+      "rule_id": "R039",
+      "review_point": "长尾费用",
+      "review_content": "不需要",
+      "status": "pass",
+      "severity": "minor",
+      "message": "该规则标记为不需要。",
+      "suggestion": "无需补充此项。",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R040",
+      "review_point": "历史投入",
+      "review_content": "不需要",
+      "status": "pass",
+      "severity": "minor",
+      "message": "该规则标记为不需要。",
+      "suggestion": "无需补充此项。",
+      "evidence": ""
+    },
+    {
+      "rule_id": "R041",
+      "review_point": "费用变化点",
+      "review_content": "费用变化点",
+      "status": "pass",
+      "severity": "major",
+      "message": "固定类项目费用变化说明完整",
+      "suggestion": "具备费用变化点",
+      "evidence": "fixed_project:True\nhistory_analysis:id:380\nprojectId:fabb83fff06645ba9e231dce4e37f340\nisChange:1\ndimensionality:3\noneKey:2023年\noneValue:0\ntwoKey:2024年\ntwoValue:3239215\nthreeKey:2025年\nthreeValue:619500\ncreatorId:84903\ncreator:hanshuaihao\ncreateTime:2025-09-11 16:31:34\nisDelete:0\noneTwoSymbol:2\noneTwoValue:0.0\ntwoThreeSymbol:2\ntwoThreeValue:0.0\ndimensionalityName:费用成本\ncontent:24年升级补了5年\nreason:619500"
+    }
+  ]
+}

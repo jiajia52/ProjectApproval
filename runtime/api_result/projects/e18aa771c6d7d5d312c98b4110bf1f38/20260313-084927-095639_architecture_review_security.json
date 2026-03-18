@@ -1,0 +1,22 @@
+{
+  "api_name": "architecture_review_security",
+  "method": "POST",
+  "path": "/third/securityCheckList",
+  "payload": {
+    "projectId": "e18aa771c6d7d5d312c98b4110bf1f38",
+    "projectCode": "",
+    "systemCode": "",
+    "type": 1
+  },
+  "project_id": "e18aa771c6d7d5d312c98b4110bf1f38",
+  "result": {
+    "code": 55001,
+    "errCode": "null0EBA-0222_MSA_GAUB50501",
+    "errType": "B",
+    "message": "TOKEN超时",
+    "msgType": "E",
+    "success": false
+  },
+  "error": "",
+  "called_at": "2026-03-13T08:49:27+08:00"
+}

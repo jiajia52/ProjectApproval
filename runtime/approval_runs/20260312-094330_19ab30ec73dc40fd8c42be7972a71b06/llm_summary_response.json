@@ -1,0 +1,248 @@
+{
+  "raw": {
+    "id": "chatcmpl-a9399641-ee54-961e-a121-591ae2544e21",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总评：北京车展数字化展区项目在各评审环节均存在严重缺失，核心问题集中在项目OKR体系不完整（缺少关联产品链、项目目标O、战队OKR、关联产品、时间范围及关键成果KR）、四大架构评审（业务、数据、技术、安全）缺失、TAM模型三大核心模型（能力、结果、管理）未建立、目标计划无时间范围、组织架构信息空白、预算构成不完整。上述问题导致项目整体不具备立项可行性与可执行性，且基线失败项中10项为关键级失败，7项为重大失败，综合判定为驳回。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供任何关于关联产品链的信息，字段为空。\",\n      \"evidence\": [\n        \"okr.product_chain: \"\n      ],\n      \"suggestion\": \"需补充关联产品链信息\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"fail\",\n      \"reason\": \"项目目标（O）字段为空，未明确项目核心目标。\",\n      \"evidence\": [\n        \"okr.objective: \"\n      ],\n      \"suggestion\": \"需填写项目目标（O）\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"fail\",\n      \"reason\": \"战队OKR字段为空，未体现团队目标对齐。\",\n      \"evidence\": [\n        \"okr.squad_okr: \"\n      ],\n      \"suggestion\": \"需补充战队OKR\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"fail\",\n      \"reason\": \"关联产品字段为空，未列出具体涉及的产品。\",\n      \"evidence\": [\n        \"okr.related_products: []\"\n      ],\n      \"suggestion\": \"需补充关联产品\"\n    },\n    {\n      \"rule_id\": \"R011\",\n      \"status\": \"fail\",\n      \"reason\": \"目标时间范围字段为空，未明确项目起止时间。\",\n      \"evidence\": [\n        \"okr.time_range.start: \",\n        \"okr.time_range.end: \"\n      ],\n      \"suggestion\": \"需填写目标时间范围\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"fail\",\n      \"reason\": \"关键成果（KR）字段为空，未定义可衡量的成果指标。\",\n      \"evidence\": [\n        \"okr.key_results: []\"\n      ],\n      \"suggestion\": \"需补充关键成果（KR）\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"fail\",\n      \"reason\": \"微应用字段为空，未提供任何微应用信息，不符合要求。\",\n      \"evidence\": [\n        \"scope.microapps: []\"\n      ],\n      \"suggestion\": \"需补充微应用\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。\",\n      \"evidence\": [\n        \"architecture_reviews.business: '' (空值)\",\n        \"project_page_document.scope.business_processes: 存在多个业务云模块，但无对应架构评审文档\"\n      ],\n      \"suggestion\": \"补充完整的业务架构评审文档，明确各业务云模块与企业主流程的映射关系及价值贡献。\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供数据架构评审材料，无法评估数据来源、流转、治理与系统集成方案。\",\n      \"evidence\": [\n        \"architecture_reviews.data: '' (空值)\",\n        \"scope.content_list 中包含硬件、服务等资源，但无数据模型或数据流设计说明\"\n      ],\n      \"suggestion\": \"补充数据架构评审材料，包括数据源、数据流向、关键数据实体定义及数据治理策略。\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供技术架构评审材料，无法确认系统技术选型、部署模式与可维护性。\",\n      \"evidence\": [\n        \"architecture_reviews.technology: '' (空值)\",\n        \"microservices 数组为空，无微服务设计或技术组件说明\"\n      ],\n      \"suggestion\": \"补充技术架构评审文档，明确系统技术栈、服务划分、接口规范与部署架构。\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供安全架构评审材料，存在重大安全隐患，无法保障系统合规性与数据安全。\",\n      \"evidence\": [\n        \"architecture_reviews.security: '' (空值)\",\n        \"涉及网络专线、交互设备、音视频采集等敏感资源，但无安全设计说明\"\n      ],\n      \"suggestion\": \"补充安全架构评审材料，涵盖网络安全、数据安全、访问控制、合规性设计等内容。\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"fail\",\n      \"reason\": \"能力（竞争）模型缺少完整指标，未提供任何有效数据或评估维度。\",\n      \"evidence\": [\n        \"tam_models.capability: []\",\n        \"rule_engine_baseline.rule_results[0].message: '能力（竞争）模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充能力（竞争）模型，至少包含三类指标之一：技术能力、组织能力或资源能力，并提供具体量化指标。\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"fail\",\n      \"reason\": \"结果（财务/客户）模型缺少完整指标，未体现财务收益或客户价值的可衡量目标。\",\n      \"evidence\": [\n        \"tam_models.result: []\",\n        \"rule_engine_baseline.rule_results[1].message: '结果（财务/客户）模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充结果（财务/客户）模型，明确财务指标（如ROI、成本节约）或客户指标（如满意度提升、使用率增长），并设定可验证目标。\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"fail\",\n      \"reason\": \"管理体系模型缺少完整指标，未体现项目管理机制或流程保障措施。\",\n      \"evidence\": [\n        \"tam_models.management: []\",\n        \"rule_engine_baseline.rule_results[2].message: '管理体系模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充管理体系模型，包括项目治理结构、风险控制机制、进度跟踪方式等关键要素，并形成可执行的管理框架。\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"fail\",\n      \"reason\": \"目标计划未提供任何时间范围信息，包括开始与结束日期，无法判断其可执行性与进度安排。\",\n      \"evidence\": [\n        \"target_plan: {}\"\n      ],\n      \"suggestion\": \"请补充目标计划的起止时间及具体交付目标，确保与项目整体进度对齐。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"fail\",\n      \"reason\": \"组织成员列表为空，且开发模式字段未填写，导致组织架构信息不完整。\",\n      \"evidence\": [\n        \"project_page_document.organization.members: []\",\n        \"project_page_document.organization.development_mode: ''\"\n      ],\n      \"suggestion\": \"请补充完整的组织架构信息，包括实际参与项目的成员姓名、角色、级别、任务计划及工作量分配，并明确开发模式（如自主开发、外包等）\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"fail\",\n      \"reason\": \"预算成本项、测算或采购方式不完整，无法验证费用构成的合理性。\",\n      \"evidence\": [\n        \"预算中仅包含单一费用项 '信息系统服务费'，未提供明细拆分（如人力、设备、外包等）。\",\n        \"未说明费用测算依据（如工时、单价、数量等）。\",\n        \"采购方式标注为 '1'（按设备），但未明确设备类型及数量，缺乏可执行性说明。\"\n      ],\n      \"suggestion\": \"需补充费用构成明细表，包括各子项名称、数量、单价、计算逻辑及采购方式说明。\"\n    }\n  ],\n  \"risks\": [\n    \"项目OKR体系缺失，导致目标不可衡量、责任不清晰，影响后续绩效评估与资源投入合理性。\",\n    \"微应用缺失，表明系统架构设计不完整，可能影响后期集成与运维。\",\n    \"关键成果（KR）未定义，无法验证项目是否达成预期价值。\",\n    \"目标时间范围缺失，可能导致项目进度失控，缺乏里程碑管理依据。\",\n    \"项目缺乏四大核心架构评审，存在重大技术与管理风险，可能导致系统不可用、数据泄露或合规违规。\",\n    \"当前仅列出资源清单与业务云模块名称，无任何架构设计依据，难以评估项目可行性与可持续性。\",\n    \"若强行推进，可能造成资源浪费、系统重复建设或后期改造成本激增。\",\n    \"项目缺乏核心模型支撑，无法验证其可行性与价值产出，存在重大实施风险。\",\n    \"未建立可衡量的绩效评估体系，后续难以进行效果追踪与闭环管理。\",\n    \"三大模型全面缺失，可能导致项目偏离战略目标，资源投入无效。\",\n    \"目标计划缺失将导致项目整体进度无法追踪，影响资源调配与验收节点把控。\",\n    \"组织架构不完整可能导致项目执行责任不清，影响进度与质量管控。\",\n    \"费用构成不清晰可能导致预算超支或执行偏差，影响项目财务合规性。\",\n    \"缺乏测算依据可能引发后续审计风险。\"\n  ],\n  \"missing_information\": [\n    \"关联产品链\",\n    \"项目目标（O）\",\n    \"战队OKR\",\n    \"关联产品\",\n    \"目标时间范围（起止时间）\",\n    \"关键成果（KR）\",\n    \"微应用\",\n    \"业务架构评审文档\",\n    \"数据架构评审文档\",\n    \"技术架构评审文档\",\n    \"安全架构评审文档\",\n    \"能力（竞争）模型的具体内容与指标\",\n    \"结果（财务/客户）模型的量化目标与评估方法\",\n    \"管理体系模型的组织架构与运行机制\",\n    \"目标计划的开始日期\",\n    \"目标计划的结束日期\",\n    \"目标计划的具体交付成果或关键目标描述\",\n    \"组织成员详细信息（姓名、角色、级别、任务计划、工作量）\",\n    \"开发模式说明\",\n    \"费用构成明细（如人力、设备、外包等子项）\",\n    \"费用测算依据（如工时、单价、数量等）\",\n    \"采购方式具体说明（如设备类型、数量、合同依据等）\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1773279870,
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 2388,
+      "prompt_tokens": 5906,
+      "total_tokens": 8294,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总评：北京车展数字化展区项目在各评审环节均存在严重缺失，核心问题集中在项目OKR体系不完整（缺少关联产品链、项目目标O、战队OKR、关联产品、时间范围及关键成果KR）、四大架构评审（业务、数据、技术、安全）缺失、TAM模型三大核心模型（能力、结果、管理）未建立、目标计划无时间范围、组织架构信息空白、预算构成不完整。上述问题导致项目整体不具备立项可行性与可执行性，且基线失败项中10项为关键级失败，7项为重大失败，综合判定为驳回。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R007\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供任何关于关联产品链的信息，字段为空。\",\n      \"evidence\": [\n        \"okr.product_chain: \"\n      ],\n      \"suggestion\": \"需补充关联产品链信息\"\n    },\n    {\n      \"rule_id\": \"R008\",\n      \"status\": \"fail\",\n      \"reason\": \"项目目标（O）字段为空，未明确项目核心目标。\",\n      \"evidence\": [\n        \"okr.objective: \"\n      ],\n      \"suggestion\": \"需填写项目目标（O）\"\n    },\n    {\n      \"rule_id\": \"R009\",\n      \"status\": \"fail\",\n      \"reason\": \"战队OKR字段为空，未体现团队目标对齐。\",\n      \"evidence\": [\n        \"okr.squad_okr: \"\n      ],\n      \"suggestion\": \"需补充战队OKR\"\n    },\n    {\n      \"rule_id\": \"R010\",\n      \"status\": \"fail\",\n      \"reason\": \"关联产品字段为空，未列出具体涉及的产品。\",\n      \"evidence\": [\n        \"okr.related_products: []\"\n      ],\n      \"suggestion\": \"需补充关联产品\"\n    },\n    {\n      \"rule_id\": \"R011\",\n      \"status\": \"fail\",\n      \"reason\": \"目标时间范围字段为空，未明确项目起止时间。\",\n      \"evidence\": [\n        \"okr.time_range.start: \",\n        \"okr.time_range.end: \"\n      ],\n      \"suggestion\": \"需填写目标时间范围\"\n    },\n    {\n      \"rule_id\": \"R012\",\n      \"status\": \"fail\",\n      \"reason\": \"关键成果（KR）字段为空，未定义可衡量的成果指标。\",\n      \"evidence\": [\n        \"okr.key_results: []\"\n      ],\n      \"suggestion\": \"需补充关键成果（KR）\"\n    },\n    {\n      \"rule_id\": \"R016\",\n      \"status\": \"fail\",\n      \"reason\": \"微应用字段为空，未提供任何微应用信息，不符合要求。\",\n      \"evidence\": [\n        \"scope.microapps: []\"\n      ],\n      \"suggestion\": \"需补充微应用\"\n    },\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。\",\n      \"evidence\": [\n        \"architecture_reviews.business: '' (空值)\",\n        \"project_page_document.scope.business_processes: 存在多个业务云模块，但无对应架构评审文档\"\n      ],\n      \"suggestion\": \"补充完整的业务架构评审文档，明确各业务云模块与企业主流程的映射关系及价值贡献。\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供数据架构评审材料，无法评估数据来源、流转、治理与系统集成方案。\",\n      \"evidence\": [\n        \"architecture_reviews.data: '' (空值)\",\n        \"scope.content_list 中包含硬件、服务等资源，但无数据模型或数据流设计说明\"\n      ],\n      \"suggestion\": \"补充数据架构评审材料，包括数据源、数据流向、关键数据实体定义及数据治理策略。\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供技术架构评审材料，无法确认系统技术选型、部署模式与可维护性。\",\n      \"evidence\": [\n        \"architecture_reviews.technology: '' (空值)\",\n        \"microservices 数组为空，无微服务设计或技术组件说明\"\n      ],\n      \"suggestion\": \"补充技术架构评审文档，明确系统技术栈、服务划分、接口规范与部署架构。\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供安全架构评审材料，存在重大安全隐患，无法保障系统合规性与数据安全。\",\n      \"evidence\": [\n        \"architecture_reviews.security: '' (空值)\",\n        \"涉及网络专线、交互设备、音视频采集等敏感资源，但无安全设计说明\"\n      ],\n      \"suggestion\": \"补充安全架构评审材料，涵盖网络安全、数据安全、访问控制、合规性设计等内容。\"\n    },\n    {\n      \"rule_id\": \"R030\",\n      \"status\": \"fail\",\n      \"reason\": \"能力（竞争）模型缺少完整指标，未提供任何有效数据或评估维度。\",\n      \"evidence\": [\n        \"tam_models.capability: []\",\n        \"rule_engine_baseline.rule_results[0].message: '能力（竞争）模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充能力（竞争）模型，至少包含三类指标之一：技术能力、组织能力或资源能力，并提供具体量化指标。\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"fail\",\n      \"reason\": \"结果（财务/客户）模型缺少完整指标，未体现财务收益或客户价值的可衡量目标。\",\n      \"evidence\": [\n        \"tam_models.result: []\",\n        \"rule_engine_baseline.rule_results[1].message: '结果（财务/客户）模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充结果（财务/客户）模型，明确财务指标（如ROI、成本节约）或客户指标（如满意度提升、使用率增长），并设定可验证目标。\"\n    },\n    {\n      \"rule_id\": \"R032\",\n      \"status\": \"fail\",\n      \"reason\": \"管理体系模型缺少完整指标，未体现项目管理机制或流程保障措施。\",\n      \"evidence\": [\n        \"tam_models.management: []\",\n        \"rule_engine_baseline.rule_results[2].message: '管理体系模型缺少完整指标。'\"\n      ],\n      \"suggestion\": \"需补充管理体系模型，包括项目治理结构、风险控制机制、进度跟踪方式等关键要素，并形成可执行的管理框架。\"\n    },\n    {\n      \"rule_id\": \"R036\",\n      \"status\": \"fail\",\n      \"reason\": \"目标计划未提供任何时间范围信息，包括开始与结束日期，无法判断其可执行性与进度安排。\",\n      \"evidence\": [\n        \"target_plan: {}\"\n      ],\n      \"suggestion\": \"请补充目标计划的起止时间及具体交付目标，确保与项目整体进度对齐。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"fail\",\n      \"reason\": \"组织成员列表为空，且开发模式字段未填写，导致组织架构信息不完整。\",\n      \"evidence\": [\n        \"project_page_document.organization.members: []\",\n        \"project_page_document.organization.development_mode: ''\"\n      ],\n      \"suggestion\": \"请补充完整的组织架构信息，包括实际参与项目的成员姓名、角色、级别、任务计划及工作量分配，并明确开发模式（如自主开发、外包等）\"\n    },\n    {\n      \"rule_id\": \"R038\",\n      \"status\": \"fail\",\n      \"reason\": \"预算成本项、测算或采购方式不完整，无法验证费用构成的合理性。\",\n      \"evidence\": [\n        \"预算中仅包含单一费用项 '信息系统服务费'，未提供明细拆分（如人力、设备、外包等）。\",\n        \"未说明费用测算依据（如工时、单价、数量等）。\",\n        \"采购方式标注为 '1'（按设备），但未明确设备类型及数量，缺乏可执行性说明。\"\n      ],\n      \"suggestion\": \"需补充费用构成明细表，包括各子项名称、数量、单价、计算逻辑及采购方式说明。\"\n    }\n  ],\n  \"risks\": [\n    \"项目OKR体系缺失，导致目标不可衡量、责任不清晰，影响后续绩效评估与资源投入合理性。\",\n    \"微应用缺失，表明系统架构设计不完整，可能影响后期集成与运维。\",\n    \"关键成果（KR）未定义，无法验证项目是否达成预期价值。\",\n    \"目标时间范围缺失，可能导致项目进度失控，缺乏里程碑管理依据。\",\n    \"项目缺乏四大核心架构评审，存在重大技术与管理风险，可能导致系统不可用、数据泄露或合规违规。\",\n    \"当前仅列出资源清单与业务云模块名称，无任何架构设计依据，难以评估项目可行性与可持续性。\",\n    \"若强行推进，可能造成资源浪费、系统重复建设或后期改造成本激增。\",\n    \"项目缺乏核心模型支撑，无法验证其可行性与价值产出，存在重大实施风险。\",\n    \"未建立可衡量的绩效评估体系，后续难以进行效果追踪与闭环管理。\",\n    \"三大模型全面缺失，可能导致项目偏离战略目标，资源投入无效。\",\n    \"目标计划缺失将导致项目整体进度无法追踪，影响资源调配与验收节点把控。\",\n    \"组织架构不完整可能导致项目执行责任不清，影响进度与质量管控。\",\n    \"费用构成不清晰可能导致预算超支或执行偏差，影响项目财务合规性。\",\n    \"缺乏测算依据可能引发后续审计风险。\"\n  ],\n  \"missing_information\": [\n    \"关联产品链\",\n    \"项目目标（O）\",\n    \"战队OKR\",\n    \"关联产品\",\n    \"目标时间范围（起止时间）\",\n    \"关键成果（KR）\",\n    \"微应用\",\n    \"业务架构评审文档\",\n    \"数据架构评审文档\",\n    \"技术架构评审文档\",\n    \"安全架构评审文档\",\n    \"能力（竞争）模型的具体内容与指标\",\n    \"结果（财务/客户）模型的量化目标与评估方法\",\n    \"管理体系模型的组织架构与运行机制\",\n    \"目标计划的开始日期\",\n    \"目标计划的结束日期\",\n    \"目标计划的具体交付成果或关键目标描述\",\n    \"组织成员详细信息（姓名、角色、级别、任务计划、工作量）\",\n    \"开发模式说明\",\n    \"费用构成明细（如人力、设备、外包等子项）\",\n    \"费用测算依据（如工时、单价、数量等）\",\n    \"采购方式具体说明（如设备类型、数量、合同依据等）\"\n  ]\n}",
+  "json": {
+    "decision": "驳回",
+    "summary": "项目总评：北京车展数字化展区项目在各评审环节均存在严重缺失，核心问题集中在项目OKR体系不完整（缺少关联产品链、项目目标O、战队OKR、关联产品、时间范围及关键成果KR）、四大架构评审（业务、数据、技术、安全）缺失、TAM模型三大核心模型（能力、结果、管理）未建立、目标计划无时间范围、组织架构信息空白、预算构成不完整。上述问题导致项目整体不具备立项可行性与可执行性，且基线失败项中10项为关键级失败，7项为重大失败，综合判定为驳回。",
+    "item_results": [
+      {
+        "rule_id": "R007",
+        "status": "fail",
+        "reason": "未提供任何关于关联产品链的信息，字段为空。",
+        "evidence": [
+          "okr.product_chain: "
+        ],
+        "suggestion": "需补充关联产品链信息"
+      },
+      {
+        "rule_id": "R008",
+        "status": "fail",
+        "reason": "项目目标（O）字段为空，未明确项目核心目标。",
+        "evidence": [
+          "okr.objective: "
+        ],
+        "suggestion": "需填写项目目标（O）"
+      },
+      {
+        "rule_id": "R009",
+        "status": "fail",
+        "reason": "战队OKR字段为空，未体现团队目标对齐。",
+        "evidence": [
+          "okr.squad_okr: "
+        ],
+        "suggestion": "需补充战队OKR"
+      },
+      {
+        "rule_id": "R010",
+        "status": "fail",
+        "reason": "关联产品字段为空，未列出具体涉及的产品。",
+        "evidence": [
+          "okr.related_products: []"
+        ],
+        "suggestion": "需补充关联产品"
+      },
+      {
+        "rule_id": "R011",
+        "status": "fail",
+        "reason": "目标时间范围字段为空，未明确项目起止时间。",
+        "evidence": [
+          "okr.time_range.start: ",
+          "okr.time_range.end: "
+        ],
+        "suggestion": "需填写目标时间范围"
+      },
+      {
+        "rule_id": "R012",
+        "status": "fail",
+        "reason": "关键成果（KR）字段为空，未定义可衡量的成果指标。",
+        "evidence": [
+          "okr.key_results: []"
+        ],
+        "suggestion": "需补充关键成果（KR）"
+      },
+      {
+        "rule_id": "R016",
+        "status": "fail",
+        "reason": "微应用字段为空，未提供任何微应用信息，不符合要求。",
+        "evidence": [
+          "scope.microapps: []"
+        ],
+        "suggestion": "需补充微应用"
+      },
+      {
+        "rule_id": "R026",
+        "status": "fail",
+        "reason": "未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。",
+        "evidence": [
+          "architecture_reviews.business: '' (空值)",
+          "project_page_document.scope.business_processes: 存在多个业务云模块，但无对应架构评审文档"
+        ],
+        "suggestion": "补充完整的业务架构评审文档，明确各业务云模块与企业主流程的映射关系及价值贡献。"
+      },
+      {
+        "rule_id": "R027",
+        "status": "fail",
+        "reason": "未提供数据架构评审材料，无法评估数据来源、流转、治理与系统集成方案。",
+        "evidence": [
+          "architecture_reviews.data: '' (空值)",
+          "scope.content_list 中包含硬件、服务等资源，但无数据模型或数据流设计说明"
+        ],
+        "suggestion": "补充数据架构评审材料，包括数据源、数据流向、关键数据实体定义及数据治理策略。"
+      },
+      {
+        "rule_id": "R028",
+        "status": "fail",
+        "reason": "未提供技术架构评审材料，无法确认系统技术选型、部署模式与可维护性。",
+        "evidence": [
+          "architecture_reviews.technology: '' (空值)",
+          "microservices 数组为空，无微服务设计或技术组件说明"
+        ],
+        "suggestion": "补充技术架构评审文档，明确系统技术栈、服务划分、接口规范与部署架构。"
+      },
+      {
+        "rule_id": "R029",
+        "status": "fail",
+        "reason": "未提供安全架构评审材料，存在重大安全隐患，无法保障系统合规性与数据安全。",
+        "evidence": [
+          "architecture_reviews.security: '' (空值)",
+          "涉及网络专线、交互设备、音视频采集等敏感资源，但无安全设计说明"
+        ],
+        "suggestion": "补充安全架构评审材料，涵盖网络安全、数据安全、访问控制、合规性设计等内容。"
+      },
+      {
+        "rule_id": "R030",
+        "status": "fail",
+        "reason": "能力（竞争）模型缺少完整指标，未提供任何有效数据或评估维度。",
+        "evidence": [
+          "tam_models.capability: []",
+          "rule_engine_baseline.rule_results[0].message: '能力（竞争）模型缺少完整指标。'"
+        ],
+        "suggestion": "需补充能力（竞争）模型，至少包含三类指标之一：技术能力、组织能力或资源能力，并提供具体量化指标。"
+      },
+      {
+        "rule_id": "R031",
+        "status": "fail",
+        "reason": "结果（财务/客户）模型缺少完整指标，未体现财务收益或客户价值的可衡量目标。",
+        "evidence": [
+          "tam_models.result: []",
+          "rule_engine_baseline.rule_results[1].message: '结果（财务/客户）模型缺少完整指标。'"
+        ],
+        "suggestion": "需补充结果（财务/客户）模型，明确财务指标（如ROI、成本节约）或客户指标（如满意度提升、使用率增长），并设定可验证目标。"
+      },
+      {
+        "rule_id": "R032",
+        "status": "fail",
+        "reason": "管理体系模型缺少完整指标，未体现项目管理机制或流程保障措施。",
+        "evidence": [
+          "tam_models.management: []",
+          "rule_engine_baseline.rule_results[2].message: '管理体系模型缺少完整指标。'"
+        ],
+        "suggestion": "需补充管理体系模型，包括项目治理结构、风险控制机制、进度跟踪方式等关键要素，并形成可执行的管理框架。"
+      },
+      {
+        "rule_id": "R036",
+        "status": "fail",
+        "reason": "目标计划未提供任何时间范围信息，包括开始与结束日期，无法判断其可执行性与进度安排。",
+        "evidence": [
+          "target_plan: {}"
+        ],
+        "suggestion": "请补充目标计划的起止时间及具体交付目标，确保与项目整体进度对齐。"
+      },
+      {
+        "rule_id": "R037",
+        "status": "fail",
+        "reason": "组织成员列表为空，且开发模式字段未填写，导致组织架构信息不完整。",
+        "evidence": [
+          "project_page_document.organization.members: []",
+          "project_page_document.organization.development_mode: ''"
+        ],
+        "suggestion": "请补充完整的组织架构信息，包括实际参与项目的成员姓名、角色、级别、任务计划及工作量分配，并明确开发模式（如自主开发、外包等）"
+      },
+      {
+        "rule_id": "R038",
+        "status": "fail",
+        "reason": "预算成本项、测算或采购方式不完整，无法验证费用构成的合理性。",
+        "evidence": [
+          "预算中仅包含单一费用项 '信息系统服务费'，未提供明细拆分（如人力、设备、外包等）。",
+          "未说明费用测算依据（如工时、单价、数量等）。",
+          "采购方式标注为 '1'（按设备），但未明确设备类型及数量，缺乏可执行性说明。"
+        ],
+        "suggestion": "需补充费用构成明细表，包括各子项名称、数量、单价、计算逻辑及采购方式说明。"
+      }
+    ],
+    "risks": [
+      "项目OKR体系缺失，导致目标不可衡量、责任不清晰，影响后续绩效评估与资源投入合理性。",
+      "微应用缺失，表明系统架构设计不完整，可能影响后期集成与运维。",
+      "关键成果（KR）未定义，无法验证项目是否达成预期价值。",
+      "目标时间范围缺失，可能导致项目进度失控，缺乏里程碑管理依据。",
+      "项目缺乏四大核心架构评审，存在重大技术与管理风险，可能导致系统不可用、数据泄露或合规违规。",
+      "当前仅列出资源清单与业务云模块名称，无任何架构设计依据，难以评估项目可行性与可持续性。",
+      "若强行推进，可能造成资源浪费、系统重复建设或后期改造成本激增。",
+      "项目缺乏核心模型支撑，无法验证其可行性与价值产出，存在重大实施风险。",
+      "未建立可衡量的绩效评估体系，后续难以进行效果追踪与闭环管理。",
+      "三大模型全面缺失，可能导致项目偏离战略目标，资源投入无效。",
+      "目标计划缺失将导致项目整体进度无法追踪，影响资源调配与验收节点把控。",
+      "组织架构不完整可能导致项目执行责任不清，影响进度与质量管控。",
+      "费用构成不清晰可能导致预算超支或执行偏差，影响项目财务合规性。",
+      "缺乏测算依据可能引发后续审计风险。"
+    ],
+    "missing_information": [
+      "关联产品链",
+      "项目目标（O）",
+      "战队OKR",
+      "关联产品",
+      "目标时间范围（起止时间）",
+      "关键成果（KR）",
+      "微应用",
+      "业务架构评审文档",
+      "数据架构评审文档",
+      "技术架构评审文档",
+      "安全架构评审文档",
+      "能力（竞争）模型的具体内容与指标",
+      "结果（财务/客户）模型的量化目标与评估方法",
+      "管理体系模型的组织架构与运行机制",
+      "目标计划的开始日期",
+      "目标计划的结束日期",
+      "目标计划的具体交付成果或关键目标描述",
+      "组织成员详细信息（姓名、角色、级别、任务计划、工作量）",
+      "开发模式说明",
+      "费用构成明细（如人力、设备、外包等子项）",
+      "费用测算依据（如工时、单价、数量等）",
+      "采购方式具体说明（如设备类型、数量、合同依据等）"
+    ]
+  },
+  "used_response_format": true
+}

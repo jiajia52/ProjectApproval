@@ -1,0 +1,81 @@
+{
+  "api_name": "architecture_review_business",
+  "method": "GET",
+  "path": "/projectBaseInfo/getProductCheckStatus/0f41625e71f7d62a031236d2138d5e2f",
+  "payload": null,
+  "project_id": "bb0e52ecfe304f7e80c911c57f487c71",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "8",
+        "dataType": "2",
+        "businessId": "0f41625e71f7d62a031236d2138d5e2f",
+        "dimension": "信息架构",
+        "checkpoint": "业务对象",
+        "valuePropositionModel": "业务对象完整、准确\n1、明确本项目所有的业务对象，完整覆盖业务流程\n2、在信息架构中心注册",
+        "reviewer": "许明月、谢文慧",
+        "reviewConclusion": "通过",
+        "reviewDescription": "通过"
+      },
+      {
+        "id": "7",
+        "dataType": "2",
+        "businessId": "0f41625e71f7d62a031236d2138d5e2f",
+        "dimension": "信息架构",
+        "checkpoint": "概念模型",
+        "valuePropositionModel": "规划本领域数据及其他领域数据的关系\n1.不允许非法创建业务对象\n2.与外部业务对象间联通关系不允许缺失\n2.在信息架构中心注册",
+        "reviewer": "许明月、谢文慧",
+        "reviewConclusion": "通过",
+        "reviewDescription": "通过"
+      },
+      {
+        "id": "12",
+        "dataType": "2",
+        "businessId": "0f41625e71f7d62a031236d2138d5e2f",
+        "dimension": "业务架构",
+        "checkpoint": "三板斧",
+        "valuePropositionModel": "明确客户，价值主张、灯塔目标",
+        "reviewer": "金鑫禹、陈泓霏",
+        "reviewConclusion": "通过",
+        "reviewDescription": "通过"
+      },
+      {
+        "id": "11",
+        "dataType": "2",
+        "businessId": "0f41625e71f7d62a031236d2138d5e2f",
+        "dimension": "业务架构",
+        "checkpoint": "指标树",
+        "valuePropositionModel": "基于灯塔指标，构建下级指标树，逐步支撑灯塔指标达成。",
+        "reviewer": "金鑫禹、陈泓霏",
+        "reviewConclusion": "通过",
+        "reviewDescription": "通过"
+      },
+      {
+        "id": "10",
+        "dataType": "2",
+        "businessId": "0f41625e71f7d62a031236d2138d5e2f",
+        "dimension": "业务架构",
+        "checkpoint": "流程架构",
+        "valuePropositionModel": "明确本项目覆盖的流程，识别出本次新建内容、迭代优化内容",
+        "reviewer": "金鑫禹、陈泓霏",
+        "reviewConclusion": "通过",
+        "reviewDescription": "通过"
+      },
+      {
+        "id": "9",
+        "dataType": "2",
+        "businessId": "0f41625e71f7d62a031236d2138d5e2f",
+        "dimension": "业务架构",
+        "checkpoint": "业务能力架构",
+        "valuePropositionModel": "明确本项目覆盖的业务能力(Y模型右侧)，支撑后续角色能力构建",
+        "reviewer": "金鑫禹、陈泓霏",
+        "reviewConclusion": "通过",
+        "reviewDescription": "通过"
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-13T10:44:33+08:00"
+}

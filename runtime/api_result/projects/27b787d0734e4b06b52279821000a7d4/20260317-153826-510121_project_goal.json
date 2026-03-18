@@ -1,0 +1,45 @@
+{
+  "api_name": "project_goal",
+  "method": "GET",
+  "path": "/project/goal/get/27b787d0734e4b06b52279821000a7d4",
+  "payload": null,
+  "project_id": "27b787d0734e4b06b52279821000a7d4",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "8327063f06d841bcbdd14aad07061948",
+        "projectId": "27b787d0734e4b06b52279821000a7d4",
+        "okrId": "27",
+        "okrName": "平台推广覆盖率85%",
+        "goalName": "采购工作台推广覆盖度提升",
+        "goalContent": null,
+        "milestoneId": "c76a6ef7d5ff49d6998ab992c9773bd1",
+        "startTime": "2025-11-01",
+        "endTime": "2025-11-30",
+        "keyResultDtoList": [
+          {
+            "id": "c17ce890c9544516bf7cebd5ee2b3868",
+            "goalId": "8327063f06d841bcbdd14aad07061948",
+            "orderNum": 1,
+            "keyResult": "2025年底前完成15家分子公司采购工作台推广上线应用\n2025年底前完成10家单位SAAS服务合同签订"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "509248f43e424df3a87b9b881c0921de",
+            "goalId": "8327063f06d841bcbdd14aad07061948",
+            "productId": "2485887a266dc00f1ea5c701a2295e32",
+            "productName": "一般材料采购平台"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 49,
+        "businessFlowNum": 2
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:38:26+08:00"
+}

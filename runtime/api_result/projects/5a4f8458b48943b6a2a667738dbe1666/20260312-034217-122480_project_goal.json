@@ -1,0 +1,45 @@
+{
+  "api_name": "project_goal",
+  "method": "GET",
+  "path": "/project/goal/get/5a4f8458b48943b6a2a667738dbe1666",
+  "payload": null,
+  "project_id": "5a4f8458b48943b6a2a667738dbe1666",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "7f1a481b734b4d349515d9a7d40dcbf9",
+        "projectId": "5a4f8458b48943b6a2a667738dbe1666",
+        "okrId": "54",
+        "okrName": "完成印章管理中心业务设计和系统功能上线",
+        "goalName": "招标采购电子签章软件模块并集成到印章中心，实现印章刻制、审批、使用、销毁全生命周期在线管理功能",
+        "goalContent": null,
+        "milestoneId": "a0c8ed5f44c344d79d6ed10767437c8e",
+        "startTime": "2025-10-31",
+        "endTime": "2026-09-15",
+        "keyResultDtoList": [
+          {
+            "id": "2f1a998e90b14012a22f958d1618fad3",
+            "goalId": "7f1a481b734b4d349515d9a7d40dcbf9",
+            "orderNum": 1,
+            "keyResult": "实现印章刻制、审批、使用、销毁全生命周期在线管理功能"
+          }
+        ],
+        "subProductDtoList": [
+          {
+            "id": "983202d72fe34ea0a3488b61b3270f14",
+            "goalId": "7f1a481b734b4d349515d9a7d40dcbf9",
+            "productId": "0f41625e71f7d62a031236d2138d5e2f",
+            "productName": "企业架构管理平台"
+          }
+        ],
+        "goalStatus": 1,
+        "businessUnitNum": 8,
+        "businessFlowNum": 3
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-12T03:42:17+08:00"
+}

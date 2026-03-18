@@ -1,0 +1,429 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "新能源电池电驱基地及M220电驱增能项目-数字化基础设施",
+  "category": "设备购买及弱电布线",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 37,
+    "statistics": {
+      "total_rules": 24,
+      "passed_rules": 18,
+      "failed_rules": 6,
+      "critical_failures": 5,
+      "major_failures": 0,
+      "minor_failures": 1
+    },
+    "findings": [
+      {
+        "rule_id": "R014",
+        "review_point": "项目范围",
+        "review_content": "内容列表",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少 内容列表",
+        "suggestion": "具备内容",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R021",
+        "review_point": "业务全景图",
+        "review_content": "业务全景图内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "业务全景图内容过短，无法支撑审批。",
+        "suggestion": "具备业务全景图内容",
+        "evidence": "title:全景图\ncontent:基础设施业务全景图\nimages:82b08f03079a40b3a54cc2172538a5a4\nitems:title:全景图\ncontent:基础设施业务全景图\nimages:82b08f03079a40b3a54cc2172538a5a4"
+      },
+      {
+        "rule_id": "R023",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型标题",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少管理模型标题",
+        "suggestion": "具备管理模型标题",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R024",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少管理模型内容",
+        "suggestion": "具备管理模型内容",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R025",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型图片",
+        "status": "fail",
+        "severity": "minor",
+        "message": "缺少管理模型图片",
+        "suggestion": "具备管理模型图片",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容评审未通过，主要因缺少年度管理模型相关内容（标题、内容、图片），且业务全景图内容过短无法支撑审批。尽管项目背景、目标、方案等部分材料完整，但关键模块缺失严重，影响整体可审性。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "项目背景标题已提供，内容完整，符合要求。",
+          "evidence": [
+            "title:项目背景",
+            "content:集团现有电池电驱生产地无法满足未来五年电池电驱新建产能建设面积需求，通过“新建一个基地、巩固一个基地、合并一个基地”的总体规划，形成新基地和繁荣两大电池电驱制造基地，满足未来五年规划需求，并为2027-2030年产能提升预留发展空间",
+            "images:978b25bce5f24115946a218bc06400cd"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "项目背景内容已提供，描述清晰，具备必要信息。",
+          "evidence": [
+            "title:项目背景",
+            "content:集团现有电池电驱生产地无法满足未来五年电池电驱新建产能建设面积需求，通过“新建一个基地、巩固一个基地、合并一个基地”的总体规划，形成新基地和繁荣两大电池电驱制造基地，满足未来五年规划需求，并为2027-2030年产能提升预留发展空间",
+            "images:978b25bce5f24115946a218bc06400cd"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "项目背景图片已上传，图像存在且与内容相关。",
+          "evidence": [
+            "images:978b25bce5f24115946a218bc06400cd"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R004",
+          "status": "pass",
+          "reason": "项目目标标题已提供，内容明确。",
+          "evidence": [
+            "title:项目目标",
+            "content:完成数字化基础设施建设，支撑新能源工厂投产",
+            "images:24d4402ec8bb4aaeae4d25e0748e1f15"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R005",
+          "status": "pass",
+          "reason": "项目目标内容已提供，表述完整。",
+          "evidence": [
+            "title:项目目标",
+            "content:完成数字化基础设施建设，支撑新能源工厂投产",
+            "images:24d4402ec8bb4aaeae4d25e0748e1f15"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R006",
+          "status": "pass",
+          "reason": "项目目标图片已上传，图像存在。",
+          "evidence": [
+            "images:24d4402ec8bb4aaeae4d25e0748e1f15"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R014",
+          "status": "fail",
+          "reason": "项目范围中的内容列表为空，未提供任何具体实施内容或任务清单，无法判断实际工作边界。",
+          "evidence": [
+            "scope.content_list: []"
+          ],
+          "suggestion": "请补充详细的项目内容列表，包括各阶段任务、交付物及责任人等信息。"
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题已提供，名称准确反映内容。",
+          "evidence": [
+            "title:网络方案"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "项目方案内容已提供，技术细节完整，涵盖组网架构、安全设计、链路冗余等关键点。",
+          "evidence": [
+            "content:新能源厂区A车间（电驱车间），B车间（电池车间）为双汇聚机房互相备份模式进行搭建，并且上联至繁荣核心作为出口与集团数据中心交互数据，复用繁荣工厂核心交换机与无线控制器。\n安全性方面，整体设计采用集团标准核心、汇聚、接入三层组网架构；并且在三层架构下，延续生产、办公、安防三网独立进行设计。\n所有汇聚交换机堆叠、汇聚交换机上联核心交换机、汇聚交换机下联接入交换机均采用双路由双链路进行连接保护，确保数据安全稳定。"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "项目方案图片已上传，共5张，覆盖不同子系统设计。",
+          "evidence": [
+            "images:0ede3bd3487142189f316dd6a40f0b30",
+            "images:e811d6cb866a4eb1bbe8471127f2e185",
+            "images:642ab287eaa648209ac05ce1e9a1905f",
+            "images:199a051eaf4a44abae0eb3c5d2f3e3c0",
+            "images:faa4b517cda4495a91bec3c46c6baeec"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R020",
+          "status": "pass",
+          "reason": "业务全景图标题已提供，命名规范。",
+          "evidence": [
+            "title:全景图"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R021",
+          "status": "fail",
+          "reason": "业务全景图内容仅为‘基础设施业务全景图’，无实质描述，无法体现业务流程、系统关联或价值路径，不足以支撑审批决策。",
+          "evidence": [
+            "content:基础设施业务全景图"
+          ],
+          "suggestion": "请补充业务全景图的详细文字说明，至少包含核心业务流程、涉及系统、数据流转关系及预期成效。"
+        },
+        {
+          "rule_id": "R022",
+          "status": "pass",
+          "reason": "业务全景图图片已上传，图像存在。",
+          "evidence": [
+            "images:82b08f03079a40b3a54cc2172538a5a4"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R023",
+          "status": "fail",
+          "reason": "年度管理模型标题缺失，未填写任何标题信息。",
+          "evidence": [
+            "title: "
+          ],
+          "suggestion": "请补充年度管理模型的标题，如‘基于OKR的季度滚动管理机制’等。"
+        },
+        {
+          "rule_id": "R024",
+          "status": "fail",
+          "reason": "年度管理模型内容为空，未提供任何管理策略、执行计划或监控方式。",
+          "evidence": [
+            "content: "
+          ],
+          "suggestion": "请补充年度管理模型的具体内容，包括目标分解、进度跟踪、风险预警、绩效评估等机制。"
+        },
+        {
+          "rule_id": "R025",
+          "status": "fail",
+          "reason": "年度管理模型图片缺失，未上传任何可视化图表或流程图。",
+          "evidence": [
+            "images: []"
+          ],
+          "suggestion": "请上传年度管理模型的可视化图表，如甘特图、OKR追踪表、里程碑图等。"
+        }
+      ],
+      "risks": [
+        "年度管理模型完全缺失，可能导致项目过程不可控、目标偏离、考核无依据。",
+        "业务全景图内容空洞，无法验证项目与业务战略的对齐程度。",
+        "项目范围中缺乏内容列表，难以界定工作边界，易引发范围蔓延。"
+      ],
+      "missing_information": [
+        "年度管理模型标题",
+        "年度管理模型内容",
+        "年度管理模型图片",
+        "业务全景图详细内容说明",
+        "项目范围内容列表"
+      ]
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "需补充材料",
+      "summary": "项目在专业领域评审中，除安全架构评审外，其余三项评审（业务、数据、技术架构）均因接口调用异常或未获取有效数据，无法验证其合规性，需补充相关评审材料。",
+      "item_results": [
+        {
+          "rule_id": "R026",
+          "status": "needs_more_info",
+          "reason": "业务架构评审接口未返回有效数据，提示‘未在项目范围-开发接口中找到产品ID，无法调用业务架构评审接口’，且无其他可验证信息。",
+          "evidence": [
+            "message:未在项目范围-开发接口中找到产品ID，无法调用业务架构评审接口。",
+            "link_label:前往EAMAP查看"
+          ],
+          "suggestion": "请补充业务架构评审的完整材料，包括产品ID及对应业务流程图、业务对象清单等，并确保接口可正常调用。"
+        },
+        {
+          "rule_id": "R027",
+          "status": "needs_more_info",
+          "reason": "数据架构评审接口返回参数异常，无法获取流维度与检查点数据，无法判断是否满足数据架构要求。",
+          "evidence": [
+            "message:参数异常",
+            "link_label:前往信息架构中心查看"
+          ],
+          "suggestion": "请核查数据架构评审接口配置，确保参数正确；如已配置，请提供手动填写的数据架构评审说明文档作为补充材料。"
+        },
+        {
+          "rule_id": "R028",
+          "status": "needs_more_info",
+          "reason": "技术架构评审虽接口操作成功，但未返回任何应用或服务数量信息，无法确认是否存在系统集成或技术组件部署。",
+          "evidence": [
+            "summary:app_count:0\nservice_count:0\nmessage:操作成功\nlink_label:前往云原生查看"
+          ],
+          "suggestion": "请补充技术架构评审材料，明确本项目涉及的应用系统、微服务或技术组件清单，并提供架构设计图或部署方案。"
+        },
+        {
+          "rule_id": "R029",
+          "status": "pass",
+          "reason": "安全架构评审接口返回操作成功，且无异常信息，符合通过标准。",
+          "evidence": [
+            "summary:app_count:0\nservice_count:0\nmessage:操作成功\nlink_label:前往应用开发安全平台查看"
+          ],
+          "suggestion": "无需补充，该规则已通过。"
+        }
+      ],
+      "risks": [
+        "项目缺乏完整的业务、数据、技术架构评审依据，存在架构不一致或后续运维风险。"
+      ],
+      "missing_information": [
+        "业务架构评审材料（含产品ID、业务流程图、业务对象清单）",
+        "数据架构评审材料（流维度、检查点等）",
+        "技术架构评审材料（应用/服务清单、系统部署图）"
+      ]
+    },
+    {
+      "tab": "项目价值",
+      "decision": "通过",
+      "summary": "项目价值模块已完整填写，包含明确的价值目标（基础设施可用性达到99.95%）、当前状态（新建工厂）及实现路径说明（基于设备运行状态），符合评审规则 R033 要求，无需补充材料。",
+      "item_results": [
+        {
+          "rule_id": "R033",
+          "status": "pass",
+          "reason": "项目价值信息完整，包含清晰的目标（基础设施可用性达到99.95%）、当前状态（新建工厂）和内容说明（基于设备运行状态），满足规则要求。",
+          "evidence": [
+            "title:能力提升",
+            "valueGoal:基础设施可用性达到99.95%",
+            "currentStatus:新建工厂",
+            "content:基于设备运行状态"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，目标计划缺少完整的时间范围，导致关键规则R036不通过，整体审批未通过。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划时间范围完整，起止日期明确，符合要求。",
+          "evidence": [
+            "start:2023-06-01",
+            "end:2023-07-30",
+            "title:立项计划"
+          ],
+          "suggestion": "具备立项计划"
+        },
+        {
+          "rule_id": "R035",
+          "status": "pass",
+          "reason": "合同签订计划时间范围完整，起止日期明确，符合要求。",
+          "evidence": [
+            "start:2023-08-10",
+            "end:2023-10-30",
+            "title:合同签订计划"
+          ],
+          "suggestion": "具备合同计划"
+        },
+        {
+          "rule_id": "R036",
+          "status": "fail",
+          "reason": "目标计划缺少完整的时间范围，未提供开始与结束日期，无法确认计划可行性与进度安排。",
+          "evidence": [],
+          "suggestion": "请补充目标计划的起止时间及对应里程碑标题，确保时间范围完整"
+        }
+      ],
+      "risks": [
+        "目标计划缺失时间范围，可能导致项目进度失控，影响验收节点和资源调配。"
+      ],
+      "missing_information": [
+        "目标计划的开始日期（milestoneStartDate）",
+        "目标计划的结束日期（milestoneDate）",
+        "目标计划的标题（milestoneTitle）"
+      ]
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息模块已完整提供费用构成，且长尾费用与历史投入均无需补充，符合审批要求。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "pass",
+          "reason": "费用构成完整，包含基础设施、LED屏幕、会议平板三项明细，每项均具备名称、金额、预算科目、计算方式及采购模式。",
+          "evidence": [
+            "name:新能源电池电驱基地及M220电驱增能项目-数字化基础设施-基础设施, amount:15320000.0, budget_subject:YSGC-22Z9605S0115-1, calculation:数量*单价, purchase_mode:招标采购",
+            "name:新能源电池电驱基地及M220电驱增能项目-数字化基础设施-LED, amount:380000.0, budget_subject:YSGC-22Z9605S0115-2, calculation:数量*单价, purchase_mode:开发资源池",
+            "name:新能源电池电驱基地及M220电驱增能项目-数字化基础设施-会议平板, amount:260000.0, budget_subject:YSGC-22Z9605S0115-3, calculation:数量*单价, purchase_mode:开发资源池"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需提供长尾费用相关材料。",
+          "evidence": [],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需提供历史投入相关材料。",
+          "evidence": [],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    }
+  ]
+}

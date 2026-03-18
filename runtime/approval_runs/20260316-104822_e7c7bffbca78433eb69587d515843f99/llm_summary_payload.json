@@ -1,0 +1,372 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "2025年研发工具软件订阅升级-Vred-例行订阅",
+  "category": "研发工具订阅许可升级",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 52,
+    "statistics": {
+      "total_rules": 24,
+      "passed_rules": 20,
+      "failed_rules": 4,
+      "critical_failures": 4,
+      "major_failures": 0,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R014",
+        "review_point": "项目范围",
+        "review_content": "内容列表",
+        "status": "fail",
+        "severity": "critical",
+        "message": "缺少 内容列表",
+        "suggestion": "具备内容",
+        "evidence": ""
+      },
+      {
+        "rule_id": "R021",
+        "review_point": "业务全景图",
+        "review_content": "业务全景图内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "业务全景图内容过短，无法支撑审批。",
+        "suggestion": "具备业务全景图内容",
+        "evidence": "title:业务全景图标题\ncontent:业务全景图标题\nimages:1b694298514548db9689b702efdfd030\nitems:title:业务全景图标题\ncontent:业务全景图标题\nimages:1b694298514548db9689b702efdfd030"
+      },
+      {
+        "rule_id": "R024",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "管理模型内容过短，无法支撑审批。",
+        "suggestion": "具备管理模型内容",
+        "evidence": "title:管理模型\ncontent:管理模型内容\nimages:6addbb23e6ad4f76ae774e2aca391d30\nitems:title:管理模型\ncontent:管理模型内容\nimages:6addbb23e6ad4f76ae774e2aca391d30"
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容部分存在关键信息缺失，特别是业务全景图内容和管理模型内容严重不足，无法支撑审批决策。尽管背景、目标、方案等基础材料完整，但核心管理与全景描述内容过于简略，不符合项目审批要求。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "项目背景标题已提供，内容完整且有图片支持。",
+          "evidence": [
+            "title:项目背景",
+            "content:VRED是汽车行业内最主流的造型可视化渲染软件，是造型设计渲染与可视化评审的核心软件。\n1.使用部门：模型技术部\n2.软件现有数量：2套\n\t    使用人数：常用人数6人，偶尔使用人数10+\n\t    软件负荷：较高\n\t    使用效果：良好\n 3.面临问题：造型院可视化专业每年承接展示项目约20个，目前同时使用人员较多，许可数量不足。为解决上述需求，申请将该软件例行订阅",
+            "images:65c75153b5ff4efea1af8eb5af90d34a"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "项目背景内容完整，包含使用部门、软件数量、使用人数、负荷情况及问题描述。",
+          "evidence": [
+            "title:项目背景",
+            "content:VRED是汽车行业内最主流的造型可视化渲染软件，是造型设计渲染与可视化评审的核心软件。\n1.使用部门：模型技术部\n2.软件现有数量：2套\n\t    使用人数：常用人数6人，偶尔使用人数10+\n\t    软件负荷：较高\n\t    使用效果：良好\n 3.面临问题：造型院可视化专业每年承接展示项目约20个，目前同时使用人员较多，许可数量不足。为解决上述需求，申请将该软件例行订阅",
+            "images:65c75153b5ff4efea1af8eb5af90d34a"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "项目背景图片已上传，符合要求。",
+          "evidence": [
+            "images:65c75153b5ff4efea1af8eb5af90d34a"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R004",
+          "status": "pass",
+          "reason": "项目目标标题已提供，内容完整。",
+          "evidence": [
+            "title:项目目标",
+            "content:VRED软件的使用可实现真实时渲染，大幅削减物理样车制造数量，直接降低数千万研发成本并缩短开发周期。其沉浸式VR协同平台使异地团队能基于统一数字模型进行评审，显著提升跨部门决策效率与准确性。同时，照片级可视化能力助力精准评估造型曲面与材质质感，从源头提升产品品质。此外，VRED生成的可交互内容更可转化为创新营销资产，助力造型宣传。"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R005",
+          "status": "pass",
+          "reason": "项目目标内容完整，涵盖成本节约、协同效率、品质提升与营销价值。",
+          "evidence": [
+            "content:VRED软件的使用可实现真实时渲染，大幅削减物理样车制造数量，直接降低数千万研发成本并缩短开发周期。其沉浸式VR协同平台使异地团队能基于统一数字模型进行评审，显著提升跨部门决策效率与准确性。同时，照片级可视化能力助力精准评估造型曲面与材质质感，从源头提升产品品质。此外，VRED生成的可交互内容更可转化为创新营销资产，助力造型宣传。"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R006",
+          "status": "pass",
+          "reason": "项目目标图片已上传，符合要求。",
+          "evidence": [
+            "images:98a4ddf78a3641dbbc608047baf8ce5b"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R014",
+          "status": "fail",
+          "reason": "项目范围中的内容列表为空，未提供任何具体的内容条目或说明，无法判断项目实际覆盖范围。",
+          "evidence": [
+            "content_list:[]"
+          ],
+          "suggestion": "请补充详细的内容列表，明确项目所涉及的具体功能模块、任务项或交付物。"
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题已提供，内容清晰。",
+          "evidence": [
+            "title:项目方案",
+            "content:软件现有2套:模型技术部于2024年购买2套最新版本。本次申请购买3套。"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "项目方案内容完整，明确说明了现有数量与申请数量。",
+          "evidence": [
+            "content:软件现有2套:模型技术部于2024年购买2套最新版本。本次申请购买3套。"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "项目方案图片已上传，符合要求。",
+          "evidence": [
+            "images:3344708e71a2476e8306f9e40b5139f0"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R020",
+          "status": "pass",
+          "reason": "业务全景图标题已提供，内容合理。",
+          "evidence": [
+            "title:业务全景图标题",
+            "content:业务全景图标题"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R021",
+          "status": "fail",
+          "reason": "业务全景图内容仅为‘业务全景图标题’，内容过短，缺乏对业务流程、系统关联、角色职责等关键要素的描述，无法支撑审批判断。",
+          "evidence": [
+            "content:业务全景图标题"
+          ],
+          "suggestion": "请补充完整的业务全景图内容，包括但不限于主要流程节点、参与方、系统交互关系等，确保能够反映项目在整体业务体系中的定位与作用。"
+        },
+        {
+          "rule_id": "R022",
+          "status": "pass",
+          "reason": "业务全景图图片已上传，符合要求。",
+          "evidence": [
+            "images:1b694298514548db9689b702efdfd030"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R023",
+          "status": "pass",
+          "reason": "管理模型标题已提供，内容合理。",
+          "evidence": [
+            "title:管理模型",
+            "content:管理模型内容"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R024",
+          "status": "fail",
+          "reason": "管理模型内容仅为‘管理模型内容’，无实质内容，无法体现项目的年度管理机制、责任分工、执行周期、监控方式等关键要素，不具备审批依据。",
+          "evidence": [
+            "content:管理模型内容"
+          ],
+          "suggestion": "请补充详细的管理模型内容，包括管理职责、流程节点、考核指标、协作机制等，确保项目具备可执行、可追踪的管理闭环。"
+        },
+        {
+          "rule_id": "R025",
+          "status": "pass",
+          "reason": "管理模型图片已上传，符合要求。",
+          "evidence": [
+            "images:6addbb23e6ad4f76ae774e2aca391d30"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [
+        "业务全景图与管理模型内容缺失，导致项目整体战略意图与执行路径不清晰，存在重大审批风险。",
+        "项目范围中缺少内容列表，无法确认项目边界与交付范围，可能引发后续资源冲突或范围蔓延。"
+      ],
+      "missing_information": [
+        "项目范围 - 内容列表（需补充具体功能/任务条目）",
+        "业务全景图 - 实质性内容（需补充流程、角色、系统交互等）",
+        "年度管理模型 - 实质性内容（需补充管理机制、职责分工、执行流程等）"
+      ]
+    },
+    {
+      "tab": "项目价值",
+      "decision": "通过",
+      "summary": "项目价值内容已完整填写，符合评审规则要求，具备明确的项目价值描述，无需补充材料。",
+      "item_results": [
+        {
+          "rule_id": "R033",
+          "status": "pass",
+          "reason": "项目价值字段已填写，包含具体目标（创意实现、创意优化、快速建模、部件设计）及内容说明（部门业务能力全景图），满足项目价值完整性要求。",
+          "evidence": [
+            "title:创意实现，创意优化，快速建模，部件设计",
+            "valueGoal:创意实现，创意优化，快速建模，部件设计",
+            "content:部门业务能力全景图"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，目标计划缺失完整时间范围，导致关键规则R036未通过，整体审批不通过。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划包含起止日期和标题，信息完整，符合要求。",
+          "evidence": [
+            "start:2025-10-29",
+            "end:2025-10-31",
+            "title:立项计划"
+          ],
+          "suggestion": "具备立项计划"
+        },
+        {
+          "rule_id": "R035",
+          "status": "pass",
+          "reason": "合同签订计划包含起止日期和标题，信息完整，符合要求。",
+          "evidence": [
+            "start:2025-11-13",
+            "end:2026-01-10",
+            "title:合同签订计划"
+          ],
+          "suggestion": "具备合同计划"
+        },
+        {
+          "rule_id": "R036",
+          "status": "fail",
+          "reason": "目标计划缺少起止日期，无法确认时间节点，不符合里程碑完整性要求。",
+          "evidence": [],
+          "suggestion": "请补充目标计划的开始与结束日期"
+        }
+      ],
+      "risks": [
+        "目标计划缺失时间范围，可能导致项目进度失控，影响交付时效性。"
+      ],
+      "missing_information": [
+        "目标计划的开始日期（milestoneStartDate）",
+        "目标计划的结束日期（milestoneDate）"
+      ]
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面评审通过。费用构成完整，长尾费用与历史投入均无需提供，规则基线中所有规则均已通过。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "pass",
+          "reason": "费用构成完整，包含预算项名称、金额、预算科目、计算方式及采购模式。",
+          "evidence": [
+            "name:预算构成DE-2507EFY58",
+            "amount:715500.0",
+            "budget_subject:YSGC-DE-2507EFY58-1",
+            "calculation:供应商报价",
+            "purchase_mode:直接采购"
+          ],
+          "suggestion": "具备费用构成"
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需补充材料。",
+          "evidence": [],
+          "suggestion": "无需补充此项"
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需补充材料。",
+          "evidence": [],
+          "suggestion": "无需补充此项"
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "费用变化点",
+      "decision": "通过",
+      "summary": "费用变化点评审已通过，项目为固定类项目，历史费用数据完整，2023-2025年费用趋势清晰，增长率合理，且规则基线中R041已判定为通过。",
+      "item_results": [
+        {
+          "rule_id": "R041",
+          "status": "pass",
+          "reason": "项目为固定类项目（fixed_project: true），费用变化点数据完整，包含2023年、2024年、2025年三年费用数据（550,000 → 590,000 → 715,500），增长率分别为7.27%和21.27%，符合例行订阅升级的合理性。历史分析内容说明费用依据为供应商报价及采购数量，逻辑清晰。",
+          "evidence": [
+            "fixed_project: true",
+            "history_analysis: oneKey:2023年, oneValue:550000",
+            "history_analysis: twoKey:2024年, twoValue:590000",
+            "history_analysis: threeKey:2025年, threeValue:715500",
+            "history_analysis: twoThreeValue:21.27",
+            "history_analysis: content:每年以供应商报价的软件单价及采购数量决定"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    }
+  ]
+}

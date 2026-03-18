@@ -1,0 +1,16 @@
+{
+  "api_name": "probe_project_base_info",
+  "method": "POST",
+  "path": "/projectBaseInfo/info",
+  "payload": {
+    "id": "d4820493c0bd4d8eb8c71fe22e95af89"
+  },
+  "project_id": "d4820493c0bd4d8eb8c71fe22e95af89",
+  "result": {
+    "code": 2,
+    "message": "Cannot invoke \"com.dcp.itpm.service.sop.service.bus.entity.ProjectBaseInfo.setIsCounterSign(java.lang.Integer)\" because \"byProjectId\" is null",
+    "data": null
+  },
+  "error": "",
+  "called_at": "2026-03-11T15:41:16+08:00"
+}

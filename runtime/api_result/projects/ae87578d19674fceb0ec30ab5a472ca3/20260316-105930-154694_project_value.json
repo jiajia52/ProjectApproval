@@ -1,0 +1,42 @@
+{
+  "api_name": "project_value",
+  "method": "GET",
+  "path": "/value/infoNoTam/ae87578d19674fceb0ec30ab5a472ca3",
+  "payload": null,
+  "project_id": "ae87578d19674fceb0ec30ab5a472ca3",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": 1088,
+        "projectId": "ae87578d19674fceb0ec30ab5a472ca3",
+        "projectValueId": null,
+        "title": "自主开发业务能力",
+        "valueGoal": "1.能力提升：持续软件自动化测试业务能力2.问题解决：借用4套到期后不再续借会导致通过量不足，通过针对现有2套进行升级，以维持7+4套的使用许可。",
+        "currentStatus": "无",
+        "deptId": "[\"208\"]",
+        "oneKey": null,
+        "oneValue": null,
+        "twoValue": null,
+        "threeValue": null,
+        "content": "部门业务能力全景图",
+        "creatorId": null,
+        "creator": null,
+        "createTime": null,
+        "modifierId": null,
+        "modifier": null,
+        "updateTime": null,
+        "isDelete": 0,
+        "type": 1,
+        "actualTargetYear": null,
+        "actualTargetText": null,
+        "oneValueActual": null,
+        "twoValueActual": null,
+        "threeValueActual": null
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-16T10:59:30+08:00"
+}

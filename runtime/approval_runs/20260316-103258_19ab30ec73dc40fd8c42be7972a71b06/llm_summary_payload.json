@@ -1,0 +1,349 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "北京车展数字化展区项目",
+  "category": "基础服务",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 76,
+    "statistics": {
+      "total_rules": 24,
+      "passed_rules": 22,
+      "failed_rules": 2,
+      "critical_failures": 2,
+      "major_failures": 0,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R024",
+        "review_point": "年度管理模型",
+        "review_content": "管理模型内容",
+        "status": "fail",
+        "severity": "critical",
+        "message": "管理模型内容过短，无法支撑审批。",
+        "suggestion": "具备管理模型内容",
+        "evidence": "title:业务新增，本次不涉及\ncontent:业务新增，本次不涉及\nimages:669756e96cf64111a0d1bede741bb41b\nitems:title:业务新增，本次不涉及\ncontent:业务新增，本次不涉及\nimages:669756e96cf64111a0d1bede741bb41b"
+      },
+      {
+        "rule_id": "R036",
+        "review_point": "项目里程碑",
+        "review_content": "目标计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "目标计划缺少完整时间范围",
+        "suggestion": "具备目标计划",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "驳回",
+      "summary": "项目内容部分整体材料完整，但年度管理模型内容缺失实质性内容，仅填写‘业务新增，本次不涉及’，无法支撑项目管理模型的评审要求，导致关键规则R024失败，故整体驳回。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "背景标题存在且内容完整，符合要求。",
+          "evidence": [
+            "title:2026年北京车展数字化展区"
+          ],
+          "suggestion": "具备项目背景标题"
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "背景内容存在且信息完整，包含会议要求与统筹考虑事项。",
+          "evidence": [
+            "content:2026 年2月12日，北京车展红旗天工展区红旗数智化智能体展示方案汇报专题会会议要求：\n1、由体系数字化部全面负责 2026 年北京车展数智化展示工作，充分体现AI智能体能力，用户视角强化车辆定义体验感\n2、将北京车展、数字中国建设峰会（福州）和 NBD 中庭展览展示做统筹考虑和管理"
+          ],
+          "suggestion": "具备项目背景内容"
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "背景图片存在，已上传相关图像资源。",
+          "evidence": [
+            "images:c3878551dd9c4e2783efef58bb3b00fe"
+          ],
+          "suggestion": "具备项目背景图片"
+        },
+        {
+          "rule_id": "R004",
+          "status": "pass",
+          "reason": "项目目标标题存在且明确指向核心体验构建。",
+          "evidence": [
+            "title:在数字化展区构建用户四个高情绪体验"
+          ],
+          "suggestion": "具备项目目标标题"
+        },
+        {
+          "rule_id": "R005",
+          "status": "pass",
+          "reason": "项目目标内容完整，列出四项高情绪体验，逻辑清晰。",
+          "evidence": [
+            "content:①用户在线参与选配实现产品共创 ②智能制造全流程透明化体验 ③数据/AI驱动的个性化服务体验 ④通过社交裂变机制放大传播效能，全方位构建沉浸式品牌科技感知与用户深度连接。"
+          ],
+          "suggestion": "具备项目目标内容"
+        },
+        {
+          "rule_id": "R006",
+          "status": "pass",
+          "reason": "项目目标图片存在，支持目标表达。",
+          "evidence": [
+            "images:7e5527b6c8b247c2a0b0f69892d3848c"
+          ],
+          "suggestion": "具备项目目标图片"
+        },
+        {
+          "rule_id": "R014",
+          "status": "pass",
+          "reason": "内容列表存在，包含四项资源项，明细清晰。",
+          "evidence": [
+            "businessDescription:LED屏幕、交互设备、收音、音响、打印、灯光、摄影、耗材",
+            "businessDescription:“设计你心目中的红旗车”内容设计及软硬件开发集成",
+            "businessDescription:网络专线",
+            "businessDescription:技术服务、礼仪服务"
+          ],
+          "suggestion": "具备内容"
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题存在，名称准确反映内容。",
+          "evidence": [
+            "title:数字化展厅造型设计平面方案"
+          ],
+          "suggestion": "具备项目方案标题"
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "项目方案内容完整，涵盖部署、备份、SLA、巡检与保障等关键要素。",
+          "evidence": [
+            "content:①设备整体调试整体组装至展区，即插即用\n②设备备份方案\n③功能稳定性SLA方案（考虑AI方案生成时长、车展网络稳定性、高并发QPS）\n④展前展区例行演练巡检3次\n⑤现场技术服务保障方案"
+          ],
+          "suggestion": "具备项目方案内容"
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "项目方案图片存在，共6张，覆盖多个环节。",
+          "evidence": [
+            "images:c3878551dd9c4e2783efef58bb3b00fe",
+            "images:265529c4189e46d994dfe80ecbb92a02",
+            "images:3de3c790116b466ab6ef303baf937306",
+            "images:ec8f10df26754d42a015e4fa9ba0d245",
+            "images:cb554028182740febd852b390f04eb8b",
+            "images:92f4a0a12a3746bf945d88978b7ce702"
+          ],
+          "suggestion": "具备项目方案图片"
+        },
+        {
+          "rule_id": "R020",
+          "status": "pass",
+          "reason": "业务全景图标题存在，与目标一致。",
+          "evidence": [
+            "title:在数字化展区构建用户四个高情绪体验"
+          ],
+          "suggestion": "具备业务全景图标题"
+        },
+        {
+          "rule_id": "R021",
+          "status": "pass",
+          "reason": "业务全景图内容完整，与目标描述一致。",
+          "evidence": [
+            "content:①用户在线参与选配实现产品共创 ②智能制造全流程透明化体验 ③数据/AI驱动的个性化服务体验 ④通过社交裂变机制放大传播效能，全方位构建沉浸式品牌科技感知与用户深度连接。"
+          ],
+          "suggestion": "具备业务全景图内容"
+        },
+        {
+          "rule_id": "R022",
+          "status": "pass",
+          "reason": "业务全景图图片存在，支持可视化呈现。",
+          "evidence": [
+            "images:a12b9ceaf0b54b2abb846f4a0ae3aa9a"
+          ],
+          "suggestion": "具备业务全景图图片"
+        },
+        {
+          "rule_id": "R023",
+          "status": "pass",
+          "reason": "管理模型标题存在，明确说明‘本次不涉及’。",
+          "evidence": [
+            "title:业务新增，本次不涉及"
+          ],
+          "suggestion": "具备管理模型标题"
+        },
+        {
+          "rule_id": "R024",
+          "status": "fail",
+          "reason": "管理模型内容仅为‘业务新增，本次不涉及’，内容过短且无实质信息，无法支撑年度管理模型的评审要求。",
+          "evidence": [
+            "content:业务新增，本次不涉及"
+          ],
+          "suggestion": "需补充具体管理模型内容，如组织职责、流程机制、考核方式、协同模式等"
+        },
+        {
+          "rule_id": "R025",
+          "status": "pass",
+          "reason": "管理模型图片存在，已上传对应资源。",
+          "evidence": [
+            "images:669756e96cf64111a0d1bede741bb41b"
+          ],
+          "suggestion": "具备管理模型图片"
+        }
+      ],
+      "risks": [
+        "年度管理模型内容缺失实质性内容，可能导致项目执行阶段缺乏管理依据，影响跨部门协同与责任划分。"
+      ],
+      "missing_information": [
+        "年度管理模型的具体内容（如组织分工、流程机制、考核指标、协同方式等）未提供，无法评估其可行性与完整性。"
+      ]
+    },
+    {
+      "tab": "项目价值",
+      "decision": "通过",
+      "summary": "项目价值已完整填写，包含AI智能体造型能力与客户留资数两项核心价值目标，且均有明确的目标值与实现路径说明，符合评审规则要求。",
+      "item_results": [
+        {
+          "rule_id": "R033",
+          "status": "pass",
+          "reason": "项目价值已完整填写，包含两个可量化的目标（AI造型能力、客户留资≥10000），并附有实现逻辑说明，满足项目价值评审要求。",
+          "evidence": [
+            "title:AI智能体造型能力, valueGoal:具备一句话描述实现车辆AI造型能力, currentStatus:不具备",
+            "title:客户留资数, valueGoal:基于车展数字化展区及裂变分享实现客户留资≥10000, content:按照北京车展及数字中国，每日客户留资数1000人，整体展会共计10天，预计整体留资10000人"
+          ],
+          "suggestion": "无需补充，项目价值内容完整且具备可衡量性。"
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，目标计划缺少完整时间范围，导致关键规则R036未通过，整体审批不通过。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划已明确起止日期（2026-02-28至2026-02-28），信息完整，符合要求。",
+          "evidence": [
+            "start:2026-02-28",
+            "end:2026-02-28",
+            "title:立项计划"
+          ],
+          "suggestion": "具备立项计划"
+        },
+        {
+          "rule_id": "R035",
+          "status": "pass",
+          "reason": "合同签订计划已明确起止日期（2026-03-24至2026-05-21），信息完整，符合要求。",
+          "evidence": [
+            "start:2026-03-24",
+            "end:2026-05-21",
+            "title:合同签订计划"
+          ],
+          "suggestion": "具备合同计划"
+        },
+        {
+          "rule_id": "R036",
+          "status": "fail",
+          "reason": "目标计划未提供任何时间范围（start与end字段为空），无法确认目标达成时间节点，不符合里程碑完整性要求。",
+          "evidence": [
+            "target_plan: {}"
+          ],
+          "suggestion": "请补充目标计划的起止时间及具体目标内容，确保里程碑可执行、可追踪。"
+        }
+      ],
+      "risks": [
+        "目标计划缺失时间范围，可能导致项目后期进度失控，影响整体交付时效。"
+      ],
+      "missing_information": [
+        "目标计划的开始日期（milestoneStartDate）",
+        "目标计划的结束日期（milestoneEndDate）",
+        "目标计划的具体目标或交付物说明"
+      ]
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面内容完整，费用构成清晰，长尾费用与历史投入均无需提供，符合评审规则要求。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "pass",
+          "reason": "费用构成完整，包含服务名称、金额、预算科目、计算方式及采购模式，信息齐全。",
+          "evidence": [
+            "name:信息系统服务费",
+            "amount:3489400.0",
+            "budget_subject:YSGC-PM-2603AYZ-1",
+            "calculation:按设备",
+            "purchase_mode:直接采购"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需补充材料。",
+          "evidence": "",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则标记为不需要，无需补充材料。",
+          "evidence": "",
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "费用变化点",
+      "decision": "通过",
+      "summary": "费用变化点评审已通过，项目为固定类项目，费用变化说明完整且符合规则要求。",
+      "item_results": [
+        {
+          "rule_id": "R041",
+          "status": "pass",
+          "reason": "项目为固定类项目（fixed_project: true），费用变化点存在且历史分析数据完整，2026年费用变化值为100元，变更原因明确为新增业务，符合规则要求。",
+          "evidence": [
+            "fixed_project: true",
+            "history_analysis: threeKey:2026年, threeValue:100",
+            "reason: 100",
+            "content: 北京车展数字化展区业务为新增业务"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    }
+  ]
+}

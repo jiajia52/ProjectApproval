@@ -1,0 +1,14 @@
+{
+  "api_name": "organization_framework",
+  "method": "GET",
+  "path": "/projectOrgFramework/list/8ea1d99fd9fa4e279dbe3eb1ae052f81",
+  "payload": null,
+  "project_id": "8ea1d99fd9fa4e279dbe3eb1ae052f81",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": []
+  },
+  "error": "",
+  "called_at": "2026-03-17T16:30:18+08:00"
+}

@@ -1,0 +1,177 @@
+{
+  "raw": {
+    "id": "chatcmpl-cf4756f5-f7b1-96b4-86dd-347e5b2187b4",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总体未通过审批。尽管在预算信息和项目里程碑等部分满足要求，但存在多项关键缺陷：专业领域评审缺失业务、数据、技术及安全架构评审材料；组织架构信息不完整，成员信息与开发模式均为空；项目内容中项目目标、业务全景图、年度管理模型等核心内容缺失。上述问题构成严重合规风险，且已触发规则基线中的致命失败项（R037），导致项目无法进入实施阶段。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。\",\n      \"evidence\": [\n        \"architecture_reviews.business: ''\",\n        \"project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.projectRangeFlowEntities: 包含数据分析管理流程（L3），但无业务架构说明\"\n      ],\n      \"suggestion\": \"补充完整的业务架构评审文档，明确项目在POM域中的业务定位、流程覆盖范围及与战略目标的对齐关系。\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供数据架构评审材料，无法确认数据来源、流转、治理及模型设计合理性。\",\n      \"evidence\": [\n        \"architecture_reviews.data: ''\",\n        \"scope.business_processes: 存在‘数据分析管理流程’，但无数据架构描述\"\n      ],\n      \"suggestion\": \"补充数据架构评审材料，包括数据模型设计、数据血缘、主数据管理策略及数据安全控制措施。\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供技术架构评审材料，无法评估系统可扩展性、集成能力与技术选型合理性。\",\n      \"evidence\": [\n        \"architecture_reviews.technology: ''\",\n        \"scope.microservices: 包含‘OpenMind智能体’系统，但无技术架构说明\"\n      ],\n      \"suggestion\": \"补充技术架构评审文档，涵盖微服务划分、接口规范、部署模式、中间件选型及容灾设计。\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供安全架构评审材料，存在潜在安全风险，不符合企业级系统建设要求。\",\n      \"evidence\": [\n        \"architecture_reviews.security: ''\",\n        \"project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.systemRelationSystemTrees: 显示系统归属集团总部/分子公司/三方生态，但无安全边界与访问控制设计\"\n      ],\n      \"suggestion\": \"补充安全架构评审材料，包括身份认证、权限控制、数据加密、审计日志及等保合规设计。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"fail\",\n      \"reason\": \"组织成员信息不完整，项目成员列表中所有成员的姓名、角色、级别、任务计划和工作量均为空，无法确认团队构成；同时开发模式字段为空，缺乏项目实施方式说明。\",\n      \"evidence\": [\n        \"project_page_document.organization.members: 所有成员的 name、role、level、task_plan、workload 字段均为空\",\n        \"project_page_document.organization.development_mode: 字段为空\"\n      ],\n      \"suggestion\": \"请补充完整的组织架构信息，包括每位成员的姓名、岗位角色、职级、任务计划及工作量分配，并明确填写开发模式（如：自研、外包、混合等）\"\n    },\n    {\n      \"rule_id\": \"R004\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标标题为空，未填写。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充项目目标标题，例如‘打造企业级智能体平台’或类似表述。\"\n    },\n    {\n      \"rule_id\": \"R005\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标内容为空，未提供具体目标描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充项目目标具体内容，应明确说明项目要达成的核心成果。\"\n    },\n    {\n      \"rule_id\": \"R006\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标图片为空，无可视化支持。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传项目目标相关的示意图或架构图，增强可读性。\"\n    },\n    {\n      \"rule_id\": \"R014\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"内容列表为空，未提供任何子项或明细清单。\",\n      \"evidence\": [\n        \"content_list: []\"\n      ],\n      \"suggestion\": \"请补充项目涉及的内容列表，如功能模块、交付物清单等。\"\n    },\n    {\n      \"rule_id\": \"R020\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图标题为空，未命名。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充业务全景图标题，如‘OpenMind全链路业务视图’。\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"结果（财务/客户）模型中，目标未包含可量化的财务收益或客户价值指标，如成本节约金额、效率提升百分比、客户满意度提升值等，仅描述功能推广，缺乏效益验证依据。\",\n      \"evidence\": [\n        \"id:564\",\n        \"title:空\",\n        \"target_2026/2027/2028:均为功能描述，无量化指标\",\n        \"benefit_department:[]\",\n        \"calculation_basis:空\"\n      ],\n      \"suggestion\": \"请补充该模型对应的财务或客户价值目标，例如：预计节省人工报表工时XX小时/年，降低运营成本XX万元，或实现客户响应速度提升XX%等可衡量指标。\"\n    }\n  ],\n  \"risks\": [\n    \"项目缺乏核心架构评审，可能导致系统与企业战略脱节、数据孤岛、技术债务累积及重大安全隐患。\",\n    \"组织成员信息不全与开发模式缺失，将严重影响项目执行可控性与资源调配。\",\n    \"项目目标、业务全景图、年度管理模型等关键内容缺失，导致项目可行性与实施路径无法评估。\",\n    \"结果模型缺乏量化指标，项目效益无法验证，影响后续绩效评估与资源投入决策。\"\n  ],\n  \"missing_information\": [\n    \"业务架构评审文档\",\n    \"数据架构评审文档\",\n    \"技术架构评审文档\",\n    \"安全架构评审文档\",\n    \"项目目标（O）的具体描述内容\",\n    \"项目目标图片\",\n    \"内容列表（内容清单）\",\n    \"业务全景图标题\",\n    \"业务全景图内容\",\n    \"业务全景图图片\",\n    \"年度管理模型标题\",\n    \"年度管理模型内容\",\n    \"年度管理模型图片\",\n    \"结果（财务/客户）模型中的具体财务或客户价值量化指标（如成本节约额、效率提升率、客户满意度变化等）\",\n    \"结果模型的计算依据或效益测算方法\",\n    \"组织成员详细信息（姓名、角色、职级、任务计划、工作量）\",\n    \"开发模式（自研/外包/混合等）\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1773292291,
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1663,
+      "prompt_tokens": 5231,
+      "total_tokens": 6894,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "content": "{\n  \"decision\": \"驳回\",\n  \"summary\": \"项目总体未通过审批。尽管在预算信息和项目里程碑等部分满足要求，但存在多项关键缺陷：专业领域评审缺失业务、数据、技术及安全架构评审材料；组织架构信息不完整，成员信息与开发模式均为空；项目内容中项目目标、业务全景图、年度管理模型等核心内容缺失。上述问题构成严重合规风险，且已触发规则基线中的致命失败项（R037），导致项目无法进入实施阶段。\",\n  \"item_results\": [\n    {\n      \"rule_id\": \"R026\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。\",\n      \"evidence\": [\n        \"architecture_reviews.business: ''\",\n        \"project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.projectRangeFlowEntities: 包含数据分析管理流程（L3），但无业务架构说明\"\n      ],\n      \"suggestion\": \"补充完整的业务架构评审文档，明确项目在POM域中的业务定位、流程覆盖范围及与战略目标的对齐关系。\"\n    },\n    {\n      \"rule_id\": \"R027\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供数据架构评审材料，无法确认数据来源、流转、治理及模型设计合理性。\",\n      \"evidence\": [\n        \"architecture_reviews.data: ''\",\n        \"scope.business_processes: 存在‘数据分析管理流程’，但无数据架构描述\"\n      ],\n      \"suggestion\": \"补充数据架构评审材料，包括数据模型设计、数据血缘、主数据管理策略及数据安全控制措施。\"\n    },\n    {\n      \"rule_id\": \"R028\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供技术架构评审材料，无法评估系统可扩展性、集成能力与技术选型合理性。\",\n      \"evidence\": [\n        \"architecture_reviews.technology: ''\",\n        \"scope.microservices: 包含‘OpenMind智能体’系统，但无技术架构说明\"\n      ],\n      \"suggestion\": \"补充技术架构评审文档，涵盖微服务划分、接口规范、部署模式、中间件选型及容灾设计。\"\n    },\n    {\n      \"rule_id\": \"R029\",\n      \"status\": \"fail\",\n      \"reason\": \"未提供安全架构评审材料，存在潜在安全风险，不符合企业级系统建设要求。\",\n      \"evidence\": [\n        \"architecture_reviews.security: ''\",\n        \"project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.systemRelationSystemTrees: 显示系统归属集团总部/分子公司/三方生态，但无安全边界与访问控制设计\"\n      ],\n      \"suggestion\": \"补充安全架构评审材料，包括身份认证、权限控制、数据加密、审计日志及等保合规设计。\"\n    },\n    {\n      \"rule_id\": \"R037\",\n      \"status\": \"fail\",\n      \"reason\": \"组织成员信息不完整，项目成员列表中所有成员的姓名、角色、级别、任务计划和工作量均为空，无法确认团队构成；同时开发模式字段为空，缺乏项目实施方式说明。\",\n      \"evidence\": [\n        \"project_page_document.organization.members: 所有成员的 name、role、level、task_plan、workload 字段均为空\",\n        \"project_page_document.organization.development_mode: 字段为空\"\n      ],\n      \"suggestion\": \"请补充完整的组织架构信息，包括每位成员的姓名、岗位角色、职级、任务计划及工作量分配，并明确填写开发模式（如：自研、外包、混合等）\"\n    },\n    {\n      \"rule_id\": \"R004\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标标题为空，未填写。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充项目目标标题，例如‘打造企业级智能体平台’或类似表述。\"\n    },\n    {\n      \"rule_id\": \"R005\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标内容为空，未提供具体目标描述。\",\n      \"evidence\": [\n        \"content: \"\n      ],\n      \"suggestion\": \"请补充项目目标具体内容，应明确说明项目要达成的核心成果。\"\n    },\n    {\n      \"rule_id\": \"R006\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"项目目标图片为空，无可视化支持。\",\n      \"evidence\": [\n        \"images: []\"\n      ],\n      \"suggestion\": \"请上传项目目标相关的示意图或架构图，增强可读性。\"\n    },\n    {\n      \"rule_id\": \"R014\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"内容列表为空，未提供任何子项或明细清单。\",\n      \"evidence\": [\n        \"content_list: []\"\n      ],\n      \"suggestion\": \"请补充项目涉及的内容列表，如功能模块、交付物清单等。\"\n    },\n    {\n      \"rule_id\": \"R020\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"业务全景图标题为空，未命名。\",\n      \"evidence\": [\n        \"title: \"\n      ],\n      \"suggestion\": \"请补充业务全景图标题，如‘OpenMind全链路业务视图’。\"\n    },\n    {\n      \"rule_id\": \"R031\",\n      \"status\": \"needs_more_info\",\n      \"reason\": \"结果（财务/客户）模型中，目标未包含可量化的财务收益或客户价值指标，如成本节约金额、效率提升百分比、客户满意度提升值等，仅描述功能推广，缺乏效益验证依据。\",\n      \"evidence\": [\n        \"id:564\",\n        \"title:空\",\n        \"target_2026/2027/2028:均为功能描述，无量化指标\",\n        \"benefit_department:[]\",\n        \"calculation_basis:空\"\n      ],\n      \"suggestion\": \"请补充该模型对应的财务或客户价值目标，例如：预计节省人工报表工时XX小时/年，降低运营成本XX万元，或实现客户响应速度提升XX%等可衡量指标。\"\n    }\n  ],\n  \"risks\": [\n    \"项目缺乏核心架构评审，可能导致系统与企业战略脱节、数据孤岛、技术债务累积及重大安全隐患。\",\n    \"组织成员信息不全与开发模式缺失，将严重影响项目执行可控性与资源调配。\",\n    \"项目目标、业务全景图、年度管理模型等关键内容缺失，导致项目可行性与实施路径无法评估。\",\n    \"结果模型缺乏量化指标，项目效益无法验证，影响后续绩效评估与资源投入决策。\"\n  ],\n  \"missing_information\": [\n    \"业务架构评审文档\",\n    \"数据架构评审文档\",\n    \"技术架构评审文档\",\n    \"安全架构评审文档\",\n    \"项目目标（O）的具体描述内容\",\n    \"项目目标图片\",\n    \"内容列表（内容清单）\",\n    \"业务全景图标题\",\n    \"业务全景图内容\",\n    \"业务全景图图片\",\n    \"年度管理模型标题\",\n    \"年度管理模型内容\",\n    \"年度管理模型图片\",\n    \"结果（财务/客户）模型中的具体财务或客户价值量化指标（如成本节约额、效率提升率、客户满意度变化等）\",\n    \"结果模型的计算依据或效益测算方法\",\n    \"组织成员详细信息（姓名、角色、职级、任务计划、工作量）\",\n    \"开发模式（自研/外包/混合等）\"\n  ]\n}",
+  "json": {
+    "decision": "驳回",
+    "summary": "项目总体未通过审批。尽管在预算信息和项目里程碑等部分满足要求，但存在多项关键缺陷：专业领域评审缺失业务、数据、技术及安全架构评审材料；组织架构信息不完整，成员信息与开发模式均为空；项目内容中项目目标、业务全景图、年度管理模型等核心内容缺失。上述问题构成严重合规风险，且已触发规则基线中的致命失败项（R037），导致项目无法进入实施阶段。",
+    "item_results": [
+      {
+        "rule_id": "R026",
+        "status": "fail",
+        "reason": "未提供业务架构评审材料，无法验证项目与企业战略及业务流程的匹配性。",
+        "evidence": [
+          "architecture_reviews.business: ''",
+          "project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.projectRangeFlowEntities: 包含数据分析管理流程（L3），但无业务架构说明"
+        ],
+        "suggestion": "补充完整的业务架构评审文档，明确项目在POM域中的业务定位、流程覆盖范围及与战略目标的对齐关系。"
+      },
+      {
+        "rule_id": "R027",
+        "status": "fail",
+        "reason": "未提供数据架构评审材料，无法确认数据来源、流转、治理及模型设计合理性。",
+        "evidence": [
+          "architecture_reviews.data: ''",
+          "scope.business_processes: 存在‘数据分析管理流程’，但无数据架构描述"
+        ],
+        "suggestion": "补充数据架构评审材料，包括数据模型设计、数据血缘、主数据管理策略及数据安全控制措施。"
+      },
+      {
+        "rule_id": "R028",
+        "status": "fail",
+        "reason": "未提供技术架构评审材料，无法评估系统可扩展性、集成能力与技术选型合理性。",
+        "evidence": [
+          "architecture_reviews.technology: ''",
+          "scope.microservices: 包含‘OpenMind智能体’系统，但无技术架构说明"
+        ],
+        "suggestion": "补充技术架构评审文档，涵盖微服务划分、接口规范、部署模式、中间件选型及容灾设计。"
+      },
+      {
+        "rule_id": "R029",
+        "status": "fail",
+        "reason": "未提供安全架构评审材料，存在潜在安全风险，不符合企业级系统建设要求。",
+        "evidence": [
+          "architecture_reviews.security: ''",
+          "project_snapshot_excerpt.endpoints.project_scope_dev.data_preview.systemRelationSystemTrees: 显示系统归属集团总部/分子公司/三方生态，但无安全边界与访问控制设计"
+        ],
+        "suggestion": "补充安全架构评审材料，包括身份认证、权限控制、数据加密、审计日志及等保合规设计。"
+      },
+      {
+        "rule_id": "R037",
+        "status": "fail",
+        "reason": "组织成员信息不完整，项目成员列表中所有成员的姓名、角色、级别、任务计划和工作量均为空，无法确认团队构成；同时开发模式字段为空，缺乏项目实施方式说明。",
+        "evidence": [
+          "project_page_document.organization.members: 所有成员的 name、role、level、task_plan、workload 字段均为空",
+          "project_page_document.organization.development_mode: 字段为空"
+        ],
+        "suggestion": "请补充完整的组织架构信息，包括每位成员的姓名、岗位角色、职级、任务计划及工作量分配，并明确填写开发模式（如：自研、外包、混合等）"
+      },
+      {
+        "rule_id": "R004",
+        "status": "needs_more_info",
+        "reason": "项目目标标题为空，未填写。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充项目目标标题，例如‘打造企业级智能体平台’或类似表述。"
+      },
+      {
+        "rule_id": "R005",
+        "status": "needs_more_info",
+        "reason": "项目目标内容为空，未提供具体目标描述。",
+        "evidence": [
+          "content: "
+        ],
+        "suggestion": "请补充项目目标具体内容，应明确说明项目要达成的核心成果。"
+      },
+      {
+        "rule_id": "R006",
+        "status": "needs_more_info",
+        "reason": "项目目标图片为空，无可视化支持。",
+        "evidence": [
+          "images: []"
+        ],
+        "suggestion": "请上传项目目标相关的示意图或架构图，增强可读性。"
+      },
+      {
+        "rule_id": "R014",
+        "status": "needs_more_info",
+        "reason": "内容列表为空，未提供任何子项或明细清单。",
+        "evidence": [
+          "content_list: []"
+        ],
+        "suggestion": "请补充项目涉及的内容列表，如功能模块、交付物清单等。"
+      },
+      {
+        "rule_id": "R020",
+        "status": "needs_more_info",
+        "reason": "业务全景图标题为空，未命名。",
+        "evidence": [
+          "title: "
+        ],
+        "suggestion": "请补充业务全景图标题，如‘OpenMind全链路业务视图’。"
+      },
+      {
+        "rule_id": "R031",
+        "status": "needs_more_info",
+        "reason": "结果（财务/客户）模型中，目标未包含可量化的财务收益或客户价值指标，如成本节约金额、效率提升百分比、客户满意度提升值等，仅描述功能推广，缺乏效益验证依据。",
+        "evidence": [
+          "id:564",
+          "title:空",
+          "target_2026/2027/2028:均为功能描述，无量化指标",
+          "benefit_department:[]",
+          "calculation_basis:空"
+        ],
+        "suggestion": "请补充该模型对应的财务或客户价值目标，例如：预计节省人工报表工时XX小时/年，降低运营成本XX万元，或实现客户响应速度提升XX%等可衡量指标。"
+      }
+    ],
+    "risks": [
+      "项目缺乏核心架构评审，可能导致系统与企业战略脱节、数据孤岛、技术债务累积及重大安全隐患。",
+      "组织成员信息不全与开发模式缺失，将严重影响项目执行可控性与资源调配。",
+      "项目目标、业务全景图、年度管理模型等关键内容缺失，导致项目可行性与实施路径无法评估。",
+      "结果模型缺乏量化指标，项目效益无法验证，影响后续绩效评估与资源投入决策。"
+    ],
+    "missing_information": [
+      "业务架构评审文档",
+      "数据架构评审文档",
+      "技术架构评审文档",
+      "安全架构评审文档",
+      "项目目标（O）的具体描述内容",
+      "项目目标图片",
+      "内容列表（内容清单）",
+      "业务全景图标题",
+      "业务全景图内容",
+      "业务全景图图片",
+      "年度管理模型标题",
+      "年度管理模型内容",
+      "年度管理模型图片",
+      "结果（财务/客户）模型中的具体财务或客户价值量化指标（如成本节约额、效率提升率、客户满意度变化等）",
+      "结果模型的计算依据或效益测算方法",
+      "组织成员详细信息（姓名、角色、职级、任务计划、工作量）",
+      "开发模式（自研/外包/混合等）"
+    ]
+  },
+  "used_response_format": true
+}

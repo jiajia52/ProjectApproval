@@ -1,0 +1,69 @@
+{
+  "api_name": "architecture_review_technology_fallback",
+  "method": "POST",
+  "path": "/projectMicosInfo/getList",
+  "payload": {
+    "projectId": "13ab24a8f6204264be5a5ee598565672",
+    "dataType": 1
+  },
+  "project_id": "13ab24a8f6204264be5a5ee598565672",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": [
+      {
+        "id": "ee5a289b90f329eb40beede2a670c675",
+        "projectId": "13ab24a8f6204264be5a5ee598565672",
+        "systemId": "FA-0311",
+        "systemCode": "FA-0311",
+        "systemName": "PD财务系统",
+        "subCode": "FA-0311_APP_BOM",
+        "subName": "成本BOM管理",
+        "subLeader": "蔡淑杰",
+        "subLeaderAccount": "caishujie",
+        "subLevel": "C",
+        "subLevelStandard": "属于运营、配置、管理类且DAU<200",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "APP"
+      },
+      {
+        "id": "b3d452fb9e861a9a375266e60a629790",
+        "projectId": "13ab24a8f6204264be5a5ee598565672",
+        "systemId": "FA-0311",
+        "systemCode": "FA-0311",
+        "systemName": "PD财务系统",
+        "subCode": "FA-0311_APP_PDD",
+        "subName": "原价管理",
+        "subLeader": "蔡淑杰",
+        "subLeaderAccount": "caishujie",
+        "subLevel": "C",
+        "subLevelStandard": "属于运营、配置、管理类且DAU<200",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "APP"
+      },
+      {
+        "id": "3830bf8393ae03407d3e59a6d91298e9",
+        "projectId": "13ab24a8f6204264be5a5ee598565672",
+        "systemId": "FA-0311",
+        "systemCode": "FA-0311",
+        "systemName": "PD财务系统",
+        "subCode": "FA-0311_APP_PEC",
+        "subName": "收益管理",
+        "subLeader": "蔡淑杰",
+        "subLeaderAccount": "caishujie",
+        "subLevel": "C",
+        "subLevelStandard": "属于运营、配置、管理类且DAU<200",
+        "dataType": 1,
+        "projectCode": null,
+        "projectName": null,
+        "subType": "APP"
+      }
+    ]
+  },
+  "error": "",
+  "called_at": "2026-03-18T08:47:07+08:00"
+}

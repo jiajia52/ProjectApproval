@@ -1,0 +1,130 @@
+{
+  "api_name": "project_uploading",
+  "method": "GET",
+  "path": "/projectUploading/list/8378ccd8b95e487f89fb824445a2f053",
+  "payload": null,
+  "project_id": "8378ccd8b95e487f89fb824445a2f053",
+  "result": {
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+      "1": [
+        {
+          "id": 1966502292,
+          "projectId": "8378ccd8b95e487f89fb824445a2f053",
+          "title": "数字化办公助力纪检监察工作提质增效",
+          "content": "中央纪委国家监委办公厅赴驻中国一汽纪检监察组调研时提出的数字化办公工作要求，以数字化办公助力纪检监察工作提质增效，为集团公司战略转型和高质量发展提供坚强保障。",
+          "imageUrl": "c8e7003ee6cf4cabb51429aaf80023ee",
+          "type": 1,
+          "creatorId": 84108,
+          "creator": "wangshihui",
+          "createTime": "2025-09-16 12:13:51",
+          "modifierId": 84108,
+          "modifier": "wangshihui",
+          "updateTime": "2025-12-10 12:58:18",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "2": [
+        {
+          "id": 1966502293,
+          "projectId": "8378ccd8b95e487f89fb824445a2f053",
+          "title": "全员接入纪检监察内网",
+          "content": "以派驻改革后驻中国一汽纪检监察组编制数为基准，在各室办公区域配备涉密计算机及打印机等设备，全部接入中央纪委国家监委内网。",
+          "imageUrl": "1956197997ad49f09ea78e8b18862696",
+          "type": 2,
+          "creatorId": 84108,
+          "creator": "wangshihui",
+          "createTime": "2025-09-16 12:13:51",
+          "modifierId": 84108,
+          "modifier": "wangshihui",
+          "updateTime": "2025-12-10 12:58:18",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": 1,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "3": [
+        {
+          "id": 1966502294,
+          "projectId": "8378ccd8b95e487f89fb824445a2f053",
+          "title": "纪检监察内网扩建",
+          "content": "1、扩建终端接入域：按照纪委办公调整规划方案部署，实施接入节点光纤网络扩容改造，将接入终端数量从9台扩展至48台，并按保密要求配备安全保密产品\n2、新增安全管理域：部署安全保密套件、打印刻录审计、网络防病毒等服务端对用户进行身份鉴别、访问授权、输入输出控制及审计",
+          "imageUrl": "a92ade75a7a44ed9a9a52e19fb65588b",
+          "type": 3,
+          "creatorId": 84108,
+          "creator": "wangshihui",
+          "createTime": "2025-09-16 12:13:51",
+          "modifierId": 84108,
+          "modifier": "wangshihui",
+          "updateTime": "2025-12-10 12:58:18",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "4": [
+        {
+          "id": 1966502295,
+          "projectId": "8378ccd8b95e487f89fb824445a2f053",
+          "title": "不涉及",
+          "content": "不涉及",
+          "imageUrl": "c9733b93688647bd965d376d7680b5f5",
+          "type": 4,
+          "creatorId": 84108,
+          "creator": "wangshihui",
+          "createTime": "2025-09-16 12:13:51",
+          "modifierId": 84108,
+          "modifier": "wangshihui",
+          "updateTime": "2025-12-10 12:58:18",
+          "isDelete": 0,
+          "isInvolved": 0,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ],
+      "5": [
+        {
+          "id": 1966502320,
+          "projectId": "8378ccd8b95e487f89fb824445a2f053",
+          "title": null,
+          "content": null,
+          "imageUrl": null,
+          "type": 5,
+          "creatorId": 84108,
+          "creator": "wangshihui",
+          "createTime": "2025-09-16 18:16:18",
+          "modifierId": 84108,
+          "modifier": "wangshihui",
+          "updateTime": "2025-12-10 12:58:18",
+          "isDelete": 0,
+          "isInvolved": 1,
+          "acceptId": null,
+          "goalStatus": null,
+          "startTime": null,
+          "endTime": null,
+          "dataSource": null
+        }
+      ]
+    }
+  },
+  "error": "",
+  "called_at": "2026-03-17T15:46:46+08:00"
+}

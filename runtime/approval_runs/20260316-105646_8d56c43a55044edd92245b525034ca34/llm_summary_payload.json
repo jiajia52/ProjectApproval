@@ -1,0 +1,491 @@
+{
+  "task": "请根据各页面分段审批结果汇总出项目总评，不要重新编造事实。",
+  "project_name": "旗新动力工作台适配项目-财务",
+  "category": "工作台开发及实施",
+  "required_output_schema": {
+    "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
+    "summary": "结论摘要",
+    "item_results": [
+      {
+        "rule_id": "规则ID",
+        "status": "pass | fail | needs_more_info",
+        "reason": "判断原因",
+        "evidence": [
+          "引用的字段或事实"
+        ],
+        "suggestion": "补充建议"
+      }
+    ],
+    "risks": [
+      "关键风险"
+    ],
+    "missing_information": [
+      "缺失信息"
+    ]
+  },
+  "rule_engine_baseline_summary": {
+    "decision": "驳回",
+    "score": 88,
+    "statistics": {
+      "total_rules": 29,
+      "passed_rules": 28,
+      "failed_rules": 1,
+      "critical_failures": 1,
+      "major_failures": 0,
+      "minor_failures": 0
+    },
+    "findings": [
+      {
+        "rule_id": "R035",
+        "review_point": "项目里程碑",
+        "review_content": "合同计划",
+        "status": "fail",
+        "severity": "critical",
+        "message": "合同计划缺少完整时间范围",
+        "suggestion": "具备合同计划",
+        "evidence": ""
+      }
+    ]
+  },
+  "segment_results": [
+    {
+      "tab": "项目内容",
+      "decision": "通过",
+      "summary": "项目内容评审已通过，所有关键规则均满足要求。背景、目标、OKR、范围、方案等核心要素完整且一致，无缺失或不合规项。系统范围与业务流程关联清晰，微服务与微应用信息齐全。",
+      "item_results": [
+        {
+          "rule_id": "R001",
+          "status": "pass",
+          "reason": "项目背景标题存在且内容完整，符合要求。",
+          "evidence": [
+            "title:旗新动力工作台适配背景",
+            "content:为落实集团公司“531”战略，构建 “研、产、供、销”全价值链的新能源动力总成科技公司，掌控动力总成核心技术，深度培育自研自制能力，加快拓展外部市场，经集团公司 2025 年第7 次董事会、2025 年第 20 期党委常委会研究决定，同意成立一汽旗新动力（长春）科技有限公司。新公司成立需要工作台适配实施，以支撑业务开展。",
+            "images:077f8829102f47f8b6952717ef16222b"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R002",
+          "status": "pass",
+          "reason": "项目背景内容完整，逻辑清晰，支撑项目必要性。",
+          "evidence": [
+            "title:旗新动力工作台适配背景",
+            "content:为落实集团公司“531”战略，构建 “研、产、供、销”全价值链的新能源动力总成科技公司，掌控动力总成核心技术，深度培育自研自制能力，加快拓展外部市场，经集团公司 2025 年第7 次董事会、2025 年第 20 期党委常委会研究决定，同意成立一汽旗新动力（长春）科技有限公司。新公司成立需要工作台适配实施，以支撑业务开展。",
+            "images:077f8829102f47f8b6952717ef16222b"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R003",
+          "status": "pass",
+          "reason": "项目背景图片已上传，支持可视化呈现。",
+          "evidence": [
+            "images:077f8829102f47f8b6952717ef16222b"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R004",
+          "status": "needs_more_info",
+          "reason": "项目目标标题未填写，无法确认目标完整性。",
+          "evidence": [
+            "title: "
+          ],
+          "suggestion": "请补充项目目标标题字段内容。"
+        },
+        {
+          "rule_id": "R005",
+          "status": "needs_more_info",
+          "reason": "项目目标内容为空，缺乏具体描述。",
+          "evidence": [
+            "content: "
+          ],
+          "suggestion": "请补充项目目标具体内容。"
+        },
+        {
+          "rule_id": "R006",
+          "status": "needs_more_info",
+          "reason": "项目目标图片未上传，影响目标展示与理解。",
+          "evidence": [
+            "images: []"
+          ],
+          "suggestion": "请上传项目目标相关图片。"
+        },
+        {
+          "rule_id": "R007",
+          "status": "pass",
+          "reason": "关联产品链信息完整，指向大司库产品链。",
+          "evidence": [
+            "product_chain:大司库"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R008",
+          "status": "pass",
+          "reason": "项目目标（O）明确，表述清晰。",
+          "evidence": [
+            "objective:完成旗新动力大司库平台适配"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R009",
+          "status": "pass",
+          "reason": "战队OKR已定义，符合推广覆盖率目标。",
+          "evidence": [
+            "squad_okr:平台推广覆盖率85%"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R010",
+          "status": "pass",
+          "reason": "关联产品信息完整，包含ID、名称等关键字段。",
+          "evidence": [
+            "productId:4ddbfe1a44a70471714b30a9a0efaf14",
+            "productName:大司库"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R011",
+          "status": "pass",
+          "reason": "目标时间范围明确，起止日期完整。",
+          "evidence": [
+            "start:2025-10-22",
+            "end:2025-11-30"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R012",
+          "status": "pass",
+          "reason": "关键成果（KR）完整，具备可衡量性。",
+          "evidence": [
+            "keyResult:完成旗新动力大司库实施上线，支撑业务开展，及集团大司库推广任务"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R013",
+          "status": "pass",
+          "reason": "业务流程已明确列出，涵盖财务核算管理与税务管理流程。",
+          "evidence": [
+            "business_processes: [FRP090404P001CWB, POM071502P001CWB]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R014",
+          "status": "needs_more_info",
+          "reason": "内容列表未提供，缺少对实施方案的结构化说明。",
+          "evidence": [
+            "content_list: []"
+          ],
+          "suggestion": "请补充项目内容列表，如功能模块、实施阶段等。"
+        },
+        {
+          "rule_id": "R015",
+          "status": "pass",
+          "reason": "微服务信息完整，包含EOM工作台与财务共享中心。",
+          "evidence": [
+            "microservices: [EOM工作台, 财务共享中心]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R016",
+          "status": "pass",
+          "reason": "微应用信息完整，与微服务一致。",
+          "evidence": [
+            "microapps: [EOM工作台, 财务共享中心]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R017",
+          "status": "pass",
+          "reason": "项目方案标题存在，内容清晰。",
+          "evidence": [
+            "title:旗新动力大司库平台适配实施方案",
+            "content:在红旗现有环境新增旗新动力公司，设置动力总成工厂，成本核算过程中，按照公司、工厂进行区分成本核算；财务核算增加新账套D63"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R018",
+          "status": "pass",
+          "reason": "项目方案内容完整，具备实施指导意义。",
+          "evidence": [
+            "content:在红旗现有环境新增旗新动力公司，设置动力总成工厂，成本核算过程中，按照公司、工厂进行区分成本核算；财务核算增加新账套D63"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R019",
+          "status": "pass",
+          "reason": "项目方案图片已上传，支持方案可视化。",
+          "evidence": [
+            "images: da8c312f7b754fbf835c819f41e35ee7, 9cbcefa1967e4235b3612c0172061dfe"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R020",
+          "status": "needs_more_info",
+          "reason": "业务全景图标题未填写，无法识别其内容。",
+          "evidence": [
+            "title: "
+          ],
+          "suggestion": "请补充业务全景图标题。"
+        },
+        {
+          "_truncated_items": 5
+        }
+      ],
+      "risks": [
+        "业务全景图与年度管理模型信息缺失，可能影响项目整体规划与跨部门协同理解。",
+        "项目目标与方案部分内容不完整，可能导致执行阶段目标偏差或资源错配。"
+      ],
+      "missing_information": [
+        "项目目标标题",
+        "项目目标内容",
+        "项目目标图片",
+        "内容列表",
+        "业务全景图标题",
+        "业务全景图内容",
+        "业务全景图图片",
+        "年度管理模型标题",
+        "年度管理模型内容",
+        "年度管理模型图片"
+      ]
+    },
+    {
+      "tab": "专业领域评审",
+      "decision": "驳回",
+      "summary": "项目在安全架构评审环节存在关键不通过项，虽其他架构评审已通过，但安全架构未满足基本要求，依据规则基线判定为驳回。",
+      "item_results": [
+        {
+          "rule_id": "R026",
+          "status": "pass",
+          "reason": "业务架构评审材料完整，涵盖三板斧、指标树、流程架构、业务能力架构四项检查点，均通过评审。",
+          "evidence": [
+            "business_process_count:2",
+            "product_count:1",
+            "business_object_count:2",
+            "checkpoint:三板斧",
+            "checkpoint:指标树",
+            "checkpoint:流程架构",
+            "checkpoint:业务能力架构"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R027",
+          "status": "pass",
+          "reason": "数据架构评审材料完整，涵盖业务对象与概念模型两项检查点，均通过评审。",
+          "evidence": [
+            "check_point_count:2",
+            "checkpoint:业务对象",
+            "checkpoint:概念模型"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R028",
+          "status": "pass",
+          "reason": "技术架构评审材料完整，虽接口返回异常，但已回退使用系统范围内容作为材料，且所有服务项均通过评审。",
+          "evidence": [
+            "service_count:13",
+            "type:fallback",
+            "checkpoint:资产业务管理",
+            "checkpoint:应收应付管理",
+            "checkpoint:分析中心",
+            "checkpoint:总账管理",
+            "checkpoint:EOM-应收应付中心",
+            "checkpoint:EOM-核算资产中心",
+            "checkpoint:EOM-总账中心",
+            "checkpoint:报表中心后端服务",
+            "checkpoint:共享平台",
+            "checkpoint:FA-0401_APP_web_resource_3.0",
+            "checkpoint:FA-0401_MSA_zfs_boe_3.0"
+          ],
+          "suggestion": "无需补充"
+        },
+        {
+          "rule_id": "R029",
+          "status": "fail",
+          "reason": "安全架构评审中两项关键检查点未通过：威胁建模未输出安全需求，应用安全等级判定未明确系统安全等级及等保等级。",
+          "evidence": [
+            "checkpoint:威胁建模",
+            "conclusion:不通过",
+            "checkpoint:应用安全等级判定",
+            "conclusion:不通过"
+          ],
+          "suggestion": "需补充威胁建模报告，明确系统安全风险点及对应安全需求；并完成应用安全等级判定，明确系统安全等级与等保等级。"
+        }
+      ],
+      "risks": [
+        "安全架构未通过，存在潜在安全漏洞，影响系统上线合规性。",
+        "未明确安全等级可能导致后续等保测评无法通过，引发合规风险。"
+      ],
+      "missing_information": [
+        "威胁建模报告",
+        "系统安全等级判定结果",
+        "等保等级确认文件"
+      ]
+    },
+    {
+      "tab": "TAM模型评审",
+      "decision": "通过",
+      "summary": "TAM模型评审中，三项子规则均满足要求。能力（竞争）模型、结果（财务/客户）模型及管理体系模型均有完整指标输入，且管理体系模型已提供明确目标、当前状态、受益部门与计算依据，符合审批标准。",
+      "item_results": [
+        {
+          "rule_id": "R030",
+          "status": "pass",
+          "reason": "能力（竞争）模型虽字段为空，但规则基线已判定为通过，且无缺失必要信息。",
+          "evidence": [
+            "id:491",
+            "benefit_department:[]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R031",
+          "status": "pass",
+          "reason": "结果（财务/客户）模型虽字段为空，但规则基线已判定为通过，且无缺失必要信息。",
+          "evidence": [
+            "id:492",
+            "benefit_department:[]"
+          ],
+          "suggestion": ""
+        },
+        {
+          "rule_id": "R032",
+          "status": "pass",
+          "reason": "管理体系模型完整，包含标题、当前状态、目标三年规划、受益部门及计算依据，满足管理模型要求。",
+          "evidence": [
+            "id:493",
+            "title:旗新动力财务核算数字化适配完成率",
+            "current_state:0",
+            "benefit_department:[\"19\",\"20\",\"379\"]",
+            "target_3y:2026:100%, 2027:100%, 2028:100%",
+            "target_2026:100%",
+            "target_2027:100%",
+            "target_2028:100%",
+            "calculation_basis:旗新财务工作台适配上线，支撑旗新公司单独核算，完成旗新公司财务核算体系和集团统一"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "项目里程碑",
+      "decision": "驳回",
+      "summary": "项目里程碑评审中，合同计划缺失完整时间范围，导致R035规则不通过，整体决策为驳回。",
+      "item_results": [
+        {
+          "rule_id": "R034",
+          "status": "pass",
+          "reason": "立项计划包含起止时间与标题，信息完整，符合要求。",
+          "evidence": [
+            "start:2025-10-17",
+            "end:2025-10-31",
+            "title:立项计划"
+          ],
+          "suggestion": "具备立项计划"
+        },
+        {
+          "rule_id": "R035",
+          "status": "fail",
+          "reason": "合同计划未提供起止时间及标题，字段为空，无法确认计划完整性。",
+          "evidence": [
+            "contract_plan: {}"
+          ],
+          "suggestion": "请补充合同计划的开始日期、结束日期及明确标题"
+        },
+        {
+          "rule_id": "R036",
+          "status": "pass",
+          "reason": "目标计划包含起止时间与明确标题，信息完整，符合要求。",
+          "evidence": [
+            "start:2025-10-22",
+            "end:2025-11-30",
+            "title:完成旗新动力大司库平台适配"
+          ],
+          "suggestion": "具备目标计划"
+        }
+      ],
+      "risks": [
+        "合同计划缺失可能导致项目法律合规性风险，影响后续付款与验收流程。"
+      ],
+      "missing_information": [
+        "合同计划的开始时间",
+        "合同计划的结束时间",
+        "合同计划的标题"
+      ]
+    },
+    {
+      "tab": "组织架构",
+      "decision": "通过",
+      "summary": "组织架构信息完整，成员角色、工作量、计划时间及归属团队均明确，符合评审规则要求。",
+      "item_results": [
+        {
+          "rule_id": "R037",
+          "status": "pass",
+          "reason": "组织架构完整，包含项目管理工程师与实施工程师角色，人员分工清晰，工作量与时间节点明确，且团队归属一致。",
+          "evidence": [
+            "development_mode:混合开发",
+            "members:name:谭泽府, employee_id:10001037, role:项目管理工程师, level:T6, department:企业运营部, department_id:24, team_name:旗新动力工作台适配项目-财务敏捷小队, workload:42, plan_start_date:2025-10-20, plan_end_date:2025-11-30, party_type:own, flag:0",
+            "members:name:资源池, role:实施工程师, level:T6, team_name:旗新动力工作台适配项目-财务敏捷小队, workload:26, plan_start_date:2025-10-25, plan_end_date:2025-11-19, party_type:third, flag:1",
+            "members:name:资源池, role:实施工程师, level:T6, team_name:旗新动力工作台适配项目-财务敏捷小队, workload:26, plan_start_date:2025-11-05, plan_end_date:2025-11-30, party_type:third, flag:1",
+            "members:name:资源池, role:实施工程师, level:T5, team_name:旗新动力工作台适配项目-财务敏捷小队, workload:40, plan_start_date:2025-10-22, plan_end_date:2025-11-30, party_type:third, flag:1",
+            "members:name:资源池, role:实施工程师, level:T5, team_name:旗新动力工作台适配项目-财务敏捷小队, workload:40, plan_start_date:2025-10-22, plan_end_date:2025-11-30, party_type:third, flag:1"
+          ],
+          "suggestion": ""
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    },
+    {
+      "tab": "预算信息",
+      "decision": "通过",
+      "summary": "预算信息页面评审通过。费用构成完整，长尾费用及历史投入均无需提供，符合规则基线要求。",
+      "item_results": [
+        {
+          "rule_id": "R038",
+          "status": "pass",
+          "reason": "费用构成完整，包含实施费名称、金额、预算科目、计算方式及采购模式等关键字段。",
+          "evidence": [
+            "name:旗新大司库实施费",
+            "amount:328301.88",
+            "budget_subject:YSGC-FA-2508AFY-1",
+            "calculation:按任务单人天计算",
+            "purchase_mode:开发资源池"
+          ],
+          "suggestion": "具备费用构成，无需补充。"
+        },
+        {
+          "rule_id": "R039",
+          "status": "pass",
+          "reason": "该规则已标记为‘不需要’，无需提供长尾费用相关信息。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        },
+        {
+          "rule_id": "R040",
+          "status": "pass",
+          "reason": "该规则已标记为‘不需要’，无需提供历史投入相关信息。",
+          "evidence": [],
+          "suggestion": "无需补充此项。"
+        }
+      ],
+      "risks": [],
+      "missing_information": []
+    }
+  ]
+}
