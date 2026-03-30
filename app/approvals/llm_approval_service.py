@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import shutil
 from concurrent import futures
 from datetime import datetime
 from pathlib import Path
@@ -12,7 +13,7 @@ from typing import Any
 
 from app.approvals.approval_engine import evaluate_approval
 from app.core.llm_client import chat_json
-from app.core.paths import APPROVAL_ITEM_SKILLS_DIR, APPROVAL_RUNS_DIR
+from app.core.paths import scene_approval_runs_dir, scene_skills_dir
 
 DEFAULT_OUTPUT_SCHEMA = {
     "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
@@ -157,8 +158,19 @@ def compact_for_prompt(
     return str(value)
 
 
-def load_item_skill_manifest(category: str | None = None) -> list[dict[str, Any]]:
-    manifest_path = APPROVAL_ITEM_SKILLS_DIR / "manifest.json"
+def normalize_scene(scene: str | None) -> str:
+    normalized = str(scene or "").strip().lower()
+    if normalized in {"task_order", "task-order", "taskorder"}:
+        return "task_order"
+    return "acceptance" if normalized == "acceptance" else "initiation"
+
+
+def scene_skill_dir(scene: str) -> Path:
+    return scene_skills_dir(scene)
+
+
+def load_item_skill_manifest(category: str | None = None, scene: str = "initiation") -> list[dict[str, Any]]:
+    manifest_path = scene_skill_dir(scene) / "manifest.json"
     if not manifest_path.exists():
         return []
     payload = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -699,18 +711,48 @@ def persist_run_artifacts(
     write_json(run_dir / "approval_result.json", final_result)
 
 
+def prune_approval_run_history(scene: str, project_id: str, keep_run_dir: Path) -> None:
+    normalized_project_id = str(project_id or "").strip()
+    if not normalized_project_id:
+        return
+    root_dir = scene_approval_runs_dir(scene)
+    try:
+        run_dirs = [path for path in root_dir.iterdir() if path.is_dir()]
+    except Exception:
+        return
+
+    for candidate in run_dirs:
+        if candidate.resolve() == keep_run_dir.resolve():
+            continue
+        result_path = candidate / "approval_result.json"
+        if not result_path.exists():
+            continue
+        try:
+            payload = json.loads(result_path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if str(payload.get("project_id") or "").strip() != normalized_project_id:
+            continue
+        try:
+            shutil.rmtree(candidate)
+        except Exception:
+            continue
+
+
 def run_llm_approval(
     *,
     project_name: str,
     project_id: str,
     category: str,
+    scene: str = "initiation",
     snapshot: dict[str, Any],
     document: dict[str, Any],
 ) -> dict[str, Any]:
+    normalized_scene = normalize_scene(scene)
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    run_dir = APPROVAL_RUNS_DIR / f"{timestamp}_{sanitize_name(project_id or project_name)}"
-    item_skills = load_item_skill_manifest(category)
-    deterministic_result = evaluate_approval(document=document, category=category)
+    run_dir = scene_approval_runs_dir(normalized_scene) / f"{timestamp}_{sanitize_name(project_id or project_name)}"
+    item_skills = load_item_skill_manifest(category, scene=normalized_scene)
+    deterministic_result = evaluate_approval(document=document, category=category, scene=normalized_scene)
 
     segment_runs: list[dict[str, Any]] = []
 
@@ -802,6 +844,7 @@ def run_llm_approval(
         "project_name": project_name,
         "project_id": project_id,
         "category": category,
+        "scene": normalized_scene,
         "document_source": document.get("document_source") or "unknown",
         "document_saved_at": document.get("document_saved_at"),
         "decision": final_decision,
@@ -839,4 +882,5 @@ def run_llm_approval(
         summary_result=summary_result,
         final_result=final_result,
     )
+    prune_approval_run_history(normalized_scene, project_id, run_dir)
     return final_result

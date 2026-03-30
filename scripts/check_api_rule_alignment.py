@@ -37,6 +37,14 @@ def repo_root() -> Path:
     return Path(__file__).resolve().parents[1]
 
 
+def rule_search_dirs() -> list[Path]:
+    root = repo_root()
+    return [
+        root / "materials" / "initiation" / "rules",
+        root / "data",
+    ]
+
+
 def normalize_text(value: Any) -> str:
     return str(value or "").strip()
 
@@ -49,25 +57,31 @@ def normalize_lookup_key(value: Any) -> str:
 def resolve_620_path(path: str | None = None) -> Path:
     if path:
         return Path(path)
-    candidates = [p for p in (repo_root() / "data").glob("*.xlsx") if "620标签配置" in p.name and not p.name.startswith("~$")]
+    candidates = [
+        candidate
+        for directory in rule_search_dirs()
+        for candidate in directory.glob("*.xlsx")
+        if "620标签配置" in candidate.name and not candidate.name.startswith("~$")
+    ]
     if not candidates:
-        raise FileNotFoundError("620标签配置 xlsx not found in data/.")
-    preferred = [p for p in candidates if "260316" in p.name]
-    return max(preferred or candidates, key=lambda p: (p.stat().st_mtime, p.name))
+        raise FileNotFoundError("620标签配置 xlsx not found in materials/initiation/rules/ or data/.")
+    preferred = [candidate for candidate in candidates if "260316" in candidate.name]
+    return max(preferred or candidates, key=lambda candidate: (candidate.stat().st_mtime, candidate.name))
 
 
 def resolve_rule_path(path: str | None = None) -> Path:
     if path:
         return Path(path)
     candidates = [
-        p
-        for p in (repo_root() / "data").glob("*.xlsx")
-        if "立项大模型评审规则说明" in p.name and not p.name.startswith("~$")
+        candidate
+        for directory in rule_search_dirs()
+        for candidate in directory.glob("*.xlsx")
+        if "立项大模型评审规则说明" in candidate.name and not candidate.name.startswith("~$")
     ]
     if not candidates:
-        raise FileNotFoundError("立项大模型评审规则说明 xlsx not found in data/.")
-    preferred = [p for p in candidates if "3-13" in p.name]
-    return max(preferred or candidates, key=lambda p: (p.stat().st_mtime, p.name))
+        raise FileNotFoundError("立项大模型评审规则说明 xlsx not found in materials/initiation/rules/ or data/.")
+    preferred = [candidate for candidate in candidates if "3-13" in candidate.name]
+    return max(preferred or candidates, key=lambda candidate: (candidate.stat().st_mtime, candidate.name))
 
 
 def read_shared_strings(zf: ZipFile) -> list[str]:

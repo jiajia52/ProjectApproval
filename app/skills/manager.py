@@ -9,15 +9,15 @@ import json
 from agentscope import init
 from agentscope.tool import Toolkit
 
-from app.core.paths import PROJECT_ROOT, SKILLS_DIR
+from app.core.paths import PROJECT_ROOT, scene_skills_dir
 
 
 class AgentScopeSkillManager:
     """Register root-level approval item skills."""
 
-    def __init__(self, root: Path | None = None) -> None:
+    def __init__(self, root: Path | None = None, skills_dir: Path | None = None) -> None:
         self.root = (root or PROJECT_ROOT).resolve()
-        self.skills_dir = SKILLS_DIR
+        self.skills_dir = (skills_dir or scene_skills_dir("initiation")).resolve()
         self.toolkit = Toolkit()
         self._initialized = False
         self._registered_paths: set[str] = set()
@@ -150,11 +150,21 @@ class AgentScopeSkillManager:
         }
 
 
-_MANAGER: AgentScopeSkillManager | None = None
+_MANAGERS: dict[str, AgentScopeSkillManager] = {}
 
 
-def get_skill_manager() -> AgentScopeSkillManager:
-    global _MANAGER
-    if _MANAGER is None:
-        _MANAGER = AgentScopeSkillManager()
-    return _MANAGER
+def get_skill_manager(scene: str = "initiation") -> AgentScopeSkillManager:
+    normalized = str(scene or "").strip().lower()
+    if normalized in {"task_order", "task-order", "taskorder"}:
+        normalized_scene = "task_order"
+    elif normalized == "acceptance":
+        normalized_scene = "acceptance"
+    else:
+        normalized_scene = "initiation"
+    manager = _MANAGERS.get(normalized_scene)
+    if manager is not None:
+        return manager
+    skills_dir = scene_skills_dir(normalized_scene)
+    manager = AgentScopeSkillManager(skills_dir=skills_dir)
+    _MANAGERS[normalized_scene] = manager
+    return manager

@@ -15,6 +15,17 @@ export async function requestJson(url, options = {}) {
   return payload;
 }
 
+export function normalizeScene(scene) {
+  const normalized = String(scene || "").trim().toLowerCase();
+  if (normalized === "acceptance") {
+    return "acceptance";
+  }
+  if (normalized === "task_order" || normalized === "task-order" || normalized === "taskorder") {
+    return "task_order";
+  }
+  return "initiation";
+}
+
 export function projectDisplayValue(project, ...keys) {
   for (const key of keys) {
     const value = project?.[key];

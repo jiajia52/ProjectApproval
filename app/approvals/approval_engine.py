@@ -1,183 +1,10 @@
-"""Deterministic approval engine for project-approval reviews."""
+"""Split support helpers out of the main module for readability."""
 
 from __future__ import annotations
 
-import json
-from datetime import UTC, datetime
-from pathlib import Path
-from typing import Any
+from .approval_engine_support import *  # noqa: F401,F403
 
-from app.approvals.category_aliases import canonical_category_name, canonical_review_point
-from app.core.paths import CONFIG_PATH, GENERATED_DIR, PROJECT_ROOT, SAMPLE_INPUT_PATH, SCRIPTS_DIR, find_rule_matrix_path
-
-import sys
-
-if str(SCRIPTS_DIR) not in sys.path:
-    sys.path.insert(0, str(SCRIPTS_DIR))
-
-from build_project_approval_bundle import load_or_create_config, resolve_rule_matrix_path  # noqa: E402
-from extract_review_rules import parse_rule_bundle  # noqa: E402
-
-SEVERITY_WEIGHTS = {"critical": 12, "major": 7, "minor": 3}
-CORE_CATEGORIES = {"工作台开发及实施", "产品运营", "系统产品购买"}
-SYSTEM_DEVELOPMENT_CATEGORY_KEYWORDS = ("系统开发", "系统研发", "工作台开发", "系统开发及实施", "系统开发与实施")
-
-
-def write_json(path: Path, payload: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def load_rules_bundle() -> dict[str, Any]:
-    bootstrap_rules = parse_rule_bundle(find_rule_matrix_path())
-    config = load_or_create_config(CONFIG_PATH, PROJECT_ROOT, bootstrap_rules)
-    rules_bundle = parse_rule_bundle(resolve_rule_matrix_path(PROJECT_ROOT, config))
-    enabled_skill_groups = set(config.get("generation", {}).get("enabled_skill_groups", []))
-    if enabled_skill_groups:
-        rules_bundle["rules"] = [
-            rule
-            for rule in rules_bundle["rules"]
-            if (rule.get("review_point") or "").strip() in enabled_skill_groups
-        ]
-    return rules_bundle
-
-
-def load_generated_project_bundle() -> dict[str, Any]:
-    path = GENERATED_DIR / "project_approval_project.json"
-    if not path.exists():
-        raise FileNotFoundError("generated/project_approval_project.json does not exist. Run /api/generate first.")
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def get_value(data: dict[str, Any], *path: str) -> Any:
-    current: Any = data
-    for key in path:
-        if not isinstance(current, dict):
-            return None
-        current = current.get(key)
-    return current
-
-
-def is_present(value: Any) -> bool:
-    if value is None:
-        return False
-    if isinstance(value, str):
-        return bool(value.strip())
-    if isinstance(value, (list, tuple, set, dict)):
-        return len(value) > 0
-    return True
-
-
-def normalize_text(value: Any) -> str:
-    if value is None:
-        return ""
-    if isinstance(value, str):
-        return value.strip()
-    if isinstance(value, list):
-        return "\n".join(normalize_text(item) for item in value if normalize_text(item))
-    if isinstance(value, dict):
-        return "\n".join(f"{key}:{normalize_text(item)}" for key, item in value.items() if normalize_text(item))
-    return str(value).strip()
-
-
-def normalize_category_key(value: Any) -> str:
-    text = str(value or "").strip()
-    return "".join(character for character in text if character.isalnum())
-
-
-def metric_is_complete(metric: dict[str, Any]) -> bool:
-    required = ["title", "current_state", "benefit_department", "target_3y", "calculation_basis"]
-    return all(is_present(metric.get(field)) for field in required)
-
-
-def is_system_development_project(document: dict[str, Any], category: str) -> bool:
-    summary = get_value(document, "project_summary") or {}
-    candidates = [
-        category,
-        summary.get("business_subcategory_name"),
-        summary.get("business_category_name"),
-        summary.get("project_type_name"),
-        summary.get("project_category_name"),
-    ]
-    for value in candidates:
-        text = str(value or "").strip()
-        if any(keyword in text for keyword in SYSTEM_DEVELOPMENT_CATEGORY_KEYWORDS):
-            return True
-    return False
-
-
-def milestone_complete(milestone: Any) -> bool:
-    if isinstance(milestone, dict):
-        return is_present(milestone.get("start")) and is_present(milestone.get("end"))
-    return is_present(milestone)
-
-
-def select_active_rules(rules_bundle: dict[str, Any], category: str) -> list[dict[str, Any]]:
-    selected: list[dict[str, Any]] = []
-    normalized_category = normalize_category_key(canonical_category_name(category))
-    for rule in rules_bundle["rules"]:
-        if not rule["review_content"] and not rule["rule_text"]:
-            continue
-        applicable_categories = {
-            normalize_category_key(canonical_category_name(item["category"]))
-            for item in rule["applicable_categories"]
-        }
-        if applicable_categories and normalized_category not in applicable_categories:
-            continue
-        selected.append(rule)
-    return selected
-
-
-def default_suggestion(rule: dict[str, Any]) -> str:
-    if rule["rule_text"]:
-        return rule["rule_text"].splitlines()[0]
-    return f"补充 {rule['review_point']} - {rule['review_content']} 的相关材料。"
-
-
-def severity_for_rule(rule: dict[str, Any]) -> str:
-    review_content = rule["review_content"]
-    review_point = canonical_review_point(rule["review_point"])
-    if review_content in {"背景图片", "目标图片", "方案图片", "业务全景图图片", "管理模型图片"}:
-        return "minor"
-    if review_point in {"专业领域评审", "能力（竞争）模型", "结果（财务/客户）模型", "管理体系模型", "费用变化点"}:
-        return "major"
-    if review_point in {"项目价值", "项目里程碑", "组织架构", "费用构成"}:
-        return "critical"
-    if review_content == "不需要":
-        return "minor"
-    return "critical"
-
-
-def evaluate_title_content_image(section: dict[str, Any], review_content: str) -> tuple[bool, str]:
-    mapping = {
-        "背景标题": ("title", "缺少背景标题"),
-        "背景内容": ("content", "缺少背景内容"),
-        "背景图片": ("images", "缺少背景图片"),
-        "项目目标": ("title", "缺少项目目标标题"),
-        "项目内容": ("content", "缺少项目目标内容"),
-        "目标图片": ("images", "缺少目标图片"),
-        "项目方案": ("title", "缺少方案标题"),
-        "方案内容": ("content", "缺少方案内容"),
-        "方案图片": ("images", "缺少方案图片"),
-        "业务全景图标题": ("title", "缺少业务全景图标题"),
-        "业务全景图内容": ("content", "缺少业务全景图内容"),
-        "业务全景图图片": ("images", "缺少业务全景图图片"),
-        "管理模型标题": ("title", "缺少管理模型标题"),
-        "管理模型内容": ("content", "缺少管理模型内容"),
-        "管理模型图片": ("images", "缺少管理模型图片"),
-    }
-    field_name, missing_message = mapping[review_content]
-    value = section.get(field_name)
-    if not is_present(value):
-        return False, missing_message
-    if field_name == "content":
-        text = normalize_text(value)
-        if len(text) < 20:
-            return False, f"{review_content}过短，无法支撑审批。"
-    return True, "材料完整"
-
-
-def evaluate_rule(rule: dict[str, Any], document: dict[str, Any], category: str) -> dict[str, Any]:
+def evaluate_rule(rule: dict[str, Any], document: dict[str, Any], category: str, scene: str = "initiation") -> dict[str, Any]:
     review_point = canonical_review_point(rule["review_point"])
     review_content = rule["review_content"]
     severity = severity_for_rule(rule)
@@ -206,6 +33,7 @@ def evaluate_rule(rule: dict[str, Any], document: dict[str, Any], category: str)
     organization = get_value(document, "organization") or {}
     budget = get_value(document, "budget") or {}
     cost_change = get_value(document, "cost_change") or {}
+    acceptance = get_value(document, "acceptance") or {}
     project_value = get_value(document, "project_value")
     system_development_project = is_system_development_project(document, category)
 
@@ -219,15 +47,39 @@ def evaluate_rule(rule: dict[str, Any], document: dict[str, Any], category: str)
         passed, message = evaluate_title_content_image(content_sections.get("solution") or {}, review_content)
         evidence = normalize_text(content_sections.get("solution") or {})
     elif review_point == "业务全景图":
-        if system_development_project:
+        panorama_section = content_sections.get("panorama") or {}
+        if normalize_scene(scene) == "acceptance" and section_marked_not_involved(panorama_section):
+            passed = True
+            message = "业务全景图标记为不涉及，按验收规则视为通过"
+            evidence = normalize_text(panorama_section)
+        elif (
+            normalize_scene(scene) == "acceptance"
+            and normalize_lookup_key(review_content) == normalize_lookup_key("业务全景图内容")
+            and is_present((panorama_section or {}).get("content"))
+        ):
+            passed = True
+            message = "业务全景图已提供内容，按验收场景通过"
+            evidence = normalize_text(panorama_section)
+        elif system_development_project:
             passed = True
             message = "系统开发项目不要求业务全景图"
             evidence = "exempt_for_system_development_project"
         else:
-            passed, message = evaluate_title_content_image(content_sections.get("panorama") or {}, review_content)
-            evidence = normalize_text(content_sections.get("panorama") or {})
+            passed, message = evaluate_title_content_image(panorama_section, review_content)
+            evidence = normalize_text(panorama_section)
     elif review_point == "年度管理模型":
-        if system_development_project:
+        normalized_review_content = normalize_lookup_key(review_content)
+        if normalize_scene(scene) == "acceptance" and normalized_review_content == normalize_lookup_key("业务流程"):
+            value = scope.get("business_processes") or scope.get("content_list")
+            passed = is_present(value)
+            message = "业务流程材料完整" if passed else "缺少业务流程"
+            evidence = normalize_text(value)
+        elif normalize_scene(scene) == "acceptance" and normalized_review_content == normalize_lookup_key("系统"):
+            value = first_present(scope.get("microservices"), scope.get("microapps"))
+            passed = is_present(value) or section_marked_not_involved(value)
+            message = "系统信息已标记不涉及，按验收规则通过" if section_marked_not_involved(value) else "系统材料完整" if passed else "缺少系统"
+            evidence = normalize_text(value)
+        elif system_development_project:
             passed = True
             message = "系统开发项目不要求年度管理模型"
             evidence = "exempt_for_system_development_project"
@@ -268,7 +120,7 @@ def evaluate_rule(rule: dict[str, Any], document: dict[str, Any], category: str)
             "技术架构评审": "technology",
             "安全架构评审": "security",
         }
-        value = architecture.get(field_map[review_content])
+        value = architecture.get(field_map.get(review_content, ""))
         passed = is_present(value)
         message = "架构评审材料完整" if passed else f"缺少 {review_content}"
         evidence = normalize_text(value)
@@ -293,7 +145,7 @@ def evaluate_rule(rule: dict[str, Any], document: dict[str, Any], category: str)
         evidence = normalize_text(project_value)
     elif review_point == "项目里程碑":
         field_map = {"立项计划": "approval_plan", "合同计划": "contract_plan", "目标计划": "target_plan"}
-        value = milestones.get(field_map[review_content])
+        value = milestones.get(field_map.get(review_content, ""))
         passed = milestone_complete(value)
         message = "里程碑计划完整" if passed else f"{review_content}缺少完整时间范围"
         evidence = normalize_text(value)
@@ -334,12 +186,36 @@ def evaluate_rule(rule: dict[str, Any], document: dict[str, Any], category: str)
             passed = is_present(cost_change.get("reason")) or not fixed_project
             message = "费用变化点已说明" if passed else "缺少费用变化点说明"
         evidence = normalize_text(cost_change)
-    elif review_point == "长尾费用":
+    elif review_point == "验收方案评审":
+        section = content_sections.get("acceptance_plan") or {}
+        if not any(is_present(section.get(key)) for key in ["title", "content", "images"]):
+            passed = True
+            message = "当前未配置验收方案材料，按无需评审处理。"
+            evidence = ""
+        else:
+            passed, message = evaluate_title_content_image(section, review_content)
+            evidence = normalize_text(section)
+    elif normalize_lookup_key(review_point) in {normalize_lookup_key("任务单"), normalize_lookup_key("合同")}:
+        passed, message, evidence = evaluate_acceptance_pair_rule(rule, acceptance, review_point, review_content)
+    elif review_point == "任务单":
+        value = acceptance.get("task_list") if "清单" in str(review_content or "") else acceptance.get("task_acceptance_list")
+        passed = is_present(value)
+        message = "任务单材料完整" if passed else f"缺少{review_content}"
+        evidence = normalize_text(value)
+    elif review_point == "合同":
+        value = acceptance.get("contract_list") if "清单" in str(review_content or "") else acceptance.get("contract_acceptance_list")
+        passed = is_present(value)
+        message = "合同材料完整" if passed else f"缺少{review_content}"
+        evidence = normalize_text(value)
+    elif review_point == "交付物":
+        value = acceptance.get("deliverables")
+        passed = is_present(value)
+        message = "交付物材料完整" if passed else "缺少交付物清单"
+        evidence = normalize_text(value)
+    elif review_point in {"长尾费用", "历史投入"}:
         passed = True
         message = "当前规则标记为不需要。"
-    elif review_point == "历史投入":
-        passed = True
-        message = "当前规则标记为不需要。"
+        evidence = ""
     else:
         passed = False
         message = f"未实现的规则映射: {review_point}/{review_content}"
@@ -355,6 +231,123 @@ def evaluate_rule(rule: dict[str, Any], document: dict[str, Any], category: str)
         "evidence": evidence[:400],
     }
 
+
+def evaluate_task_order_rule(rule: dict[str, Any], context: dict[str, Any], category: str) -> dict[str, Any]:
+    review_point = canonical_review_point(rule["review_point"])
+    review_content = str(rule.get("review_content") or "").strip()
+    severity = "major" if "非必填" in review_content or "审批节点" in review_point else "critical"
+    lookup_point = normalize_lookup_key(review_point)
+    lookup_content = normalize_lookup_key(review_content)
+    passed = False
+    message = ""
+    evidence = ""
+
+    basic_info = context.get("basic_info") or {}
+    business_architecture = context.get("business_architecture") or {}
+    task_assignment = context.get("task_assignment") or {}
+    staffing = context.get("staffing") or {}
+    cost_estimation = context.get("cost_estimation") or {}
+    technical_requirements = context.get("technical_requirements") or {}
+
+    if lookup_point == normalize_lookup_key("基本信息"):
+        value = basic_info.get(review_content)
+        passed = is_present(value)
+        message = "任务单基本信息已补充" if passed else f"缺少{review_content}"
+        evidence = normalize_text(value)
+    elif lookup_point == normalize_lookup_key("关联目标"):
+        value = basic_info.get("项目目标")
+        passed = len(normalize_list_like(value)) > 0 or is_present(value)
+        message = "已关联项目目标" if passed else "缺少项目目标"
+        evidence = normalize_text(value)
+    elif lookup_point == normalize_lookup_key("关联的产品"):
+        value = basic_info.get("产品名称")
+        passed = len(normalize_list_like(value)) > 0 or is_present(value)
+        message = "已关联产品" if passed else "缺少关联产品"
+        evidence = normalize_text(value)
+    elif lookup_point == normalize_lookup_key("采购说明及原因"):
+        field_name = "选择供应商原因" if "供应商" in review_content else "采购说明"
+        value = basic_info.get(field_name)
+        passed = is_present(value)
+        message = "采购说明已补充" if passed else f"缺少{review_content}"
+        evidence = normalize_text(value)
+    elif lookup_point == normalize_lookup_key("业务单元清单"):
+        rows = normalize_list_like(business_architecture.get("业务单元清单"))
+        if lookup_content == normalize_lookup_key("业务对象数字化"):
+            passed = any(is_present(item.get("business_object")) for item in rows if isinstance(item, dict))
+        elif lookup_content == normalize_lookup_key("业务规则数字化"):
+            passed = any(is_present(item.get("business_unit")) for item in rows if isinstance(item, dict))
+        else:
+            passed = any(is_present(item.get("business_process")) for item in rows if isinstance(item, dict))
+        message = "业务单元清单已补充" if passed else f"缺少{review_content}"
+        evidence = normalize_text(rows)
+    elif lookup_point == normalize_lookup_key("审批节点"):
+        rows = normalize_list_like(business_architecture.get("审批节点"))
+        passed = any(is_present(item.get("description")) or normalize_number(item.get("removed_nodes")) > 0 for item in rows if isinstance(item, dict))
+        message = "审批节点说明已补充" if passed else f"缺少{review_content}"
+        evidence = normalize_text(rows)
+    elif lookup_point == normalize_lookup_key("业务流程清单"):
+        value = task_assignment.get(review_content)
+        if "非必填" in review_content:
+            passed = True
+            message = "指标列表可为空"
+        else:
+            passed = len(normalize_list_like(value)) > 0 or is_present(value)
+            message = "任务填写已补充" if passed else f"缺少{review_content}"
+        evidence = normalize_text(value)
+    elif lookup_point == normalize_lookup_key("人员配置及费用"):
+        if "预计费用" in review_content:
+            value = staffing.get("预计费用")
+            passed = normalize_number(value) > 0
+        else:
+            rows = normalize_list_like(staffing.get("岗位、职级、预计人天、人员单价、预计费用"))
+            passed = bool(rows) and all(
+                is_present(item.get("post_name"))
+                and is_present(item.get("level_name"))
+                and normalize_number(item.get("expected_days")) > 0
+                and normalize_number(item.get("unit_price")) > 0
+                and normalize_number(item.get("estimated_cost")) > 0
+                for item in rows
+                if isinstance(item, dict)
+            )
+            value = rows
+        message = "人员配置与费用已补充" if passed else f"缺少{review_content}"
+        evidence = normalize_text(value)
+    elif lookup_point == normalize_lookup_key("本次任务单费用"):
+        rows = normalize_list_like(cost_estimation.get("岗位、职级、人天、单价、费用"))
+        passed = bool(rows) and all(
+            is_present(item.get("post_name"))
+            and is_present(item.get("level_name"))
+            and normalize_number(item.get("expected_days")) > 0
+            and normalize_number(item.get("unit_price")) > 0
+            and normalize_number(item.get("estimated_cost")) > 0
+            for item in rows
+            if isinstance(item, dict)
+        )
+        message = "本次任务单费用已补充" if passed else "缺少本次任务单费用明细"
+        evidence = normalize_text(rows)
+    elif lookup_point == normalize_lookup_key("历史任务单费用"):
+        value = cost_estimation.get("历史任务单明细")
+        passed = len(normalize_list_like(value)) > 0 or normalize_number(cost_estimation.get("历史任务单费用")) > 0
+        message = "历史任务单费用已补充" if passed else "缺少历史任务单费用明细"
+        evidence = normalize_text(value)
+    elif lookup_point == normalize_lookup_key("技术要求"):
+        value = technical_requirements.get(review_content)
+        passed = is_present(value)
+        message = "技术要求已补充" if passed else f"缺少{review_content}"
+        evidence = normalize_text(value)
+    else:
+        message = f"未识别的任务单规则: {review_point}/{review_content}"
+
+    return {
+        "rule_id": rule["rule_id"],
+        "review_point": review_point,
+        "review_content": review_content,
+        "status": "pass" if passed else "fail",
+        "severity": severity,
+        "message": message,
+        "suggestion": default_suggestion(rule),
+        "evidence": evidence[:400],
+    }
 
 def summarize_results(category: str, results: list[dict[str, Any]]) -> dict[str, Any]:
     findings = [item for item in results if item["status"] == "fail"]
@@ -571,14 +564,20 @@ def normalize_generated_bundle(bundle: dict[str, Any], category: str) -> dict[st
     }
 
 
-def evaluate_approval(document: dict[str, Any], category: str | None = None) -> dict[str, Any]:
+def evaluate_approval(document: dict[str, Any], category: str | None = None, scene: str = "initiation") -> dict[str, Any]:
+    normalized_scene = normalize_scene(scene)
     active_category = category or document.get("category") or "工作台开发及实施"
-    rules_bundle = load_rules_bundle()
+    rules_bundle = load_rules_bundle(scene=normalized_scene)
     active_rules = select_active_rules(rules_bundle, active_category)
-    results = [evaluate_rule(rule, document, active_category) for rule in active_rules]
+    if normalized_scene == "task_order":
+        task_order_context = build_task_order_review_context(document)
+        results = [evaluate_task_order_rule(rule, task_order_context, active_category) for rule in active_rules]
+    else:
+        results = [evaluate_rule(rule, document, active_category, normalized_scene) for rule in active_rules]
     summary = summarize_results(active_category, results)
     report = {
         "generated_at": datetime.now(UTC).isoformat(),
+        "scene": normalized_scene,
         "project_name": document.get("project_name", "未命名项目"),
         "category": active_category,
         "decision": summary["decision"],
@@ -587,9 +586,11 @@ def evaluate_approval(document: dict[str, Any], category: str | None = None) -> 
         "findings": summary["findings"],
         "rule_results": results,
     }
-    write_json(GENERATED_DIR / "latest_approval_result.json", report)
+    latest_result_path = scene_latest_approval_result_path(normalized_scene)
+    write_json(latest_result_path, report)
+    if normalized_scene == "initiation" and latest_result_path != LEGACY_LATEST_APPROVAL_RESULT_PATH:
+        write_json(LEGACY_LATEST_APPROVAL_RESULT_PATH, report)
     return report
-
 
 def load_or_create_sample_document() -> dict[str, Any]:
     sample_path = SAMPLE_INPUT_PATH

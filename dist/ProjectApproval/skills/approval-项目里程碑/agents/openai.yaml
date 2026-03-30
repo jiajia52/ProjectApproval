@@ -1,4 +1,0 @@
-interface:
-  display_name: "项目里程碑"
-  short_description: "立项审批tab技能：项目里程碑"
-  default_prompt: "Use this skill to review all approval rules grouped under the project process tab."

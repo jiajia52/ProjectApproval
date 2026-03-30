@@ -6,13 +6,13 @@
     "default_prompt": "Generate project approval bundle artifacts from local project data and review rules."
   },
   "sources": {
-    "product_info": "data/product_info.md",
-    "api_list": "data/API列表.txt",
-    "rule_matrix": "data/立项大模型评审规则说明3-13.xlsx"
+    "product_info": "materials/initiation/samples/product_info.md",
+    "api_list": "materials/initiation/interfaces/API列表.txt",
+    "rule_matrix": "materials/initiation/rules/立项大模型评审规则说明3-13.xlsx"
   },
   "generation": {
-    "output_dir": "runtime",
-    "rules_output": "runtime/review_rules.json",
+    "output_dir": "runtime/initiation",
+    "rules_output": "runtime/initiation/review_rules.json",
     "ontology_namespace": "https://faw.example.local/project-approval#",
     "enabled_categories": [
       "工作台开发及实施",

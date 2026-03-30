@@ -1,0 +1,504 @@
+{
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+        "acceptDeliveryModelList": [
+            {
+                "deliverAttachment": "[{\"id\":\"8dd91a4d2a144613a1f33bfdf25425c3\",\"name\":\"旗新动力工作台适配-财务 立项-202510.pptx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "8dd91a4d2a144613a1f33bfdf25425c3",
+                        "name": "旗新动力工作台适配-财务 立项-202510.pptx"
+                    }
+                ],
+                "deliverName": null,
+                "attachmentName": "立项申请报告",
+                "deliveryCode": "1",
+                "attachmentSrc": null,
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "旗新动力工作台适配-财务 立项-202510.pptx",
+                "attachmentUrl": null,
+                "deliveryField": "立项阶段",
+                "modelId": 1
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"4c004018a2914e6ca1d871d33aea51c2\",\"name\":\"A5【旗新动力大司库应用服务】测试用例.xlsx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "4c004018a2914e6ca1d871d33aea51c2",
+                        "name": "A5【旗新动力大司库应用服务】测试用例.xlsx"
+                    }
+                ],
+                "deliverName": "[项目名称]_测试用例.xlsx",
+                "attachmentName": "测试用例",
+                "deliveryCode": "10",
+                "attachmentSrc": "6f7a6eeccd004d1687bf7b9b09d902f0",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "A5【旗新动力大司库应用服务】测试用例.xlsx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 10
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"4e393c92a10645a98695b2828aefb189\",\"name\":\"[费控系统]_用户操作说明书.docx\"},{\"id\":\"30228f34e79048f59520c89bb8fc2d80\",\"name\":\"[核算系统]_用户操作说明书.docx\"},{\"id\":\"2421b3a083994f12b2c8a1a6ba38e02d\",\"name\":\"[财务共享]_用户操作说明书.docx\"},{\"id\":\"44c7b67fe8fe478399b684b9e3a67a31\",\"name\":\"[税务平台]_用户操作说明书.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "4e393c92a10645a98695b2828aefb189",
+                        "name": "[费控系统]_用户操作说明书.docx"
+                    },
+                    {
+                        "id": "30228f34e79048f59520c89bb8fc2d80",
+                        "name": "[核算系统]_用户操作说明书.docx"
+                    },
+                    {
+                        "id": "2421b3a083994f12b2c8a1a6ba38e02d",
+                        "name": "[财务共享]_用户操作说明书.docx"
+                    },
+                    {
+                        "id": "44c7b67fe8fe478399b684b9e3a67a31",
+                        "name": "[税务平台]_用户操作说明书.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_用户操作说明书.docx",
+                "attachmentName": "用户操作说明书",
+                "deliveryCode": "11",
+                "attachmentSrc": "b0eb87dae1f744988e2badae6b57ed0d",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "[税务平台]_用户操作说明书.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 11
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"9cc0b42f592a48dcba4657bcf1618608\",\"name\":\"7【旗新动力大司库应用服务】系统安装和部署说明书.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "9cc0b42f592a48dcba4657bcf1618608",
+                        "name": "7【旗新动力大司库应用服务】系统安装和部署说明书.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_系统安装和部署说明书.docx",
+                "attachmentName": "系统安装和部署说明书",
+                "deliveryCode": "12",
+                "attachmentSrc": "d28e527899274c92b935b3664483ce0d",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "7【旗新动力大司库应用服务】系统安装和部署说明书.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 12
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"c4fa40e7f03847a8b1127d7bdb27c2ac\",\"name\":\"A4【旗新动力大司库应用服务】功能测试总结报告A.xls\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "c4fa40e7f03847a8b1127d7bdb27c2ac",
+                        "name": "A4【旗新动力大司库应用服务】功能测试总结报告A.xls"
+                    }
+                ],
+                "deliverName": "[项目名称]_功能测试总结报告.xlsx",
+                "attachmentName": "功能测试总结报告",
+                "deliveryCode": "13",
+                "attachmentSrc": "a77e5c4546824341b430019132b0e7fa",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "A4【旗新动力大司库应用服务】功能测试总结报告A.xls",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 13
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"85207603dc5b4549814d5f0240140e54\",\"name\":\"旗新动力大司库用户接收报告.pdf\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "85207603dc5b4549814d5f0240140e54",
+                        "name": "旗新动力大司库用户接收报告.pdf"
+                    }
+                ],
+                "deliverName": "[项目名称]_用户接收测试报告.doc",
+                "attachmentName": "用户接收测试报告",
+                "deliveryCode": "14",
+                "attachmentSrc": "564d49ec6c3c4479b258e2e8b71e6ba4",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "旗新动力大司库用户接收报告.pdf",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 14
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"a05a431d09b645bcb66e5cdb6e26c059\",\"name\":\"旗新动力大司库项目验收报告.pdf\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "a05a431d09b645bcb66e5cdb6e26c059",
+                        "name": "旗新动力大司库项目验收报告.pdf"
+                    }
+                ],
+                "deliverName": "[项目名称]_性能总结报告.docx",
+                "attachmentName": "性能总结报告",
+                "deliveryCode": "15",
+                "attachmentSrc": "1c62fd3f70224bc99836a8e4a9ff3eef",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "旗新动力大司库项目验收报告.pdf",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 15
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"e9000bd2c68846cbb91d93391f9fbb39\",\"name\":\"B6【旗新动力大司库应用服务】代码审计报告.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "e9000bd2c68846cbb91d93391f9fbb39",
+                        "name": "B6【旗新动力大司库应用服务】代码审计报告.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_漏洞扫描报告.doc",
+                "attachmentName": "漏洞扫描报告",
+                "deliveryCode": "16",
+                "attachmentSrc": "9e1bfd5de23440d0a2f04461f150d3a8",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "B6【旗新动力大司库应用服务】代码审计报告.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 16
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"9d9ccd63a1ef4cdaa76d046c5bfb345c\",\"name\":\"8【旗新动力大司库应用服务】系统上线实施方案.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "9d9ccd63a1ef4cdaa76d046c5bfb345c",
+                        "name": "8【旗新动力大司库应用服务】系统上线实施方案.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_系统上线实施方案（包括数据切换计划、上线检查表、上线计划和回退计划）.docx",
+                "attachmentName": "系统上线实施方案",
+                "deliveryCode": "17",
+                "attachmentSrc": "9b9dc83baa3a43f5afcdf1b641742692",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "8【旗新动力大司库应用服务】系统上线实施方案.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 17
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"5f43f74a26084c15b75af92858522539\",\"name\":\"A3【旗新动力大司库应用服务】_安全控制措施验收报告.xlsx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "5f43f74a26084c15b75af92858522539",
+                        "name": "A3【旗新动力大司库应用服务】_安全控制措施验收报告.xlsx"
+                    }
+                ],
+                "deliverName": "[项目名称]_安全控制措施验收报告.xlsm",
+                "attachmentName": "安全控制措施验收报告",
+                "deliveryCode": "18",
+                "attachmentSrc": "a5589d033114422a90575d4c7269d2ba",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "A3【旗新动力大司库应用服务】_安全控制措施验收报告.xlsx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 18
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"44b3b2e1bb974ec8b71a1e9c16981b3f\",\"name\":\"6【旗新动力大司库应用服务】运维手册.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "44b3b2e1bb974ec8b71a1e9c16981b3f",
+                        "name": "6【旗新动力大司库应用服务】运维手册.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_运维手册.docx",
+                "attachmentName": "运维手册",
+                "deliveryCode": "19",
+                "attachmentSrc": "e8b8231cccc74794ad4d0ca17cf8d9fc",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "6【旗新动力大司库应用服务】运维手册.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 19
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"b261614dcf9949c988e0ef4b3f17b329\",\"name\":\"A1【旗新动力大司库应用服务】应用系统安全等级判定表.xlsx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "b261614dcf9949c988e0ef4b3f17b329",
+                        "name": "A1【旗新动力大司库应用服务】应用系统安全等级判定表.xlsx"
+                    }
+                ],
+                "deliverName": "[项目名称]_应用系统安全等级判定表.doc",
+                "attachmentName": "应用系统安全等级评定",
+                "deliveryCode": "2",
+                "attachmentSrc": "7ba0502fc19d48c094b96828b5909a6e",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "A1【旗新动力大司库应用服务】应用系统安全等级判定表.xlsx",
+                "attachmentUrl": null,
+                "deliveryField": "立项阶段",
+                "modelId": 2
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"bea569be5d9541278746df3a051d3121\",\"name\":\"2【旗新动力大司库应用服务】交接维方案.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "bea569be5d9541278746df3a051d3121",
+                        "name": "2【旗新动力大司库应用服务】交接维方案.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_交接维方案.doc",
+                "attachmentName": "交接维方案",
+                "deliveryCode": "20",
+                "attachmentSrc": "bab6877b9380407e9f719d7f2a6fd63f",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "2【旗新动力大司库应用服务】交接维方案.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 20
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"4d49370f93624ed1b43356b982a08716\",\"name\":\"5【旗新动力大司库应用服务】运维服务方案.pptx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "4d49370f93624ed1b43356b982a08716",
+                        "name": "5【旗新动力大司库应用服务】运维服务方案.pptx"
+                    }
+                ],
+                "deliverName": "[项目名称]_运维服务方案.pptx",
+                "attachmentName": "运维服务方案",
+                "deliveryCode": "21",
+                "attachmentSrc": "4e87653aaad14545b0ac4ea8fcbd15cc",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "5【旗新动力大司库应用服务】运维服务方案.pptx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 21
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"1dad72f0904c4fa29ef43c47f8cd63af\",\"name\":\"旗新动力大司库试运行报告.pdf\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "1dad72f0904c4fa29ef43c47f8cd63af",
+                        "name": "旗新动力大司库试运行报告.pdf"
+                    }
+                ],
+                "deliverName": "[项目名称]_系统试运行报告.docx",
+                "attachmentName": "系统试运营报告",
+                "deliveryCode": "22",
+                "attachmentSrc": "63ff7eefa1a44b1d91d9ab7eb91835f5",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "旗新动力大司库试运行报告.pdf",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 22
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"05763c8838e84f6d8ce0f4d524ed6a4c\",\"name\":\"3【旗新动力大司库应用服务】项目交接维记录表.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "05763c8838e84f6d8ce0f4d524ed6a4c",
+                        "name": "3【旗新动力大司库应用服务】项目交接维记录表.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_项目交接维记录表.doc",
+                "attachmentName": "项目交接维记录表",
+                "deliveryCode": "23",
+                "attachmentSrc": "5513b98a70484a25a2f774cf6d8bb5ec",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "3【旗新动力大司库应用服务】项目交接维记录表.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 23
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"0f5f75f07e7f405bae01741683bb8487\",\"name\":\"4【旗新动力大司库应用服务】交接维状态报告.pptx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "0f5f75f07e7f405bae01741683bb8487",
+                        "name": "4【旗新动力大司库应用服务】交接维状态报告.pptx"
+                    }
+                ],
+                "deliverName": "[项目名称]_交接维状态报告.pptx",
+                "attachmentName": "交接维状态报告",
+                "deliveryCode": "24",
+                "attachmentSrc": "09a432e0af0e479faca31c5d1659e3bb",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "4【旗新动力大司库应用服务】交接维状态报告.pptx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 24
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"90c413543eaf426da201fedbf8608819\",\"name\":\"旗新动力大司库项目验收报告.pdf\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "90c413543eaf426da201fedbf8608819",
+                        "name": "旗新动力大司库项目验收报告.pdf"
+                    }
+                ],
+                "deliverName": "[项目名称]_项目验收报告.docx",
+                "attachmentName": "项目验收报告",
+                "deliveryCode": "25",
+                "attachmentSrc": "c7e8a7ce7a284334a20681845c35d0be",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "旗新动力大司库项目验收报告.pdf",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 25
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"bb021f83173d4f41a15cd5f5162c9067\",\"name\":\"旗新动力大司库适配任务单.pdf\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "bb021f83173d4f41a15cd5f5162c9067",
+                        "name": "旗新动力大司库适配任务单.pdf"
+                    }
+                ],
+                "deliverName": "[项目名称]_工作说明书.doc",
+                "attachmentName": "工作说明书",
+                "deliveryCode": "4",
+                "attachmentSrc": "4a8f83c27e7d439982c8f0d015102fa8",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "旗新动力大司库适配任务单.pdf",
+                "attachmentUrl": null,
+                "deliveryField": "合同阶段",
+                "modelId": 4
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"6c3002a682ef4792a81436fe6754ae15\",\"name\":\"旗新动力大司库需求规格书.pdf\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "6c3002a682ef4792a81436fe6754ae15",
+                        "name": "旗新动力大司库需求规格书.pdf"
+                    }
+                ],
+                "deliverName": "[项目名称]_需求规格说明书（界面原型图DEMO）.docx",
+                "attachmentName": "需求规格说明书",
+                "deliveryCode": "5",
+                "attachmentSrc": "1926be29fdcb481fb7397eb7f114bad5",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "旗新动力大司库需求规格书.pdf",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 5
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"32060e2d86824295b9daec87bec020b7\",\"name\":\"A2【旗新动力大司库应用服务】信息安全要求与实施计划.xlsx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "32060e2d86824295b9daec87bec020b7",
+                        "name": "A2【旗新动力大司库应用服务】信息安全要求与实施计划.xlsx"
+                    }
+                ],
+                "deliverName": "[项目名称]_信息安全要求与实施计划.xlsm",
+                "attachmentName": "信息安全要求与实施计划",
+                "deliveryCode": "6",
+                "attachmentSrc": "427e115ab4034ed596c65238b15e6f4d",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "A2【旗新动力大司库应用服务】信息安全要求与实施计划.xlsx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 6
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"492a6556e17549e896ca2300f414111d\",\"name\":\"4.1【旗新动力大司库应用服务】系统概要设计说明书_简版.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "492a6556e17549e896ca2300f414111d",
+                        "name": "4.1【旗新动力大司库应用服务】系统概要设计说明书_简版.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_系统概要设计说明书_简版.docx",
+                "attachmentName": "系统概要设计说明书",
+                "deliveryCode": "7",
+                "attachmentSrc": "8c817d81faaf43f2b733b10924a92266",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "4.1【旗新动力大司库应用服务】系统概要设计说明书_简版.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 7
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"dfcf82651cf946e69cb8bbaec4fafd99\",\"name\":\"B4【旗新动力大司库应用服务】接口文档.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "dfcf82651cf946e69cb8bbaec4fafd99",
+                        "name": "B4【旗新动力大司库应用服务】接口文档.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_接口文档.docx",
+                "attachmentName": "接口文档",
+                "deliveryCode": "8",
+                "attachmentSrc": "547ab0725ee647ce8e3aa19b78f6f5a9",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "B4【旗新动力大司库应用服务】接口文档.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 8
+            },
+            {
+                "deliverAttachment": "[{\"id\":\"1b1f876b45fa40f0a5d314cec7497869\",\"name\":\"B6【旗新动力大司库应用服务】代码审计报告.docx\"}]",
+                "deliverAttachmentFile": [
+                    {
+                        "id": "1b1f876b45fa40f0a5d314cec7497869",
+                        "name": "B6【旗新动力大司库应用服务】代码审计报告.docx"
+                    }
+                ],
+                "deliverName": "[项目名称]_代码审计报告.docx",
+                "attachmentName": "代码审计报告",
+                "deliveryCode": "9",
+                "attachmentSrc": "fbbfc87b79574025869a2ed7c4eb9ff9",
+                "aiRating": null,
+                "aiRatingDesc": null,
+                "auditStatus": "1",
+                "deliverAttachmentName": "B6【旗新动力大司库应用服务】代码审计报告.docx",
+                "attachmentUrl": null,
+                "deliveryField": "终验收阶段",
+                "modelId": 9
+            }
+        ],
+        "total": 24,
+        "deliveryModelUploadRate": 100.00,
+        "acceptDeliveryNumber": 24,
+        "deliveryAiAverage": 0.00
+    }
+}

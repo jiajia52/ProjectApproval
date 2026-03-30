@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { requestJson } from "../api";
+import { normalizeScene, requestJson } from "../api";
 import PageLayout from "../components/PageLayout";
 
 function buildSkillSummary(items, activeSkillId) {
@@ -11,7 +11,8 @@ function buildSkillSummary(items, activeSkillId) {
   };
 }
 
-function SkillsContent() {
+function SkillsContent({ scene }) {
+  const activeScene = normalizeScene(scene);
   const [skillFiles, setSkillFiles] = useState([]);
   const [activeSkillId, setActiveSkillId] = useState("");
   const [editorText, setEditorText] = useState("");
@@ -20,7 +21,9 @@ function SkillsContent() {
   const [saving, setSaving] = useState(false);
 
   async function openSkillFile(skillId, currentItems = skillFiles) {
-    const payload = await requestJson(`/api/skill-files/${encodeURIComponent(skillId)}`);
+    const payload = await requestJson(
+      `/api/skill-files/${encodeURIComponent(skillId)}?scene=${encodeURIComponent(activeScene)}`,
+    );
     setActiveSkillId(skillId);
     setEditorText(payload.content || "");
     const matched = currentItems.find((item) => item.skill_id === skillId) || null;
@@ -32,11 +35,11 @@ function SkillsContent() {
           }
         : payload,
     );
-    setStatusText(`已载入 ${matched?.skill_name || skillId}。`);
+    setStatusText(`已加载 ${matched?.skill_name || skillId}。`);
   }
 
   async function loadSkillList(preferredSkillId = "") {
-    const payload = await requestJson("/api/skill-files");
+    const payload = await requestJson(`/api/skill-files?scene=${encodeURIComponent(activeScene)}`);
     const items = payload.items || [];
     setSkillFiles(items);
     const nextSkillId = preferredSkillId || activeSkillId || items[0]?.skill_id || "";
@@ -52,7 +55,7 @@ function SkillsContent() {
 
   useEffect(() => {
     loadSkillList().catch((error) => setStatusText(error.message || "加载 Skill 文件失败。"));
-  }, []);
+  }, [activeScene]);
 
   async function saveSkillFile() {
     if (!activeSkillId) {
@@ -60,7 +63,7 @@ function SkillsContent() {
     }
     setSaving(true);
     try {
-      await requestJson(`/api/skill-files/${encodeURIComponent(activeSkillId)}`, {
+      await requestJson(`/api/skill-files/${encodeURIComponent(activeSkillId)}?scene=${encodeURIComponent(activeScene)}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ content: editorText }),
@@ -82,9 +85,7 @@ function SkillsContent() {
         <div>
           <p className="eyebrow">Skill Editor</p>
           <h1>Skill 文件管理</h1>
-          <p className="hero-copy">
-            这里直接展示 `skills/` 下各个 `SKILL.md` 文件，点击后即可查看并修改原始内容。
-          </p>
+          <p className="hero-copy">这里展示并可直接编辑当前场景下的 `SKILL.md` 文件。</p>
         </div>
         <div className="hero-panel">
           <p className="panel-label">Overview</p>
@@ -184,10 +185,11 @@ function SkillsContent() {
   );
 }
 
-export default function SkillsPage() {
+export default function SkillsPage({ scene = "initiation" }) {
+  const activeScene = normalizeScene(scene);
   return (
-    <PageLayout>
-      <SkillsContent />
+    <PageLayout scene={activeScene} section="skills">
+      <SkillsContent scene={activeScene} />
     </PageLayout>
   );
 }

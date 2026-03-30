@@ -72,7 +72,7 @@ def write_runtime_templates() -> None:
                 "可外部修改的关键文件：",
                 "- .env",
                 "- runtime/config/integration_config.json",
-                "- data/*.xlsx",
+                "- materials/initiation/rules/*.xlsx",
             ]
         ),
     )
@@ -114,10 +114,9 @@ def main() -> None:
         ]
     )
 
-    copy_tree(PROJECT_ROOT / "data", DIST_DIR / "data")
+    copy_tree(PROJECT_ROOT / "materials", DIST_DIR / "materials")
     copy_tree(PROJECT_ROOT / "skills", DIST_DIR / "skills")
     copy_tree(PROJECT_ROOT / "frontend" / "dist", DIST_DIR / "frontend" / "dist")
-    copy_tree(PROJECT_ROOT / "app" / "frontend", DIST_DIR / "app" / "frontend")
     write_runtime_templates()
     print(f"EXE package generated at: {DIST_DIR}")
 

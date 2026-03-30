@@ -20,14 +20,26 @@ def repo_root() -> Path:
     return Path(__file__).resolve().parents[1]
 
 
-def default_xlsx_path() -> Path:
-    matches = [
-        path
-        for path in (repo_root() / "data").glob("*.xlsx")
-        if path.is_file() and not path.name.startswith("~$")
+def rule_search_dirs() -> list[Path]:
+    root = repo_root()
+    return [
+        root / "materials" / "initiation" / "rules",
+        root / "data",
     ]
+
+
+def default_xlsx_path() -> Path:
+    matches: list[Path] = []
+    seen: set[Path] = set()
+    for directory in rule_search_dirs():
+        for path in directory.glob("*.xlsx"):
+            resolved = path.resolve()
+            if resolved in seen or not path.is_file() or path.name.startswith("~$"):
+                continue
+            seen.add(resolved)
+            matches.append(path)
     if not matches:
-        raise FileNotFoundError("No .xlsx rule matrix found in data/.")
+        raise FileNotFoundError("No .xlsx rule matrix found in materials/initiation/rules/ or data/.")
 
     preferred = [
         path
@@ -41,7 +53,7 @@ def default_xlsx_path() -> Path:
 
 
 def default_output_path() -> Path:
-    return repo_root() / "runtime" / "review_rules.json"
+    return repo_root() / "runtime" / "initiation" / "review_rules.json"
 
 
 def excel_col_to_index(column: str) -> int:

@@ -23,15 +23,26 @@ def default_config_path() -> Path:
     return repo_root() / "runtime" / "config" / "skill_config.json"
 
 
+def rule_search_dirs(root: Path) -> list[Path]:
+    return [
+        root / "materials" / "initiation" / "rules",
+        root / "data",
+    ]
+
+
 def default_rule_matrix_path(root: Path | None = None) -> Path:
     active_root = root or repo_root()
-    matches = [
-        path
-        for path in (active_root / "data").glob("*.xlsx")
-        if path.is_file() and not path.name.startswith("~$")
-    ]
+    matches: list[Path] = []
+    seen: set[Path] = set()
+    for directory in rule_search_dirs(active_root):
+        for path in directory.glob("*.xlsx"):
+            resolved = path.resolve()
+            if resolved in seen or not path.is_file() or path.name.startswith("~$"):
+                continue
+            seen.add(resolved)
+            matches.append(path)
     if not matches:
-        raise FileNotFoundError("No .xlsx rule matrix found in data/.")
+        raise FileNotFoundError("No .xlsx rule matrix found in materials/initiation/rules/ or data/.")
     preferred_by_name = [
         path
         for path in matches
@@ -345,9 +356,10 @@ def default_config(rules_bundle: dict[str, Any]) -> dict[str, Any]:
             "default_prompt": "Generate project approval bundle artifacts from local project data and review rules.",
         },
         "sources": {
-            "product_info": "data/product_info.md",
+            "product_info": "materials/initiation/samples/product_info.md",
             "api_list": "data/API列表.txt",
-            "rule_matrix": f"data/{default_rule_matrix_path().name}",
+            "rule_matrix": f"materials/initiation/rules/{default_rule_matrix_path().name}",
+            "api_list": "materials/initiation/interfaces/API列表.txt",
         },
         "generation": {
             "output_dir": "runtime",
@@ -378,14 +390,28 @@ def normalize_relative_path(value: str) -> str:
     return normalized
 
 
+def normalize_source_path(value: str) -> str:
+    normalized = normalize_relative_path(value)
+    file_name = Path(normalized).name
+    if file_name == "product_info.md":
+        return "materials/initiation/samples/product_info.md"
+    if file_name == "API列表.txt":
+        return "materials/initiation/interfaces/API列表.txt"
+    if file_name == "approval_input.sample.json":
+        return "materials/initiation/samples/approval_input.sample.json"
+    if file_name.endswith(".xlsx"):
+        return f"materials/initiation/rules/{file_name}"
+    return normalized
+
+
 def normalize_config(config: dict[str, Any], rules_bundle: dict[str, Any]) -> dict[str, Any]:
     merged = default_config(rules_bundle)
     merged["skill"].update(config.get("skill", {}))
     merged["sources"].update(config.get("sources", {}))
     merged["generation"].update(config.get("generation", {}))
-    merged["sources"]["product_info"] = normalize_relative_path(merged["sources"]["product_info"])
-    merged["sources"]["api_list"] = normalize_relative_path(merged["sources"]["api_list"])
-    merged["sources"]["rule_matrix"] = normalize_relative_path(merged["sources"]["rule_matrix"])
+    merged["sources"]["product_info"] = normalize_source_path(merged["sources"]["product_info"])
+    merged["sources"]["api_list"] = normalize_source_path(merged["sources"]["api_list"])
+    merged["sources"]["rule_matrix"] = normalize_source_path(merged["sources"]["rule_matrix"])
     merged["generation"]["output_dir"] = normalize_relative_path(merged["generation"]["output_dir"])
     merged["generation"]["rules_output"] = normalize_relative_path(merged["generation"]["rules_output"])
     if merged["skill"].get("name") == "project-approval-generator":

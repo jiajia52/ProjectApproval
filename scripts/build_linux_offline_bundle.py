@@ -266,7 +266,7 @@ def write_runtime_templates() -> None:
                 "外部可配置文件：",
                 "- .env",
                 "- runtime/config/integration_config.json",
-                "- data/*.xlsx",
+                "- materials/initiation/rules/*.xlsx",
             ]
         ),
     )
@@ -289,7 +289,7 @@ def main() -> None:
     lock_items = resolve_linux_dependency_lock(PROJECT_ROOT / "requirements.txt")
 
     copy_tree(PROJECT_ROOT / "app", DIST_DIR / "app")
-    copy_tree(PROJECT_ROOT / "data", DIST_DIR / "data")
+    copy_tree(PROJECT_ROOT / "materials", DIST_DIR / "materials")
     copy_tree(PROJECT_ROOT / "frontend" / "dist", DIST_DIR / "frontend" / "dist")
     copy_tree(PROJECT_ROOT / "skills", DIST_DIR / "skills")
     copy_tree(PROJECT_ROOT / "scripts", DIST_DIR / "scripts")

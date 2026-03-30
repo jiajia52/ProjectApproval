@@ -20,12 +20,12 @@ def repo_root() -> Path:
 
 def default_rules_path(root: Path | None = None) -> Path:
     active_root = root or repo_root()
-    return active_root / "runtime" / "review_rules.json"
+    return active_root / "runtime" / "initiation" / "review_rules.json"
 
 
 def default_output_dir(root: Path | None = None) -> Path:
     active_root = root or repo_root()
-    return active_root / "skills"
+    return active_root / "skills" / "initiation"
 
 
 def slugify(value: str) -> str:

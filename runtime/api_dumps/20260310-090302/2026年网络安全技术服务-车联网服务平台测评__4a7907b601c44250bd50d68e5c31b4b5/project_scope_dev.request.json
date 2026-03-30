@@ -1,8 +1,0 @@
-{
-  "name": "project_scope_dev",
-  "method": "POST",
-  "path": "/projectBaseInfo/eamapAndSystem",
-  "payload": {
-    "projectId": "4a7907b601c44250bd50d68e5c31b4b5"
-  }
-}

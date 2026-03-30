@@ -1,8 +1,0 @@
-{
-  "name": "system_scope",
-  "method": "POST",
-  "path": "/projectMicosInfo/getList",
-  "payload": {
-    "projectId": "f085146320e24def900c2e38cefd29ad"
-  }
-}
