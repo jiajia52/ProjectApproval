@@ -1,0 +1,168 @@
+{
+  "skill_id": "approval-基本信息",
+  "skill_name": "approval-基本信息-基本信息",
+  "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-基本信息",
+  "review_point": "基本信息",
+  "tab": "基本信息",
+  "rule_count": 10,
+  "rule_ids": [
+    "R001",
+    "R002",
+    "R003",
+    "R004",
+    "R005",
+    "R006",
+    "R007",
+    "R008",
+    "R009",
+    "R010"
+  ],
+  "review_points": [
+    "基本信息",
+    "关联目标",
+    "关联的产品",
+    "采购说明及原因"
+  ],
+  "review_contents": [
+    "任务单名称",
+    "开始时间",
+    "结束时间",
+    "供应商",
+    "合同名称",
+    "合同编号",
+    "项目目标",
+    "产品名称",
+    "选择供应商原因",
+    "采购说明"
+  ],
+  "categories": [
+    "工作台开发及实施",
+    "产品运营",
+    "系统产品购买"
+  ],
+  "group_names": [
+    "系统建设及运营"
+  ],
+  "tabs": [
+    "基本信息"
+  ],
+  "model_dimensions": [
+    "完整性校验模型"
+  ],
+  "dimensions": [
+    "任务单内容"
+  ],
+  "summary": "基本信息，包含 10 条评审子规则。",
+  "rules": [
+    {
+      "rule_id": "R001",
+      "review_point": "基本信息",
+      "review_content": "任务单名称",
+      "rule_text": "具备任务单名称",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R002",
+      "review_point": "基本信息",
+      "review_content": "开始时间",
+      "rule_text": "具备任务单的开始时间必须大于且等于项目目标的开始时间。且具备时间值。",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R003",
+      "review_point": "基本信息",
+      "review_content": "结束时间",
+      "rule_text": "具备任务单的开始时间必须小于且等于项目目标的结束时间。且具备时间值。",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R004",
+      "review_point": "基本信息",
+      "review_content": "供应商",
+      "rule_text": "具备供应商",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R005",
+      "review_point": "基本信息",
+      "review_content": "合同名称",
+      "rule_text": "具备合同名称",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R006",
+      "review_point": "基本信息",
+      "review_content": "合同编号",
+      "rule_text": "具备合同编号",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R007",
+      "review_point": "关联目标",
+      "review_content": "项目目标",
+      "rule_text": "具备关联的项目目标",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R008",
+      "review_point": "关联的产品",
+      "review_content": "产品名称",
+      "rule_text": "具备关联的产品",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R009",
+      "review_point": "采购说明及原因",
+      "review_content": "选择供应商原因",
+      "rule_text": "具备选择供应商原因",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R010",
+      "review_point": "采购说明及原因",
+      "review_content": "采购说明",
+      "rule_text": "具备采购说明",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    }
+  ]
+}

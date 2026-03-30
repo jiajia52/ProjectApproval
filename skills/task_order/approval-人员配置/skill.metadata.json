@@ -1,0 +1,61 @@
+{
+  "skill_id": "approval-人员配置",
+  "skill_name": "approval-人员配置-人员配置",
+  "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-人员配置",
+  "review_point": "人员配置",
+  "tab": "人员配置",
+  "rule_count": 2,
+  "rule_ids": [
+    "R019",
+    "R020"
+  ],
+  "review_points": [
+    "人员配置及费用"
+  ],
+  "review_contents": [
+    "岗位、职级、预计人天、人员单价、预计费用",
+    "预计费用"
+  ],
+  "categories": [
+    "工作台开发及实施",
+    "产品运营",
+    "系统产品购买"
+  ],
+  "group_names": [
+    "系统建设及运营"
+  ],
+  "tabs": [
+    "人员配置"
+  ],
+  "model_dimensions": [
+    "成本构成模型"
+  ],
+  "dimensions": [
+    "成本构成"
+  ],
+  "summary": "人员配置，包含 2 条评审子规则。",
+  "rules": [
+    {
+      "rule_id": "R019",
+      "review_point": "人员配置及费用",
+      "review_content": "岗位、职级、预计人天、人员单价、预计费用",
+      "rule_text": "具备岗位、职级、预计人天、人员单价、预计费用",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R020",
+      "review_point": "人员配置及费用",
+      "review_content": "预计费用",
+      "rule_text": "具备核定总金额",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    }
+  ]
+}

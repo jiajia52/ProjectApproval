@@ -1,0 +1,4 @@
+interface:
+  display_name: "组织架构"
+  short_description: "立项审批tab技能：组织架构"
+  default_prompt: "Use this skill to review all approval rules grouped under the project process tab."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "任务填写"
+  short_description: "立项审批tab技能：任务填写"
+  default_prompt: "Use this skill to review all approval rules grouped under the project process tab."

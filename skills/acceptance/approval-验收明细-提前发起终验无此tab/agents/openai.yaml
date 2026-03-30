@@ -1,0 +1,4 @@
+interface:
+  display_name: "验收明细（提前发起终验无此tab）"
+  short_description: "立项审批tab技能：验收明细（提前发起终验无此tab）"
+  default_prompt: "Use this skill to review all approval rules grouped under the project process tab."

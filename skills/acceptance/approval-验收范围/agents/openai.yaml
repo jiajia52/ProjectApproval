@@ -1,0 +1,4 @@
+interface:
+  display_name: "验收范围"
+  short_description: "立项审批tab技能：验收范围"
+  default_prompt: "Use this skill to review all approval rules grouped under the project process tab."

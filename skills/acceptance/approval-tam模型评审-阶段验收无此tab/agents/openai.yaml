@@ -1,0 +1,4 @@
+interface:
+  display_name: "TAM模型评审（阶段验收无此tab）"
+  short_description: "立项审批tab技能：TAM模型评审（阶段验收无此tab）"
+  default_prompt: "Use this skill to review all approval rules grouped under the project process tab."

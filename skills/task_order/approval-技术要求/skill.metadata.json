@@ -1,0 +1,230 @@
+{
+  "skill_id": "approval-技术要求",
+  "skill_name": "approval-技术要求-技术要求",
+  "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-技术要求",
+  "review_point": "技术要求",
+  "tab": "技术要求",
+  "rule_count": 15,
+  "rule_ids": [
+    "R023",
+    "R024",
+    "R025",
+    "R026",
+    "R027",
+    "R028",
+    "R029",
+    "R030",
+    "R031",
+    "R032",
+    "R033",
+    "R034",
+    "R035",
+    "R036",
+    "R037"
+  ],
+  "review_points": [
+    "技术要求"
+  ],
+  "review_contents": [
+    "系统功能需求",
+    "系统架构需求",
+    "系统集成与接口要求",
+    "数据库要求",
+    "性能要求",
+    "安全性要求",
+    "扩展性要求",
+    "技术栈要求",
+    "前端设计要求",
+    "兼容性要求",
+    "质量要求",
+    "进度要求",
+    "交接维要求",
+    "交接物明细",
+    "项目验收条件"
+  ],
+  "categories": [
+    "工作台开发及实施",
+    "产品运营",
+    "系统产品购买"
+  ],
+  "group_names": [
+    "系统建设及运营"
+  ],
+  "tabs": [
+    "技术要求"
+  ],
+  "model_dimensions": [
+    "完整性校验模型"
+  ],
+  "dimensions": [
+    "技术要求"
+  ],
+  "summary": "技术要求，包含 15 条评审子规则。",
+  "rules": [
+    {
+      "rule_id": "R023",
+      "review_point": "技术要求",
+      "review_content": "系统功能需求",
+      "rule_text": "具备系统功能需求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R024",
+      "review_point": "技术要求",
+      "review_content": "系统架构需求",
+      "rule_text": "具备系统架构需求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R025",
+      "review_point": "技术要求",
+      "review_content": "系统集成与接口要求",
+      "rule_text": "具备系统集成与接口要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R026",
+      "review_point": "技术要求",
+      "review_content": "数据库要求",
+      "rule_text": "具备数据库要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R027",
+      "review_point": "技术要求",
+      "review_content": "性能要求",
+      "rule_text": "具备性能要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R028",
+      "review_point": "技术要求",
+      "review_content": "安全性要求",
+      "rule_text": "具备安全性要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R029",
+      "review_point": "技术要求",
+      "review_content": "扩展性要求",
+      "rule_text": "具备扩展性要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R030",
+      "review_point": "技术要求",
+      "review_content": "技术栈要求",
+      "rule_text": "具备技术栈要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R031",
+      "review_point": "技术要求",
+      "review_content": "前端设计要求",
+      "rule_text": "具备前端设计要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R032",
+      "review_point": "技术要求",
+      "review_content": "兼容性要求",
+      "rule_text": "具备兼容性要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R033",
+      "review_point": "技术要求",
+      "review_content": "质量要求",
+      "rule_text": "具备质量要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R034",
+      "review_point": "技术要求",
+      "review_content": "进度要求",
+      "rule_text": "具备进度要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R035",
+      "review_point": "技术要求",
+      "review_content": "交接维要求",
+      "rule_text": "具备交接维要求",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R036",
+      "review_point": "技术要求",
+      "review_content": "交接物明细",
+      "rule_text": "具备交接物明细",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R037",
+      "review_point": "技术要求",
+      "review_content": "项目验收条件",
+      "rule_text": "具备项目验收条件",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "generated_count": 6,
+  "grouping_key": "tab",
+  "output_dir": "E:\\pyproject\\ProjectApproval\\skills\\task_order",
+  "skills": [
+    {
+      "skill_id": "approval-基本信息",
+      "skill_name": "approval-基本信息-基本信息",
+      "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-基本信息",
+      "review_point": "基本信息",
+      "tab": "基本信息",
+      "rule_count": 10,
+      "rule_ids": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R005",
+        "R006",
+        "R007",
+        "R008",
+        "R009",
+        "R010"
+      ],
+      "review_points": [
+        "基本信息",
+        "关联目标",
+        "关联的产品",
+        "采购说明及原因"
+      ],
+      "review_contents": [
+        "任务单名称",
+        "开始时间",
+        "结束时间",
+        "供应商",
+        "合同名称",
+        "合同编号",
+        "项目目标",
+        "产品名称",
+        "选择供应商原因",
+        "采购说明"
+      ],
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ],
+      "group_names": [
+        "系统建设及运营"
+      ],
+      "tabs": [
+        "基本信息"
+      ],
+      "model_dimensions": [
+        "完整性校验模型"
+      ],
+      "dimensions": [
+        "任务单内容"
+      ],
+      "summary": "基本信息，包含 10 条评审子规则。",
+      "rules": [
+        {
+          "rule_id": "R001",
+          "review_point": "基本信息",
+          "review_content": "任务单名称",
+          "rule_text": "具备任务单名称",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R002",
+          "review_point": "基本信息",
+          "review_content": "开始时间",
+          "rule_text": "具备任务单的开始时间必须大于且等于项目目标的开始时间。且具备时间值。",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R003",
+          "review_point": "基本信息",
+          "review_content": "结束时间",
+          "rule_text": "具备任务单的开始时间必须小于且等于项目目标的结束时间。且具备时间值。",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R004",
+          "review_point": "基本信息",
+          "review_content": "供应商",
+          "rule_text": "具备供应商",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R005",
+          "review_point": "基本信息",
+          "review_content": "合同名称",
+          "rule_text": "具备合同名称",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R006",
+          "review_point": "基本信息",
+          "review_content": "合同编号",
+          "rule_text": "具备合同编号",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R007",
+          "review_point": "关联目标",
+          "review_content": "项目目标",
+          "rule_text": "具备关联的项目目标",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R008",
+          "review_point": "关联的产品",
+          "review_content": "产品名称",
+          "rule_text": "具备关联的产品",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R009",
+          "review_point": "采购说明及原因",
+          "review_content": "选择供应商原因",
+          "rule_text": "具备选择供应商原因",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R010",
+          "review_point": "采购说明及原因",
+          "review_content": "采购说明",
+          "rule_text": "具备采购说明",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        }
+      ]
+    },
+    {
+      "skill_id": "approval-业务架构",
+      "skill_name": "approval-业务架构-业务架构",
+      "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-业务架构",
+      "review_point": "业务架构",
+      "tab": "业务架构",
+      "rule_count": 5,
+      "rule_ids": [
+        "R011",
+        "R012",
+        "R013",
+        "R014",
+        "R015"
+      ],
+      "review_points": [
+        "业务单元清单",
+        "审批节点"
+      ],
+      "review_contents": [
+        "业务对象数字化",
+        "业务规则数字化",
+        "业务过程数字化",
+        "审批节点消除情况",
+        "实现自动化/智能化审批节点情况"
+      ],
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ],
+      "group_names": [
+        "系统建设及运营"
+      ],
+      "tabs": [
+        "业务架构"
+      ],
+      "model_dimensions": [
+        "完整性校验模型"
+      ],
+      "dimensions": [
+        "任务单内容"
+      ],
+      "summary": "业务架构，包含 5 条评审子规则。",
+      "rules": [
+        {
+          "rule_id": "R011",
+          "review_point": "业务单元清单",
+          "review_content": "业务对象数字化",
+          "rule_text": "具备业务对象",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R012",
+          "review_point": "业务单元清单",
+          "review_content": "业务规则数字化",
+          "rule_text": "具备业务单元",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R013",
+          "review_point": "业务单元清单",
+          "review_content": "业务过程数字化",
+          "rule_text": "具备业务过程",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R014",
+          "review_point": "审批节点",
+          "review_content": "审批节点消除情况",
+          "rule_text": "具备功能描述\n具备消除审批节点数量\n具备消除审批节点描述\n可以为空",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R015",
+          "review_point": "审批节点",
+          "review_content": "实现自动化/智能化审批节点情况",
+          "rule_text": "具备功能描述\n具备消除审批节点数量\n具备消除审批节点描述\n可以为空",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        }
+      ]
+    },
+    {
+      "skill_id": "approval-任务填写",
+      "skill_name": "approval-任务填写-任务填写",
+      "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-任务填写",
+      "review_point": "任务填写",
+      "tab": "任务填写",
+      "rule_count": 3,
+      "rule_ids": [
+        "R016",
+        "R017",
+        "R018"
+      ],
+      "review_points": [
+        "业务流程清单"
+      ],
+      "review_contents": [
+        "业务流程列表",
+        "任务列表（必填）",
+        "指标列表（非必填）"
+      ],
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ],
+      "group_names": [
+        "系统建设及运营"
+      ],
+      "tabs": [
+        "任务填写"
+      ],
+      "model_dimensions": [
+        "完整性校验模型"
+      ],
+      "dimensions": [
+        "任务单内容"
+      ],
+      "summary": "任务填写，包含 3 条评审子规则。",
+      "rules": [
+        {
+          "rule_id": "R016",
+          "review_point": "业务流程清单",
+          "review_content": "业务流程列表",
+          "rule_text": "具备业务流程",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R017",
+          "review_point": "业务流程清单",
+          "review_content": "任务列表（必填）",
+          "rule_text": "具备任务明细数据",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R018",
+          "review_point": "业务流程清单",
+          "review_content": "指标列表（非必填）",
+          "rule_text": "可以为空",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        }
+      ]
+    },
+    {
+      "skill_id": "approval-人员配置",
+      "skill_name": "approval-人员配置-人员配置",
+      "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-人员配置",
+      "review_point": "人员配置",
+      "tab": "人员配置",
+      "rule_count": 2,
+      "rule_ids": [
+        "R019",
+        "R020"
+      ],
+      "review_points": [
+        "人员配置及费用"
+      ],
+      "review_contents": [
+        "岗位、职级、预计人天、人员单价、预计费用",
+        "预计费用"
+      ],
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ],
+      "group_names": [
+        "系统建设及运营"
+      ],
+      "tabs": [
+        "人员配置"
+      ],
+      "model_dimensions": [
+        "成本构成模型"
+      ],
+      "dimensions": [
+        "成本构成"
+      ],
+      "summary": "人员配置，包含 2 条评审子规则。",
+      "rules": [
+        {
+          "rule_id": "R019",
+          "review_point": "人员配置及费用",
+          "review_content": "岗位、职级、预计人天、人员单价、预计费用",
+          "rule_text": "具备岗位、职级、预计人天、人员单价、预计费用",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R020",
+          "review_point": "人员配置及费用",
+          "review_content": "预计费用",
+          "rule_text": "具备核定总金额",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        }
+      ]
+    },
+    {
+      "skill_id": "approval-费用评估",
+      "skill_name": "approval-费用评估-费用评估",
+      "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-费用评估",
+      "review_point": "费用评估",
+      "tab": "费用评估",
+      "rule_count": 2,
+      "rule_ids": [
+        "R021",
+        "R022"
+      ],
+      "review_points": [
+        "本次任务单费用",
+        "历史任务单费用"
+      ],
+      "review_contents": [
+        "岗位、职级、人天、单价、费用",
+        "历史任务单明细"
+      ],
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ],
+      "group_names": [
+        "系统建设及运营"
+      ],
+      "tabs": [
+        "费用评估"
+      ],
+      "model_dimensions": [
+        "成本构成模型"
+      ],
+      "dimensions": [
+        "成本构成"
+      ],
+      "summary": "费用评估，包含 2 条评审子规则。",
+      "rules": [
+        {
+          "rule_id": "R021",
+          "review_point": "本次任务单费用",
+          "review_content": "岗位、职级、人天、单价、费用",
+          "rule_text": "具备岗位、职级、预计人天、人员单价、预计费用",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R022",
+          "review_point": "历史任务单费用",
+          "review_content": "历史任务单明细",
+          "rule_text": "具备核定总金额",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        }
+      ]
+    },
+    {
+      "skill_id": "approval-技术要求",
+      "skill_name": "approval-技术要求-技术要求",
+      "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-技术要求",
+      "review_point": "技术要求",
+      "tab": "技术要求",
+      "rule_count": 15,
+      "rule_ids": [
+        "R023",
+        "R024",
+        "R025",
+        "R026",
+        "R027",
+        "R028",
+        "R029",
+        "R030",
+        "R031",
+        "R032",
+        "R033",
+        "R034",
+        "R035",
+        "R036",
+        "R037"
+      ],
+      "review_points": [
+        "技术要求"
+      ],
+      "review_contents": [
+        "系统功能需求",
+        "系统架构需求",
+        "系统集成与接口要求",
+        "数据库要求",
+        "性能要求",
+        "安全性要求",
+        "扩展性要求",
+        "技术栈要求",
+        "前端设计要求",
+        "兼容性要求",
+        "质量要求",
+        "进度要求",
+        "交接维要求",
+        "交接物明细",
+        "项目验收条件"
+      ],
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ],
+      "group_names": [
+        "系统建设及运营"
+      ],
+      "tabs": [
+        "技术要求"
+      ],
+      "model_dimensions": [
+        "完整性校验模型"
+      ],
+      "dimensions": [
+        "技术要求"
+      ],
+      "summary": "技术要求，包含 15 条评审子规则。",
+      "rules": [
+        {
+          "rule_id": "R023",
+          "review_point": "技术要求",
+          "review_content": "系统功能需求",
+          "rule_text": "具备系统功能需求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R024",
+          "review_point": "技术要求",
+          "review_content": "系统架构需求",
+          "rule_text": "具备系统架构需求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R025",
+          "review_point": "技术要求",
+          "review_content": "系统集成与接口要求",
+          "rule_text": "具备系统集成与接口要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R026",
+          "review_point": "技术要求",
+          "review_content": "数据库要求",
+          "rule_text": "具备数据库要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R027",
+          "review_point": "技术要求",
+          "review_content": "性能要求",
+          "rule_text": "具备性能要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R028",
+          "review_point": "技术要求",
+          "review_content": "安全性要求",
+          "rule_text": "具备安全性要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R029",
+          "review_point": "技术要求",
+          "review_content": "扩展性要求",
+          "rule_text": "具备扩展性要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R030",
+          "review_point": "技术要求",
+          "review_content": "技术栈要求",
+          "rule_text": "具备技术栈要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R031",
+          "review_point": "技术要求",
+          "review_content": "前端设计要求",
+          "rule_text": "具备前端设计要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R032",
+          "review_point": "技术要求",
+          "review_content": "兼容性要求",
+          "rule_text": "具备兼容性要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R033",
+          "review_point": "技术要求",
+          "review_content": "质量要求",
+          "rule_text": "具备质量要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R034",
+          "review_point": "技术要求",
+          "review_content": "进度要求",
+          "rule_text": "具备进度要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R035",
+          "review_point": "技术要求",
+          "review_content": "交接维要求",
+          "rule_text": "具备交接维要求",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R036",
+          "review_point": "技术要求",
+          "review_content": "交接物明细",
+          "rule_text": "具备交接物明细",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        },
+        {
+          "rule_id": "R037",
+          "review_point": "技术要求",
+          "review_content": "项目验收条件",
+          "rule_text": "具备项目验收条件",
+          "categories": [
+            "工作台开发及实施",
+            "产品运营",
+            "系统产品购买"
+          ]
+        }
+      ]
+    }
+  ]
+}

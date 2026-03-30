@@ -1,0 +1,74 @@
+{
+  "skill_id": "approval-任务填写",
+  "skill_name": "approval-任务填写-任务填写",
+  "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-任务填写",
+  "review_point": "任务填写",
+  "tab": "任务填写",
+  "rule_count": 3,
+  "rule_ids": [
+    "R016",
+    "R017",
+    "R018"
+  ],
+  "review_points": [
+    "业务流程清单"
+  ],
+  "review_contents": [
+    "业务流程列表",
+    "任务列表（必填）",
+    "指标列表（非必填）"
+  ],
+  "categories": [
+    "工作台开发及实施",
+    "产品运营",
+    "系统产品购买"
+  ],
+  "group_names": [
+    "系统建设及运营"
+  ],
+  "tabs": [
+    "任务填写"
+  ],
+  "model_dimensions": [
+    "完整性校验模型"
+  ],
+  "dimensions": [
+    "任务单内容"
+  ],
+  "summary": "任务填写，包含 3 条评审子规则。",
+  "rules": [
+    {
+      "rule_id": "R016",
+      "review_point": "业务流程清单",
+      "review_content": "业务流程列表",
+      "rule_text": "具备业务流程",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R017",
+      "review_point": "业务流程清单",
+      "review_content": "任务列表（必填）",
+      "rule_text": "具备任务明细数据",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R018",
+      "review_point": "业务流程清单",
+      "review_content": "指标列表（非必填）",
+      "rule_text": "可以为空",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    }
+  ]
+}

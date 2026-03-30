@@ -1,0 +1,81 @@
+{
+  "skill_id": "approval-tam模型评审",
+  "skill_name": "approval-tam模型评审-TAM模型评审",
+  "directory": "E:\\pyproject\\ProjectApproval\\skills\\initiation\\approval-tam模型评审",
+  "review_point": "TAM模型评审",
+  "tab": "TAM模型评审",
+  "rule_count": 3,
+  "rule_ids": [
+    "R030",
+    "R031",
+    "R032"
+  ],
+  "review_points": [
+    "能力（竞争）模型",
+    "结果（财务/客户）模型",
+    "管理体系模型"
+  ],
+  "review_contents": [
+    "能力（竞争）模型",
+    "结果（财务/客户）模型",
+    "管理体系模型"
+  ],
+  "categories": [
+    "工作台开发及实施",
+    "产品运营",
+    "系统产品购买",
+    "系统开发及运营"
+  ],
+  "group_names": [
+    "系统建设及运营",
+    "对外服务项目"
+  ],
+  "tabs": [
+    "TAM模型评审"
+  ],
+  "model_dimensions": [
+    "价值度量模型"
+  ],
+  "dimensions": [
+    "TAM 指标"
+  ],
+  "summary": "TAM模型评审，包含 3 条评审子规则。",
+  "rules": [
+    {
+      "rule_id": "R030",
+      "review_point": "能力（竞争）模型",
+      "review_content": "能力（竞争）模型",
+      "rule_text": "具备能力模型（三者有一）\n有明确的指标标题、现状、受益部门、三年的计划目标以及测算依据。",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买",
+        "系统开发及运营"
+      ]
+    },
+    {
+      "rule_id": "R031",
+      "review_point": "结果（财务/客户）模型",
+      "review_content": "结果（财务/客户）模型",
+      "rule_text": "具备结果模型（三者有一）\n有明确的指标标题、现状、受益部门、三年的计划目标以及测算依据。",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买",
+        "系统开发及运营"
+      ]
+    },
+    {
+      "rule_id": "R032",
+      "review_point": "管理体系模型",
+      "review_content": "管理体系模型",
+      "rule_text": "具备管理模型（三者有一）\n有明确的指标标题、现状、受益部门、三年的计划目标以及测算依据。",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买",
+        "系统开发及运营"
+      ]
+    }
+  ]
+}

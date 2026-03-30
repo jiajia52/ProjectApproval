@@ -1,0 +1,62 @@
+{
+  "skill_id": "approval-费用评估",
+  "skill_name": "approval-费用评估-费用评估",
+  "directory": "E:\\pyproject\\ProjectApproval\\skills\\task_order\\approval-费用评估",
+  "review_point": "费用评估",
+  "tab": "费用评估",
+  "rule_count": 2,
+  "rule_ids": [
+    "R021",
+    "R022"
+  ],
+  "review_points": [
+    "本次任务单费用",
+    "历史任务单费用"
+  ],
+  "review_contents": [
+    "岗位、职级、人天、单价、费用",
+    "历史任务单明细"
+  ],
+  "categories": [
+    "工作台开发及实施",
+    "产品运营",
+    "系统产品购买"
+  ],
+  "group_names": [
+    "系统建设及运营"
+  ],
+  "tabs": [
+    "费用评估"
+  ],
+  "model_dimensions": [
+    "成本构成模型"
+  ],
+  "dimensions": [
+    "成本构成"
+  ],
+  "summary": "费用评估，包含 2 条评审子规则。",
+  "rules": [
+    {
+      "rule_id": "R021",
+      "review_point": "本次任务单费用",
+      "review_content": "岗位、职级、人天、单价、费用",
+      "rule_text": "具备岗位、职级、预计人天、人员单价、预计费用",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    },
+    {
+      "rule_id": "R022",
+      "review_point": "历史任务单费用",
+      "review_content": "历史任务单明细",
+      "rule_text": "具备核定总金额",
+      "categories": [
+        "工作台开发及实施",
+        "产品运营",
+        "系统产品购买"
+      ]
+    }
+  ]
+}
