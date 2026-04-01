@@ -22,6 +22,7 @@ import urllib3
 from urllib3.exceptions import InsecureRequestWarning
 
 from app.core.paths import LEGACY_API_RESULT_DIR, INTEGRATION_CONFIG_PATH, scene_api_result_dir
+from app.core.scenes import normalize_scene
 
 LOGGER = logging.getLogger("project_approval.iwork_client")
 
@@ -1197,13 +1198,6 @@ def integration_env_defaults() -> dict[str, Any]:
     }
 
 
-def normalize_scene(scene: str | None) -> str:
-    normalized = str(scene or "").strip().lower()
-    if normalized in {"task_order", "task-order", "taskorder"}:
-        return "task_order"
-    return "acceptance" if normalized == "acceptance" else "initiation"
-
-
 def normalize_category_token(value: Any) -> str:
     return "".join(char for char in str(value or "").strip() if char.isalnum())
 
@@ -2192,6 +2186,27 @@ class IworkProjectClient:
                 return None
 
         errors: dict[str, str] = {}
+
+        def extract_project_id(value: Any) -> str:
+            records, _ = _extract_list_and_total(value)
+            if not records and isinstance(value, dict):
+                records = [value]
+            for row in records:
+                if not isinstance(row, dict):
+                    continue
+                candidate = str(
+                    first_non_empty(
+                        row.get("projectId"),
+                        row.get("projectBudgetId"),
+                        row.get("projectInfoId"),
+                        row.get("projectEstablishmentId"),
+                        row.get("establishProjectId"),
+                    )
+                    or ""
+                ).strip()
+                if candidate:
+                    return candidate
+            return ""
         base_detail = safe_request(
             "task_order_base_detail",
             "POST",
@@ -2218,17 +2233,26 @@ class IworkProjectClient:
         )
         matrix_rows = safe_request(
             "task_order_matrix_rows",
-            "POST",
-            f"{self.base_url}/tblProjectTaskPerson/list",
-            payload={"taskId": normalized_task_order_id},
+            "GET",
+            f"/taskInfo/getProjectTaskMatrixList/{urllib.parse.quote(normalized_task_order_id)}",
         )
+        if not _extract_list_and_total(matrix_rows)[0]:
+            legacy_matrix_rows = safe_request(
+                "task_order_matrix_rows_legacy",
+                "POST",
+                f"{self.base_url}/tblProjectTaskPerson/list",
+                payload={"taskId": normalized_task_order_id},
+            )
+            if _extract_list_and_total(legacy_matrix_rows)[0]:
+                matrix_rows = legacy_matrix_rows
+        resolved_project_id = normalized_project_id or extract_project_id(base_detail)
         history_rows = (
             safe_request(
                 "task_order_history_rows",
                 "GET",
-                f"/taskInfo/getHistoryTaskList/{urllib.parse.quote(normalized_project_id)}",
+                f"/taskInfo/getHistoryTaskList/{urllib.parse.quote(resolved_project_id)}",
             )
-            if normalized_project_id
+            if resolved_project_id
             else []
         )
         spec_rows = safe_request(
@@ -2238,7 +2262,7 @@ class IworkProjectClient:
         )
         return {
             "taskOrderId": normalized_task_order_id,
-            "projectId": normalized_project_id,
+            "projectId": resolved_project_id,
             "base_detail": base_detail,
             "business_units": business_units,
             "approval_nodes": approval_nodes,

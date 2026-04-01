@@ -3,6 +3,7 @@
 from pathlib import Path
 
 from app.core import env as _env  # noqa: F401
+from app.core.scenes import SCENE_ACCEPTANCE, SCENE_INITIATION, SCENE_TASK_ORDER, normalize_scene
 
 PROJECT_ROOT = _env.PROJECT_ROOT
 BUNDLE_ROOT = _env.BUNDLE_ROOT
@@ -29,9 +30,6 @@ ACCEPTANCE_MATERIALS_DIR = resolve_resource_path("materials", "acceptance")
 ACCEPTANCE_RULES_DIR = resolve_resource_path("materials", "acceptance", "rules")
 TASK_ORDER_MATERIALS_DIR = resolve_resource_path("materials", "task_order")
 TASK_ORDER_RULES_DIR = resolve_resource_path("materials", "task_order", "rules")
-SCENE_INITIATION = "initiation"
-SCENE_ACCEPTANCE = "acceptance"
-SCENE_TASK_ORDER = "task_order"
 RUNTIME_DIR = PROJECT_ROOT / "runtime"
 CONFIG_DIR = RUNTIME_DIR / "config"
 FRONTEND_DIR = resolve_resource_path("frontend", "dist")
@@ -90,13 +88,6 @@ LEGACY_ACCEPTANCE_RULES_BUNDLE_PATH = LEGACY_GENERATED_DIR / "acceptance_review_
 LEGACY_PROJECT_BUNDLE_PATH = LEGACY_GENERATED_DIR / "project_approval_project.json"
 LEGACY_LATEST_APPROVAL_RESULT_PATH = LEGACY_GENERATED_DIR / "latest_approval_result.json"
 LEGACY_SKILL_MANIFEST_PATH = SKILLS_DIR / "manifest.json"
-
-
-def normalize_scene(scene: str | None) -> str:
-    normalized = str(scene or "").strip().lower()
-    if normalized in {SCENE_TASK_ORDER, "task-order", "taskorder"}:
-        return SCENE_TASK_ORDER
-    return SCENE_ACCEPTANCE if normalized == SCENE_ACCEPTANCE else SCENE_INITIATION
 
 
 def scene_runtime_dir(scene: str | None) -> Path:

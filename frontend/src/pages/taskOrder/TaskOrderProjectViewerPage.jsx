@@ -19,7 +19,6 @@ import {
   buildProjectBadges,
   acceptanceSectionTitle,
   buildAcceptanceVisibility,
-  buildTaskOrders,
   buildTaskOrderViewModel,
   taskOrderSectionStatus,
   DefinitionGrid,
@@ -29,6 +28,22 @@ import {
   TamModelBoard,
   ArchitectureReviewPanel,
 } from "./projectViewerShared";
+
+function approvalTimestamp(record) {
+  const value = record?.generated_at || record?.approvalGeneratedAt || "";
+  const timestamp = value ? new Date(value).getTime() : 0;
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+function pickNewerApproval(primary, fallback) {
+  if (!primary) {
+    return fallback || null;
+  }
+  if (!fallback) {
+    return primary;
+  }
+  return approvalTimestamp(primary) >= approvalTimestamp(fallback) ? primary : fallback;
+}
 
 export default function ProjectViewerPage() {
   const { projectId = "" } = useParams();
@@ -60,17 +75,23 @@ export default function ProjectViewerPage() {
     acceptance_scope: "tasks",
     acceptance_detail: "task_acceptance",
   });
+  const [taskOrderBusinessTab, setTaskOrderBusinessTab] = useState("business_units");
+  const [taskOrderBusinessUnitTab, setTaskOrderBusinessUnitTab] = useState("object");
+  const [taskOrderApprovalNodeTab, setTaskOrderApprovalNodeTab] = useState("removed");
+  const [taskOrderCostTab, setTaskOrderCostTab] = useState("current");
 
   const summary = documentPayload?.project_summary || {};
   const acceptance = documentPayload?.acceptance || {};
   const acceptanceInfoList = normalizeList(acceptance.info_list);
-  const syntheticTaskOrders = useMemo(() => buildTaskOrders(documentPayload), [documentPayload]);
-  const taskOrders = taskOrderItems.length ? taskOrderItems : syntheticTaskOrders;
+  const taskOrders = taskOrderItems;
   const selectedTaskOrderId = String(searchParams.get("taskOrderId") || "").trim();
   const selectedTaskOrder = useMemo(
     () => taskOrders.find((item) => String(item?.id || "").trim() === selectedTaskOrderId) || taskOrders[0] || null,
     [selectedTaskOrderId, taskOrders],
   );
+  const approvalTargetId = viewerPhase === TASK_ORDER_PHASE
+    ? String(selectedTaskOrder?.id || "").trim()
+    : String(projectId || "").trim();
   const selectedAcceptId = String(searchParams.get("acceptId") || "").trim();
   const selectedAcceptance = useMemo(
     () => acceptanceInfoList.find((item) => String(item?.acceptId || item?.id || "").trim() === selectedAcceptId) || null,
@@ -264,6 +285,13 @@ export default function ProjectViewerPage() {
   }, [projectId, selectedTaskOrder?.id, viewerPhase]);
 
   useEffect(() => {
+    setTaskOrderBusinessTab("business_units");
+    setTaskOrderBusinessUnitTab("object");
+    setTaskOrderApprovalNodeTab("removed");
+    setTaskOrderCostTab("current");
+  }, [selectedTaskOrder?.id]);
+
+  useEffect(() => {
     if (!sectionDefinitions.some((item) => item.key === activeSection)) {
       setActiveSection(
         sectionDefinitions[0]?.key
@@ -285,21 +313,30 @@ export default function ProjectViewerPage() {
     let alive = true;
     const categoryQuery = category ? `&category=${encodeURIComponent(category)}` : "";
     const refreshQuery = scene === "acceptance" ? "&refresh=true" : "";
+    const shouldFetchTaskOrderApproval = viewerPhase !== TASK_ORDER_PHASE || Boolean(approvalTargetId);
     setLoading(true);
     setError("");
     setArchitecturePayload(null);
+    const approvalRequest = shouldFetchTaskOrderApproval
+      ? requestJson(`/api/projects/${encodeURIComponent(approvalTargetId || projectId)}/latest-approval?scene=${encodeURIComponent(scene)}${categoryQuery}`).catch(() => null)
+      : Promise.resolve(null);
+    const projectApprovalRequest =
+      viewerPhase === TASK_ORDER_PHASE && projectId && approvalTargetId && approvalTargetId !== projectId
+        ? requestJson(`/api/projects/${encodeURIComponent(projectId)}/latest-approval?scene=${encodeURIComponent(scene)}${categoryQuery}`).catch(() => null)
+        : Promise.resolve(null);
     Promise.all([
       requestJson(
         `/api/projects/${encodeURIComponent(projectId)}/document?scene=${encodeURIComponent(scene)}${categoryQuery}${refreshQuery}&include_architecture_reviews=false`,
       ),
-      requestJson(`/api/projects/${encodeURIComponent(projectId)}/latest-approval?scene=${encodeURIComponent(scene)}${categoryQuery}`).catch(() => null),
+      approvalRequest,
+      projectApprovalRequest,
     ])
-      .then(([documentResult, approvalResult]) => {
+      .then(([documentResult, approvalResult, projectApprovalResult]) => {
         if (!alive) {
           return;
         }
         setDocumentPayload(documentResult);
-        setLatestApproval(approvalResult?.result || null);
+        setLatestApproval(pickNewerApproval(approvalResult?.result || null, projectApprovalResult?.result || null));
         if (documentResult?.resolved_category && documentResult.resolved_category !== category) {
           setCategory(documentResult.resolved_category);
         }
@@ -319,7 +356,7 @@ export default function ProjectViewerPage() {
     return () => {
       alive = false;
     };
-  }, [projectId, scene, category]);
+  }, [projectId, approvalTargetId, scene, category]);
 
   useEffect(() => {
     if (activeSection !== "architecture_review" || architecturePayload) {
@@ -352,10 +389,19 @@ export default function ProjectViewerPage() {
     try {
       setApprovalBusy(true);
       setApprovalMessage("正在执行远程审批...");
+      if (viewerPhase === TASK_ORDER_PHASE && !selectedTaskOrder?.id) {
+        setApprovalMessage("请先选择任务单后再执行审批");
+        return;
+      }
       const result = await requestJson("/api/approve/remote-project", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ projectId, category, scene }),
+        body: JSON.stringify({
+          projectId: viewerPhase === TASK_ORDER_PHASE ? String(projectId || "").trim() : approvalTargetId || projectId,
+          taskOrderId: selectedTaskOrder?.id || "",
+          category,
+          scene,
+        }),
       });
       setLatestApproval(result);
       setApprovalMessage(result.summary || result.decision || "审批完成");
@@ -681,6 +727,20 @@ export default function ProjectViewerPage() {
 
   function renderTaskOrderBasicInfo() {
     const basicInfo = taskOrderView?.basic_info || {};
+    const supplierReasonList = (() => {
+      const rawList = normalizeList(basicInfo.supplier_reason);
+      if (rawList.length) {
+        return rawList.map((item) => String(item || "").trim()).filter(Boolean);
+      }
+      const text = String(basicInfo.supplier_reason || "").trim();
+      if (!text) {
+        return [];
+      }
+      return text
+        .split(/[；;。]/)
+        .map((item) => item.trim())
+        .filter(Boolean);
+    })();
     return (
       <div className="stack-md">
         <article className="card viewer-card-soft task-order-form-card">
@@ -719,11 +779,22 @@ export default function ProjectViewerPage() {
           )}
         </article>
         <article className="card viewer-card-soft">
-          <h3>关联产品与采购说明</h3>
+          <h3>关联的产品</h3>
+          {normalizeList(basicInfo.related_products).length ? (
+            <div className="viewer-tag-grid">
+              {normalizeList(basicInfo.related_products).map((item, index) => (
+                <span key={`${item}-${index}`} className="viewer-tag">{String(item)}</span>
+              ))}
+            </div>
+          ) : (
+            <p className="viewer-empty">暂无关联产品</p>
+          )}
+        </article>
+        <article className="card viewer-card-soft">
+          <h3>采购说明及原因</h3>
           <DefinitionGrid
             items={[
-              { label: "关联产品", value: normalizeList(basicInfo.related_products).join("、") },
-              { label: "选择供应商原因", value: basicInfo.supplier_reason },
+              { label: "选择供应商原因", value: supplierReasonList.length ? supplierReasonList.join("；") : basicInfo.supplier_reason },
               { label: "采购说明", value: basicInfo.procurement_note },
             ]}
           />
@@ -734,23 +805,115 @@ export default function ProjectViewerPage() {
 
   function renderTaskOrderBusinessArchitecture() {
     const businessArchitecture = taskOrderView?.business_architecture || {};
+    const businessUnitRows = normalizeList(businessArchitecture.business_units);
+    const businessObjRows = normalizeList(businessArchitecture.object_rows);
+    const businessRuleRows = normalizeList(businessArchitecture.rule_rows);
+    const businessProcessRows = normalizeList(businessArchitecture.process_rows);
+    const approvalNodeRows = normalizeList(businessArchitecture.approval_nodes);
+    const businessUnitGroups = [
+      {
+        key: "object",
+        label: "业务对象数字化",
+        rows: businessObjRows.length ? businessObjRows : businessUnitRows.filter((row) => Number(row?.digitalType) === 0),
+      },
+      {
+        key: "rule",
+        label: "业务规则数字化",
+        rows: businessRuleRows.length ? businessRuleRows : businessUnitRows.filter((row) => Number(row?.digitalType) === 1),
+      },
+      {
+        key: "process",
+        label: "业务过程数字化",
+        rows: businessProcessRows.length ? businessProcessRows : businessUnitRows.filter((row) => Number(row?.digitalType) === 2),
+      },
+    ];
+    const approvalNodeGroups = [
+      {
+        key: "removed",
+        label: "审批节点消除情况",
+        rows: approvalNodeRows.filter((row) => {
+          const text = Object.values(row || {}).join(" ");
+          return !text.includes("自动") && !text.includes("智能");
+        }),
+      },
+      {
+        key: "auto",
+        label: "实现自动化/智能化审批节点情况",
+        rows: approvalNodeRows.filter((row) => {
+          const text = Object.values(row || {}).join(" ");
+          return text.includes("自动") || text.includes("智能");
+        }),
+      },
+    ];
+    const activeBusinessUnitRows = businessUnitGroups.find((item) => item.key === taskOrderBusinessUnitTab)?.rows || businessUnitRows;
+    const activeApprovalNodeRows = approvalNodeGroups.find((item) => item.key === taskOrderApprovalNodeTab)?.rows || approvalNodeRows;
     return (
       <div className="stack-md">
         <article className="card viewer-card-soft">
-          <h3>业务单元清单</h3>
-          <DataTable
-            rows={businessArchitecture.business_units}
-            preferredKeys={["business_object", "business_unit", "business_process"]}
-            emptyText="暂无业务单元清单"
-          />
-        </article>
-        <article className="card viewer-card-soft">
-          <h3>审批节点</h3>
-          <DataTable
-            rows={businessArchitecture.approval_nodes}
-            preferredKeys={["function_name", "removed_nodes", "description"]}
-            emptyText="暂无审批节点数据"
-          />
+          <div className="task-order-sub-tabs">
+            <button
+              className={`viewer-tab ${taskOrderBusinessTab === "business_units" ? "active" : ""}`}
+              type="button"
+              onClick={() => setTaskOrderBusinessTab("business_units")}
+            >
+              业务单元清单
+            </button>
+            <button
+              className={`viewer-tab ${taskOrderBusinessTab === "approval_nodes" ? "active" : ""}`}
+              type="button"
+              onClick={() => setTaskOrderBusinessTab("approval_nodes")}
+            >
+              审批节点
+            </button>
+          </div>
+
+          {taskOrderBusinessTab === "business_units" ? (
+            <div className="task-order-split-panel">
+              <aside className="task-order-side-tabs">
+                {businessUnitGroups.map((group) => (
+                  <button
+                    key={group.key}
+                    type="button"
+                    className={`task-order-side-tab ${taskOrderBusinessUnitTab === group.key ? "active" : ""}`}
+                    onClick={() => setTaskOrderBusinessUnitTab(group.key)}
+                  >
+                    <span>{group.label}</span>
+                    <small>{group.rows.length} 条</small>
+                  </button>
+                ))}
+              </aside>
+              <div className="task-order-side-content">
+                <DataTable
+                  rows={activeBusinessUnitRows}
+                  preferredKeys={["businessUnit", "businessFlow", "businessUnitCode", "roleName", "inputMaterial", "businessObject", "businessRuleDesc", "optimizeDesc"]}
+                  emptyText="暂无业务单元清单"
+                />
+              </div>
+            </div>
+          ) : (
+            <div className="task-order-split-panel">
+              <aside className="task-order-side-tabs">
+                {approvalNodeGroups.map((group) => (
+                  <button
+                    key={group.key}
+                    type="button"
+                    className={`task-order-side-tab ${taskOrderApprovalNodeTab === group.key ? "active" : ""}`}
+                    onClick={() => setTaskOrderApprovalNodeTab(group.key)}
+                  >
+                    <span>{group.label}</span>
+                    <small>{group.rows.length} 条</small>
+                  </button>
+                ))}
+              </aside>
+              <div className="task-order-side-content">
+                <DataTable
+                  rows={activeApprovalNodeRows}
+                  preferredKeys={["functionName", "function_name", "removeNodeNum", "removed_nodes", "description", "desc", "remark"]}
+                  emptyText="暂无审批节点数据"
+                />
+              </div>
+            </div>
+          )}
         </article>
       </div>
     );
@@ -766,22 +929,6 @@ export default function ProjectViewerPage() {
             rows={taskAssignment.process_rows}
             preferredKeys={["process_name", "process_code", "owner", "output"]}
             emptyText="暂无业务流程"
-          />
-        </article>
-        <article className="card viewer-card-soft">
-          <h3>任务列表</h3>
-          <DataTable
-            rows={taskAssignment.task_rows}
-            preferredKeys={["task_name", "task_owner", "deliverable", "complete_standard"]}
-            emptyText="暂无任务明细"
-          />
-        </article>
-        <article className="card viewer-card-soft">
-          <h3>指标列表</h3>
-          <DataTable
-            rows={taskAssignment.metric_rows}
-            preferredKeys={["metric_name", "metric_type", "target_value"]}
-            emptyText="暂无指标数据"
           />
         </article>
       </div>
@@ -803,10 +950,10 @@ export default function ProjectViewerPage() {
           />
         </article>
         <article className="card viewer-card-soft">
-          <h3>人员配置及费用</h3>
+          <h3>人员配置</h3>
           <DataTable
             rows={staffing.rows}
-            preferredKeys={["name", "post_name", "level_name", "expected_days", "unit_price", "estimated_cost", "department_name"]}
+            preferredKeys={["team_name", "post_name", "level_name", "sequence_role", "start_date", "end_date", "expected_days", "unit_price_tax", "unit_price", "estimated_cost_tax", "estimated_cost"]}
             emptyText="暂无人员配置"
           />
         </article>
@@ -816,32 +963,61 @@ export default function ProjectViewerPage() {
 
   function renderTaskOrderCostEstimation() {
     const costEstimation = taskOrderView?.cost_estimation || {};
+    const currentRows = normalizeList(costEstimation.current_rows);
+    const historyRows = normalizeList(costEstimation.history_rows);
+    const currentNoTax = currentRows.reduce((sum, item) => sum + Number(item?.estimated_cost || 0), 0);
+    const currentTax = currentRows.reduce(
+      (sum, item) => sum + Number(item?.estimated_cost_tax || item?.estimated_cost * 1.06 || 0),
+      0,
+    );
+    const historyNoTax = historyRows.reduce((sum, item) => sum + Number(item?.total_cost || 0), 0);
+    const historyTax = historyRows.reduce(
+      (sum, item) => sum + Number(item?.total_cost_tax || item?.total_cost * 1.06 || 0),
+      0,
+    );
     return (
       <div className="stack-md">
         <article className="card viewer-card-soft">
           <DefinitionGrid
             items={[
-              { label: "本次任务单费用", value: formatCurrency(costEstimation.total_cost) },
-              { label: "历史任务单费用", value: formatCurrency(costEstimation.history_total_cost) },
-              { label: "历史任务单数量", value: normalizeList(costEstimation.history_rows).length },
+              { label: "任务单数量", value: historyRows.length || 1 },
+              { label: "本次任务单下发金额(含税)", value: formatCurrency(currentTax || costEstimation.total_cost) },
+              { label: "本次任务单下发金额(不含税)", value: formatCurrency(currentNoTax || costEstimation.total_cost) },
+              { label: "历史任务单总金额(含税)", value: formatCurrency(historyTax || costEstimation.history_total_cost) },
+              { label: "历史任务单总金额(不含税)", value: formatCurrency(historyNoTax || costEstimation.history_total_cost) },
             ]}
           />
         </article>
         <article className="card viewer-card-soft">
-          <h3>本次任务单费用</h3>
-          <DataTable
-            rows={costEstimation.current_rows}
-            preferredKeys={["post_name", "level_name", "expected_days", "unit_price", "estimated_cost"]}
-            emptyText="暂无本次任务费用"
-          />
-        </article>
-        <article className="card viewer-card-soft">
-          <h3>历史任务单费用</h3>
-          <DataTable
-            rows={costEstimation.history_rows}
-            preferredKeys={["task_name", "task_code", "total_cost", "status"]}
-            emptyText="暂无历史任务费用"
-          />
+          <div className="task-order-sub-tabs">
+            <button
+              className={`viewer-tab ${taskOrderCostTab === "current" ? "active" : ""}`}
+              type="button"
+              onClick={() => setTaskOrderCostTab("current")}
+            >
+              本次任务单费用
+            </button>
+            <button
+              className={`viewer-tab ${taskOrderCostTab === "history" ? "active" : ""}`}
+              type="button"
+              onClick={() => setTaskOrderCostTab("history")}
+            >
+              历史任务单费用
+            </button>
+          </div>
+          {taskOrderCostTab === "current" ? (
+            <DataTable
+              rows={currentRows}
+              preferredKeys={["post_name", "level_name", "sequence_role", "start_date", "end_date", "expected_days", "unit_price_tax", "unit_price", "estimated_cost_tax", "estimated_cost"]}
+              emptyText="暂无本次任务费用"
+            />
+          ) : (
+            <DataTable
+              rows={historyRows}
+              preferredKeys={["task_code", "task_name", "supplier_name", "resource_pool", "start_date", "end_date", "first_warning_time", "task_description", "status", "total_cost"]}
+              emptyText="暂无历史任务费用"
+            />
+          )}
         </article>
       </div>
     );
@@ -867,10 +1043,9 @@ export default function ProjectViewerPage() {
       { label: "项目验收条件", value: technicalRequirements.acceptance_criteria },
     ];
     return (
-      <div className="task-order-requirement-grid">
+      <div className="stack-sm">
         {requirementItems.map((item) => (
-            <article key={item.label} className="card viewer-card-soft task-order-requirement-card">
-            <p className="panel-label">Requirement</p>
+            <article key={item.label} className="card viewer-card-soft task-order-tech-item">
             <h3>{item.label}</h3>
             <p>{item.value || "待补充"}</p>
           </article>
@@ -878,6 +1053,44 @@ export default function ProjectViewerPage() {
         {normalizeList(technicalRequirements.spec_rows).length ? (
           <article className="card viewer-card-soft task-order-requirement-card task-order-requirement-card-wide">
             <p className="panel-label">Source</p>
+            <h3>技术要求明细</h3>
+            <DataTable rows={technicalRequirements.spec_rows} emptyText="暂无技术要求明细" />
+          </article>
+        ) : null}
+      </div>
+    );
+  }
+
+  function renderTaskOrderTechnicalRequirementsV2() {
+    const technicalRequirements = taskOrderView?.technical_requirements || {};
+    const requirementItems = [
+      { label: "系统功能要求", value: technicalRequirements.system_function },
+      { label: "系统架构要求", value: technicalRequirements.system_architecture },
+      { label: "系统集成与接口要求", value: technicalRequirements.integration_requirements },
+      { label: "数据库要求", value: technicalRequirements.database_requirements },
+      { label: "性能要求", value: technicalRequirements.performance_requirements },
+      { label: "安全性要求", value: technicalRequirements.security_requirements },
+      { label: "扩展要求", value: technicalRequirements.scalability_requirements },
+      { label: "技术栈要求", value: technicalRequirements.tech_stack_requirements },
+      { label: "前端设计要求", value: technicalRequirements.frontend_requirements },
+      { label: "兼容性要求", value: technicalRequirements.compatibility_requirements },
+      { label: "质量要求", value: technicalRequirements.quality_requirements },
+      { label: "进度要求", value: technicalRequirements.schedule_requirements },
+      { label: "交接要求", value: technicalRequirements.handover_requirements },
+      { label: "交接物料", value: technicalRequirements.handover_items },
+      { label: "项目验收条件", value: technicalRequirements.acceptance_criteria },
+    ];
+    return (
+      <div className="stack-sm">
+        {requirementItems.map((item) => (
+          <article key={item.label} className="card viewer-card-soft task-order-tech-item">
+            <h3>{item.label}</h3>
+            <div className="task-order-tech-value">{item.value || "待补充"}</div>
+            <div className="task-order-tech-counter">{String(item.value || "").length} / 1000</div>
+          </article>
+        ))}
+        {normalizeList(technicalRequirements.spec_rows).length ? (
+          <article className="card viewer-card-soft">
             <h3>技术要求明细</h3>
             <DataTable rows={technicalRequirements.spec_rows} emptyText="暂无技术要求明细" />
           </article>
@@ -1127,7 +1340,7 @@ export default function ProjectViewerPage() {
       return renderTaskOrderCostEstimation();
     }
     if (activeSection === "technical_requirements") {
-      return renderTaskOrderTechnicalRequirements();
+      return renderTaskOrderTechnicalRequirementsV2();
     }
     if (activeSection === "acceptance_scope") {
       return renderAcceptanceScope();
@@ -1183,7 +1396,12 @@ export default function ProjectViewerPage() {
               <span className="viewer-pill">当前验收单: {selectedAcceptance?.acceptName || selectedAcceptId}</span>
             ) : null}
             {viewerPhase === TASK_ORDER_PHASE ? (
-              <span className="viewer-pill">任务单数量: {taskOrders.length}</span>
+              <>
+                <span className="viewer-pill">任务单数量: {taskOrders.length}</span>
+                <button className="primary-button" type="button" onClick={runApproval} disabled={approvalBusy}>
+                  {approvalBusy ? "审批执行中..." : "执行远程审批"}
+                </button>
+              </>
             ) : viewerPhase === "initiation" ? (
               <>
                 <select value={category} onChange={(event) => setCategory(event.target.value)}>
@@ -1214,7 +1432,7 @@ export default function ProjectViewerPage() {
           </div>
         </section>
 
-        {viewerPhase !== TASK_ORDER_PHASE && viewerPhase !== "initiation" && approvalMessage ? (
+        {viewerPhase !== "initiation" && approvalMessage ? (
           <section className="card viewer-card-soft">
             <p className="panel-label">Approval</p>
             <p>{approvalMessage}</p>
@@ -1232,7 +1450,7 @@ export default function ProjectViewerPage() {
           </section>
         ) : null}
 
-        {viewerPhase !== TASK_ORDER_PHASE && viewerPhase !== "initiation" && latestApproval ? (
+        {viewerPhase !== "initiation" && latestApproval ? (
           <section className="card viewer-card-soft">
             <p className="panel-label">Latest Approval</p>
             <DefinitionGrid

@@ -4,7 +4,6 @@ import { buildUiUrl, normalizeScene, projectDisplayValue, requestJson } from "..
 
 const EXCLUDED_STATUS = new Set(["待立项", "立项中"]);
 const STORAGE_KEY = "review-feedback-page-v3";
-const FETCH_PAGE_SIZE = 100;
 const PAGE_SIZE_OPTIONS = [10, 20, 50, 100];
 const initialTaskOrderFilters = {
   task_order_no: "",
@@ -98,13 +97,59 @@ function getReviewTimestamp(record) {
   return Number.isFinite(timestamp) ? timestamp : 0;
 }
 
+function getApprovalTimestamp(record) {
+  const value = record?.approvalGeneratedAt || record?.generatedAt || "";
+  const timestamp = value ? new Date(value).getTime() : 0;
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+function pickNewerReviewRecord(primary, fallback) {
+  if (!primary?.decision && !primary?.summary && !primary?.error) {
+    return fallback || {};
+  }
+  if (!fallback?.decision && !fallback?.summary && !fallback?.error) {
+    return primary || {};
+  }
+  return getApprovalTimestamp(primary) >= getApprovalTimestamp(fallback) ? primary : fallback;
+}
+
 function mergeReviewMaps(localMap, remoteMap) {
   const nextValue = { ...remoteMap };
+  const approvalFields = [
+    "decision",
+    "summary",
+    "risks",
+    "missingInformation",
+    "positiveEvidence",
+    "projectCommentary",
+    "baseline",
+    "segments",
+    "runDir",
+    "approvalGeneratedAt",
+  ];
   Object.entries(localMap || {}).forEach(([projectId, record]) => {
     const remoteRecord = nextValue[projectId];
-    if (!remoteRecord || getReviewTimestamp(record) >= getReviewTimestamp(remoteRecord)) {
+    if (!remoteRecord) {
       nextValue[projectId] = record;
+      return;
     }
+    const mergedRecord = { ...remoteRecord, ...record };
+    const keepLocalApproval = getApprovalTimestamp(record) >= getApprovalTimestamp(remoteRecord);
+    if (!keepLocalApproval) {
+      approvalFields.forEach((field) => {
+        mergedRecord[field] = remoteRecord[field];
+      });
+    }
+    if (!record?.reviewOk) {
+      mergedRecord.reviewOk = remoteRecord.reviewOk || mergedRecord.reviewOk;
+    }
+    if (!record?.reviewReason) {
+      mergedRecord.reviewReason = remoteRecord.reviewReason || mergedRecord.reviewReason;
+    }
+    if (getReviewTimestamp(record) < getReviewTimestamp(remoteRecord)) {
+      mergedRecord.persistError = remoteRecord.persistError || "";
+    }
+    nextValue[projectId] = mergedRecord;
   });
   return nextValue;
 }
@@ -225,74 +270,41 @@ function buildFlowStatus(project) {
   return projectDisplayValue(project, "flowStatusDisplay", "flowStatusName", "flowStatus") || "-";
 }
 
-function matchText(candidate, expected) {
-  if (!expected) {
-    return true;
-  }
-  return String(candidate || "").trim().toLowerCase().includes(String(expected || "").trim().toLowerCase());
-}
-
 function shouldKeepProject(project) {
   return !EXCLUDED_STATUS.has(buildProjectStatus(project)) && !EXCLUDED_STATUS.has(buildFlowStatus(project));
 }
 
-function matchesTaskOrderFilters(taskOrder, filters) {
-  if (!filters) {
-    return true;
-  }
-  const textFilters = {
-    task_order_no: [taskOrder?.taskOrderNo, taskOrder?.taskSerialCode, taskOrder?.taskNo, taskOrder?.taskCode],
-    task_order_name: [taskOrder?.taskOrderName, taskOrder?.taskName, taskOrder?.name],
-    supplier: [taskOrder?.supplierName, taskOrder?.supplier, taskOrder?.vendorName],
-    project_name: [taskOrder?.projectName, taskOrder?.projectInfoName],
-    domain: [taskOrder?.domainName, taskOrder?.belongTeamName, taskOrder?.belongDomainName, taskOrder?.domain],
-    task_order_status: [
-      taskOrder?.taskOrderStatus,
-      taskOrder?.taskOrderStatusName,
-      taskOrder?.statusName,
-      taskOrder?.taskStatus,
-      taskOrder?.taskStatusName,
-    ],
-  };
-  return Object.entries(textFilters).every(([key, values]) => {
-    const expected = String(filters[key] || "").trim();
-    if (!expected) {
-      return true;
-    }
-    return values.some((candidate) => matchText(candidate, expected));
+function buildProjectsQuery(scene, pageNum, pageSize, filters = {}) {
+  const params = new URLSearchParams({
+    page_num: String(pageNum),
+    page_size: String(pageSize),
+    scene,
   });
-}
-
-async function fetchAllProjects(scene) {
-  const allProjects = [];
-  let pageNum = 1;
-  let total = 0;
-  let source = "remote";
-  let warning = "";
-
-  while (true) {
-    const result = await requestJson(
-      `/api/projects?page_num=${pageNum}&page_size=${FETCH_PAGE_SIZE}&scene=${encodeURIComponent(scene)}`,
-    );
-    const pageProjects = result.projects || [];
-    allProjects.push(...pageProjects);
-    total = Number(result.total || allProjects.length);
-    source = result.source || source;
-    warning = result.warning || warning;
-    if (!pageProjects.length || allProjects.length >= total) {
-      break;
+  Object.entries(filters).forEach(([key, value]) => {
+    const text = String(value ?? "").trim();
+    if (text) {
+      params.set(key, text);
     }
-    pageNum += 1;
-  }
-
-  return { allProjects, total, source, warning };
+  });
+  return params.toString();
 }
 
-function buildStatusText(payload, filteredCount, pageNum, pageSize, pageCount, scene = "initiation") {
-  const sourceLabel = payload.source === "cache" ? "缓存" : "远程";
-  const warningText = payload.warning ? `，${payload.warning}` : "";
+async function fetchProjectPage(scene, pageNum, pageSize, filters = {}) {
+  const query = buildProjectsQuery(scene, pageNum, pageSize, filters);
+  return requestJson(`/api/projects?${query}`);
+}
+
+function buildStatusText(payload, scene = "initiation") {
+  const currentCount = (payload.projects || []).length;
+  const filteredCount = Number(payload.filtered_total ?? currentCount);
+  const totalCount = Number(payload.total || 0);
+  const sourceLabel = payload.source === "cache" ? "本地缓存" : "远程接口";
+  const warningText = payload.warning ? ` ${payload.warning}` : "";
+  const extra = payload.page_source || payload.total_source
+    ? ` 当前页来源: ${payload.page_source || sourceLabel}，总数来源: ${payload.total_source || sourceLabel}。`
+    : "";
   const itemLabel = normalizeScene(scene) === "task_order" ? "任务单" : "项目";
-  return `已加载 ${payload.allProjects.length} 个${itemLabel}，过滤后 ${filteredCount} 个，当前第 ${pageNum} / ${pageCount} 页，每页 ${pageSize} 条，数据来源 ${sourceLabel}${warningText}`;
+  return `数据来源: ${sourceLabel}。总数 ${totalCount}，当前页 ${currentCount} 个${itemLabel}，筛选后 ${filteredCount}。${extra}${warningText}`;
 }
 
 function buildTaskOrderStatus(taskOrder) {
@@ -312,8 +324,7 @@ export default function TaskOrderReviewFeedbackPage() {
   const [batchBusy, setBatchBusy] = useState(false);
   const [pageNum, setPageNum] = useState(1);
   const [pageSize, setPageSize] = useState(20);
-  const [projectSource, setProjectSource] = useState("remote");
-  const [projectWarning, setProjectWarning] = useState("");
+  const [total, setTotal] = useState(0);
   const [filterOptions, setFilterOptions] = useState({
     domain: [],
     task_order_status: [],
@@ -323,17 +334,18 @@ export default function TaskOrderReviewFeedbackPage() {
   const [appliedTaskOrderFilters, setAppliedTaskOrderFilters] = useState(initialTaskOrderFilters);
   const saveTimersRef = useRef({});
 
-  const visibleProjects = useMemo(() => {
-    if (isTaskOrderScene) {
-      return projects.filter((item) => matchesTaskOrderFilters(item, appliedTaskOrderFilters));
-    }
-    return projects.filter(shouldKeepProject);
-  }, [appliedTaskOrderFilters, isTaskOrderScene, projects]);
-  const totalPages = Math.max(1, Math.ceil(visibleProjects.length / Math.max(pageSize, 1)));
+  const visibleProjects = useMemo(() => (isTaskOrderScene ? projects : projects.filter(shouldKeepProject)), [isTaskOrderScene, projects]);
+  const totalPages = Math.max(
+    1,
+    Math.ceil((isTaskOrderScene ? total : visibleProjects.length) / Math.max(pageSize, 1)),
+  );
   const currentPageProjects = useMemo(() => {
+    if (isTaskOrderScene) {
+      return visibleProjects;
+    }
     const start = (pageNum - 1) * pageSize;
     return visibleProjects.slice(start, start + pageSize);
-  }, [pageNum, pageSize, visibleProjects]);
+  }, [isTaskOrderScene, pageNum, pageSize, visibleProjects]);
 
   useEffect(() => {
     if (pageNum > totalPages) {
@@ -345,25 +357,19 @@ export default function TaskOrderReviewFeedbackPage() {
     let alive = true;
     Promise.all([
       requestJson(`/api/rules?scene=${encodeURIComponent(activeScene)}`),
-      fetchAllProjects(activeScene),
       requestJson(`/api/project-filter-options?scene=${encodeURIComponent(activeScene)}`),
     ])
-      .then(([rulesPayload, projectsPayload, optionsPayload]) => {
+      .then(([rulesPayload, optionsPayload]) => {
         if (!alive) {
           return;
         }
-        const filteredCount = projectsPayload.allProjects.filter((item) => matchesTaskOrderFilters(item, appliedTaskOrderFilters)).length;
         setRules(rulesPayload);
         setCategory(rulesPayload.categories?.[0]?.name || "");
-        setProjects(projectsPayload.allProjects);
-        setProjectSource(projectsPayload.source || "remote");
-        setProjectWarning(projectsPayload.warning || "");
         setFilterOptions({
           domain: optionsPayload?.items?.domain || [],
           task_order_status: optionsPayload?.items?.task_order_status || [],
           supplier: optionsPayload?.items?.supplier || [],
         });
-        setStatusText(buildStatusText(projectsPayload, filteredCount, 1, pageSize, Math.max(1, Math.ceil(filteredCount / pageSize)), activeScene));
       })
       .catch((error) => {
         if (alive) {
@@ -373,20 +379,29 @@ export default function TaskOrderReviewFeedbackPage() {
     return () => {
       alive = false;
     };
-  }, [activeScene, appliedTaskOrderFilters, pageSize]);
+  }, [activeScene]);
 
   useEffect(() => {
-    setStatusText(
-      buildStatusText(
-        { allProjects: projects, source: projectSource, warning: projectWarning },
-        visibleProjects.length,
-        pageNum,
-        pageSize,
-        totalPages,
-        activeScene,
-      ),
-    );
-  }, [activeScene, pageNum, pageSize, projectSource, projectWarning, projects, totalPages, visibleProjects.length]);
+    let alive = true;
+    const filters = isTaskOrderScene ? appliedTaskOrderFilters : {};
+    fetchProjectPage(activeScene, pageNum, pageSize, filters)
+      .then((payload) => {
+        if (!alive) {
+          return;
+        }
+        setProjects(payload.projects || []);
+        setTotal(Number(payload.total || 0));
+        setStatusText(buildStatusText(payload, activeScene));
+      })
+      .catch((error) => {
+        if (alive) {
+          setStatusText(error.message || "加载列表失败");
+        }
+      });
+    return () => {
+      alive = false;
+    };
+  }, [activeScene, appliedTaskOrderFilters, isTaskOrderScene, pageNum, pageSize]);
 
   useEffect(() => {
     if (!category) {
@@ -506,13 +521,11 @@ export default function TaskOrderReviewFeedbackPage() {
   async function refreshProjects() {
     try {
       setRefreshing(true);
-      const payload = await fetchAllProjects(activeScene);
-      const filteredCount = payload.allProjects.filter((item) => matchesTaskOrderFilters(item, appliedTaskOrderFilters)).length;
-      setProjects(payload.allProjects);
-      setProjectSource(payload.source || "remote");
-      setProjectWarning(payload.warning || "");
-      setPageNum(1);
-      setStatusText(buildStatusText(payload, filteredCount, 1, pageSize, Math.max(1, Math.ceil(filteredCount / pageSize)), activeScene));
+      const filters = isTaskOrderScene ? appliedTaskOrderFilters : {};
+      const payload = await fetchProjectPage(activeScene, pageNum, pageSize, filters);
+      setProjects(payload.projects || []);
+      setTotal(Number(payload.total || 0));
+      setStatusText(buildStatusText(payload, activeScene));
     } catch (error) {
       setStatusText(error.message);
     } finally {
@@ -522,12 +535,25 @@ export default function TaskOrderReviewFeedbackPage() {
 
   async function generateAdvice(project) {
     const projectId = project.id;
+    const resolvedProjectId = projectDisplayValue(
+      project,
+      "projectId",
+      "projectBudgetId",
+      "projectEstablishmentId",
+      "projectInfoId",
+    );
+    const taskOrderId = projectDisplayValue(project, "id", "taskId", "taskOrderId");
     try {
       setLoadingMap((current) => ({ ...current, [projectId]: true }));
         const result = await requestJson("/api/approve/remote-project", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ projectId, category, scene: activeScene }),
+          body: JSON.stringify({
+            projectId: resolvedProjectId || projectId,
+            taskOrderId: taskOrderId || projectId,
+            category,
+            scene: activeScene,
+          }),
         });
       updateReview(project, {
         decision: result.decision || "",
@@ -782,7 +808,7 @@ export default function TaskOrderReviewFeedbackPage() {
                     "projectInfoId",
                   );
                   const taskOrderId = projectDisplayValue(project, "id", "taskId", "taskOrderId");
-                  const review = reviewMap[reviewKey] || {};
+                  const review = pickNewerReviewRecord(reviewMap[reviewKey] || {}, reviewMap[resolvedProjectId] || {});
                   const loading = Boolean(loadingMap[reviewKey]);
                   return (
                     <tr key={reviewKey}>

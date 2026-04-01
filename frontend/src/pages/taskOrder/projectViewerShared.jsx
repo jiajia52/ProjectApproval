@@ -116,6 +116,60 @@ const ACCEPTANCE_ORDER_SECTIONS = new Set([
   "acceptance_deliverables",
 ]);
 
+const COLUMN_LABEL_ALIASES = {
+  id: "序号",
+  index: "序号",
+  no: "序号",
+  task_no: "任务单编号",
+  task_code: "任务单编号",
+  task_name: "任务单名称",
+  process_name: "流程名称",
+  process_code: "流程架构编码",
+  process_level: "流程级别",
+  processVersion: "当前版本号",
+  owner: "业务角色",
+  output: "交付物类型",
+  business_object: "业务对象",
+  business_unit: "业务单元",
+  business_process: "业务流程",
+  business_unit_code: "业务单元编码",
+  role: "角色",
+  input: "输入物",
+  description: "优化说明",
+  rule_description: "业务规则/模型描述",
+  businessFlow: "业务流程",
+  businessUnit: "业务单元",
+  businessUnitCode: "业务单元编码",
+  roleName: "角色",
+  inputMaterial: "输入物",
+  businessObject: "业务对象",
+  optimizeDesc: "优化说明",
+  businessRuleDesc: "业务规则/模型描述",
+  function_name: "功能描述",
+  functionName: "功能描述",
+  removed_nodes: "消除审批节点数量（个）",
+  removeNodeNum: "消除审批节点数量（个）",
+  supplier_name: "供应商",
+  supplier: "供应商",
+  resource_pool: "资源归属",
+  start_date: "预计开始时间",
+  end_date: "预计结束时间",
+  first_warning_time: "金额首次预警时间",
+  task_description: "任务描述",
+  status: "状态",
+  name: "姓名",
+  team_name: "敏捷小队",
+  post_name: "岗位",
+  level_name: "职级",
+  sequence_role: "T序列角色",
+  expected_days: "预计人天",
+  unit_price_tax: "人员单价(含税)",
+  unit_price: "人员单价(不含税)",
+  estimated_cost_tax: "预计费用(含税)",
+  estimated_cost: "预计费用(不含税)",
+  department_name: "部门",
+};
+
 function normalizeList(value) {
   if (Array.isArray(value)) {
     return value;
@@ -577,13 +631,29 @@ function buildTaskOrderViewModel(taskOrderSummary, taskOrderDetail, documentPayl
     return null;
   }
   if (!taskOrderSummary) {
-    return fallback;
+    return null;
   }
 
   const summary = taskOrderSummary || {};
   const baseRows = flattenTaskDetailObjects(taskOrderDetail?.base_detail);
   const baseInfo = baseRows[0] || {};
-  const businessUnits = flattenTaskDetailObjects(taskOrderDetail?.business_units);
+  const businessUnitsPayload = taskOrderDetail?.business_units;
+  const businessUnitsFlatRows = flattenTaskDetailObjects(businessUnitsPayload);
+  const businessObjRows = flattenTaskDetailObjects(businessUnitsPayload?.objList);
+  const businessRuleRows = flattenTaskDetailObjects(businessUnitsPayload?.ruleList);
+  const businessProcessRows = flattenTaskDetailObjects(businessUnitsPayload?.processList);
+  const explicitBusinessObjRows = businessObjRows.length
+    ? businessObjRows
+    : businessUnitsFlatRows.filter((row) => Number(row?.digitalType) === 0);
+  const explicitBusinessRuleRows = businessRuleRows.length
+    ? businessRuleRows
+    : businessUnitsFlatRows.filter((row) => Number(row?.digitalType) === 1);
+  const explicitBusinessProcessRows = businessProcessRows.length
+    ? businessProcessRows
+    : businessUnitsFlatRows.filter((row) => Number(row?.digitalType) === 2);
+  const businessUnits = businessUnitsFlatRows.length
+    ? businessUnitsFlatRows
+    : [...explicitBusinessObjRows, ...explicitBusinessRuleRows, ...explicitBusinessProcessRows];
   const approvalNodes = flattenTaskDetailObjects(taskOrderDetail?.approval_nodes);
   const processRows = flattenTaskDetailObjects(taskOrderDetail?.process_rows);
   const matrixRows = flattenTaskDetailObjects(taskOrderDetail?.matrix_rows);
@@ -610,12 +680,18 @@ function buildTaskOrderViewModel(taskOrderSummary, taskOrderDetail, documentPayl
         ...item,
         id: item.id || item.userId || item.employeeId || `matrix-${index + 1}`,
         name: firstMeaningful(item.name, item.userName, item.employeeName, item.memberName),
+        team_name: firstMeaningful(item.teamName, item.agileTeamName, item.team, item.groupName, item.departmentName),
         post_name: firstMeaningful(item.post_name, item.postName, item.roleName, item.jobName, item.positionName),
         level_name: firstMeaningful(item.level_name, item.levelName, item.gradeName),
+        sequence_role: firstMeaningful(item.sequenceRole, item.tRoleName, item.roleName),
         expected_days: firstMeaningful(item.expected_days, item.expectedDays, item.planDays, item.taskCostDay, item.workDays, item.days),
         unit_price: firstMeaningful(item.unit_price, item.unitPrice, item.price, item.dayPrice, item.personDayPrice),
+        unit_price_tax: firstMeaningful(item.unit_price_tax, item.unitPriceTax, item.dayPriceTax),
         estimated_cost: firstMeaningful(item.estimated_cost, item.estimatedCost, item.totalCost, item.cost, item.amount),
+        estimated_cost_tax: firstMeaningful(item.estimated_cost_tax, item.estimatedCostTax, item.totalCostTax),
         department_name: firstMeaningful(item.department_name, item.departmentName, item.deptName),
+        start_date: firstMeaningful(item.start_date, item.startTime, item.planStartTime),
+        end_date: firstMeaningful(item.end_date, item.endTime, item.planEndTime),
       }))
     : normalizeList(fallbackStaffing.rows);
 
@@ -625,6 +701,12 @@ function buildTaskOrderViewModel(taskOrderSummary, taskOrderDetail, documentPayl
         id: item.id || item.taskId || item.projectId || `history-${index + 1}`,
         task_name: firstMeaningful(item.task_name, item.taskName, item.projectName, item.name, `历史任务单${index + 1}`),
         task_code: firstMeaningful(item.task_code, item.taskCode, item.taskNo, item.projectCode, item.code),
+        supplier_name: firstMeaningful(item.supplier_name, item.supplierName, item.supplier),
+        resource_pool: firstMeaningful(item.resource_pool, item.resourcePool, item.resourceBelongName, item.domainName),
+        start_date: firstMeaningful(item.start_date, item.startTime, item.planStartTime, item.expectStartDate),
+        end_date: firstMeaningful(item.end_date, item.endTime, item.planEndTime, item.expectEndDate),
+        first_warning_time: firstMeaningful(item.first_warning_time, item.amountWarningTime, item.warningTime),
+        task_description: firstMeaningful(item.task_description, item.taskDesc, item.description, item.remark),
         total_cost: firstMeaningful(item.total_cost, item.totalCost, item.amount, item.cost),
         status: firstMeaningful(item.status, item.statusName, item.taskStatusName, item.projectStatusName),
       }))
@@ -653,8 +735,22 @@ function buildTaskOrderViewModel(taskOrderSummary, taskOrderDetail, documentPayl
     domain_name: firstMeaningful(summary.domainName, summary.belongTeamName, fallback?.domain_name),
     request_budget: firstMeaningful(summary.applyTotalBudget, summary.applyBudgetTotal, fallback?.request_budget),
     annual_budget: firstMeaningful(summary.applyYearBudget, summary.applyBudgetYear, fallback?.annual_budget),
-    start_date: firstMeaningful(summary.startTime, summary.planStartTime, fallback?.start_date),
-    end_date: firstMeaningful(summary.endTime, summary.planEndTime, fallback?.end_date),
+    start_date: firstMeaningful(
+      summary.startTime,
+      summary.planStartTime,
+      summary.taskStartTime,
+      summary.startDate,
+      summary.beginTime,
+      fallback?.start_date,
+    ),
+    end_date: firstMeaningful(
+      summary.endTime,
+      summary.planEndTime,
+      summary.taskEndTime,
+      summary.endDate,
+      summary.finishTime,
+      fallback?.end_date,
+    ),
     approved_at: firstMeaningful(summary.approvalPassTime, summary.taskAduitTime, fallback?.approved_at),
     project_ownership: {
       ...(fallback?.project_ownership || {}),
@@ -672,8 +768,26 @@ function buildTaskOrderViewModel(taskOrderSummary, taskOrderDetail, documentPayl
       ...fallbackInfo,
       task_name: firstMeaningful(summary.taskOrderName, summary.taskName, baseInfo.taskName, baseInfo.name, fallbackInfo.task_name),
       task_no: firstMeaningful(summary.taskOrderNo, summary.taskSerialCode, baseInfo.taskNo, baseInfo.taskCode, fallbackInfo.task_no),
-      start_date: firstMeaningful(summary.startTime, summary.planStartTime, baseInfo.startTime, baseInfo.planStartTime, fallbackInfo.start_date),
-      end_date: firstMeaningful(summary.endTime, summary.planEndTime, baseInfo.endTime, baseInfo.planEndTime, fallbackInfo.end_date),
+      start_date: firstMeaningful(
+        summary.startTime,
+        summary.planStartTime,
+        summary.taskStartTime,
+        baseInfo.startTime,
+        baseInfo.planStartTime,
+        baseInfo.taskStartTime,
+        baseInfo.startDate,
+        fallbackInfo.start_date,
+      ),
+      end_date: firstMeaningful(
+        summary.endTime,
+        summary.planEndTime,
+        summary.taskEndTime,
+        baseInfo.endTime,
+        baseInfo.planEndTime,
+        baseInfo.taskEndTime,
+        baseInfo.endDate,
+        fallbackInfo.end_date,
+      ),
       supplier_name: firstMeaningful(summary.supplierName, baseInfo.supplierName, fallbackInfo.supplier_name),
       contract_name: firstMeaningful(baseInfo.contractName, baseInfo.contractTitle, fallbackInfo.contract_name),
       contract_no: firstMeaningful(baseInfo.contractCode, baseInfo.contractNo, fallbackInfo.contract_no),
@@ -684,6 +798,9 @@ function buildTaskOrderViewModel(taskOrderSummary, taskOrderDetail, documentPayl
     },
     business_architecture: {
       business_units: businessUnits.length ? businessUnits : normalizeList(fallback?.business_architecture?.business_units),
+      object_rows: explicitBusinessObjRows.length ? explicitBusinessObjRows : normalizeList(fallback?.business_architecture?.object_rows),
+      rule_rows: explicitBusinessRuleRows.length ? explicitBusinessRuleRows : normalizeList(fallback?.business_architecture?.rule_rows),
+      process_rows: explicitBusinessProcessRows.length ? explicitBusinessProcessRows : normalizeList(fallback?.business_architecture?.process_rows),
       approval_nodes: approvalNodes.length ? approvalNodes : normalizeList(fallback?.business_architecture?.approval_nodes),
     },
     task_assignment: {
@@ -758,11 +875,9 @@ function taskOrderSectionStatus(order, sectionKey) {
       filled: countFilled([normalizeList(businessArchitecture.business_units), normalizeList(businessArchitecture.approval_nodes)]),
     },
     task_assignment: {
-      total: 3,
+      total: 1,
       filled: countFilled([
         normalizeList(taskAssignment.process_rows),
-        normalizeList(taskAssignment.task_rows),
-        normalizeList(taskAssignment.metric_rows),
       ]),
     },
     staffing: {
@@ -770,10 +885,9 @@ function taskOrderSectionStatus(order, sectionKey) {
       filled: countFilled([normalizeList(staffing.rows), staffing.total_days, staffing.total_cost]),
     },
     cost_estimation: {
-      total: 3,
+      total: 2,
       filled: countFilled([
         normalizeList(costEstimation.current_rows),
-        costEstimation.total_cost,
         normalizeList(costEstimation.history_rows),
       ]),
     },
@@ -799,7 +913,11 @@ function pickColumns(rows, preferredKeys = []) {
       Object.keys(row).forEach((key) => allKeys.add(key));
     }
   });
-  return Array.from(allKeys).filter(Boolean).slice(0, 8);
+  return Array.from(allKeys).filter(Boolean).slice(0, 12);
+}
+
+function displayColumnLabel(column) {
+  return COLUMN_LABEL_ALIASES[column] || column;
 }
 
 function DefinitionGrid({ items }) {
@@ -827,7 +945,7 @@ function DataTable({ rows, preferredKeys = [], emptyText = "暂无数据" }) {
         <thead>
           <tr>
             {columns.map((column) => (
-              <th key={column}>{column}</th>
+              <th key={column}>{displayColumnLabel(column)}</th>
             ))}
           </tr>
         </thead>

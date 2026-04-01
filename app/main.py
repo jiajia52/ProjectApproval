@@ -47,7 +47,9 @@ from app.approvals.project_document_store import load_project_document, persist_
 from app.approvals.review_feedback_store import load_latest_review_feedback_map, persist_review_feedback
 from app.approvals.remote_project_mapper import map_snapshot_to_document
 from app.approvals.category_aliases import CATEGORY_NAME_ALIASES, canonical_category_name
+from app.core.llm_client import LLMConfigError, chat_json, load_llm_settings
 from app.core.startup_checks import run_startup_checks
+from app.core.scenes import normalize_scene
 from app.core.paths import (
     ACCEPTANCE_RULES_BUNDLE_PATH,
     ACCEPTANCE_SKILL_MANIFEST_PATH,
@@ -110,13 +112,6 @@ def log_api_timing(api_name: str, started_at: float, **fields: Any) -> None:
     elapsed_ms = round((time.perf_counter() - started_at) * 1000, 1)
     extras = " ".join(f"{key}={value}" for key, value in fields.items() if value not in (None, ""))
     LOGGER.info("timing api=%s elapsed_ms=%s %s", api_name, elapsed_ms, extras.strip())
-
-
-def normalize_scene(scene: str | None) -> str:
-    normalized = str(scene or "").strip().lower()
-    if normalized in {SCENE_TASK_ORDER, "task-order", "taskorder"}:
-        return SCENE_TASK_ORDER
-    return SCENE_ACCEPTANCE if normalized == SCENE_ACCEPTANCE else SCENE_INITIATION
 
 
 def normalize_list_scene(scene: str | None) -> str:
@@ -837,23 +832,38 @@ def merge_review_feedback_with_approvals(
     approval_items: dict[str, dict[str, Any]],
 ) -> dict[str, dict[str, Any]]:
     merged = {**review_items}
+    approval_fields = [
+        "decision",
+        "summary",
+        "risks",
+        "missingInformation",
+        "positiveEvidence",
+        "projectCommentary",
+        "baseline",
+        "segments",
+        "runDir",
+        "approvalGeneratedAt",
+    ]
+
+    def _parse_feedback_approval_time(record: dict[str, Any]) -> float:
+        value = record.get("approvalGeneratedAt") or record.get("generatedAt")
+        parsed = parse_iso_datetime(value)
+        return parsed.timestamp() if parsed else float("-inf")
+
     for project_id, approval_payload in approval_items.items():
         approval_record = approval_result_to_review_record(approval_payload)
         existing = dict(merged.get(project_id) or {})
-        merged[project_id] = {
-            **approval_record,
-            **existing,
-            "decision": existing.get("decision") or approval_record["decision"],
-            "summary": existing.get("summary") or approval_record["summary"],
-            "risks": existing.get("risks") or approval_record["risks"],
-            "missingInformation": existing.get("missingInformation") or approval_record["missingInformation"],
-            "positiveEvidence": existing.get("positiveEvidence") or approval_record["positiveEvidence"],
-            "projectCommentary": existing.get("projectCommentary") or approval_record["projectCommentary"],
-            "baseline": existing.get("baseline") or approval_record["baseline"],
-            "segments": existing.get("segments") or approval_record["segments"],
-            "runDir": existing.get("runDir") or approval_record["runDir"],
-            "approvalGeneratedAt": existing.get("approvalGeneratedAt") or approval_record["approvalGeneratedAt"],
-        }
+        existing_approval_ts = _parse_feedback_approval_time(existing)
+        incoming_approval_ts = _parse_feedback_approval_time(approval_record)
+        keep_existing_approval = existing_approval_ts >= incoming_approval_ts
+
+        merged_item = {**existing}
+        for field in approval_fields:
+            if keep_existing_approval:
+                merged_item[field] = existing.get(field) if field in existing else approval_record.get(field)
+            else:
+                merged_item[field] = approval_record.get(field)
+        merged[project_id] = merged_item
     return merged
 
 
@@ -1404,17 +1414,6 @@ def _is_information_architecture_item(item: dict[str, Any]) -> bool:
     return "信息架构" in haystack or "概念模型" in haystack or "业务对象" in haystack
 
 
-def _is_information_architecture_item(item: dict[str, Any]) -> bool:
-    haystack = " ".join(
-        [
-            str(item.get("dimension") or ""),
-            str(item.get("checkpoint") or ""),
-            str(item.get("value_model") or ""),
-        ]
-    )
-    return "信息架构" in haystack or "概念模型" in haystack or "业务对象" in haystack
-
-
 def _fetch_data_review(client: IworkProjectClient, project_id: str) -> dict[str, Any]:
     result = client.request_json(
         "GET",
@@ -1434,48 +1433,6 @@ def _fetch_data_review(client: IworkProjectClient, project_id: str) -> dict[str,
         "summary": {
             "flow_dimension_count": len({item.get("dimension") for item in items if item.get("dimension")}),
             "check_point_count": len(items),
-        },
-        "items": items,
-    }
-
-
-def _fetch_technology_review_fallback(client: IworkProjectClient, project_id: str) -> dict[str, Any]:
-    result = client.request_json(
-        "POST",
-        "/projectMicosInfo/getList",
-        payload={"projectId": project_id, "dataType": 1},
-        strict=False,
-        api_name="architecture_review_technology_fallback",
-        project_id=project_id,
-    )
-    items: list[dict[str, Any]] = []
-    for index, row in enumerate(normalize_list(result.get("data")), start=1):
-        if not isinstance(row, dict):
-            continue
-        items.append(
-            {
-                "id": str(row.get("id") or f"tech-fallback-{index}"),
-                "index": index,
-                "dimension": "技术架构",
-                "checkpoint": _pick_text(row, "subName", "systemName", "name"),
-                "value_model": f"系统编码: {_pick_text(row, 'systemCode', 'subCode')}；负责人: {_pick_text(row, 'subLeader', 'owner', 'leader')}",
-                "reviewer": "",
-                "conclusion": "通过",
-                "description": _pick_text(row, "subLevelStandard", "subType", "systemName"),
-            }
-        )
-    return {
-        "key": "technology",
-        "title": "技术架构评审状态",
-        "link_label": "前往云原生查看",
-        "ok": result.get("code") == 0 and len(items) > 0,
-        "message": "技术架构评审接口未返回明细，已回退使用系统范围(dataType=1)内容作为技术架构材料。"
-        if items
-        else str(result.get("message") or ""),
-        "summary": {
-            "app_count": 0,
-            "service_count": len(items),
-            "type": "fallback",
         },
         "items": items,
     }
@@ -2015,41 +1972,6 @@ def collect_architecture_review_groups(
 
     return groups
 
-    try:
-        data_group = _fetch_data_review(client, project_id)
-        merged_items = info_architecture_items + list(data_group.get("items") or [])
-        data_group["items"] = merged_items
-        data_group["ok"] = bool(data_group.get("ok") or merged_items)
-        data_group["summary"] = {
-            "flow_dimension_count": len({item.get("dimension") for item in merged_items if item.get("dimension")}),
-            "check_point_count": len(merged_items),
-        }
-        if info_architecture_items:
-            base_message = str(data_group.get("message") or "").strip()
-            data_group["message"] = f"{base_message} 已合并业务架构中的信息架构内容。".strip()
-        groups.append(data_group)
-    except Exception as exc:
-        data_group = _build_review_error_group("data", "数据架构评审状态", "前往信息架构中心查看", str(exc))
-        data_group["items"] = info_architecture_items
-        data_group["ok"] = len(info_architecture_items) > 0
-        data_group["summary"] = {
-            "flow_dimension_count": len({item.get("dimension") for item in info_architecture_items if item.get("dimension")}),
-            "check_point_count": len(info_architecture_items),
-        }
-        groups.append(data_group)
-
-    try:
-        groups.append(_fetch_technology_review(client, project_id))
-    except Exception as exc:
-        groups.append(_build_review_error_group("technology", "技术架构评审状态", "前往云原生查看", str(exc)))
-
-    try:
-        groups.append(_fetch_security_review(client, project_id, snapshot))
-    except Exception as exc:
-        groups.append(_build_review_error_group("security", "安全架构评审状态", "前往应用开发安全平台查看", str(exc)))
-
-    return groups
-
 
 def review_groups_to_document_fields(groups: list[dict[str, Any]]) -> dict[str, Any]:
     field_map = {"business": "business", "data": "data", "technology": "technology", "security": "security"}
@@ -2502,23 +2424,6 @@ def api_project_acceptance_tabs(
             "tam_tabs": normalized["tam_tabs"],
             "raw_items": raw_items,
         }
-        if resolved_param_code:
-            raw_items = client.list_acceptance_ui_tabs(resolved_param_code)
-        else:
-            ok = False
-            message = "未找到 projectBaseInfo/info 返回的 paramCode，无法加载动态界面标签。"
-        normalized = normalize_acceptance_tab_config(raw_items)
-        return {
-            "project_id": project_id,
-            "base_project_id": resolved_base_project_id,
-            "param_code": resolved_param_code,
-            "ok": ok,
-            "message": message,
-            "sections": normalized["sections"],
-            "project_review_tabs": normalized["project_review_tabs"],
-            "tam_tabs": normalized["tam_tabs"],
-            "raw_items": raw_items,
-        }
     except Exception as exc:
         return {
             "project_id": project_id,
@@ -2591,6 +2496,41 @@ def api_refresh_integration_token(request: Request) -> dict[str, Any]:
     except Exception as exc:
         raise to_http_error(exc) from exc
     return {"token": token, "config": load_integration_config()}
+
+
+@app.post("/api/integration/check-llm")
+def api_check_llm(request: Request) -> dict[str, Any]:
+    started_at = time.time()
+    try:
+        settings = load_llm_settings()
+        result = chat_json(
+            [
+                {"role": "system", "content": "You are a health-check assistant. Return JSON only."},
+                {"role": "user", "content": 'Return {"status":"ok","service":"llm"} as JSON.'},
+            ],
+            temperature=0,
+        )
+        payload = result.get("json")
+        if not isinstance(payload, dict):
+            raise ValueError("LLM response is not a JSON object.")
+        status = str(payload.get("status") or "").strip().lower()
+        ok = status == "ok"
+        latency_ms = int((time.time() - started_at) * 1000)
+        return {
+            "ok": ok,
+            "message": "LLM is available." if ok else "LLM returned unexpected status.",
+            "model": settings.get("model"),
+            "base_url": settings.get("base_url"),
+            "latency_ms": latency_ms,
+            "used_response_format": bool(result.get("used_response_format")),
+            "response": payload,
+        }
+    except LLMConfigError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except Exception as exc:
+        if is_llm_unavailable_error(exc):
+            raise HTTPException(status_code=502, detail=f"LLM is unavailable: {exc}") from exc
+        raise to_http_error(exc) from exc
 
 
 @app.get("/api/projects")
@@ -2747,7 +2687,12 @@ def api_download_file(path: str = Query(..., min_length=1)) -> Response:
 
 
 @app.get("/api/projects/{project_id}/snapshot")
-def api_project_snapshot(project_id: str, scene: str = SCENE_INITIATION, refresh: bool = False) -> dict[str, Any]:
+def api_project_snapshot(
+    project_id: str,
+    request: Request,
+    scene: str = SCENE_INITIATION,
+    refresh: bool = False,
+) -> dict[str, Any]:
     started_at = time.perf_counter()
     snapshot_payload: dict[str, Any] | None = None
     try:
@@ -3149,7 +3094,8 @@ def api_approve_generated_project(payload: dict[str, Any] | None = None) -> dict
 
 @app.post("/api/approve/remote-project")
 def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
-    project_id = payload["projectId"]
+    project_id = str(payload["projectId"] or "").strip()
+    task_order_id = str(payload.get("taskOrderId") or payload.get("task_order_id") or "").strip()
     scene = normalize_scene(payload.get("scene"))
     requested_category = str(payload.get("category") or "").strip()
     refresh_document = bool(payload.get("refreshDocument") or payload.get("refresh_document"))
@@ -3157,13 +3103,18 @@ def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
     debug_id_payload: dict[str, Any] | None = None
     try:
         client = IworkProjectClient(load_integration_config())
+        document_project_id = project_id
+        approval_result_project_id = project_id
+        if scene == SCENE_TASK_ORDER and task_order_id:
+            approval_result_project_id = task_order_id
+
         if scene == SCENE_ACCEPTANCE:
             debug_id_payload = client.resolve_acceptance_project_ids(project_id)
-        summary = load_cached_project_summary(project_id, scene=scene) or {}
+        summary = load_cached_project_summary(document_project_id, scene=scene) or {}
         category = resolve_project_category_name(requested_category, summary=summary, scene=scene)
         document, snapshot, _ = build_project_document(
             client=client,
-            project_id=project_id,
+            project_id=document_project_id,
             category=category,
             scene=scene,
             refresh=refresh_document,
@@ -3180,17 +3131,17 @@ def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
                 category = resolved_from_document
                 document, snapshot, _ = build_project_document(
                     client=client,
-                    project_id=project_id,
+                    project_id=document_project_id,
                     category=category,
                     scene=scene,
                     refresh=refresh_document,
                 )
         category = resolve_project_category_name(None if scene == SCENE_ACCEPTANCE else requested_category, summary=summary, document=document, scene=scene)
-        approval_project_name = str(document.get("project_name") or project_id)
+        approval_project_name = str(document.get("project_name") or document_project_id)
         try:
             result = run_llm_approval(
                 project_name=approval_project_name,
-                project_id=project_id,
+                project_id=approval_result_project_id,
                 category=category,
                 scene=scene,
                 snapshot=snapshot,
@@ -3201,7 +3152,7 @@ def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
                 raise
             result = build_deterministic_approval_fallback(
                 project_name=approval_project_name,
-                project_id=project_id,
+                project_id=approval_result_project_id,
                 category=category,
                 scene=scene,
                 document=document,
@@ -3220,6 +3171,7 @@ def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
             started_at,
             project_id=project_id,
             scene=scene,
+            task_order_id=task_order_id,
             refresh_document=refresh_document,
             **acceptance_id_fields(debug_id_payload if scene == SCENE_ACCEPTANCE else None),
         )

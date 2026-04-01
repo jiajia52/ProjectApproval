@@ -16,6 +16,8 @@ function WorkbenchContent({ selectedProjectId }) {
   const [integration, setIntegration] = useState(null);
   const [systemConfigText, setSystemConfigText] = useState("");
   const [startupChecks, setStartupChecks] = useState(null);
+  const [llmCheckResult, setLlmCheckResult] = useState(null);
+  const [llmCheckLoading, setLlmCheckLoading] = useState(false);
   const [statusText, setStatusText] = useState("等待加载配置。");
 
   useEffect(() => {
@@ -72,6 +74,26 @@ function WorkbenchContent({ selectedProjectId }) {
     setStatusText("Token 已刷新并写回配置。");
   }
 
+  async function checkLlm() {
+    setLlmCheckLoading(true);
+    setStatusText("正在检测大模型可用性...");
+    try {
+      await saveIntegration();
+      const result = await requestJson("/api/integration/check-llm", { method: "POST" });
+      setLlmCheckResult(result);
+      if (result?.ok) {
+        setStatusText(`大模型可用，耗时 ${result.latency_ms || 0}ms，模型 ${result.model || "-"}`);
+      } else {
+        setStatusText(result?.message || "大模型检测返回异常");
+      }
+    } catch (error) {
+      setLlmCheckResult(null);
+      setStatusText(error.message || "大模型检测失败");
+    } finally {
+      setLlmCheckLoading(false);
+    }
+  }
+
   async function saveSystemConfig() {
     const payload = JSON.parse(systemConfigText);
     const saved = await requestJson("/api/config", {
@@ -114,6 +136,9 @@ function WorkbenchContent({ selectedProjectId }) {
               <h2>远程接口配置</h2>
             </div>
             <div className="button-row">
+              <button className="ghost-button" type="button" onClick={checkLlm} disabled={llmCheckLoading}>
+                {llmCheckLoading ? "检测中..." : "检测大模型"}
+              </button>
               <button className="ghost-button" type="button" onClick={refreshToken}>
                 刷新 Token
               </button>
@@ -182,6 +207,11 @@ function WorkbenchContent({ selectedProjectId }) {
           ) : (
             <div className="result-box">加载中...</div>
           )}
+          {llmCheckResult ? (
+            <div className="result-box" style={{ marginTop: 12, whiteSpace: "pre-wrap" }}>
+              {`检测结果：${llmCheckResult.ok ? "可用" : "异常"}\n模型：${llmCheckResult.model || "-"}\n耗时：${llmCheckResult.latency_ms || 0}ms`}
+            </div>
+          ) : null}
         </section>
 
         <section className="card">

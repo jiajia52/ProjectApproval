@@ -14,6 +14,7 @@ from typing import Any
 from app.approvals.approval_engine import evaluate_approval
 from app.core.llm_client import chat_json
 from app.core.paths import scene_approval_runs_dir, scene_skills_dir
+from app.core.scenes import normalize_scene
 
 DEFAULT_OUTPUT_SCHEMA = {
     "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",
@@ -156,13 +157,6 @@ def compact_for_prompt(
             )
         return compacted
     return str(value)
-
-
-def normalize_scene(scene: str | None) -> str:
-    normalized = str(scene or "").strip().lower()
-    if normalized in {"task_order", "task-order", "taskorder"}:
-        return "task_order"
-    return "acceptance" if normalized == "acceptance" else "initiation"
 
 
 def scene_skill_dir(scene: str) -> Path:

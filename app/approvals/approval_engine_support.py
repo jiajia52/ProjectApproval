@@ -20,6 +20,7 @@ from app.core.paths import (
     scene_skill_manifest_path,
     find_task_order_rule_matrix_path,
 )
+from app.core.scenes import normalize_scene
 
 import sys
 
@@ -37,13 +38,6 @@ SYSTEM_DEVELOPMENT_CATEGORY_KEYWORDS = ("系统开发", "系统研发", "工作�
 def write_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def normalize_scene(scene: str | None) -> str:
-    normalized = str(scene or "").strip().lower()
-    if normalized in {"task_order", "task-order", "taskorder"}:
-        return "task_order"
-    return "acceptance" if normalized == "acceptance" else "initiation"
 
 
 def _rule_sequence_from_id(rule_id: str, fallback: int) -> str:

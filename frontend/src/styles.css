@@ -1424,6 +1424,75 @@ th {
   color: #20304e;
 }
 
+.task-order-sub-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.task-order-split-panel {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.task-order-side-tabs {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.task-order-side-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 10px 12px;
+  border: 1px solid rgba(186, 198, 232, 0.8);
+  border-radius: 10px;
+  background: rgba(247, 249, 255, 0.9);
+  color: #3b4d7c;
+  cursor: pointer;
+}
+
+.task-order-side-tab.active {
+  border-color: rgba(82, 102, 221, 0.38);
+  background: rgba(82, 102, 221, 0.12);
+  color: #3247c8;
+}
+
+.task-order-side-tab small {
+  font-size: 0.78rem;
+  color: #6577a3;
+}
+
+.task-order-side-content {
+  min-width: 0;
+}
+
+.task-order-tech-item {
+  padding-top: 14px;
+}
+
+.task-order-tech-value {
+  min-height: 62px;
+  white-space: pre-wrap;
+  line-height: 1.65;
+  color: #243452;
+  background: rgba(247, 250, 255, 0.9);
+  border: 1px solid rgba(191, 202, 232, 0.85);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.task-order-tech-counter {
+  margin-top: 8px;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #7a8aac;
+}
+
 .acceptance-progress-card {
   padding-top: 18px;
 }
@@ -5224,7 +5293,8 @@ th {
   .viewer-value-grid-3,
   .viewer-value-grid-2,
   .task-order-overview-grid,
-  .task-order-requirement-grid {
+  .task-order-requirement-grid,
+  .task-order-split-panel {
     grid-template-columns: 1fr;
   }
 

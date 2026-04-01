@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from app.core.paths import LEGACY_REVIEW_FEEDBACK_DIR, scene_review_feedback_dir
+from app.core.scenes import normalize_scene
 
 REVIEW_FEEDBACK_SCHEMA_VERSION = 1
 
@@ -32,13 +33,6 @@ def read_json(path: Path) -> dict[str, Any]:
 
 def review_feedback_dir(project_id: str, scene: str = "initiation") -> Path:
     return scene_review_feedback_dir(scene) / sanitize_name(project_id)
-
-
-def normalize_scene(scene: str | None) -> str:
-    normalized = str(scene or "").strip().lower()
-    if normalized in {"task_order", "task-order", "taskorder"}:
-        return "task_order"
-    return "acceptance" if normalized == "acceptance" else "initiation"
 
 
 def latest_review_feedback_path(project_id: str, category: str, scene: str = "initiation") -> Path:
