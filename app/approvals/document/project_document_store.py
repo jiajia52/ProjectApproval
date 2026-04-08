@@ -8,8 +8,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from app.core.paths import LEGACY_PROJECT_DOCUMENTS_DIR, scene_project_documents_dir
-from app.core.scenes import normalize_scene
+from app.core.config.paths import LEGACY_PROJECT_DOCUMENTS_DIR, scene_project_documents_dir
+from app.core.config.scenes import normalize_scene
 
 PROJECT_DOCUMENT_SCHEMA_VERSION = 6
 

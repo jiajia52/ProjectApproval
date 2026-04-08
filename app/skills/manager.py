@@ -9,7 +9,7 @@ import json
 from agentscope import init
 from agentscope.tool import Toolkit
 
-from app.core.paths import PROJECT_ROOT, scene_skills_dir
+from app.core.config.paths import PROJECT_ROOT, scene_skills_dir
 
 
 class AgentScopeSkillManager:

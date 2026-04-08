@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from app.core.paths import API_DUMPS_DIR
+from app.core.config.paths import API_DUMPS_DIR
 
 
 def read_json(path: Path) -> Any:

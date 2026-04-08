@@ -6,10 +6,9 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from app.approvals.approval_engine import evaluate_approval, load_or_create_sample_document
-from app.approvals.iwork_client import IworkProjectClient, build_project_snapshot_requests, load_integration_config
-from app.core.llm_client import LLMConfigError, load_llm_settings
-from app.core.paths import (
+from app.approvals.clients.iwork_client import IworkProjectClient, build_project_snapshot_requests, load_integration_config
+from app.approvals.engine.approval_engine import evaluate_approval, load_or_create_sample_document
+from app.core.config.paths import (
     CONFIG_PATH,
     PROJECT_ROOT,
     RULES_BUNDLE_PATH,
@@ -18,6 +17,7 @@ from app.core.paths import (
     STARTUP_CHECKS_PATH,
     find_rule_matrix_path,
 )
+from app.core.llm.llm_client import LLMConfigError, load_llm_settings
 from app.skills.manager import get_skill_manager
 
 if str(SCRIPTS_DIR) not in sys.path:

@@ -12,8 +12,8 @@ PROJECT_ROOT = Path(sys.executable).resolve().parent if getattr(sys, "frozen", F
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from app.core.env import ENV_PATH, load_env_file
-from app.core.paths import CONFIG_DIR, PROJECT_ROOT as ACTIVE_PROJECT_ROOT, RUNTIME_DIR
+from app.core.config.env import ENV_PATH, load_env_file
+from app.core.config.paths import CONFIG_DIR, PROJECT_ROOT as ACTIVE_PROJECT_ROOT, RUNTIME_DIR
 
 
 def parse_bool(value: str | None, *, default: bool) -> bool:

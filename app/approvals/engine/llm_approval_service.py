@@ -11,10 +11,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from app.approvals.approval_engine import evaluate_approval
-from app.core.llm_client import chat_json
-from app.core.paths import scene_approval_runs_dir, scene_skills_dir
-from app.core.scenes import normalize_scene
+from app.approvals.engine.approval_engine import evaluate_approval
+from app.core.config.paths import scene_approval_runs_dir, scene_skills_dir
+from app.core.config.scenes import normalize_scene
+from app.core.llm.llm_client import chat_json
 
 DEFAULT_OUTPUT_SCHEMA = {
     "decision": "通过 | 需补充材料 | 驳回 | 需更多信息",

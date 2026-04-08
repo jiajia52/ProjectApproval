@@ -53,9 +53,27 @@ def write_text(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def upsert_env_variable(content: str, key: str, value: str) -> str:
+    lines = content.splitlines()
+    target_prefix = f"{key}="
+    updated = False
+    for index, line in enumerate(lines):
+        if line.startswith(target_prefix):
+            lines[index] = f"{key}={value}"
+            updated = True
+            break
+    if not updated:
+        lines.append(f"{key}={value}")
+    return "\n".join(lines) + "\n"
+
+
 def write_runtime_templates() -> None:
-    write_text(DIST_DIR / ".env.example", (PROJECT_ROOT / ".env.example").read_text(encoding="utf-8"))
-    write_text(DIST_DIR / ".env", (PROJECT_ROOT / ".env.example").read_text(encoding="utf-8"))
+    env_example = (PROJECT_ROOT / ".env.example").read_text(encoding="utf-8")
+    write_text(DIST_DIR / ".env.example", env_example)
+    write_text(
+        DIST_DIR / ".env",
+        upsert_env_variable(env_example, "PROJECT_APPROVAL_FRONTEND_MODE", "dist"),
+    )
     write_text(DIST_DIR / "runtime" / "config" / "integration_config.json", json.dumps({}, ensure_ascii=False, indent=2))
     write_text(
         DIST_DIR / "README-EXE.txt",

@@ -8,8 +8,8 @@ from hashlib import md5
 from pathlib import Path
 from typing import Any
 
-from app.core.paths import LEGACY_REVIEW_FEEDBACK_DIR, scene_review_feedback_dir
-from app.core.scenes import normalize_scene
+from app.core.config.paths import LEGACY_REVIEW_FEEDBACK_DIR, scene_review_feedback_dir
+from app.core.config.scenes import normalize_scene
 
 REVIEW_FEEDBACK_SCHEMA_VERSION = 1
 

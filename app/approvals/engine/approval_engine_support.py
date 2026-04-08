@@ -7,8 +7,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from app.approvals.category_aliases import canonical_category_name, canonical_review_point
-from app.core.paths import (
+from app.approvals.review.category_aliases import canonical_category_name, canonical_review_point
+from app.core.config.paths import (
     CONFIG_PATH,
     LEGACY_LATEST_APPROVAL_RESULT_PATH,
     LEGACY_PROJECT_BUNDLE_PATH,
@@ -20,7 +20,7 @@ from app.core.paths import (
     scene_skill_manifest_path,
     find_task_order_rule_matrix_path,
 )
-from app.core.scenes import normalize_scene
+from app.core.config.scenes import normalize_scene
 
 import sys
 

@@ -29,22 +29,6 @@ import {
   ArchitectureReviewPanel,
 } from "./projectViewerShared";
 
-function approvalTimestamp(record) {
-  const value = record?.generated_at || record?.approvalGeneratedAt || "";
-  const timestamp = value ? new Date(value).getTime() : 0;
-  return Number.isFinite(timestamp) ? timestamp : 0;
-}
-
-function pickNewerApproval(primary, fallback) {
-  if (!primary) {
-    return fallback || null;
-  }
-  if (!fallback) {
-    return primary;
-  }
-  return approvalTimestamp(primary) >= approvalTimestamp(fallback) ? primary : fallback;
-}
-
 export default function ProjectViewerPage() {
   const { projectId = "" } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -320,23 +304,18 @@ export default function ProjectViewerPage() {
     const approvalRequest = shouldFetchTaskOrderApproval
       ? requestJson(`/api/projects/${encodeURIComponent(approvalTargetId || projectId)}/latest-approval?scene=${encodeURIComponent(scene)}${categoryQuery}`).catch(() => null)
       : Promise.resolve(null);
-    const projectApprovalRequest =
-      viewerPhase === TASK_ORDER_PHASE && projectId && approvalTargetId && approvalTargetId !== projectId
-        ? requestJson(`/api/projects/${encodeURIComponent(projectId)}/latest-approval?scene=${encodeURIComponent(scene)}${categoryQuery}`).catch(() => null)
-        : Promise.resolve(null);
     Promise.all([
       requestJson(
         `/api/projects/${encodeURIComponent(projectId)}/document?scene=${encodeURIComponent(scene)}${categoryQuery}${refreshQuery}&include_architecture_reviews=false`,
       ),
       approvalRequest,
-      projectApprovalRequest,
     ])
-      .then(([documentResult, approvalResult, projectApprovalResult]) => {
+      .then(([documentResult, approvalResult]) => {
         if (!alive) {
           return;
         }
         setDocumentPayload(documentResult);
-        setLatestApproval(pickNewerApproval(approvalResult?.result || null, projectApprovalResult?.result || null));
+        setLatestApproval(approvalResult?.result || null);
         if (documentResult?.resolved_category && documentResult.resolved_category !== category) {
           setCategory(documentResult.resolved_category);
         }

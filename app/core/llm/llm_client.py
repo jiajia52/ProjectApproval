@@ -8,7 +8,7 @@ from typing import Any
 
 from openai import BadRequestError, DefaultHttpxClient, OpenAI
 
-from app.core import env as _env  # noqa: F401
+from app.core.config import env as _env  # noqa: F401
 
 
 class LLMConfigError(RuntimeError):

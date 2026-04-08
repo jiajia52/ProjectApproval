@@ -2,8 +2,8 @@
 
 from pathlib import Path
 
-from app.core import env as _env  # noqa: F401
-from app.core.scenes import SCENE_ACCEPTANCE, SCENE_INITIATION, SCENE_TASK_ORDER, normalize_scene
+from app.core.config import env as _env  # noqa: F401
+from app.core.config.scenes import SCENE_ACCEPTANCE, SCENE_INITIATION, SCENE_TASK_ORDER, normalize_scene
 
 PROJECT_ROOT = _env.PROJECT_ROOT
 BUNDLE_ROOT = _env.BUNDLE_ROOT
