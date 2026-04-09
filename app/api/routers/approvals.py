@@ -17,7 +17,10 @@ from app.approvals.clients.iwork_client import IworkProjectClient, load_cached_p
 from app.approvals.document.project_document_builder import build_project_document
 from app.approvals.engine.approval_engine import evaluate_approval, load_generated_project_bundle, normalize_generated_bundle
 from app.approvals.engine.approval_results import merge_review_feedback_with_approvals
-from app.approvals.engine.deterministic_fallback import build_deterministic_approval_fallback
+from app.approvals.engine.deterministic_fallback import (
+    build_deterministic_approval_fallback,
+    persist_deterministic_fallback_result,
+)
 from app.approvals.engine.llm_approval_service import run_llm_approval
 from app.approvals.review.review_feedback_store import load_latest_review_feedback_map, persist_review_feedback
 from app.core.cache.transient_cache import (
@@ -110,7 +113,7 @@ def api_approve_llm(payload: dict[str, Any]) -> dict[str, Any]:
         return result
     except Exception as exc:
         if is_llm_unavailable_error(exc):
-            return build_deterministic_approval_fallback(
+            result = build_deterministic_approval_fallback(
                 project_name=str(project_name),
                 project_id=str(project_id),
                 category=str(category),
@@ -118,6 +121,9 @@ def api_approve_llm(payload: dict[str, Any]) -> dict[str, Any]:
                 document=document,
                 reason=str(exc),
             )
+            result = persist_deterministic_fallback_result(result)
+            _invalidate_review_feedback_cache(str(category), scene)
+            return result
         raise to_http_error(exc) from exc
 
 
@@ -176,6 +182,7 @@ def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
                 )
         category = resolve_project_category_name(None if scene == SCENE_ACCEPTANCE else requested_category, summary=summary, document=document, scene=scene)
         approval_project_name = str(document.get("project_name") or document_project_id)
+        should_persist_fallback = False
         try:
             result = run_llm_approval(
                 project_name=approval_project_name,
@@ -196,9 +203,12 @@ def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
                 document=document,
                 reason=str(exc),
             )
+            should_persist_fallback = True
         result["requested_category"] = requested_category or category
         result["resolved_category"] = category
         result["scene"] = scene
+        if should_persist_fallback:
+            result = persist_deterministic_fallback_result(result)
         _invalidate_review_feedback_cache(str(category), scene)
         return result
     except Exception as exc:

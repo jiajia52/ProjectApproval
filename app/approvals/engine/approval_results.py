@@ -217,6 +217,7 @@ def load_latest_remote_approval_result_map(
 
 
 def approval_result_to_review_record(payload: dict[str, Any]) -> dict[str, Any]:
+    fallback_reason = str(payload.get("fallback_reason") or payload.get("fallbackReason") or payload.get("reason") or "")
     return {
         "decision": str(payload.get("decision") or ""),
         "summary": str(payload.get("summary") or ""),
@@ -228,6 +229,9 @@ def approval_result_to_review_record(payload: dict[str, Any]) -> dict[str, Any]:
         "segments": list(payload.get("segments") or []),
         "runDir": str(payload.get("run_dir") or ""),
         "approvalGeneratedAt": str(payload.get("generated_at") or ""),
+        "decisionSource": str(payload.get("decision_source") or payload.get("decisionSource") or ""),
+        "reason": fallback_reason,
+        "fallbackReason": fallback_reason,
     }
 
 
@@ -247,6 +251,9 @@ def merge_review_feedback_with_approvals(
         "segments",
         "runDir",
         "approvalGeneratedAt",
+        "decisionSource",
+        "reason",
+        "fallbackReason",
     ]
 
     def _parse_feedback_approval_time(record: dict[str, Any]) -> float:

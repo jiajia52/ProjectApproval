@@ -1,9 +1,21 @@
 from __future__ import annotations
 
+import json
 from datetime import datetime
+from pathlib import Path
 from typing import Any
 
 from app.approvals.engine.approval_engine import evaluate_approval
+from app.core.config.paths import scene_approval_runs_dir
+
+
+def _sanitize_name(value: str) -> str:
+    return "".join(ch if ch.isalnum() or ch in {"-", "_"} else "_" for ch in value)[:120] or "run"
+
+
+def _write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def build_deterministic_approval_fallback(
@@ -49,5 +61,18 @@ def build_deterministic_approval_fallback(
         "run_dir": "",
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "decision_source": "deterministic_fallback",
+        "reason": reason,
+        "fallbackReason": reason,
         "fallback_reason": reason,
     }
+
+
+def persist_deterministic_fallback_result(result: dict[str, Any]) -> dict[str, Any]:
+    scene = str(result.get("scene") or "initiation").strip() or "initiation"
+    project_id = str(result.get("project_id") or result.get("project_name") or "run").strip() or "run"
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S-%f")
+    run_dir = scene_approval_runs_dir(scene) / f"{timestamp}_{_sanitize_name(project_id)}"
+    persisted = dict(result)
+    persisted["run_dir"] = str(run_dir)
+    _write_json(run_dir / "approval_result.json", persisted)
+    return persisted
