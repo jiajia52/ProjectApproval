@@ -3,7 +3,7 @@ from __future__ import annotations
 import time
 from typing import Any
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 
 from app.api.common import (
     DEFAULT_PROJECT_CATEGORY,
@@ -13,7 +13,12 @@ from app.api.common import (
     load_latest_remote_approval_result_map,
     resolve_project_category_name,
 )
-from app.approvals.clients.iwork_client import IworkProjectClient, load_cached_project_summary, load_integration_config
+from app.approvals.clients.iwork_client import (
+    IworkProjectClient,
+    load_cached_project_summary,
+    load_integration_config,
+    normalize_token_input,
+)
 from app.approvals.document.project_document_builder import build_project_document
 from app.approvals.engine.approval_engine import evaluate_approval, load_generated_project_bundle, normalize_generated_bundle
 from app.approvals.engine.approval_results import merge_review_feedback_with_approvals
@@ -137,7 +142,7 @@ def api_approve_generated_project(payload: dict[str, Any] | None = None) -> dict
 
 
 @router.post("/api/approve/remote-project")
-def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
+def api_approve_remote_project(payload: dict[str, Any], request: Request) -> dict[str, Any]:
     project_id = str(payload["projectId"] or "").strip()
     task_order_id = str(payload.get("taskOrderId") or payload.get("task_order_id") or "").strip()
     scene = normalize_scene(payload.get("scene"))
@@ -147,6 +152,11 @@ def api_approve_remote_project(payload: dict[str, Any]) -> dict[str, Any]:
     debug_id_payload: dict[str, Any] | None = None
     try:
         client = IworkProjectClient(load_integration_config())
+        request_authorization = str(request.headers.get("authorization") or "").strip()
+        payload_authorization = str(payload.get("authorization") or payload.get("Authorization") or "").strip()
+        incoming_authorization = normalize_token_input(request_authorization or payload_authorization)
+        if incoming_authorization:
+            client.config["token"] = incoming_authorization
         document_project_id = project_id
         approval_result_project_id = project_id
         if scene == SCENE_TASK_ORDER and task_order_id:
