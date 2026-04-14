@@ -133,3 +133,64 @@ def api_check_llm(request: Request) -> dict[str, Any]:
         if is_llm_unavailable_error(exc):
             raise HTTPException(status_code=502, detail=f"LLM is unavailable: {exc}") from exc
         raise to_http_error(exc) from exc
+
+
+@router.get("/api/discovery/nacos/instances")
+def api_nacos_instances(
+    request: Request,
+    service_name: str = "",
+    healthy_only: bool = True,
+    group_name: str = "",
+) -> dict[str, Any]:
+    client = getattr(request.app.state, "nacos_discovery", None)
+    if client is None:
+        raise HTTPException(status_code=400, detail="Nacos discovery is not enabled.")
+    resolved_service_name = str(service_name or "").strip() or str(getattr(client, "service_name", "") or "").strip()
+    resolved_group = str(group_name or "").strip() or str(getattr(client, "group_name", "DEFAULT_GROUP") or "DEFAULT_GROUP")
+    if not resolved_service_name:
+        raise HTTPException(status_code=400, detail="service_name is required.")
+    try:
+        instances = client.list_instances(
+            resolved_service_name,
+            healthy_only=healthy_only,
+            group_name=resolved_group,
+        )
+    except Exception as exc:
+        raise to_http_error(exc) from exc
+    return {
+        "service_name": resolved_service_name,
+        "group_name": resolved_group,
+        "healthy_only": healthy_only,
+        "count": len(instances),
+        "instances": instances,
+    }
+
+
+@router.get("/api/discovery/nacos/pick")
+def api_nacos_pick_instance(
+    request: Request,
+    service_name: str = "",
+    healthy_only: bool = True,
+    group_name: str = "",
+) -> dict[str, Any]:
+    client = getattr(request.app.state, "nacos_discovery", None)
+    if client is None:
+        raise HTTPException(status_code=400, detail="Nacos discovery is not enabled.")
+    resolved_service_name = str(service_name or "").strip() or str(getattr(client, "service_name", "") or "").strip()
+    resolved_group = str(group_name or "").strip() or str(getattr(client, "group_name", "DEFAULT_GROUP") or "DEFAULT_GROUP")
+    if not resolved_service_name:
+        raise HTTPException(status_code=400, detail="service_name is required.")
+    try:
+        selected = client.choose_instance(
+            resolved_service_name,
+            healthy_only=healthy_only,
+            group_name=resolved_group,
+        )
+    except Exception as exc:
+        raise to_http_error(exc) from exc
+    return {
+        "service_name": resolved_service_name,
+        "group_name": resolved_group,
+        "healthy_only": healthy_only,
+        "instance": selected,
+    }

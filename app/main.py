@@ -17,6 +17,7 @@ from app.api.routers.ui import router as ui_router
 from app.core.auth.admin_auth import (
     ensure_admin_sessions,
 )
+from app.core.discovery.nacos_registry import NacosDiscoveryClient
 from app.core.runtime.runtime_artifacts import (
     ensure_acceptance_artifacts,
     ensure_runtime_artifacts,
@@ -28,16 +29,30 @@ LOGGER = logging.getLogger("project_approval.startup")
 
 @asynccontextmanager
 async def lifespan(app_instance: FastAPI):
+    nacos_discovery: NacosDiscoveryClient | None = None
+    app_instance.state.nacos_discovery = None
     ensure_admin_sessions(app_instance)
     _, rules_bundle = ensure_runtime_artifacts(force=False)
     try:
         ensure_acceptance_artifacts(force=False)
     except Exception as exc:
         LOGGER.warning("Acceptance artifacts are unavailable during startup: %s", exc)
+    try:
+        candidate = NacosDiscoveryClient()
+        if candidate.start():
+            nacos_discovery = candidate
+            app_instance.state.nacos_discovery = nacos_discovery
+    except Exception as exc:
+        LOGGER.warning("Nacos service registration failed during startup: %s", exc)
     checks = refresh_startup_checks(app_instance, rules_bundle=rules_bundle)
     if checks["overall_status"] == "error":
         raise RuntimeError("Critical startup checks failed. See runtime/startup_checks.json for details.")
-    yield
+    try:
+        yield
+    finally:
+        if nacos_discovery is not None:
+            nacos_discovery.stop()
+        app_instance.state.nacos_discovery = None
 
 
 app = FastAPI(title="Project Approval API", version="0.4.0", lifespan=lifespan)

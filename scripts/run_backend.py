@@ -18,7 +18,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from app.core.config.env import ENV_PATH, load_env_file
+from app.core.config.env import ENV_PATH, load_runtime_env
 
 
 _FRONTEND_PROCESS: subprocess.Popen[str] | None = None
@@ -138,7 +138,7 @@ def start_frontend_after_backend_ready() -> None:
 
 
 if __name__ == "__main__":
-    load_env_file(ENV_PATH)
+    load_runtime_env(ENV_PATH)
     threading.Thread(target=start_frontend_after_backend_ready, daemon=True).start()
     reload_enabled = parse_bool(os.getenv("PROJECT_APPROVAL_RELOAD"), default=True)
     uvicorn.run(
